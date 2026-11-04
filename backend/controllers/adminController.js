@@ -1,9 +1,10 @@
 import Order, { ORDER_STATUSES } from '../models/Order.js';
 import { ApiError, ok } from '../utils/response.js';
-import { cancelOrder, restoreStock } from './orderController.js';
+import { CANCELLABLE, cancelOrder, restoreStock, STATUS_GROUPS } from './orderController.js';
 
 const OUT_FOR_DELIVERY_HOURS = 2;
 const HOUR_MS = 60 * 60 * 1000;
+const ORDERS_LISTED = 100;
 
 const NEXT_STATUS = {
   placed: 'packed',
@@ -23,6 +24,31 @@ function changesFor(order, status) {
   }
   if (status === 'returned' && order.payment?.status === 'paid') changes['payment.status'] = 'refunded';
   return changes;
+}
+
+// Sends only what the status control needs, so customer contact details stay out of it.
+export async function listOrders(req, res) {
+  const filter = {};
+  const { status } = req.query;
+  if (status !== undefined) {
+    if (!STATUS_GROUPS[status]) throw new ApiError(400, `status must be one of: ${Object.keys(STATUS_GROUPS).join(', ')}.`);
+    filter.status = { $in: STATUS_GROUPS[status] };
+  }
+  const orders = await Order.find(filter)
+    .populate('user', 'username')
+    .sort({ createdAt: -1 })
+    .limit(ORDERS_LISTED);
+  const data = orders.map(order => ({
+    orderNo: order.orderNo,
+    customer: order.user?.username ?? order.guest?.name ?? 'Member',
+    isGuest: !order.user,
+    total: order.total,
+    status: order.status,
+    nextStatus: NEXT_STATUS[order.status] ?? null,
+    canCancel: CANCELLABLE.includes(order.status),
+    createdAt: order.createdAt
+  }));
+  ok(res, { data, count: data.length });
 }
 
 export async function updateOrderStatus(req, res) {

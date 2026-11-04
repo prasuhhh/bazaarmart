@@ -13,13 +13,13 @@ const NOTE_MAX_LENGTH = 200;
 const GSTIN_PATTERN = /^\d{2}[A-Z]{5}\d{4}[A-Z][A-Z\d]Z[A-Z\d]$/;
 const PAYMENT_METHODS = ['upi', 'card', 'netbanking', 'cod'];
 
-const STATUS_GROUPS = {
+export const STATUS_GROUPS = {
   live: ['placed', 'packed', 'shipped', 'out_for_delivery'],
   delivered: ['delivered'],
   returns: ['returned'],
   cancelled: ['cancelled']
 };
-const CANCELLABLE = ['placed', 'packed'];
+export const CANCELLABLE = ['placed', 'packed'];
 const SLOT_CHANGEABLE = ['placed', 'packed', 'shipped'];
 const NOTE_CHANGEABLE = [...SLOT_CHANGEABLE, 'out_for_delivery'];
 

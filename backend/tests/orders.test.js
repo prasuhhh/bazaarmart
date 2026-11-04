@@ -600,3 +600,43 @@ describe('colours and quotes', () => {
     assert.equal(res.status, 409);
   });
 });
+
+describe('admin order list', () => {
+  const list = (query = '', value = adminToken) => auth(request(app).get(`/api/admin/orders${query}`), value);
+
+  it('lists every customer and guest order, newest first, with the next step', async () => {
+    const mine = (await place()).body.data;
+    const theirs = (await placeGuest()).body.data;
+    const res = await list();
+    assert.equal(res.status, 200);
+    assert.equal(res.body.count, 2);
+    const [first, second] = res.body.data;
+    assert.equal(first.orderNo, theirs.orderNo);
+    assert.equal(first.customer, 'Guest Shopper');
+    assert.equal(first.isGuest, true);
+    assert.equal(second.orderNo, mine.orderNo);
+    assert.equal(second.customer, 'Shopper');
+    assert.equal(first.nextStatus, 'packed');
+    assert.equal(first.canCancel, true);
+  });
+
+  it('keeps contact details and the delivery OTP out of the list', async () => {
+    await placeGuest();
+    const { text } = await list();
+    assert.doesNotMatch(text, new RegExp(guest.email));
+    assert.doesNotMatch(text, /\+91|deliveryOtp|221B/);
+  });
+
+  it('filters by status group and rejects an unknown one', async () => {
+    const { orderNo } = (await place()).body.data;
+    await advanceTo(orderNo, ['packed', 'shipped', 'out_for_delivery', 'delivered']);
+    assert.equal((await list('?status=live')).body.count, 0);
+    assert.equal((await list('?status=delivered')).body.count, 1);
+    assert.equal((await list('?status=lost')).status, 400);
+  });
+
+  it('is for admins only', async () => {
+    assert.equal((await list('', token)).status, 403);
+    assert.equal((await request(app).get('/api/admin/orders')).status, 401);
+  });
+});
