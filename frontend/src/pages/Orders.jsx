@@ -1,45 +1,57 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { api } from '../api/client.js';
-import { useNotice } from '../context/NoticeContext.jsx';
-import { formatPrice } from '../formatPrice.js';
+import { Link, useSearchParams } from 'react-router-dom';
+import OrderCard from '../components/orders/OrderCard.jsx';
+import { useFetch } from '../hooks/useFetch.js';
+
+const TABS = [
+  { key: 'all', label: 'All', statuses: null },
+  { key: 'live', label: 'Live', statuses: ['placed', 'packed', 'shipped', 'out_for_delivery'] },
+  { key: 'delivered', label: 'Delivered', statuses: ['delivered'] },
+  { key: 'returns', label: 'Returns', statuses: ['returned'] },
+  { key: 'cancelled', label: 'Cancelled', statuses: ['cancelled'] }
+];
+
+const inTab = (order, tab) => !tab.statuses || tab.statuses.includes(order.status);
 
 export default function Orders() {
-  const { showError } = useNotice();
-  const [orders, setOrders] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { data: orders, loading, error } = useFetch('/orders');
+  const [params, setParams] = useSearchParams();
+  const active = TABS.find(tab => tab.key === params.get('tab')) ?? TABS[0];
+  const shown = orders?.filter(order => inTab(order, active));
 
-  useEffect(() => {
-    api('/orders')
-      .then(({ data }) => setOrders(data))
-      .catch(error => { if (error.status !== 401) showError(error.message); })
-      .finally(() => setLoading(false));
-  }, [showError]);
+  function tabLabel(tab) {
+    if (tab.key !== 'live' || !orders) return tab.label;
+    return `${tab.label} (${orders.filter(order => inTab(order, tab)).length})`;
+  }
 
   return (
-    <section className="catalog">
-      <div className="section-heading"><div><span className="eyebrow">ORDERS</span><h3>Order history</h3></div></div>
-      {loading ? <p className="empty">Loading orders…</p>
-        : !orders.length ? (
-          <>
-            <p className="empty">You haven't placed any orders yet.</p>
-            <Link className="primary" to="/map">Walk the store</Link>
-          </>
-        ) : orders.map(order => (
-          <article className="panel order" key={order._id}>
-            <div className="order-head">
-              <span>{new Date(order.createdAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</span>
-              <span className="category">{order.status}</span>
-            </div>
-            {order.items.map(item => (
-              <div className="order-line" key={item.productId}>
-                <span>{item.name} × {item.qty}</span>
-                <span>{formatPrice(item.price * item.qty)}</span>
-              </div>
-            ))}
-            <div className="order-line order-total"><span>Total</span><span>{formatPrice(order.total)}</span></div>
-          </article>
+    <section className="orders">
+      <div className="tabs order-tabs" role="group" aria-label="Filter orders">
+        {TABS.map(tab => (
+          <button
+            type="button"
+            key={tab.key}
+            className={`order-tab${tab === active ? ' on' : ''}`}
+            aria-pressed={tab === active}
+            onClick={() => setParams(tab.key === 'all' ? {} : { tab: tab.key }, { replace: true })}
+          >{tabLabel(tab)}</button>
         ))}
+      </div>
+
+      {error && error.status !== 401 && <p className="empty">{error.message}</p>}
+      {loading && !orders && <p className="empty">Pulling your receipts…</p>}
+      {shown?.length === 0 && (
+        orders.length ? <p className="empty">Nothing under {active.label}.</p> : (
+          <div className="empty">
+            <p>You haven't placed any orders yet.</p>
+            <Link className="primary" to="/map">Walk the store</Link>
+          </div>
+        )
+      )}
+      {shown?.length > 0 && (
+        <ol className="order-timeline">
+          {shown.map(order => <OrderCard key={order._id} order={order} />)}
+        </ol>
+      )}
     </section>
   );
 }

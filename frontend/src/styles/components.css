@@ -127,12 +127,6 @@
 .stock { font-size: 11px; color: var(--muted); }
 .stock.low, .stock.out { color: var(--danger); }
 
-/* Orders */
-.order-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; font-size: 12px; color: var(--muted); }
-.order-line { display: flex; justify-content: space-between; gap: 14px; padding: 5px 0; font-size: 13px; }
-.order-total { margin-top: 6px; padding-top: 10px; border-top: var(--dashed); font-weight: 700; }
-.category { padding: 2px 8px; background: var(--sticky); color: var(--sticky-ink); font-size: 11px; }
-
 /* Admin table */
 .table-wrap { position: relative; overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 12px; }
