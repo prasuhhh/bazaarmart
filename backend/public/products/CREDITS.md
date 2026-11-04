@@ -8,9 +8,7 @@ Products show them for illustration: the brands in this store are invented.
 | A-01-112 | 2021-12-18_10-50-52 | steevithak | by-sa | https://www.flickr.com/photos/8386148@N06/51755064293 |
 | A-01-113 | Bose Sport Open Earbuds - 1 | Kyu3a | by-sa | https://commons.wikimedia.org/wiki/File:Bose_Sport_Open_Earbuds_-_1.jpg |
 | A-01-117 | Fairphone True Wireless Earbuds _ front and back | Fairphone | by-sa | https://www.flickr.com/photos/60295192@N08/51549857553 |
-| A-02-211 | black-and-white shot headphones wooden surface | Unknown | cc0 | https://www.rawpixel.com/image/3301986/free-photo-image-headphones-music-background |
 | A-02-212 | TDK ST-200 | Gamer112 at en.wikipedia ) | by | https://commons.wikimedia.org/wiki/File:TDK_ST-200.jpg |
-| A-02-213 | Professional studio headphones resting condenser | Unknown | cc0 | https://www.rawpixel.com/image/3288819/free-photo-image-cc0-creative-commons |
 | A-03-311 | JBL Flip 3 bluetooth speaker (DSCF2653) | Trougnouf | by | https://commons.wikimedia.org/wiki/File:JBL_Flip_3_bluetooth_speaker_(DSCF2653).jpg |
 | A-03-312 | portable speaker | Sekikos | by-sa | https://www.flickr.com/photos/31338008@N08/52330998446 |
 | A-03-313 | Close Up Shot of Bookshelf Speakers | bradjavernick | by | https://www.flickr.com/photos/156466858@N02/32314510818 |
@@ -29,8 +27,6 @@ Products show them for illustration: the brands in this store are invented.
 | B-04-411 | Perfume bottles | judy dean | by-sa | https://www.flickr.com/photos/12070225@N03/52575885613 |
 | B-05-511 | Oral-B iO Series 10 Electric Toothbrush | electricteeth | by | https://www.flickr.com/photos/156498286@N05/52417137997 |
 | B-05-512 | Waterpik ION Professional Water Flosser | electricteeth | by | https://www.flickr.com/photos/156498286@N05/51744990715 |
-| B-05-513 | Free toothbrush toothpaste image | Unknown | cc0 | https://www.rawpixel.com/image/5921240/photo-image-public-domain-blue-free |
-| C-01-112 | notebook Bible bench next bag | Unknown | cc0 | https://www.rawpixel.com/image/3293520/free-photo-image-picnic-book-spiral-notebooks-bible |
 | C-02-211 | Laptop sleeve made from bubble mailers and plastic bags packing tape and miscellaneous stickers (the stickers mainly are for patching holes that tear in the plastic bags!). I can make more. This is part of my “design that doesn’t exist series of objects a | bjornmeansbear | by-sa | https://www.flickr.com/photos/64519085@N00/53069089313 |
 | C-02-213 | UMAX Tablet Case 10 Army Black | Jirka Matousek | by | https://www.flickr.com/photos/28415633@N00/51270786542 |
 | C-03-311 | I-CLIP Slim Wallet 03 | www.kartenetui.info | by | https://commons.wikimedia.org/wiki/File:I-CLIP_Slim_Wallet_03.jpg |
@@ -39,7 +35,6 @@ Products show them for illustration: the brands in this store are invented.
 | C-05-511 | Niksun stainless steel water bottle | Jonathan Schilling | by-sa | https://commons.wikimedia.org/wiki/File:Niksun_stainless_steel_water_bottle.jpg |
 | D-01-111 | Mechanical keyboard | phithanhviet | by | https://www.flickr.com/photos/99146016@N07/52309916271 |
 | D-01-112 | Compact Bépo keyboard | Karl432 | by-sa | https://commons.wikimedia.org/wiki/File:Compact_B%C3%A9po_keyboard.jpg |
-| D-01-113 | Wireless keyboard background | Unknown | cc0 | https://www.rawpixel.com/image/5916938/image-background-public-domain-technology |
 | D-02-211 | Wireless Logilink Computer mouse with USB Micro Dongle | Mattes | by-sa | https://commons.wikimedia.org/wiki/File:Wireless_Logilink_Computer_mouse_with_USB_Micro_Dongle.JPG |
 | D-02-212 | Wireless Ergonomic Keyboard and Mouse (2173702909) | Eugene Kim from San Francisco, USA | by | https://commons.wikimedia.org/wiki/File:Wireless_Ergonomic_Keyboard_and_Mouse_(2173702909).jpg |
 | D-02-213 | 2024 (365 challenge No. 2) - Week 15 (mostly white) Day 1 - computer mouse | ambabheg | by | https://www.flickr.com/photos/31518985@N04/53639425778 |
@@ -64,7 +59,6 @@ Products show them for illustration: the brands in this store are invented.
 | L-02-213 | Cctv Camera | Alex Knight | cc0 | https://stocksnap.io/photo/cctv-camera-1VZ50RICYR |
 | L-03-311 | 2024 (365 challenge No. 2) - Week 38 (Black & white) - Day 1 - wall clock | ambabheg | by | https://www.flickr.com/photos/31518985@N04/54001525363 |
 | L-03-312 | Photo Frame | nick.amoscato | by | https://www.flickr.com/photos/91374488@N07/51978215105 |
-| L-03-313 | Blue ceramic vase. Original Minneapolis | Unknown | cc0 | https://www.rawpixel.com/image/8627212/photo-image-art-vintage-public-domain |
 | L-04-411 | Electric kettle phillips white | Rafa | pdm | https://commons.wikimedia.org/wiki/File:Electric_kettle_phillips_white.JPG |
 | L-05-511 | Embroidered cushion cover 1700s | museado | cc0 | https://www.flickr.com/photos/200781279@N05/53862422309 |
 | L-05-513 | Cozy interior of a bedroom with a double bed, linen, and natural light in a serene home setting | nenadstojkovicart | by | https://www.flickr.com/photos/202846129@N03/54584134746 |
@@ -79,12 +73,10 @@ Products show them for illustration: the brands in this store are invented.
 | P-04-412 | Mi50WPowerBank20000mAhXiaomi20240823000 | OnionBulb | by-sa | https://commons.wikimedia.org/wiki/File:Mi50WPowerBank20000mAhXiaomi20240823000.jpg |
 | P-05-511 | NIMASO USB-C to USB-A adapter (OTG Cable) | MIKI Yoshihito. (#mikiyoshihito) | by | https://www.flickr.com/photos/7940758@N07/51304118228 |
 | P-05-512 | Lightning Cable | ajay_suresh | by | https://www.flickr.com/photos/83136374@N05/51826100650 |
-| P-05-513 | Gold braided iPhone charging cable | Unknown | cc0 | https://www.rawpixel.com/image/11524398/gold-braided-iphone-charging-cable-product-photo |
 | S-01-111 | New T-shirt. | Tobyotter | by | https://www.flickr.com/photos/78428166@N00/15226103468 |
 | S-01-112 | Zwart t-shirt met opdruk in wit en rood en “blood shall follow blood”, objectnr 86905-2 | Museum Rotterdam | by-sa | https://commons.wikimedia.org/wiki/File:Zwart_t-shirt_met_opdruk_in_wit_en_rood_en_%E2%80%9Cblood_shall_follow_blood%E2%80%9D,_objectnr_86905-2.JPG |
 | S-01-113 | Tennis-shirt-lacoste | No machine-readable author provided. Marubatsu assumed (based on copyright claims). | pdm | https://commons.wikimedia.org/wiki/File:Tennis-shirt-lacoste.jpg |
 | S-02-212 | Arnaud Rousseau Dress Shirt with a Modern Spread Collar | Ashjini | by-sa | https://commons.wikimedia.org/wiki/File:Arnaud_Rousseau_Dress_Shirt_with_a_Modern_Spread_Collar.jpg |
-| S-02-213 | Blue Business Shirt | Unknown | by-sa | https://commons.wikimedia.org/wiki/File:Blue_Business_Shirt.jpg |
 | S-03-313 | Zwarte werkbroek PCM, objectnr 27265-2 | HAVEP | by-sa | https://commons.wikimedia.org/wiki/File:Zwarte_werkbroek_PCM,_objectnr_27265-2.JPG |
 | S-04-411 | Running Shoes | JESHOOTS.com | cc0 | https://stocksnap.io/photo/running-shoes-645GI8G1W4 |
 | S-04-412 | Sommer-Nike-Air-001 | PaFFaS - Passionate about Female Feet and Shoes | pdm | https://www.flickr.com/photos/197312540@N03/53408690567 |
@@ -94,7 +86,6 @@ Products show them for illustration: the brands in this store are invented.
 | W-01-111 | Seiko RC-1000 Smartwatch | Pouazity | by | https://www.flickr.com/photos/192017723@N07/52617265938 |
 | W-01-112 | explorers watch | Mario A. P. | by-sa | https://www.flickr.com/photos/99058495@N00/51847933569 |
 | W-01-113 | Smartwatch Samsung Gear S2 | JustynaZajdel | by-sa | https://commons.wikimedia.org/wiki/File:Smartwatch_Samsung_Gear_S2.jpeg |
-| W-02-212 | Lime green Fitbit fitness tracker | Unknown | cc0 | https://www.rawpixel.com/image/11515775/photo-image-white-background-public-domain-green |
 | W-03-311 | Dive table on the rubber bracelet of a Citizen Diving watch | Pittigrilli | by-sa | https://commons.wikimedia.org/wiki/File:Dive_table_on_the_rubber_bracelet_of_a_Citizen_Diving_watch.jpg |
 | W-03-312 | Flown SpaceX Inspirati④n Watch from Mission Commander Jared Isaacman | jurvetson | by | https://www.flickr.com/photos/44124348109@N01/51670814011 |
 | W-03-313 | Claude Meylan Skeleton Watch | Mingus19 | by-sa | https://commons.wikimedia.org/wiki/File:Claude_Meylan_Skeleton_Watch.jpg |
