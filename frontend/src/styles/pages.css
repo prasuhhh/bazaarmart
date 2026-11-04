@@ -428,3 +428,47 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
   .track-tiles { grid-template-columns: minmax(0, 1fr); }
   .route-label, .route-marker { font-size: 11px; }
 }
+
+/* Profile */
+.profile { display: flex; flex-direction: column; gap: 22px; }
+.member-card { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 24px; padding: 20px; background: var(--panel); border: var(--border); box-shadow: var(--hard-shadow); }
+.member-avatar { display: grid; place-items: center; width: 110px; height: 110px; border: var(--border); border-radius: 50%; font: 700 32px var(--font-title); }
+.member-identity { min-width: 0; }
+.member-identity h2 { margin: 2px 0; font-size: 32px; overflow-wrap: anywhere; }
+.member-identity .muted { overflow-wrap: anywhere; }
+.member-stats { display: flex; gap: 26px; }
+.member-stat { display: flex; flex-direction: column; align-items: center; font-size: 12px; }
+.member-stat strong { font: 700 24px/1.2 var(--font-title); }
+.profile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.profile-panel { min-width: 0; padding: 16px; border: var(--dashed); }
+.profile-panel h3 { margin-bottom: 8px; font-size: 19px; }
+.profile-panel ul { margin: 0; padding: 0; list-style: none; }
+.panel-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; min-height: 42px; padding: 7px 0; border-bottom: var(--dashed); font-size: 13px; }
+.panel-row-label { min-width: 0; overflow-wrap: anywhere; }
+.panel-row-label small { display: block; font-size: 11px; color: var(--muted); }
+.panel-row-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.row-add { padding: 0; border: 0; background: none; font-size: 13px; }
+.row-add:hover { text-decoration: underline; }
+.toggle { padding: 0; border: 0; background: none; line-height: 0; }
+.toggle .shift-track { display: block; }
+.toggle .shift-knob { background: var(--muted); }
+.toggle[aria-checked='true'] .shift-knob { background: var(--accent); transform: translateX(14px); }
+.toggle:disabled { opacity: 0.5; cursor: not-allowed; }
+.modal-form { width: 100%; }
+.modal-body .form-grid { width: 100%; }
+
+@media (max-width: 1199px) {
+  .profile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .member-card { grid-template-columns: auto minmax(0, 1fr); }
+  .member-stats { grid-column: 1 / -1; justify-content: space-around; }
+}
+
+@media (max-width: 719px) {
+  .profile-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 519px) {
+  .member-card { gap: 14px; padding: 14px; }
+  .member-avatar { width: 64px; height: 64px; font-size: 20px; }
+  .member-identity h2 { font-size: 24px; }
+}

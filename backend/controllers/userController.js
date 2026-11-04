@@ -1,10 +1,11 @@
+import Shelf from '../models/Shelf.js';
 import User from '../models/User.js';
 import { isValidAge, isValidEmail, isValidPassword, isValidUsername } from '../middleware/validate.js';
 import { ApiError, created, noContent, ok } from '../utils/response.js';
 import { createSession, publicUser } from '../utils/session.js';
 
-async function saveProfile(emailId, updates) {
-  const user = await User.findOne({ emailId });
+async function saveProfile(userId, updates) {
+  const user = await User.findById(userId);
   if (!user) throw new ApiError(404, 'User not found.');
   user.set(updates);
   await user.save(); // save(), not findOneAndUpdate, so a new password gets hashed
@@ -54,14 +55,10 @@ export async function updateProfile(req, res) {
   }
   const updates = { username: username.trim(), age: Number(age), password };
 
-  ok(res, { message: 'Profile updated successfully.', data: await saveProfile(req.user.emailId, updates) });
+  ok(res, { message: 'Profile updated successfully.', data: await saveProfile(req.user.userId, updates) });
 }
 
-export async function patchProfile(req, res) {
-  const { username, age, password } = req.body;
-  if (username === undefined && age === undefined && password === undefined) {
-    throw new ApiError(400, 'Provide at least one editable field.');
-  }
+function editableFields({ username, age, password }) {
   const updates = {};
   if (username !== undefined) {
     if (!isValidUsername(username)) throw new ApiError(400, 'Username must contain at least 2 characters.');
@@ -75,12 +72,37 @@ export async function patchProfile(req, res) {
     if (!isValidPassword(password)) throw new ApiError(400, 'Password must contain at least 6 characters.');
     updates.password = password;
   }
+  return updates;
+}
 
-  ok(res, { message: 'Selected profile fields updated.', data: await saveProfile(req.user.emailId, updates) });
+export async function patchProfile(req, res) {
+  const updates = editableFields(req.body);
+  if (!Object.keys(updates).length) throw new ApiError(400, 'Provide at least one editable field.');
+  ok(res, { message: 'Selected profile fields updated.', data: await saveProfile(req.user.userId, updates) });
+}
+
+// Phone accounts have no email for the ?emailId= routes, so these use the session.
+// They can add an email once; after that it's read-only, like every other account.
+export async function patchMe(req, res) {
+  const updates = editableFields(req.body);
+  const { emailId } = req.body;
+  if (emailId !== undefined) {
+    if (req.user.emailId) throw new ApiError(400, 'Your email ID can\'t be changed.');
+    if (!isValidEmail(emailId)) throw new ApiError(400, 'Enter a valid email ID.');
+    updates.emailId = emailId.toLowerCase().trim();
+  }
+  if (!Object.keys(updates).length) throw new ApiError(400, 'Provide at least one editable field.');
+  ok(res, { message: 'Selected profile fields updated.', data: await saveProfile(req.user.userId, updates) });
+}
+
+// Orders stay as records. Shelves go, or their public links would outlive the account.
+async function removeAccount(userId) {
+  const user = await User.findByIdAndDelete(userId);
+  if (!user) throw new ApiError(404, 'User not found.');
+  await Shelf.deleteMany({ user: user._id });
 }
 
 export async function deleteAccount(req, res) {
-  const user = await User.findOneAndDelete({ emailId: req.user.emailId });
-  if (!user) throw new ApiError(404, 'User not found.');
+  await removeAccount(req.user.userId);
   noContent(res);
 }

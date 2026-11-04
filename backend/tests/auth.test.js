@@ -353,3 +353,111 @@ describe('prefs', () => {
     assert.equal((await patch({ notificationPrefs: { priceDrops: 'no' } })).status, 400);
   });
 });
+
+describe('payment methods', () => {
+  const path = '/api/users/me/payment-methods';
+  const add = body => auth(request(app).post(path)).send(body);
+
+  it('keeps display tokens and lists them', async () => {
+    assert.equal((await add({ type: 'upi', label: 'asha@okbank' })).status, 201);
+    const card = await add({ type: 'card', label: 'Visa', last4: '4021' });
+    assert.equal(card.status, 201);
+    assert.equal(card.body.data.last4, '4021');
+    const list = await auth(request(app).get(path));
+    assert.equal(list.body.count, 2);
+  });
+
+  it('refuses anything that could be a full card number', async () => {
+    const attempts = [
+      { type: 'card', label: '4111111111111111', last4: '1111' },
+      { type: 'card', label: 'Visa', last4: '4111111111111111' },
+      { type: 'upi', label: '4111111111111111' },
+      { type: 'card', label: 'Visa' },
+      { type: 'wallet', label: 'Mine' },
+      {}
+    ];
+    for (const attempt of attempts) assert.equal((await add(attempt)).status, 400, JSON.stringify(attempt));
+    const user = await User.findOne({ emailId: shopper.emailId });
+    assert.equal(user.paymentMethods.length, 0);
+  });
+
+  it('ignores extra card fields', async () => {
+    await add({ type: 'card', label: 'Visa', last4: '4021', number: '4111111111111111', cvv: '123' });
+    const user = await User.findOne({ emailId: shopper.emailId }).lean();
+    assert.doesNotMatch(JSON.stringify(user.paymentMethods), /4111|cvv/);
+  });
+
+  it('removes a method, and needs a login', async () => {
+    const { body } = await add({ type: 'upi', label: 'asha@okbank' });
+    assert.equal((await auth(request(app).delete(`${path}/${body.data._id}`))).status, 204);
+    assert.equal((await auth(request(app).delete(`${path}/${body.data._id}`))).status, 404);
+    assert.equal((await request(app).get(path)).status, 401);
+  });
+});
+
+describe('phone accounts', () => {
+  let phoneToken;
+
+  beforeEach(async () => {
+    const { body } = await requestCode();
+    const verified = await verifyCode(body.data.devCode);
+    phoneToken = verified.body.data.token;
+  });
+
+  const patchMe = body => auth(request(app).patch('/api/users/me'), phoneToken).send(body);
+
+  it('can add a name, age and email', async () => {
+    const res = await patchMe({ username: 'Asha Rao', age: 24, emailId: 'New.Phone@Example.com' });
+    assert.equal(res.status, 200);
+    assert.equal(res.body.data.username, 'Asha Rao');
+    assert.equal(res.body.data.emailId, 'new.phone@example.com');
+  });
+
+  it('can set a password and then sign in by email', async () => {
+    await patchMe({ emailId: 'phone@example.com', password: 'secret123' });
+    const login = await request(app).post('/api/login').send({ emailId: 'phone@example.com', password: 'secret123' });
+    assert.equal(login.status, 200);
+  });
+
+  it('keeps an email read-only once it is set', async () => {
+    await patchMe({ emailId: 'first@example.com' });
+    const res = await patchMe({ emailId: 'second@example.com' });
+    assert.equal(res.status, 400);
+  });
+
+  it('rejects a taken email, a bad email, bad fields and an empty body', async () => {
+    assert.equal((await patchMe({ emailId: shopper.emailId })).status, 409);
+    assert.equal((await patchMe({ emailId: 'nope' })).status, 400);
+    assert.equal((await patchMe({ age: 500 })).status, 400);
+    assert.equal((await patchMe({})).status, 400);
+  });
+
+  it('cannot change its role', async () => {
+    await patchMe({ username: 'Asha', role: 'admin' });
+    const user = await User.findOne({ phone });
+    assert.equal(user.role, 'user');
+  });
+
+  it('can delete itself', async () => {
+    assert.equal((await auth(request(app).delete('/api/users/me'), phoneToken)).status, 204);
+    assert.equal(await User.countDocuments({ phone }), 0);
+    assert.equal((await auth(request(app).get('/api/users/me'), phoneToken)).status, 401);
+  });
+
+  it('needs a login', async () => {
+    assert.equal((await request(app).patch('/api/users/me').send({ age: 20 })).status, 401);
+    assert.equal((await request(app).delete('/api/users/me')).status, 401);
+  });
+});
+
+describe('deleting an account', () => {
+  it('removes its shelves, so old share links stop working', async () => {
+    const made = await auth(request(app).post('/api/shelves')).send({ name: 'Trip kit' });
+    const { shareId } = made.body.data;
+    assert.equal((await request(app).get(`/api/shelves/shared/${shareId}`)).status, 200);
+
+    const res = await auth(request(app).delete(`/api/users?emailId=${shopper.emailId}`));
+    assert.equal(res.status, 204);
+    assert.equal((await request(app).get(`/api/shelves/shared/${shareId}`)).status, 404);
+  });
+});

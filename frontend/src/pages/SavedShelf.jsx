@@ -1,30 +1,19 @@
 import { useState } from 'react';
 import { api } from '../api/client.js';
 import ShelfCard from '../components/shop/ShelfCard.jsx';
-import { useNotice } from '../context/NoticeContext.jsx';
+import { useAction } from '../hooks/useAction.js';
 import { useFetch } from '../hooks/useFetch.js';
 
 export default function SavedShelf() {
   const { data: shelves, loading, error, reload } = useFetch('/shelves');
-  const { showSuccess, showError, clearNotice } = useNotice();
+  const { busy, run: runAction } = useAction();
   const [name, setName] = useState('');
-  const [busy, setBusy] = useState(false);
 
   // Returns whether the change went through, so a form can stay open if it didn't.
   async function run(task, successMessage) {
-    setBusy(true);
-    clearNotice();
-    try {
-      const result = await task();
-      showSuccess(successMessage ?? result.message);
-      reload();
-      return true;
-    } catch (error) {
-      if (error.status !== 401) showError(error.message);
-      return false;
-    } finally {
-      setBusy(false);
-    }
+    const done = await runAction(task, successMessage);
+    if (done) reload();
+    return done;
   }
 
   async function createShelf(event) {

@@ -11,13 +11,12 @@ const FIELDS = [
 export default function AddressForm({ initial, showLabel, button, busy, onSubmit }) {
   function handleSubmit(event) {
     event.preventDefault();
-    const values = Object.fromEntries(new FormData(event.currentTarget).entries());
-    onSubmit(Object.fromEntries(Object.entries(values).filter(([, value]) => value.trim())));
+    onSubmit(Object.fromEntries(new FormData(event.currentTarget).entries()));
   }
 
   return (
     <form className="form-grid" aria-label="Delivery address" onSubmit={handleSubmit}>
-      {showLabel && <label className="full">Label<input name="label" defaultValue="Home" /></label>}
+      {showLabel && <label className="full">Label<input name="label" defaultValue={initial?.label ?? 'Home'} /></label>}
       {FIELDS.map(({ name, label, full, optional, ...input }) => (
         <label key={name} className={full ? 'full' : undefined}>
           {label}

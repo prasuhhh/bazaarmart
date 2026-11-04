@@ -6,6 +6,8 @@ const REQUIRED_ADDRESS_FIELDS = ['label', ...REQUIRED_DELIVERY_FIELDS];
 const DEVICE_FIELDS = ['name', 'category', 'purchasedAt', 'warrantyUntil'];
 const STYLE_FIELDS = ['sizes', 'colours', 'brands'];
 const NOTIFICATION_FIELDS = ['orderUpdates', 'priceDrops', 'newDrops'];
+const UPI_HANDLE = /^[\w.-]{2,}@[a-z][a-z0-9.-]*$/i;
+const CARD_LABEL = /^[a-z][a-z .&-]{1,29}$/i;
 
 async function currentUser(req) {
   const user = await User.findById(req.user.userId);
@@ -90,6 +92,42 @@ export async function updateDevice(req, res) {
 export async function deleteDevice(req, res) {
   const user = await currentUser(req);
   findItem(user.devices, req.params.id, 'Device').deleteOne();
+  await user.save();
+  noContent(res);
+}
+
+// Only a display token is kept. The fields are checked strictly so that a full
+// card number can't end up stored in the label.
+function parsePaymentMethod({ type, label, last4 }) {
+  const text = typeof label === 'string' ? label.trim() : '';
+  if (type === 'upi') {
+    if (!UPI_HANDLE.test(text)) throw new ApiError(400, 'Enter a UPI handle like name@bank.');
+    return { type, label: text };
+  }
+  if (type === 'card') {
+    if (!CARD_LABEL.test(text)) throw new ApiError(400, 'Name the card with letters only, like Visa.');
+    if (typeof last4 !== 'string' || !/^\d{4}$/.test(last4)) throw new ApiError(400, 'Enter only the last 4 digits of the card.');
+    return { type, label: text, last4 };
+  }
+  throw new ApiError(400, 'type must be upi or card.');
+}
+
+export async function listPaymentMethods(req, res) {
+  const { paymentMethods } = await currentUser(req);
+  ok(res, { data: paymentMethods, count: paymentMethods.length });
+}
+
+export async function addPaymentMethod(req, res) {
+  const method = parsePaymentMethod(req.body);
+  const user = await currentUser(req);
+  user.paymentMethods.push(method);
+  await user.save();
+  created(res, { message: 'Payment method added.', data: user.paymentMethods.at(-1) });
+}
+
+export async function deletePaymentMethod(req, res) {
+  const user = await currentUser(req);
+  findItem(user.paymentMethods, req.params.id, 'Payment method').deleteOne();
   await user.save();
   noContent(res);
 }
