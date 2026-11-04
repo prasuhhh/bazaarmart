@@ -18,9 +18,7 @@
 You need Node.js 20 or later and a MongoDB Atlas connection string (or a local MongoDB server).
 
 ```bash
-npm install
-npm install --prefix backend
-npm install --prefix frontend
+npm run install:all
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 ```
@@ -31,11 +29,15 @@ Fill in `backend/.env`:
 |---|---|---|
 | `MONGO_URI` | Yes | MongoDB connection string. Data is always stored in the `bazaarmart` database. |
 | `JWT_SECRET` | Yes | Long random string used to sign login tokens |
+| `JWT_EXPIRES_IN` | No | How long a login lasts, default `2h` |
 | `SEED_ADMIN_EMAIL` | For seeding | Email of the admin account |
 | `SEED_ADMIN_PASSWORD` | For seeding | Password of the admin account, at least 6 characters |
+| `NODE_ENV` | No | Set to `production` when deployed |
 | `PORT` | No | API port, default `5000` |
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
 | `DNS_SERVERS` | No | Comma-separated DNS servers, only if MongoDB SRV lookups fail on your network |
+
+`REQUIRE_AUTH_FOR_CATALOGUE` and `OTP_MOCK` are reserved for upcoming steps and have no effect yet.
 
 Then seed the database and start both apps:
 
@@ -54,6 +56,7 @@ Run these from the project root.
 
 | Command | What it does |
 |---|---|
+| `npm run install:all` | Installs root, backend and frontend packages |
 | `npm run dev` | Starts the API and the website together |
 | `npm run seed` | Adds sample products and the admin account |
 | `npm test` | Runs the automated API tests on a temporary in-memory database |
@@ -138,7 +141,7 @@ Order totals are always calculated on the server from database prices.
 
 `npm test` runs 50 API tests covering every endpoint and error code, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
 
-To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminPassword` collection variable to the value in `backend/.env`, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
+To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminEmail` and `adminPassword` collection variables to your `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` values, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
 
 ## Deployment
 

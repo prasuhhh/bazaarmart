@@ -39,7 +39,9 @@ export async function login(req, res) {
   if (!user) throw fail(404, 'User Not Registered.');
   if (!(await bcrypt.compare(password, user.password))) throw fail(401, 'Invalid Password.');
 
-  const token = jwt.sign({ userId: user._id, emailId: user.emailId }, process.env.JWT_SECRET, { expiresIn: '2h' });
+  const token = jwt.sign({ userId: user._id, emailId: user.emailId }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN || '2h'
+  });
   ok(res, { message: 'Login successful.', data: { token, user: publicUser(user) } });
 }
 

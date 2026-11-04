@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "BazaarMart API",
-    "description": "Run in order. Set adminEmail and adminPassword to the values in backend/.env, and run the seed first.",
+    "description": "Run in order. Set adminEmail and adminPassword to your SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD values, and run the seed first.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -19,7 +19,7 @@
     },
     {
       "key": "adminEmail",
-      "value": "admin@bazaarmart.com"
+      "value": "admin@bazaarmart.test"
     },
     {
       "key": "adminPassword",
