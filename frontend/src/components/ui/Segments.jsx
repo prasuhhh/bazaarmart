@@ -1,4 +1,5 @@
-const STATUS_STEPS = { placed: 1, packed: 2, shipped: 3, out_for_delivery: 4, delivered: 5, returned: 5 };
+import { STATUS_STEPS } from '../../orderStatus.js';
+
 const SEGMENT_COUNT = 5;
 
 export default function Segments({ status }) {

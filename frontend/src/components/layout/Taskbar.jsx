@@ -8,7 +8,7 @@ export default function Taskbar({ isOpen, liveOrders }) {
   const { showSuccess } = useNotice();
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  const [latestOrder] = liveOrders;
+  const [closestOrder] = liveOrders;
 
   const items = [
     { label: 'Store map', to: '/map', match: '/map' },
@@ -17,7 +17,7 @@ export default function Taskbar({ isOpen, liveOrders }) {
     { label: 'Saved shelf', to: '/saved', match: '/saved' },
     { label: 'Counter (checkout)', to: '/counter', match: '/counter' },
     { label: 'Orders', to: '/orders', match: '/orders', badge: liveOrders.length || null },
-    { label: 'Track parcel', to: latestOrder ? `/track/${latestOrder.orderNo}` : '/track', match: '/track' },
+    { label: 'Track parcel', to: closestOrder ? `/track/${closestOrder.orderNo}` : '/track', match: '/track' },
     { label: 'Profile', to: '/profile', match: '/profile' }
   ];
 
@@ -78,7 +78,7 @@ export default function Taskbar({ isOpen, liveOrders }) {
         </ol>
       </nav>
 
-      {latestOrder && <LiveOrderCard order={latestOrder} />}
+      {closestOrder && <LiveOrderCard order={closestOrder} />}
     </aside>
   );
 }
