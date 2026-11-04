@@ -22,6 +22,18 @@
   --radius: 3px;
   --frame-gap: 24px;
   --taskbar-width: 240px;
+
+  /* One page layout. Pages use these and set no widths or paddings of their own. */
+  --page-max: 1280px;
+  --page-pad: 24px;
+  --page-top: 24px;
+  --page-gap: 20px;
+  --panel-pad: 16px;
+  --narrow-max: 560px; /* a single form or message */
+}
+
+@media (max-width: 899px) {
+  :root { --page-pad: 14px; --page-top: 16px; }
 }
 
 :root[data-theme='night'] {

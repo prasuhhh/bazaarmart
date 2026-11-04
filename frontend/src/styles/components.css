@@ -20,8 +20,8 @@
 .full { grid-column: 1 / -1; }
 
 /* Boxes */
-.dashed-box { padding: 18px; border: var(--dashed); }
-.panel { margin-bottom: 16px; padding: 18px; background: var(--panel); border: var(--border); box-shadow: 4px 4px 0 var(--shadow); }
+.dashed-box { padding: var(--panel-pad); border: var(--dashed); }
+.panel { margin-bottom: 16px; padding: var(--panel-pad); background: var(--panel); border: var(--border); box-shadow: 4px 4px 0 var(--shadow); }
 .thumb {
   display: block;
   width: 100%;
@@ -105,15 +105,15 @@
 .field-help { font-size: 11px; color: var(--muted); }
 
 /* Sign in */
-.signin { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 48px; align-items: center; min-height: 100%; }
+.signin { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--page-gap); align-items: start; }
 .signin-art .thumb { height: 100%; min-height: 460px; aspect-ratio: auto; }
-.signin-card { padding: 22px; border: var(--border); box-shadow: var(--hard-shadow); background: var(--panel); }
+.signin-card { padding: var(--panel-pad); border: var(--border); box-shadow: var(--hard-shadow); background: var(--panel); }
 .signin-card h2 { margin: 2px 0 16px; font-size: 30px; }
 .signin-card .form-grid { grid-template-columns: 1fr; }
 .signin-card .primary { justify-self: start; }
 
 /* Placeholder pages */
-.placeholder-page { max-width: 560px; }
+.placeholder-page { max-width: var(--narrow-max); }
 .placeholder-page h2 { margin: 4px 0 8px; font-size: 24px; }
 .placeholder-page .primary { margin-top: 14px; }
 
@@ -136,7 +136,7 @@ td { padding: 9px 10px; border-bottom: var(--dashed); white-space: nowrap; }
 .row-actions button + button { margin-left: 8px; }
 
 @media (max-width: 899px) {
-  .signin { grid-template-columns: 1fr; gap: 20px; }
+  .signin { grid-template-columns: 1fr; }
   .signin-art { display: none; }
 }
 
