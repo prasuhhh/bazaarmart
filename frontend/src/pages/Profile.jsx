@@ -51,7 +51,7 @@ export default function Profile() {
     event.preventDefault();
     run('details', async () => {
       const body = { username: username.trim(), age: Number(age) };
-      const { message, data } = await api(usersPath, { method: 'PUT', body });
+      const { message, data } = await api(usersPath, { method: 'PATCH', body });
       updateUser(data);
       setUsername(data.username);
       setAge(String(data.age));
@@ -68,7 +68,9 @@ export default function Profile() {
       return;
     }
     run('password', async () => {
-      await api(usersPath, { method: 'PATCH', body: { password } });
+      // PUT replaces the whole profile, so it sends the saved name and age too.
+      const body = { username: user.username, age: user.age, password };
+      await api(usersPath, { method: 'PUT', body });
       form.reset();
       showSuccess('Your password has been updated.');
     });
@@ -76,9 +78,9 @@ export default function Profile() {
 
   function deleteAccount() {
     run('delete', async () => {
-      const { message } = await api(usersPath, { method: 'DELETE' });
+      await api(usersPath, { method: 'DELETE' });
       logout();
-      showSuccess(message, { keep: true });
+      showSuccess('User registration deleted successfully.', { keep: true });
       navigate('/login');
     });
   }

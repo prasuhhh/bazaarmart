@@ -148,14 +148,15 @@ describe('profile', () => {
     auth(request(app)[method]('/api/users').query({ emailId }), userToken);
 
   it('PUT updates the full profile', async () => {
-    const res = await profile('put').send({ username: 'Asha R', age: 22 });
+    const res = await profile('put').send({ username: 'Asha R', age: 22, password: 'secret2' });
     assert.equal(res.status, 200);
     assert.equal(res.body.data.username, 'Asha R');
     assert.equal(res.body.data.password, undefined);
   });
 
   it('PUT returns 400 rather than 500 for a one-letter username', async () => {
-    assert.equal((await profile('put').send({ username: 'A', age: 22 })).status, 400);
+    assert.equal((await profile('put').send({ username: 'A', age: 22, password: 'secret2' })).status, 400);
+    assert.equal((await profile('put').send({ username: 'Asha', age: 22 })).status, 400);
   });
 
   it('PATCH updates only the fields sent', async () => {
@@ -176,7 +177,7 @@ describe('profile', () => {
   });
 
   it('returns 403 for another user', async () => {
-    assert.equal((await profile('put', 'admin@example.com').send({ username: 'Hack', age: 22 })).status, 403);
+    assert.equal((await profile('put', 'admin@example.com').send({ username: 'Hack', age: 22, password: 'secret2' })).status, 403);
     assert.equal((await profile('patch', 'admin@example.com').send({ age: 22 })).status, 403);
     assert.equal((await profile('delete', 'admin@example.com')).status, 403);
   });
@@ -187,7 +188,7 @@ describe('profile', () => {
   });
 
   it('DELETE removes the account', async () => {
-    assert.equal((await profile('delete')).status, 200);
+    assert.equal((await profile('delete')).status, 204);
     assert.equal(await User.exists({ emailId: shopper.emailId }), null);
   });
 });

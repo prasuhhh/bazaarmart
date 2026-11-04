@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "BazaarMart API",
-    "description": "Run in order. Set adminEmail and adminPassword to your SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD values, and run the seed first.",
+    "description": "Run in order. Set adminEmail and adminPassword to your SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD values, and run the seed first. Change otpPhone if it has hit the rate limit.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -24,6 +24,14 @@
     {
       "key": "adminPassword",
       "value": "SET_FROM_BACKEND_ENV"
+    },
+    {
+      "key": "otpPhone",
+      "value": "+919000000001"
+    },
+    {
+      "key": "otpCode",
+      "value": ""
     },
     {
       "key": "token",
@@ -300,6 +308,201 @@
       ]
     },
     {
+      "name": "Phone OTP",
+      "item": [
+        {
+          "name": "Bad phone number → 400",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/otp/request",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "otp",
+                "request"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"12345\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Request a code → 200",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 200', () => pm.response.to.have.status(200));",
+                  "pm.collectionVariables.set('otpCode', pm.response.json().data.devCode);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/otp/request",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "otp",
+                "request"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"{{otpPhone}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Wrong format → 400",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/otp/verify",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "otp",
+                "verify"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"{{otpPhone}}\",\n  \"code\": \"12\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Verify → 200",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/otp/verify",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "otp",
+                "verify"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"{{otpPhone}}\",\n  \"code\": \"{{otpCode}}\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Google sign-in → 501",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 501', () => pm.response.to.have.status(501));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/google",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "google"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        }
+      ]
+    },
+    {
       "name": "Reading products",
       "item": [
         {
@@ -558,7 +761,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"username\": \"Test Shopper Two\",\n  \"age\": 22\n}"
+              "raw": "{\n  \"username\": \"Test Shopper Two\",\n  \"age\": 22,\n  \"password\": \"{{userPassword}}\"\n}"
             }
           }
         },
@@ -604,7 +807,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22\n}"
+              "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22,\n  \"password\": \"secret123\"\n}"
             }
           }
         },
@@ -644,7 +847,86 @@
             },
             "body": {
               "mode": "raw",
+              "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22,\n  \"password\": \"secret123\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT without password → 400",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/users?emailId={{userEmail}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "emailId",
+                  "value": "{{userEmail}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
               "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22\n}"
+            }
+          }
+        },
+        {
+          "name": "Get my profile → 200",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/users/me",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users",
+                "me"
+              ]
             }
           }
         },
@@ -1392,14 +1674,14 @@
           }
         },
         {
-          "name": "Delete account → 200",
+          "name": "Delete account → 204",
           "event": [
             {
               "listen": "test",
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "pm.test('status 200', () => pm.response.to.have.status(200));"
+                  "pm.test('status 204', () => pm.response.to.have.status(204));"
                 ]
               }
             }

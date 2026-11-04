@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const OTP_LIFETIME_MS = 5 * 60 * 1000;
+export const OTP_LIFETIME_MS = 5 * 60 * 1000;
 
 const otpSchema = new mongoose.Schema({
   phone: { type: String, required: true, unique: true }, // one active code per phone

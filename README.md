@@ -37,7 +37,7 @@ Fill in `backend/.env`:
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
 | `DNS_SERVERS` | No | Comma-separated DNS servers, only if MongoDB SRV lookups fail on your network |
 
-`REQUIRE_AUTH_FOR_CATALOGUE` and `OTP_MOCK` are reserved for upcoming steps and have no effect yet.
+`OTP_MOCK=true` turns on the mock SMS provider, which prints sign-in codes to the server console. No real SMS provider is connected, so phone sign-in returns 503 without it. `REQUIRE_AUTH_FOR_CATALOGUE` is reserved for an upcoming step and has no effect yet.
 
 Then seed the database and start both apps:
 
@@ -72,7 +72,7 @@ Run these from the project root.
 | `/products` | Catalogue with search, category filter, sorting and pagination | Logged in |
 | `/cart` | Cart and checkout | Logged in |
 | `/orders` | Order history | Logged in |
-| `/profile` | Account settings: personal details (PUT), password (PATCH), delete account (DELETE) | Logged in |
+| `/profile` | Account settings: personal details (PATCH), password (PUT), delete account (DELETE) | Logged in |
 | `/admin/products` | Add, edit and delete products | Admin |
 
 Checkout is a demo: it places a real order and reduces stock, but no payment is taken.
@@ -95,9 +95,30 @@ Protected routes need the header `Authorization: Bearer <token>`.
 |---|---|---|---|
 | POST | `/api/users` | Public | Register: 201, 400, 409 |
 | POST | `/api/login` | Public | Returns `data.token` and `data.user`: 200, 400, 401, 404 |
-| PUT | `/api/users?emailId=` | Own account | Full profile update |
-| PATCH | `/api/users?emailId=` | Own account | Partial profile update |
-| DELETE | `/api/users?emailId=` | Own account | Delete account |
+| GET | `/api/users/me` | Logged in | Current user |
+| PUT | `/api/users?emailId=` | Own account | Full update; needs `username`, `age` and `password` |
+| PATCH | `/api/users?emailId=` | Own account | Any of `username`, `age`, `password` |
+| DELETE | `/api/users?emailId=` | Own account | Delete account: 204 |
+
+### Phone sign-in
+
+| Method | Path | Access | Result |
+|---|---|---|---|
+| POST | `/api/auth/otp/request` | Public | `{ "phone": "+919876543210" }`. Sends a 6-digit code valid for 5 minutes; returns it as `data.devCode` outside production. Limited to 5 requests per 10 minutes, per phone and per IP |
+| POST | `/api/auth/otp/verify` | Public | `{ "phone", "code" }`. Returns `data.token` and `data.user`, creating the account if new: 200, 400 expired, 401 wrong code, 429 after 5 wrong attempts |
+| POST | `/api/auth/google` | Public | 501 until Google sign-in is configured |
+
+### Account details
+
+All of these need a login and affect only your own account.
+
+| Method | Path | Result |
+|---|---|---|
+| GET, POST | `/api/users/me/addresses` | List, or add: 201. Only one address is the default at a time |
+| PUT, DELETE | `/api/users/me/addresses/:id` | Update fields sent: 200, or delete: 204 |
+| GET, POST | `/api/users/me/devices` | List, or add: 201 |
+| PUT, DELETE | `/api/users/me/devices/:id` | Update fields sent: 200, or delete: 204 |
+| GET, PATCH | `/api/users/me/prefs` | Read, or change only the preferences sent |
 
 ### Products
 
@@ -136,12 +157,15 @@ Order totals are always calculated on the server from database prices.
 | 403 | Not your account, or admin access required |
 | 404 | Not found |
 | 409 | Duplicate record, or not enough stock |
-| 429 | Too many failed login or registration attempts |
+| 429 | Too many failed attempts or code requests |
 | 500 | Server or database error; the message is generic in production and stack traces are never sent |
+| 501 / 503 | Google sign-in or SMS sign-in is not configured |
 
 ## Testing
 
 `npm test` runs 50 API tests covering every endpoint and error code, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
+
+`bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl. It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
 
 To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminEmail` and `adminPassword` collection variables to your `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` values, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
 

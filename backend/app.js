@@ -1,14 +1,17 @@
 import cors from 'cors';
 import express from 'express';
-import rateLimit from 'express-rate-limit';
+import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
 import helmet from 'helmet';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
+import { normalizePhone } from './middleware/validate.js';
+import { createAuthRoutes } from './routes/authRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import { createUserRoutes } from './routes/userRoutes.js';
 import { ok } from './utils/response.js';
 
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
+const OTP_RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 
 // Only failed attempts count, so normal users are never locked out.
 function createAuthLimiter(limit) {
@@ -25,7 +28,23 @@ function createAuthLimiter(limit) {
   });
 }
 
-export function createApp({ authRateLimit = 10 } = {}) {
+function createOtpLimiter(limit, keyGenerator) {
+  return rateLimit({
+    windowMs: OTP_RATE_LIMIT_WINDOW_MS,
+    limit,
+    ...(keyGenerator && { keyGenerator }),
+    standardHeaders: 'draft-7',
+    legacyHeaders: false,
+    handler: (_req, res) => res.status(429).json({
+      success: false,
+      message: 'Too many code requests. Please try again in 10 minutes.'
+    })
+  });
+}
+
+const phoneOrIpKey = req => normalizePhone(req.body?.phone) ?? ipKeyGenerator(req.ip);
+
+export function createApp({ authRateLimit = 10, otpRateLimit = 5 } = {}) {
   const app = express();
 
   // Hosts like Render sit behind one proxy; the limiter needs the real client IP.
@@ -45,6 +64,10 @@ export function createApp({ authRateLimit = 10 } = {}) {
   app.use('/api', createUserRoutes({
     loginLimiter: createAuthLimiter(authRateLimit),
     registerLimiter: createAuthLimiter(authRateLimit)
+  }));
+  app.use('/api/auth', createAuthRoutes({
+    // Both apply: one stops flooding a single phone, the other one IP trying many phones.
+    otpLimiters: [createOtpLimiter(otpRateLimit), createOtpLimiter(otpRateLimit, phoneOrIpKey)]
   }));
   app.use('/api/products', productRoutes);
   app.use('/api/orders', orderRoutes);

@@ -1,9 +1,7 @@
-import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import { isValidAge, isValidEmail, isValidPassword, isValidUsername } from '../middleware/validate.js';
-import { ApiError, created, ok } from '../utils/response.js';
-
-const publicUser = user => ({ username: user.username, emailId: user.emailId, age: user.age, role: user.role });
+import { ApiError, created, noContent, ok } from '../utils/response.js';
+import { createSession, publicUser } from '../utils/session.js';
 
 async function saveProfile(emailId, updates) {
   const user = await User.findOne({ emailId });
@@ -11,6 +9,12 @@ async function saveProfile(emailId, updates) {
   user.set(updates);
   await user.save(); // save(), not findOneAndUpdate, so a new password gets hashed
   return publicUser(user);
+}
+
+export async function getMe(req, res) {
+  const user = await User.findById(req.user.userId);
+  if (!user) throw new ApiError(404, 'User not found.');
+  ok(res, { data: user });
 }
 
 export async function register(req, res) {
@@ -40,19 +44,15 @@ export async function login(req, res) {
   if (!user) throw new ApiError(404, 'User Not Registered.');
   if (!(await user.comparePassword(password))) throw new ApiError(401, 'Invalid Password.');
 
-  const token = jwt.sign({ userId: user._id, emailId: user.emailId }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES_IN || '2h'
-  });
-  ok(res, { message: 'Login successful.', data: { token, user: publicUser(user) } });
+  ok(res, { message: 'Login successful.', data: createSession(user) });
 }
 
 export async function updateProfile(req, res) {
   const { username, age, password } = req.body;
-  if (!isValidUsername(username) || !isValidAge(age) || (password !== undefined && !isValidPassword(password))) {
-    throw new ApiError(400, 'Provide a valid username, age, and optional password (at least 6 characters).');
+  if (!isValidUsername(username) || !isValidAge(age) || !isValidPassword(password)) {
+    throw new ApiError(400, 'PUT needs a valid username, age, and password (at least 6 characters).');
   }
-  const updates = { username: username.trim(), age: Number(age) };
-  if (password) updates.password = password;
+  const updates = { username: username.trim(), age: Number(age), password };
 
   ok(res, { message: 'Profile updated successfully.', data: await saveProfile(req.user.emailId, updates) });
 }
@@ -82,5 +82,5 @@ export async function patchProfile(req, res) {
 export async function deleteAccount(req, res) {
   const user = await User.findOneAndDelete({ emailId: req.user.emailId });
   if (!user) throw new ApiError(404, 'User not found.');
-  ok(res, { message: 'User registration deleted successfully.' });
+  noContent(res);
 }
