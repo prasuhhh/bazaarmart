@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { bayLabel } from '../components/shop/bayLabel.js';
 import Gallery from '../components/shop/Gallery.jsx';
 import OwnerNotes from '../components/shop/OwnerNotes.jsx';
-import PriceChip from '../components/shop/PriceChip.jsx';
+import ProductGrid from '../components/shop/ProductGrid.jsx';
 import QuestionsPanel from '../components/shop/QuestionsPanel.jsx';
 import ShelfPicker from '../components/shop/ShelfPicker.jsx';
 import SpecTable from '../components/shop/SpecTable.jsx';
 import SwatchPicker from '../components/shop/SwatchPicker.jsx';
-import Thumb from '../components/ui/Thumb.jsx';
 import { useBench } from '../context/BenchContext.jsx';
 import { useReceipt } from '../context/ReceiptContext.jsx';
 import { useAddToReceipt } from '../hooks/useAddToReceipt.js';
@@ -33,19 +32,11 @@ function rememberSku(sku) {
   }
 }
 
-function FitsWith({ products }) {
+function FitsWith({ products, onSave }) {
   return (
-    <section className="dashed-box sheet-panel">
+    <section className="dashed-box sheet-panel fits-with">
       <p className="caption">Fits with</p>
-      <div className="fits-grid">
-        {products.map(product => (
-          <Link key={product.productId} to={`/p/${product.productId}`}>
-            <Thumb src={product.images?.[0]} />
-            <small>{product.productName}</small>
-            <PriceChip value={product.productPrice} />
-          </Link>
-        ))}
-      </div>
+      <ProductGrid products={products} onSave={onSave} />
     </section>
   );
 }
@@ -56,7 +47,7 @@ function SheetBody({ product, related }) {
   const { isOnBench, toggleBench } = useBench();
   const addToReceipt = useAddToReceipt();
   const [colour, setColour] = useState(product.colours?.[0]);
-  const [isSaving, setIsSaving] = useState(false);
+  const [saving, setSaving] = useState(null);
   const isOut = product.quantity === 0;
   const isAllInReceipt = !isOut && qtyOf(sku) >= product.quantity;
 
@@ -77,17 +68,17 @@ function SheetBody({ product, related }) {
             <button type="button" className="outline" aria-pressed={isOnBench(sku)} onClick={() => toggleBench(sku)}>
               {isOnBench(sku) ? 'On the bench' : 'Put on bench'}
             </button>
-            <button type="button" className="outline" aria-label="Save to a shelf" onClick={() => setIsSaving(true)}>☆</button>
+            <button type="button" className="outline" aria-label="Save to a shelf" onClick={() => setSaving(product)}>☆</button>
           </div>
         </section>
       </div>
 
       <div className="sheet-panels">
-        <FitsWith products={related} />
+        <FitsWith products={related} onSave={setSaving} />
         <OwnerNotes sku={sku} />
         <QuestionsPanel sku={sku} />
       </div>
-      {isSaving && <ShelfPicker product={product} onClose={() => setIsSaving(false)} />}
+      {saving && <ShelfPicker product={saving} onClose={() => setSaving(null)} />}
     </div>
   );
 }

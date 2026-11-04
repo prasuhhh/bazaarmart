@@ -10,7 +10,7 @@ function PriceWatch({ change }) {
 
 export default function ShelfItem({ item, onRemove }) {
   return (
-    <li className="shelf-item">
+    <li className="product-card shelf-item">
       <Thumb src={item.image} />
       <div className="shelf-item-main">
         {item.available ? <Link className="product-name" to={`/p/${item.productId}`}>{item.productName}</Link>

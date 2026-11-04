@@ -118,8 +118,16 @@
 .placeholder-page .primary { margin-top: 14px; }
 
 /* Products */
-.product-grid { display: grid; gap: 14px; }
-.product-card { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+/* Columns stay this size however few products there are, so rows fill from the left. */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.product-card { position: relative; display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: var(--card-max); min-width: 0; }
 .product-card > a { text-decoration: none; }
 .product-name { font-size: 12px; overflow-wrap: anywhere; }
 .product-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; }
@@ -132,8 +140,7 @@
 table { width: 100%; border-collapse: collapse; font-size: 12px; }
 th { padding: 8px 10px; border-bottom: var(--border); color: var(--muted); font-size: 11px; font-weight: 500; text-align: left; }
 td { padding: 9px 10px; border-bottom: var(--dashed); white-space: nowrap; }
-.row-actions { text-align: right; }
-.row-actions button + button { margin-left: 8px; }
+.row-actions { display: flex; gap: 8px; }
 
 @media (max-width: 899px) {
   .signin { grid-template-columns: 1fr; }

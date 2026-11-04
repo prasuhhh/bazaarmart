@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useFetch } from '../../hooks/useFetch.js';
 import Thumb from '../ui/Thumb.jsx';
-import ProductCard from './ProductCard.jsx';
+import ProductGrid from './ProductGrid.jsx';
 
 export default function KitShelf({ onSave }) {
   const { data: kits } = useFetch('/kits');
@@ -33,9 +33,7 @@ export default function KitShelf({ onSave }) {
       {products && (
         <div className="kit-products">
           <p className="caption">{products.length} items · {opened.kit.title}</p>
-          <div className="product-grid">
-            {products.map(product => <ProductCard key={product.productId} product={product} onSave={onSave} />)}
-          </div>
+          <ProductGrid products={products} onSave={onSave} />
         </div>
       )}
     </section>

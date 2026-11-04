@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import ProductGrid from '../components/shop/ProductGrid.jsx';
 import ShelfItem, { toReceiptEntry } from '../components/shop/ShelfItem.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 import { useMoveToReceipt } from '../hooks/useMoveToReceipt.js';
@@ -17,14 +18,14 @@ export default function SharedShelf() {
   if (!shelf) return <p className="empty">Finding the shelf…</p>;
 
   return (
-    <section className="saved shared-shelf">
+    <section className="saved">
       <article className="shelf-card">
         <header className="shelf-head">
           <h3>{shelf.name}</h3>
           <span className="caption">Shared shelf</span>
         </header>
         {shelf.items.length
-          ? <ul className="shelf-items">{shelf.items.map(item => <ShelfItem key={item.productId} item={item} />)}</ul>
+          ? <ProductGrid as="ul">{shelf.items.map(item => <ShelfItem key={item.productId} item={item} />)}</ProductGrid>
           : <p className="muted shelf-empty">This shelf is empty.</p>}
         <footer className="shelf-foot">
           <button type="button" className="shelf-move" disabled={!shelf.items.length} onClick={() => moveToReceipt(shelf.items.map(toReceiptEntry))}>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useMoveToReceipt } from '../../hooks/useMoveToReceipt.js';
 import { useNotice } from '../../context/NoticeContext.jsx';
+import ProductGrid from './ProductGrid.jsx';
 import ShelfItem, { toReceiptEntry } from './ShelfItem.jsx';
 
 export default function ShelfCard({ shelf, busy, onRename, onDelete, onRemoveItem }) {
@@ -38,9 +39,9 @@ export default function ShelfCard({ shelf, busy, onRename, onDelete, onRemoveIte
       </header>
 
       {shelf.items.length ? (
-        <ul className="shelf-items">
+        <ProductGrid as="ul">
           {shelf.items.map(item => <ShelfItem key={item.productId} item={item} onRemove={line => onRemoveItem(shelf, line)} />)}
-        </ul>
+        </ProductGrid>
       ) : <p className="muted shelf-empty">Nothing here yet. Tap ☆ on any product to save it.</p>}
 
       <footer className="shelf-foot">
