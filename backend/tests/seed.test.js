@@ -162,6 +162,30 @@ describe('npm run seed', () => {
     assert.equal((await login({ emailId: ADMIN.emailId, password: 'changed-pass' })).status, 200);
   });
 
+  it('replaces old photo links without touching anything else', async () => {
+    const oldImages = ['https://picsum.photos/seed/A-01-115-1/600/600'];
+    await Product.updateOne({ productId: 'A-01-115' }, { images: oldImages, quantity: 7 });
+    const untouched = await Product.findOne({ productId: 'A-01-115' }).lean();
+    await Order.updateOne(
+      { orderNo: 'BM-2041' },
+      { $set: { 'items.$[].image': oldImages[0], 'address.city': 'Kept' } }
+    );
+    const before = await Order.findOne({ orderNo: 'BM-2041' }).lean();
+
+    assert.equal((await runSeed()).code, 0);
+
+    const product = await Product.findOne({ productId: 'A-01-115' }).lean();
+    assert.deepEqual(product.images, products.find(({ productId }) => productId === 'A-01-115').images);
+    assert.equal(product.quantity, 7);
+    assert.deepEqual(product.updatedAt, untouched.updatedAt);
+
+    const order = await Order.findOne({ orderNo: 'BM-2041' }).lean();
+    assert.equal(order.address.city, 'Kept');
+    assert.deepEqual(order.updatedAt, before.updatedAt);
+    for (const item of order.items) assert.equal(item.image, `/products/${item.productId}.svg`);
+    assert.equal(await Order.countDocuments({ 'items.image': /picsum/ }), 0);
+  });
+
   it('restores only the product that went missing', async () => {
     await Product.deleteOne({ productId: 'B-02-203' });
     const { output } = await runSeed();

@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import cors from 'cors';
 import express from 'express';
 import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
@@ -13,6 +14,7 @@ import shelfRoutes from './routes/shelfRoutes.js';
 import { createUserRoutes } from './routes/userRoutes.js';
 import { ok } from './utils/response.js';
 
+const PRODUCT_IMAGES = fileURLToPath(new URL('./public/products', import.meta.url));
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 const OTP_RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 
@@ -61,6 +63,13 @@ export function createApp({ authRateLimit = 10, otpRateLimit = 5 } = {}) {
     req.body ??= {};
     next();
   });
+
+  // The shop runs on another origin, and helmet's default policy would block its <img> tags.
+  app.use('/products', express.static(PRODUCT_IMAGES, {
+    index: false,
+    redirect: false,
+    setHeaders: res => res.set('Cross-Origin-Resource-Policy', 'cross-origin')
+  }));
 
   app.get('/', (_req, res) => ok(res, { message: 'BazaarMart API is running.' }));
   app.get('/api/health', (_req, res) => ok(res));

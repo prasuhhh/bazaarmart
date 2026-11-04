@@ -1,5 +1,9 @@
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const ASSET_ORIGIN = BASE_URL.replace(/\/api\/?$/, '');
 export const TOKEN_KEY = 'shopping_token';
+
+// Product images are stored as paths like /products/A-01-117.svg, served beside /api.
+export const assetUrl = path => (path?.startsWith('/') ? `${ASSET_ORIGIN}${path}` : path);
 
 let handleUnauthorized = () => {};
 

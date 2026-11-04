@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="toothbrush">
+<title>Sonic Electric Toothbrush</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#D8B4E2"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#4A4845" x="43" y="36" width="14" height="58" rx="7"/><path d="M47 36V30h6v6"/><rect fill="#4A4845" x="40" y="6" width="20" height="26" rx="8"/><path stroke-dasharray="2 4" d="M46 12v14M54 12v14"/><path d="M50 54v1M30 14q-5 8 0 16M70 14q5 8 0 16"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Black</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#D9C7A3" x="43" y="36" width="14" height="58" rx="7"/><path d="M47 36V30h6v6"/><rect fill="#D9C7A3" x="40" y="6" width="20" height="26" rx="8"/><path stroke-dasharray="2 4" d="M46 12v14M54 12v14"/><path d="M50 54v1M30 14q-5 8 0 16M70 14q5 8 0 16"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#8C9160" x="43" y="36" width="14" height="58" rx="7"/><path d="M47 36V30h6v6"/><rect fill="#8C9160" x="40" y="6" width="20" height="26" rx="8"/><path stroke-dasharray="2 4" d="M46 12v14M54 12v14"/><path d="M50 54v1M30 14q-5 8 0 16M70 14q5 8 0 16"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Olive</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">B-01-102</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

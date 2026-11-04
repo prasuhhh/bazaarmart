@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="cliplamp">
+<title>Warm Clip Lamp</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E8C468"/>
+<g transform="translate(45 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M46 76C46 54 26 44 40 28"/><path fill="#D9C7A3" d="M24 28 56 9l19 29z"/><path d="M26 76h40v16h-8V84H34v8h-8z"/><path stroke-dasharray="3 6" d="m56 44 6 12"/></g><text x="165" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<g transform="translate(315 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M46 76C46 54 26 44 40 28"/><path fill="#C7704C" d="M24 28 56 9l19 29z"/><path d="M26 76h40v16h-8V84H34v8h-8z"/><path stroke-dasharray="3 6" d="m56 44 6 12"/></g><text x="435" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Terracotta</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">D-02-203</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

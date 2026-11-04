@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="smartwatch">
+<title>Pace Smartwatch</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FC1B5"/>
+<path d="M3 212h297M3 388h297M300 212c110-8 220 8 297 30M300 388c110 8 220-8 297-30" fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linecap="round"/>
+<g transform="translate(205 205) scale(1.9)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#8FC1B5" x="35" y="4" width="30" height="92" rx="6"/><rect fill="#FFFDF8" x="27" y="26" width="46" height="48" rx="11"/><path d="M73 44v12M50 37v13l9 6"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON WRIST</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">W-01-101</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

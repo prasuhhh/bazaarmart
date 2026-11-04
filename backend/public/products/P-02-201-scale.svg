@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="phonecase">
+<title>Silicone Phone Case</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FB4DC"/>
+<path d="M70 300h460l50 170H20z" fill="#8FB4DC" fill-opacity="0.35" stroke="#1F1D1A" stroke-width="3" stroke-linejoin="round"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><rect x="56" y="196" width="150" height="104" rx="6" fill="#E7E3DC"/><path d="M36 322h190l-18-22H54z" fill="#E7E3DC"/></g>
+<g transform="translate(335 330) scale(1.1)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#8FB4DC" x="25" y="5" width="50" height="90" rx="11"/><rect fill="#FFFDF8" x="33" y="13" width="18" height="24" rx="6"/><circle cx="42" cy="20" r="3"/><circle cx="42" cy="30" r="3"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON DESK</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">P-02-201</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

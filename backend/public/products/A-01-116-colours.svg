@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="earbuds">
+<title>Pulse Sport Buds</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#F4A583"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><g id="bud0"><rect fill="#4A4845" x="14" y="38" width="13" height="46" rx="6"/><circle fill="#4A4845" cx="29" cy="32" r="16"/><circle cx="31" cy="32" r="6"/></g><use href="#bud0" transform="matrix(-1 0 0 1 100 0)"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Black</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><g id="bud1"><rect fill="#F0806C" x="14" y="38" width="13" height="46" rx="6"/><circle fill="#F0806C" cx="29" cy="32" r="16"/><circle cx="31" cy="32" r="6"/></g><use href="#bud1" transform="matrix(-1 0 0 1 100 0)"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Coral</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><g id="bud2"><rect fill="#3F9C97" x="14" y="38" width="13" height="46" rx="6"/><circle fill="#3F9C97" cx="29" cy="32" r="16"/><circle cx="31" cy="32" r="6"/></g><use href="#bud2" transform="matrix(-1 0 0 1 100 0)"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Teal</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">A-01-116</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

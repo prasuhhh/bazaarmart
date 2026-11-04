@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="headphones">
+<title>Arc Wireless Headphones</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#F4A583"/>
+<path d="M70 300h460l50 170H20z" fill="#F4A583" fill-opacity="0.35" stroke="#1F1D1A" stroke-width="3" stroke-linejoin="round"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><rect x="56" y="196" width="150" height="104" rx="6" fill="#E7E3DC"/><path d="M36 322h190l-18-22H54z" fill="#E7E3DC"/></g>
+<g transform="translate(305 270) scale(1.7)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 60v-9a33 33 0 0 1 66 0v9"/><rect fill="#F4A583" x="9" y="56" width="17" height="32" rx="7"/><rect fill="#F4A583" x="74" y="56" width="17" height="32" rx="7"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON DESK</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">A-02-201</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

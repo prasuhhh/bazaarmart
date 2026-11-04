@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { assetUrl } from '../../api/client.js';
 
 // Shows the wireframe's crossed box when there's no image or it fails to load.
 export default function Thumb({ src, alt = '' }) {
-  const [failed, setFailed] = useState(false);
-  if (src && !failed) return <img className="thumb" src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} />;
+  const [failedSrc, setFailedSrc] = useState(null);
+  if (src && src !== failedSrc) {
+    return <img className="thumb" src={assetUrl(src)} alt={alt} loading="lazy" onError={() => setFailedSrc(src)} />;
+  }
 
   return (
     <span className="thumb" role={alt ? 'img' : undefined} aria-label={alt || undefined}>

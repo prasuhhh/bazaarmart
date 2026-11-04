@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="tshirt">
+<title>Dry-Fit Training Tee</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="130" cy="130" r="38"/><path d="M78 300v-80a50 50 0 0 1 104 0v80M104 240v230M156 240v230M104 470h52"/><path d="M40 470h520"/></g>
+<g transform="translate(265 222) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#E58F8F" d="M34 12 9 28l10 19 12-6v49h38V41l12 6 10-19-25-16c-4 11-28 11-32 0z"/><path d="M34 12c4 8 28 8 32 0"/></g>
+<text x="560" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="end" fill="#1F1D1A">TO SCALE</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-01-103</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

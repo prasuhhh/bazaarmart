@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="grip">
+<title>Mobile Game Grip</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#9A9CDD"/>
+<path d="M70 300h460l50 170H20z" fill="#9A9CDD" fill-opacity="0.35" stroke="#1F1D1A" stroke-width="3" stroke-linejoin="round"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><rect x="56" y="196" width="150" height="104" rx="6" fill="#E7E3DC"/><path d="M36 322h190l-18-22H54z" fill="#E7E3DC"/></g>
+<g transform="translate(335 330) scale(1.1)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#FFFDF8" x="23" y="30" width="54" height="30" rx="3"/><path fill="#9A9CDD" d="M23 32c-12 0-18 16-18 30 0 11 11 13 15 5l3-7zM77 32c12 0 18 16 18 30 0 11-11 13-15 5l-3-7z"/><path d="M33 40v10M72 42v1"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON DESK</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">G-01-103</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

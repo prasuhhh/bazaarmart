@@ -8,10 +8,15 @@ const userKey = owner => `bazaarmart_receipt_${owner}`;
 // Two colours of a product are two lines, so each colour gets its own id.
 export const lineIdOf = line => (line.colour ? `${line.productId}:${line.colour}` : line.productId);
 
+// Receipts saved before images moved to /products still hold an old photo link.
+const withCurrentImage = line => (line.image?.includes('picsum.photos')
+  ? { ...line, image: `/products/${line.productId}.svg` }
+  : line);
+
 function readLines(key) {
   try {
     const lines = JSON.parse(localStorage.getItem(key) || '[]');
-    return Array.isArray(lines) ? lines : [];
+    return Array.isArray(lines) ? lines.map(withCurrentImage) : [];
   } catch {
     return [];
   }

@@ -1,4 +1,4 @@
-// Seed catalogue. Brands are invented, and images are placeholders.
+// Seed catalogue. Brands are invented. Images are drawn by scripts/generateProductImages.js.
 const COLOURS = {
   neutral: ['Black', 'Sand', 'Olive'],
   dark: ['Black', 'Graphite'],
@@ -263,7 +263,7 @@ function toProducts({ zone, category, bay, bayName, start, warrantyMonths, arriv
       use,
       connectivity: connectivity ?? 'n/a',
       specs,
-      images: [1, 2, 3, 4, 5].map(view => `https://picsum.photos/seed/${productId}-${view}/600/600`),
+      images: ['', '-colours', '-scale'].map(view => `/products/${productId}${view}.svg`),
       seller: 'BazaarMart Retail',
       warrantyMonths,
       arrivesInDays,

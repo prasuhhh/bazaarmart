@@ -43,6 +43,27 @@ async function seedProducts() {
   console.log(`Products added: ${missing.length}. Already there: ${products.length - missing.length}.`);
 }
 
+const OLD_IMAGE_HOST = /picsum\.photos/;
+
+// Images are generated files, so they always follow data/catalogue.js. Nothing else on
+// a product changes, and timestamps stay put so the "new drops" order doesn't shift.
+async function refreshImages() {
+  await Product.bulkWrite(products.map(({ productId, images }) => ({
+    updateOne: { filter: { productId }, update: { $set: { images } }, timestamps: false }
+  })));
+
+  // Orders keep a copy of the image from when they were placed.
+  await Order.bulkWrite(products.map(({ productId, images }) => ({
+    updateMany: {
+      filter: { items: { $elemMatch: { productId, image: OLD_IMAGE_HOST } } },
+      update: { $set: { 'items.$[line].image': images[0] } },
+      arrayFilters: [{ 'line.productId': productId, 'line.image': OLD_IMAGE_HOST }],
+      timestamps: false
+    }
+  })));
+  console.log(`Images ready: ${products.length} products.`);
+}
+
 function seedCredentials(prefix) {
   const email = process.env[`${prefix}_EMAIL`];
   const password = process.env[`${prefix}_PASSWORD`];
@@ -107,6 +128,7 @@ try {
   await syncIndexes();
   await seedZonesAndKits();
   await seedProducts();
+  await refreshImages();
   await seedAdmin();
   await seedDemoUser();
 } catch (error) {
