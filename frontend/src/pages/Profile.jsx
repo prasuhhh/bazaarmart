@@ -7,7 +7,7 @@ import { useNotice } from '../context/NoticeContext.jsx';
 const ROLE_LABELS = { admin: 'Admin', user: 'Customer' };
 
 function initialsOf(name) {
-  return name.trim().split(/\s+/).slice(0, 2).map(word => word[0].toUpperCase()).join('');
+  return (name ?? '').trim().split(/\s+/).filter(Boolean).slice(0, 2).map(word => word[0].toUpperCase()).join('');
 }
 
 function SettingsSection({ title, description, danger = false, children }) {
@@ -26,8 +26,8 @@ export default function Profile() {
   const { user, logout, updateUser } = useAuth();
   const { showSuccess, showError, clearNotice } = useNotice();
   const navigate = useNavigate();
-  const [username, setUsername] = useState(user.username);
-  const [age, setAge] = useState(String(user.age));
+  const [username, setUsername] = useState(user.username ?? '');
+  const [age, setAge] = useState(String(user.age ?? ''));
   const [busyWith, setBusyWith] = useState(null);
   const [confirmingDelete, setConfirmingDelete] = useState(false);
 
@@ -81,7 +81,7 @@ export default function Profile() {
       await api(usersPath, { method: 'DELETE' });
       logout();
       showSuccess('User registration deleted successfully.', { keep: true });
-      navigate('/login');
+      navigate('/signin');
     });
   }
 

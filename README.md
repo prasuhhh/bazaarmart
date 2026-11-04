@@ -9,9 +9,9 @@
 - Add items to a cart, place an order and view order history
 - Manage products as an admin
 
-**Stack:** MongoDB, Express 5, React 18, Node.js, Mongoose 8, Vite, JWT, bcrypt.
+**Stack:** MongoDB, Express 5, React 18, Node.js, Mongoose 8, Vite, React Router 7, JWT, bcrypt, plain CSS.
 
-![Product catalogue](docs/screenshots/04-products.png)
+![BazaarMart in Day shift](docs/screenshots/shell-day.png)
 
 ## Getting started
 
@@ -70,13 +70,20 @@ Run these from the project root.
 
 | Route | Page | Access |
 |---|---|---|
-| `/` | Home | Public |
-| `/register`, `/login` | Account forms | Public |
-| `/products` | Catalogue with search, category filter, sorting and pagination | Logged in |
-| `/cart` | Cart and a simple delivery form | Logged in |
+| `/` | Opens the store map | Public |
+| `/map` | Store map (placeholder for now) | Public |
+| `/zone/:zoneCode` | Browse a zone (simple listing for now) | Public |
+| `/p/:sku` | Product sheet (placeholder for now) | Public |
+| `/saved` | Saved shelf (placeholder for now) | Logged in |
+| `/counter` | Counter: checkout with a simple delivery form | Public, guests allowed |
 | `/orders` | Order history | Logged in |
+| `/track/:orderNo` | Track parcel (placeholder for now) | Public, guests check by phone |
 | `/profile` | Account settings: personal details (PATCH), password (PUT), delete account (DELETE) | Logged in |
+| `/signin` | Sign in or create an account with email | Public |
+| `/s/:shareId` | Shared shelf (placeholder for now) | Public |
 | `/admin/products` | Add, edit and delete products | Admin |
+
+`/login` and `/register` redirect to `/signin`. Every page sits in the same shell: the numbered Taskbar, a top bar with the GO TO box (press `/` to focus it), the Day and Night shift toggle, and the receipt drawer. The theme follows your system until you choose one. Guests keep a receipt in the browser, and it joins your account's receipt when you sign in.
 
 Checkout places a real order and reduces stock, but no payment is taken.
 
@@ -261,10 +268,11 @@ backend/
   tests/           automated API tests
 frontend/src/
   api/             fetch wrapper
-  context/         auth, cart and notices
-  components/      shared interface pieces
+  context/         auth, receipt, theme and notices
+  components/      layout (shell), ui and shop pieces
+  hooks/           shared data and timing hooks
   pages/           one file per page
-  styles/          stylesheet
+  styles/          tokens, base, layout and components
 docs/
   api-tests/       Thunder Client / Postman collection
   screenshots/     screenshots of the website

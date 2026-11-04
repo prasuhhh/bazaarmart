@@ -1,0 +1,257 @@
+.shell { padding: var(--frame-gap); min-height: 100vh; }
+
+.frame {
+  display: grid;
+  grid-template-columns: var(--taskbar-width) minmax(0, 1fr);
+  min-height: calc(100vh - var(--frame-gap) * 2);
+  /* The taskbar is sticky, so this keeps its column going on long pages. */
+  background: linear-gradient(
+    90deg,
+    var(--sidebar) calc(var(--taskbar-width) - 2px),
+    var(--ink) 0 var(--taskbar-width),
+    var(--panel) 0
+  );
+  border: var(--border);
+  box-shadow: var(--hard-shadow);
+}
+
+.workspace { display: flex; flex-direction: column; min-width: 0; }
+.page { flex: 1; padding: 24px; min-width: 0; }
+
+/* Taskbar */
+.taskbar {
+  position: sticky;
+  top: var(--frame-gap);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--frame-gap) * 2 - 4px);
+  background: var(--sidebar);
+  border-right: var(--border);
+  overflow-y: auto;
+}
+
+.brand {
+  display: block;
+  padding: 18px 16px;
+  border-bottom: var(--border);
+  text-decoration: none;
+}
+.brand-name { display: block; font: 700 24px/1.1 var(--font-title); letter-spacing: -0.02em; }
+.brand-slash { color: var(--accent); }
+.brand-caption { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); }
+.brand-short { display: none; font: 700 20px/1 var(--font-title); }
+
+.taskbar-caption {
+  margin: 18px 16px 8px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
+.taskbar-items { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0 8px; list-style: none; }
+
+.taskbar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  font-size: 13px;
+  text-align: left;
+  text-decoration: none;
+}
+.taskbar-item:hover { background: var(--placeholder); }
+.taskbar-item.active { background: var(--ink); color: var(--panel); }
+.taskbar-number { color: var(--muted); }
+.taskbar-item.active .taskbar-number { color: inherit; opacity: 0.65; }
+.taskbar-badge {
+  margin-left: auto;
+  padding: 0 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.live-card {
+  display: block;
+  margin: auto 12px 12px;
+  padding: 10px;
+  border: var(--dashed);
+  background: var(--panel);
+  font-size: 11px;
+  text-decoration: none;
+}
+.taskbar-items + .live-card { margin-top: 16px; }
+.live-card strong { display: block; font-weight: 500; }
+.live-card .segments { margin: 8px 0 6px; }
+.live-card span { color: var(--muted); }
+
+/* Top bar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 62px;
+  padding: 10px 24px;
+  background: var(--panel);
+  border-bottom: var(--border);
+}
+.topbar-title { font-size: 19px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar-right { display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none; }
+
+.menu-button { display: none; flex: none; width: 36px; height: 36px; padding: 0; border: var(--dashed); background: none; }
+
+.receipt-button { padding: 8px 2px; border: 0; background: none; font-size: 12px; white-space: nowrap; }
+.receipt-button:hover { text-decoration: underline; }
+
+.avatar-button {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Command box */
+.command { position: relative; flex: 1 1 260px; min-width: 0; max-width: 340px; }
+.command-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: var(--dashed);
+  border-radius: 0;
+  background: none;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  outline-offset: 1px;
+}
+.command-input::placeholder { color: var(--muted); opacity: 1; }
+.command-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  max-height: 340px;
+  margin: 0;
+  padding: 4px;
+  overflow-y: auto;
+  list-style: none;
+  background: var(--panel);
+  border: var(--border);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.command-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.command-result[aria-selected='true'] { background: var(--ink); color: var(--panel); }
+.command-result small { flex: none; color: inherit; opacity: 0.65; font-size: 11px; }
+.command-empty { padding: 8px; font-size: 12px; color: var(--muted); }
+
+/* Receipt drawer and the mobile taskbar share this backdrop */
+.backdrop { position: fixed; inset: 0; z-index: 40; border: 0; background: rgb(0 0 0 / 0.45); }
+
+.receipt-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  width: min(400px, 100vw);
+  background: var(--panel);
+  border-left: var(--border);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.2s ease, visibility 0.2s;
+}
+.receipt-drawer.open { transform: none; visibility: visible; }
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: var(--border);
+}
+.drawer-header h2 { font-size: 18px; }
+.drawer-close { padding: 4px 8px; border: var(--dashed); background: none; font-size: 12px; }
+.drawer-lines { flex: 1; margin: 0; padding: 0 16px; overflow-y: auto; list-style: none; }
+.drawer-line { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; padding: 12px 0; border-bottom: var(--dashed); }
+.drawer-line-name { font-size: 12px; overflow-wrap: anywhere; }
+.drawer-line-price { font-size: 12px; font-weight: 700; white-space: nowrap; }
+.drawer-empty { padding: 24px 16px; color: var(--muted); }
+.drawer-footer { padding: 16px; border-top: var(--border); }
+.drawer-subtotal { display: flex; justify-content: space-between; margin-bottom: 12px; font-weight: 700; }
+.drawer-footer .primary { display: block; width: 100%; text-align: center; }
+
+/* Numbers-only taskbar on small laptops */
+@media (max-width: 1099px) {
+  :root { --taskbar-width: 62px; }
+  .brand { padding: 18px 0; text-align: center; }
+  .brand-name, .brand-caption, .taskbar-caption, .taskbar-label, .live-card { display: none; }
+  .brand-short { display: block; }
+  .taskbar-items { margin-top: 10px; padding: 0 6px; }
+  .taskbar-item { position: relative; justify-content: center; padding: 8px 0; }
+  .taskbar-badge { position: absolute; top: 0; right: 0; min-width: 15px; padding: 0 3px; font-size: 10px; text-align: center; }
+  .taskbar-badge-word { display: none; }
+}
+
+/* Drawer taskbar on tablets and phones */
+@media (max-width: 899px) {
+  :root { --taskbar-width: 260px; --frame-gap: 12px; }
+  .frame { display: block; min-height: calc(100vh - var(--frame-gap) * 2); background: var(--panel); }
+  .taskbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: var(--taskbar-width);
+    height: auto;
+    border-right: var(--border);
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.2s ease, visibility 0.2s;
+  }
+  .taskbar.open { transform: none; visibility: visible; }
+  .brand { padding: 18px 16px; text-align: left; }
+  .brand-name, .brand-caption, .taskbar-label, .live-card { display: block; }
+  .brand-short { display: none; }
+  .taskbar-caption { display: block; }
+  .taskbar-items { padding: 0 8px; }
+  .taskbar-item { justify-content: flex-start; padding: 10px 8px; }
+  .taskbar-badge { position: static; min-width: 0; padding: 0 6px; font-size: 11px; }
+  .taskbar-badge-word { display: inline; }
+  .menu-button { display: grid; place-items: center; }
+  .topbar { flex-wrap: wrap; padding: 10px 14px; gap: 10px; }
+  .topbar-title { flex: 1 1 0; min-width: 0; }
+  .topbar-right { margin-left: 0; }
+  .command { order: 5; flex: 1 1 100%; max-width: none; }
+  .page { padding: 16px 14px; }
+}
+
+@media (max-width: 519px) {
+  :root { --frame-gap: 0px; }
+  .frame { border: 0; box-shadow: none; min-height: 100vh; }
+  .topbar-title { flex-basis: calc(100% - 46px); order: 1; }
+  .menu-button { order: 0; }
+  .topbar-right { order: 3; flex: 1 1 100%; justify-content: space-between; }
+}

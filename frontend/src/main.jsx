@@ -3,20 +3,26 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
-import { CartProvider } from './context/CartContext.jsx';
 import { NoticeProvider } from './context/NoticeContext.jsx';
-import './styles/style.css';
+import { ReceiptProvider } from './context/ReceiptContext.jsx';
+import { ThemeProvider } from './context/ThemeContext.jsx';
+import './styles/tokens.css';
+import './styles/base.css';
+import './styles/layout.css';
+import './styles/components.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <NoticeProvider>
-        <AuthProvider>
-          <CartProvider>
-            <App />
-          </CartProvider>
-        </AuthProvider>
-      </NoticeProvider>
+      <ThemeProvider>
+        <NoticeProvider>
+          <AuthProvider>
+            <ReceiptProvider>
+              <App />
+            </ReceiptProvider>
+          </AuthProvider>
+        </NoticeProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

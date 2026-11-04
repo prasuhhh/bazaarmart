@@ -47,7 +47,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     setUnauthorizedHandler(() => {
       clearSession();
-      showError('Your session has expired. Please log in again.', { keep: true });
+      showError('Session expired. Please sign in again.', { keep: true });
     });
   }, [clearSession, showError]);
 

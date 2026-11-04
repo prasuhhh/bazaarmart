@@ -1,29 +1,35 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api/client.js';
-import { useCart } from '../context/CartContext.jsx';
+import Stepper from '../components/ui/Stepper.jsx';
+import { useAuth } from '../context/AuthContext.jsx';
 import { useNotice } from '../context/NoticeContext.jsx';
+import { useReceipt } from '../context/ReceiptContext.jsx';
 import { formatPrice } from '../formatPrice.js';
+import Placeholder from './Placeholder.jsx';
 
 const EMPTY_ADDRESS = { name: '', phone: '', line1: '', city: '', state: '', pincode: '' };
 const SLOTS = ['Today 6–9 pm', 'Tomorrow'];
 const PAYMENT_METHODS = [['upi', 'UPI'], ['card', 'Card'], ['netbanking', 'Netbanking'], ['cod', 'Cash on delivery']];
 
-export default function Cart() {
-  const { items, setQty, removeItem, clearCart, total } = useCart();
+// A simple form that keeps checkout working until the three-step Counter is built.
+export default function Counter() {
+  const { user } = useAuth();
+  const { items, setQty, removeItem, clearReceipt, subtotal } = useReceipt();
   const { showSuccess, showError, clearNotice } = useNotice();
   const navigate = useNavigate();
   const [busy, setBusy] = useState(false);
   const [address, setAddress] = useState(EMPTY_ADDRESS);
 
   useEffect(() => {
+    if (!user) return;
     api('/users/me/addresses')
       .then(({ data }) => {
         const saved = data.find(entry => entry.isDefault);
         if (saved) setAddress(current => ({ ...current, ...saved }));
       })
       .catch(() => {});
-  }, []);
+  }, [user]);
 
   const updateAddress = field => event => setAddress(current => ({ ...current, [field]: event.target.value }));
 
@@ -33,18 +39,19 @@ export default function Cart() {
     setBusy(true);
     clearNotice();
     try {
-      const { message } = await api('/orders', {
+      const { message, data } = await api('/orders', {
         method: 'POST',
         body: {
           items: items.map(({ productId, qty }) => ({ productId, qty })),
           address,
           slot: { label: form.get('slot') },
-          payment: { method: form.get('payment') }
+          payment: { method: form.get('payment') },
+          ...(!user && { guest: { name: address.name, phone: address.phone } })
         }
       });
-      clearCart();
+      clearReceipt();
       showSuccess(message, { keep: true });
-      navigate('/orders');
+      navigate(`/track/${data.orderNo}`);
     } catch (error) {
       if (error.status !== 401) showError(error.message);
       setBusy(false);
@@ -53,39 +60,33 @@ export default function Cart() {
 
   if (!items.length) {
     return (
-      <section className="catalog">
-        <div className="section-heading"><div><span className="eyebrow">CART</span><h3>Your cart is empty</h3></div></div>
-        <Link className="primary" to="/products">Browse products</Link>
-      </section>
+      <Placeholder caption="Counter" title="Your receipt is empty." linkTo="/map" linkLabel="Walk the store">
+        Add something from the store floor, then come back to the counter.
+      </Placeholder>
     );
   }
 
   return (
     <section className="catalog">
-      <div className="section-heading"><div><span className="eyebrow">CART</span><h3>Your cart</h3></div></div>
       <div className="panel">
-        {items.map(item => (
-          <div className="cart-row" key={item.productId}>
+        {items.map(line => (
+          <div className="cart-row" key={line.productId}>
             <div className="cart-name">
-              <strong>{item.productName}</strong>
-              <small>{formatPrice(item.price)} each</small>
+              <strong>{line.productName}</strong>
+              <small>{line.productId} · {formatPrice(line.price)} each</small>
             </div>
-            <div className="qty">
-              <button className="outline" aria-label={`Reduce ${item.productName} quantity`} disabled={item.qty <= 1} onClick={() => setQty(item.productId, item.qty - 1)}>−</button>
-              <span>{item.qty}</span>
-              <button className="outline" aria-label={`Increase ${item.productName} quantity`} disabled={item.qty >= item.stock} onClick={() => setQty(item.productId, item.qty + 1)}>+</button>
-            </div>
-            <strong className="line-total">{formatPrice(item.price * item.qty)}</strong>
-            <button className="danger" onClick={() => removeItem(item.productId)}>Remove</button>
+            <Stepper name={line.productName} qty={line.qty} max={line.stock} onChange={qty => setQty(line.productId, qty)} />
+            <strong className="line-total">{formatPrice(line.price * line.qty)}</strong>
+            <button type="button" className="danger" onClick={() => removeItem(line.productId)}>Remove</button>
           </div>
         ))}
-        <div className="cart-total"><span>Subtotal <strong>{formatPrice(total)}</strong></span></div>
+        <div className="cart-total"><span>Subtotal <strong>{formatPrice(subtotal)}</strong></span></div>
       </div>
 
       <form className="panel form-grid" aria-label="Delivery details" onSubmit={placeOrder}>
-        <label>Name<input name="name" value={address.name} onChange={updateAddress('name')} required /></label>
-        <label>Phone<input name="phone" value={address.phone} onChange={updateAddress('phone')} required /></label>
-        <label className="full">Address<input name="line1" value={address.line1} onChange={updateAddress('line1')} required /></label>
+        <label>Name<input name="name" value={address.name} onChange={updateAddress('name')} autoComplete="name" required /></label>
+        <label>Phone<input name="phone" value={address.phone} onChange={updateAddress('phone')} autoComplete="tel" required /></label>
+        <label className="full">Address<input name="line1" value={address.line1} onChange={updateAddress('line1')} autoComplete="street-address" required /></label>
         <label>City<input name="city" value={address.city} onChange={updateAddress('city')} required /></label>
         <label>State<input name="state" value={address.state} onChange={updateAddress('state')} required /></label>
         <label>Pincode<input name="pincode" value={address.pincode} onChange={updateAddress('pincode')} inputMode="numeric" required /></label>
@@ -98,7 +99,7 @@ export default function Cart() {
         <div className="form-footer full">
           <button className="primary" disabled={busy}>{busy ? 'Please wait…' : 'Place order'}</button>
         </div>
-        <p className="muted full">This is a demo checkout, so no payment is taken. Orders under ₹999 add ₹49 delivery, and the final total is confirmed when you place the order.</p>
+        <p className="muted full">Payment is simulated. Orders under ₹999 add ₹49 delivery, and the final total is confirmed when you place the order.</p>
       </form>
     </section>
   );

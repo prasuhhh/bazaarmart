@@ -23,7 +23,7 @@ export default function Orders() {
         : !orders.length ? (
           <>
             <p className="empty">You haven't placed any orders yet.</p>
-            <Link className="primary" to="/products">Browse products</Link>
+            <Link className="primary" to="/map">Walk the store</Link>
           </>
         ) : orders.map(order => (
           <article className="panel order" key={order._id}>
