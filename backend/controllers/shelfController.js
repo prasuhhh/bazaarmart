@@ -24,6 +24,7 @@ async function withLivePrices(shelves) {
         ...base,
         productName: product.productName,
         image: product.images[0],
+        colours: product.colours,
         stock: product.quantity,
         currentPrice: product.productPrice,
         percentChange: percentChange(savedPrice, product.productPrice)

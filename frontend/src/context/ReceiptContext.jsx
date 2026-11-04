@@ -48,7 +48,8 @@ const toLine = (product, colour = product.colours?.[0]) => ({
 // Each account keeps its own receipt. Anything added as a guest joins it at sign-in.
 export function ReceiptProvider({ children }) {
   const { user } = useAuth();
-  const owner = user?.emailId ?? user?.phone ?? null;
+  // A phone account can add an email later, so the phone comes first to keep the key stable.
+  const owner = user?.phone ?? user?.emailId ?? null;
   const storageKey = owner ? userKey(owner) : GUEST_KEY;
   const keyRef = useRef(storageKey);
   const [items, setItems] = useState(() => readLines(storageKey));
