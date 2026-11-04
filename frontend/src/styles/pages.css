@@ -350,7 +350,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
   box-shadow: var(--hard-shadow);
 }
 .order-summary h3 { font: 700 15px var(--font-mono); }
-.order-thumbs { display: flex; gap: 8px; }
+.order-thumbs { display: flex; gap: 8px; width: 172px; }
 .order-thumbs a { flex: 0 0 52px; }
 .order-progress { min-width: 0; font-size: 12px; }
 .order-progress .segments { margin-bottom: 6px; }
@@ -360,6 +360,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 
 @media (max-width: 1199px) {
   .order-card { grid-template-columns: minmax(0, 1fr) auto; }
+  .order-thumbs { width: auto; }
   .order-progress { grid-column: 1 / -1; }
   .order-actions { grid-column: 1 / -1; }
 }
