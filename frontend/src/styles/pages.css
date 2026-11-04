@@ -265,6 +265,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 
 @media (max-width: 1099px) {
   .map-top { grid-template-columns: minmax(0, 1fr) 240px; }
+  .zone-tile strong { font-size: var(--text-body); }
   .sheet-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 

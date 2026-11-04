@@ -9,7 +9,7 @@ Audited on 5 November 2026 against CONTEXT.md section 11 and DESIGN.md section 1
 | Check | Result |
 |---|---|
 | Backend tests (`npm test`) | 308 of 308 pass |
-| Browser checks | 136 of 136 pass, across three suites |
+| Browser checks | 137 of 137 pass, across three suites, plus 72 layout measurements |
 | Thunder Client collection, replayed from the exported file | 183 of 183 requests return the expected status |
 | Routes in the code missing from the collection | 0 of 54 |
 | curl scripts | All pass, with the catalogue script also run under `REQUIRE_AUTH_FOR_CATALOGUE=true` |
@@ -37,7 +37,7 @@ The collection saw 200, 201, 204, 400, 401, 403, 404, 409, 429 and 501. 503 need
 |---|---|---|---|
 | D1 | Day and Night shift toggle works and persists | Pass | Browser check, including after a reload |
 | D2 | GO TO: `A-01-117` jumps to its sheet; "earbuds" lists matches | Pass | Test D2; browser checks for SKU + Enter and for picking a result |
-| D3 | Tile sizes reflect stock; click opens the zone; peek shows the first bay | Pass | Test D3; browser checks. Area per unit of stock is within 1.3× across eight zones. Body care is larger than its share so its name stays readable |
+| D3 | Tile sizes reflect stock; click opens the zone; peek shows the first bay | Pass | Test D3; browser checks. Area per unit of stock is within 1.4× across eight zones. Body care is larger than its share so its name stays readable |
 | D4 | Filters change results and the URL | Pass | Test D4; browser check, including a reload |
 | D5 | `+`, the product sheet and conveyor drag all update Receipt · N | Pass | Browser checks for all three, including a drag dropped elsewhere adding nothing |
 | D6 | Guest can check out; a member sees the order; totals are computed server-side | Pass | Test D6, which sends false prices; browser check of the guest journey |
