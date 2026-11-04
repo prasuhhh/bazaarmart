@@ -1,10 +1,11 @@
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Accepts 9876543210 or +91 98765 43210 and returns +919876543210, or null if invalid.
+// A + is optional because an unencoded + in a URL query arrives as a space.
 export function normalizePhone(value) {
   if (typeof value !== 'string') return null;
   const digits = value.replace(/[\s-]/g, '');
-  const match = /^(?:\+91)?([6-9]\d{9})$/.exec(digits);
+  const match = /^(?:\+?91)?([6-9]\d{9})$/.exec(digits);
   return match ? `+91${match[1]}` : null;
 }
 

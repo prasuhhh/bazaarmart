@@ -1,11 +1,13 @@
 import { Router } from 'express';
-import { authenticate } from '../middleware/auth.js';
-import { listMyOrders, placeOrder } from '../controllers/orderController.js';
+import { getOrder, listMyOrders, placeOrder, trackOrder, updateOrder } from '../controllers/orderController.js';
+import { authenticate, optionalAuth } from '../middleware/auth.js';
 
 const router = Router();
 
-router.use(authenticate);
-router.post('/', placeOrder);
-router.get('/', listMyOrders);
+router.post('/', optionalAuth, placeOrder);
+router.get('/', authenticate, listMyOrders);
+router.get('/:orderNo', optionalAuth, getOrder);
+router.get('/:orderNo/track', optionalAuth, trackOrder);
+router.patch('/:orderNo', optionalAuth, updateOrder);
 
 export default router;

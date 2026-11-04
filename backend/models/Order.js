@@ -47,7 +47,8 @@ const orderSchema = new mongoose.Schema({
   },
   subtotal: { type: Number, required: true, min: 0 },
   delivery: { type: Number, default: 0, min: 0 },
-  coupon: { type: Number, default: 0, min: 0 },
+  coupon: { type: Number, default: 0, min: 0 }, // the discount amount
+  couponCode: String,
   total: { type: Number, required: true, min: 0 },
   status: { type: String, enum: ORDER_STATUSES, default: 'placed' },
   events: [{
@@ -57,6 +58,8 @@ const orderSchema = new mongoose.Schema({
   }],
   courier: { name: String, phone: String },
   etaAt: Date,
+  leaveAtDoor: { type: Boolean, default: false },
+  deliveryNote: { type: String, trim: true, maxlength: 200 },
   // Hidden by default. Only the tracking route may reveal it, and only to the owner.
   deliveryOtp: {
     type: String,

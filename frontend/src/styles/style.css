@@ -96,3 +96,7 @@ td{padding:10px;border-bottom:1px solid #eff2ee;white-space:nowrap}
   .account-header{flex-wrap:wrap}
   .form-footer button{flex:1}
 }
+
+/* Cart delivery form */
+.form-grid select{width:100%;border:1px solid #dfe5df;border-radius:9px;padding:12px;font:14px 'DM Sans';background:#fcfdfb;color:inherit;outline:none}
+.form-grid select:focus{border-color:#46775a;box-shadow:0 0 0 3px #46775a16}

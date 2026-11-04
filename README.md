@@ -73,12 +73,12 @@ Run these from the project root.
 | `/` | Home | Public |
 | `/register`, `/login` | Account forms | Public |
 | `/products` | Catalogue with search, category filter, sorting and pagination | Logged in |
-| `/cart` | Cart and checkout | Logged in |
+| `/cart` | Cart and a simple delivery form | Logged in |
 | `/orders` | Order history | Logged in |
 | `/profile` | Account settings: personal details (PATCH), password (PUT), delete account (DELETE) | Logged in |
 | `/admin/products` | Add, edit and delete products | Admin |
 
-Checkout is a demo: it places a real order and reduces stock, but no payment is taken.
+Checkout places a real order and reduces stock, but no payment is taken.
 
 ## API
 
@@ -169,10 +169,43 @@ Both GET routes also accept:
 
 | Method | Path | Access | Result |
 |---|---|---|---|
-| POST | `/api/orders` | Logged in | Body `{ "items": [{ "productId": "P001", "qty": 2 }] }`: 201, 400, 404, 409 if stock is short |
-| GET | `/api/orders` | Logged in | Your own orders, newest first |
+| POST | `/api/orders` | Public or logged in | Place an order: 201, 400, 404, 409 if stock is short |
+| GET | `/api/orders?status=` | Logged in | Your orders, newest first. `status` is `live`, `delivered`, `returns` or `cancelled` |
+| GET | `/api/orders/:orderNo` | Owner or admin | One order |
+| GET | `/api/orders/:orderNo/track` | Owner or admin | Events, ETA window and courier, plus the delivery OTP for the owner once out for delivery |
+| PATCH | `/api/orders/:orderNo` | Owner | `{ "slot" }`, `{ "leaveAtDoor", "deliveryNote" }` or `{ "cancel": true }`. Cancelling works only before shipping and restores stock |
+| PATCH | `/api/admin/orders/:orderNo/status` | Admin | `{ "status" }`, one step at a time: 200, 400, 404, 409 |
 
-Order totals are always calculated on the server from database prices.
+A checkout body looks like this. Logged-in customers leave out `guest`; for guests it needs a name and phone. On guest orders, pass `?phone=` with the number used at checkout.
+
+```json
+{
+  "items": [{ "productId": "A-01-117", "qty": 1 }],
+  "address": { "name": "Asha", "phone": "9876543210", "line1": "221B Lake Road", "city": "Chennai", "state": "Tamil Nadu", "pincode": "600001" },
+  "slot": { "label": "Tomorrow" },
+  "payment": { "method": "upi" },
+  "coupon": "WELCOME10",
+  "gift": { "wrap": true, "note": "Happy birthday" },
+  "gst": { "invoice": true, "gstin": "33AAAAA0000A1Z5" },
+  "guest": { "name": "Asha", "phone": "9876543210", "email": "asha@example.com" }
+}
+```
+
+Prices and totals are always calculated on the server from the database. Delivery costs ₹49 below ₹999 and is free from ₹999. Coupon codes are `WELCOME10` (10% off, up to ₹500), `BAZAAR200` (₹200 off from ₹1500) and `FREESHIP`. Payment is simulated: UPI, card and netbanking succeed, and COD stays pending until delivery. Card details are never stored.
+
+### Saved shelves
+
+These need a login and work only on your own shelves, except the public share link.
+
+| Method | Path | Result |
+|---|---|---|
+| GET, POST | `/api/shelves` | List with live prices, or create from `{ "name" }`: 201 |
+| GET, PATCH, DELETE | `/api/shelves/:id` | Read, rename, or delete: 204 |
+| POST | `/api/shelves/:id/items` | Save `{ "productId" }` at its current price: 201, 409 if already saved |
+| DELETE | `/api/shelves/:id/items/:productId` | Remove: 204 |
+| GET | `/api/shelves/shared/:shareId` | Public. Shelf name and items, with no owner details |
+
+Each item shows `savedPrice`, `currentPrice` and `percentChange`.
 
 ### Status codes
 
@@ -192,7 +225,7 @@ Order totals are always calculated on the server from database prices.
 
 `npm test` covers the API, the data models and the seed script on temporary databases, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
 
-`bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl, and `docs/api-tests/catalogue-curl.sh` does the same for the catalogue (see the top of that file for its arguments). It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
+`bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl, and `docs/api-tests/catalogue-curl.sh` and `docs/api-tests/orders-curl.sh` do the same for the catalogue and for orders (see the top of each file for its arguments). It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
 
 To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminEmail` and `adminPassword` collection variables to your `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` values, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
 

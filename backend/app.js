@@ -4,10 +4,12 @@ import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
 import helmet from 'helmet';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
 import { normalizePhone } from './middleware/validate.js';
+import adminRoutes from './routes/adminRoutes.js';
 import { createAuthRoutes } from './routes/authRoutes.js';
 import catalogueRoutes from './routes/catalogueRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import productRoutes from './routes/productRoutes.js';
+import shelfRoutes from './routes/shelfRoutes.js';
 import { createUserRoutes } from './routes/userRoutes.js';
 import { ok } from './utils/response.js';
 
@@ -73,6 +75,8 @@ export function createApp({ authRateLimit = 10, otpRateLimit = 5 } = {}) {
   app.use('/api', catalogueRoutes);
   app.use('/api/products', productRoutes);
   app.use('/api/orders', orderRoutes);
+  app.use('/api/shelves', shelfRoutes);
+  app.use('/api/admin', adminRoutes);
 
   app.use(notFound);
   app.use(errorHandler);

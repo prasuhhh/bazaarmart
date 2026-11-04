@@ -290,12 +290,17 @@ describe('managing products', () => {
 });
 
 describe('orders', () => {
-  const order = (token, items) => auth(request(app).post('/api/orders'), token).send({ items });
+  const checkout = {
+    address: { name: 'Asha', phone: '9876543210', line1: '221B Lake Road', city: 'Chennai', state: 'TN', pincode: '600001' },
+    slot: { label: 'Tomorrow' },
+    payment: { method: 'cod' }
+  };
+  const order = (token, items) => auth(request(app).post('/api/orders'), token).send({ items, ...checkout });
   const stockOf = async productId => (await Product.findOne({ productId })).quantity;
 
   it('places an order at database prices and reduces stock', async () => {
     const res = await auth(request(app).post('/api/orders'), userToken)
-      .send({ items: [{ productId: 'P001', qty: 2, price: 1 }, { productId: 'P003', qty: 1 }], total: 1 });
+      .send({ items: [{ productId: 'P001', qty: 2, price: 1 }, { productId: 'P003', qty: 1 }], total: 1, ...checkout });
     assert.equal(res.status, 201);
     assert.equal(res.body.data.total, 599 * 2 + 120);
     assert.equal(res.body.data.status, 'placed');

@@ -1,15 +1,11 @@
-import { normalizePhone } from '../middleware/validate.js';
 import User from '../models/User.js';
+import { ADDRESS_FIELDS, pick, REQUIRED_DELIVERY_FIELDS, requireAddressFields } from '../utils/address.js';
 import { ApiError, created, noContent, ok } from '../utils/response.js';
 
-const ADDRESS_FIELDS = ['label', 'name', 'phone', 'line1', 'line2', 'city', 'state', 'pincode'];
-const REQUIRED_ADDRESS_FIELDS = ['label', 'name', 'phone', 'line1', 'city', 'state', 'pincode'];
+const REQUIRED_ADDRESS_FIELDS = ['label', ...REQUIRED_DELIVERY_FIELDS];
 const DEVICE_FIELDS = ['name', 'category', 'purchasedAt', 'warrantyUntil'];
 const STYLE_FIELDS = ['sizes', 'colours', 'brands'];
 const NOTIFICATION_FIELDS = ['orderUpdates', 'priceDrops', 'newDrops'];
-
-const pick = (body, fields) =>
-  Object.fromEntries(fields.filter(key => body[key] !== undefined).map(key => [key, body[key]]));
 
 async function currentUser(req) {
   const user = await User.findById(req.user.userId);
@@ -21,13 +17,6 @@ function findItem(list, id, label) {
   const item = list.id(id);
   if (!item) throw new ApiError(404, `${label} not found.`);
   return item;
-}
-
-function checkAddress(address) {
-  const missing = REQUIRED_ADDRESS_FIELDS.filter(field => !address[field]);
-  if (missing.length) throw new ApiError(400, `Address needs: ${missing.join(', ')}.`);
-  address.phone = normalizePhone(address.phone);
-  if (!address.phone) throw new ApiError(400, 'Enter a valid 10-digit Indian mobile number.');
 }
 
 // Keeps exactly one default: the chosen address wins, and if none is left marked,
@@ -49,7 +38,7 @@ export async function listAddresses(req, res) {
 export async function addAddress(req, res) {
   const user = await currentUser(req);
   const fields = pick(req.body, ADDRESS_FIELDS);
-  checkAddress(fields);
+  requireAddressFields(fields, REQUIRED_ADDRESS_FIELDS);
 
   user.addresses.push({ ...fields, isDefault: req.body.isDefault === true });
   const address = user.addresses.at(-1);
@@ -62,7 +51,7 @@ export async function updateAddress(req, res) {
   const user = await currentUser(req);
   const address = findItem(user.addresses, req.params.id, 'Address');
   address.set(pick(req.body, ADDRESS_FIELDS));
-  checkAddress(address);
+  requireAddressFields(address, REQUIRED_ADDRESS_FIELDS);
   if (typeof req.body.isDefault === 'boolean') address.isDefault = req.body.isDefault;
 
   settleDefault(user.addresses, address);
