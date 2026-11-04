@@ -36,14 +36,14 @@
   border-bottom: var(--border);
   text-decoration: none;
 }
-.brand-name { display: block; font: 700 24px/1.1 var(--font-title); letter-spacing: -0.02em; }
+.brand-name { display: block; font: 700 var(--text-title)/1.1 var(--font-title); letter-spacing: -0.02em; }
 .brand-slash { color: var(--accent); }
-.brand-caption { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); }
-.brand-short { display: none; font: 700 20px/1 var(--font-title); }
+.brand-caption { display: block; margin-top: 4px; font-size: var(--text-caption); color: var(--muted); }
+.brand-short { display: none; font: 700 var(--text-title)/1 var(--font-title); }
 
 .taskbar-caption {
   margin: 18px 16px 8px;
-  font-size: 11px;
+  font-size: var(--text-caption);
   letter-spacing: 0.16em;
   color: var(--muted);
 }
@@ -59,7 +59,7 @@
   border: 0;
   border-radius: 4px;
   background: none;
-  font-size: 13px;
+  font-size: var(--text-body);
   text-align: left;
   text-decoration: none;
 }
@@ -73,7 +73,7 @@
   border-radius: 3px;
   background: var(--accent);
   color: var(--accent-ink);
-  font-size: 11px;
+  font-size: var(--text-caption);
   white-space: nowrap;
 }
 
@@ -83,7 +83,7 @@
   padding: 10px;
   border: var(--dashed);
   background: var(--panel);
-  font-size: 11px;
+  font-size: var(--text-caption);
   text-decoration: none;
 }
 .taskbar-items + .live-card { margin-top: 16px; }
@@ -104,12 +104,12 @@
   background: var(--panel);
   border-bottom: var(--border);
 }
-.topbar-title { font-size: 19px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar-title { font-size: var(--text-title); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .topbar-right { display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none; }
 
 .menu-button { display: none; flex: none; width: 36px; height: 36px; padding: 0; border: var(--dashed); background: none; }
 
-.receipt-button { padding: 8px 2px; border: 0; background: none; font-size: 12px; white-space: nowrap; }
+.receipt-button { padding: 8px 2px; border: 0; background: none; font-size: var(--text-caption); white-space: nowrap; }
 .receipt-button:hover { text-decoration: underline; }
 
 .avatar-button {
@@ -120,7 +120,7 @@
   height: 34px;
   border: var(--border);
   border-radius: 50%;
-  font-size: 12px;
+  font-size: var(--text-caption);
   font-weight: 700;
   text-decoration: none;
 }
@@ -133,7 +133,7 @@
   border: var(--dashed);
   border-radius: 0;
   background: none;
-  font-size: 12px;
+  font-size: var(--text-caption);
   text-overflow: ellipsis;
   outline-offset: 1px;
 }
@@ -158,12 +158,12 @@
   justify-content: space-between;
   gap: 10px;
   padding: 7px 8px;
-  font-size: 12px;
+  font-size: var(--text-caption);
   cursor: pointer;
 }
 .command-result[aria-selected='true'] { background: var(--ink); color: var(--panel); }
-.command-result small { flex: none; color: inherit; opacity: 0.65; font-size: 11px; }
-.command-empty { padding: 8px; font-size: 12px; color: var(--muted); }
+.command-result small { flex: none; color: inherit; opacity: 0.65; font-size: var(--text-caption); }
+.command-empty { padding: 8px; font-size: var(--text-caption); color: var(--muted); }
 
 /* Receipt drawer and the mobile taskbar share this backdrop */
 .backdrop { position: fixed; inset: 0; z-index: 40; border: 0; background: rgb(0 0 0 / 0.45); }
@@ -191,12 +191,12 @@
   padding: 16px;
   border-bottom: var(--border);
 }
-.drawer-header h2 { font-size: 18px; }
-.drawer-close { padding: 4px 8px; border: var(--dashed); background: none; font-size: 12px; }
+.drawer-header h2 { font-size: var(--text-title); }
+.drawer-close { padding: 4px 8px; border: var(--dashed); background: none; font-size: var(--text-caption); }
 .drawer-lines { flex: 1; margin: 0; padding: 0 16px; overflow-y: auto; list-style: none; }
 .drawer-line { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; padding: 12px 0; border-bottom: var(--dashed); }
-.drawer-line-name { font-size: 12px; overflow-wrap: anywhere; }
-.drawer-line-price { font-size: 12px; font-weight: 700; white-space: nowrap; }
+.drawer-line-name { font-size: var(--text-caption); overflow-wrap: anywhere; }
+.drawer-line-price { font-size: var(--text-caption); font-weight: 700; white-space: nowrap; }
 .drawer-empty { padding: 24px 16px; color: var(--muted); }
 .drawer-footer { padding: 16px; border-top: var(--border); }
 .drawer-subtotal { display: flex; justify-content: space-between; margin-bottom: 12px; font-weight: 700; }
@@ -210,7 +210,7 @@
   .brand-short { display: block; }
   .taskbar-items { margin-top: 10px; padding: 0 6px; }
   .taskbar-item { position: relative; justify-content: center; padding: 8px 0; }
-  .taskbar-badge { position: absolute; top: 0; right: 0; min-width: 15px; padding: 0 3px; font-size: 10px; text-align: center; }
+  .taskbar-badge { position: absolute; top: 0; right: 0; min-width: 15px; padding: 0 3px; font-size: var(--text-caption); text-align: center; }
   .taskbar-badge-word { display: none; }
 }
 
@@ -238,7 +238,7 @@
   .taskbar-caption { display: block; }
   .taskbar-items { padding: 0 8px; }
   .taskbar-item { justify-content: flex-start; padding: 10px 8px; }
-  .taskbar-badge { position: static; min-width: 0; padding: 0 6px; font-size: 11px; }
+  .taskbar-badge { position: static; min-width: 0; padding: 0 6px; font-size: var(--text-caption); }
   .taskbar-badge-word { display: inline; }
   .menu-button { display: grid; place-items: center; }
   .topbar { flex-wrap: wrap; gap: 10px; }

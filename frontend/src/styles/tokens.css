@@ -23,6 +23,11 @@
   --frame-gap: 24px;
   --taskbar-width: 240px;
 
+  /* One set of type sizes. */
+  --text-caption: 12px;
+  --text-body: 14px;
+  --text-title: 22px;
+
   /* One page layout. Pages use these and set no widths or paddings of their own. */
   --page-max: 1280px;
   --page-pad: 24px;
