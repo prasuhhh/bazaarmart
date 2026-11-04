@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { useReceipt } from '../../context/ReceiptContext.jsx';
+import { lineIdOf, useReceipt } from '../../context/ReceiptContext.jsx';
 import { formatPrice } from '../../formatPrice.js';
 import Stepper from '../ui/Stepper.jsx';
 import Thumb from '../ui/Thumb.jsx';
@@ -34,15 +34,15 @@ export default function ReceiptDrawer() {
         {items.length ? (
           <ul className="drawer-lines">
             {items.map(line => (
-              <li className="drawer-line" key={line.productId}>
+              <li className="drawer-line" key={lineIdOf(line)}>
                 <Thumb src={line.image} />
                 <div>
-                  <p className="drawer-line-name">{line.productName}</p>
-                  <Stepper name={line.productName} qty={line.qty} max={line.stock} onChange={qty => setQty(line.productId, qty)} />
+                  <p className="drawer-line-name">{line.productName}{line.colour && ` · ${line.colour}`}</p>
+                  <Stepper name={line.productName} qty={line.qty} max={line.stock} onChange={qty => setQty(lineIdOf(line), qty)} />
                 </div>
                 <div>
                   <p className="drawer-line-price">{formatPrice(line.price * line.qty)}</p>
-                  <button type="button" className="link-button" aria-label={`Remove ${line.productName}`} onClick={() => removeItem(line.productId)}>Remove</button>
+                  <button type="button" className="link-button" aria-label={`Remove ${line.productName}`} onClick={() => removeItem(lineIdOf(line))}>Remove</button>
                 </div>
               </li>
             ))}

@@ -1,64 +1,108 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../api/client.js';
-import Stepper from '../components/ui/Stepper.jsx';
+import CounterStep from '../components/counter/CounterStep.jsx';
+import DeliverStep, { addressSummary } from '../components/counter/DeliverStep.jsx';
+import ExtrasStrip from '../components/counter/ExtrasStrip.jsx';
+import MockPayment from '../components/counter/MockPayment.jsx';
+import PayStep, { paymentLabel } from '../components/counter/PayStep.jsx';
+import ReceiptPanel from '../components/counter/ReceiptPanel.jsx';
+import WhenStep from '../components/counter/WhenStep.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useNotice } from '../context/NoticeContext.jsx';
 import { useReceipt } from '../context/ReceiptContext.jsx';
-import { formatPrice } from '../formatPrice.js';
+import { useFetch } from '../hooks/useFetch.js';
+import { useQuote } from '../hooks/useQuote.js';
 import Placeholder from './Placeholder.jsx';
 
-const EMPTY_ADDRESS = { name: '', phone: '', line1: '', city: '', state: '', pincode: '' };
-const SLOTS = ['Today 6–9 pm', 'Tomorrow'];
-const PAYMENT_METHODS = [['upi', 'UPI'], ['card', 'Card'], ['netbanking', 'Netbanking'], ['cod', 'Cash on delivery']];
+const PAID_PAUSE_MS = 1200;
+const NO_EXTRAS = { wrap: false, note: '', gst: false, gstin: '' };
 
-// A simple form that keeps checkout working until the three-step Counter is built.
 export default function Counter() {
   const { user } = useAuth();
-  const { items, setQty, removeItem, clearReceipt, subtotal } = useReceipt();
+  const { items, clearReceipt } = useReceipt();
   const { showSuccess, showError, clearNotice } = useNotice();
   const navigate = useNavigate();
+  const addresses = useFetch(user ? '/users/me/addresses' : null);
+
+  const [address, setAddress] = useState(null);
+  const [slot, setSlot] = useState(null);
+  const [method, setMethod] = useState(null);
+  const [extras, setExtras] = useState(NO_EXTRAS);
+  const [coupon, setCoupon] = useState('');
+  const [openStep, setOpenStep] = useState(1);
+  const [isPaying, setIsPaying] = useState(false);
+  const [placed, setPlaced] = useState(null);
   const [busy, setBusy] = useState(false);
-  const [address, setAddress] = useState(EMPTY_ADDRESS);
+  const quoted = useQuote(items, coupon);
+
+  // Collapses the finished step and opens the next one still to do.
+  function moveOn(changes) {
+    const next = { address, slot, method, ...changes };
+    setOpenStep(!next.address ? 1 : !next.slot ? 2 : !next.method ? 3 : 0);
+  }
 
   useEffect(() => {
-    if (!user) return;
-    api('/users/me/addresses')
-      .then(({ data }) => {
-        const saved = data.find(entry => entry.isDefault);
-        if (saved) setAddress(current => ({ ...current, ...saved }));
-      })
-      .catch(() => {});
-  }, [user]);
+    const preferred = addresses.data?.find(entry => entry.isDefault);
+    if (!preferred || address) return;
+    setAddress(preferred);
+    moveOn({ address: preferred });
+    // Only a newly loaded address list should pick the default.
+  }, [addresses.data]);
 
-  const updateAddress = field => event => setAddress(current => ({ ...current, [field]: event.target.value }));
+  const finish = ({ message, data }) => {
+    clearReceipt();
+    showSuccess(message, { keep: true });
+    navigate(`/track/${data.orderNo}`);
+  };
 
-  async function placeOrder(event) {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
+  useEffect(() => {
+    if (!placed) return undefined;
+    const timer = setTimeout(() => finish(placed), PAID_PAUSE_MS);
+    return () => clearTimeout(timer);
+  }, [placed]);
+
+  async function placeOrder() {
     setBusy(true);
     clearNotice();
     try {
-      const { message, data } = await api('/orders', {
+      return await api('/orders', {
         method: 'POST',
         body: {
-          items: items.map(({ productId, qty }) => ({ productId, qty })),
+          items: items.map(({ productId, colour, qty }) => ({ productId, colour, qty })),
           address,
-          slot: { label: form.get('slot') },
-          payment: { method: form.get('payment') },
+          slot,
+          payment: { method },
+          coupon: coupon || undefined,
+          gift: { wrap: extras.wrap, note: extras.note || undefined },
+          gst: { invoice: extras.gst, gstin: extras.gstin },
           ...(!user && { guest: { name: address.name, phone: address.phone } })
         }
       });
-      clearReceipt();
-      showSuccess(message, { keep: true });
-      navigate(`/track/${data.orderNo}`);
     } catch (error) {
       if (error.status !== 401) showError(error.message);
+      quoted.reload();
       setBusy(false);
+      setIsPaying(false);
+      return null;
     }
   }
 
-  if (!items.length) {
+  async function handlePay() {
+    if (method !== 'cod') {
+      setIsPaying(true);
+      return;
+    }
+    const result = await placeOrder();
+    if (result) finish(result);
+  }
+
+  async function confirmPayment() {
+    const result = await placeOrder();
+    if (result) setPlaced(result);
+  }
+
+  if (!items.length && !placed) {
     return (
       <Placeholder caption="Counter" title="Your receipt is empty." linkTo="/map" linkLabel="Walk the store">
         Add something from the store floor, then come back to the counter.
@@ -66,41 +110,51 @@ export default function Counter() {
     );
   }
 
+  const missing = !address ? 1 : !slot ? 2 : !method ? 3 : 0;
+  const stepProps = number => ({ number, isOpen: openStep === number, onOpen: () => setOpenStep(openStep === number ? 0 : number) });
+
   return (
-    <section className="catalog">
-      <div className="panel">
-        {items.map(line => (
-          <div className="cart-row" key={line.productId}>
-            <div className="cart-name">
-              <strong>{line.productName}</strong>
-              <small>{line.productId} · {formatPrice(line.price)} each</small>
-            </div>
-            <Stepper name={line.productName} qty={line.qty} max={line.stock} onChange={qty => setQty(line.productId, qty)} />
-            <strong className="line-total">{formatPrice(line.price * line.qty)}</strong>
-            <button type="button" className="danger" onClick={() => removeItem(line.productId)}>Remove</button>
-          </div>
-        ))}
-        <div className="cart-total"><span>Subtotal <strong>{formatPrice(subtotal)}</strong></span></div>
+    <div className="counter">
+      <div className="counter-steps">
+        <CounterStep {...stepProps(1)} title="Deliver to" isDone={Boolean(address)} summary={address ? addressSummary(address) : 'Add where this should go'}>
+          <DeliverStep
+            saved={addresses.data}
+            chosen={address}
+            onAdded={addresses.reload}
+            onChoose={next => { setAddress(next); moveOn({ address: next }); }}
+          />
+        </CounterStep>
+
+        <CounterStep {...stepProps(2)} title="When" isDone={Boolean(slot)} summary={slot?.label ?? 'Today 6–9 pm · Tomorrow · Pick a day'}>
+          <WhenStep chosen={slot} onChoose={next => { setSlot(next); moveOn({ slot: next }); }} />
+        </CounterStep>
+
+        <CounterStep {...stepProps(3)} title="Pay with" isDone={Boolean(method)} summary={paymentLabel(method) ?? 'UPI · Card · Netbanking · COD'}>
+          <PayStep chosen={method} onChoose={next => { setMethod(next); moveOn({ method: next }); }} />
+        </CounterStep>
+
+        <ExtrasStrip extras={extras} onChange={setExtras} />
       </div>
 
-      <form className="panel form-grid" aria-label="Delivery details" onSubmit={placeOrder}>
-        <label>Name<input name="name" value={address.name} onChange={updateAddress('name')} autoComplete="name" required /></label>
-        <label>Phone<input name="phone" value={address.phone} onChange={updateAddress('phone')} autoComplete="tel" required /></label>
-        <label className="full">Address<input name="line1" value={address.line1} onChange={updateAddress('line1')} autoComplete="street-address" required /></label>
-        <label>City<input name="city" value={address.city} onChange={updateAddress('city')} required /></label>
-        <label>State<input name="state" value={address.state} onChange={updateAddress('state')} required /></label>
-        <label>Pincode<input name="pincode" value={address.pincode} onChange={updateAddress('pincode')} inputMode="numeric" required /></label>
-        <label>Delivery slot
-          <select name="slot">{SLOTS.map(slot => <option key={slot}>{slot}</option>)}</select>
-        </label>
-        <label>Payment
-          <select name="payment">{PAYMENT_METHODS.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select>
-        </label>
-        <div className="form-footer full">
-          <button className="primary" disabled={busy}>{busy ? 'Please wait…' : 'Place order'}</button>
-        </div>
-        <p className="muted full">Payment is simulated. Orders under ₹999 add ₹49 delivery, and the final total is confirmed when you place the order.</p>
-      </form>
-    </section>
+      <ReceiptPanel
+        quoted={quoted}
+        coupon={coupon}
+        onCoupon={setCoupon}
+        blockedBy={missing ? `Finish step ${missing} to pay.` : null}
+        busy={busy}
+        onPay={handlePay}
+      />
+
+      {isPaying && (
+        <MockPayment
+          methodLabel={paymentLabel(method)}
+          total={quoted.quote?.total ?? 0}
+          isPaid={Boolean(placed)}
+          busy={busy}
+          onConfirm={confirmPayment}
+          onCancel={() => setIsPaying(false)}
+        />
+      )}
+    </div>
   );
 }

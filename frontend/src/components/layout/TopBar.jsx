@@ -22,7 +22,7 @@ export default function TopBar({ zones, isTaskbarOpen, onMenu }) {
       <CommandBox zones={zones} />
       <div className="topbar-right">
         <ShiftToggle />
-        <button type="button" className="receipt-button" onClick={openReceipt}>Receipt · {lineCount}</button>
+        <button type="button" className="receipt-button" data-receipt-target onClick={openReceipt}>Receipt · {lineCount}</button>
         <Link className="avatar-button" to={user ? '/profile' : '/signin'} aria-label={user ? 'Your profile' : 'Sign in'}>
           {initialsOf(user)}
         </Link>

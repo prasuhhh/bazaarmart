@@ -525,3 +525,78 @@ describe('admin status changes', () => {
     assert.equal(order.events.filter(event => event.status === 'packed').length, 1);
   });
 });
+
+describe('colours and quotes', () => {
+  const quote = body => request(app).post('/api/orders/quote').send(body);
+
+  beforeEach(async () => {
+    await Product.updateOne({ productId: 'P-MID' }, { colours: ['Black', 'Sand'] });
+  });
+
+  it('keeps the chosen colour on the order line', async () => {
+    const res = await placeGuest({ items: [{ productId: 'P-MID', qty: 1, colour: 'Sand' }] });
+    assert.equal(res.status, 201);
+    assert.equal(res.body.data.items[0].colour, 'Sand');
+  });
+
+  it('splits two colours of one product into two lines and takes stock for both', async () => {
+    const before = await stockOf('P-MID');
+    const res = await placeGuest({
+      items: [{ productId: 'P-MID', qty: 1, colour: 'Sand' }, { productId: 'P-MID', qty: 2, colour: 'Black' }]
+    });
+    assert.equal(res.status, 201);
+    assert.equal(res.body.data.items.length, 2);
+    assert.equal(await stockOf('P-MID'), before - 3);
+  });
+
+  it('rejects a colour the product does not come in, without touching stock', async () => {
+    const before = await stockOf('P-MID');
+    const res = await placeGuest({ items: [{ productId: 'P-MID', qty: 1, colour: 'Teal' }] });
+    assert.equal(res.status, 400);
+    assert.match(res.body.message, /doesn't come in Teal/);
+    assert.equal(await stockOf('P-MID'), before);
+  });
+
+  it('quotes from database prices, ignoring any price the client sends', async () => {
+    const { productPrice } = await Product.findOne({ productId: 'P-MID' });
+    const res = await quote({ items: [{ productId: 'P-MID', qty: 2, price: 1 }] });
+    assert.equal(res.status, 200);
+    assert.equal(res.body.data.lines[0].price, productPrice);
+    assert.equal(res.body.data.subtotal, productPrice * 2);
+    assert.equal(res.body.data.total, res.body.data.subtotal + res.body.data.delivery);
+  });
+
+  it('applies a coupon in the quote exactly as the order would', async () => {
+    const items = one('P-MID', 2);
+    const quoted = (await quote({ items, coupon: 'welcome10' })).body.data;
+    const order = (await placeGuest({ items, coupon: 'welcome10' })).body.data;
+    assert.equal(quoted.total, order.total);
+    assert.equal(quoted.coupon, order.coupon);
+    assert.equal(quoted.couponCode, 'WELCOME10');
+  });
+
+  it('does not reserve stock or create an order', async () => {
+    const before = await stockOf('P-MID');
+    const orders = await Order.countDocuments();
+    await quote({ items: one() });
+    assert.equal(await stockOf('P-MID'), before);
+    assert.equal(await Order.countDocuments(), orders);
+  });
+
+  it('explains a quote it cannot honour', async () => {
+    assert.equal((await quote({ items: [] })).status, 400);
+    assert.equal((await quote({ items: one(), coupon: 'NOPE' })).status, 400);
+    assert.equal((await quote({ items: one('P-GONE') })).status, 404);
+    assert.equal((await quote({ items: one('P-MID', 99999) })).status, 409);
+    const colour = await quote({ items: [{ productId: 'P-MID', qty: 1, colour: 'Teal' }] });
+    assert.equal(colour.status, 400);
+  });
+
+  it('counts both colours of a product against its stock in a quote', async () => {
+    const stock = await stockOf('P-MID');
+    const res = await quote({
+      items: [{ productId: 'P-MID', qty: stock, colour: 'Sand' }, { productId: 'P-MID', qty: 1, colour: 'Black' }]
+    });
+    assert.equal(res.status, 409);
+  });
+});

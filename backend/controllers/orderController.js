@@ -32,19 +32,23 @@ const COURIERS = [
   { name: 'Arjun Das', phone: '+919000000789' }
 ];
 
-// Adds up repeated lines so the same product can't get past the stock check twice.
+// Adds up repeated lines. The same product in two colours stays as two lines.
 function parseItems(items) {
   if (!Array.isArray(items) || !items.length) throw new ApiError(400, 'Add at least one item to your order.');
 
-  const totals = new Map();
+  const lines = new Map();
   for (const item of items) {
     const productId = typeof item?.productId === 'string' ? item.productId.trim() : '';
     if (!productId || !Number.isInteger(item.qty) || item.qty < 1) {
       throw new ApiError(400, 'Each item needs a productId and a whole-number qty of at least 1.');
     }
-    totals.set(productId, (totals.get(productId) || 0) + item.qty);
+    const colour = typeof item.colour === 'string' ? item.colour.trim() : '';
+    const key = `${productId}|${colour}`;
+    const line = lines.get(key);
+    if (line) line.qty += item.qty;
+    else lines.set(key, { productId, colour, qty: item.qty });
   }
-  return [...totals].map(([productId, qty]) => ({ productId, qty }));
+  return [...lines.values()];
 }
 
 function parseGuest(guest) {
@@ -95,15 +99,38 @@ function parseGst(gst) {
   return { invoice: true, gstin };
 }
 
-async function explainStockFailure({ productId, qty }) {
-  const product = await Product.findOne({ productId });
+function lineProblem(product, { productId, colour, qty }) {
   if (!product) return new ApiError(404, `Product ${productId} no longer exists.`);
+  if (colour && !product.colours.includes(colour)) {
+    return new ApiError(400, `${product.productName} doesn't come in ${colour}.`);
+  }
   return new ApiError(409, `Only ${product.quantity} of ${product.productName} left, but you asked for ${qty}.`);
 }
 
 export async function restoreStock(items) {
   await Promise.all(items.map(({ productId, qty }) =>
     Product.updateOne({ productId }, { $inc: { quantity: qty } })));
+}
+
+// What placing this order would cost right now. Nothing is reserved or saved.
+export async function quoteOrder(req, res) {
+  const requested = parseItems(req.body.items);
+  const couponCode = requireCoupon(req.body.coupon);
+  const products = await Product.find({ productId: { $in: requested.map(line => line.productId) } });
+  const bySku = new Map(products.map(product => [product.productId, product]));
+
+  const wanted = new Map();
+  for (const { productId, qty } of requested) wanted.set(productId, (wanted.get(productId) ?? 0) + qty);
+
+  const lines = requested.map(line => {
+    const product = bySku.get(line.productId);
+    const isAvailable = product && wanted.get(line.productId) <= product.quantity;
+    if (!isAvailable || (line.colour && !product.colours.includes(line.colour))) {
+      throw lineProblem(product, { ...line, qty: wanted.get(line.productId) });
+    }
+    return { ...line, name: product.productName, price: product.productPrice };
+  });
+  ok(res, { data: { lines, ...priceOrder(lines, couponCode), couponCode } });
 }
 
 export async function placeOrder(req, res) {
@@ -127,14 +154,18 @@ export async function placeOrder(req, res) {
   try {
     // Each decrement only matches when enough stock remains, so two buyers can't
     // take the last unit. Prices come from the database, never from the client.
-    for (const { productId, qty } of requested) {
+    for (const line of requested) {
+      const { productId, colour, qty } = line;
       const product = await Product.findOneAndUpdate(
-        { productId, quantity: { $gte: qty } },
+        { productId, quantity: { $gte: qty }, ...(colour && { colours: colour }) },
         { $inc: { quantity: -qty } },
         { new: true }
       );
-      if (!product) throw await explainStockFailure({ productId, qty });
-      reserved.push({ productId, name: product.productName, qty, price: product.productPrice, image: product.images[0] });
+      if (!product) throw lineProblem(await Product.findOne({ productId }), line);
+      reserved.push({
+        productId, name: product.productName, qty, price: product.productPrice,
+        image: product.images[0], ...(colour && { colour })
+      });
       arrivalDays = Math.max(arrivalDays, product.arrivesInDays ?? DEFAULT_ARRIVAL_DAYS);
     }
 

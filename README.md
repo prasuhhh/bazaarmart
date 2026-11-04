@@ -71,21 +71,23 @@ Run these from the project root.
 | Route | Page | Access |
 |---|---|---|
 | `/` | Opens the store map | Public |
-| `/map` | Store map (placeholder for now) | Public |
-| `/zone/:zoneCode` | Browse a zone (simple listing for now) | Public |
-| `/p/:sku` | Product sheet (placeholder for now) | Public |
+| `/map` | Store map: tiles sized by stock, peek panel, new-drops conveyor, kits | Public |
+| `/zone/:zoneCode` | Browse a zone: filter dials and shelf, list and bench views, all kept in the URL | Public |
+| `/p/:sku` | Product sheet: gallery, specs, colours, add, bench, save, fits with, reviews, Q&A | Public |
 | `/saved` | Saved shelf (placeholder for now) | Logged in |
-| `/counter` | Counter: checkout with a simple delivery form | Public, guests allowed |
+| `/counter` | Counter: three-step checkout on one screen, with a server-priced receipt | Public, guests allowed |
 | `/orders` | Order history | Logged in |
 | `/track/:orderNo` | Track parcel (placeholder for now) | Public, guests check by phone |
 | `/profile` | Account settings: personal details (PATCH), password (PUT), delete account (DELETE) | Logged in |
-| `/signin` | Sign in or create an account with email | Public |
+| `/signin` | Phone OTP first, then email login or registration. Google shows that it isn't configured | Public |
 | `/s/:shareId` | Shared shelf (placeholder for now) | Public |
 | `/admin/products` | Add, edit and delete products | Admin |
 
 `/login` and `/register` redirect to `/signin`. Every page sits in the same shell: the numbered Taskbar, a top bar with the GO TO box (press `/` to focus it), the Day and Night shift toggle, and the receipt drawer. The theme follows your system until you choose one. Guests keep a receipt in the browser, and it joins your account's receipt when you sign in.
 
-Checkout places a real order and reduces stock, but no payment is taken.
+Checkout places a real order and reduces stock, but no payment is taken: UPI, card and netbanking show a simulated confirmation, and no payment details are ever asked for.
+
+Add to the receipt with the `+` on any product, from the product sheet, or by dragging a conveyor card onto **Receipt** in the top bar (mouse or pen; on touch, use `+`). Sign-in by phone needs `OTP_MOCK=true` in `backend/.env`; outside production the code appears on screen and in the server log. The bench holds up to four products and stays in the browser.
 
 ## API
 
@@ -177,6 +179,7 @@ Both GET routes also accept:
 | Method | Path | Access | Result |
 |---|---|---|---|
 | POST | `/api/orders` | Public or logged in | Place an order: 201, 400, 404, 409 if stock is short |
+| POST | `/api/orders/quote` | Public | `{ "items", "coupon" }`. Prices a receipt from the database without saving anything or reserving stock: 200, 400, 404, 409 |
 | GET | `/api/orders?status=` | Logged in | Your orders, newest first. `status` is `live`, `delivered`, `returns` or `cancelled` |
 | GET | `/api/orders/:orderNo` | Owner or admin | One order |
 | GET | `/api/orders/:orderNo/track` | Owner or admin | Events, ETA window and courier, plus the delivery OTP for the owner once out for delivery |
@@ -187,7 +190,7 @@ A checkout body looks like this. Logged-in customers leave out `guest`; for gues
 
 ```json
 {
-  "items": [{ "productId": "A-01-117", "qty": 1 }],
+  "items": [{ "productId": "A-01-117", "qty": 1, "colour": "Sand" }],
   "address": { "name": "Asha", "phone": "9876543210", "line1": "221B Lake Road", "city": "Chennai", "state": "Tamil Nadu", "pincode": "600001" },
   "slot": { "label": "Tomorrow" },
   "payment": { "method": "upi" },
@@ -197,6 +200,8 @@ A checkout body looks like this. Logged-in customers leave out `guest`; for gues
   "guest": { "name": "Asha", "phone": "9876543210", "email": "asha@example.com" }
 }
 ```
+
+`colour` is optional and must be one the product comes in. Two colours of one product stay as two order lines.
 
 Prices and totals are always calculated on the server from the database. Delivery costs ₹49 below ₹999 and is free from ₹999. Coupon codes are `WELCOME10` (10% off, up to ₹500), `BAZAAR200` (₹200 off from ₹1500) and `FREESHIP`. Payment is simulated: UPI, card and netbanking succeed, and COD stays pending until delivery. Card details are never stored.
 

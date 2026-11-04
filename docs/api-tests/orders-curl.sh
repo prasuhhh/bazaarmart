@@ -35,6 +35,11 @@ call 201 'Register another user' POST /users "{\"username\":\"Curl Two\",\"email
 call 200 'Login as the other user' POST /login "{\"emailId\":\"$OTHER\",\"password\":\"$PASSWORD\"}"
 OTHER_TOKEN="$(json '.data.token')"
 
+echo '--- Quote'
+call 200 'Quote prices a receipt' POST /orders/quote "{$(items 2)}"
+call 409 'Quote more than the stock' POST /orders/quote "{$(items 99)}"
+call 400 'Quote with a bad coupon' POST /orders/quote "{$(items 1),\"coupon\":\"NOPE\"}"
+
 echo '--- Guest checkout'
 call 400 'Guest with no guest details' POST /orders "{$(items 1),$DETAILS}"
 call 201 'Guest checkout, qty 2' POST /orders "{$(items 2),$DETAILS,\"guest\":{\"name\":\"Curl Guest\",\"phone\":\"$GUEST_PHONE\"}}"

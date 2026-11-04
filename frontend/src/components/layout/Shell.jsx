@@ -32,7 +32,7 @@ export default function Shell() {
         <Taskbar isOpen={isTaskbarOpen} liveOrders={liveOrders} />
         <div className="workspace">
           <TopBar zones={zones} isTaskbarOpen={isTaskbarOpen} onMenu={() => setIsTaskbarOpen(true)} />
-          <main className="page" id="main"><Outlet /></main>
+          <main className="page" id="main"><Outlet context={{ zones }} /></main>
         </div>
       </div>
       {isTaskbarOpen && <button type="button" className="backdrop" aria-label="Close menu" onClick={closeTaskbar} />}

@@ -66,7 +66,7 @@ export async function search(req, res) {
 }
 
 export async function listKits(_req, res) {
-  const kits = await Kit.find().select('-__v').sort({ createdAt: 1 });
+  const kits = await Kit.find().select('-__v').sort({ createdAt: 1, _id: 1 });
   ok(res, { data: kits, count: kits.length });
 }
 

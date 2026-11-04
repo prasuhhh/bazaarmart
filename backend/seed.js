@@ -28,8 +28,10 @@ async function syncIndexes() {
 async function seedZonesAndKits() {
   await Promise.all(zones.map(({ code, ...fields }) =>
     Zone.updateOne({ code }, { $set: fields }, { upsert: true })));
-  await Promise.all(kits.map(({ title, query }) =>
-    Kit.updateOne({ title }, { $set: { query } }, { upsert: true })));
+  // One at a time, because the store map shows kits in the order they were created.
+  for (const { title, query } of kits) {
+    await Kit.updateOne({ title }, { $set: { query } }, { upsert: true });
+  }
   console.log(`Zones ready: ${zones.length}. Kits ready: ${kits.length}.`);
 }
 

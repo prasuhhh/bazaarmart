@@ -5,6 +5,9 @@ const GUEST_KEY = 'bazaarmart_receipt_guest';
 const ReceiptContext = createContext(null);
 const userKey = owner => `bazaarmart_receipt_${owner}`;
 
+// Two colours of a product are two lines, so each colour gets its own id.
+export const lineIdOf = line => (line.colour ? `${line.productId}:${line.colour}` : line.productId);
+
 function readLines(key) {
   try {
     const lines = JSON.parse(localStorage.getItem(key) || '[]');
@@ -25,15 +28,16 @@ function writeLines(key, lines) {
 function mergeLines(base, incoming) {
   const merged = base.map(line => ({ ...line }));
   for (const line of incoming) {
-    const match = merged.find(entry => entry.productId === line.productId);
+    const match = merged.find(entry => lineIdOf(entry) === lineIdOf(line));
     if (match) match.qty = Math.min(match.qty + line.qty, Math.max(match.stock, line.stock));
     else merged.push(line);
   }
   return merged;
 }
 
-const toLine = product => ({
+const toLine = (product, colour = product.colours?.[0]) => ({
   productId: product.productId,
+  colour,
   productName: product.productName,
   price: product.productPrice,
   stock: product.quantity,
@@ -70,14 +74,16 @@ export function ReceiptProvider({ children }) {
     });
   }, []);
 
-  const addItem = useCallback(product => update(current => mergeLines(current, [toLine(product)])), [update]);
+  const addItem = useCallback((product, colour) => {
+    update(current => mergeLines(current, [toLine(product, colour)]));
+  }, [update]);
 
-  const setQty = useCallback((productId, qty) => update(current => current.map(line => (
-    line.productId === productId ? { ...line, qty: Math.min(Math.max(qty, 1), line.stock) } : line
+  const setQty = useCallback((lineId, qty) => update(current => current.map(line => (
+    lineIdOf(line) === lineId ? { ...line, qty: Math.min(Math.max(qty, 1), line.stock) } : line
   ))), [update]);
 
-  const removeItem = useCallback(productId => {
-    update(current => current.filter(line => line.productId !== productId));
+  const removeItem = useCallback(lineId => {
+    update(current => current.filter(line => lineIdOf(line) !== lineId));
   }, [update]);
 
   const clearReceipt = useCallback(() => update(() => []), [update]);
@@ -95,7 +101,7 @@ export function ReceiptProvider({ children }) {
     closeReceipt,
     lineCount: items.length,
     subtotal: items.reduce((sum, line) => sum + line.qty * line.price, 0),
-    qtyOf: productId => items.find(line => line.productId === productId)?.qty ?? 0
+    qtyOf: productId => items.reduce((sum, line) => sum + (line.productId === productId ? line.qty : 0), 0)
   }), [items, isOpen, addItem, setQty, removeItem, clearReceipt, openReceipt, closeReceipt]);
 
   return <ReceiptContext.Provider value={value}>{children}</ReceiptContext.Provider>;
