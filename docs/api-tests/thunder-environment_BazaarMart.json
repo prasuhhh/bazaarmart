@@ -1,0 +1,100 @@
+{
+  "clientName": "Thunder Client",
+  "envName": "BazaarMart",
+  "dateExported": "2026-11-05T00:00:00.000Z",
+  "version": "1.1",
+  "data": [
+    {
+      "name": "baseUrl",
+      "value": "http://localhost:5000/api"
+    },
+    {
+      "name": "token",
+      "value": ""
+    },
+    {
+      "name": "adminToken",
+      "value": ""
+    },
+    {
+      "name": "otherToken",
+      "value": ""
+    },
+    {
+      "name": "phoneToken",
+      "value": ""
+    },
+    {
+      "name": "userEmail",
+      "value": "api.test@example.com"
+    },
+    {
+      "name": "otherEmail",
+      "value": "api.other@example.com"
+    },
+    {
+      "name": "phoneEmail",
+      "value": "api.phone@example.com"
+    },
+    {
+      "name": "userPassword",
+      "value": "secret123"
+    },
+    {
+      "name": "adminEmail",
+      "value": "admin@bazaarmart.test"
+    },
+    {
+      "name": "adminPassword",
+      "value": "SET_FROM_BACKEND_ENV"
+    },
+    {
+      "name": "otpPhone",
+      "value": "+919000000001"
+    },
+    {
+      "name": "limitPhone",
+      "value": "+919000000003"
+    },
+    {
+      "name": "guestPhone",
+      "value": "9000000002"
+    },
+    {
+      "name": "otpCode",
+      "value": ""
+    },
+    {
+      "name": "orderNo",
+      "value": ""
+    },
+    {
+      "name": "guestOrderNo",
+      "value": ""
+    },
+    {
+      "name": "shelfId",
+      "value": ""
+    },
+    {
+      "name": "shareId",
+      "value": ""
+    },
+    {
+      "name": "addressId",
+      "value": ""
+    },
+    {
+      "name": "deviceId",
+      "value": ""
+    },
+    {
+      "name": "paymentId",
+      "value": ""
+    },
+    {
+      "name": "kitId",
+      "value": ""
+    }
+  ]
+}

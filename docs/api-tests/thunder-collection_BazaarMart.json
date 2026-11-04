@@ -1,0 +1,4896 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "BazaarMart API",
+  "collectionId": "bazaarmart-api",
+  "dateExported": "2026-11-05T00:00:00.000Z",
+  "version": "1.2",
+  "folders": [
+    {
+      "_id": "folder-system",
+      "name": "System",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 10
+    },
+    {
+      "_id": "folder-register-and-log-in",
+      "name": "Register and log in",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 20
+    },
+    {
+      "_id": "folder-phone-otp-and-google",
+      "name": "Phone OTP and Google",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 30
+    },
+    {
+      "_id": "folder-account",
+      "name": "Account",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 40
+    },
+    {
+      "_id": "folder-addresses",
+      "name": "Addresses",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 50
+    },
+    {
+      "_id": "folder-devices",
+      "name": "Devices",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 60
+    },
+    {
+      "_id": "folder-payment-labels",
+      "name": "Payment labels",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 70
+    },
+    {
+      "_id": "folder-preferences",
+      "name": "Preferences",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 80
+    },
+    {
+      "_id": "folder-catalogue",
+      "name": "Catalogue",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 90
+    },
+    {
+      "_id": "folder-managing-products",
+      "name": "Managing products",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 100
+    },
+    {
+      "_id": "folder-reviews-and-questions",
+      "name": "Reviews and questions",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 110
+    },
+    {
+      "_id": "folder-shelves",
+      "name": "Shelves",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 120
+    },
+    {
+      "_id": "folder-orders",
+      "name": "Orders",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 130
+    },
+    {
+      "_id": "folder-admin-orders",
+      "name": "Admin orders",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 140
+    },
+    {
+      "_id": "folder-clean-up",
+      "name": "Clean up",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 150
+    },
+    {
+      "_id": "folder-rate-limit",
+      "name": "Rate limit",
+      "containerId": "",
+      "created": "2026-11-05T00:00:00.000Z",
+      "sortNum": 160
+    }
+  ],
+  "requests": [
+    {
+      "_id": "folder-system-10-health-check",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-system",
+      "name": "Health check → 200",
+      "url": "{{baseUrl}}/health",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-system-20-unknown-route",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-system",
+      "name": "Unknown route → 404",
+      "url": "{{baseUrl}}/no-such-route",
+      "method": "GET",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-10-register",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Register → 201",
+      "url": "{{baseUrl}}/users",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Test Shopper\",\n  \"emailId\": \"{{userEmail}}\",\n  \"age\": 21,\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-20-register-a-second-user",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Register a second user → 201",
+      "url": "{{baseUrl}}/users",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Other Shopper\",\n  \"emailId\": \"{{otherEmail}}\",\n  \"age\": 22,\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-30-duplicate-email",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Duplicate email → 409",
+      "url": "{{baseUrl}}/users",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Test Shopper\",\n  \"emailId\": \"{{userEmail}}\",\n  \"age\": 21,\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-40-invalid-body",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Invalid body → 400",
+      "url": "{{baseUrl}}/users",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"A\",\n  \"emailId\": \"bad\",\n  \"age\": 200,\n  \"password\": \"1\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-50-login-unknown-email",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login: unknown email → 404",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"nobody@example.com\",\n  \"password\": \"secret123\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-60-login-wrong-password",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login: wrong password → 401",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"{{userEmail}}\",\n  \"password\": \"wrong-password\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-70-login-invalid-body",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login: invalid body → 400",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"bad\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-80-login-as-user",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login as user → 200",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"{{userEmail}}\",\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.token",
+          "action": "setto",
+          "value": "{{token}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-90-login-as-second-user",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login as second user → 200",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"{{otherEmail}}\",\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.token",
+          "action": "setto",
+          "value": "{{otherToken}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-register-and-log-in-100-login-as-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-register-and-log-in",
+      "name": "Login as admin → 200",
+      "url": "{{baseUrl}}/login",
+      "method": "POST",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"{{adminEmail}}\",\n  \"password\": \"{{adminPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.token",
+          "action": "setto",
+          "value": "{{adminToken}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-10-bad-phone-number",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Bad phone number → 400",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"12345\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-20-request-a-code",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Request a code → 200",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{otpPhone}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.devCode",
+          "action": "setto",
+          "value": "{{otpCode}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-30-malformed-code",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Malformed code → 400",
+      "url": "{{baseUrl}}/auth/otp/verify",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{otpPhone}}\",\n  \"code\": \"12\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-40-wrong-code",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Wrong code → 401",
+      "url": "{{baseUrl}}/auth/otp/verify",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{otpPhone}}\",\n  \"code\": \"000000\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-50-verify-the-code",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Verify the code → 200",
+      "url": "{{baseUrl}}/auth/otp/verify",
+      "method": "POST",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{otpPhone}}\",\n  \"code\": \"{{otpCode}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.token",
+          "action": "setto",
+          "value": "{{phoneToken}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-phone-otp-and-google-60-google-is-not-configured",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-phone-otp-and-google",
+      "name": "Google is not configured → 501",
+      "url": "{{baseUrl}}/auth/google",
+      "method": "POST",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "501"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-10-profile-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Profile: no token → 401",
+      "url": "{{baseUrl}}/users/me",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-20-profile-bad-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Profile: bad token → 401",
+      "url": "{{baseUrl}}/users/me",
+      "method": "GET",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer not-a-token"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-30-get-my-profile",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Get my profile → 200",
+      "url": "{{baseUrl}}/users/me",
+      "method": "GET",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-40-put-full-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PUT full update → 200",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PUT",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Test Shopper Two\",\n  \"age\": 22,\n  \"password\": \"{{userPassword}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-50-put-another-user",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PUT another user → 403",
+      "url": "{{baseUrl}}/users?emailId={{otherEmail}}",
+      "method": "PUT",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22,\n  \"password\": \"secret123\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-60-put-without-emailid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PUT without emailId → 400",
+      "url": "{{baseUrl}}/users",
+      "method": "PUT",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22,\n  \"password\": \"secret123\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-70-put-without-a-password",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PUT without a password → 400",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PUT",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-80-put-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PUT no token → 401",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PUT",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Nope\",\n  \"age\": 22,\n  \"password\": \"secret123\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-90-patch-one-field",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PATCH one field → 200",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PATCH",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"age\": 23\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-100-patch-another-user",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PATCH another user → 403",
+      "url": "{{baseUrl}}/users?emailId={{otherEmail}}",
+      "method": "PATCH",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"age\": 23\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-110-patch-no-fields",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PATCH no fields → 400",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PATCH",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-120-patch-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "PATCH no token → 401",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "PATCH",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"age\": 23\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-130-session-edit",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Session edit → 200",
+      "url": "{{baseUrl}}/users/me",
+      "method": "PATCH",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"age\": 24\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-140-session-edit-email-is-read-only",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Session edit: email is read-only → 400",
+      "url": "{{baseUrl}}/users/me",
+      "method": "PATCH",
+      "sortNum": 140,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"new@example.com\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-150-session-edit-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Session edit: no token → 401",
+      "url": "{{baseUrl}}/users/me",
+      "method": "PATCH",
+      "sortNum": 150,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"age\": 24\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-160-phone-account-email-taken",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Phone account: email taken → 409",
+      "url": "{{baseUrl}}/users/me",
+      "method": "PATCH",
+      "sortNum": 160,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{phoneToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"emailId\": \"{{userEmail}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-account-170-phone-account-add-an-email",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-account",
+      "name": "Phone account: add an email → 200",
+      "url": "{{baseUrl}}/users/me",
+      "method": "PATCH",
+      "sortNum": 170,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{phoneToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"username\": \"Phone User\",\n  \"emailId\": \"{{phoneEmail}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-10-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "No token → 401",
+      "url": "{{baseUrl}}/users/me/addresses",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-20-add",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Add → 201",
+      "url": "{{baseUrl}}/users/me/addresses",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"label\": \"Home\",\n  \"name\": \"Test Shopper\",\n  \"phone\": \"9876543210\",\n  \"line1\": \"221B Lake Road\",\n  \"city\": \"Chennai\",\n  \"state\": \"Tamil Nadu\",\n  \"pincode\": \"600001\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data._id",
+          "action": "setto",
+          "value": "{{addressId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-30-add-with-fields-missing",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Add with fields missing → 400",
+      "url": "{{baseUrl}}/users/me/addresses",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"label\": \"Home\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-40-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/users/me/addresses",
+      "method": "GET",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-50-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Update → 200",
+      "url": "{{baseUrl}}/users/me/addresses/{{addressId}}",
+      "method": "PUT",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"city\": \"Madurai\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-60-update-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Update unknown → 404",
+      "url": "{{baseUrl}}/users/me/addresses/000000000000000000000000",
+      "method": "PUT",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"city\": \"Madurai\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-70-delete",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Delete → 204",
+      "url": "{{baseUrl}}/users/me/addresses/{{addressId}}",
+      "method": "DELETE",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-addresses-80-delete-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-addresses",
+      "name": "Delete again → 404",
+      "url": "{{baseUrl}}/users/me/addresses/{{addressId}}",
+      "method": "DELETE",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-10-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "No token → 401",
+      "url": "{{baseUrl}}/users/me/devices",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-20-add",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Add → 201",
+      "url": "{{baseUrl}}/users/me/devices",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Pixel 9\",\n  \"category\": \"Phone\",\n  \"warrantyUntil\": \"2030-01-01\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data._id",
+          "action": "setto",
+          "value": "{{deviceId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-30-add-without-a-name",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Add without a name → 400",
+      "url": "{{baseUrl}}/users/me/devices",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"category\": \"Phone\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-40-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/users/me/devices",
+      "method": "GET",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-50-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Update → 200",
+      "url": "{{baseUrl}}/users/me/devices/{{deviceId}}",
+      "method": "PUT",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Pixel 10\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-60-update-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Update unknown → 404",
+      "url": "{{baseUrl}}/users/me/devices/000000000000000000000000",
+      "method": "PUT",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Pixel 10\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-70-delete",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Delete → 204",
+      "url": "{{baseUrl}}/users/me/devices/{{deviceId}}",
+      "method": "DELETE",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-devices-80-delete-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-devices",
+      "name": "Delete again → 404",
+      "url": "{{baseUrl}}/users/me/devices/{{deviceId}}",
+      "method": "DELETE",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-10-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "No token → 401",
+      "url": "{{baseUrl}}/users/me/payment-methods",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-20-add-a-upi-handle",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "Add a UPI handle → 201",
+      "url": "{{baseUrl}}/users/me/payment-methods",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"type\": \"upi\",\n  \"label\": \"name@bank\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data._id",
+          "action": "setto",
+          "value": "{{paymentId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-30-add-a-card-label",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "Add a card label → 201",
+      "url": "{{baseUrl}}/users/me/payment-methods",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"type\": \"card\",\n  \"label\": \"Visa\",\n  \"last4\": \"4021\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-40-a-full-card-number-is-refused",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "A full card number is refused → 400",
+      "url": "{{baseUrl}}/users/me/payment-methods",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"type\": \"card\",\n  \"label\": \"4111111111111111\",\n  \"last4\": \"1111\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-50-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/users/me/payment-methods",
+      "method": "GET",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-60-delete",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "Delete → 204",
+      "url": "{{baseUrl}}/users/me/payment-methods/{{paymentId}}",
+      "method": "DELETE",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-payment-labels-70-delete-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-payment-labels",
+      "name": "Delete again → 404",
+      "url": "{{baseUrl}}/users/me/payment-methods/{{paymentId}}",
+      "method": "DELETE",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-10-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "No token → 401",
+      "url": "{{baseUrl}}/users/me/prefs",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-20-read",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Read → 200",
+      "url": "{{baseUrl}}/users/me/prefs",
+      "method": "GET",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-30-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Update → 200",
+      "url": "{{baseUrl}}/users/me/prefs",
+      "method": "PATCH",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"notificationPrefs\": {\n    \"priceDrops\": false\n  },\n  \"stylePrefs\": {\n    \"sizes\": [\n      \"M\"\n    ]\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-40-nothing-to-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Nothing to update → 400",
+      "url": "{{baseUrl}}/users/me/prefs",
+      "method": "PATCH",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-10-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/products",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-20-filter-by-zone-and-price",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Filter by zone and price → 200",
+      "url": "{{baseUrl}}/products?zone=A&maxPrice=2000&sort=price_asc",
+      "method": "GET",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-30-paginate",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Paginate → 200",
+      "url": "{{baseUrl}}/products?page=1&limit=2",
+      "method": "GET",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-40-bad-filter",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Bad filter → 400",
+      "url": "{{baseUrl}}/products?minPrice=cheap",
+      "method": "GET",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-50-category-filter",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Category filter → 200",
+      "url": "{{baseUrl}}/products/audio",
+      "method": "GET",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-60-unknown-category",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Unknown category → 404",
+      "url": "{{baseUrl}}/products/no-such-category",
+      "method": "GET",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-70-product-sheet",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Product sheet → 200",
+      "url": "{{baseUrl}}/products/sheet/A-01-117",
+      "method": "GET",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-80-unknown-product-sheet",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Unknown product sheet → 404",
+      "url": "{{baseUrl}}/products/sheet/NOPE",
+      "method": "GET",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-90-zones",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Zones → 200",
+      "url": "{{baseUrl}}/zones",
+      "method": "GET",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-100-search",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Search → 200",
+      "url": "{{baseUrl}}/search?q=earbuds",
+      "method": "GET",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-110-search-without-q",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Search without q → 400",
+      "url": "{{baseUrl}}/search",
+      "method": "GET",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-120-kits",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Kits → 200",
+      "url": "{{baseUrl}}/kits",
+      "method": "GET",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.0._id",
+          "action": "setto",
+          "value": "{{kitId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-130-one-kit",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "One kit → 200",
+      "url": "{{baseUrl}}/kits/{{kitId}}",
+      "method": "GET",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-140-unknown-kit",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Unknown kit → 404",
+      "url": "{{baseUrl}}/kits/000000000000000000000000",
+      "method": "GET",
+      "sortNum": 140,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-catalogue-150-malformed-kit-id",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-catalogue",
+      "name": "Malformed kit id → 400",
+      "url": "{{baseUrl}}/kits/not-an-id",
+      "method": "GET",
+      "sortNum": 150,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-10-create-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Create: no token → 401",
+      "url": "{{baseUrl}}/products",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\",\n  \"productName\": \"Test Lamp\",\n  \"productPrice\": 899,\n  \"category\": \"Home\",\n  \"quantity\": 5,\n  \"description\": \"Temporary API test product.\",\n  \"colours\": [\n    \"Black\"\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-20-create-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Create: not an admin → 403",
+      "url": "{{baseUrl}}/products",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\",\n  \"productName\": \"Test Lamp\",\n  \"productPrice\": 899,\n  \"category\": \"Home\",\n  \"quantity\": 5,\n  \"description\": \"Temporary API test product.\",\n  \"colours\": [\n    \"Black\"\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-30-create",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Create → 201",
+      "url": "{{baseUrl}}/products",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\",\n  \"productName\": \"Test Lamp\",\n  \"productPrice\": 899,\n  \"category\": \"Home\",\n  \"quantity\": 5,\n  \"description\": \"Temporary API test product.\",\n  \"colours\": [\n    \"Black\"\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-40-create-duplicate-productid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Create: duplicate productId → 409",
+      "url": "{{baseUrl}}/products",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\",\n  \"productName\": \"Test Lamp\",\n  \"productPrice\": 899,\n  \"category\": \"Home\",\n  \"quantity\": 5,\n  \"description\": \"Temporary API test product.\",\n  \"colours\": [\n    \"Black\"\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-50-create-invalid-body",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Create: invalid body → 400",
+      "url": "{{baseUrl}}/products",
+      "method": "POST",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P901\",\n  \"productName\": \"Test Lamp\",\n  \"productPrice\": -1,\n  \"category\": \"Home\",\n  \"quantity\": 5,\n  \"description\": \"Temporary API test product.\",\n  \"colours\": [\n    \"Black\"\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-60-update",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Update → 200",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "PUT",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productPrice\": 999\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-70-update-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Update: no token → 401",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "PUT",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productPrice\": 1\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-80-update-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Update: not an admin → 403",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "PUT",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productPrice\": 1\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-90-update-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Update: unknown product → 404",
+      "url": "{{baseUrl}}/products?productId=P999",
+      "method": "PUT",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productPrice\": 1\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-managing-products-100-update-no-productid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-managing-products",
+      "name": "Update: no productId → 400",
+      "url": "{{baseUrl}}/products",
+      "method": "PUT",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productPrice\": 1\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-10-review-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Review: no token → 401",
+      "url": "{{baseUrl}}/products/P900/reviews",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"rating\": 5,\n  \"text\": \"Great.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-20-review-invalid-rating",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Review: invalid rating → 400",
+      "url": "{{baseUrl}}/products/P900/reviews",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"rating\": 9,\n  \"text\": \"Great.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-30-review",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Review → 201",
+      "url": "{{baseUrl}}/products/P900/reviews",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"rating\": 5,\n  \"text\": \"Great.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-40-review-twice",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Review twice → 409",
+      "url": "{{baseUrl}}/products/P900/reviews",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"rating\": 1,\n  \"text\": \"Again.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-50-review-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Review: unknown product → 404",
+      "url": "{{baseUrl}}/products/NOPE/reviews",
+      "method": "POST",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"rating\": 5,\n  \"text\": \"Great.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-60-read-reviews",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Read reviews → 200",
+      "url": "{{baseUrl}}/products/P900/reviews",
+      "method": "GET",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-70-read-reviews-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Read reviews: unknown product → 404",
+      "url": "{{baseUrl}}/products/NOPE/reviews",
+      "method": "GET",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-80-question-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Question: no token → 401",
+      "url": "{{baseUrl}}/products/P900/questions",
+      "method": "POST",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"text\": \"Waterproof?\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-90-question-no-text",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Question: no text → 400",
+      "url": "{{baseUrl}}/products/P900/questions",
+      "method": "POST",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-100-question",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Question → 201",
+      "url": "{{baseUrl}}/products/P900/questions",
+      "method": "POST",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"text\": \"Waterproof?\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-110-question-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Question: unknown product → 404",
+      "url": "{{baseUrl}}/products/NOPE/questions",
+      "method": "POST",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"text\": \"Waterproof?\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-120-read-questions",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Read questions → 200",
+      "url": "{{baseUrl}}/products/P900/questions",
+      "method": "GET",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-130-read-questions-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Read questions: unknown product → 404",
+      "url": "{{baseUrl}}/products/NOPE/questions",
+      "method": "GET",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-10-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "No token → 401",
+      "url": "{{baseUrl}}/shelves",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-20-create",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Create → 201",
+      "url": "{{baseUrl}}/shelves",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"New desk\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data._id",
+          "action": "setto",
+          "value": "{{shelfId}}"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.shareId",
+          "action": "setto",
+          "value": "{{shareId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-30-create-without-a-name",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Create without a name → 400",
+      "url": "{{baseUrl}}/shelves",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-40-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/shelves",
+      "method": "GET",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-50-read-one",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Read one → 200",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "GET",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-60-read-someone-else-s",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Read someone else's → 403",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "GET",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-70-read-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Read unknown → 404",
+      "url": "{{baseUrl}}/shelves/000000000000000000000000",
+      "method": "GET",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-80-rename",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Rename → 200",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "PATCH",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Trip kit\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-90-rename-without-a-name",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Rename without a name → 400",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "PATCH",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-100-save-an-item",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Save an item → 201",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items",
+      "method": "POST",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-110-save-it-twice",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Save it twice → 409",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items",
+      "method": "POST",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"P900\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-120-save-without-a-productid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Save without a productId → 400",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items",
+      "method": "POST",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-130-save-an-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Save an unknown product → 404",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items",
+      "method": "POST",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"productId\": \"NOPE\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-140-shared-link-public",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Shared link, public → 200",
+      "url": "{{baseUrl}}/shelves/shared/{{shareId}}",
+      "method": "GET",
+      "sortNum": 140,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-150-unknown-shared-link",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Unknown shared link → 404",
+      "url": "{{baseUrl}}/shelves/shared/nope",
+      "method": "GET",
+      "sortNum": 150,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-160-remove-an-item",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Remove an item → 204",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
+      "method": "DELETE",
+      "sortNum": 160,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-170-remove-it-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Remove it again → 404",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
+      "method": "DELETE",
+      "sortNum": 170,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-180-delete",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Delete → 204",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "DELETE",
+      "sortNum": 180,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-190-delete-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Delete again → 404",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "DELETE",
+      "sortNum": 190,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-10-quote",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Quote → 200",
+      "url": "{{baseUrl}}/orders/quote",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"coupon\": \"WELCOME10\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-20-quote-bad-coupon",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Quote: bad coupon → 400",
+      "url": "{{baseUrl}}/orders/quote",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"coupon\": \"NOPE\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-30-quote-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Quote: unknown product → 404",
+      "url": "{{baseUrl}}/orders/quote",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"NOPE\",\n      \"qty\": 1\n    }\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-40-quote-more-than-the-stock",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Quote: more than the stock → 409",
+      "url": "{{baseUrl}}/orders/quote",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 99\n    }\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-50-guest-without-details",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Guest without details → 400",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-60-guest-checkout",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Guest checkout → 201",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"guest\": {\n    \"name\": \"Guest\",\n    \"phone\": \"{{guestPhone}}\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.orderNo",
+          "action": "setto",
+          "value": "{{guestOrderNo}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-70-place-an-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Place an order → 201",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1,\n      \"colour\": \"Black\"\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"coupon\": \"WELCOME10\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.orderNo",
+          "action": "setto",
+          "value": "{{orderNo}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-80-unknown-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Unknown product → 404",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"NOPE\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-90-more-than-the-stock",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "More than the stock → 409",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 99\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-100-a-colour-it-does-not-come-in",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "A colour it does not come in → 400",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1,\n      \"colour\": \"Teal\"\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-110-empty-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Empty order → 400",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-120-no-address",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "No address → 400",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-130-my-orders",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "My orders → 200",
+      "url": "{{baseUrl}}/orders",
+      "method": "GET",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-140-live-orders",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Live orders → 200",
+      "url": "{{baseUrl}}/orders?status=live",
+      "method": "GET",
+      "sortNum": 140,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-150-bad-status-filter",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Bad status filter → 400",
+      "url": "{{baseUrl}}/orders?status=lost",
+      "method": "GET",
+      "sortNum": 150,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-160-my-orders-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "My orders: no token → 401",
+      "url": "{{baseUrl}}/orders",
+      "method": "GET",
+      "sortNum": 160,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-170-read-my-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read my order → 200",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "GET",
+      "sortNum": 170,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-180-read-someone-else-s",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read someone else's → 403",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "GET",
+      "sortNum": 180,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-190-read-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read: no token → 401",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "GET",
+      "sortNum": 190,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-200-read-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read unknown → 404",
+      "url": "{{baseUrl}}/orders/BM-1",
+      "method": "GET",
+      "sortNum": 200,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-210-read-a-guest-order-by-phone",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read a guest order by phone → 200",
+      "url": "{{baseUrl}}/orders/{{guestOrderNo}}?phone={{guestPhone}}",
+      "method": "GET",
+      "sortNum": 210,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-220-read-a-guest-order-no-phone",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Read a guest order: no phone → 400",
+      "url": "{{baseUrl}}/orders/{{guestOrderNo}}",
+      "method": "GET",
+      "sortNum": 220,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-230-track-my-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track my order → 200",
+      "url": "{{baseUrl}}/orders/{{orderNo}}/track",
+      "method": "GET",
+      "sortNum": 230,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-240-track-someone-else-s",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track someone else's → 403",
+      "url": "{{baseUrl}}/orders/{{orderNo}}/track",
+      "method": "GET",
+      "sortNum": 240,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-250-track-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track: no token → 401",
+      "url": "{{baseUrl}}/orders/{{orderNo}}/track",
+      "method": "GET",
+      "sortNum": 250,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-260-track-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track unknown → 404",
+      "url": "{{baseUrl}}/orders/BM-1/track",
+      "method": "GET",
+      "sortNum": 260,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-270-track-a-guest-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track a guest order → 200",
+      "url": "{{baseUrl}}/orders/{{guestOrderNo}}/track?phone={{guestPhone}}",
+      "method": "GET",
+      "sortNum": 270,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-280-track-a-guest-order-wrong-phone",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track a guest order: wrong phone → 403",
+      "url": "{{baseUrl}}/orders/{{guestOrderNo}}/track?phone=9000000000",
+      "method": "GET",
+      "sortNum": 280,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-290-track-a-guest-order-no-phone",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Track a guest order: no phone → 400",
+      "url": "{{baseUrl}}/orders/{{guestOrderNo}}/track",
+      "method": "GET",
+      "sortNum": 290,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-300-change-the-slot",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Change the slot → 200",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 300,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"slot\": {\n    \"label\": \"Today 6–9 pm\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-310-leave-at-door",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Leave at door → 200",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 310,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"leaveAtDoor\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-320-nothing-to-change",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Nothing to change → 400",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 320,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-330-change-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Change: no token → 401",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 330,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"leaveAtDoor\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-340-change-someone-else-s",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Change someone else's → 403",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 340,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"leaveAtDoor\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-orders-350-change-unknown",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-orders",
+      "name": "Change unknown → 404",
+      "url": "{{baseUrl}}/orders/BM-1",
+      "method": "PATCH",
+      "sortNum": 350,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"leaveAtDoor\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-10-list",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "List → 200",
+      "url": "{{baseUrl}}/admin/orders",
+      "method": "GET",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-20-list-live-orders",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "List live orders → 200",
+      "url": "{{baseUrl}}/admin/orders?status=live",
+      "method": "GET",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-30-bad-status-filter",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Bad status filter → 400",
+      "url": "{{baseUrl}}/admin/orders?status=lost",
+      "method": "GET",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-40-list-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "List: no token → 401",
+      "url": "{{baseUrl}}/admin/orders",
+      "method": "GET",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-50-list-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "List: not an admin → 403",
+      "url": "{{baseUrl}}/admin/orders",
+      "method": "GET",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-60-status-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Status: not an admin → 403",
+      "url": "{{baseUrl}}/admin/orders/{{orderNo}}/status",
+      "method": "PATCH",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"packed\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-70-status-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Status: no token → 401",
+      "url": "{{baseUrl}}/admin/orders/{{orderNo}}/status",
+      "method": "PATCH",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"packed\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-80-status-not-a-status",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Status: not a status → 400",
+      "url": "{{baseUrl}}/admin/orders/{{orderNo}}/status",
+      "method": "PATCH",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"lost\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-90-status-skip-a-step",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Status: skip a step → 409",
+      "url": "{{baseUrl}}/admin/orders/{{orderNo}}/status",
+      "method": "PATCH",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"delivered\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-100-status-unknown-order",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Status: unknown order → 404",
+      "url": "{{baseUrl}}/admin/orders/BM-1/status",
+      "method": "PATCH",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"packed\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-110-mark-packed",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Mark packed → 200",
+      "url": "{{baseUrl}}/admin/orders/{{orderNo}}/status",
+      "method": "PATCH",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"status\": \"packed\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-120-cancel",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Cancel → 200",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cancel\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-admin-orders-130-cancel-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-admin-orders",
+      "name": "Cancel again → 409",
+      "url": "{{baseUrl}}/orders/{{orderNo}}",
+      "method": "PATCH",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cancel\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-10-delete-product-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete product: no token → 401",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "DELETE",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-20-delete-product-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete product: not an admin → 403",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "DELETE",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-30-delete-product",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete product → 204",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "DELETE",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-40-delete-it-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete it again → 404",
+      "url": "{{baseUrl}}/products?productId=P900",
+      "method": "DELETE",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-50-delete-no-productid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete: no productId → 400",
+      "url": "{{baseUrl}}/products",
+      "method": "DELETE",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-60-delete-account-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete account: no token → 401",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "DELETE",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-70-delete-another-account",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete another account → 403",
+      "url": "{{baseUrl}}/users?emailId={{otherEmail}}",
+      "method": "DELETE",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-80-delete-no-emailid",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete: no emailId → 400",
+      "url": "{{baseUrl}}/users",
+      "method": "DELETE",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-90-delete-my-account",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete my account → 204",
+      "url": "{{baseUrl}}/users?emailId={{userEmail}}",
+      "method": "DELETE",
+      "sortNum": 90,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-100-delete-the-second-account",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete the second account → 204",
+      "url": "{{baseUrl}}/users?emailId={{otherEmail}}",
+      "method": "DELETE",
+      "sortNum": 100,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-110-session-delete-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Session delete: no token → 401",
+      "url": "{{baseUrl}}/users/me",
+      "method": "DELETE",
+      "sortNum": 110,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-clean-up-120-delete-the-phone-account",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-clean-up",
+      "name": "Delete the phone account → 204",
+      "url": "{{baseUrl}}/users/me",
+      "method": "DELETE",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{phoneToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-rate-limit-10-request-3-of-5",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-rate-limit",
+      "name": "Request 3 of 5 → 200",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 10,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{limitPhone}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-rate-limit-20-request-4-of-5",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-rate-limit",
+      "name": "Request 4 of 5 → 200",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 20,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{limitPhone}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-rate-limit-30-request-5-of-5",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-rate-limit",
+      "name": "Request 5 of 5 → 200",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 30,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{limitPhone}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-rate-limit-40-one-too-many",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-rate-limit",
+      "name": "One too many → 429",
+      "url": "{{baseUrl}}/auth/otp/request",
+      "method": "POST",
+      "sortNum": 40,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"phone\": \"{{limitPhone}}\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "429"
+        }
+      ]
+    }
+  ]
+}
