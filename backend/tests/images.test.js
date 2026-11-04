@@ -25,12 +25,12 @@ describe('product images', () => {
 
   it('matches mixed bays by product name', () => {
     const icon = name => iconFor(products.find(product => product.productName === name));
-    assert.equal(icon('Reference Wired Earphones'), 'earphones');
-    assert.equal(icon('Pocket Buds'), 'earbuds');
-    assert.equal(icon('Wireless Mouse'), 'mouse');
-    assert.equal(icon('Mechanical Keyboard'), 'keyboard');
-    assert.equal(icon('Water Bottle 750 ml'), 'bottle');
-    assert.equal(icon('Round Acetate Sunglasses'), 'sunglasses');
+    assert.equal(icon('Prism ANC Earbuds'), 'earbuds');
+    assert.equal(icon('Drift Smart Ring'), 'ring');
+    assert.equal(icon('Zephyr Key Tracker'), 'tracker');
+    assert.equal(icon('Cinder Ring Light'), 'bulb');
+    assert.equal(icon('Vector Round Sunglasses'), 'sunglasses');
+    assert.equal(icon('Echo Blue-light Glasses'), 'glasses');
   });
 
   it('falls back to the generic icon for an unknown bay or product', () => {
@@ -47,11 +47,11 @@ describe('product images', () => {
   });
 
   it('shows each colour and the SKU, and labels the scale view', () => {
-    const product = products.find(({ productId }) => productId === 'A-01-116');
+    const product = products.find(({ productId }) => productId === 'A-01-117');
     const images = renderImages(product);
-    for (const colour of product.colours) assert.ok(images['A-01-116-colours.svg'].includes(`>${colour}<`), colour);
-    for (const svg of Object.values(images)) assert.ok(svg.includes('>A-01-116<'));
-    assert.ok(images['A-01-116-scale.svg'].includes('ON DESK'));
+    for (const colour of product.colours) assert.ok(images['A-01-117-colours.svg'].includes(`>${colour}<`), colour);
+    for (const svg of Object.values(images)) assert.ok(svg.includes('>A-01-117<'));
+    assert.ok(images['A-01-117-scale.svg'].includes('ON DESK'));
     const watch = products.find(({ zoneCode }) => zoneCode === 'W');
     assert.ok(renderImages(watch)[`${watch.productId}-scale.svg`].includes('ON WRIST'));
   });

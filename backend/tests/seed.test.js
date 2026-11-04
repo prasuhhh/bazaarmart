@@ -44,8 +44,8 @@ function runSeed(extraEnv = {}) {
 const login = credentials => request(app).post('/api/login').send(credentials);
 
 describe('catalogue data', () => {
-  it('has about 80 products with unique, well-formed SKUs', () => {
-    assert.ok(products.length >= 75 && products.length <= 90, `${products.length} products`);
+  it('has 135 products with unique, well-formed SKUs', () => {
+    assert.equal(products.length, 135);
     assert.equal(new Set(products.map(product => product.productId)).size, products.length);
     for (const { productId, zoneCode, bay } of products) {
       assert.match(productId, /^[AWDLSGCPB]-\d{2}-\d{3}$/);
@@ -55,8 +55,8 @@ describe('catalogue data', () => {
 
   it('includes the SKUs shown on the wireframes', () => {
     const skus = new Set(products.map(product => product.productId));
-    for (const sku of ['A-01-117', 'W-02-004', 'S-03-020']) assert.ok(skus.has(sku), sku);
-    assert.match(products.find(product => product.productId === 'S-03-020').productName, /Linen Shirt/);
+    for (const sku of ['A-01-117', 'W-03-311', 'S-02-211']) assert.ok(skus.has(sku), sku);
+    assert.match(products.find(product => product.productId === 'S-02-211').productName, /Linen Shirt/);
   });
 
   it('every product is valid against the model', async () => {
@@ -70,7 +70,7 @@ describe('catalogue data', () => {
     assert.ok(Math.min(...totals) > 0);
     assert.ok(Math.max(...totals) >= Math.min(...totals) * 5, totals.join());
     const drops = products.filter(product => product.isNewDrop).length;
-    assert.ok(drops >= 5 && drops <= 15, `${drops} new drops`);
+    assert.ok(drops >= 5 && drops <= 25, `${drops} new drops`);
   });
 
   it('every demo order uses a real SKU', () => {
@@ -105,8 +105,8 @@ describe('npm run seed', () => {
     const byCode = Object.fromEntries(body.data.map(zone => [zone.code, zone]));
     assert.deepEqual(byCode.L.layout, { col: 3, row: 2 });
     assert.deepEqual(byCode.B.layout, { col: 1, row: 1 });
-    assert.ok(byCode.D.totalStock > byCode.B.totalStock * 5);
-    assert.ok(byCode.A.bays.length === 3);
+    assert.ok(byCode.P.totalStock > byCode.B.totalStock * 5);
+    assert.ok(byCode.A.bays.length === 5);
     assert.equal(byCode.A.bays[0].bayName, 'Earbuds');
   });
 
@@ -126,9 +126,9 @@ describe('npm run seed', () => {
     assert.deepEqual(res.body.data.map(order => order.status).sort(), ['out_for_delivery', 'packed']);
     assert.deepEqual(res.body.data.map(order => order.orderNo).sort(), ['BM-2041', 'BM-2042']);
 
-    const linen = res.body.data.flatMap(order => order.items).find(item => item.productId === 'S-03-020');
-    assert.equal(linen.price, 2199);
-    assert.equal(linen.name, 'Linen Shirt');
+    const linen = res.body.data.flatMap(order => order.items).find(item => item.productId === 'S-02-211');
+    assert.equal(linen.price, 799);
+    assert.equal(linen.name, 'Drift Linen Shirt');
     for (const order of res.body.data) {
       assert.equal(order.total, order.items.reduce((sum, item) => sum + item.price * item.qty, 0));
       assert.equal(order.events.at(-1).status, order.status);
@@ -163,9 +163,9 @@ describe('npm run seed', () => {
   });
 
   it('replaces old photo links without touching anything else', async () => {
-    const oldImages = ['https://picsum.photos/seed/A-01-115-1/600/600'];
-    await Product.updateOne({ productId: 'A-01-115' }, { images: oldImages, quantity: 7 });
-    const untouched = await Product.findOne({ productId: 'A-01-115' }).lean();
+    const oldImages = ['https://picsum.photos/seed/A-01-117-1/600/600'];
+    await Product.updateOne({ productId: 'A-01-117' }, { images: oldImages, quantity: 7 });
+    const untouched = await Product.findOne({ productId: 'A-01-117' }).lean();
     await Order.updateOne(
       { orderNo: 'BM-2041' },
       { $set: { 'items.$[].image': oldImages[0], 'address.city': 'Kept' } }
@@ -174,23 +174,67 @@ describe('npm run seed', () => {
 
     assert.equal((await runSeed()).code, 0);
 
-    const product = await Product.findOne({ productId: 'A-01-115' }).lean();
-    assert.deepEqual(product.images, products.find(({ productId }) => productId === 'A-01-115').images);
+    const product = await Product.findOne({ productId: 'A-01-117' }).lean();
+    assert.deepEqual(product.images, products.find(({ productId }) => productId === 'A-01-117').images);
     assert.equal(product.quantity, 7);
     assert.deepEqual(product.updatedAt, untouched.updatedAt);
 
     const order = await Order.findOne({ orderNo: 'BM-2041' }).lean();
     assert.equal(order.address.city, 'Kept');
     assert.deepEqual(order.updatedAt, before.updatedAt);
-    for (const item of order.items) assert.equal(item.image, `/products/${item.productId}.svg`);
+    for (const item of order.items) {
+      assert.equal(item.image, products.find(({ productId }) => productId === item.productId).images[0]);
+    }
     assert.equal(await Order.countDocuments({ 'items.image': /picsum/ }), 0);
   });
 
   it('restores only the product that went missing', async () => {
-    await Product.deleteOne({ productId: 'B-02-203' });
+    await Product.deleteOne({ productId: 'B-02-212' });
     const { output } = await runSeed();
     assert.match(output, /Products added: 1/);
-    assert.ok(await Product.exists({ productId: 'B-02-203' }));
+    assert.ok(await Product.exists({ productId: 'B-02-212' }));
+  });
+
+  it('moves an old catalogue over, keeping Admin products and other orders', async () => {
+    const old = { productPrice: 2499, category: 'Wearables', quantity: 9, description: 'Old.', images: ['/products/W-01-101.svg'] };
+    await Product.create([
+      { ...old, productId: 'W-01-101', productName: 'Pace Smartwatch' },
+      { ...old, productId: 'X-01-001', productName: 'Added on the Admin page' }
+    ]);
+    await Product.updateOne({ productId: 'A-01-117' }, { productName: 'Halo ANC Earbuds', productPrice: 1, quantity: 3 });
+
+    const demo = await User.findOne({ emailId: DEMO.emailId });
+    await Order.updateOne({ user: demo._id, orderNo: 'BM-2041' }, {
+      $set: { items: [{ productId: 'W-01-101', name: 'Pace Smartwatch', price: 2499, qty: 2, image: '/products/W-01-101.svg' }], subtotal: 4998, total: 4998 }
+    });
+    const stranger = await Order.create({ guest: { phone: '+919000000001' }, items: [{ productId: 'W-01-101', name: 'Pace Smartwatch', price: 2499, qty: 1 }], subtotal: 2499, total: 2499 });
+
+    assert.equal((await runSeed()).code, 0);
+
+    assert.equal(await Product.exists({ productId: 'W-01-101' }), null);
+    assert.ok(await Product.exists({ productId: 'X-01-001' }));
+    const reused = await Product.findOne({ productId: 'A-01-117' });
+    assert.equal(reused.productName, 'Mercury Buds');
+    assert.equal(reused.productPrice, 6499);
+    assert.equal(reused.quantity, 6);
+
+    const moved = await Order.findOne({ orderNo: 'BM-2041' }).lean();
+    assert.equal(moved.items[0].productId, 'W-01-111');
+    assert.equal(moved.total, 15998);
+    assert.equal((await Order.findById(stranger._id).lean()).items[0].productId, 'W-01-101');
+    await Product.deleteOne({ productId: 'X-01-001' });
+    await Order.deleteOne({ _id: stranger._id });
+  });
+
+  it('points every kit at SKUs that exist, and clears the old filters', async () => {
+    await Kit.updateOne({ title: kits[0].title }, { $set: { query: { zone: 'D' } } });
+    assert.equal((await runSeed()).code, 0);
+    const skus = new Set(products.map(({ productId }) => productId));
+    for (const kit of await Kit.find()) {
+      assert.ok(kit.productIds.length >= 5, kit.title);
+      assert.equal(kit.query, undefined);
+      for (const sku of kit.productIds) assert.ok(skus.has(sku), sku);
+    }
   });
 
   it('never leaves a pre-registered account with its own password as admin', async () => {
