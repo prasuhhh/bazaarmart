@@ -7,6 +7,7 @@
     "start": "node server.js",
     "seed": "node seed.js",
     "images": "node scripts/generateProductImages.js",
+    "photos": "node scripts/fetchProductPhotos.js",
     "test": "node --test tests/api.test.js tests/models.test.js tests/auth.test.js tests/catalogue.test.js tests/seed.test.js tests/shelves.test.js tests/orders.test.js tests/acceptance.test.js tests/images.test.js"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
   "devDependencies": {
     "mongodb-memory-server": "^11.3.0",
     "nodemon": "^3.1.9",
+    "sharp": "^0.35.5",
     "supertest": "^7.3.1"
   }
 }
