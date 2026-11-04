@@ -101,7 +101,7 @@ export default function Products() {
           <option value="price_asc">Price: Low to high</option>
           <option value="price_desc">Price: High to low</option>
           <option value="name">Name: A to Z</option>
-          <option value="newest">Newest first</option>
+          <option value="new">Newest first</option>
         </select>
       </div>
 

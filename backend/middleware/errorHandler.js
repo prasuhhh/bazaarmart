@@ -2,7 +2,8 @@ import { ApiError, fail } from '../utils/response.js';
 
 const DUPLICATE_MESSAGES = {
   emailId: 'Email ID is already registered.',
-  productId: 'Product ID already exists.'
+  productId: 'Product ID already exists.',
+  product: 'You have already reviewed this product.'
 };
 const JWT_ERRORS = new Set(['JsonWebTokenError', 'TokenExpiredError', 'NotBeforeError']);
 

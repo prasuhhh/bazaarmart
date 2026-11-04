@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
 import { normalizePhone } from './middleware/validate.js';
 import { createAuthRoutes } from './routes/authRoutes.js';
+import catalogueRoutes from './routes/catalogueRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import { createUserRoutes } from './routes/userRoutes.js';
@@ -69,6 +70,7 @@ export function createApp({ authRateLimit = 10, otpRateLimit = 5 } = {}) {
     // Both apply: one stops flooding a single phone, the other one IP trying many phones.
     otpLimiters: [createOtpLimiter(otpRateLimit), createOtpLimiter(otpRateLimit, phoneOrIpKey)]
   }));
+  app.use('/api', catalogueRoutes);
   app.use('/api/products', productRoutes);
   app.use('/api/orders', orderRoutes);
 

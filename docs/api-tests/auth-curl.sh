@@ -4,6 +4,7 @@
 # Needs OTP_MOCK=true and NODE_ENV not set to production. Use a development
 # database: the phone account it creates has no delete route yet.
 set -u
+source "$(dirname "$0")/curl-lib.sh"
 BASE="${1:?Pass the API base URL, for example http://localhost:5000/api}"
 
 STAMP="$(date +%s)"
@@ -11,27 +12,6 @@ EMAIL="curl.${STAMP}@example.com"
 OTHER="curl.other.${STAMP}@example.com"
 PHONE="+9190$(printf '%08d' "$((STAMP % 100000000))")"
 PASSWORD='secret123'
-BODY_FILE="$(mktemp)"
-trap 'rm -f "$BODY_FILE"' EXIT
-FAILURES=0
-
-json() { node -pe "JSON.parse(require('fs').readFileSync('$BODY_FILE','utf8'))$1"; }
-
-# call <expected status> <label> <method> <path> [json body] [token]
-call() {
-  local expected="$1" label="$2" method="$3" path="$4" body="${5:-}" token="${6:-}"
-  local args=(-s -o "$BODY_FILE" -w '%{http_code}' -X "$method" "$BASE$path")
-  [ -n "$body" ] && args+=(-H 'Content-Type: application/json' -d "$body")
-  [ -n "$token" ] && args+=(-H "Authorization: Bearer $token")
-  local status
-  status="$(curl "${args[@]}")"
-  local result='PASS'
-  if [ "$status" != "$expected" ]; then result='FAIL'; FAILURES=$((FAILURES + 1)); fi
-  local message=''
-  [ -s "$BODY_FILE" ] && message="$(json '.message ?? ""' 2>/dev/null)"
-  printf '%s  %s  %-42s %s\n' "$result" "$status" "$label" "$message"
-}
-
 echo '--- Email path'
 REG="{\"username\":\"Curl User\",\"emailId\":\"$EMAIL\",\"age\":21,\"password\":\"$PASSWORD\"}"
 call 201 'Register' POST /users "$REG"
@@ -80,5 +60,4 @@ call 200 'Get the new phone account' GET /users/me '' "$PHONE_TOKEN"
 call 400 'Reuse the same code' POST /auth/otp/verify "{\"phone\":\"$PHONE\",\"code\":\"$CODE\"}"
 call 501 'Google sign-in' POST /auth/google '{}'
 
-echo
-if [ "$FAILURES" -eq 0 ]; then echo 'All checks passed.'; else echo "$FAILURES check(s) failed."; exit 1; fi
+finish

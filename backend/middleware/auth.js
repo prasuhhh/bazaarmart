@@ -36,6 +36,13 @@ export async function optionalAuth(req, _res, next) {
   next();
 }
 
+// Open to everyone unless REQUIRE_AUTH_FOR_CATALOGUE=true, which restores the
+// lab's rule that product data needs a login.
+export function catalogueAccess(req, res, next) {
+  if (process.env.REQUIRE_AUTH_FOR_CATALOGUE === 'true') return authenticate(req, res, next);
+  return next();
+}
+
 export function authorizeEmail(req, _res, next) {
   const emailId = String(req.query.emailId || '').toLowerCase().trim();
   if (!emailId) throw new ApiError(400, 'emailId query parameter is required.');

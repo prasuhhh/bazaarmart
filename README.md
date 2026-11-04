@@ -37,12 +37,12 @@ Fill in `backend/.env`:
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
 | `DNS_SERVERS` | No | Comma-separated DNS servers, only if MongoDB SRV lookups fail on your network |
 
-`OTP_MOCK=true` turns on the mock SMS provider, which prints sign-in codes to the server console. No real SMS provider is connected, so phone sign-in returns 503 without it. `REQUIRE_AUTH_FOR_CATALOGUE` is reserved for an upcoming step and has no effect yet.
+`OTP_MOCK=true` turns on the mock SMS provider, which prints sign-in codes to the server console. No real SMS provider is connected, so phone sign-in returns 503 without it. Product data is public by default. `REQUIRE_AUTH_FOR_CATALOGUE=true` makes the product list, category, product sheet, search and kit detail routes return 401 without a token, which restores the lab rule that products need a login.
 
 Then seed the database and start both apps:
 
 ```bash
-npm run seed    # adds sample products (if there are none) and the admin account
+npm run seed    # syncs indexes, adds zones, kits, sample products (if there are none) and the admin account
 npm run dev     # API on :5000, website on http://localhost:5173
 ```
 
@@ -124,8 +124,9 @@ All of these need a login and affect only your own account.
 
 | Method | Path | Access | Result |
 |---|---|---|---|
-| GET | `/api/products` | Logged in | List with `count` |
-| GET | `/api/products/:category` | Logged in | Case-insensitive category filter; 404 if none |
+| GET | `/api/products` | Public | List with `count`, sorted by `productId` |
+| GET | `/api/products/sheet/:productId` | Public | `data.product` and up to 3 `data.related`; 404 if unknown |
+| GET | `/api/products/:category` | Public | Case-insensitive category filter; 404 if none |
 | POST | `/api/products` | Admin | Create: 201, duplicate `productId` 409 |
 | PUT | `/api/products?productId=` | Admin | Update: 200, 404 |
 | DELETE | `/api/products?productId=` | Admin | Delete: 204, 404 |
@@ -134,9 +135,32 @@ Both GET routes also accept:
 
 | Parameter | Effect |
 |---|---|
-| `q` | Search by product name |
-| `sort` | `price_asc`, `price_desc`, `name` or `newest`; default is `productId` |
+| `q` | Search by product name, brand or category |
+| `zone`, `brand`, `colour`, `use` | Match any of a comma-separated list, in any case |
+| `bay` | Bay number |
+| `minPrice`, `maxPrice` | Price range |
+| `connectivity` | `wired`, `wireless` or `n/a` |
+| `isNew` | `true` or `false` |
+| `sort` | `price_asc`, `price_desc`, `new` or `name`; default is `productId` |
 | `page`, `limit` | Paginate (`limit` is at most 50) and add a `pagination` object to the response |
+
+### Store browsing
+
+| Method | Path | Access | Result |
+|---|---|---|---|
+| GET | `/api/zones` | Public | Each zone with `productCount`, `totalStock`, `bays` and `layout` |
+| GET | `/api/search?q=` | Public | Exact SKU first, then matches by name, brand or zone; at most 8; 400 without `q` |
+| GET | `/api/kits` | Public | All kits |
+| GET | `/api/kits/:id` | Public | `data.kit` and `data.products` |
+
+### Reviews and questions
+
+| Method | Path | Access | Result |
+|---|---|---|---|
+| GET | `/api/products/:productId/reviews` | Public | Reviews with the writer's username |
+| POST | `/api/products/:productId/reviews` | Logged in | `{ "rating", "text" }`: 201; one per user per product, otherwise 409 |
+| GET | `/api/products/:productId/questions` | Public | Questions and any answers |
+| POST | `/api/products/:productId/questions` | Logged in | `{ "text" }`: 201 |
 
 ### Orders
 
@@ -165,7 +189,7 @@ Order totals are always calculated on the server from database prices.
 
 `npm test` runs 50 API tests covering every endpoint and error code, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
 
-`bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl. It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
+`bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl, and `docs/api-tests/catalogue-curl.sh` does the same for the catalogue (see the top of that file for its arguments). It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
 
 To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminEmail` and `adminPassword` collection variables to your `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` values, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
 

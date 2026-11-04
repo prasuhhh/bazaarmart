@@ -27,8 +27,19 @@ const productSchema = new mongoose.Schema({
   seller: { type: String, trim: true },
   warrantyMonths: { type: Number, min: 0 },
   arrivesInDays: { type: Number, min: 0 },
-  isNew: { type: Boolean, default: false }
-}, { timestamps: true, suppressReservedKeysWarning: true });
+  // Stored as isNewDrop because Mongoose reserves isNew: a field with that name
+  // stops createdAt being set. The API still calls it isNew.
+  isNewDrop: { type: Boolean, default: false }
+}, {
+  timestamps: true,
+  toJSON: {
+    transform(_doc, json) {
+      json.isNew = json.isNewDrop;
+      delete json.isNewDrop;
+      return json;
+    }
+  }
+});
 
 productSchema.index({ productName: 'text', brand: 'text', category: 'text' });
 productSchema.index({ zoneCode: 1, bay: 1 });

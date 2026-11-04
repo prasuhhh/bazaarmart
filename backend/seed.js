@@ -30,6 +30,25 @@ async function syncIndexes() {
   console.log('Indexes are up to date.');
 }
 
+const zones = [
+  ['A', 'Audio'], ['W', 'Wearables'], ['D', 'Desk setup'], ['L', 'Living'], ['S', 'Style'],
+  ['G', 'Gaming'], ['C', 'Carry'], ['P', 'Phone+'], ['B', 'Body care']
+];
+
+const kits = [
+  { title: 'Build a desk setup', query: { zone: 'D' } },
+  { title: 'Pair a look with a watch', query: { zone: 'S,W' } },
+  { title: 'Gift under ₹2000', query: { maxPrice: '2000' } }
+];
+
+async function seedZonesAndKits() {
+  await Promise.all(zones.map(([code, name], index) =>
+    Zone.updateOne({ code }, { $set: { name, order: index + 1 } }, { upsert: true })));
+  await Promise.all(kits.map(({ title, query }) =>
+    Kit.updateOne({ title }, { $set: { query } }, { upsert: true })));
+  console.log('Zones and kits are ready.');
+}
+
 async function seedProducts() {
   const count = await Product.countDocuments();
   if (count > 0) {
@@ -58,6 +77,7 @@ async function seedAdmin() {
 try {
   await connectDB();
   await syncIndexes();
+  await seedZonesAndKits();
   await seedProducts();
   await seedAdmin();
 } catch (error) {

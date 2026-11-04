@@ -125,21 +125,21 @@ describe('login', () => {
 
 describe('authentication', () => {
   it('rejects a missing token with 401', async () => {
-    assert.equal((await request(app).get('/api/products')).status, 401);
+    assert.equal((await request(app).get('/api/users/me')).status, 401);
   });
 
   it('rejects a bad token with 401', async () => {
-    assert.equal((await auth(request(app).get('/api/products'), 'not-a-token')).status, 401);
+    assert.equal((await auth(request(app).get('/api/users/me'), 'not-a-token')).status, 401);
   });
 
   it('rejects an expired token with 401', async () => {
     const expired = jwt.sign({ userId: new mongoose.Types.ObjectId() }, process.env.JWT_SECRET, { expiresIn: -10 });
-    assert.equal((await auth(request(app).get('/api/products'), expired)).status, 401);
+    assert.equal((await auth(request(app).get('/api/users/me'), expired)).status, 401);
   });
 
   it('rejects the token of a deleted account', async () => {
     await auth(request(app).delete('/api/users').query({ emailId: shopper.emailId }), userToken);
-    assert.equal((await auth(request(app).get('/api/products'), userToken)).status, 401);
+    assert.equal((await auth(request(app).get('/api/users/me'), userToken)).status, 401);
   });
 });
 
@@ -385,7 +385,7 @@ describe('error handling', () => {
     User.findById = () => { throw new Error('secret database detail'); };
     console.error = () => {};
     try {
-      return await auth(request(app).get('/api/products'), userToken);
+      return await auth(request(app).get('/api/users/me'), userToken);
     } finally {
       User.findById = realFind;
       console.error = realError;
@@ -419,7 +419,7 @@ describe('error handling', () => {
   });
 
   it('turns a JWT error into a 401 through the central handler', async () => {
-    const res = await auth(request(app).get('/api/products'), 'not-a-token');
+    const res = await auth(request(app).get('/api/users/me'), 'not-a-token');
     assert.equal(res.status, 401);
     assert.deepEqual(res.body, { success: false, message: 'Invalid or expired token.' });
   });

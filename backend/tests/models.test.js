@@ -129,7 +129,7 @@ describe('Product', () => {
     await Product.create({
       productId: 'A-01-117', ...productFields, zoneCode: 'a', bay: 1, bayName: 'Earbuds', brand: 'Noise',
       colours: ['Black'], use: ['gym'], connectivity: 'wireless', specs: { Battery: '30 h', Weight: '48 g' },
-      images: ['a.jpg'], seller: 'BazaarMart', warrantyMonths: 12, arrivesInDays: 2, isNew: true
+      images: ['a.jpg'], seller: 'BazaarMart', warrantyMonths: 12, arrivesInDays: 2, isNewDrop: true
     });
     const json = JSON.parse(JSON.stringify(await Product.findOne({ productId: 'A-01-117' })));
     assert.equal(json.zoneCode, 'A');
@@ -137,23 +137,23 @@ describe('Product', () => {
     assert.deepEqual(json.specs, { Battery: '30 h', Weight: '48 g' });
   });
 
-  it('keeps insert and update behaviour correct despite the isNew field', async () => {
-    await Product.insertMany([{ productId: 'N1', ...productFields, isNew: true }, { productId: 'N2', ...productFields }]);
-    for (const productId of ['N1', 'N2']) {
-      const product = await Product.findOne({ productId });
-      product.productPrice = 1500;
-      await product.save();
-    }
-    assert.equal(await Product.countDocuments(), 2);
-    assert.equal((await Product.findOne({ productId: 'N1' })).isNew, true);
-    assert.equal((await Product.findOne({ productId: 'N2' })).isNew, false);
-    assert.equal((await Product.findOne({ productId: 'N2' })).productPrice, 1500);
+  it('sets createdAt whether or not the product is a new drop', async () => {
+    const plain = await Product.create({ productId: 'N1', ...productFields });
+    const drop = await Product.create({ productId: 'N2', ...productFields, isNewDrop: true });
+    assert.ok(plain.createdAt instanceof Date);
+    assert.ok(drop.createdAt instanceof Date);
+  });
 
-    const unsaved = new Product({ productId: 'N3', ...productFields, isNew: false });
-    await unsaved.save();
-    unsaved.quantity = 9;
-    await unsaved.save();
-    assert.equal(await Product.countDocuments({ productId: 'N3', quantity: 9 }), 1);
+  it('calls the field isNew in JSON and still saves existing products as updates', async () => {
+    await Product.create({ productId: 'N1', ...productFields, isNewDrop: true });
+    const product = await Product.findOne({ productId: 'N1' });
+    product.productPrice = 1500;
+    await product.save();
+    assert.equal(await Product.countDocuments(), 1);
+    const json = JSON.parse(JSON.stringify(await Product.findOne({ productId: 'N1' })));
+    assert.equal(json.isNew, true);
+    assert.equal(json.isNewDrop, undefined);
+    assert.equal(json.productPrice, 1500);
   });
 
   it('rejects an unknown zone, bad connectivity and negative values', async () => {
