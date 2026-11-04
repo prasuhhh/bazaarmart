@@ -53,7 +53,8 @@ export default function Counter() {
   const finish = ({ message, data }) => {
     clearReceipt();
     showSuccess(message, { keep: true });
-    navigate(`/track/${data.orderNo}`);
+    // A guest order is opened with its phone, so a guest lands straight on the parcel.
+    navigate(`/track/${data.orderNo}`, { state: user ? undefined : { phone: address.phone } });
   };
 
   useEffect(() => {
