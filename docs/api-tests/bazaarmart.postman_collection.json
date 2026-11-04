@@ -669,14 +669,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/products/sheet/P001",
+              "raw": "{{baseUrl}}/products/sheet/A-01-117",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "products",
                 "sheet",
-                "P001"
+                "A-01-117"
               ]
             }
           }
@@ -843,13 +843,13 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/products/electronics",
+              "raw": "{{baseUrl}}/products/audio",
               "host": [
                 "{{baseUrl}}"
               ],
               "path": [
                 "products",
-                "electronics"
+                "audio"
               ]
             }
           }

@@ -20,8 +20,8 @@ LOGIN="{\"emailId\":\"$EMAIL\",\"password\":\"$PASSWORD\"}"
 if [ "$MODE" = '--require-auth' ]; then
   echo '--- REQUIRE_AUTH_FOR_CATALOGUE=true'
   call 401 'Products with no token' GET /products
-  call 401 'Category with no token' GET /products/electronics
-  call 401 'Product sheet with no token' GET /products/sheet/P001
+  call 401 'Category with no token' GET /products/audio
+  call 401 'Product sheet with no token' GET /products/sheet/A-01-117
   call 401 'Search with no token' GET '/search?q=mouse'
   call 401 'Products with a bad token' GET /products '' 'not-a-token'
   call 201 'Register' POST /users "$REGISTER"

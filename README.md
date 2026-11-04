@@ -32,6 +32,7 @@ Fill in `backend/.env`:
 | `JWT_EXPIRES_IN` | No | How long a login lasts, default `2h` |
 | `SEED_ADMIN_EMAIL` | For seeding | Email of the admin account |
 | `SEED_ADMIN_PASSWORD` | For seeding | Password of the admin account, at least 6 characters |
+| `SEED_DEMO_EMAIL`, `SEED_DEMO_PASSWORD` | No | Sign-in details for the demo user |
 | `NODE_ENV` | No | Set to `production` when deployed |
 | `PORT` | No | API port, default `5000` |
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
@@ -42,11 +43,13 @@ Fill in `backend/.env`:
 Then seed the database and start both apps:
 
 ```bash
-npm run seed    # syncs indexes, adds zones, kits, sample products (if there are none) and the admin account
+npm run seed    # syncs indexes, then adds zones, kits, the catalogue, the admin and a demo user
 npm run dev     # API on :5000, website on http://localhost:5173
 ```
 
-The seed is safe to re-run. Each run sets the admin account's password back to `SEED_ADMIN_PASSWORD`.
+The seed is safe to re-run. It adds only what's missing, so product edits and stock levels are kept, and an existing admin keeps their password. Changing `SEED_ADMIN_PASSWORD` later has no effect on that account. If a normal account already holds the admin email, the seed promotes it and replaces its password.
+
+The demo user (`SEED_DEMO_EMAIL`, `SEED_DEMO_PASSWORD`) gets a saved address and two orders, one out for delivery and one packed. It's skipped if those settings are blank. The catalogue lives in `backend/data/catalogue.js`, with invented brands and placeholder images from picsum.photos.
 
 If port 5000 is already in use on macOS, AirPlay Receiver is the usual cause. Set `PORT` in `backend/.env` and `VITE_API_URL` in `frontend/.env` to another port.
 
@@ -58,8 +61,8 @@ Run these from the project root.
 |---|---|
 | `npm run install:all` | Installs root, backend and frontend packages |
 | `npm run dev` | Starts the API and the website together |
-| `npm run seed` | Adds sample products and the admin account |
-| `npm test` | Runs the automated API tests on a temporary in-memory database |
+| `npm run seed` | Adds whatever is missing from the zones, kits, catalogue, admin and demo user |
+| `npm test` | Runs the automated tests on temporary in-memory databases |
 | `npm run build` | Builds the website into `frontend/dist` |
 | `npm start` | Starts the API without auto-reload |
 
@@ -187,7 +190,7 @@ Order totals are always calculated on the server from database prices.
 
 ## Testing
 
-`npm test` runs 50 API tests covering every endpoint and error code, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
+`npm test` covers the API, the data models and the seed script on temporary databases, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
 
 `bash docs/api-tests/auth-curl.sh http://localhost:5000/api` checks the sign-in flows with curl, and `docs/api-tests/catalogue-curl.sh` does the same for the catalogue (see the top of that file for its arguments). It creates test accounts, so run it against a development database, with `OTP_MOCK=true` and `NODE_ENV` not set to production.
 
