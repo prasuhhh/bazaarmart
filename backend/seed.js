@@ -1,10 +1,19 @@
 import 'dotenv/config';
-import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 import { connectDB } from './config/db.js';
 import { isValidEmail, isValidPassword } from './middleware/validate.js';
+import Counter from './models/Counter.js';
+import Kit from './models/Kit.js';
+import Order from './models/Order.js';
+import Otp from './models/Otp.js';
 import Product from './models/Product.js';
+import Question from './models/Question.js';
+import Review from './models/Review.js';
+import Shelf from './models/Shelf.js';
 import User from './models/User.js';
+import Zone from './models/Zone.js';
+
+const ALL_MODELS = [Counter, Kit, Order, Otp, Product, Question, Review, Shelf, User, Zone];
 
 const sampleProducts = [
   { productId: 'P001', productName: 'Wireless Mouse', productPrice: 599, category: 'Electronics', quantity: 25, description: 'Ergonomic wireless mouse with adjustable DPI.' },
@@ -13,6 +22,13 @@ const sampleProducts = [
   { productId: 'P004', productName: 'Water Bottle', productPrice: 399, category: 'Lifestyle', quantity: 30, description: 'Reusable stainless-steel water bottle.' },
   { productId: 'P005', productName: 'USB-C Hub', productPrice: 1799, category: 'Accessories', quantity: 8, description: 'Multiport USB-C hub for laptops.' }
 ];
+
+// MongoDB can't change an existing index in place, so a database created before a
+// schema change (such as emailId becoming sparse) must have its indexes rebuilt.
+async function syncIndexes() {
+  await Promise.all(ALL_MODELS.map(model => model.syncIndexes()));
+  console.log('Indexes are up to date.');
+}
 
 async function seedProducts() {
   const count = await Product.countDocuments();
@@ -32,19 +48,16 @@ async function seedAdmin() {
     throw new Error('Set SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD (at least 6 characters) in backend/.env');
   }
   const emailId = SEED_ADMIN_EMAIL.toLowerCase().trim();
-  await User.findOneAndUpdate(
-    { emailId },
-    {
-      $set: { role: 'admin', password: await bcrypt.hash(SEED_ADMIN_PASSWORD, 10) },
-      $setOnInsert: { username: 'Store Admin', age: 30 }
-    },
-    { upsert: true, runValidators: true }
-  );
+  const admin = await User.findOne({ emailId }) ?? new User({ emailId, username: 'Store Admin', age: 30 });
+  admin.role = 'admin';
+  admin.password = SEED_ADMIN_PASSWORD;
+  await admin.save();
   console.log(`Admin account ready: ${emailId}`);
 }
 
 try {
   await connectDB();
+  await syncIndexes();
   await seedProducts();
   await seedAdmin();
 } catch (error) {

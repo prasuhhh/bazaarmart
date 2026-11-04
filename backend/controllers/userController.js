@@ -1,4 +1,3 @@
-import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import { isValidAge, isValidEmail, isValidPassword, isValidUsername } from '../middleware/validate.js';
@@ -7,8 +6,10 @@ import { ApiError, created, ok } from '../utils/response.js';
 const publicUser = user => ({ username: user.username, emailId: user.emailId, age: user.age, role: user.role });
 
 async function saveProfile(emailId, updates) {
-  const user = await User.findOneAndUpdate({ emailId }, updates, { new: true, runValidators: true });
+  const user = await User.findOne({ emailId });
   if (!user) throw new ApiError(404, 'User not found.');
+  user.set(updates);
+  await user.save(); // save(), not findOneAndUpdate, so a new password gets hashed
   return publicUser(user);
 }
 
@@ -25,7 +26,7 @@ export async function register(req, res) {
     username: username.trim(),
     emailId: normalizedEmail,
     age: Number(age),
-    password: await bcrypt.hash(password, 10)
+    password
   });
   created(res, { message: `Successfully registered! Welcome, ${user.username}.` });
 }
@@ -37,7 +38,7 @@ export async function login(req, res) {
   }
   const user = await User.findOne({ emailId: emailId.toLowerCase().trim() }).select('+password');
   if (!user) throw new ApiError(404, 'User Not Registered.');
-  if (!(await bcrypt.compare(password, user.password))) throw new ApiError(401, 'Invalid Password.');
+  if (!(await user.comparePassword(password))) throw new ApiError(401, 'Invalid Password.');
 
   const token = jwt.sign({ userId: user._id, emailId: user.emailId }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN || '2h'
@@ -51,7 +52,7 @@ export async function updateProfile(req, res) {
     throw new ApiError(400, 'Provide a valid username, age, and optional password (at least 6 characters).');
   }
   const updates = { username: username.trim(), age: Number(age) };
-  if (password) updates.password = await bcrypt.hash(password, 10);
+  if (password) updates.password = password;
 
   ok(res, { message: 'Profile updated successfully.', data: await saveProfile(req.user.emailId, updates) });
 }
@@ -72,7 +73,7 @@ export async function patchProfile(req, res) {
   }
   if (password !== undefined) {
     if (!isValidPassword(password)) throw new ApiError(400, 'Password must contain at least 6 characters.');
-    updates.password = await bcrypt.hash(password, 10);
+    updates.password = password;
   }
 
   ok(res, { message: 'Selected profile fields updated.', data: await saveProfile(req.user.emailId, updates) });

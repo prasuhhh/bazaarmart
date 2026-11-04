@@ -24,8 +24,8 @@ async function explainStockFailure({ productId, qty }) {
 }
 
 async function restoreStock(reserved) {
-  await Promise.all(reserved.map(({ product, qty }) =>
-    Product.updateOne({ _id: product }, { $inc: { quantity: qty } })));
+  await Promise.all(reserved.map(({ productId, qty }) =>
+    Product.updateOne({ productId }, { $inc: { quantity: qty } })));
 }
 
 export async function placeOrder(req, res) {
@@ -43,16 +43,16 @@ export async function placeOrder(req, res) {
       );
       if (!product) throw await explainStockFailure({ productId, qty });
       reserved.push({
-        product: product._id,
         productId,
-        productName: product.productName,
+        name: product.productName,
         qty,
-        price: product.productPrice
+        price: product.productPrice,
+        image: product.images[0]
       });
     }
 
     const total = reserved.reduce((sum, item) => sum + item.price * item.qty, 0);
-    const order = await Order.create({ user: req.user.userId, items: reserved, total });
+    const order = await Order.create({ user: req.user.userId, items: reserved, subtotal: total, total });
     created(res, { message: 'Order placed.', data: order });
   } catch (error) {
     await restoreStock(reserved);
@@ -61,6 +61,6 @@ export async function placeOrder(req, res) {
 }
 
 export async function listMyOrders(req, res) {
-  const orders = await Order.find({ user: req.user.userId }).select('-__v -user').sort({ createdAt: -1 });
+  const orders = await Order.find({ user: req.user.userId }).sort({ createdAt: -1 });
   ok(res, { data: orders, count: orders.length });
 }

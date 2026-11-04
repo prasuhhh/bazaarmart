@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import { after, before, beforeEach, describe, it } from 'node:test';
-import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
@@ -49,8 +48,7 @@ beforeEach(async () => {
   await Promise.all([User.deleteMany({}), Product.deleteMany({}), Order.deleteMany({})]);
   await request(app).post('/api/users').send(shopper);
   await User.create({
-    username: 'Admin', emailId: 'admin@example.com', age: 30, role: 'admin',
-    password: await bcrypt.hash('adminpass', 10)
+    username: 'Admin', emailId: 'admin@example.com', age: 30, role: 'admin', password: 'adminpass'
   });
   await Product.insertMany([
     { productId: 'P001', productName: 'Wireless Mouse', productPrice: 599, category: 'Electronics', quantity: 3, description: 'Mouse.' },
@@ -355,7 +353,7 @@ describe('orders', () => {
     await order(userToken, [{ productId: 'P001', qty: 1 }]);
     await Product.deleteOne({ productId: 'P001' });
     const res = await auth(request(app).get('/api/orders'), userToken);
-    assert.equal(res.body.data[0].items[0].productName, 'Wireless Mouse');
+    assert.equal(res.body.data[0].items[0].name, 'Wireless Mouse');
   });
 
   it('requires a token', async () => {

@@ -33,7 +33,7 @@ export default function Orders() {
             </div>
             {order.items.map(item => (
               <div className="order-line" key={item.productId}>
-                <span>{item.productName} × {item.qty}</span>
+                <span>{item.name} × {item.qty}</span>
                 <span>{formatPrice(item.price * item.qty)}</span>
               </div>
             ))}
