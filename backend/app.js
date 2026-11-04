@@ -40,7 +40,7 @@ export function createApp({ authRateLimit = 10 } = {}) {
     next();
   });
 
-  app.get('/', (_req, res) => ok(res, { message: 'Simple Store API is running.' }));
+  app.get('/', (_req, res) => ok(res, { message: 'BazaarMart API is running.' }));
   app.use('/api', createUserRoutes({
     loginLimiter: createAuthLimiter(authRateLimit),
     registerLimiter: createAuthLimiter(authRateLimit)

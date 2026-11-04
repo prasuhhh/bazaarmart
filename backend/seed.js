@@ -27,15 +27,15 @@ async function seedProducts() {
 // Sets the password as well as the role: otherwise anyone who registered this
 // email first would become admin with a password of their own choosing.
 async function seedAdmin() {
-  const { ADMIN_EMAIL, ADMIN_PASSWORD } = process.env;
-  if (!isValidEmail(ADMIN_EMAIL) || !isValidPassword(ADMIN_PASSWORD)) {
-    throw new Error('Set ADMIN_EMAIL and ADMIN_PASSWORD (at least 6 characters) in backend/.env');
+  const { SEED_ADMIN_EMAIL, SEED_ADMIN_PASSWORD } = process.env;
+  if (!isValidEmail(SEED_ADMIN_EMAIL) || !isValidPassword(SEED_ADMIN_PASSWORD)) {
+    throw new Error('Set SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD (at least 6 characters) in backend/.env');
   }
-  const emailId = ADMIN_EMAIL.toLowerCase().trim();
+  const emailId = SEED_ADMIN_EMAIL.toLowerCase().trim();
   await User.findOneAndUpdate(
     { emailId },
     {
-      $set: { role: 'admin', password: await bcrypt.hash(ADMIN_PASSWORD, 10) },
+      $set: { role: 'admin', password: await bcrypt.hash(SEED_ADMIN_PASSWORD, 10) },
       $setOnInsert: { username: 'Store Admin', age: 30 }
     },
     { upsert: true, runValidators: true }

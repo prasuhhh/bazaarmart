@@ -33,7 +33,7 @@ async function loginAs(emailId, password) {
 
 before(async () => {
   mongo = await MongoMemoryServer.create();
-  await mongoose.connect(mongo.getUri(), { dbName: 'simple_store_test' });
+  await mongoose.connect(mongo.getUri(), { dbName: 'bazaarmart_test' });
   await Promise.all([User.init(), Product.init()]);
 });
 

@@ -20,7 +20,7 @@ export default function Navbar() {
       <Link to="/" className="brand">
         <span className="brand-mark">S</span>
         <span>
-          <strong>Simple Store</strong>
+          <strong>BazaarMart</strong>
           <small>CS3801 · MERN Shopping Application</small>
         </span>
       </Link>

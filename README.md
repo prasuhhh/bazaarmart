@@ -1,6 +1,8 @@
-# Simple Store
+# BazaarMart
 
-A full-stack MERN shopping website built for the CS3801 Web Technologies Lab. It combines Exercise 8 (the shopping application with JWT login) with the CRUD API pattern from Exercise 7, applied to products.
+**lifestyle × tech.** A full-stack MERN shopping website built for the CS3801 Web Technologies Lab. It combines Exercise 8 (the shopping application with JWT login) with the CRUD API pattern from Exercise 7, applied to products.
+
+> **Rebuild in progress.** This README describes what works today. The target design is in [docs/DESIGN.md](docs/DESIGN.md), with wireframes in [docs/wireframe/](docs/wireframe/). The look and pages will change as each step lands.
 
 - Register, log in and manage your profile
 - Browse, search, filter and sort the catalogue
@@ -27,10 +29,10 @@ Fill in `backend/.env`:
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `MONGO_URI` | Yes | MongoDB connection string. Data is always stored in the `simple_store` database. |
+| `MONGO_URI` | Yes | MongoDB connection string. Data is always stored in the `bazaarmart` database. |
 | `JWT_SECRET` | Yes | Long random string used to sign login tokens |
-| `ADMIN_EMAIL` | For seeding | Email of the admin account |
-| `ADMIN_PASSWORD` | For seeding | Password of the admin account, at least 6 characters |
+| `SEED_ADMIN_EMAIL` | For seeding | Email of the admin account |
+| `SEED_ADMIN_PASSWORD` | For seeding | Password of the admin account, at least 6 characters |
 | `PORT` | No | API port, default `5000` |
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
 | `DNS_SERVERS` | No | Comma-separated DNS servers, only if MongoDB SRV lookups fail on your network |
@@ -42,7 +44,7 @@ npm run seed    # adds sample products (if there are none) and the admin account
 npm run dev     # API on :5000, website on http://localhost:5173
 ```
 
-The seed is safe to re-run. Each run sets the admin account's password back to `ADMIN_PASSWORD`.
+The seed is safe to re-run. Each run sets the admin account's password back to `SEED_ADMIN_PASSWORD`.
 
 If port 5000 is already in use on macOS, AirPlay Receiver is the usual cause. Set `PORT` in `backend/.env` and `VITE_API_URL` in `frontend/.env` to another port.
 
@@ -136,14 +138,14 @@ Order totals are always calculated on the server from database prices.
 
 `npm test` runs 50 API tests covering every endpoint and error code, including two buyers trying to take the last unit at once. The first run downloads a temporary MongoDB binary.
 
-To test by hand, import `docs/api-tests/simple-store.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminPassword` collection variable to the value in `backend/.env`, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
+To test by hand, import `docs/api-tests/bazaarmart.postman_collection.json` into Thunder Client or Postman. Run `npm run seed` first, set the `adminPassword` collection variable to the value in `backend/.env`, then run the requests in order. The collection cleans up its test user and product at the end, but one order record remains.
 
 ## Deployment
 
 1. Create a MongoDB Atlas cluster and allow your host's IP addresses.
 2. Deploy `backend/` to Render or Railway with start command `npm start`. Set `NODE_ENV=production`, `MONGO_URI`, `JWT_SECRET` and `CLIENT_ORIGIN` (your frontend URL).
 3. Deploy `frontend/` to Vercel or Netlify with build command `npm run build` and output folder `dist`. Set `VITE_API_URL` to your backend URL followed by `/api`. Add a rewrite that sends all paths to `index.html`, so page refreshes work.
-4. Run `npm run seed` once with the production `MONGO_URI`, `ADMIN_EMAIL` and `ADMIN_PASSWORD` set.
+4. Run `npm run seed` once with the production `MONGO_URI`, `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` set.
 
 ## Security notes
 
@@ -177,6 +179,8 @@ frontend/src/
 docs/
   api-tests/       Thunder Client / Postman collection
   screenshots/     screenshots of the website
+  wireframe/       the 9 design wireframes
+  DESIGN.md        UI and feature specification
 ```
 
-See [CONTEXT.md](CONTEXT.md) for the project specification.
+See [CONTEXT.md](CONTEXT.md) for backend foundations and [docs/DESIGN.md](docs/DESIGN.md) for the UI and new features. Section 10 of DESIGN.md settles any differences.

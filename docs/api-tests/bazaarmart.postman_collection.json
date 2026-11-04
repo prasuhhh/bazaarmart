@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "Simple Store API",
+    "name": "BazaarMart API",
     "description": "Run in order. Set adminEmail and adminPassword to the values in backend/.env, and run the seed first.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -19,7 +19,7 @@
     },
     {
       "key": "adminEmail",
-      "value": "admin@simplestore.com"
+      "value": "admin@bazaarmart.com"
     },
     {
       "key": "adminPassword",

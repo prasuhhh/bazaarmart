@@ -1,7 +1,7 @@
 import dns from 'node:dns';
 import mongoose from 'mongoose';
 
-const DB_NAME = 'simple_store';
+const DB_NAME = 'bazaarmart';
 
 export async function connectDB(uri = process.env.MONGO_URI) {
   // Workaround for networks where the mongodb+srv lookup fails, e.g. DNS_SERVERS=8.8.8.8,8.8.4.4
