@@ -1,6 +1,6 @@
 import Product from '../models/Product.js';
-import { escapeRegex } from '../middleware/validate.js';
-import { created, fail, noContent, ok } from '../utils/response.js';
+import { escapeRegex } from '../utils/escapeRegex.js';
+import { ApiError, created, noContent, ok } from '../utils/response.js';
 
 const EDITABLE_FIELDS = ['productName', 'productPrice', 'category', 'quantity', 'description'];
 const DEFAULT_PAGE_SIZE = 9;
@@ -43,7 +43,7 @@ export async function listByCategory(req, res) {
   const { category } = req.params;
   const filter = { category: new RegExp(`^${escapeRegex(category)}$`, 'i') };
   const { products, pagination } = await findProducts(filter, req.query);
-  if (!products.length) throw fail(404, `No products found in category "${category}".`);
+  if (!products.length) throw new ApiError(404, `No products found in category "${category}".`);
   ok(res, { data: products, count: products.length, pagination });
 }
 
@@ -55,22 +55,22 @@ export async function createProduct(req, res) {
 
 function requireProductId(req) {
   const productId = String(req.query.productId || '').trim();
-  if (!productId) throw fail(400, 'productId query parameter is required.');
+  if (!productId) throw new ApiError(400, 'productId query parameter is required.');
   return productId;
 }
 
 export async function updateProduct(req, res) {
   const productId = requireProductId(req);
   const updates = pickEditable(req.body);
-  if (!Object.keys(updates).length) throw fail(400, 'Provide at least one editable field.');
+  if (!Object.keys(updates).length) throw new ApiError(400, 'Provide at least one editable field.');
 
   const product = await Product.findOneAndUpdate({ productId }, updates, { new: true, runValidators: true });
-  if (!product) throw fail(404, 'Product not found.');
+  if (!product) throw new ApiError(404, 'Product not found.');
   ok(res, { message: 'Product updated.', data: product });
 }
 
 export async function deleteProduct(req, res) {
   const product = await Product.findOneAndDelete({ productId: requireProductId(req) });
-  if (!product) throw fail(404, 'Product not found.');
+  if (!product) throw new ApiError(404, 'Product not found.');
   noContent(res);
 }

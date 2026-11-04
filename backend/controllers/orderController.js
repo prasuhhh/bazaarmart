@@ -1,16 +1,16 @@
 import Order from '../models/Order.js';
 import Product from '../models/Product.js';
-import { created, fail, ok } from '../utils/response.js';
+import { ApiError, created, ok } from '../utils/response.js';
 
 // Adds up repeated lines so the same product can't get past the stock check twice.
 function parseItems(items) {
-  if (!Array.isArray(items) || !items.length) throw fail(400, 'Add at least one item to your order.');
+  if (!Array.isArray(items) || !items.length) throw new ApiError(400, 'Add at least one item to your order.');
 
   const totals = new Map();
   for (const item of items) {
     const productId = typeof item?.productId === 'string' ? item.productId.trim() : '';
     if (!productId || !Number.isInteger(item.qty) || item.qty < 1) {
-      throw fail(400, 'Each item needs a productId and a whole-number qty of at least 1.');
+      throw new ApiError(400, 'Each item needs a productId and a whole-number qty of at least 1.');
     }
     totals.set(productId, (totals.get(productId) || 0) + item.qty);
   }
@@ -19,8 +19,8 @@ function parseItems(items) {
 
 async function explainStockFailure({ productId, qty }) {
   const product = await Product.findOne({ productId });
-  if (!product) return fail(404, `Product ${productId} no longer exists.`);
-  return fail(409, `Only ${product.quantity} of ${product.productName} left, but you asked for ${qty}.`);
+  if (!product) return new ApiError(404, `Product ${productId} no longer exists.`);
+  return new ApiError(409, `Only ${product.quantity} of ${product.productName} left, but you asked for ${qty}.`);
 }
 
 async function restoreStock(reserved) {

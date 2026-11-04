@@ -87,6 +87,8 @@ The base URL is `/api`. Every response uses this shape, except 204 responses, wh
 
 Protected routes need the header `Authorization: Bearer <token>`.
 
+`GET /api/health` needs no login and returns `{ "success": true }`. Use it to check the API is up.
+
 ### Users
 
 | Method | Path | Access | Result |
@@ -135,7 +137,7 @@ Order totals are always calculated on the server from database prices.
 | 404 | Not found |
 | 409 | Duplicate record, or not enough stock |
 | 429 | Too many failed login or registration attempts |
-| 500 | Server or database error; details are never sent to the client |
+| 500 | Server or database error; the message is generic in production and stack traces are never sent |
 
 ## Testing
 

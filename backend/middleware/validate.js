@@ -11,5 +11,3 @@ export function isValidAge(value) {
   const age = Number(value);
   return Number.isFinite(age) && age >= 1 && age <= 120;
 }
-
-export const escapeRegex = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

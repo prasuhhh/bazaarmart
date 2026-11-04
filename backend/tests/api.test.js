@@ -6,9 +6,12 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
 import request from 'supertest';
 import { createApp } from '../app.js';
+import { errorHandler } from '../middleware/errorHandler.js';
 import Order from '../models/Order.js';
 import Product from '../models/Product.js';
 import User from '../models/User.js';
+import { escapeRegex } from '../utils/escapeRegex.js';
+import { asyncHandler } from '../utils/response.js';
 
 process.env.JWT_SECRET = 'test-secret';
 
@@ -377,19 +380,82 @@ describe('error handling', () => {
     assert.equal((await request(app).post('/api/login')).status, 400);
   });
 
-  it('hides internal details on a 500', async () => {
+  async function statusAfterDatabaseFailure() {
     const realFind = User.findById;
     const realError = console.error;
     User.findById = () => { throw new Error('secret database detail'); };
     console.error = () => {};
     try {
-      const res = await auth(request(app).get('/api/products'), userToken);
-      assert.equal(res.status, 500);
-      assert.equal(res.body.message, 'Internal server error.');
-      assert.equal(JSON.stringify(res.body).includes('secret'), false);
+      return await auth(request(app).get('/api/products'), userToken);
     } finally {
       User.findById = realFind;
       console.error = realError;
     }
+  }
+
+  async function withNodeEnv(value, run) {
+    const original = process.env.NODE_ENV;
+    process.env.NODE_ENV = value;
+    try {
+      return await run();
+    } finally {
+      if (original === undefined) delete process.env.NODE_ENV;
+      else process.env.NODE_ENV = original;
+    }
+  }
+
+  it('hides internal details on a 500 in production', async () => {
+    const res = await withNodeEnv('production', statusAfterDatabaseFailure);
+    assert.equal(res.status, 500);
+    assert.equal(res.body.success, false);
+    assert.equal(res.body.message, 'Internal server error.');
+    assert.equal(JSON.stringify(res.body).includes('secret'), false);
+  });
+
+  it('shows the error message on a 500 in development, but never a stack trace', async () => {
+    const res = await withNodeEnv('development', statusAfterDatabaseFailure);
+    assert.equal(res.status, 500);
+    assert.equal(res.body.message, 'secret database detail');
+    assert.equal(res.body.stack, undefined);
+  });
+
+  it('turns a JWT error into a 401 through the central handler', async () => {
+    const res = await auth(request(app).get('/api/products'), 'not-a-token');
+    assert.equal(res.status, 401);
+    assert.deepEqual(res.body, { success: false, message: 'Invalid or expired token.' });
+  });
+
+  it('gives a friendly message for a duplicate key', () => {
+    const res = { status(code) { this.code = code; return this; }, json(body) { this.body = body; return this; } };
+    errorHandler({ code: 11000, keyPattern: { productId: 1 } }, {}, res, () => {});
+    assert.equal(res.code, 409);
+    assert.equal(res.body.message, 'Product ID already exists.');
+  });
+
+  it('returns 400 for a malformed URL', async () => {
+    const res = await auth(request(app).get('/api/products/%E0%A4%A'), userToken);
+    assert.equal(res.status, 400);
+    assert.equal(res.body.success, false);
+  });
+});
+
+describe('core', () => {
+  it('GET /api/health returns { success: true } with no login', async () => {
+    const res = await request(app).get('/api/health');
+    assert.equal(res.status, 200);
+    assert.deepEqual(res.body, { success: true });
+  });
+
+  it('asyncHandler forwards a rejected handler to next', async () => {
+    const failure = new Error('boom');
+    const received = await new Promise(resolve => {
+      asyncHandler(async () => { throw failure; })({}, {}, resolve);
+    });
+    assert.equal(received, failure);
+  });
+
+  it('escapeRegex makes regex characters literal', () => {
+    assert.equal(new RegExp(`^${escapeRegex('a.c+')}$`).test('abc+'), false);
+    assert.equal(new RegExp(`^${escapeRegex('a.c+')}$`).test('a.c+'), true);
   });
 });

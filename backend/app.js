@@ -41,6 +41,7 @@ export function createApp({ authRateLimit = 10 } = {}) {
   });
 
   app.get('/', (_req, res) => ok(res, { message: 'BazaarMart API is running.' }));
+  app.get('/api/health', (_req, res) => ok(res));
   app.use('/api', createUserRoutes({
     loginLimiter: createAuthLimiter(authRateLimit),
     registerLimiter: createAuthLimiter(authRateLimit)

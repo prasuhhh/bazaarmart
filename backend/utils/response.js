@@ -11,12 +11,19 @@ export function noContent(res) {
   return res.status(204).end();
 }
 
-export class HttpError extends Error {
+export function fail(res, status, message) {
+  return res.status(status).json({ success: false, message });
+}
+
+// Throw this from anywhere in a request; errorHandler turns it into a response.
+export class ApiError extends Error {
   constructor(status, message) {
     super(message);
     this.status = status;
   }
 }
 
-// Usage: throw fail(404, 'User not found.');
-export const fail = (status, message) => new HttpError(status, message);
+// Express 5 already forwards rejected async handlers, so routes don't need this.
+// It's here for code that runs handlers outside Express's own routing.
+export const asyncHandler = handler => (req, res, next) =>
+  Promise.resolve(handler(req, res, next)).catch(next);
