@@ -1,0 +1,4409 @@
+[
+ {
+  "productId": "A-01-112",
+  "productName": "Prism ANC Earbuds",
+  "productPrice": 4399,
+  "quantity": 44,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 1,
+  "bayName": "Earbuds",
+  "brand": "Halo Audio",
+  "colours": [
+   "Navy",
+   "Grey"
+  ],
+  "use": [
+   "studio",
+   "gym"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "8 h",
+   "Driver": "11 mm",
+   "Water": "IPX5"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Halo Audio Prism ANC Earbuds. Tuned for clear mids and punchy bass.",
+  "imageQuery": "noise cancelling earbuds",
+  "images": []
+ },
+ {
+  "productId": "A-01-113",
+  "productName": "Maple Sport Buds",
+  "productPrice": 2049,
+  "quantity": 10,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 1,
+  "bayName": "Earbuds",
+  "brand": "Pulsewave",
+  "colours": [
+   "Navy",
+   "Olive",
+   "Black"
+  ],
+  "use": [
+   "home",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "24 h with case",
+   "Driver": "12 mm",
+   "Water": "IPX5"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pulsewave Maple Sport Buds. Pairs in seconds and remembers your devices.",
+  "imageQuery": "sport earbuds",
+  "images": []
+ },
+ {
+  "productId": "A-01-117",
+  "productName": "Mercury Buds",
+  "productPrice": 6499,
+  "quantity": 6,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 1,
+  "bayName": "Earbuds",
+  "brand": "Arcline",
+  "colours": [
+   "Sand",
+   "Olive",
+   "Grey"
+  ],
+  "use": [
+   "gym",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "5 h",
+   "Driver": "10 mm",
+   "Water": "IPX7"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Arcline Mercury Buds. Tuned for clear mids and punchy bass.",
+  "imageQuery": "wireless earbuds",
+  "images": []
+ },
+ {
+  "productId": "A-02-211",
+  "productName": "Sable Wireless Headphones",
+  "productPrice": 21999,
+  "quantity": 18,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 2,
+  "bayName": "Headphones",
+  "brand": "Halo Audio",
+  "colours": [
+   "Olive",
+   "Navy",
+   "White"
+  ],
+  "use": [
+   "gym",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "30 h",
+   "Weight": "220 g",
+   "Driver": "50 mm"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Halo Audio Sable Wireless Headphones. Pairs in seconds and remembers your devices.",
+  "imageQuery": "over ear headphones",
+  "images": []
+ },
+ {
+  "productId": "A-02-212",
+  "productName": "Pulse Pro ANC Headphones",
+  "productPrice": 1649,
+  "quantity": 27,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 2,
+  "bayName": "Headphones",
+  "brand": "Pulsewave",
+  "colours": [
+   "Black",
+   "Olive",
+   "White"
+  ],
+  "use": [
+   "studio",
+   "commute"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "60 h",
+   "Weight": "180 g",
+   "Driver": "40 mm"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Pulsewave Pulse Pro ANC Headphones. Light, comfortable and travel ready.",
+  "imageQuery": "noise cancelling headphones",
+  "images": []
+ },
+ {
+  "productId": "A-02-213",
+  "productName": "Prism Monitor Headphones",
+  "productPrice": 4999,
+  "quantity": 11,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 2,
+  "bayName": "Headphones",
+  "brand": "Sonique",
+  "colours": [
+   "White",
+   "Sand",
+   "Olive"
+  ],
+  "use": [
+   "gym",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "60 h",
+   "Weight": "290 g",
+   "Driver": "50 mm"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Sonique Prism Monitor Headphones. Pairs in seconds and remembers your devices.",
+  "imageQuery": "studio headphones",
+  "images": []
+ },
+ {
+  "productId": "A-03-311",
+  "productName": "Pulse Bluetooth Speaker",
+  "productPrice": 13499,
+  "quantity": 22,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 3,
+  "bayName": "Speakers",
+  "brand": "Pulsewave",
+  "colours": [
+   "White",
+   "Grey",
+   "Navy"
+  ],
+  "use": [
+   "party",
+   "home"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "8 h",
+   "Weight": "3.5 kg",
+   "Output": "20 W"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pulsewave Pulse Bluetooth Speaker. Tuned for clear mids and punchy bass.",
+  "imageQuery": "bluetooth speaker",
+  "images": []
+ },
+ {
+  "productId": "A-03-312",
+  "productName": "Zephyr Portable Speaker",
+  "productPrice": 10499,
+  "quantity": 4,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 3,
+  "bayName": "Speakers",
+  "brand": "Sonique",
+  "colours": [
+   "Sand",
+   "Grey",
+   "Navy"
+  ],
+  "use": [
+   "outdoor",
+   "party"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "8 h",
+   "Weight": "300 g",
+   "Output": "40 W"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Sonique Zephyr Portable Speaker. Pairs in seconds and remembers your devices.",
+  "imageQuery": "portable speaker",
+  "images": []
+ },
+ {
+  "productId": "A-03-313",
+  "productName": "Opal Bookshelf Speaker",
+  "productPrice": 8499,
+  "quantity": 29,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 3,
+  "bayName": "Speakers",
+  "brand": "Kitefield",
+  "colours": [
+   "Sand",
+   "White",
+   "Grey"
+  ],
+  "use": [
+   "outdoor",
+   "party"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 h",
+   "Weight": "3.5 kg",
+   "Output": "40 W"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Kitefield Opal Bookshelf Speaker. Tuned for clear mids and punchy bass.",
+  "imageQuery": "bookshelf speaker",
+  "images": []
+ },
+ {
+  "productId": "A-04-411",
+  "productName": "Moss Soundbar",
+  "productPrice": 9499,
+  "quantity": 11,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 4,
+  "bayName": "Soundbars & DACs",
+  "brand": "Sonique",
+  "colours": [
+   "Black",
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "studio",
+   "tv"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Power": "Bus powered",
+   "Inputs": "USB-C",
+   "Weight": "0.4 kg"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Sonique Moss Soundbar. Light, comfortable and travel ready.",
+  "imageQuery": "soundbar",
+  "images": []
+ },
+ {
+  "productId": "A-04-412",
+  "productName": "Sable Compact Soundbar",
+  "productPrice": 15499,
+  "quantity": 19,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 4,
+  "bayName": "Soundbars & DACs",
+  "brand": "Kitefield",
+  "colours": [
+   "Black",
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "studio",
+   "desk"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Power": "120 W",
+   "Inputs": "HDMI ARC",
+   "Weight": "3.2 kg"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Kitefield Sable Compact Soundbar. Light, comfortable and travel ready.",
+  "imageQuery": "compact soundbar",
+  "images": []
+ },
+ {
+  "productId": "A-04-413",
+  "productName": "Prism USB DAC",
+  "productPrice": 18499,
+  "quantity": 11,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 4,
+  "bayName": "Soundbars & DACs",
+  "brand": "Northtone",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "desk",
+   "studio"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Power": "80 W",
+   "Inputs": "USB-C",
+   "Weight": "3.2 kg"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": true,
+  "description": "Northtone Prism USB DAC. Pairs in seconds and remembers your devices.",
+  "imageQuery": "usb dac headphone amplifier",
+  "images": []
+ },
+ {
+  "productId": "A-05-511",
+  "productName": "Volt USB Mic",
+  "productPrice": 8999,
+  "quantity": 3,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 5,
+  "bayName": "Mics & Recorders",
+  "brand": "Kitefield",
+  "colours": [
+   "White",
+   "Olive"
+  ],
+  "use": [
+   "studio",
+   "interview"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Pattern": "Bidirectional",
+   "Sample rate": "96 kHz",
+   "Weight": "250 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Kitefield Volt USB Mic. Light, comfortable and travel ready.",
+  "imageQuery": "usb microphone",
+  "images": []
+ },
+ {
+  "productId": "A-05-512",
+  "productName": "Prism Lavalier Mic",
+  "productPrice": 11499,
+  "quantity": 32,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 5,
+  "bayName": "Mics & Recorders",
+  "brand": "Northtone",
+  "colours": [
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "interview",
+   "podcast"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Pattern": "Bidirectional",
+   "Sample rate": "48 kHz",
+   "Weight": "480 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Northtone Prism Lavalier Mic. Tuned for clear mids and punchy bass.",
+  "imageQuery": "lavalier microphone",
+  "images": []
+ },
+ {
+  "productId": "A-05-513",
+  "productName": "Maple Podcast Mic",
+  "productPrice": 1099,
+  "quantity": 6,
+  "category": "Audio",
+  "zoneCode": "A",
+  "bay": 5,
+  "bayName": "Mics & Recorders",
+  "brand": "Arcline",
+  "colours": [
+   "Sand",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "streaming",
+   "podcast"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Pattern": "Cardioid",
+   "Sample rate": "96 kHz",
+   "Weight": "90 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Arcline Maple Podcast Mic. Light, comfortable and travel ready.",
+  "imageQuery": "podcast microphone",
+  "images": []
+ },
+ {
+  "productId": "B-01-111",
+  "productName": "Lumen Face Wash",
+  "productPrice": 159,
+  "quantity": 28,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 1,
+  "bayName": "Skincare",
+  "brand": "Quillon",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "daily",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "100 ml",
+   "Skin type": "Oily",
+   "Fragrance": "Light"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 0,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Quillon Lumen Face Wash. Dermatologically tested.",
+  "imageQuery": "face wash",
+  "images": []
+ },
+ {
+  "productId": "B-01-112",
+  "productName": "Mercury Moisturiser",
+  "productPrice": 269,
+  "quantity": 3,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 1,
+  "bayName": "Skincare",
+  "brand": "Tallow & Co",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "summer",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "100 ml",
+   "Skin type": "Sensitive",
+   "Fragrance": "Light"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Tallow & Co Mercury Moisturiser. Fresh, simple and effective.",
+  "imageQuery": "moisturizer",
+  "images": []
+ },
+ {
+  "productId": "B-01-113",
+  "productName": "Moss Sunscreen SPF 50",
+  "productPrice": 259,
+  "quantity": 4,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 1,
+  "bayName": "Skincare",
+  "brand": "Brightwick",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "travel",
+   "summer"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "50 ml",
+   "Skin type": "Oily",
+   "Fragrance": "Fragrance free"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Brightwick Moss Sunscreen SPF 50. Fresh, simple and effective.",
+  "imageQuery": "sunscreen",
+  "images": []
+ },
+ {
+  "productId": "B-02-211",
+  "productName": "Zephyr Shampoo",
+  "productPrice": 2099,
+  "quantity": 6,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 2,
+  "bayName": "Haircare",
+  "brand": "Tallow & Co",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "salon",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "n/a",
+   "Hair type": "Dry",
+   "Power": "n/a"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Tallow & Co Zephyr Shampoo. Dermatologically tested.",
+  "imageQuery": "shampoo",
+  "images": []
+ },
+ {
+  "productId": "B-02-212",
+  "productName": "Harbor Conditioner",
+  "productPrice": 649,
+  "quantity": 6,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 2,
+  "bayName": "Haircare",
+  "brand": "Brightwick",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "styling",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "100 ml",
+   "Hair type": "Dry",
+   "Power": "n/a"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Brightwick Harbor Conditioner. Small batch, no harsh extras.",
+  "imageQuery": "hair conditioner",
+  "images": []
+ },
+ {
+  "productId": "B-02-213",
+  "productName": "Pulse Hair Oil",
+  "productPrice": 3499,
+  "quantity": 5,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 2,
+  "bayName": "Haircare",
+  "brand": "Meadow",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "travel",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "400 ml",
+   "Hair type": "Curly",
+   "Power": "1800 W"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Meadow Pulse Hair Oil. Fresh, simple and effective.",
+  "imageQuery": "hair oil",
+  "images": []
+ },
+ {
+  "productId": "B-03-311",
+  "productName": "Nova Beard Trimmer",
+  "productPrice": 1799,
+  "quantity": 3,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 3,
+  "bayName": "Grooming",
+  "brand": "Brightwick",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "gift",
+   "salon"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "60 min",
+   "Blades": "Titanium",
+   "Water": "Splash proof"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Brightwick Nova Beard Trimmer. Fresh, simple and effective.",
+  "imageQuery": "beard trimmer",
+  "images": []
+ },
+ {
+  "productId": "B-03-312",
+  "productName": "Orbit Electric Shaver",
+  "productPrice": 4449,
+  "quantity": 14,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 3,
+  "bayName": "Grooming",
+  "brand": "Meadow",
+  "colours": [
+   "Black",
+   "Sand",
+   "White"
+  ],
+  "use": [
+   "gift",
+   "travel"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "60 min",
+   "Blades": "Titanium",
+   "Water": "Splash proof"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Meadow Orbit Electric Shaver. Dermatologically tested.",
+  "imageQuery": "electric shaver",
+  "images": []
+ },
+ {
+  "productId": "B-03-313",
+  "productName": "Kite Body Groomer",
+  "productPrice": 999,
+  "quantity": 15,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 3,
+  "bayName": "Grooming",
+  "brand": "Fernhill",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "salon",
+   "gift"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "60 min",
+   "Blades": "Titanium",
+   "Water": "Splash proof"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Fernhill Kite Body Groomer. Fresh, simple and effective.",
+  "imageQuery": "body groomer",
+  "images": []
+ },
+ {
+  "productId": "B-04-411",
+  "productName": "Basalt Eau de Parfum",
+  "productPrice": 549,
+  "quantity": 3,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 4,
+  "bayName": "Fragrances",
+  "brand": "Meadow",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "gift",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "10 ml",
+   "Notes": "Musk",
+   "Longevity": "8 h"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Meadow Basalt Eau de Parfum. Gentle on skin, made for daily use.",
+  "imageQuery": "perfume",
+  "images": []
+ },
+ {
+  "productId": "B-04-412",
+  "productName": "Orbit Body Mist",
+  "productPrice": 4649,
+  "quantity": 26,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 4,
+  "bayName": "Fragrances",
+  "brand": "Fernhill",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "evening",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "100 ml",
+   "Notes": "Musk",
+   "Longevity": "8 h"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Fernhill Orbit Body Mist. Fresh, simple and effective.",
+  "imageQuery": "body mist",
+  "images": []
+ },
+ {
+  "productId": "B-04-414",
+  "productName": "Arc Deodorant",
+  "productPrice": 2849,
+  "quantity": 17,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 4,
+  "bayName": "Fragrances",
+  "brand": "Quillon",
+  "colours": [
+   "Standard"
+  ],
+  "use": [
+   "travel",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Volume": "50 ml",
+   "Notes": "Citrus",
+   "Longevity": "4 h"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 3,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Quillon Arc Deodorant. Small batch, no harsh extras.",
+  "imageQuery": "deodorant",
+  "images": []
+ },
+ {
+  "productId": "B-05-511",
+  "productName": "Maple Electric Toothbrush",
+  "productPrice": 1199,
+  "quantity": 16,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 5,
+  "bayName": "Oral & wellness",
+  "brand": "Fernhill",
+  "colours": [
+   "Sand",
+   "White"
+  ],
+  "use": [
+   "recovery",
+   "fitness"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "30 days",
+   "Modes": "8",
+   "Water": "IPX4"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Fernhill Maple Electric Toothbrush. Gentle on skin, made for daily use.",
+  "imageQuery": "electric toothbrush",
+  "images": []
+ },
+ {
+  "productId": "B-05-512",
+  "productName": "Moss Water Flosser",
+  "productPrice": 849,
+  "quantity": 9,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 5,
+  "bayName": "Oral & wellness",
+  "brand": "Cobalt",
+  "colours": [
+   "Sand",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "gift",
+   "fitness"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "14 days",
+   "Modes": "3",
+   "Water": "IPX4"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Cobalt Moss Water Flosser. Fresh, simple and effective.",
+  "imageQuery": "water flosser",
+  "images": []
+ },
+ {
+  "productId": "B-05-513",
+  "productName": "Atlas Brush Heads",
+  "productPrice": 2449,
+  "quantity": 3,
+  "category": "Body care",
+  "zoneCode": "B",
+  "bay": 5,
+  "bayName": "Oral & wellness",
+  "brand": "Quillon",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "daily",
+   "gift"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "6 h",
+   "Modes": "5",
+   "Water": "IPX4"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Quillon Atlas Brush Heads. Small batch, no harsh extras.",
+  "imageQuery": "toothbrush heads",
+  "images": []
+ },
+ {
+  "productId": "C-01-111",
+  "productName": "Prism Daypack",
+  "productPrice": 849,
+  "quantity": 12,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 1,
+  "bayName": "Backpacks",
+  "brand": "Moss & Mill",
+  "colours": [
+   "Olive",
+   "Sand",
+   "Rust"
+  ],
+  "use": [
+   "college",
+   "hiking"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "25 L",
+   "Laptop": "16 in",
+   "Fabric": "Canvas"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Moss & Mill Prism Daypack. Water-resistant and hard wearing.",
+  "imageQuery": "backpack",
+  "images": []
+ },
+ {
+  "productId": "C-01-112",
+  "productName": "Echo Commuter Pack",
+  "productPrice": 2749,
+  "quantity": 10,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 1,
+  "bayName": "Backpacks",
+  "brand": "Ironleaf",
+  "colours": [
+   "Sand",
+   "Rust",
+   "White"
+  ],
+  "use": [
+   "travel",
+   "commute"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "20 L",
+   "Laptop": "15.6 in",
+   "Fabric": "Canvas"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Ironleaf Echo Commuter Pack. Carries more than it looks like.",
+  "imageQuery": "laptop backpack",
+  "images": []
+ },
+ {
+  "productId": "C-01-113",
+  "productName": "Rook Roll-top Pack",
+  "productPrice": 1749,
+  "quantity": 6,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 1,
+  "bayName": "Backpacks",
+  "brand": "Quillon",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "college",
+   "hiking"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "15 L",
+   "Laptop": "16 in",
+   "Fabric": "Recycled polyester"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Quillon Rook Roll-top Pack. Water-resistant and hard wearing.",
+  "imageQuery": "roll top backpack",
+  "images": []
+ },
+ {
+  "productId": "C-02-211",
+  "productName": "Volt Laptop Sleeve 13",
+  "productPrice": 2599,
+  "quantity": 90,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 2,
+  "bayName": "Sleeves & cases",
+  "brand": "Ironleaf",
+  "colours": [
+   "Olive",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "daily",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fits": "15 in",
+   "Padding": "Foam",
+   "Weight": "400 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 6,
+  "arrivesInDays": 1,
+  "isNew": true,
+  "description": "Ironleaf Volt Laptop Sleeve 13. Water-resistant and hard wearing.",
+  "imageQuery": "laptop sleeve",
+  "images": []
+ },
+ {
+  "productId": "C-02-212",
+  "productName": "Cinder Laptop Sleeve 15",
+  "productPrice": 1649,
+  "quantity": 228,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 2,
+  "bayName": "Sleeves & cases",
+  "brand": "Quillon",
+  "colours": [
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "travel",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fits": "11 in tablet",
+   "Padding": "Felt",
+   "Weight": "250 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 6,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Quillon Cinder Laptop Sleeve 15. Organised pockets, light frame.",
+  "imageQuery": "15 inch laptop sleeve",
+  "images": []
+ },
+ {
+  "productId": "C-02-213",
+  "productName": "Sable Tablet Case",
+  "productPrice": 2049,
+  "quantity": 48,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 2,
+  "bayName": "Sleeves & cases",
+  "brand": "Oakline",
+  "colours": [
+   "Olive",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fits": "13 in",
+   "Padding": "Neoprene",
+   "Weight": "400 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 6,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Oakline Sable Tablet Case. Organised pockets, light frame.",
+  "imageQuery": "tablet case",
+  "images": []
+ },
+ {
+  "productId": "C-03-311",
+  "productName": "Lumen Slim Wallet",
+  "productPrice": 699,
+  "quantity": 27,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 3,
+  "bayName": "Wallets",
+  "brand": "Quillon",
+  "colours": [
+   "Navy",
+   "Tan"
+  ],
+  "use": [
+   "daily",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Vegan leather",
+   "Slots": "4",
+   "RFID": "Yes"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Quillon Lumen Slim Wallet. Carries more than it looks like.",
+  "imageQuery": "slim wallet",
+  "images": []
+ },
+ {
+  "productId": "C-03-312",
+  "productName": "Drift Card Holder",
+  "productPrice": 2249,
+  "quantity": 26,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 3,
+  "bayName": "Wallets",
+  "brand": "Oakline",
+  "colours": [
+   "Black",
+   "Navy",
+   "Olive"
+  ],
+  "use": [
+   "travel",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Canvas",
+   "Slots": "6",
+   "RFID": "Yes"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Oakline Drift Card Holder. Water-resistant and hard wearing.",
+  "imageQuery": "card holder",
+  "images": []
+ },
+ {
+  "productId": "C-03-313",
+  "productName": "Rook Bifold Wallet",
+  "productPrice": 1349,
+  "quantity": 12,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 3,
+  "bayName": "Wallets",
+  "brand": "Meadow",
+  "colours": [
+   "Olive",
+   "Tan",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Vegan leather",
+   "Slots": "4",
+   "RFID": "No"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Meadow Rook Bifold Wallet. Made for the daily commute.",
+  "imageQuery": "leather wallet",
+  "images": []
+ },
+ {
+  "productId": "C-04-411",
+  "productName": "Arc Cabin Trolley",
+  "productPrice": 8499,
+  "quantity": 72,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 4,
+  "bayName": "Travel",
+  "brand": "Oakline",
+  "colours": [
+   "Olive",
+   "White",
+   "Rust"
+  ],
+  "use": [
+   "gym",
+   "weekend"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "12 L",
+   "Material": "Memory foam",
+   "Weight": "90 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 6,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Oakline Arc Cabin Trolley. Organised pockets, light frame.",
+  "imageQuery": "cabin luggage",
+  "images": []
+ },
+ {
+  "productId": "C-04-412",
+  "productName": "Echo Packing Cubes",
+  "productPrice": 849,
+  "quantity": 51,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 4,
+  "bayName": "Travel",
+  "brand": "Meadow",
+  "colours": [
+   "Sand",
+   "Rust",
+   "Olive"
+  ],
+  "use": [
+   "gym",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "30 L",
+   "Material": "Polycarbonate",
+   "Weight": "2.4 kg"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 6,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Meadow Echo Packing Cubes. Made for the daily commute.",
+  "imageQuery": "packing cubes",
+  "images": []
+ },
+ {
+  "productId": "C-04-413",
+  "productName": "Mercury Neck Pillow",
+  "productPrice": 599,
+  "quantity": 48,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 4,
+  "bayName": "Travel",
+  "brand": "Driftwear",
+  "colours": [
+   "Olive",
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "flight",
+   "gym"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "30 L",
+   "Material": "Memory foam",
+   "Weight": "2.4 kg"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Driftwear Mercury Neck Pillow. Carries more than it looks like.",
+  "imageQuery": "neck pillow",
+  "images": []
+ },
+ {
+  "productId": "C-05-511",
+  "productName": "Indigo Steel Bottle",
+  "productPrice": 849,
+  "quantity": 67,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 5,
+  "bayName": "Bottles & flasks",
+  "brand": "Meadow",
+  "colours": [
+   "Charcoal",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "gym",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "1 L",
+   "Insulation": "Cold 12 h",
+   "Material": "Steel"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 6,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Meadow Indigo Steel Bottle. Organised pockets, light frame.",
+  "imageQuery": "stainless steel water bottle",
+  "images": []
+ },
+ {
+  "productId": "C-05-512",
+  "productName": "Kite Insulated Flask",
+  "productPrice": 649,
+  "quantity": 18,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 5,
+  "bayName": "Bottles & flasks",
+  "brand": "Driftwear",
+  "colours": [
+   "Sage",
+   "Charcoal"
+  ],
+  "use": [
+   "gym",
+   "hiking"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "350 ml",
+   "Insulation": "Cold 12 h",
+   "Material": "Tritan"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 6,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Driftwear Kite Insulated Flask. Made for the daily commute.",
+  "imageQuery": "insulated flask",
+  "images": []
+ },
+ {
+  "productId": "C-05-513",
+  "productName": "Pico Sport Bottle",
+  "productPrice": 2449,
+  "quantity": 39,
+  "category": "Carry",
+  "zoneCode": "C",
+  "bay": 5,
+  "bayName": "Bottles & flasks",
+  "brand": "Moss & Mill",
+  "colours": [
+   "Oak",
+   "Charcoal",
+   "White"
+  ],
+  "use": [
+   "office",
+   "gym"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Capacity": "1 L",
+   "Insulation": "Cold 24 h / Hot 12 h",
+   "Material": "Steel"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 6,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Moss & Mill Pico Sport Bottle. Water-resistant and hard wearing.",
+  "imageQuery": "sports water bottle",
+  "images": []
+ },
+ {
+  "productId": "D-01-111",
+  "productName": "Harbor Mechanical Keyboard",
+  "productPrice": 11499,
+  "quantity": 12,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 1,
+  "bayName": "Keyboards",
+  "brand": "Northtone",
+  "colours": [
+   "Olive",
+   "White"
+  ],
+  "use": [
+   "studio",
+   "home"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Switches": "Blue",
+   "Layout": "TKL",
+   "Battery": "60 days"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 24,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Northtone Harbor Mechanical Keyboard. Clean look, tidy desk.",
+  "imageQuery": "mechanical keyboard",
+  "images": []
+ },
+ {
+  "productId": "D-01-112",
+  "productName": "Willow Compact Keyboard",
+  "productPrice": 11999,
+  "quantity": 15,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 1,
+  "bayName": "Keyboards",
+  "brand": "Pulsewave",
+  "colours": [
+   "Olive",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "home",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Switches": "Red",
+   "Layout": "75%",
+   "Battery": "60 days"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Pulsewave Willow Compact Keyboard. Made for long work sessions.",
+  "imageQuery": "compact keyboard",
+  "images": []
+ },
+ {
+  "productId": "D-01-113",
+  "productName": "Echo Wireless Keyboard",
+  "productPrice": 11999,
+  "quantity": 31,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 1,
+  "bayName": "Keyboards",
+  "brand": "Pixelforge",
+  "colours": [
+   "White",
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "studio",
+   "travel"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Switches": "Blue",
+   "Layout": "75%",
+   "Battery": "Wired"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Pixelforge Echo Wireless Keyboard. Made for long work sessions.",
+  "imageQuery": "wireless keyboard",
+  "images": []
+ },
+ {
+  "productId": "D-02-211",
+  "productName": "Sable Wireless Mouse",
+  "productPrice": 4499,
+  "quantity": 71,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 2,
+  "bayName": "Mice",
+  "brand": "Pulsewave",
+  "colours": [
+   "White",
+   "Olive",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "home"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "1600",
+   "Buttons": "7",
+   "Weight": "62 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 24,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Pulsewave Sable Wireless Mouse. Clean look, tidy desk.",
+  "imageQuery": "wireless mouse",
+  "images": []
+ },
+ {
+  "productId": "D-02-212",
+  "productName": "Lumen Ergo Mouse",
+  "productPrice": 749,
+  "quantity": 1,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 2,
+  "bayName": "Mice",
+  "brand": "Pixelforge",
+  "colours": [
+   "Olive",
+   "Black"
+  ],
+  "use": [
+   "travel",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "12000",
+   "Buttons": "7",
+   "Weight": "85 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 24,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Pixelforge Lumen Ergo Mouse. Clean look, tidy desk.",
+  "imageQuery": "ergonomic mouse",
+  "images": []
+ },
+ {
+  "productId": "D-02-213",
+  "productName": "Pocket Silent Mouse",
+  "productPrice": 1049,
+  "quantity": 6,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 2,
+  "bayName": "Mice",
+  "brand": "Orbitek",
+  "colours": [
+   "Olive",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "home",
+   "studio"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "3200",
+   "Buttons": "7",
+   "Weight": "110 g"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 24,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Orbitek Pocket Silent Mouse. Quiet, precise and comfortable.",
+  "imageQuery": "silent mouse",
+  "images": []
+ },
+ {
+  "productId": "D-03-311",
+  "productName": "Cedar Monitor 24",
+  "productPrice": 12499,
+  "quantity": 61,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 3,
+  "bayName": "Monitors & stands",
+  "brand": "Pixelforge",
+  "colours": [
+   "White",
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "studio",
+   "office"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Size": "27 in",
+   "Panel": "IPS",
+   "Refresh": "75 Hz"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 24,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pixelforge Cedar Monitor 24. Clean look, tidy desk.",
+  "imageQuery": "24 inch monitor",
+  "images": []
+ },
+ {
+  "productId": "D-03-312",
+  "productName": "Volt Monitor 27",
+  "productPrice": 35499,
+  "quantity": 6,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 3,
+  "bayName": "Monitors & stands",
+  "brand": "Orbitek",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "home"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Size": "15.6 in",
+   "Panel": "IPS",
+   "Refresh": "144 Hz"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Orbitek Volt Monitor 27. Quiet, precise and comfortable.",
+  "imageQuery": "27 inch monitor",
+  "images": []
+ },
+ {
+  "productId": "D-03-313",
+  "productName": "Ember Ultrawide Monitor",
+  "productPrice": 26499,
+  "quantity": 44,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 3,
+  "bayName": "Monitors & stands",
+  "brand": "Driftwear",
+  "colours": [
+   "White",
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "home",
+   "office"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Size": "15.6 in",
+   "Panel": "IPS",
+   "Refresh": "60 Hz"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 24,
+  "arrivesInDays": 7,
+  "isNew": true,
+  "description": "Driftwear Ember Ultrawide Monitor. Clean look, tidy desk.",
+  "imageQuery": "ultrawide monitor",
+  "images": []
+ },
+ {
+  "productId": "D-04-411",
+  "productName": "Maple Desk Lamp",
+  "productPrice": 1149,
+  "quantity": 74,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 4,
+  "bayName": "Desk lighting",
+  "brand": "Orbitek",
+  "colours": [
+   "White",
+   "Black",
+   "Olive"
+  ],
+  "use": [
+   "office",
+   "video calls"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "12 W",
+   "Colour temp": "3000-5000 K",
+   "Dimming": "App"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Orbitek Maple Desk Lamp. Plug in and start working.",
+  "imageQuery": "desk lamp",
+  "images": []
+ },
+ {
+  "productId": "D-04-412",
+  "productName": "Harbor LED Light Bar",
+  "productPrice": 4999,
+  "quantity": 5,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 4,
+  "bayName": "Desk lighting",
+  "brand": "Driftwear",
+  "colours": [
+   "Black",
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "study",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "12 W",
+   "Colour temp": "2700-6500 K",
+   "Dimming": "App"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Driftwear Harbor LED Light Bar. Plug in and start working.",
+  "imageQuery": "monitor light bar",
+  "images": []
+ },
+ {
+  "productId": "D-04-414",
+  "productName": "Cinder Ring Light",
+  "productPrice": 699,
+  "quantity": 40,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 4,
+  "bayName": "Desk lighting",
+  "brand": "Northtone",
+  "colours": [
+   "Sand",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "video calls",
+   "reading"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "12 W",
+   "Colour temp": "3000-5000 K",
+   "Dimming": "App"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 24,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Northtone Cinder Ring Light. Made for long work sessions.",
+  "imageQuery": "ring light",
+  "images": []
+ },
+ {
+  "productId": "D-05-511",
+  "productName": "Onyx Webcam 1080p",
+  "productPrice": 5499,
+  "quantity": 17,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 5,
+  "bayName": "Webcams & hubs",
+  "brand": "Driftwear",
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "use": [
+   "travel",
+   "home"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Ports": "6",
+   "Resolution": "1440p",
+   "Weight": "90 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Driftwear Onyx Webcam 1080p. Made for long work sessions.",
+  "imageQuery": "webcam",
+  "images": []
+ },
+ {
+  "productId": "D-05-512",
+  "productName": "Rook Webcam 4K",
+  "productPrice": 10999,
+  "quantity": 25,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 5,
+  "bayName": "Webcams & hubs",
+  "brand": "Moss & Mill",
+  "colours": [
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "travel",
+   "studio"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Ports": "4",
+   "Resolution": "1440p",
+   "Weight": "45 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 24,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Moss & Mill Rook Webcam 4K. Made for long work sessions.",
+  "imageQuery": "4k webcam",
+  "images": []
+ },
+ {
+  "productId": "D-05-513",
+  "productName": "Cinder USB-C Hub",
+  "productPrice": 4999,
+  "quantity": 3,
+  "category": "Desk setup",
+  "zoneCode": "D",
+  "bay": 5,
+  "bayName": "Webcams & hubs",
+  "brand": "Northtone",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "studio",
+   "travel"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Ports": "8",
+   "Resolution": "1440p",
+   "Weight": "220 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 24,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Northtone Cinder USB-C Hub. Clean look, tidy desk.",
+  "imageQuery": "usb c hub",
+  "images": []
+ },
+ {
+  "productId": "G-01-111",
+  "productName": "Vector Wireless Controller",
+  "productPrice": 3299,
+  "quantity": 20,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 1,
+  "bayName": "Controllers",
+  "brand": "Voltrix",
+  "colours": [
+   "Teal",
+   "Sand",
+   "Coral"
+  ],
+  "use": [
+   "mobile",
+   "console"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 h",
+   "Weight": "180 g",
+   "Vibration": "Dual motor"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Voltrix Vector Wireless Controller. Fits right into your setup.",
+  "imageQuery": "game controller",
+  "images": []
+ },
+ {
+  "productId": "G-01-112",
+  "productName": "Sable Pro Controller",
+  "productPrice": 1899,
+  "quantity": 11,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 1,
+  "bayName": "Controllers",
+  "brand": "Orbitek",
+  "colours": [
+   "Olive",
+   "Sand",
+   "Navy"
+  ],
+  "use": [
+   "racing",
+   "console"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 h",
+   "Weight": "280 g",
+   "Vibration": "HD haptics"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Orbitek Sable Pro Controller. Built for marathon sessions.",
+  "imageQuery": "gamepad",
+  "images": []
+ },
+ {
+  "productId": "G-01-113",
+  "productName": "Onyx Arcade Stick",
+  "productPrice": 9499,
+  "quantity": 7,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 1,
+  "bayName": "Controllers",
+  "brand": "Skylark",
+  "colours": [
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "mobile",
+   "console"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "40 h",
+   "Weight": "280 g",
+   "Vibration": "HD haptics"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Skylark Onyx Arcade Stick. Low latency and a solid feel.",
+  "imageQuery": "arcade stick",
+  "images": []
+ },
+ {
+  "productId": "G-02-211",
+  "productName": "Tide Gaming Headset",
+  "productPrice": 3349,
+  "quantity": 45,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 2,
+  "bayName": "Headsets",
+  "brand": "Orbitek",
+  "colours": [
+   "Black",
+   "White",
+   "Olive"
+  ],
+  "use": [
+   "console",
+   "esports"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "Wired",
+   "Driver": "40 mm",
+   "Mic": "Boom"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Orbitek Tide Gaming Headset. Precise inputs, no compromise.",
+  "imageQuery": "gaming headset",
+  "images": []
+ },
+ {
+  "productId": "G-02-212",
+  "productName": "Nova Wireless Headset",
+  "productPrice": 6499,
+  "quantity": 18,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 2,
+  "bayName": "Headsets",
+  "brand": "Skylark",
+  "colours": [
+   "Olive",
+   "White"
+  ],
+  "use": [
+   "console",
+   "streaming"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 h",
+   "Driver": "40 mm",
+   "Mic": "Detachable"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Skylark Nova Wireless Headset. Low latency and a solid feel.",
+  "imageQuery": "wireless gaming headset",
+  "images": []
+ },
+ {
+  "productId": "G-02-213",
+  "productName": "Sable Stereo Headset",
+  "productPrice": 9499,
+  "quantity": 22,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 2,
+  "bayName": "Headsets",
+  "brand": "Pulsewave",
+  "colours": [
+   "Sand",
+   "Olive",
+   "White"
+  ],
+  "use": [
+   "esports",
+   "streaming"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "30 h",
+   "Driver": "50 mm",
+   "Mic": "Boom"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Pulsewave Sable Stereo Headset. Built for marathon sessions.",
+  "imageQuery": "stereo gaming headset",
+  "images": []
+ },
+ {
+  "productId": "G-03-311",
+  "productName": "Volt RGB Keyboard",
+  "productPrice": 3099,
+  "quantity": 10,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 3,
+  "bayName": "Gaming keyboards",
+  "brand": "Skylark",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "streaming"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Switches": "Tactile",
+   "Layout": "60%",
+   "Polling": "1000 Hz"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": true,
+  "description": "Skylark Volt RGB Keyboard. Low latency and a solid feel.",
+  "imageQuery": "rgb gaming keyboard",
+  "images": []
+ },
+ {
+  "productId": "G-03-312",
+  "productName": "Opal TKL Keyboard",
+  "productPrice": 4999,
+  "quantity": 3,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 3,
+  "bayName": "Gaming keyboards",
+  "brand": "Pulsewave",
+  "colours": [
+   "Black",
+   "Sand",
+   "White"
+  ],
+  "use": [
+   "esports",
+   "pc"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Switches": "Optical",
+   "Layout": "75%",
+   "Polling": "1000 Hz"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": true,
+  "description": "Pulsewave Opal TKL Keyboard. Fits right into your setup.",
+  "imageQuery": "tenkeyless keyboard",
+  "images": []
+ },
+ {
+  "productId": "G-03-313",
+  "productName": "Prism 60% Keyboard",
+  "productPrice": 2999,
+  "quantity": 40,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 3,
+  "bayName": "Gaming keyboards",
+  "brand": "Lumora",
+  "colours": [
+   "Sand",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "streaming",
+   "esports"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Switches": "Linear",
+   "Layout": "60%",
+   "Polling": "8000 Hz"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Lumora Prism 60% Keyboard. Fits right into your setup.",
+  "imageQuery": "60 percent keyboard",
+  "images": []
+ },
+ {
+  "productId": "G-04-411",
+  "productName": "Indigo RGB Mouse",
+  "productPrice": 1649,
+  "quantity": 15,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 4,
+  "bayName": "Gaming mice",
+  "brand": "Pulsewave",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "pc",
+   "mmo"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "8000",
+   "Weight": "54 g",
+   "Buttons": "12"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pulsewave Indigo RGB Mouse. Low latency and a solid feel.",
+  "imageQuery": "rgb gaming mouse",
+  "images": []
+ },
+ {
+  "productId": "G-04-412",
+  "productName": "Zephyr Lightweight Mouse",
+  "productPrice": 1949,
+  "quantity": 43,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 4,
+  "bayName": "Gaming mice",
+  "brand": "Lumora",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "fps",
+   "pc"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "26000",
+   "Weight": "54 g",
+   "Buttons": "5"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Lumora Zephyr Lightweight Mouse. Built for marathon sessions.",
+  "imageQuery": "lightweight gaming mouse",
+  "images": []
+ },
+ {
+  "productId": "G-04-413",
+  "productName": "Basalt Wireless Gaming Mouse",
+  "productPrice": 4999,
+  "quantity": 29,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 4,
+  "bayName": "Gaming mice",
+  "brand": "Pixelforge",
+  "colours": [
+   "Black",
+   "Sand",
+   "White"
+  ],
+  "use": [
+   "esports",
+   "fps"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "DPI": "16000",
+   "Weight": "54 g",
+   "Buttons": "5"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pixelforge Basalt Wireless Gaming Mouse. Low latency and a solid feel.",
+  "imageQuery": "wireless gaming mouse",
+  "images": []
+ },
+ {
+  "productId": "G-05-511",
+  "productName": "Arc Gaming Chair",
+  "productPrice": 4199,
+  "quantity": 14,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 5,
+  "bayName": "Seats & pads",
+  "brand": "Lumora",
+  "colours": [
+   "Black",
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "pc",
+   "console"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Cloth",
+   "Size": "Large",
+   "Weight": "1.1 kg"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": true,
+  "description": "Lumora Arc Gaming Chair. Precise inputs, no compromise.",
+  "imageQuery": "gaming chair",
+  "images": []
+ },
+ {
+  "productId": "G-05-512",
+  "productName": "Pulse Desk Mat XL",
+  "productPrice": 6999,
+  "quantity": 6,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 5,
+  "bayName": "Seats & pads",
+  "brand": "Pixelforge",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "desk",
+   "console"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Cloth",
+   "Size": "XL",
+   "Weight": "1.1 kg"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Pixelforge Pulse Desk Mat XL. Fits right into your setup.",
+  "imageQuery": "large desk mat",
+  "images": []
+ },
+ {
+  "productId": "G-05-513",
+  "productName": "Cinder Mousepad",
+  "productPrice": 2099,
+  "quantity": 22,
+  "category": "Gaming",
+  "zoneCode": "G",
+  "bay": 5,
+  "bayName": "Seats & pads",
+  "brand": "Voltrix",
+  "colours": [
+   "Sand",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "streaming",
+   "desk"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Cloth",
+   "Size": "Standard",
+   "Weight": "0.2 kg"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Voltrix Cinder Mousepad. Precise inputs, no compromise.",
+  "imageQuery": "mouse pad",
+  "images": []
+ },
+ {
+  "productId": "L-01-111",
+  "productName": "Arc Table Lamp",
+  "productPrice": 7499,
+  "quantity": 12,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 1,
+  "bayName": "Lamps & lighting",
+  "brand": "Tallow & Co",
+  "colours": [
+   "Oak",
+   "Black",
+   "Terracotta"
+  ],
+  "use": [
+   "study",
+   "living room"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "12 W",
+   "Colour temp": "RGB",
+   "Control": "App"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Tallow & Co Arc Table Lamp. Looks good in every room.",
+  "imageQuery": "table lamp",
+  "images": []
+ },
+ {
+  "productId": "L-01-112",
+  "productName": "Pulse Floor Lamp",
+  "productPrice": 1049,
+  "quantity": 39,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 1,
+  "bayName": "Lamps & lighting",
+  "brand": "Cobalt",
+  "colours": [
+   "Charcoal",
+   "Oak",
+   "White"
+  ],
+  "use": [
+   "living room",
+   "bedroom"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "12 W",
+   "Colour temp": "RGB",
+   "Control": "App"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Cobalt Pulse Floor Lamp. Easy setup, no tools needed.",
+  "imageQuery": "floor lamp",
+  "images": []
+ },
+ {
+  "productId": "L-01-113",
+  "productName": "Halo Smart Bulb",
+  "productPrice": 1549,
+  "quantity": 76,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 1,
+  "bayName": "Lamps & lighting",
+  "brand": "Fernhill",
+  "colours": [
+   "Charcoal",
+   "Black"
+  ],
+  "use": [
+   "study",
+   "hall"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "18 W",
+   "Colour temp": "4000 K",
+   "Control": "Remote"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Fernhill Halo Smart Bulb. Looks good in every room.",
+  "imageQuery": "smart light bulb",
+  "images": []
+ },
+ {
+  "productId": "L-02-211",
+  "productName": "Arc Smart Plug",
+  "productPrice": 13499,
+  "quantity": 41,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 2,
+  "bayName": "Smart home",
+  "brand": "Cobalt",
+  "colours": [
+   "White",
+   "Oak",
+   "Charcoal"
+  ],
+  "use": [
+   "air",
+   "home"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Connectivity": "Wi-Fi",
+   "Power": "60 W",
+   "Voice": "Works with Google"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Cobalt Arc Smart Plug. Designed for everyday use.",
+  "imageQuery": "smart plug",
+  "images": []
+ },
+ {
+  "productId": "L-02-212",
+  "productName": "Echo Video Doorbell",
+  "productPrice": 27999,
+  "quantity": 26,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 2,
+  "bayName": "Smart home",
+  "brand": "Fernhill",
+  "colours": [
+   "White",
+   "Charcoal",
+   "Oak"
+  ],
+  "use": [
+   "air",
+   "security"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Connectivity": "Wi-Fi",
+   "Power": "60 W",
+   "Voice": "Works with Google"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Fernhill Echo Video Doorbell. Looks good in every room.",
+  "imageQuery": "video doorbell",
+  "images": []
+ },
+ {
+  "productId": "L-02-213",
+  "productName": "Quartz Security Camera",
+  "productPrice": 8999,
+  "quantity": 8,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 2,
+  "bayName": "Smart home",
+  "brand": "Atlas Gear",
+  "colours": [
+   "White",
+   "Oak",
+   "Charcoal"
+  ],
+  "use": [
+   "security",
+   "home"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Connectivity": "Wi-Fi",
+   "Power": "5 W",
+   "Voice": "Works with Google"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Atlas Gear Quartz Security Camera. Warm, simple and easy to live with.",
+  "imageQuery": "security camera",
+  "images": []
+ },
+ {
+  "productId": "L-03-311",
+  "productName": "Nimbus Wall Clock",
+  "productPrice": 1149,
+  "quantity": 24,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 3,
+  "bayName": "Home decor",
+  "brand": "Fernhill",
+  "colours": [
+   "Terracotta",
+   "White",
+   "Charcoal"
+  ],
+  "use": [
+   "living room",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Glass",
+   "Size": "Small",
+   "Finish": "Natural"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Fernhill Nimbus Wall Clock. Easy setup, no tools needed.",
+  "imageQuery": "wall clock",
+  "images": []
+ },
+ {
+  "productId": "L-03-312",
+  "productName": "Zephyr Photo Frame",
+  "productPrice": 4699,
+  "quantity": 11,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 3,
+  "bayName": "Home decor",
+  "brand": "Atlas Gear",
+  "colours": [
+   "Black",
+   "Terracotta",
+   "Sage"
+  ],
+  "use": [
+   "bedroom",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Ceramic",
+   "Size": "Medium",
+   "Finish": "Matte"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Atlas Gear Zephyr Photo Frame. Designed for everyday use.",
+  "imageQuery": "photo frame",
+  "images": []
+ },
+ {
+  "productId": "L-03-313",
+  "productName": "Halo Vase",
+  "productPrice": 3499,
+  "quantity": 57,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 3,
+  "bayName": "Home decor",
+  "brand": "Quillon",
+  "colours": [
+   "Sage",
+   "Terracotta"
+  ],
+  "use": [
+   "gift",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Glass",
+   "Size": "Medium",
+   "Finish": "Gloss"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Quillon Halo Vase. Easy setup, no tools needed.",
+  "imageQuery": "ceramic vase",
+  "images": []
+ },
+ {
+  "productId": "L-04-411",
+  "productName": "Nimbus Electric Kettle",
+  "productPrice": 749,
+  "quantity": 7,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 4,
+  "bayName": "Kitchen gadgets",
+  "brand": "Atlas Gear",
+  "colours": [
+   "Oak",
+   "Charcoal",
+   "White"
+  ],
+  "use": [
+   "breakfast",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "500 W",
+   "Capacity": "1 L",
+   "Material": "Glass"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Atlas Gear Nimbus Electric Kettle. Designed for everyday use.",
+  "imageQuery": "electric kettle",
+  "images": []
+ },
+ {
+  "productId": "L-04-412",
+  "productName": "Moss Air Fryer",
+  "productPrice": 6999,
+  "quantity": 47,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 4,
+  "bayName": "Kitchen gadgets",
+  "brand": "Quillon",
+  "colours": [
+   "White",
+   "Charcoal"
+  ],
+  "use": [
+   "breakfast",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "800 W",
+   "Capacity": "1.5 L",
+   "Material": "BPA-free plastic"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Quillon Moss Air Fryer. Looks good in every room.",
+  "imageQuery": "air fryer",
+  "images": []
+ },
+ {
+  "productId": "L-04-413",
+  "productName": "Volt Coffee Press",
+  "productPrice": 1499,
+  "quantity": 44,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 4,
+  "bayName": "Kitchen gadgets",
+  "brand": "Nimbus",
+  "colours": [
+   "White",
+   "Oak",
+   "Charcoal"
+  ],
+  "use": [
+   "office",
+   "breakfast"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Power": "500 W",
+   "Capacity": "0.5 L",
+   "Material": "Steel"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Nimbus Volt Coffee Press. Looks good in every room.",
+  "imageQuery": "french press",
+  "images": []
+ },
+ {
+  "productId": "L-05-511",
+  "productName": "Cedar Cushion Cover",
+  "productPrice": 4699,
+  "quantity": 27,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 5,
+  "bayName": "Bedding & cushions",
+  "brand": "Quillon",
+  "colours": [
+   "Sage",
+   "White"
+  ],
+  "use": [
+   "bedroom",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Cotton",
+   "Size": "Single",
+   "Care": "Dry clean"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Quillon Cedar Cushion Cover. Designed for everyday use.",
+  "imageQuery": "cushion cover",
+  "images": []
+ },
+ {
+  "productId": "L-05-512",
+  "productName": "Volt Throw Blanket",
+  "productPrice": 469,
+  "quantity": 4,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 5,
+  "bayName": "Bedding & cushions",
+  "brand": "Nimbus",
+  "colours": [
+   "Oak",
+   "Black",
+   "Charcoal"
+  ],
+  "use": [
+   "bedroom",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Microfibre",
+   "Size": "40 x 40 cm",
+   "Care": "Machine wash"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Nimbus Volt Throw Blanket. Warm, simple and easy to live with.",
+  "imageQuery": "throw blanket",
+  "images": []
+ },
+ {
+  "productId": "L-05-513",
+  "productName": "Arc Bedsheet Set",
+  "productPrice": 299,
+  "quantity": 10,
+  "category": "Living",
+  "zoneCode": "L",
+  "bay": 5,
+  "bayName": "Bedding & cushions",
+  "brand": "Tallow & Co",
+  "colours": [
+   "Black",
+   "Oak",
+   "Sage"
+  ],
+  "use": [
+   "guest room",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Microfibre",
+   "Size": "40 x 40 cm",
+   "Care": "Machine wash"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": true,
+  "description": "Tallow & Co Arc Bedsheet Set. Designed for everyday use.",
+  "imageQuery": "bedsheet",
+  "images": []
+ },
+ {
+  "productId": "P-01-111",
+  "productName": "Drift Phone 5G",
+  "productPrice": 22499,
+  "quantity": 103,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 1,
+  "bayName": "Phones",
+  "brand": "Nimbus",
+  "colours": [
+   "Teal",
+   "Black",
+   "Coral"
+  ],
+  "use": [
+   "camera",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Display": "6.7 in LTPO",
+   "Storage": "64 GB",
+   "Battery": "5000 mAh",
+   "Camera": "108 MP"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Nimbus Drift Phone 5G. Fast, reliable and certified safe.",
+  "imageQuery": "5g smartphone",
+  "images": []
+ },
+ {
+  "productId": "P-01-112",
+  "productName": "Echo Phone Lite",
+  "productPrice": 7999,
+  "quantity": 19,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 1,
+  "bayName": "Phones",
+  "brand": "Voltrix",
+  "colours": [
+   "Coral",
+   "Olive",
+   "Teal"
+  ],
+  "use": [
+   "daily",
+   "business"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Display": "6.5 in AMOLED",
+   "Storage": "64 GB",
+   "Battery": "5000 mAh",
+   "Camera": "108 MP"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Voltrix Echo Phone Lite. Everyday essentials for your phone.",
+  "imageQuery": "budget smartphone",
+  "images": []
+ },
+ {
+  "productId": "P-01-113",
+  "productName": "Willow Phone Pro",
+  "productPrice": 23999,
+  "quantity": 150,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 1,
+  "bayName": "Phones",
+  "brand": "Pixelforge",
+  "colours": [
+   "Olive",
+   "Black",
+   "Coral"
+  ],
+  "use": [
+   "daily",
+   "business"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Display": "6.5 in AMOLED",
+   "Storage": "128 GB",
+   "Battery": "5500 mAh",
+   "Camera": "108 MP"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": true,
+  "description": "Pixelforge Willow Phone Pro. Everyday essentials for your phone.",
+  "imageQuery": "flagship smartphone",
+  "images": []
+ },
+ {
+  "productId": "P-02-211",
+  "productName": "Juniper Clear Case",
+  "productPrice": 399,
+  "quantity": 30,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 2,
+  "bayName": "Cases & covers",
+  "brand": "Voltrix",
+  "colours": [
+   "White",
+   "Grey",
+   "Olive"
+  ],
+  "use": [
+   "gift",
+   "protection"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Polycarbonate",
+   "Drop rating": "3 m",
+   "Weight": "20 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Voltrix Juniper Clear Case. Everyday essentials for your phone.",
+  "imageQuery": "clear phone case",
+  "images": []
+ },
+ {
+  "productId": "P-02-212",
+  "productName": "Sable Rugged Case",
+  "productPrice": 199,
+  "quantity": 14,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 2,
+  "bayName": "Cases & covers",
+  "brand": "Pixelforge",
+  "colours": [
+   "Grey",
+   "Sand",
+   "White"
+  ],
+  "use": [
+   "daily",
+   "gift"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Glass 9H",
+   "Drop rating": "1.5 m",
+   "Weight": "20 g"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Pixelforge Sable Rugged Case. Tested for thousands of cycles.",
+  "imageQuery": "rugged phone case",
+  "images": []
+ },
+ {
+  "productId": "P-02-213",
+  "productName": "Volt Leather Folio",
+  "productPrice": 359,
+  "quantity": 400,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 2,
+  "bayName": "Cases & covers",
+  "brand": "Halo Audio",
+  "colours": [
+   "Olive",
+   "Grey",
+   "Black"
+  ],
+  "use": [
+   "protection",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Leather",
+   "Drop rating": "2 m",
+   "Weight": "35 g"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Halo Audio Volt Leather Folio. Tested for thousands of cycles.",
+  "imageQuery": "leather flip case",
+  "images": []
+ },
+ {
+  "productId": "P-03-311",
+  "productName": "Willow 20W Charger",
+  "productPrice": 1099,
+  "quantity": 97,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 3,
+  "bayName": "Chargers",
+  "brand": "Pixelforge",
+  "colours": [
+   "Black",
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "car",
+   "travel"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Output": "20 W",
+   "Ports": "3",
+   "Weight": "140 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Pixelforge Willow 20W Charger. Compact and travel friendly.",
+  "imageQuery": "usb c charger",
+  "images": []
+ },
+ {
+  "productId": "P-03-312",
+  "productName": "Kite 45W Charger",
+  "productPrice": 3099,
+  "quantity": 39,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 3,
+  "bayName": "Chargers",
+  "brand": "Halo Audio",
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "use": [
+   "office",
+   "car"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Output": "45 W",
+   "Ports": "3",
+   "Weight": "45 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Halo Audio Kite 45W Charger. Fast, reliable and certified safe.",
+  "imageQuery": "fast charger",
+  "images": []
+ },
+ {
+  "productId": "P-03-313",
+  "productName": "Tide 65W GaN Charger",
+  "productPrice": 1149,
+  "quantity": 11,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 3,
+  "bayName": "Chargers",
+  "brand": "Orbitek",
+  "colours": [
+   "White",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "car",
+   "home"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Output": "65 W",
+   "Ports": "2",
+   "Weight": "45 g"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Orbitek Tide 65W GaN Charger. Fast, reliable and certified safe.",
+  "imageQuery": "gan charger",
+  "images": []
+ },
+ {
+  "productId": "P-04-411",
+  "productName": "Rook 10000 mAh Power Bank",
+  "productPrice": 1399,
+  "quantity": 5,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 4,
+  "bayName": "Power banks",
+  "brand": "Halo Audio",
+  "colours": [
+   "Navy",
+   "Grey",
+   "Sand"
+  ],
+  "use": [
+   "office",
+   "outdoor"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Capacity": "5000 mAh",
+   "Output": "18 W",
+   "Weight": "450 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Halo Audio Rook 10000 mAh Power Bank. Fast, reliable and certified safe.",
+  "imageQuery": "power bank",
+  "images": []
+ },
+ {
+  "productId": "P-04-412",
+  "productName": "Studio 20000 mAh Power Bank",
+  "productPrice": 1949,
+  "quantity": 18,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 4,
+  "bayName": "Power banks",
+  "brand": "Orbitek",
+  "colours": [
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "outdoor",
+   "office"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Capacity": "20000 mAh",
+   "Output": "18 W",
+   "Weight": "240 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Orbitek Studio 20000 mAh Power Bank. Compact and travel friendly.",
+  "imageQuery": "20000mah power bank",
+  "images": []
+ },
+ {
+  "productId": "P-04-413",
+  "productName": "Harbor Slim Power Bank",
+  "productPrice": 1699,
+  "quantity": 190,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 4,
+  "bayName": "Power banks",
+  "brand": "Skylark",
+  "colours": [
+   "Sand",
+   "Olive",
+   "White"
+  ],
+  "use": [
+   "office",
+   "outdoor"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Capacity": "27000 mAh",
+   "Output": "65 W",
+   "Weight": "120 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Skylark Harbor Slim Power Bank. Tested for thousands of cycles.",
+  "imageQuery": "slim power bank",
+  "images": []
+ },
+ {
+  "productId": "P-05-511",
+  "productName": "Ember USB-C Cable",
+  "productPrice": 949,
+  "quantity": 27,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 5,
+  "bayName": "Cables",
+  "brand": "Orbitek",
+  "colours": [
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "travel",
+   "home"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Length": "2 m",
+   "Rating": "100 W",
+   "Material": "TPE"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Orbitek Ember USB-C Cable. Compact and travel friendly.",
+  "imageQuery": "usb c cable",
+  "images": []
+ },
+ {
+  "productId": "P-05-512",
+  "productName": "Nimbus Lightning Cable",
+  "productPrice": 309,
+  "quantity": 22,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 5,
+  "bayName": "Cables",
+  "brand": "Skylark",
+  "colours": [
+   "White",
+   "Black",
+   "Sand"
+  ],
+  "use": [
+   "office",
+   "home"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Length": "1 m",
+   "Rating": "4K 60 Hz",
+   "Material": "Nylon braid"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Skylark Nimbus Lightning Cable. Fast, reliable and certified safe.",
+  "imageQuery": "lightning cable",
+  "images": []
+ },
+ {
+  "productId": "P-05-513",
+  "productName": "Basalt Braided Cable",
+  "productPrice": 229,
+  "quantity": 43,
+  "category": "Phone+",
+  "zoneCode": "P",
+  "bay": 5,
+  "bayName": "Cables",
+  "brand": "Nimbus",
+  "colours": [
+   "Sand",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "travel",
+   "office"
+  ],
+  "connectivity": "wired",
+  "specs": {
+   "Length": "1 m",
+   "Rating": "4K 60 Hz",
+   "Material": "TPE"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Nimbus Basalt Braided Cable. Fast, reliable and certified safe.",
+  "imageQuery": "braided charging cable",
+  "images": []
+ },
+ {
+  "productId": "S-01-111",
+  "productName": "Flux Crew Tee",
+  "productPrice": 549,
+  "quantity": 20,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 1,
+  "bayName": "T-shirts",
+  "brand": "Atlas Gear",
+  "colours": [
+   "Sand",
+   "Navy",
+   "Rust"
+  ],
+  "use": [
+   "gym",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Cotton blend",
+   "Fit": "Regular",
+   "Sizes": "M-XXL"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Atlas Gear Flux Crew Tee. Made to be worn a lot.",
+  "imageQuery": "t-shirt",
+  "images": []
+ },
+ {
+  "productId": "S-01-112",
+  "productName": "Volt Oversized Tee",
+  "productPrice": 699,
+  "quantity": 21,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 1,
+  "bayName": "T-shirts",
+  "brand": "Zenith Labs",
+  "colours": [
+   "Sand",
+   "Black",
+   "White"
+  ],
+  "use": [
+   "travel",
+   "gym"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Cotton blend",
+   "Fit": "Slim",
+   "Sizes": "M-XXL"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Zenith Labs Volt Oversized Tee. Relaxed fit for all-day comfort.",
+  "imageQuery": "oversized t-shirt",
+  "images": []
+ },
+ {
+  "productId": "S-01-113",
+  "productName": "Willow Polo Tee",
+  "productPrice": 1149,
+  "quantity": 28,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 1,
+  "bayName": "T-shirts",
+  "brand": "Oakline",
+  "colours": [
+   "Black",
+   "Olive"
+  ],
+  "use": [
+   "daily",
+   "gym"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "100% cotton",
+   "Fit": "Relaxed",
+   "Sizes": "S-XL"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Oakline Willow Polo Tee. Easy to pair with almost anything.",
+  "imageQuery": "polo shirt",
+  "images": []
+ },
+ {
+  "productId": "S-02-211",
+  "productName": "Drift Linen Shirt",
+  "productPrice": 799,
+  "quantity": 70,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 2,
+  "bayName": "Shirts",
+  "brand": "Zenith Labs",
+  "colours": [
+   "White",
+   "Olive",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "party"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Linen",
+   "Fit": "Relaxed",
+   "Sizes": "M-XXL"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 3,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Zenith Labs Drift Linen Shirt. Relaxed fit for all-day comfort.",
+  "imageQuery": "linen shirt",
+  "images": []
+ },
+ {
+  "productId": "S-02-212",
+  "productName": "Pulse Oxford Shirt",
+  "productPrice": 799,
+  "quantity": 12,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 2,
+  "bayName": "Shirts",
+  "brand": "Oakline",
+  "colours": [
+   "Olive",
+   "Rust",
+   "Navy"
+  ],
+  "use": [
+   "party",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Denim",
+   "Fit": "Regular",
+   "Sizes": "M-XXL"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 0,
+  "arrivesInDays": 2,
+  "isNew": true,
+  "description": "Oakline Pulse Oxford Shirt. Relaxed fit for all-day comfort.",
+  "imageQuery": "oxford shirt",
+  "images": []
+ },
+ {
+  "productId": "S-02-213",
+  "productName": "Zephyr Overshirt",
+  "productPrice": 1349,
+  "quantity": 43,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 2,
+  "bayName": "Shirts",
+  "brand": "Brightwick",
+  "colours": [
+   "Rust",
+   "Black",
+   "Olive"
+  ],
+  "use": [
+   "casual",
+   "party"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Flannel",
+   "Fit": "Regular",
+   "Sizes": "S-XL"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Brightwick Zephyr Overshirt. Soft, breathable fabric that holds its shape.",
+  "imageQuery": "overshirt",
+  "images": []
+ },
+ {
+  "productId": "S-03-311",
+  "productName": "Ember Chinos",
+  "productPrice": 1049,
+  "quantity": 8,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 3,
+  "bayName": "Trousers",
+  "brand": "Oakline",
+  "colours": [
+   "White",
+   "Rust",
+   "Sand"
+  ],
+  "use": [
+   "office",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Linen blend",
+   "Fit": "Relaxed",
+   "Waist": "30-38"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Oakline Ember Chinos. Relaxed fit for all-day comfort.",
+  "imageQuery": "chinos",
+  "images": []
+ },
+ {
+  "productId": "S-03-312",
+  "productName": "Echo Joggers",
+  "productPrice": 1399,
+  "quantity": 59,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 3,
+  "bayName": "Trousers",
+  "brand": "Brightwick",
+  "colours": [
+   "Navy",
+   "Black"
+  ],
+  "use": [
+   "office",
+   "casual"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Linen blend",
+   "Fit": "Relaxed",
+   "Waist": "30-38"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 0,
+  "arrivesInDays": 1,
+  "isNew": true,
+  "description": "Brightwick Echo Joggers. Soft, breathable fabric that holds its shape.",
+  "imageQuery": "joggers",
+  "images": []
+ },
+ {
+  "productId": "S-03-313",
+  "productName": "Halo Cargo Pants",
+  "productPrice": 1899,
+  "quantity": 21,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 3,
+  "bayName": "Trousers",
+  "brand": "Driftwear",
+  "colours": [
+   "Navy",
+   "Black"
+  ],
+  "use": [
+   "daily",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Fabric": "Linen blend",
+   "Fit": "Tapered",
+   "Waist": "30-38"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Driftwear Halo Cargo Pants. Relaxed fit for all-day comfort.",
+  "imageQuery": "cargo pants",
+  "images": []
+ },
+ {
+  "productId": "S-04-411",
+  "productName": "Fable Runner Sneakers",
+  "productPrice": 3299,
+  "quantity": 33,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 4,
+  "bayName": "Footwear",
+  "brand": "Brightwick",
+  "colours": [
+   "White",
+   "Navy"
+  ],
+  "use": [
+   "office",
+   "casual"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Upper": "Leather",
+   "Sole": "EVA",
+   "Sizes": "UK 7-12"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": true,
+  "description": "Brightwick Fable Runner Sneakers. Easy to pair with almost anything.",
+  "imageQuery": "running shoes",
+  "images": []
+ },
+ {
+  "productId": "S-04-412",
+  "productName": "Basalt Canvas Sneakers",
+  "productPrice": 2249,
+  "quantity": 112,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 4,
+  "bayName": "Footwear",
+  "brand": "Driftwear",
+  "colours": [
+   "Navy",
+   "Olive"
+  ],
+  "use": [
+   "running",
+   "casual"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Upper": "Leather",
+   "Sole": "Rubber",
+   "Sizes": "UK 7-12"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 0,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Driftwear Basalt Canvas Sneakers. Soft, breathable fabric that holds its shape.",
+  "imageQuery": "canvas shoes",
+  "images": []
+ },
+ {
+  "productId": "S-04-413",
+  "productName": "Tide Slides",
+  "productPrice": 3349,
+  "quantity": 16,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 4,
+  "bayName": "Footwear",
+  "brand": "Moss & Mill",
+  "colours": [
+   "Black",
+   "Sand",
+   "Olive"
+  ],
+  "use": [
+   "running",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Upper": "Leather",
+   "Sole": "EVA",
+   "Sizes": "UK 6-11"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 3,
+  "arrivesInDays": 3,
+  "isNew": true,
+  "description": "Moss & Mill Tide Slides. Made to be worn a lot.",
+  "imageQuery": "slides sandals",
+  "images": []
+ },
+ {
+  "productId": "S-05-511",
+  "productName": "Nimbus Aviator Sunglasses",
+  "productPrice": 3899,
+  "quantity": 220,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 5,
+  "bayName": "Eyewear & caps",
+  "brand": "Driftwear",
+  "colours": [
+   "Sand",
+   "Rust",
+   "Navy"
+  ],
+  "use": [
+   "sun",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Wool blend",
+   "UV": "Blue-light filter",
+   "Fit": "One size"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 0,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Driftwear Nimbus Aviator Sunglasses. Relaxed fit for all-day comfort.",
+  "imageQuery": "aviator sunglasses",
+  "images": []
+ },
+ {
+  "productId": "S-05-512",
+  "productName": "Vector Round Sunglasses",
+  "productPrice": 2749,
+  "quantity": 92,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 5,
+  "bayName": "Eyewear & caps",
+  "brand": "Moss & Mill",
+  "colours": [
+   "Black",
+   "Navy",
+   "Sand"
+  ],
+  "use": [
+   "sun",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Metal",
+   "UV": "Blue-light filter",
+   "Fit": "Adjustable"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 3,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Moss & Mill Vector Round Sunglasses. Relaxed fit for all-day comfort.",
+  "imageQuery": "round sunglasses",
+  "images": []
+ },
+ {
+  "productId": "S-05-513",
+  "productName": "Echo Blue-light Glasses",
+  "productPrice": 3199,
+  "quantity": 8,
+  "category": "Style",
+  "zoneCode": "S",
+  "bay": 5,
+  "bayName": "Eyewear & caps",
+  "brand": "Atlas Gear",
+  "colours": [
+   "White",
+   "Olive",
+   "Sand"
+  ],
+  "use": [
+   "sun",
+   "travel"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Material": "Metal",
+   "UV": "UV400",
+   "Fit": "Adjustable"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 0,
+  "arrivesInDays": 7,
+  "isNew": false,
+  "description": "Atlas Gear Echo Blue-light Glasses. Made to be worn a lot.",
+  "imageQuery": "computer glasses",
+  "images": []
+ },
+ {
+  "productId": "W-01-111",
+  "productName": "Opal Smartwatch",
+  "productPrice": 7999,
+  "quantity": 8,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 1,
+  "bayName": "Smartwatches",
+  "brand": "Sonique",
+  "colours": [
+   "Teal",
+   "Coral"
+  ],
+  "use": [
+   "fitness",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "5 days",
+   "Display": "1.5 in AMOLED",
+   "Water": "IP68",
+   "Weight": "45 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Sonique Opal Smartwatch. Tracks what matters without the noise.",
+  "imageQuery": "smartwatch",
+  "images": []
+ },
+ {
+  "productId": "W-01-112",
+  "productName": "Basalt Sport Watch",
+  "productPrice": 12999,
+  "quantity": 27,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 1,
+  "bayName": "Smartwatches",
+  "brand": "Pixelforge",
+  "colours": [
+   "Teal",
+   "Black"
+  ],
+  "use": [
+   "fitness",
+   "office"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "5 days",
+   "Display": "1.5 in AMOLED",
+   "Water": "5 ATM",
+   "Weight": "32 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Pixelforge Basalt Sport Watch. Slim fit that disappears on the wrist.",
+  "imageQuery": "sports watch",
+  "images": []
+ },
+ {
+  "productId": "W-01-113",
+  "productName": "Rook Classic Watch",
+  "productPrice": 11999,
+  "quantity": 35,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 1,
+  "bayName": "Smartwatches",
+  "brand": "Voltrix",
+  "colours": [
+   "Black",
+   "Olive",
+   "Sand"
+  ],
+  "use": [
+   "fitness",
+   "office"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "2 days",
+   "Display": "1.3 in AMOLED",
+   "Water": "IP68",
+   "Weight": "52 g"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 1,
+  "isNew": false,
+  "description": "Voltrix Rook Classic Watch. Slim fit that disappears on the wrist.",
+  "imageQuery": "classic smartwatch",
+  "images": []
+ },
+ {
+  "productId": "W-02-211",
+  "productName": "Vector Band",
+  "productPrice": 3299,
+  "quantity": 18,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 2,
+  "bayName": "Fitness bands",
+  "brand": "Pixelforge",
+  "colours": [
+   "Sand",
+   "Navy"
+  ],
+  "use": [
+   "fitness",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 days",
+   "Sensors": "Heart rate + SpO2",
+   "Weight": "28 g"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Pixelforge Vector Band. Sweat and splash resistant.",
+  "imageQuery": "fitness band",
+  "images": []
+ },
+ {
+  "productId": "W-02-212",
+  "productName": "Mercury Fit Band",
+  "productPrice": 1399,
+  "quantity": 11,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 2,
+  "bayName": "Fitness bands",
+  "brand": "Voltrix",
+  "colours": [
+   "Olive",
+   "Teal",
+   "Coral"
+  ],
+  "use": [
+   "running",
+   "fitness"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 days",
+   "Sensors": "Heart rate + SpO2",
+   "Weight": "24 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Voltrix Mercury Fit Band. Sweat and splash resistant.",
+  "imageQuery": "fitness tracker",
+  "images": []
+ },
+ {
+  "productId": "W-02-213",
+  "productName": "Willow Slim Band",
+  "productPrice": 3649,
+  "quantity": 8,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 2,
+  "bayName": "Fitness bands",
+  "brand": "Lumora",
+  "colours": [
+   "Coral",
+   "Navy"
+  ],
+  "use": [
+   "running",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "20 days",
+   "Sensors": "Heart rate + SpO2",
+   "Weight": "28 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 3,
+  "isNew": false,
+  "description": "Lumora Willow Slim Band. Swap, charge and go.",
+  "imageQuery": "slim fitness band",
+  "images": []
+ },
+ {
+  "productId": "W-03-311",
+  "productName": "Sable Silicone Strap",
+  "productPrice": 1799,
+  "quantity": 18,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 3,
+  "bayName": "Watch straps",
+  "brand": "Voltrix",
+  "colours": [
+   "Black",
+   "Coral",
+   "Navy"
+  ],
+  "use": [
+   "sport",
+   "office"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Width": "22 mm",
+   "Material": "Nylon",
+   "Weight": "20 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Voltrix Sable Silicone Strap. Sweat and splash resistant.",
+  "imageQuery": "silicone watch strap",
+  "images": []
+ },
+ {
+  "productId": "W-03-312",
+  "productName": "Lumen Leather Strap",
+  "productPrice": 599,
+  "quantity": 3,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 3,
+  "bayName": "Watch straps",
+  "brand": "Lumora",
+  "colours": [
+   "Teal",
+   "Olive",
+   "Coral"
+  ],
+  "use": [
+   "dress",
+   "daily"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Width": "20 mm",
+   "Material": "Steel",
+   "Weight": "45 g"
+  },
+  "seller": "UrbanKart",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Lumora Lumen Leather Strap. Swap, charge and go.",
+  "imageQuery": "leather watch strap",
+  "images": []
+ },
+ {
+  "productId": "W-03-313",
+  "productName": "Pocket Mesh Strap",
+  "productPrice": 699,
+  "quantity": 72,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 3,
+  "bayName": "Watch straps",
+  "brand": "Orbitek",
+  "colours": [
+   "Sand",
+   "Black",
+   "Navy"
+  ],
+  "use": [
+   "office",
+   "sport"
+  ],
+  "connectivity": "n/a",
+  "specs": {
+   "Width": "22 mm",
+   "Material": "Nylon",
+   "Weight": "45 g"
+  },
+  "seller": "Lifestyle Hub",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Orbitek Pocket Mesh Strap. Sweat and splash resistant.",
+  "imageQuery": "mesh watch band",
+  "images": []
+ },
+ {
+  "productId": "W-04-411",
+  "productName": "Drift Smart Ring",
+  "productPrice": 1649,
+  "quantity": 10,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 4,
+  "bayName": "Rings & trackers",
+  "brand": "Lumora",
+  "colours": [
+   "Olive",
+   "Black",
+   "Coral"
+  ],
+  "use": [
+   "travel",
+   "pets"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "6 days",
+   "Range": "100 m",
+   "Weight": "8 g"
+  },
+  "seller": "Northgate Supply",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": true,
+  "description": "Lumora Drift Smart Ring. Slim fit that disappears on the wrist.",
+  "imageQuery": "smart ring",
+  "images": []
+ },
+ {
+  "productId": "W-04-412",
+  "productName": "Zephyr Key Tracker",
+  "productPrice": 1949,
+  "quantity": 4,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 4,
+  "bayName": "Rings & trackers",
+  "brand": "Orbitek",
+  "colours": [
+   "Black",
+   "Sand",
+   "Coral"
+  ],
+  "use": [
+   "pets",
+   "travel"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "1 year",
+   "Range": "Global network",
+   "Weight": "3 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Orbitek Zephyr Key Tracker. Tracks what matters without the noise.",
+  "imageQuery": "bluetooth tracker tag",
+  "images": []
+ },
+ {
+  "productId": "W-04-413",
+  "productName": "Atlas Pet Tracker",
+  "productPrice": 4049,
+  "quantity": 57,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 4,
+  "bayName": "Rings & trackers",
+  "brand": "Arcline",
+  "colours": [
+   "Coral",
+   "Sand",
+   "Black"
+  ],
+  "use": [
+   "sleep",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Battery": "6 days",
+   "Range": "50 m",
+   "Weight": "8 g"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 5,
+  "isNew": false,
+  "description": "Arcline Atlas Pet Tracker. Slim fit that disappears on the wrist.",
+  "imageQuery": "pet gps tracker",
+  "images": []
+ },
+ {
+  "productId": "W-05-511",
+  "productName": "Maple Charging Dock",
+  "productPrice": 1699,
+  "quantity": 85,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 5,
+  "bayName": "Wearable chargers",
+  "brand": "Orbitek",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "bedside",
+   "daily"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Input": "USB-C",
+   "Output": "5 W",
+   "Weight": "30 g"
+  },
+  "seller": "BazaarMart Retail",
+  "warrantyMonths": 12,
+  "arrivesInDays": 7,
+  "isNew": true,
+  "description": "Orbitek Maple Charging Dock. Sweat and splash resistant.",
+  "imageQuery": "watch charging dock",
+  "images": []
+ },
+ {
+  "productId": "W-05-512",
+  "productName": "Studio Magnetic Charger",
+  "productPrice": 849,
+  "quantity": 16,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 5,
+  "bayName": "Wearable chargers",
+  "brand": "Arcline",
+  "colours": [
+   "White",
+   "Sand"
+  ],
+  "use": [
+   "travel",
+   "bedside"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Input": "USB-C",
+   "Output": "5 W",
+   "Weight": "30 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Arcline Studio Magnetic Charger. Swap, charge and go.",
+  "imageQuery": "magnetic watch charger",
+  "images": []
+ },
+ {
+  "productId": "W-05-513",
+  "productName": "Atlas Travel Charger",
+  "productPrice": 2349,
+  "quantity": 21,
+  "category": "Wearables",
+  "zoneCode": "W",
+  "bay": 5,
+  "bayName": "Wearable chargers",
+  "brand": "Sonique",
+  "colours": [
+   "Sand",
+   "White",
+   "Black"
+  ],
+  "use": [
+   "travel",
+   "bedside"
+  ],
+  "connectivity": "wireless",
+  "specs": {
+   "Input": "USB-C",
+   "Output": "2.5 W",
+   "Weight": "120 g"
+  },
+  "seller": "TechNest Traders",
+  "warrantyMonths": 12,
+  "arrivesInDays": 2,
+  "isNew": false,
+  "description": "Sonique Atlas Travel Charger. Sweat and splash resistant.",
+  "imageQuery": "portable watch charger",
+  "images": []
+ }
+]

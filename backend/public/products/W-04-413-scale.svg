@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="tracker">
+<title>Atlas Pet Tracker</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FC1B5"/>
+<path d="M3 212h297M3 388h297M300 212c110-8 220 8 297 30M300 388c110 8 220-8 297-30" fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linecap="round"/>
+<g transform="translate(205 205) scale(1.9)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#8FC1B5" cx="50" cy="56" r="34"/><circle fill="#FFFDF8" cx="50" cy="56" r="16"/><circle cx="50" cy="56" r="4"/><path d="M50 22V8"/><circle cx="50" cy="8" r="4"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON WRIST</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">W-04-413</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

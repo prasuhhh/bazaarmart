@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="cable">
+<title>Nimbus Lightning Cable</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FB4DC"/>
+<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 20h34a16 16 0 0 1 0 32H42a16 16 0 0 0 0 32h34"/><rect fill="#8FB4DC" x="7" y="13" width="17" height="14" rx="3"/><rect fill="#8FB4DC" x="76" y="77" width="17" height="14" rx="3"/></g>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">P-05-512</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

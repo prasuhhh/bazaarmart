@@ -22,7 +22,8 @@ const FALLBACK_TINT = '#CFC9BE';
 
 const COLOUR_TINTS = {
   Black: '#4A4845', Graphite: '#7C7B78', Sand: '#D9C7A3', Olive: '#8C9160',
-  Terracotta: '#C7704C', Coral: '#F0806C', Teal: '#3F9C97'
+  Terracotta: '#C7704C', Coral: '#F0806C', Teal: '#3F9C97', White: '#F5F2EC', Grey: '#A5A29C',
+  Navy: '#3B4A6B', Rust: '#A8552F', Tan: '#C49A6C', Sage: '#A3B18A', Oak: '#B98B52', Charcoal: '#54524F'
 };
 
 // Each icon sits in a 100 x 100 box. T is replaced with the tint.
@@ -30,6 +31,19 @@ const keycap = (x, y) => `<rect fill="T" x="${x}" y="${y}" width="34" height="34
 const HEADPHONES = '<path d="M17 60v-9a33 33 0 0 1 66 0v9"/><rect fill="T" x="9" y="56" width="17" height="32" rx="7"/><rect fill="T" x="74" y="56" width="17" height="32" rx="7"/>';
 
 const ICONS = {
+  mic: '<rect fill="T" x="34" y="6" width="32" height="56" rx="16"/><path d="M34 26h12M34 38h12M22 46a28 28 0 0 0 56 0M50 74v16M32 92h36"/>',
+  monitor: '<rect fill="T" x="6" y="14" width="88" height="56" rx="4"/><path d="M50 70v14M30 90h40M36 84h28"/>',
+  webcam: '<rect fill="T" x="14" y="24" width="72" height="38" rx="17"/><circle fill="#FFFDF8" cx="50" cy="43" r="12"/><circle cx="50" cy="43" r="4"/><path d="M50 62v12M30 80h40"/>',
+  phone: '<rect fill="T" x="26" y="5" width="48" height="90" rx="9"/><rect fill="#FFFDF8" x="32" y="14" width="36" height="66" rx="2"/><path d="M45 87h10"/>',
+  shoe: '<path fill="T" d="M6 38c10 8 18 6 26-4l34 26c8 6 26 4 28 18v8H6z"/><path d="M6 76h88M42 42l-7 8M52 50l-7 8"/>',
+  trousers: '<path fill="T" d="M26 6h48l8 88H58L50 40 42 94H18z"/><path d="M26 18h48M50 18v22"/>',
+  wallet: '<rect fill="T" x="8" y="24" width="84" height="56" rx="7"/><path d="M8 38h84"/><rect fill="#FFFDF8" x="66" y="46" width="26" height="18" rx="4"/><circle cx="75" cy="55" r="3"/>',
+  ring: '<circle fill="T" cx="50" cy="52" r="38"/><circle fill="#FFFDF8" cx="50" cy="52" r="24"/><path d="M38 16h24"/>',
+  tracker: '<circle fill="T" cx="50" cy="56" r="34"/><circle fill="#FFFDF8" cx="50" cy="56" r="16"/><circle cx="50" cy="56" r="4"/><path d="M50 22V8"/><circle cx="50" cy="8" r="4"/>',
+  clock: '<circle fill="T" cx="50" cy="50" r="42"/><circle fill="#FFFDF8" cx="50" cy="50" r="33"/><path d="M50 26v24l15 10"/>',
+  frame: '<rect fill="T" x="14" y="8" width="72" height="84" rx="2"/><rect fill="#FFFDF8" x="26" y="20" width="48" height="60"/><path d="m26 70 16-18 12 12 8-8 12 14"/>',
+  kettle: '<path fill="T" d="M26 30h40l8 58H18z"/><path d="M30 30c0-20 32-20 32 0M26 40 8 28M72 44h10a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8h-9"/>',
+  chair: '<path fill="T" d="M30 6h40a6 6 0 0 1 6 6v44H24V12a6 6 0 0 1 6-6z"/><rect fill="T" x="18" y="56" width="64" height="12" rx="5"/><path d="M50 68v14M26 94l24-12 24 12"/>',
   box: '<rect fill="T" x="14" y="26" width="72" height="62" rx="3"/><path d="M14 42h72M40 26v16M60 26v16"/><path d="M50 12v-1M42 58c0-12 16-12 16-2 0 7-8 6-8 13M50 77v1"/>',
   earbuds: '<g id="bud"><rect fill="T" x="14" y="38" width="13" height="46" rx="6"/><circle fill="T" cx="29" cy="32" r="16"/><circle cx="31" cy="32" r="6"/></g><use href="#bud" transform="matrix(-1 0 0 1 100 0)"/>',
   earphones: '<circle fill="T" cx="26" cy="20" r="11"/><circle fill="T" cx="74" cy="20" r="11"/><path d="M28 31c2 18 20 24 22 36M72 31c-2 18-20 24-22 36M50 67v14"/><rect fill="T" x="45" y="81" width="10" height="14" rx="2"/>',
@@ -89,32 +103,51 @@ const ICONS = {
 
 // A bay of one kind of product names its icon. A mixed bay lists a rule per product.
 const BAY_ICONS = {
-  Earbuds: [[/earphones/i, 'earphones'], [/buds/i, 'earbuds']],
+  Earbuds: [[/buds/i, 'earbuds']],
   Headphones: 'headphones',
-  Speakers: [[/soundbar/i, 'soundbar'], [/speaker/i, 'speaker']],
-  Smartwatches: 'smartwatch',
-  'Straps and bands': 'strap',
-  'Fitness bands': 'band',
-  'Keyboards and mice': [[/mouse/i, 'mouse'], [/keyboard/i, 'keyboard']],
-  'Lamps and lighting': [[/desk lamp/i, 'lamp'], [/light bar/i, 'lightbar'], [/clip/i, 'cliplamp']],
-  'Stands and organisers': [[/stand/i, 'stand'], [/mat/i, 'mat'], [/riser/i, 'riser']],
-  'Smart home': [[/plug/i, 'plug'], [/bulb/i, 'bulb'], [/camera/i, 'camera']],
-  Decor: [[/planter/i, 'planter'], [/cushion/i, 'cushion'], [/rug/i, 'rug']],
-  Kitchen: [[/coffee/i, 'coffee'], [/mug/i, 'mug'], [/scale/i, 'scale']],
-  'T-shirts': 'tshirt',
-  Eyewear: [[/sunglasses/i, 'sunglasses'], [/glasses/i, 'glasses']],
-  Shirts: 'shirt',
-  Controllers: [[/grip/i, 'grip'], [/controller/i, 'controller']],
+  Speakers: 'speaker',
+  'Soundbars & DACs': [[/soundbar/i, 'soundbar'], [/dac/i, 'hub']],
+  'Mics & Recorders': 'mic',
+  Skincare: [[/wash/i, 'pump'], [/moisturiser/i, 'pump'], [/sunscreen/i, 'tube']],
+  Haircare: [[/shampoo|conditioner/i, 'pump'], [/oil/i, 'serum']],
+  Grooming: [[/trimmer|groomer/i, 'trimmer'], [/shaver/i, 'shaver']],
+  Fragrances: 'pump',
+  'Oral & wellness': 'toothbrush',
+  Backpacks: 'backpack',
+  'Sleeves & cases': 'sleeve',
+  Wallets: 'wallet',
+  Travel: [[/trolley/i, 'duffel'], [/cubes/i, 'cube'], [/pillow/i, 'cushion']],
+  'Bottles & flasks': 'bottle',
+  Keyboards: 'keyboard',
+  Mice: 'mouse',
+  'Monitors & stands': 'monitor',
+  'Desk lighting': [[/desk lamp/i, 'lamp'], [/light bar/i, 'lightbar'], [/ring light/i, 'bulb']],
+  'Webcams & hubs': [[/webcam/i, 'webcam'], [/hub/i, 'hub']],
+  Controllers: 'controller',
   Headsets: 'headset',
-  Accessories: [[/mouse pad/i, 'mousepad'], [/dock/i, 'dock'], [/keycap/i, 'keycaps']],
-  Backpacks: [[/duffel/i, 'duffel'], [/backpack/i, 'backpack']],
-  'Sleeves and bottles': [[/sleeve/i, 'sleeve'], [/bottle/i, 'bottle'], [/notebook/i, 'notebook']],
-  'Travel pouches': [[/pouch/i, 'pouch'], [/cube/i, 'cube']],
-  'Chargers and hubs': [[/charger/i, 'charger'], [/hub/i, 'hub'], [/cable/i, 'cable']],
-  Cases: [[/folio/i, 'folio'], [/case/i, 'phonecase']],
+  'Gaming keyboards': 'keyboard',
+  'Gaming mice': 'mouse',
+  'Seats & pads': [[/chair/i, 'chair'], [/desk mat/i, 'mat'], [/mousepad/i, 'mousepad']],
+  'Lamps & lighting': [[/lamp/i, 'lamp'], [/bulb/i, 'bulb']],
+  'Smart home': [[/plug/i, 'plug'], [/doorbell|camera/i, 'camera']],
+  'Home decor': [[/clock/i, 'clock'], [/frame/i, 'frame'], [/vase/i, 'planter']],
+  'Kitchen gadgets': [[/kettle|fryer/i, 'kettle'], [/coffee/i, 'coffee']],
+  'Bedding & cushions': 'cushion',
+  Phones: 'phone',
+  'Cases & covers': [[/folio/i, 'folio'], [/case/i, 'phonecase']],
+  Chargers: 'charger',
   'Power banks': 'powerbank',
-  Grooming: [[/trimmer/i, 'trimmer'], [/toothbrush/i, 'toothbrush'], [/shaver/i, 'shaver']],
-  Skincare: [[/sunscreen/i, 'tube'], [/wash/i, 'pump'], [/serum/i, 'serum']]
+  Cables: 'cable',
+  'T-shirts': 'tshirt',
+  Shirts: 'shirt',
+  Trousers: 'trousers',
+  Footwear: 'shoe',
+  'Eyewear & caps': [[/sunglasses/i, 'sunglasses'], [/glasses/i, 'glasses']],
+  Smartwatches: 'smartwatch',
+  'Fitness bands': 'band',
+  'Watch straps': 'strap',
+  'Rings & trackers': [[/ring/i, 'ring'], [/tracker/i, 'tracker']],
+  'Wearable chargers': 'dock'
 };
 
 export const FALLBACK_ICON = 'box';
@@ -128,9 +161,10 @@ export function iconFor({ bayName, productName }) {
 // How big each product is drawn in its scale image. Everything else is medium.
 const SMALL = new Set(['earbuds', 'earphones', 'mouse', 'plug', 'bulb', 'mug', 'sunglasses', 'glasses',
   'keycaps', 'charger', 'cable', 'phonecase', 'folio', 'powerbank', 'trimmer', 'toothbrush', 'shaver',
-  'tube', 'pump', 'serum', 'bottle', 'notebook', 'pouch', 'grip', 'scale']);
+  'tube', 'pump', 'serum', 'bottle', 'notebook', 'pouch', 'grip', 'scale', 'ring', 'tracker', 'wallet',
+  'phone', 'webcam', 'mic']);
 const LARGE = new Set(['soundbar', 'keyboard', 'stand', 'mat', 'mousepad', 'riser', 'rug', 'cushion',
-  'tshirt', 'shirt', 'backpack', 'duffel']);
+  'tshirt', 'shirt', 'backpack', 'duffel', 'monitor', 'chair', 'trousers']);
 const sizeOf = icon => (SMALL.has(icon) ? 1.1 : LARGE.has(icon) ? 2.4 : 1.7);
 
 const escapeXml = text => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');

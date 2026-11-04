@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="charger">
+<title>Kite 45W Charger</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FB4DC"/>
+<g transform="translate(45 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#4A4845" x="26" y="28" width="48" height="58" rx="9"/><path d="M40 28V11M60 28V11M54 37l-9 14h11l-9 14"/><rect x="39" y="72" width="22" height="6" rx="3"/></g><text x="165" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Black</text>
+<g transform="translate(315 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#F5F2EC" x="26" y="28" width="48" height="58" rx="9"/><path d="M40 28V11M60 28V11M54 37l-9 14h11l-9 14"/><rect x="39" y="72" width="22" height="6" rx="3"/></g><text x="435" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">P-03-312</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

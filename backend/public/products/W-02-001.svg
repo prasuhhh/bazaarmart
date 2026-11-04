@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="strap">
-<title>Silicone Sport Strap</title>
-<rect width="600" height="600" fill="#E7E3DC"/>
-<rect x="3" y="3" width="594" height="18" fill="#8FC1B5"/>
-<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#8FC1B5" x="37" y="5" width="26" height="90" rx="11"/><rect x="30" y="15" width="40" height="15" rx="3"/><path d="M50 15v15"/><circle cx="50" cy="48" r="2"/><circle cx="50" cy="60" r="2"/><circle cx="50" cy="72" r="2"/><circle cx="50" cy="84" r="2"/></g>
-<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
-<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">W-02-001</text>
-<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
-</svg>

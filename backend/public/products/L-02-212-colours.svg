@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="camera">
+<title>Echo Video Doorbell</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#A9C48A"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#F5F2EC" cx="50" cy="40" r="30"/><circle fill="#FFFDF8" cx="50" cy="40" r="13"/><circle cx="50" cy="40" r="4"/><path d="M50 70v14M30 90h40M38 84h24"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#54524F" cx="50" cy="40" r="30"/><circle fill="#FFFDF8" cx="50" cy="40" r="13"/><circle cx="50" cy="40" r="4"/><path d="M50 70v14M30 90h40M38 84h24"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Charcoal</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#B98B52" cx="50" cy="40" r="30"/><circle fill="#FFFDF8" cx="50" cy="40" r="13"/><circle cx="50" cy="40" r="4"/><path d="M50 70v14M30 90h40M38 84h24"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Oak</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">L-02-212</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

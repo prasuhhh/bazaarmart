@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="keyboard">
+<title>Echo Wireless Keyboard</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E8C468"/>
+<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#E8C468" x="4" y="26" width="92" height="48" rx="6"/><path stroke-dasharray="6 6" d="M13 38h76M13 49h76"/><path d="M30 62h40"/></g>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">D-01-113</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

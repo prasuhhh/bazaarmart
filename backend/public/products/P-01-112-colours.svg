@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="phone">
+<title>Echo Phone Lite</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#8FB4DC"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#F0806C" x="26" y="5" width="48" height="90" rx="9"/><rect fill="#FFFDF8" x="32" y="14" width="36" height="66" rx="2"/><path d="M45 87h10"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Coral</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#8C9160" x="26" y="5" width="48" height="90" rx="9"/><rect fill="#FFFDF8" x="32" y="14" width="36" height="66" rx="2"/><path d="M45 87h10"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Olive</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#3F9C97" x="26" y="5" width="48" height="90" rx="9"/><rect fill="#FFFDF8" x="32" y="14" width="36" height="66" rx="2"/><path d="M45 87h10"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Teal</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">P-01-112</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

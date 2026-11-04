@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="sunglasses">
+<title>Nimbus Aviator Sunglasses</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="130" cy="130" r="38"/><path d="M78 300v-80a50 50 0 0 1 104 0v80M104 240v230M156 240v230M104 470h52"/><path d="M40 470h520"/></g>
+<g transform="translate(330 352) scale(1.1)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#E58F8F" cx="29" cy="52" r="19"/><circle fill="#E58F8F" cx="71" cy="52" r="19"/><path d="M48 47q2-4 4 0M11 45 3 34M89 45l8-11"/></g>
+<text x="560" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="end" fill="#1F1D1A">TO SCALE</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-05-511</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

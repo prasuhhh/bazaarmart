@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="trousers">
+<title>Ember Chinos</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#F5F2EC" d="M26 6h48l8 88H58L50 40 42 94H18z"/><path d="M26 18h48M50 18v22"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#A8552F" d="M26 6h48l8 88H58L50 40 42 94H18z"/><path d="M26 18h48M50 18v22"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Rust</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#D9C7A3" d="M26 6h48l8 88H58L50 40 42 94H18z"/><path d="M26 18h48M50 18v22"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-03-311</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

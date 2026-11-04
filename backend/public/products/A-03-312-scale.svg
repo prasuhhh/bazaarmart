@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="speaker">
+<title>Zephyr Portable Speaker</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#F4A583"/>
+<path d="M70 300h460l50 170H20z" fill="#F4A583" fill-opacity="0.35" stroke="#1F1D1A" stroke-width="3" stroke-linejoin="round"/>
+<g fill="none" stroke="#1F1D1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><rect x="56" y="196" width="150" height="104" rx="6" fill="#E7E3DC"/><path d="M36 322h190l-18-22H54z" fill="#E7E3DC"/></g>
+<g transform="translate(305 270) scale(1.7)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#F4A583" x="24" y="8" width="52" height="84" rx="9"/><circle cx="50" cy="60" r="18"/><circle cx="50" cy="60" r="6"/><circle cx="50" cy="26" r="7"/></g>
+<text x="40" y="74" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" text-anchor="start" fill="#1F1D1A">ON DESK</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">A-03-312</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

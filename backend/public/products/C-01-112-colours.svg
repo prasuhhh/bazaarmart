@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="backpack">
+<title>Echo Commuter Pack</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#C6A27C"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#D9C7A3" d="M25 36a25 25 0 0 1 50 0v49a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6z"/><path d="M40 12a10 8 0 0 1 20 0M25 46h50"/><rect x="34" y="56" width="32" height="24" rx="3"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#A8552F" d="M25 36a25 25 0 0 1 50 0v49a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6z"/><path d="M40 12a10 8 0 0 1 20 0M25 46h50"/><rect x="34" y="56" width="32" height="24" rx="3"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Rust</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#F5F2EC" d="M25 36a25 25 0 0 1 50 0v49a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6z"/><path d="M40 12a10 8 0 0 1 20 0M25 46h50"/><rect x="34" y="56" width="32" height="24" rx="3"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">C-01-112</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="cushion">
+<title>Cedar Cushion Cover</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#A9C48A"/>
+<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#A9C48A" d="M12 12q38 12 76 0-11 38 0 76-38-12-76 0 11-38 0-76z"/><circle cx="50" cy="50" r="4"/><path stroke-dasharray="4 5" d="M26 26q24 7 48 0-7 24 0 48-24-7-48 0 7-24 0-48z"/></g>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">L-05-511</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="chair">
+<title>Arc Gaming Chair</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#9A9CDD"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#4A4845" d="M30 6h40a6 6 0 0 1 6 6v44H24V12a6 6 0 0 1 6-6z"/><rect fill="#4A4845" x="18" y="56" width="64" height="12" rx="5"/><path d="M50 68v14M26 94l24-12 24 12"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Black</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#F5F2EC" d="M30 6h40a6 6 0 0 1 6 6v44H24V12a6 6 0 0 1 6-6z"/><rect fill="#F5F2EC" x="18" y="56" width="64" height="12" rx="5"/><path d="M50 68v14M26 94l24-12 24 12"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#D9C7A3" d="M30 6h40a6 6 0 0 1 6 6v44H24V12a6 6 0 0 1 6-6z"/><rect fill="#D9C7A3" x="18" y="56" width="64" height="12" rx="5"/><path d="M50 68v14M26 94l24-12 24 12"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">G-05-511</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="hub">
+<title>Cinder USB-C Hub</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E8C468"/>
+<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect fill="#E8C468" x="16" y="34" width="72" height="32" rx="9"/><path d="M16 50H3"/><rect x="28" y="45" width="10" height="10" rx="1"/><rect x="44" y="45" width="10" height="10" rx="1"/><rect x="60" y="45" width="16" height="10" rx="1"/></g>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">D-05-513</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

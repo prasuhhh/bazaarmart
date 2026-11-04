@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="shirt">
+<title>Pulse Oxford Shirt</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
+<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#E58F8F" d="M35 11 15 22 7 78h14l9-34v48h40V44l9 34h14l-8-56-20-11-15 11z"/><path d="m35 11 15 11 15-11M50 22v70"/><circle cx="56" cy="36" r="1.5"/><circle cx="56" cy="52" r="1.5"/><circle cx="56" cy="68" r="1.5"/></g>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-02-212</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

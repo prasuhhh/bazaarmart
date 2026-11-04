@@ -58,7 +58,7 @@ npm run dev     # API on :5000, website on http://localhost:5173
 
 The seed is safe to re-run. It adds only what's missing, so product edits and stock levels are kept, and an existing admin keeps their password. Changing `SEED_ADMIN_PASSWORD` later has no effect on that account. If a normal account already holds the admin email, the seed promotes it and replaces its password.
 
-The demo user (`SEED_DEMO_EMAIL`, `SEED_DEMO_PASSWORD`) gets a saved address and two orders, one out for delivery and one packed. It's skipped if those settings are blank. The catalogue lives in `backend/data/catalogue.js`, with invented brands. Product images are generated SVGs in `backend/public/products`: run `npm run images --prefix backend` after changing the catalogue, then `npm run seed --prefix backend` to refresh them in the database.
+The demo user (`SEED_DEMO_EMAIL`, `SEED_DEMO_PASSWORD`) gets a saved address and two orders, one out for delivery and one packed. It's skipped if those settings are blank. The catalogue is `backend/data/products.json`, 135 products with invented brands, and `backend/data/catalogue.js` holds the zones, kits and demo data. The seed upserts by SKU and keeps the live price and stock of a product that hasn't changed. It removes only the first catalogue's SKUs, so products added on the Admin page stay. Generated SVGs in `backend/public/products` cover any product without a photo: run `npm run images --prefix backend` after changing the catalogue, then `npm run seed --prefix backend`.
 
 If port 5000 is already in use on macOS, AirPlay Receiver is the usual cause. Set `PORT` in `backend/.env` and `VITE_API_URL` in `frontend/.env` to another port.
 

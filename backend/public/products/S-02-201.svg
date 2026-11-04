@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="sunglasses">
-<title>Round Acetate Sunglasses</title>
-<rect width="600" height="600" fill="#E7E3DC"/>
-<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
-<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle fill="#E58F8F" cx="29" cy="52" r="19"/><circle fill="#E58F8F" cx="71" cy="52" r="19"/><path d="M48 47q2-4 4 0M11 45 3 34M89 45l8-11"/></g>
-<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
-<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-02-201</text>
-<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
-</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="glasses">
+<title>Echo Blue-light Glasses</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#E58F8F"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="36" width="39" height="30" rx="8"/><rect x="54" y="36" width="39" height="30" rx="8"/><path fill="#F5F2EC" d="M7 36h39v8H7zM54 36h39v8H54z"/><path d="M46 44q4-4 8 0M7 42 2 34M93 42l5-8"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="36" width="39" height="30" rx="8"/><rect x="54" y="36" width="39" height="30" rx="8"/><path fill="#8C9160" d="M7 36h39v8H7zM54 36h39v8H54z"/><path d="M46 44q4-4 8 0M7 42 2 34M93 42l5-8"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Olive</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="36" width="39" height="30" rx="8"/><rect x="54" y="36" width="39" height="30" rx="8"/><path fill="#D9C7A3" d="M7 36h39v8H7zM54 36h39v8H54z"/><path d="M46 44q4-4 8 0M7 42 2 34M93 42l5-8"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">S-05-513</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

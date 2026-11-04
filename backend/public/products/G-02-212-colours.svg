@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="headset">
+<title>Nova Wireless Headset</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#9A9CDD"/>
+<g transform="translate(45 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 60v-9a33 33 0 0 1 66 0v9"/><rect fill="#8C9160" x="9" y="56" width="17" height="32" rx="7"/><rect fill="#8C9160" x="74" y="56" width="17" height="32" rx="7"/><path d="M17 80c1 10 12 13 24 12"/><circle fill="#8C9160" cx="45" cy="91" r="5"/></g><text x="165" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Olive</text>
+<g transform="translate(315 130) scale(2.4)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 60v-9a33 33 0 0 1 66 0v9"/><rect fill="#F5F2EC" x="9" y="56" width="17" height="32" rx="7"/><rect fill="#F5F2EC" x="74" y="56" width="17" height="32" rx="7"/><path d="M17 80c1 10 12 13 24 12"/><circle fill="#F5F2EC" cx="45" cy="91" r="5"/></g><text x="435" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">White</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">G-02-212</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>

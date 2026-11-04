@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import mongoose from 'mongoose';
 import { connectDB } from './config/db.js';
-import { demoOrders, demoUser, kits, products, zones } from './data/catalogue.js';
+import { demoOrders, demoUser, kits, movedDemoSkus, products, retiredSkus, zones } from './data/catalogue.js';
 import { isValidEmail, isValidPassword } from './middleware/validate.js';
 import Counter from './models/Counter.js';
 import Kit from './models/Kit.js';
@@ -29,30 +29,46 @@ async function seedZonesAndKits() {
   await Promise.all(zones.map(({ code, ...fields }) =>
     Zone.updateOne({ code }, { $set: fields }, { upsert: true })));
   // One at a time, because the store map shows kits in the order they were created.
-  for (const { title, query } of kits) {
-    await Kit.updateOne({ title }, { $set: { query } }, { upsert: true });
+  for (const { title, productIds } of kits) {
+    await Kit.updateOne({ title }, { $set: { productIds }, $unset: { query: '' } }, { upsert: true });
   }
   console.log(`Zones ready: ${zones.length}. Kits ready: ${kits.length}.`);
 }
 
-// Only adds SKUs that are missing, so admin edits and live stock levels are kept.
+// Upserts by SKU. Price and stock are live data, so a product that is still the same
+// one keeps them. A SKU now holding a different product takes everything from the file.
+// Timestamps stay put so the "new drops" order doesn't shift.
 async function seedProducts() {
-  const existing = new Set(await Product.distinct('productId'));
-  const missing = products.filter(product => !existing.has(product.productId));
+  const existing = new Map((await Product.find({}, 'productId productName').lean())
+    .map(({ productId, productName }) => [productId, productName]));
+
+  const missing = products.filter(({ productId }) => !existing.has(productId));
   if (missing.length) await Product.insertMany(missing);
-  console.log(`Products added: ${missing.length}. Already there: ${products.length - missing.length}.`);
+
+  const updates = products.filter(({ productId }) => existing.has(productId)).map(product => {
+    const { productId, productPrice, quantity, ...fields } = product;
+    const isSameProduct = existing.get(productId) === product.productName;
+    return {
+      updateOne: {
+        filter: { productId },
+        update: { $set: isSameProduct ? fields : { ...fields, productPrice, quantity } },
+        timestamps: false
+      }
+    };
+  });
+  if (updates.length) await Product.bulkWrite(updates);
+
+  const fileSkus = new Set(products.map(({ productId }) => productId));
+  const { deletedCount } = await Product.deleteMany({
+    productId: { $in: retiredSkus.filter(sku => !fileSkus.has(sku)) }
+  });
+  console.log(`Products added: ${missing.length}. Updated: ${updates.length}. Removed: ${deletedCount}.`);
 }
 
 const OLD_IMAGE_HOST = /picsum\.photos/;
 
-// Images are generated files, so they always follow data/catalogue.js. Nothing else on
-// a product changes, and timestamps stay put so the "new drops" order doesn't shift.
-async function refreshImages() {
-  await Product.bulkWrite(products.map(({ productId, images }) => ({
-    updateOne: { filter: { productId }, update: { $set: { images } }, timestamps: false }
-  })));
-
-  // Orders keep a copy of the image from when they were placed.
+// Orders keep a copy of the image from when they were placed.
+async function refreshOrderImages() {
   await Order.bulkWrite(products.map(({ productId, images }) => ({
     updateMany: {
       filter: { items: { $elemMatch: { productId, image: OLD_IMAGE_HOST } } },
@@ -61,7 +77,6 @@ async function refreshImages() {
       timestamps: false
     }
   })));
-  console.log(`Images ready: ${products.length} products.`);
 }
 
 function seedCredentials(prefix) {
@@ -104,6 +119,24 @@ async function buildOrder(user, { items, ...fields }) {
   return { ...fields, user: user._id, items: lines, subtotal, total: subtotal };
 }
 
+// Only the demo user's orders follow the catalogue. Every other order is left as placed.
+async function refreshDemoOrders(user) {
+  const bySku = new Map(products.map(product => [product.productId, product]));
+  for (const order of await Order.find({ user: user._id }).lean()) {
+    const items = order.items.map(line => {
+      const product = bySku.get(movedDemoSkus[line.productId] ?? line.productId);
+      if (!product) return line;
+      const isSameProduct = product.productId === line.productId && product.productName === line.name;
+      return isSameProduct
+        ? { ...line, image: product.images[0] }
+        : { productId: product.productId, name: product.productName, price: product.productPrice, qty: line.qty, image: product.images[0] };
+    });
+    const subtotal = items.reduce((sum, line) => sum + line.price * line.qty, 0);
+    const total = subtotal + order.delivery - order.coupon;
+    await Order.updateOne({ _id: order._id }, { $set: { items, subtotal, total } }, { timestamps: false });
+  }
+}
+
 async function seedDemoUser() {
   const credentials = seedCredentials('SEED_DEMO');
   if (!credentials) {
@@ -115,7 +148,8 @@ async function seedDemoUser() {
   if (!user) user = await User.create({ ...demoUser, ...credentials });
 
   if (await Order.exists({ user: user._id })) {
-    console.log(`Demo user already has orders: ${credentials.emailId}`);
+    await refreshDemoOrders(user);
+    console.log(`Demo user already has orders, now matching the catalogue: ${credentials.emailId}`);
     return;
   }
   // One at a time, so order numbers follow the list.
@@ -128,7 +162,7 @@ try {
   await syncIndexes();
   await seedZonesAndKits();
   await seedProducts();
-  await refreshImages();
+  await refreshOrderImages();
   await seedAdmin();
   await seedDemoUser();
 } catch (error) {

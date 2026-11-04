@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="bulb">
-<title>Colour Smart Bulb</title>
-<rect width="600" height="600" fill="#E7E3DC"/>
-<rect x="3" y="3" width="594" height="18" fill="#A9C48A"/>
-<g transform="translate(120 80) scale(3.6)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#A9C48A" d="M50 7a31 31 0 0 1 18 56c-4 3-6 7-6 12H38c0-5-2-9-6-12A31 31 0 0 1 50 7z"/><path d="M40 83h20M44 92h12M41 44l9 9 9-9M50 53v22"/></g>
-<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
-<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">L-01-102</text>
-<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
-</svg>

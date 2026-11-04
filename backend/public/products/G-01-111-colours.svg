@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" data-icon="controller">
+<title>Vector Wireless Controller</title>
+<rect width="600" height="600" fill="#E7E3DC"/>
+<rect x="3" y="3" width="594" height="18" fill="#9A9CDD"/>
+<g transform="translate(45 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#3F9C97" d="M28 26h44c13 0 21 16 23 38 1 13-11 17-17 9l-9-12H31l-9 12c-6 8-18 4-17-9 2-22 10-38 23-38z"/><path d="M30 37v14M23 44h14"/><circle cx="64" cy="49" r="3"/><circle cx="74" cy="40" r="3"/></g><text x="120" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Teal</text>
+<g transform="translate(225 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#D9C7A3" d="M28 26h44c13 0 21 16 23 38 1 13-11 17-17 9l-9-12H31l-9 12c-6 8-18 4-17-9 2-22 10-38 23-38z"/><path d="M30 37v14M23 44h14"/><circle cx="64" cy="49" r="3"/><circle cx="74" cy="40" r="3"/></g><text x="300" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Sand</text>
+<g transform="translate(405 175) scale(1.5)" fill="none" stroke="#1F1D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path fill="#F0806C" d="M28 26h44c13 0 21 16 23 38 1 13-11 17-17 9l-9-12H31l-9 12c-6 8-18 4-17-9 2-22 10-38 23-38z"/><path d="M30 37v14M23 44h14"/><circle cx="64" cy="49" r="3"/><circle cx="74" cy="40" r="3"/></g><text x="480" y="450" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" text-anchor="middle" fill="#1F1D1A">Coral</text>
+<path d="M40 500h520" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+<text x="300" y="556" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="36" text-anchor="middle" fill="#1F1D1A">G-01-111</text>
+<rect x="3" y="3" width="594" height="594" fill="none" stroke="#1F1D1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+</svg>
