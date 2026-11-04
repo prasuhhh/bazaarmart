@@ -4,13 +4,15 @@ import Thumb from '../ui/Thumb.jsx';
 const DRAG_STEP_PX = 40;
 const SCALE_VIEWS = { W: 'On wrist', A: 'On desk', D: 'On desk', G: 'On desk', P: 'On desk' };
 
-// Dragging steps through the photos. The last photo is the scale shot.
+// Dragging steps through the images. The scale toggle only appears when the last image
+// really is a scale view: a lone photo has nothing true to show there.
 export default function Gallery({ product }) {
   const images = product.images?.length ? product.images : [undefined];
   const [index, setIndex] = useState(0);
   const dragRef = useRef(null);
   const lastIndex = images.length - 1;
-  const scaleLabel = lastIndex > 0 ? SCALE_VIEWS[product.zoneCode] : null;
+  const hasScaleView = lastIndex > 0 && /-scale\.svg$/.test(images[lastIndex]);
+  const scaleLabel = hasScaleView ? SCALE_VIEWS[product.zoneCode] : null;
 
   function handleMove(event) {
     if (!dragRef.current) return;

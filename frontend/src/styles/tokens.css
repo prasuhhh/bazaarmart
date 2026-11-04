@@ -32,6 +32,8 @@
   --narrow-max: 560px; /* a single form or message */
   --card-min: 160px;
   --card-max: 220px;
+  --sheet-image-max: 480px;
+  --sheet-strip: 72px;
 }
 
 @media (max-width: 899px) {
