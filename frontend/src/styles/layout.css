@@ -16,7 +16,7 @@
 }
 
 .workspace { display: flex; flex-direction: column; min-width: 0; }
-.page { flex: 1; width: 100%; max-width: var(--page-max); padding: var(--page-top) var(--page-pad); min-width: 0; }
+.page { flex: 1; width: 100%; padding: var(--page-top) var(--page-inset); min-width: 0; }
 
 /* Taskbar */
 .taskbar {
@@ -100,7 +100,7 @@
   align-items: center;
   gap: 14px;
   min-height: 62px;
-  padding: 10px var(--page-pad);
+  padding: 10px var(--page-inset);
   background: var(--panel);
   border-bottom: var(--border);
 }

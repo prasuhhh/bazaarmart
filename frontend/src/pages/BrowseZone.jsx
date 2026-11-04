@@ -67,15 +67,19 @@ export default function BrowseZone() {
               <div className="product-list">
                 {products.map(product => <ProductRow key={product.productId} product={product} onSave={setSaving} />)}
               </div>
-            ) : groupByBay(products, zone).map(bay => (
-              <BayRow
-                key={bay.bay}
-                {...bay}
-                isExpanded={Boolean(filters.bay)}
-                moreTo={bayLink(filters.bay ? null : bay.bay)}
-                onSave={setSaving}
-              />
-            ))}
+            ) : (
+              <div className="bay-grid">
+                {groupByBay(products, zone).map(bay => (
+                  <BayRow
+                    key={bay.bay}
+                    {...bay}
+                    isExpanded={Boolean(filters.bay)}
+                    moreTo={bayLink(filters.bay ? null : bay.bay)}
+                    onSave={setSaving}
+                  />
+                ))}
+              </div>
+            )}
 
       {saving && <ShelfPicker product={saving} onClose={() => setSaving(null)} />}
     </section>

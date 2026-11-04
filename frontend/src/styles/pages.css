@@ -59,8 +59,8 @@
 
 /* Store map */
 .store-map { display: flex; flex-direction: column; gap: var(--page-gap); }
-.map-top { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: var(--page-gap); align-items: stretch; }
-.floor-plan { display: grid; gap: 10px; height: 520px; }
+.map-top { display: grid; grid-template-columns: minmax(0, 1fr) var(--peek-width); gap: var(--page-gap); align-items: stretch; }
+.floor-plan { display: grid; gap: 10px; height: clamp(480px, 62vh, 720px); }
 .floor-row { display: grid; gap: 10px; min-width: 0; }
 .zone-tile {
   display: flex;
@@ -159,8 +159,9 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .inline-pill button.on { background: var(--sticky); color: var(--sticky-ink); }
 .inline-pill .separator { padding: 0; color: var(--muted); }
 
-.bay { padding-bottom: 18px; margin-bottom: 22px; border-bottom: 4px solid var(--ink); }
-.bay:last-of-type { margin-bottom: 0; }
+/* Bays sit side by side, so a bay of three cards doesn't leave the row half empty. */
+.bay-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--bay-min)), 1fr)); gap: var(--page-gap); }
+.bay { min-width: 0; padding-bottom: 18px; border-bottom: 4px solid var(--ink); }
 .bay-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .bay-head h3 { font-size: var(--text-title); }
 .bay-head a { text-decoration: none; white-space: nowrap; }
@@ -188,8 +189,8 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 
 /* Product sheet */
 .sheet { display: flex; flex-direction: column; gap: var(--page-gap); }
-/* Equal columns keep the details at least as wide as the image block. */
-.sheet-top { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--page-gap); align-items: start; }
+/* The details take all the spare width, and never less than half, so they are always at least as wide as the image block. */
+.sheet-top { display: grid; grid-template-columns: minmax(0, var(--sheet-block)) minmax(calc(50% - var(--page-gap) / 2), 1fr); gap: var(--page-gap); align-items: start; }
 .gallery { display: grid; grid-template-columns: var(--sheet-strip) minmax(0, var(--sheet-image-max)); gap: 12px; align-items: start; }
 .gallery-strip { display: flex; flex-direction: column; gap: 10px; }
 .gallery-strip button { padding: 0; border: 0; background: none; }
@@ -206,7 +207,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .swatches, .sheet-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .sheet-actions { margin-top: 14px; }
 
-.sheet-panels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--page-gap); }
+.sheet-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--page-gap); }
 .sheet-panel { min-width: 0; }
 .sheet-panel .caption { margin-bottom: 10px; }
 .fits-with { grid-column: 1 / -1; }
@@ -215,6 +216,21 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .feedback-form { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .feedback-form textarea, .feedback-form select { width: 100%; padding: 8px; border: var(--dashed); border-radius: 0; background: none; font-size: var(--text-caption); resize: vertical; }
 .feedback-form select option { background: var(--panel); color: var(--ink); }
+
+/* Below this a tile can be too narrow for a title-sized name. */
+@media (max-width: 1599px) {
+  .zone-tile strong { font-size: var(--text-body); }
+}
+
+/* Three-card rows: the products share the width, up to the card cap. */
+@media (min-width: 720px) {
+  .bay:not(.expanded) .product-grid, .fits-with .product-grid { grid-template-columns: repeat(3, minmax(0, var(--card-max))); }
+}
+
+@media (min-width: 1400px) {
+  .sheet-panels { grid-template-columns: minmax(calc(var(--bay-min) + 2 * var(--panel-pad) + 8px), 1fr) repeat(2, minmax(0, 1fr)); }
+  .fits-with { grid-column: auto; }
+}
 
 /* Counter */
 .counter { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); gap: var(--page-gap); align-items: start; }
@@ -264,9 +280,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .mock-amount { font: 700 var(--text-title) var(--font-title); }
 
 @media (max-width: 1099px) {
-  .map-top { grid-template-columns: minmax(0, 1fr) 240px; }
-  .zone-tile strong { font-size: var(--text-body); }
-  .sheet-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .map-top { grid-template-columns: minmax(0, 1fr) 280px; }
 }
 
 @media (max-width: 899px) {
@@ -287,8 +301,7 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 
 /* Saved shelves */
 .saved { display: flex; flex-direction: column; gap: var(--page-gap); }
-.new-shelf { max-width: var(--narrow-max); }
-.shelf-grid { display: flex; flex-direction: column; gap: var(--page-gap); }
+.shelf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(var(--bay-min) + 2 * var(--panel-pad))), 1fr)); gap: var(--page-gap); align-items: start; }
 .shelf-card { display: flex; flex-direction: column; min-width: 0; padding: var(--panel-pad); background: var(--panel); border: var(--border); box-shadow: var(--hard-shadow); }
 .shelf-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .shelf-head h3 { min-width: 0; font-size: var(--text-title); overflow-wrap: anywhere; }
@@ -394,7 +407,6 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .parcel-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .parcel-actions .outline { padding: 7px 10px; font-size: var(--text-caption); }
 .outline.chosen { background: var(--sticky); color: var(--sticky-ink); border-color: var(--sticky-ink); }
-.track-form { max-width: var(--narrow-max); }
 .track-form h2 { margin: 4px 0 8px; font-size: var(--text-title); }
 .track-form .form-grid { margin-top: 12px; }
 
@@ -458,6 +470,6 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .row-actions .outline, .row-actions .danger { padding: 5px 9px; font-size: var(--text-caption); }
 
 /* Not found */
-.not-found { max-width: var(--narrow-max); padding: var(--panel-pad); background: var(--panel); border: var(--border); box-shadow: var(--hard-shadow); }
+.not-found { padding: var(--panel-pad); background: var(--panel); border: var(--border); box-shadow: var(--hard-shadow); }
 .not-found h2 { margin: 4px 0 8px; font-size: var(--text-title); }
 .not-found .form-actions { margin-top: 16px; }

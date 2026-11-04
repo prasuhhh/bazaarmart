@@ -7,7 +7,7 @@ import { useFetch } from '../../hooks/useFetch.js';
 import Thumb from '../ui/Thumb.jsx';
 import PriceChip from './PriceChip.jsx';
 
-const CONVEYOR_SIZE = 12;
+const CONVEYOR_SIZE = 20;
 
 function ConveyorCard({ product }) {
   const { qtyOf } = useReceipt();

@@ -29,16 +29,21 @@
   --text-title: 22px;
 
   /* One page layout. Pages use these and set no widths or paddings of their own. */
-  --page-max: 1280px;
+  --page-max: 1800px; /* centred only beyond this; the content fills the width below it */
   --page-pad: 24px;
+  /* A percentage here is of the workspace, so the top bar and the page always line up. */
+  --page-inset: max(var(--page-pad), calc((100% - var(--page-max)) / 2 + var(--page-pad)));
   --page-top: 24px;
   --page-gap: 20px;
   --panel-pad: 16px;
-  --narrow-max: 560px; /* a single form or message */
   --card-min: 150px;
   --card-max: 220px;
   --sheet-image-max: 480px;
   --sheet-strip: 72px;
+  --sheet-block: calc(var(--sheet-strip) + 12px + var(--sheet-image-max));
+  --peek-width: 360px;
+  --grid-gap: 14px;
+  --bay-min: calc(3 * var(--card-min) + 2 * var(--grid-gap)); /* three cards side by side */
 }
 
 @media (max-width: 899px) {
