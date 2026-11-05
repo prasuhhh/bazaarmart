@@ -48,6 +48,8 @@ function SheetBody({ product, related }) {
   const addToReceipt = useAddToReceipt();
   const [colour, setColour] = useState(product.colours?.[0]);
   const [saving, setSaving] = useState(null);
+  const [notesSlot, setNotesSlot] = useState(null);
+  const [questionsSlot, setQuestionsSlot] = useState(null);
   const isOut = product.quantity === 0;
   const isAllInReceipt = !isOut && qtyOf(sku) >= product.quantity;
 
@@ -58,7 +60,6 @@ function SheetBody({ product, related }) {
         <section className="sheet-card">
           <p className="caption">{product.category} · {bayLabel(product.bay)}</p>
           <h2>{product.productName}</h2>
-          {product.description && <p className="muted">{product.description}</p>}
           <SpecTable product={product} />
           {product.colours?.length > 0 && <SwatchPicker colours={product.colours} chosen={colour} onChoose={setColour} />}
           <div className="sheet-actions">
@@ -75,8 +76,13 @@ function SheetBody({ product, related }) {
 
       <div className="sheet-panels">
         <FitsWith products={related} onSave={setSaving} />
-        <OwnerNotes sku={sku} />
-        <QuestionsPanel sku={sku} />
+        <OwnerNotes sku={sku} formSlot={notesSlot} />
+        <QuestionsPanel sku={sku} formSlot={questionsSlot} />
+      </div>
+      <div className="sheet-extras" data-no-ref>
+        <p className="muted">{product.description}</p>
+        <div ref={setNotesSlot} />
+        <div ref={setQuestionsSlot} />
       </div>
       {saving && <ShelfPicker product={saving} onClose={() => setSaving(null)} />}
     </div>

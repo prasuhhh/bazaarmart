@@ -30,19 +30,19 @@ export default function SavedShelf() {
 
   return (
     <section className="saved">
-      <form className="inline-form new-shelf" onSubmit={createShelf}>
-        <input value={name} maxLength="60" onChange={event => setName(event.target.value)} placeholder="Name a new shelf" aria-label="New shelf name" required />
-        <button className="primary" disabled={busy}>{busy ? 'Please wait…' : 'Create shelf'}</button>
-      </form>
-
       {error && error.status !== 401 && <p className="empty">{error.message}</p>}
       {loading && !shelves && <p className="empty">Dusting the shelves…</p>}
-      {shelves?.length === 0 && <p className="empty">No shelves yet. Name one above, or tap ☆ on any product.</p>}
+      {shelves?.length === 0 && <p className="empty">No shelves yet. Name one below, or tap ☆ on any product.</p>}
       <div className="shelf-grid">
         {shelves?.map(shelf => (
           <ShelfCard key={shelf._id} shelf={shelf} busy={busy} onRename={renameShelf} onDelete={deleteShelf} onRemoveItem={removeItem} />
         ))}
       </div>
+
+      <form className="inline-form new-shelf" data-no-ref onSubmit={createShelf}>
+        <input value={name} maxLength="60" onChange={event => setName(event.target.value)} placeholder="Name a new shelf" aria-label="New shelf name" required />
+        <button className="primary" disabled={busy}>{busy ? 'Please wait…' : 'Create shelf'}</button>
+      </form>
     </section>
   );
 }

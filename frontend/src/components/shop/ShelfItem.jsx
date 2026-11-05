@@ -13,7 +13,7 @@ export default function ShelfItem({ item, onRemove }) {
     <li className="product-card shelf-item">
       <Thumb src={item.image} />
       <div className="shelf-item-main">
-        {item.available ? <Link className="product-name" to={`/p/${item.productId}`}>{item.productName}</Link>
+        {item.available ? <Link className="product-name" to={`/p/${item.productId}`} title={item.productName}>{item.productName}</Link>
           : <span className="product-name muted">{item.productId} is no longer stocked</span>}
         {item.available && (
           <p className="shelf-item-price">

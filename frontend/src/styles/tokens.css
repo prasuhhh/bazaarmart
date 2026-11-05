@@ -1,66 +1,68 @@
+/* Colours are the wireframe's :root and .dark tokens. Sizes are design px: the whole app
+   is built 1280 wide and scaled to the window by useDesignScale.js. */
 :root {
   color-scheme: light;
-  --bg: #f6f3ec;
-  --grid: #ebe6db;
-  --panel: #fcfbf9;
-  --sidebar: #e8e4dd;
-  --ink: #1a1613;
-  --muted: #6b645b;
-  --accent: #ff5a1f;
-  --accent-ink: #ffffff;
-  --sticky: #f7dc7a;
-  --sticky-ink: #1a1613;
-  --placeholder: #e7e3dc;
-  --shadow: #1a1613;
-  --danger: #b3321a;
+  --bg: oklch(96.5% .008 85);
+  --grid: oklch(20% .01 60 / .06);
+  --panel: oklch(99% .004 85);
+  --sidebar: oklch(92% .01 85);
+  --ink: oklch(20% .01 60);
+  --ink-reverse: oklch(97% .008 85);
+  --muted: oklch(48% .01 60);
+  --line: oklch(30% .01 60);
+  --accent: oklch(68% .2 38);
+  --accent-ink: oklch(99% 0 0);
+  --sticky: oklch(90% .12 95);
+  --sticky-ink: oklch(25% .03 70);
+  --placeholder: oklch(92% .01 85);
+  --soft: oklch(91% .01 85);
+  --danger: oklch(57.7% .245 27.325);
 
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-title: 'Space Grotesk', system-ui, sans-serif;
-  --border: 2px solid var(--ink);
-  --dashed: 1.5px dashed var(--ink);
-  --hard-shadow: 6px 6px 0 var(--shadow);
-  --radius: 3px;
-  --frame-gap: 24px;
-  --taskbar-width: 240px;
+  --font-title: 'Bricolage Grotesque', system-ui, sans-serif;
+  --border: 2px solid var(--line);
+  --dashed: 1.5px dashed var(--line);
+  --rule: 1px dashed var(--line);
+  --hard-shadow: 4px 4px 0 var(--line);
+  --radius: 4px;
 
-  /* One set of type sizes. */
-  --text-caption: 12px;
-  --text-body: 14px;
-  --text-title: 22px;
+  /* The shell */
+  --gutter: 24px;
+  --taskbar-w: 220px;
+  --topbar-h: 56px;
+  --pad: 20px;
+  --content-w: 968px;
 
-  /* One page layout. Pages use these and set no widths or paddings of their own. */
-  --page-max: 1800px; /* centred only beyond this; the content fills the width below it */
-  --page-pad: 24px;
-  /* A percentage here is of the workspace, so the top bar and the page always line up. */
-  --page-inset: max(var(--page-pad), calc((100% - var(--page-max)) / 2 + var(--page-pad)));
-  --page-top: 24px;
-  --page-gap: 20px;
+  /* Type */
+  --text-micro: 10px;
+  --text-caption: 11px;
+  --text-body: 12px;
+  --text-title: 18px;
+  --text-tile: 20px;
+  --text-stat: 24px;
+  --text-display: 30px;
+
   --panel-pad: 16px;
   --card-min: 150px;
-  --card-max: 220px;
-  --sheet-image-max: 480px;
-  --sheet-strip: 72px;
-  --sheet-block: calc(var(--sheet-strip) + 12px + var(--sheet-image-max));
-  --peek-width: 360px;
-  --grid-gap: 14px;
-  --bay-min: calc(3 * var(--card-min) + 2 * var(--grid-gap)); /* three cards side by side */
+  --panel-height: 126.5px; /* the three panels under a product */
 }
 
-@media (max-width: 899px) {
-  :root { --page-pad: 14px; --page-top: 16px; }
-}
+.is-compact { --gutter: 12px; --pad: 14px; }
 
 :root[data-theme='night'] {
   color-scheme: dark;
-  --bg: #14120f;
-  --grid: #1e1b17;
-  --panel: #1b1814;
-  --sidebar: #221f1a;
-  --ink: #f2eee6;
-  --muted: #9a9288;
-  --sticky: #c9a93a;
-  --sticky-ink: #14120f;
-  --placeholder: #2a2621;
-  --shadow: #3a352d;
-  --danger: #ff8a6b;
+  --bg: oklch(17% .008 60);
+  --grid: oklch(95% .01 85 / .05);
+  --panel: oklch(21% .008 60);
+  --sidebar: oklch(24% .01 60);
+  --ink: oklch(93% .008 85);
+  --ink-reverse: oklch(17% .008 60);
+  --muted: oklch(68% .01 70);
+  --line: oklch(75% .01 80);
+  --accent: oklch(72% .19 40);
+  --accent-ink: oklch(15% 0 0);
+  --sticky: oklch(45% .09 90);
+  --sticky-ink: oklch(96% .03 95);
+  --placeholder: oklch(24% .01 60);
+  --soft: oklch(30% .01 60);
 }

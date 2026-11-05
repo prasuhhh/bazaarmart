@@ -5,11 +5,14 @@ import Thumb from '../ui/Thumb.jsx';
 const PEEK_SIZE = 9;
 const PEEK_COLUMNS = 3;
 
+function rowsOf(products) {
+  const rows = [];
+  for (let start = 0; start < products.length; start += PEEK_COLUMNS) rows.push(products.slice(start, start + PEEK_COLUMNS));
+  return rows;
+}
+
 export default function PeekPanel({ zone }) {
   const { data: products, error } = useFetch(zone ? `/products?zone=${zone.code}&limit=${PEEK_SIZE}` : null);
-
-  // Empty cells carry each shelf line across the full width of a part-filled row.
-  const spareCells = products ? (PEEK_COLUMNS - (products.length % PEEK_COLUMNS)) % PEEK_COLUMNS : 0;
 
   return (
     <aside className="peek-panel" aria-label="Peek at this zone">
@@ -18,15 +21,17 @@ export default function PeekPanel({ zone }) {
         <span className="muted">peek</span>
       </div>
       {error && <p className="muted">{error.message}</p>}
-      <div className="peek-grid">
-        {products?.map(product => (
-          <Link key={product.productId} className="peek-item" to={`/p/${product.productId}`} aria-label={product.productName}>
-            <Thumb src={product.images?.[0]} />
-            <small>{product.productId}</small>
-          </Link>
-        ))}
-        {Array.from({ length: spareCells }, (_, index) => <span key={index} className="peek-item" aria-hidden="true" />)}
-      </div>
+      {rowsOf(products ?? []).map(row => (
+        <div className="peek-row" key={row[0].productId}>
+          {row.map(product => (
+            <Link key={product.productId} className="peek-item" to={`/p/${product.productId}`} aria-label={product.productName}>
+              <Thumb src={product.images?.[0]} />
+              <small>{product.productId}</small>
+            </Link>
+          ))}
+          {Array.from({ length: PEEK_COLUMNS - row.length }, (_, index) => <span key={index} className="peek-item" aria-hidden="true" />)}
+        </div>
+      ))}
     </aside>
   );
 }

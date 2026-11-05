@@ -29,10 +29,10 @@ export default function ProductCard({ product, onSave }) {
   return (
     <article className="product-card">
       <Link to={href} tabIndex={-1} aria-hidden="true"><Thumb src={product.images?.[0]} /></Link>
-      <Link className="product-name" to={href}>{product.productName}</Link>
-      <StockLabel quantity={product.quantity} />
+      <Link className="product-name" to={href} title={product.productName}>{product.productName}</Link>
       <div className="product-foot">
         <PriceChip value={product.productPrice} />
+        <StockLabel quantity={product.quantity} />
         <SaveAndAdd product={product} onSave={onSave} />
       </div>
     </article>

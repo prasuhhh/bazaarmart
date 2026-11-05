@@ -1,6 +1,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
+/* A scrollbar appearing would change the width and so the scale. */
+html:not(.is-compact) { overflow-y: scroll; }
 
 body {
   margin: 0;
@@ -8,7 +10,7 @@ body {
   color: var(--ink);
   font-family: var(--font-mono);
   font-size: var(--text-body);
-  line-height: 1.5;
+  line-height: 16px;
   background-color: var(--bg);
   background-image:
     linear-gradient(var(--grid) 1px, transparent 1px),
@@ -16,7 +18,7 @@ body {
   background-size: 24px 24px;
 }
 
-h1, h2, h3, h4 { margin: 0; font-family: var(--font-title); font-weight: 700; line-height: 1.2; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--font-title); font-weight: 700; line-height: 28px; }
 p { margin: 0; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }

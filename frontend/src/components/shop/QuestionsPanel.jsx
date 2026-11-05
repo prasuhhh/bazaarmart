@@ -1,7 +1,9 @@
+import { createPortal } from 'react-dom';
 import { useFetch } from '../../hooks/useFetch.js';
 import FeedbackForm from './FeedbackForm.jsx';
 
-export default function QuestionsPanel({ sku }) {
+// The form sits in the row under the panels, so it renders into `formSlot`.
+export default function QuestionsPanel({ sku, formSlot }) {
   const path = `/products/${encodeURIComponent(sku)}/questions`;
   const { data: questions, error, reload } = useFetch(path);
 
@@ -18,7 +20,10 @@ export default function QuestionsPanel({ sku }) {
           </li>
         ))}
       </ul>
-      <FeedbackForm path={path} label="Ask a question" button="Ask" signInText="Sign in to ask" onPosted={reload} />
+      {formSlot && createPortal(
+        <FeedbackForm path={path} label="Ask a question" button="Ask" signInText="Sign in to ask" onPosted={reload} />,
+        formSlot
+      )}
     </section>
   );
 }

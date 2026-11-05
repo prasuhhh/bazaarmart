@@ -1,10 +1,12 @@
+import { createPortal } from 'react-dom';
 import { useFetch } from '../../hooks/useFetch.js';
 import FeedbackForm from './FeedbackForm.jsx';
 
 const RATINGS = [5, 4, 3, 2, 1];
 const stars = rating => '★'.repeat(rating) + '☆'.repeat(5 - rating);
 
-export default function OwnerNotes({ sku }) {
+// The form sits in the row under the panels, so it renders into `formSlot`.
+export default function OwnerNotes({ sku, formSlot }) {
   const path = `/products/${encodeURIComponent(sku)}/reviews`;
   const { data: reviews, error, reload } = useFetch(path);
 
@@ -21,11 +23,14 @@ export default function OwnerNotes({ sku }) {
           </li>
         ))}
       </ul>
-      <FeedbackForm path={path} label="Write a note" button="Post note" signInText="Sign in to leave a note" onPosted={reload}>
-        <select name="rating" aria-label="Rating" defaultValue="5">
-          {RATINGS.map(rating => <option key={rating} value={rating}>{stars(rating)}</option>)}
-        </select>
-      </FeedbackForm>
+      {formSlot && createPortal(
+        <FeedbackForm path={path} label="Write a note" button="Post note" signInText="Sign in to leave a note" onPosted={reload}>
+          <select name="rating" aria-label="Rating" defaultValue="5">
+            {RATINGS.map(rating => <option key={rating} value={rating}>{stars(rating)}</option>)}
+          </select>
+        </FeedbackForm>,
+        formSlot
+      )}
     </section>
   );
 }

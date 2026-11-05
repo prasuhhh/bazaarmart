@@ -5,3 +5,4 @@ dist/
 .DS_Store
 *.log
 backend/data/photo-cache.json
+docs/layout-check/

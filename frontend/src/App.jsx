@@ -13,10 +13,12 @@ import SharedShelf from './pages/SharedShelf.jsx';
 import SignIn from './pages/SignIn.jsx';
 import StoreMap from './pages/StoreMap.jsx';
 import TrackParcel from './pages/TrackParcel.jsx';
+import { useDesignScale } from './layout/useDesignScale.js';
 
 const FIRST_ZONE = '/zone/A';
 
 export default function App() {
+  useDesignScale();
   return (
     <Routes>
       <Route element={<Shell />}>

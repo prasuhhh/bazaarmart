@@ -10,7 +10,7 @@ export default function KitShelf({ onSave }) {
   const products = opened?.kit._id === openId ? opened.products : null;
 
   return (
-    <section className="map-section" aria-label="Kits">
+    <section className="kit-shelf" aria-label="Kits">
       <div className="kit-row">
         {kits?.map(kit => (
           <button

@@ -31,10 +31,10 @@ export default function Taskbar({ isOpen, liveOrders }) {
 
   return (
     <aside className={`taskbar${isOpen ? ' open' : ''}`} aria-label="Taskbar">
+      <div className="taskbar-inner">
       <Link className="brand" to="/map" aria-label="BazaarMart store map">
         <span className="brand-name">Bazaar<span className="brand-slash">/</span>Mart</span>
         <span className="brand-caption">lifestyle × tech</span>
-        <span className="brand-short" aria-hidden="true">B<span className="brand-slash">/</span>M</span>
       </Link>
 
       <p className="taskbar-caption">TASKBAR</p>
@@ -79,6 +79,7 @@ export default function Taskbar({ isOpen, liveOrders }) {
       </nav>
 
       {closestOrder && <LiveOrderCard order={closestOrder} />}
+      </div>
     </aside>
   );
 }

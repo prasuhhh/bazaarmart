@@ -1,94 +1,63 @@
-.shell { padding: var(--frame-gap); min-height: 100vh; }
+/* The shell. Every value is the wireframe's, in design px. */
+.shell { padding: var(--gutter); min-height: var(--vh-design, 100vh); }
+.is-contain .shell { width: 1280px; margin: 0 auto; }
 
 .frame {
   display: grid;
-  grid-template-columns: var(--taskbar-width) minmax(0, 1fr);
-  min-height: calc(100vh - var(--frame-gap) * 2);
-  /* The taskbar is sticky, so this keeps its column going on long pages. */
-  background: linear-gradient(
-    90deg,
-    var(--sidebar) calc(var(--taskbar-width) - 2px),
-    var(--ink) 0 var(--taskbar-width),
-    var(--panel) 0
-  );
+  grid-template-columns: var(--taskbar-w) minmax(0, 1fr);
+  min-height: max(860px, calc(var(--vh-design, 100vh) - 2 * var(--gutter)));
+  background: var(--panel);
   border: var(--border);
+  border-radius: var(--radius);
   box-shadow: var(--hard-shadow);
 }
 
 .workspace { display: flex; flex-direction: column; min-width: 0; }
-.page { flex: 1; width: 100%; padding: var(--page-top) var(--page-inset); min-width: 0; }
+.page { flex: 1; min-width: 0; padding: var(--pad); }
 
-/* Taskbar */
-.taskbar {
+/* Taskbar: the column runs the height of the page, its contents stay in view. */
+.taskbar { background: var(--sidebar); border-right: var(--border); }
+.taskbar-inner {
   position: sticky;
-  top: var(--frame-gap);
+  top: 0;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--frame-gap) * 2 - 4px);
-  background: var(--sidebar);
-  border-right: var(--border);
+  height: min(100%, var(--vh-design, 100vh));
   overflow-y: auto;
 }
 
-.brand {
-  display: block;
-  padding: 18px 16px;
-  border-bottom: var(--border);
-  text-decoration: none;
-}
-.brand-name { display: block; font: 700 var(--text-title)/1.1 var(--font-title); letter-spacing: -0.02em; }
+.brand { display: block; padding: 16px; border-bottom: var(--border); text-decoration: none; }
+.brand-name { display: block; font: 800 24px/32px var(--font-title); }
 .brand-slash { color: var(--accent); }
-.brand-caption { display: block; margin-top: 4px; font-size: var(--text-caption); color: var(--muted); }
-.brand-short { display: none; font: 700 var(--text-title)/1 var(--font-title); }
+.brand-caption { display: block; font-size: var(--text-micro); line-height: 13.33px; color: var(--muted); }
 
-.taskbar-caption {
-  margin: 18px 16px 8px;
-  font-size: var(--text-caption);
-  letter-spacing: 0.16em;
-  color: var(--muted);
-}
+.taskbar-caption { padding: 16px 16px 0; font-size: var(--text-caption); line-height: 16.5px; letter-spacing: 0.1em; color: var(--muted); }
 
-.taskbar-items { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0 8px; list-style: none; }
-
+.taskbar-items { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 8px; list-style: none; }
 .taskbar-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
   padding: 8px;
   border: 0;
-  border-radius: 4px;
+  border-radius: var(--radius);
   background: none;
   font-size: var(--text-body);
+  line-height: 16px;
   text-align: left;
   text-decoration: none;
 }
-.taskbar-item:hover { background: var(--placeholder); }
-.taskbar-item.active { background: var(--ink); color: var(--panel); }
-.taskbar-number { color: var(--muted); }
-.taskbar-item.active .taskbar-number { color: inherit; opacity: 0.65; }
-.taskbar-badge {
-  margin-left: auto;
-  padding: 0 6px;
-  border-radius: 3px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-size: var(--text-caption);
-  white-space: nowrap;
-}
+.taskbar-item:hover { background: var(--soft); }
+.taskbar-item.active { background: var(--ink); color: var(--ink-reverse); }
+.taskbar-number { opacity: 0.6; }
+.taskbar-label { flex: 1; }
+.taskbar-badge { padding: 0 4px; border-radius: var(--radius); background: var(--accent); color: var(--accent-ink); font-size: 9px; line-height: 12px; white-space: nowrap; }
 
-.live-card {
-  display: block;
-  margin: auto 12px 12px;
-  padding: 10px;
-  border: var(--dashed);
-  background: var(--panel);
-  font-size: var(--text-caption);
-  text-decoration: none;
-}
-.taskbar-items + .live-card { margin-top: 16px; }
-.live-card strong { display: block; font-weight: 500; }
-.live-card .segments { margin: 8px 0 6px; }
+.live-card { display: block; flex: none; margin: auto 12px 12px; padding: 12px; border: var(--dashed); border-radius: var(--radius); background: var(--panel); font-size: var(--text-micro); line-height: 15px; text-decoration: none; }
+.taskbar-items + .live-card { margin-top: auto; }
+.live-card strong { display: block; font-weight: 600; }
+.live-card .segments { margin: 8px 0 4px; }
 .live-card span { color: var(--muted); }
 
 /* Top bar */
@@ -98,45 +67,23 @@
   z-index: 20;
   display: flex;
   align-items: center;
-  gap: 14px;
-  min-height: 62px;
-  padding: 10px var(--page-inset);
+  gap: 12px;
+  height: var(--topbar-h);
+  padding: 0 var(--pad);
   background: var(--panel);
   border-bottom: var(--border);
 }
-.topbar-title { font-size: var(--text-title); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.topbar-right { display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none; }
+.topbar-title { flex: none; font-size: var(--text-title); line-height: 28px; white-space: nowrap; }
+.topbar-right { display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none; font-size: var(--text-caption); }
 
-.menu-button { display: none; flex: none; width: 36px; height: 36px; padding: 0; border: var(--dashed); background: none; }
-
-.receipt-button { padding: 8px 2px; border: 0; background: none; font-size: var(--text-caption); white-space: nowrap; }
+.menu-button { display: none; flex: none; width: 36px; height: 36px; padding: 0; border: var(--dashed); border-radius: var(--radius); background: none; }
+.receipt-button { padding: 0; border: 0; background: none; font-size: var(--text-caption); line-height: 16.5px; white-space: nowrap; }
 .receipt-button:hover { text-decoration: underline; }
-
-.avatar-button {
-  display: grid;
-  place-items: center;
-  flex: none;
-  width: 34px;
-  height: 34px;
-  border: var(--border);
-  border-radius: 50%;
-  font-size: var(--text-caption);
-  font-weight: 700;
-  text-decoration: none;
-}
+.avatar-button { display: grid; place-items: center; flex: none; width: 32px; height: 32px; border: var(--border); border-radius: 50%; font-size: var(--text-micro); font-weight: 600; text-decoration: none; }
 
 /* Command box */
-.command { position: relative; flex: 1 1 260px; min-width: 0; max-width: 340px; }
-.command-input {
-  width: 100%;
-  padding: 8px 10px;
-  border: var(--dashed);
-  border-radius: 0;
-  background: none;
-  font-size: var(--text-caption);
-  text-overflow: ellipsis;
-  outline-offset: 1px;
-}
+.command { position: relative; flex: none; width: 288px; height: 36px; margin-left: 24px; }
+.command-input { width: 100%; height: 100%; padding: 0 8px; border: var(--dashed); border-radius: var(--radius); background: var(--panel); font-size: var(--text-body); text-overflow: ellipsis; outline-offset: 1px; }
 .command-input::placeholder { color: var(--muted); opacity: 1; }
 .command-results {
   position: absolute;
@@ -151,19 +98,12 @@
   list-style: none;
   background: var(--panel);
   border: var(--border);
-  box-shadow: 4px 4px 0 var(--shadow);
+  box-shadow: var(--hard-shadow);
 }
-.command-result {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 7px 8px;
-  font-size: var(--text-caption);
-  cursor: pointer;
-}
-.command-result[aria-selected='true'] { background: var(--ink); color: var(--panel); }
+.command-result { display: flex; justify-content: space-between; gap: 10px; padding: 7px 8px; font-size: var(--text-body); cursor: pointer; }
+.command-result[aria-selected='true'] { background: var(--ink); color: var(--ink-reverse); }
 .command-result small { flex: none; color: inherit; opacity: 0.65; font-size: var(--text-caption); }
-.command-empty { padding: 8px; font-size: var(--text-caption); color: var(--muted); }
+.command-empty { padding: 8px; font-size: var(--text-body); color: var(--muted); }
 
 /* Receipt drawer and the mobile taskbar share this backdrop */
 .backdrop { position: fixed; inset: 0; z-index: 40; border: 0; background: rgb(0 0 0 / 0.45); }
@@ -176,7 +116,8 @@
   z-index: 50;
   display: flex;
   flex-direction: column;
-  width: min(400px, 100vw);
+  width: 400px;
+  max-width: 100%;
   background: var(--panel);
   border-left: var(--border);
   transform: translateX(100%);
@@ -184,73 +125,43 @@
   transition: transform 0.2s ease, visibility 0.2s;
 }
 .receipt-drawer.open { transform: none; visibility: visible; }
-.drawer-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-  border-bottom: var(--border);
-}
+.drawer-header { display: flex; align-items: center; justify-content: space-between; padding: 16px; border-bottom: var(--border); }
 .drawer-header h2 { font-size: var(--text-title); }
-.drawer-close { padding: 4px 8px; border: var(--dashed); background: none; font-size: var(--text-caption); }
+.drawer-close { padding: 4px 8px; border: var(--dashed); border-radius: var(--radius); background: none; font-size: var(--text-caption); }
 .drawer-lines { flex: 1; margin: 0; padding: 0 16px; overflow-y: auto; list-style: none; }
-.drawer-line { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; padding: 12px 0; border-bottom: var(--dashed); }
-.drawer-line-name { font-size: var(--text-caption); overflow-wrap: anywhere; }
-.drawer-line-price { font-size: var(--text-caption); font-weight: 700; white-space: nowrap; }
+.drawer-line { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; padding: 12px 0; border-bottom: var(--rule); }
+.drawer-line-name { font-size: var(--text-body); overflow-wrap: anywhere; }
+.drawer-line-price { font-size: var(--text-body); font-weight: 600; white-space: nowrap; }
 .drawer-empty { padding: 24px 16px; color: var(--muted); }
 .drawer-footer { padding: 16px; border-top: var(--border); }
-.drawer-subtotal { display: flex; justify-content: space-between; margin-bottom: 12px; font-weight: 700; }
+.drawer-subtotal { display: flex; justify-content: space-between; margin-bottom: 12px; font-weight: 600; }
 .drawer-footer .primary { display: block; width: 100%; text-align: center; }
 
-/* Numbers-only taskbar on small laptops */
-@media (max-width: 1099px) {
-  :root { --taskbar-width: 62px; }
-  .brand { padding: 18px 0; text-align: center; }
-  .brand-name, .brand-caption, .taskbar-caption, .taskbar-label, .live-card { display: none; }
-  .brand-short { display: block; }
-  .taskbar-items { margin-top: 10px; padding: 0 6px; }
-  .taskbar-item { position: relative; justify-content: center; padding: 8px 0; }
-  .taskbar-badge { position: absolute; top: 0; right: 0; min-width: 15px; padding: 0 3px; font-size: var(--text-caption); text-align: center; }
-  .taskbar-badge-word { display: none; }
-}
-
 /* Drawer taskbar on tablets and phones */
-@media (max-width: 899px) {
-  :root { --taskbar-width: 260px; --frame-gap: 12px; }
-  .frame { display: block; min-height: calc(100vh - var(--frame-gap) * 2); background: var(--panel); }
-  .taskbar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 50;
-    width: var(--taskbar-width);
-    height: auto;
-    border-right: var(--border);
-    transform: translateX(-100%);
-    visibility: hidden;
-    transition: transform 0.2s ease, visibility 0.2s;
-  }
-  .taskbar.open { transform: none; visibility: visible; }
-  .brand { padding: 18px 16px; text-align: left; }
-  .brand-name, .brand-caption, .taskbar-label, .live-card { display: block; }
-  .brand-short { display: none; }
-  .taskbar-caption { display: block; }
-  .taskbar-items { padding: 0 8px; }
-  .taskbar-item { justify-content: flex-start; padding: 10px 8px; }
-  .taskbar-badge { position: static; min-width: 0; padding: 0 6px; font-size: var(--text-caption); }
-  .taskbar-badge-word { display: inline; }
-  .menu-button { display: grid; place-items: center; }
-  .topbar { flex-wrap: wrap; gap: 10px; }
-  .topbar-title { flex: 1 1 0; min-width: 0; }
-  .topbar-right { margin-left: 0; }
-  .command { order: 5; flex: 1 1 100%; max-width: none; }
+.is-compact .frame { display: block; background: var(--panel); }
+.is-compact .taskbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 260px;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.2s ease, visibility 0.2s;
 }
+.is-compact .taskbar.open { transform: none; visibility: visible; }
+.is-compact .taskbar-inner { position: static; height: 100%; }
+.is-compact .menu-button { display: grid; place-items: center; }
+.is-compact .topbar { flex-wrap: wrap; gap: 10px; height: auto; padding: 10px var(--pad); }
+.is-compact .topbar-title { flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.is-compact .topbar-right { margin-left: 0; }
+.is-compact .command { order: 5; flex: 1 1 100%; width: auto; margin-left: 0; }
 
 @media (max-width: 519px) {
-  :root { --frame-gap: 0px; }
-  .frame { border: 0; box-shadow: none; min-height: 100vh; }
-  .topbar-title { flex-basis: calc(100% - 46px); order: 1; }
-  .menu-button { order: 0; }
-  .topbar-right { order: 3; flex: 1 1 100%; justify-content: space-between; }
+  .is-compact { --gutter: 0px; }
+  .is-compact .frame { border: 0; box-shadow: none; }
+  .is-compact .topbar-title { flex-basis: calc(100% - 46px); order: 1; }
+  .is-compact .menu-button { order: 0; }
+  .is-compact .topbar-right { order: 3; flex: 1 1 100%; justify-content: space-between; }
 }

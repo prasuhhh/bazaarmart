@@ -34,6 +34,7 @@ export default function SignIn() {
   return (
     <div className="signin">
       <div className="signin-art"><Thumb /></div>
+      <div className="signin-side">
       <section className="signin-card">
         <p className="caption">Entry pass</p>
         <h2>Walk in.</h2>
@@ -47,6 +48,7 @@ export default function SignIn() {
           </button>
         </div>
       </section>
+      </div>
     </div>
   );
 }
