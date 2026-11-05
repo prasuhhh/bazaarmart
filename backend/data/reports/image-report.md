@@ -1,34 +1,61 @@
 # Image report
 
-Step 4, checked by eye. 169 of 300 confirmed as the right model, 131 missing and left on the placeholder.
+Final state, checked by eye. 195 of 300 confirmed as the right model, 105 missing and left on the placeholder.
+
+Rules applied: real photos of the exact model only, a different colour of the same model allowed, shortest side at least 400 px, upscaled no more than 2x.
 
 ## Confirmed by source
 
 | Source | Products |
 | --- | --- |
-| brand-site | 134 |
+| brand-site | 160 |
 | wikimedia | 26 |
-| openverse | 5 |
-| brand-press | 3 |
+| openverse | 4 |
+| brand-press | 4 |
 | openbeautyfacts | 1 |
 
-## Confirmed by zone
+## By zone
 
-| Zone | Products |
-| --- | --- |
-| A | 18 |
-| W | 20 |
-| D | 22 |
-| L | 18 |
-| S | 13 |
-| G | 22 |
-| C | 19 |
-| P | 17 |
-| B | 20 |
+| Zone | Confirmed | Missing |
+| --- | --- | --- |
+| A | 23 | 11 |
+| W | 22 | 11 |
+| D | 25 | 9 |
+| L | 20 | 14 |
+| S | 20 | 12 |
+| G | 25 | 8 |
+| C | 21 | 11 |
+| P | 17 | 16 |
+| B | 22 | 13 |
+
+## Replaced products
+
+18 products on sites that refused access were swapped for products with a confirmed photo, by decision.
+
+| SKU | Was | Now |
+| --- | --- | --- |
+| A-01-102 | Sony WF-1000XM5 | Samsung Galaxy Buds3 |
+| A-02-205 | Audio-Technica ATH-M50x | boAt Nirvana 751 ANC |
+| A-02-206 | JBL Tune 760NC | Bose QuietComfort Ultra Headphones (2nd Gen) |
+| A-03-305 | Sony ULT Field 1 | Bose SoundLink Micro (2nd Gen) |
+| A-03-306 | Sony SRS-XB100 | Marshall Middleton II |
+| B-02-202 | Dyson Airwrap Multi-styler Complete Long | Moroccanoil Intense Hydrating Mask (250 ml) |
+| C-01-105 | Nike Brasilia 9.5 Training Backpack (Medium, 24L) | Herschel Settlement Mid-Volume Backpack |
+| D-04-403 | Elgato Key Light | Logitech G Litra Beam LX Streaming Light |
+| D-05-503 | Elgato Facecam | Logitech Brio 500 Webcam |
+| G-03-304 | Corsair K70 RGB PRO | Logitech G512 Mechanical Gaming Keyboard (GX Brown) |
+| G-04-407 | Corsair Harpoon RGB Wireless | Logitech G Pro X Superlight Wireless Gaming Mouse |
+| S-01-106 | H&M Regular Fit Round-Neck T-Shirt | Levi's Men's Graphic Print Slim Fit T-shirt |
+| S-02-202 | Uniqlo Men's Premium Linen Long-Sleeve Shirt | Levi's Men's Checkered Spread Collar Shirt |
+| S-02-204 | Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt | Levi's Men's Solid Spread Collar Shirt |
+| S-02-206 | H&M Regular Fit Linen-blend Shirt | Levi's Men's Solid Spread Collar Linen Shirt |
+| S-03-305 | Nike Sportswear Club Fleece Joggers | Levi's Men's 512 Slim Tapered Fit Jeans |
+| S-05-501 | Ray-Ban Aviator Classic RB3025 | New Era Chicago Bulls Essential Outline 9FORTY Cap |
+| S-05-502 | Ray-Ban Original Wayfarer Classic RB2140 | New Era New York Yankees Essential Camo 9FORTY Cap |
 
 ## Missing, by reason
 
-### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (47)
+### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (45)
 
 - A-01-101 Apple AirPods Pro 2 (USB-C)
 - A-01-105 Nothing Ear (a)
@@ -57,7 +84,6 @@ Step 4, checked by eye. 169 of 300 confirmed as the right model, 131 missing and
 - L-02-201 Amazon Echo Dot (5th Gen)
 - L-02-202 Amazon Echo Show 5 (3rd Gen)
 - L-02-203 Amazon Fire TV Stick 4K (2024)
-- L-02-205 Google Nest Hub (2nd Gen)
 - L-05-503 IKEA GURLI Cushion Cover (50x50 cm)
 - P-01-103 Samsung Galaxy S25
 - P-01-105 Google Pixel 9
@@ -75,65 +101,21 @@ Step 4, checked by eye. 169 of 300 confirmed as the right model, 131 missing and
 - W-01-102 Apple Watch SE (2nd generation, GPS, 40 mm)
 - W-03-303 Apple Sport Loop (42 mm)
 - W-03-305 Samsung Galaxy Watch Sport Band (20 mm)
-- W-04-401 Samsung Galaxy Ring
 - W-04-402 Ultrahuman Ring Air
 
-### Maker site refused access (35)
-
-- A-01-102 Sony WF-1000XM5
-- A-02-205 Audio-Technica ATH-M50x
-- A-02-206 JBL Tune 760NC
-- A-03-305 Sony ULT Field 1
-- A-03-306 Sony SRS-XB100
-- A-04-403 Sony HT-S20R 5.1 Soundbar
-- B-01-106 La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+ (50 ml)
-- B-02-202 Dyson Airwrap Multi-styler Complete Long
-- B-03-303 Braun Series 9 Pro+ 9567cc Electric Shaver
-- B-04-407 SKINN by Titan Raw Eau de Parfum (100 ml)
-- C-01-101 Fjällräven Kånken Classic Backpack
-- C-01-105 Nike Brasilia 9.5 Training Backpack (Medium, 24L)
-- C-03-303 The Ridge Aluminium Wallet
-- C-05-507 Contigo Autoseal West Loop Travel Mug (470 ml)
-- D-03-306 Ergotron LX Desk Mount Monitor Arm
-- D-04-403 Elgato Key Light
-- D-04-404 Elgato Key Light Air
-- D-05-503 Elgato Facecam
-- G-02-206 Corsair HS80 RGB Wireless Headset
-- G-03-304 Corsair K70 RGB PRO
-- G-04-407 Corsair Harpoon RGB Wireless
-- G-05-506 Corsair MM300 PRO Extended Mouse Pad
-- L-01-104 Wipro 9W B22 Wi-Fi Smart LED Bulb (NS9400)
-- L-03-301 LEGO Icons Bonsai Tree 10281
-- L-03-302 LEGO Icons Orchid 10311
-- L-04-407 Bodum Chambord French Press (8 cup)
-- L-05-501 Wakefit Memory Foam Pillow (Medium, 23 x 15 x 4 in)
-- S-01-106 H&M Regular Fit Round-Neck T-Shirt
-- S-02-202 Uniqlo Men's Premium Linen Long-Sleeve Shirt
-- S-02-204 Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt
-- S-02-206 H&M Regular Fit Linen-blend Shirt
-- S-03-305 Nike Sportswear Club Fleece Joggers
-- S-04-406 Asics Gel-Kayano 31
-- S-05-501 Ray-Ban Aviator Classic RB3025
-- S-05-502 Ray-Ban Original Wayfarer Classic RB2140
-
-### Photo found, under 600 px (29)
+### Photo found, under 400 px or not usable (23)
 
 - A-01-106 JBL Tune 230NC TWS
 - A-04-402 JBL Bar 5.0 MultiBeam
 - A-04-404 FiiO BTR7 Bluetooth DAC
 - B-03-304 Gillette Fusion5 ProGlide Razor
 - B-04-401 Davidoff Cool Water Eau de Toilette (125 ml)
-- B-05-505 Omron HEM-7120 Blood Pressure Monitor
 - B-05-506 Omron MC-246 Digital Thermometer
-- C-03-304 Secrid Miniwallet
 - C-05-506 LifeStraw Go Filter Bottle
 - D-03-301 Dell UltraSharp U2723QE 27-inch 4K USB-C Hub Monitor
 - D-03-302 Dell S2421HN 24-inch Full HD Monitor
-- D-03-307 Rain Design mStand Laptop Stand
 - G-01-105 Nintendo Joy-Con (L)/(R) Pair
-- G-05-501 Green Soul Monster Ultimate (S) Gaming Chair
 - L-01-103 Philips Smart Wi-Fi LED Bulb 9W B22
-- L-04-404 Prestige Iris 750 W Mixer Grinder
 - P-03-304 Anker Nano Charger (30W)
 - P-03-305 Belkin BoostCharge Pro 65W Dual USB-C GaN Charger
 - P-04-405 Belkin BoostCharge Pro Qi2 Magnetic Power Bank 5K
@@ -144,7 +126,6 @@ Step 4, checked by eye. 169 of 300 confirmed as the right model, 131 missing and
 - S-05-503 Oakley Holbrook
 - W-01-104 Google Pixel Watch 3 (41 mm)
 - W-01-107 Noise ColorFit Pro 5
-- W-02-202 Fitbit Charge 6
 - W-04-403 Oura Ring 4
 - W-05-502 Belkin MagSafe 3-in-1 Qi2 Wireless Charger Stand 15W
 
@@ -167,9 +148,32 @@ Step 4, checked by eye. 169 of 300 confirmed as the right model, 131 missing and
 - S-03-306 Adidas Tiro 24 Slim Training Pants
 - W-02-201 Huawei Band 9
 
+### Maker site refused access (16)
+
+- A-04-403 Sony HT-S20R 5.1 Soundbar
+- B-01-106 La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+ (50 ml)
+- B-03-303 Braun Series 9 Pro+ 9567cc Electric Shaver
+- B-04-407 SKINN by Titan Raw Eau de Parfum (100 ml)
+- C-03-303 The Ridge Aluminium Wallet
+- C-05-507 Contigo Autoseal West Loop Travel Mug (470 ml)
+- D-03-306 Ergotron LX Desk Mount Monitor Arm
+- D-04-404 Elgato Key Light Air
+- G-02-206 Corsair HS80 RGB Wireless Headset
+- G-05-506 Corsair MM300 PRO Extended Mouse Pad
+- L-01-104 Wipro 9W B22 Wi-Fi Smart LED Bulb (NS9400)
+- L-03-301 LEGO Icons Bonsai Tree 10281
+- L-03-302 LEGO Icons Orchid 10311
+- L-04-407 Bodum Chambord French Press (8 cup)
+- L-05-501 Wakefit Memory Foam Pillow (Medium, 23 x 15 x 4 in)
+- S-04-406 Asics Gel-Kayano 31
+
 ### No maker site to check (4)
 
 - C-02-206 Amazon Basics 14-inch Laptop Sleeve
 - L-05-506 Solimo Microfibre Reversible Comforter (Double)
 - W-03-306 Abanen 22 mm QuickFit Silicone Watch Band
 - W-05-505 ZORBES 2-in-1 Charging Cable for Garmin Watch
+
+### Replacement dropped by decision: the Fjallraven Kanken stays on the placeholder (1)
+
+- C-01-101 Fjällräven Kånken Classic Backpack

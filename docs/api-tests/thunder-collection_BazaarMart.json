@@ -1927,7 +1927,7 @@
       "colId": "bazaarmart-api",
       "containerId": "folder-catalogue",
       "name": "Product sheet → 200",
-      "url": "{{baseUrl}}/products/sheet/A-01-117",
+      "url": "{{baseUrl}}/products/sheet/A-01-103",
       "method": "GET",
       "sortNum": 70,
       "created": "2026-11-05T00:00:00.000Z",
@@ -3333,7 +3333,7 @@
       ],
       "body": {
         "type": "json",
-        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"A-01-117\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"A-01-103\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
         "form": []
       },
       "tests": [

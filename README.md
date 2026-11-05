@@ -45,7 +45,7 @@ Fill in `backend/.env`:
 | `OTP_MOCK` | No | `true` turns on the mock SMS provider. Without it, phone sign-in returns 503 |
 | `REQUIRE_AUTH_FOR_CATALOGUE` | No | `true` restores the lab rule that product data needs a login. Default is public |
 
-`frontend/.env` holds one setting, `VITE_API_URL`, the API address ending in `/api`. Product images are served beside it.
+`frontend/.env` holds one setting, `VITE_API_URL`, the API address ending in `/api`. Catalogue photos are served by the website itself, from `frontend/public/products/`.
 
 The mock SMS provider prints sign-in codes to the server console. `REQUIRE_AUTH_FOR_CATALOGUE=true` makes the product list, category, product sheet, search and kit detail routes return 401 without a token.
 
@@ -60,7 +60,7 @@ The seed is safe to re-run. It adds only what's missing, so product edits and st
 
 The demo user (`SEED_DEMO_EMAIL`, `SEED_DEMO_PASSWORD`) gets a saved address and two orders, one out for delivery and one packed. It's skipped if those settings are blank. The catalogue is `backend/data/products.json`, 135 products with invented brands, and `backend/data/catalogue.js` holds the zones, kits and demo data. The seed upserts by SKU and keeps the live price and stock of a product that hasn't changed. It removes only the first catalogue's SKUs, so products added on the Admin page stay. Each product has one openly licensed photo where a good one was found: `npm run photos --prefix backend` fetches them from Openverse and Wikimedia Commons, with no account or key. Generated SVGs in `backend/public/products` cover the rest: run `npm run images --prefix backend` after changing the catalogue, then `npm run seed --prefix backend`.
 
-**Photo credits:** author, licence and source for every photo are in [backend/public/products/CREDITS.md](backend/public/products/CREDITS.md).
+**Photo credits:** author, licence and source for every photo are in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md) and on the `/credits` page.
 
 If port 5000 is already in use on macOS, AirPlay Receiver is the usual cause. Set `PORT` in `backend/.env` and `VITE_API_URL` in `frontend/.env` to another port.
 
@@ -76,6 +76,31 @@ Run these from the project root.
 | `npm test` | Runs the automated tests on temporary in-memory databases |
 | `npm run build` | Builds the website into `frontend/dist` |
 | `npm start` | Starts the API without auto-reload |
+
+## Catalogue data
+
+The store sells 300 real products from `backend/data/products-300.json`. That file is the source of truth, so never regenerate it over verified data. Each product's price, specs and colours were checked against a real source, recorded in `backend/data/verify/` and `priceNote`.
+
+195 products have a confirmed photo of that exact model. The other 105 show the placeholder, and [image-report.md](backend/data/reports/image-report.md) gives the reason for each one. Every photo is credited on the `/credits` page, under the image on its product sheet, and in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md).
+
+To rebuild, run these in order from `backend`:
+
+| Command | What it does |
+|---|---|
+| `npm run catalogue:verify` | Merges the per-zone records into `products-300.verified.json` |
+| `npm run catalogue:images` | Fetches photos and writes `frontend/public/products/*.webp` |
+| `npm run catalogue:check` | Runs the automatic photo checks and builds the contact sheets |
+| `npm run catalogue:validate` | Checks the data. A missing photo is only a warning |
+| `npm run catalogue:credits` | Rewrites `docs/IMAGE_CREDITS.md` |
+| `npm run catalogue:import` | Validates, then upserts by SKU. Live stock is kept |
+| `npm run catalogue:import -- --dry-run` | Prints what would change and writes nothing |
+| `npm run catalogue:import -- --prune-old` | Lists old products with the orders and shelves that use them, then deletes them after you type `yes` |
+
+`npm run seed` uses the same import, but leaves products from this catalogue as they are so Admin edits survive.
+
+Photo licences vary. Wikimedia and Openverse photos are CC or public domain. Brand photos are © their owners and are used here only for a non-commercial student demo. If this repo goes public, keep only the CC and public domain photos committed and rebuild the rest locally.
+
+These older files are no longer used: `backend/scripts/generateProductImages.js`, `backend/scripts/fetchProductPhotos.js`, `backend/public/products/`, `backend/data/products.json` and `backend/data/product-photos.json`. `backend/data/retiredSkus.json` and `products.json` are still read by `--prune-old`.
 
 ## Website pages
 
@@ -177,6 +202,7 @@ Both GET routes also accept:
 | Method | Path | Access | Result |
 |---|---|---|---|
 | GET | `/api/zones` | Public | Each zone with `productCount`, `totalStock`, `bays` and `layout` |
+| GET | `/api/credits` | Public | Every photo credit, by SKU |
 | GET | `/api/search?q=` | Public | Exact SKU first, then matches by name, brand or zone; at most 8; 400 without `q` |
 | GET | `/api/kits` | Public | All kits |
 | GET | `/api/kits/:id` | Public | `data.kit` and `data.products` |
@@ -207,7 +233,7 @@ A checkout body looks like this. Logged-in customers leave out `guest`; for gues
 
 ```json
 {
-  "items": [{ "productId": "A-01-117", "qty": 1, "colour": "Sand" }],
+  "items": [{ "productId": "A-01-103", "qty": 1, "colour": "Sand" }],
   "address": { "name": "Asha", "phone": "9876543210", "line1": "221B Lake Road", "city": "Chennai", "state": "Tamil Nadu", "pincode": "600001" },
   "slot": { "label": "Tomorrow" },
   "payment": { "method": "upi" },
@@ -328,14 +354,13 @@ backend/
   app.js           middleware, routes and error handling
   seed.js          zones, kits, the catalogue, the admin and a demo user
   config/          database connection
-  data/            the seed catalogue
+  data/            the catalogue, its checks and reports, and the seed data
   models/          User, Product, Zone, Kit, Shelf, Order, Review, Question, Otp, Counter
   middleware/      auth, validation, error handling
   controllers/     request logic
   routes/          URL definitions
   utils/           response, session, pricing and address helpers
-  scripts/         generates the product images and fetches the photos
-  public/products/ product photos, generated SVGs and photo credits
+  scripts/dataset/ verifies, photographs, validates and imports the catalogue
   tests/           automated tests, including the acceptance suite
 frontend/src/
   api/             fetch wrapper
