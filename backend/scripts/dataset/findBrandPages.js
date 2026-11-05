@@ -185,7 +185,16 @@ const brandRecord = (product, url, page, source) => ({
   author: product.brand, attribution: `Image © ${product.brand}, from ${new URL(url).host}`
 });
 
-const slugOf = url => decodeURIComponent(new URL(url).pathname).replace(/[/_.-]+/g, ' ');
+// Sitemaps can hold URLs that won't decode. Those stay as they are and simply don't match a product.
+function slugOf(url) {
+  let path = url;
+  try {
+    path = decodeURIComponent(new URL(url).pathname);
+  } catch {
+    // Keep the raw URL.
+  }
+  return path.replace(/[/_.-]+/g, ' ');
+}
 
 async function main() {
   mkdirSync(CACHE, { recursive: true });
