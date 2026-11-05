@@ -3,6 +3,7 @@
 // or "unclear"), and only "correct" sets matchChecked. Anything else goes back to its next candidate.
 import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
+import { photoKey } from './photoKey.js';
 
 const DATA = new URL('../../data/', import.meta.url);
 const IMAGES = new URL('images.json', DATA);
@@ -96,11 +97,11 @@ async function main() {
   // A verdict counts only for the photo it was made on. A new photo needs checking again.
   for (const sku of ready) {
     const verdict = review[sku];
-    images[sku].matchChecked = verdict?.verdict === 'correct' && verdict.url === images[sku].originalUrl;
+    images[sku].matchChecked = verdict?.verdict === 'correct' && photoKey(verdict.url) === photoKey(images[sku].originalUrl);
   }
   writeFileSync(IMAGES, `${JSON.stringify(images, null, 1)}\n`);
 
-  const pending = ready.filter(sku => review[sku]?.url !== images[sku].originalUrl);
+  const pending = ready.filter(sku => photoKey(review[sku]?.url) !== photoKey(images[sku].originalUrl));
   rmSync(SHEETS, { recursive: true, force: true });
   mkdirSync(SHEETS, { recursive: true });
   const sheets = [];

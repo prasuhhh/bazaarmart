@@ -1,6 +1,6 @@
 # Image report
 
-Final state, checked by eye. 192 of 300 confirmed as the right model, 108 missing and left on the placeholder.
+Final state, checked by eye. 193 of 300 confirmed as the right model, 107 missing and left on the placeholder.
 
 Rules applied: real photos of the exact model only, a different colour of the same model allowed, shortest side at least 400 px, upscaled no more than 2x.
 
@@ -9,7 +9,7 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 | Source | Products |
 | --- | --- |
 | brand-site | 157 |
-| wikimedia | 26 |
+| wikimedia | 27 |
 | openverse | 4 |
 | brand-press | 4 |
 | openbeautyfacts | 1 |
@@ -21,7 +21,7 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 | A | 23 | 11 |
 | W | 22 | 11 |
 | D | 25 | 9 |
-| L | 18 | 16 |
+| L | 19 | 15 |
 | S | 20 | 12 |
 | G | 25 | 8 |
 | C | 21 | 11 |
@@ -66,9 +66,27 @@ Every confirmed photo of a product with a size, volume or pack count was looked 
 
 Moved to the placeholder because the photo was a different product: B-04-406 (photo is Versace Eros Eau de Parfum 50 ml), L-03-306 (photo is a Clean Cotton car air freshener), L-03-307 (photo is the Mahogany Teakwood Intense scent).
 
+## Rebuild review
+
+A rebuild from a clean checkout found 10 new photos. Each was checked on a contact sheet, then every other search result for those products was checked too, so a later rebuild doesn't bring up more of them. That was 163 results in all, and 1 photo was accepted.
+
+Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body, titled as the fifth generation on Commons.
+
+| SKU | Product | Photo shown | Why it was rejected |
+| --- | --- | --- | --- |
+| A-01-105 | Nothing Ear (a) | Nothing ear (1) earbud in a hand | Different model. The other results are the ear (1), ear (stick) and Ear |
+| C-04-401 | Amazon Kindle Paperwhite (2024) | Paperwhite 3 | Older generation. The other results are 2013 models or close-ups |
+| G-01-103 | Xbox Wireless Controller | Close-up of the A, B, X and Y buttons | Shows the buttons, not the controller. The maker's image is a 216 x 46 logo |
+| P-01-103 | Samsung Galaxy S25 | Video still of three phones under a caption | Shows the whole series with captions. Samsung's press image also shows three models together |
+| P-01-105 | Google Pixel 9 | Pixel 9 Pro XL | Different model. The results labelled Pixel 9 are flat drawings, not photos |
+| P-01-107 | Nothing Phone (3a) | Nothing Phone (1) | Different model. The other results are the Phone (1), (2) and (3) |
+| P-04-401 | Anker Power Bank (20,000 mAh, 45 W, Dual Built-in USB-C Cables) | Box of a 4,500 mAh Anker power bank | Different model. One other result is an unnamed Anker power bank |
+| W-01-102 | Apple Watch SE (2nd generation, GPS, 40 mm) | Watch with a blank screen, labelled GPS + Cellular | Can't be told from other Apple Watches by eye, and the label is another variant. The other results are a Series 1, a logo, the back of the same watch and one file that no longer exists |
+| W-03-303 | Apple Sport Loop (42 mm) | The same 40 mm watch photo | Already rejected: the band is a 40 mm one. The other results are a seascape and a metal band |
+
 ## Missing, by reason
 
-### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (45)
+### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (44)
 
 - A-01-101 Apple AirPods Pro 2 (USB-C)
 - A-01-105 Nothing Ear (a)
@@ -94,7 +112,6 @@ Moved to the placeholder because the photo was a different product: B-04-406 (ph
 - G-04-401 Logitech G102 Lightsync
 - L-01-101 Philips Hue Go Portable Table Lamp
 - L-01-105 HomeMate Wi-Fi Multicolour Smart LED Strip Kit (10 m)
-- L-02-201 Amazon Echo Dot (5th Gen)
 - L-02-202 Amazon Echo Show 5 (3rd Gen)
 - L-02-203 Amazon Fire TV Stick 4K (2024)
 - L-05-503 IKEA GURLI Cushion Cover (50x50 cm)

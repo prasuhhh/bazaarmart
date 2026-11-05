@@ -9,7 +9,7 @@
  },
  "A-01-105": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Nothing_ear_%281%29_earphone_in_hand_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "A-01-107": {
   "verdict": "correct",
@@ -253,7 +253,7 @@
  },
  "C-04-401": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Amazon_Kindle_Paperwhite_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "C-04-402": {
   "verdict": "correct",
@@ -401,7 +401,7 @@
  },
  "G-01-103": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://live.staticflickr.com/5547/11912816263_d993d24601_b.jpg"
  },
  "G-01-104": {
   "verdict": "correct",
@@ -504,8 +504,8 @@
   "url": "https://www.ikea.com/in/en/images/products/hektar-floor-lamp-dark-grey__0149974_pe308131_s5.jpg"
  },
  "L-02-201": {
-  "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_black_Amazon_Echo_Dot_%28fifth_generation%29_on_wooden_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "L-02-202": {
   "verdict": "wrong",
@@ -593,7 +593,7 @@
  },
  "P-01-103": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.03.900.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "P-01-104": {
   "verdict": "correct",
@@ -601,7 +601,7 @@
  },
  "P-01-105": {
   "verdict": "wrong",
-  "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/P9P9PThumbnail_16x9_Opt2_2.width-1300.jpg"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Google_Pixel_9_Pro_XL_%28front%29.jpg"
  },
  "P-01-106": {
   "verdict": "correct",
@@ -609,7 +609,7 @@
  },
  "P-01-107": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nothing_Phone.jpg"
  },
  "P-02-201": {
   "verdict": "wrong",
@@ -649,7 +649,7 @@
  },
  "P-04-401": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716812225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720042710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "P-04-406": {
   "verdict": "correct",
@@ -749,7 +749,7 @@
  },
  "W-01-102": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg"
  },
  "W-01-103": {
   "verdict": "correct",
@@ -785,7 +785,7 @@
  },
  "W-03-303": {
   "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg"
  },
  "W-03-304": {
   "verdict": "correct",

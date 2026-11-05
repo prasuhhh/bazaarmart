@@ -9442,16 +9442,18 @@
   "arrivesInDays": 2,
   "isNew": false,
   "description": "A compact Alexa smart speaker with a 1.73-inch driver, a temperature sensor, ultrasound motion detection and tap gestures. It has no 3.5 mm audio jack.",
-  "images": [],
+  "images": [
+   "/products/L-02-201.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false
+   "status": "ok",
+   "source": "wikimedia",
+   "sourcePage": "https://commons.wikimedia.org/wiki/File:The_black_Amazon_Echo_Dot_(fifth_generation)_on_wooden_table.jpg",
+   "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_black_Amazon_Echo_Dot_%28fifth_generation%29_on_wooden_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "CC BY-SA 4.0",
+   "author": "Radom1967",
+   "attribution": "\"The black Amazon Echo Dot (fifth generation) on wooden table.jpg\" by Radom1967, CC BY-SA 4.0, via Wikimedia Commons",
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",

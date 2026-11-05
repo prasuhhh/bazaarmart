@@ -6,6 +6,7 @@
 // no request. A product with no acceptable candidate is marked "missing", never a lookalike.
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { photoKey } from './photoKey.js';
 
 const DATA = new URL('../../data/', import.meta.url);
 const CACHE = new URL('cache/http/', DATA);
@@ -148,18 +149,18 @@ async function main() {
   for (const [index, product] of products.entries()) {
     const sku = product.productId;
     if (images[sku]?.matchChecked) continue; // a photo checked by eye is never replaced here
-    const rejected = new Set(images[sku]?.rejected ?? []);
-    const usable = photos => photos.filter(photo => !rejected.has(photo.originalUrl));
+    const rejected = new Set((images[sku]?.rejected ?? []).map(photoKey));
+    const usable = photos => photos.filter(photo => !rejected.has(photoKey(photo.originalUrl)));
 
     let candidates = usable(chooseFrom(await searchCommons(product), product));
     if (!candidates.length) candidates = usable(chooseFrom(await searchOpenverse(product), product));
     // Kept behind any open-licence photo, so Step 4 can fall back to it.
     for (const extra of [openBeauty[sku], brandPages[sku]]) {
-      if (extra && !rejected.has(extra.originalUrl)) candidates = [...candidates, extra];
+      if (extra && !rejected.has(photoKey(extra.originalUrl))) candidates = [...candidates, extra];
     }
 
     const top = candidates.slice(0, CANDIDATES_KEPT);
-    images[sku] = { ...(top[0] ? asImage(top[0]) : emptyImage('missing')), candidates: top, ...(rejected.size && { rejected: [...rejected] }) };
+    images[sku] = { ...(top[0] ? asImage(top[0]) : emptyImage('missing')), candidates: top, ...(rejected.size && { rejected: images[sku].rejected }) };
     if ((index + 1) % 10 === 0) {
       writeFileSync(OUTPUT, `${JSON.stringify(images, null, 1)}\n`);
       console.log(`${index + 1}/${products.length} ${sku}`);

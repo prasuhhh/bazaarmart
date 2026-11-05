@@ -5,6 +5,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
+import { photoKey } from './photoKey.js';
 
 const DATA = new URL('../../data/', import.meta.url);
 const IMAGES = new URL('images.json', DATA);
@@ -110,9 +111,9 @@ async function makeFiles(sku, candidate) {
 }
 
 async function processOne(sku, image) {
-  const rejected = new Set(image.rejected ?? []);
+  const rejected = new Set((image.rejected ?? []).map(photoKey));
   const failures = { ...image.failures };
-  const options = (image.candidates ?? []).filter(candidate => !rejected.has(candidate.originalUrl));
+  const options = (image.candidates ?? []).filter(candidate => !rejected.has(photoKey(candidate.originalUrl)));
   for (const candidate of options) {
     const { source, sourcePage, originalUrl, licence, author, attribution } = candidate;
     const done = image.processedFrom === originalUrl && existsSync(new URL(`${sku}.webp`, OUTPUT));
@@ -137,7 +138,7 @@ async function main() {
   // One queue per photo host, so a slow site doesn't hold up the others.
   const byHost = new Map();
   for (const sku of skus) {
-    if (images[sku].status === 'ok' && images[sku].processedFrom === images[sku].originalUrl && !images[sku].rejected?.includes(images[sku].originalUrl)) continue;
+    if (images[sku].status === 'ok' && images[sku].processedFrom === images[sku].originalUrl && !images[sku].rejected?.some(url => photoKey(url) === photoKey(images[sku].originalUrl))) continue;
     const host = images[sku].candidates?.[0] ? new URL(images[sku].candidates[0].originalUrl).host : 'none';
     if (!byHost.has(host)) byHost.set(host, []);
     byHost.get(host).push(sku);

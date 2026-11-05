@@ -93,71 +93,38 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "Nothing ear (1) wireless charging case (pocket).jpg",
-    "width": 3024,
-    "height": 4032,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_ear_(1)_wireless_charging_case_(pocket).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing ear (1) wireless charging case (pocket).jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Nothing ear (1) open wireless charging case (black).jpg",
-    "width": 4032,
-    "height": 3024,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_ear_(1)_open_wireless_charging_case_(black).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nothing_ear_%281%29_open_wireless_charging_case_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing ear (1) open wireless charging case (black).jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Nothing ear (1) earphone (black).jpg",
-    "width": 4032,
-    "height": 3024,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_ear_(1)_earphone_(black).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nothing_ear_%281%29_earphone_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing ear (1) earphone (black).jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Nothing ear (1) earphones (black).jpg",
-    "width": 4032,
-    "height": 3024,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_ear_(1)_earphones_(black).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Nothing_ear_%281%29_earphones_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing ear (1) earphones (black).jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Nothing ear (1) earphones (inner - black).jpg",
-    "width": 4032,
-    "height": 3024,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_ear_(1)_earphones_(inner_-_black).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nothing_ear_%281%29_earphones_%28inner_-_black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing ear (1) earphones (inner - black).jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://cdn.shopify.com/s/files/1/0586/3270/0077/files/BA_360_ENTEI_030_blackBud_rgb_00_4fdaba7c-5568-4db0-aaa5-5129d524d8bd.png?v=1713169144",
+   "https://upload.wikimedia.org/wikipedia/commons/0/01/Nothing_Ear_Stick_charging_case_-_2.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/0b/Nothing_ear_%281%29_earphone_in_hand_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nothing_ear_%281%29_earphone_%28black%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nothing_ear_%281%29_earphone_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/1/18/Nothing_ear_%281%29_wireless_charging_case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/2/22/Nothing_ear_%28stick%29_buds_in_the_case.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%28stick%29_buds_and_case_%282%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/4/46/Nothing_ear_%281%29_earphone_%28inner%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/4/46/Nothing_ear_%281%29_earphone_%28inner%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/5/58/Nothing_ear_%28stick%29_buds_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/6/63/Nothing_ear_%28stick%29_on_top_of_the_Nothing_Phone_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nothing_ear_%28stick%29_buds_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/7/74/Nothing_ear_%28stick%29_buds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/8/89/Nothing_ear_%281%29_earphone.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/8/89/Nothing_ear_%281%29_earphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9d/Nothing_ear_%28stick%29_and_Nothing_Phone_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a6/Nothing_ear_stick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/a/ad/Nothing_ear_%28stick%29_buds_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nothing_Ear_Stick_charging_case_-_1.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/b/be/Nothing_ear_%281%29_wireless_charging_case_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/d9/Nothing_ear_%281%29_earphones_%28black%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Nothing_ear_%281%29_earphones_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/df/Nothing_ear_%28stick%29_buds_and_case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nothing_ear_%281%29_earphones_%28inner_-_black%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nothing_ear_%281%29_earphones_%28inner_-_black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nothing_ear_%281%29_open_wireless_charging_case_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nothing_ear_%281%29_accessories.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nothing_ear_%281%29_accessories.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
   "failures": {}
@@ -1737,27 +1704,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Eau de parfum Eros 50&nbsp;ml",
-    "sourcePage": "https://www.versace.com/fr/fr/homme/accessoires/parfums-et-soins-du-corps/eros/eau-de-parfum-eros-50%C2%A0ml/R740108-R050MLS_RNUL.html",
-    "originalUrl": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-    "width": null,
-    "height": null,
-    "licence": "© Versace - press/product image, used for a non-commercial student lab demo",
-    "author": "Versace",
-    "attribution": "Image © Versace, from www.versace.com"
-   }
-  ],
-  "width": 850,
-  "height": 1063,
-  "file": "/products/B-04-406.webp",
-  "processedFrom": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-  "failures": {},
+  "candidates": [],
   "rejected": [
    "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true"
-  ]
+  ],
+  "failures": {}
  },
  "B-04-407": {
   "status": "missing",
@@ -2458,69 +2409,29 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "2023 Amazon Kindle Paperwhite (1).jpg",
-    "width": 4079,
-    "height": 2888,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Amazon_Kindle_Paperwhite_(1).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Jacek Halicki",
-    "attribution": "\"2023 Amazon Kindle Paperwhite (1).jpg\" by Jacek Halicki, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "2023 Amazon Kindle Paperwhite (3).jpg",
-    "width": 4152,
-    "height": 2884,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Amazon_Kindle_Paperwhite_(3).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/2023_Amazon_Kindle_Paperwhite_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Jacek Halicki",
-    "attribution": "\"2023 Amazon Kindle Paperwhite (3).jpg\" by Jacek Halicki, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Amazon Kindle Paperwhite 5 Eleventh Generation (C2V2L3) 6-inch e-reader in etui.jpg",
-    "width": 3384,
-    "height": 2868,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Kindle_Paperwhite_5_Eleventh_Generation_(C2V2L3)_6-inch_e-reader_in_etui.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader_in_etui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "Public domain",
-    "author": "WrS.tm.pl",
-    "attribution": "\"Amazon Kindle Paperwhite 5 Eleventh Generation (C2V2L3) 6-inch e-reader in etui.jpg\" by WrS.tm.pl, Public domain, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "2023 Amazon Kindle Paperwhite (2).jpg",
-    "width": 3955,
-    "height": 2804,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:2023_Amazon_Kindle_Paperwhite_(2).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/2023_Amazon_Kindle_Paperwhite_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Jacek Halicki",
-    "attribution": "\"2023 Amazon Kindle Paperwhite (2).jpg\" by Jacek Halicki, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Amazon Kindle Paperwhite 5 Eleventh Generation (C2V2L3) 6-inch e-reader.jpg",
-    "width": 2637,
-    "height": 2759,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Kindle_Paperwhite_5_Eleventh_Generation_(C2V2L3)_6-inch_e-reader.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "Public domain",
-    "author": "WrS.tm.pl",
-    "attribution": "\"Amazon Kindle Paperwhite 5 Eleventh Generation (C2V2L3) 6-inch e-reader.jpg\" by WrS.tm.pl, Public domain, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://live.staticflickr.com/3821/11116549285_cb03324fa8_b.jpg",
+   "https://live.staticflickr.com/3937/15517409126_fa4dfd8b54_b.jpg",
+   "https://live.staticflickr.com/7255/13992569082_aba3618a56_b.jpg",
+   "https://live.staticflickr.com/7341/13996211164_668aba2a9b_b.jpg",
+   "https://live.staticflickr.com/8230/8434146206_265a50eae8_b.jpg",
+   "https://live.staticflickr.com/8316/8049043358_f9170a5758_b.jpg",
+   "https://live.staticflickr.com/8354/8311021336_446e1b3d8f_b.jpg",
+   "https://live.staticflickr.com/8488/8197861805_eaca8fe3cb_b.jpg",
+   "https://live.staticflickr.com/8494/8311020768_535634cd86_b.jpg",
+   "https://live.staticflickr.com/8495/8311227562_dbd3bbbc6c_b.jpg",
+   "https://live.staticflickr.com/8502/8311031006_a5402fb542_b.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/01/Amazon_Kindle_Paperwhite_%282nd_Generation%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/0/01/Amazon_Kindle_Paperwhite_%282nd_Generation%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/3/38/2023_Amazon_Kindle_Paperwhite_%283%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/3/38/2023_Amazon_Kindle_Paperwhite_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/4/43/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/4/45/2023_Amazon_Kindle_Paperwhite_%282%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/4/45/2023_Amazon_Kindle_Paperwhite_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/5/50/Amazon_Kindle_Paperwhite_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/6/66/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader_in_etui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/a/a3/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader._Font_Bookerly%2C_size_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
@@ -2833,25 +2744,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "A Water Bottle That Checks All Your Boxes: Meet the LifeStraw Go Series Glass Bottle",
-    "sourcePage": "https://lifestraw.com/blogs/news/a-water-bottle-that-checks-all-your-boxes-meet-the-lifestraw-go-series-glass-water-filter-bottle",
-    "originalUrl": "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999",
-    "width": null,
-    "height": null,
-    "licence": "© LifeStraw - press/product image, used for a non-commercial student lab demo",
-    "author": "LifeStraw",
-    "attribution": "Image © LifeStraw, from lifestraw.com"
-   }
-  ],
-  "failures": {
-   "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999": "only 1200x492"
-  },
+  "candidates": [],
   "rejected": [
    "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999"
-  ]
+  ],
+  "failures": {}
  },
  "C-05-507": {
   "status": "missing",
@@ -3970,25 +3867,13 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Ovladač XBOX | Microsoft Store",
-    "sourcePage": "https://www.microsoft.com/cs-cz/store/collections/xboxcontrollers",
-    "originalUrl": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
-    "width": null,
-    "height": null,
-    "licence": "© Microsoft - press/product image, used for a non-commercial student lab demo",
-    "author": "Microsoft",
-    "attribution": "Image © Microsoft, from www.microsoft.com"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://live.staticflickr.com/5547/11912816263_d993d24601_b.jpg",
+   "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
    "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
-  "failures": {
-   "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png": "only 216x46"
-  }
+  "failures": {}
  },
  "G-01-104": {
   "status": "ok",
@@ -4975,81 +4860,66 @@
   "failures": {}
  },
  "L-02-201": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "wikimedia",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:The_black_Amazon_Echo_Dot_(fifth_generation)_on_wooden_table.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_black_Amazon_Echo_Dot_%28fifth_generation%29_on_wooden_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY-SA 4.0",
+  "author": "Radom1967",
+  "attribution": "\"The black Amazon Echo Dot (fifth generation) on wooden table.jpg\" by Radom1967, CC BY-SA 4.0, via Wikimedia Commons",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "wikimedia",
-    "title": "Amazon Echo Dot (RS03QR) - motherboard-0557.jpg",
-    "width": 5559,
-    "height": 4169,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_(RS03QR)_-_motherboard-0557.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "title": "The black Amazon Echo Dot (fifth generation) on wooden table.jpg",
+    "width": 2084,
+    "height": 2043,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_black_Amazon_Echo_Dot_(fifth_generation)_on_wooden_table.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_black_Amazon_Echo_Dot_%28fifth_generation%29_on_wooden_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "licence": "CC BY-SA 4.0",
-    "author": "Raimond Spekking",
-    "attribution": "\"Amazon Echo Dot (RS03QR) - motherboard-0557.jpg\" by Raimond Spekking, CC BY-SA 4.0, via Wikimedia Commons"
+    "author": "Radom1967",
+    "attribution": "\"The black Amazon Echo Dot (fifth generation) on wooden table.jpg\" by Radom1967, CC BY-SA 4.0, via Wikimedia Commons"
    },
    {
     "source": "wikimedia",
-    "title": "Amazon Echo Dot (RS03QR) - LED and microphone board-0548.jpg",
-    "width": 4078,
-    "height": 4078,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_(RS03QR)_-_LED_and_microphone_board-0548.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Amazon_Echo_Dot_%28RS03QR%29_-_LED_and_microphone_board-0548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "title": "Amazon Echo Dot 5 mit Uhr.jpg",
+    "width": 3391,
+    "height": 1509,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_5_mit_Uhr.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Amazon_Echo_Dot_5_mit_Uhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "licence": "CC BY-SA 4.0",
-    "author": "Raimond Spekking",
-    "attribution": "\"Amazon Echo Dot (RS03QR) - LED and microphone board-0548.jpg\" by Raimond Spekking, CC BY-SA 4.0, via Wikimedia Commons"
+    "author": "Aktulisert",
+    "attribution": "\"Amazon Echo Dot 5 mit Uhr.jpg\" by Aktulisert, CC BY-SA 4.0, via Wikimedia Commons"
    },
    {
     "source": "wikimedia",
-    "title": "Amazon Echo Dot (RS03QR)-0479.jpg",
-    "width": 3790,
-    "height": 3181,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_(RS03QR)-0479.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Amazon_Echo_Dot_%28RS03QR%29-0479.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Raimond Spekking",
-    "attribution": "\"Amazon Echo Dot (RS03QR)-0479.jpg\" by Raimond Spekking, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Amazon Echo Dot (RS03QR)-0480.jpg",
-    "width": 3790,
-    "height": 3181,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_(RS03QR)-0480.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Amazon_Echo_Dot_%28RS03QR%29-0480.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Raimond Spekking",
-    "attribution": "\"Amazon Echo Dot (RS03QR)-0480.jpg\" by Raimond Spekking, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Alexa amazon echo dot (42820690351).jpg",
-    "width": 4653,
-    "height": 3102,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Alexa_amazon_echo_dot_(42820690351).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Alexa_amazon_echo_dot_%2842820690351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "title": "Amazon Echo Dot (black) on a wood surface.jpg",
+    "width": 1080,
+    "height": 1080,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon_Echo_Dot_(black)_on_a_wood_surface.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Amazon_Echo_Dot_%28black%29_on_a_wood_surface.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "licence": "CC BY 2.0",
-    "author": "Stock Catalog",
-    "attribution": "\"Alexa amazon echo dot (42820690351).jpg\" by Stock Catalog, CC BY 2.0, via Wikimedia Commons"
+    "author": "Michael Sheehan",
+    "attribution": "\"Amazon Echo Dot (black) on a wood surface.jpg\" by Michael Sheehan, CC BY 2.0, via Wikimedia Commons"
    }
   ],
   "rejected": [
    "https://upload.wikimedia.org/wikipedia/commons/3/35/Amazon_Echo_Dot_%28RS03QR%29_-_LED_and_microphone_board-0548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/3/3c/Amazon_Echo_Dot_%2827716286638%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/4/40/Amazon_Echo_Dot_%28RS03QR%29-0479.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/4/43/Amazon_Echo_Dot_%28virtual_digital_assistant%29_with_normal_coffee_mug_as_size_comparison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/6/6e/Amazon_Echo_Dot_%28RS03QR%29-0483.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/9/95/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Alexa_amazon_echo_dot_%2842820690351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9f/Amazon_Echo_Dot_%2840598973282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/a/ac/Amazon_Echo_Dot_%28RS03QR%29-0480.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/c/c0/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0552.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/e/ec/Amazon_Echo_Dot_%28RS03QR%29_-_cover_removed-0547.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
+  "width": 2084,
+  "height": 2043,
+  "file": "/products/L-02-201.webp",
+  "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_black_Amazon_Echo_Dot_%28fifth_generation%29_on_wooden_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
   "failures": {}
  },
  "L-02-202": {
@@ -5346,27 +5216,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Clean Cotton® Car Jar® | Yankee Candle",
-    "sourcePage": "https://www.yankeecandle.com/yankee-candle/car/car-air-freshener-styles/car-jar/clean-cotton/SAP_1020639_PR.html",
-    "originalUrl": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-    "width": null,
-    "height": null,
-    "licence": "© Yankee Candle - press/product image, used for a non-commercial student lab demo",
-    "author": "Yankee Candle",
-    "attribution": "Image © Yankee Candle, from www.yankeecandle.com"
-   }
-  ],
-  "width": 1280,
-  "height": 1280,
-  "file": "/products/L-03-306.webp",
-  "processedFrom": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-  "failures": {},
+  "candidates": [],
   "rejected": [
    "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01"
-  ]
+  ],
+  "failures": {}
  },
  "L-03-307": {
   "status": "missing",
@@ -5377,27 +5231,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Buy Mahogany Teakwood Intense 3-Wick Candle Online | Bath and Body Works",
-    "sourcePage": "https://www.bathandbodyworks.in/p/mahogany-teakwood-intense-667659363438.html",
-    "originalUrl": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-    "width": null,
-    "height": null,
-    "licence": "© Bath & Body Works - press/product image, used for a non-commercial student lab demo",
-    "author": "Bath & Body Works",
-    "attribution": "Image © Bath & Body Works, from www.bathandbodyworks.in"
-   }
-  ],
-  "width": 675,
-  "height": 909,
-  "file": "/products/L-03-307.webp",
-  "processedFrom": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-  "failures": {},
+  "candidates": [],
   "rejected": [
    "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg"
-  ]
+  ],
+  "failures": {}
  },
  "L-04-401": {
   "status": "ok",
@@ -5854,72 +5692,44 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "Samsung Galaxy S25 Ultra smartphone - bottom view.jpg",
-    "width": 3072,
-    "height": 4096,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC0",
-    "author": "HuangWending18072009",
-    "attribution": "\"Samsung Galaxy S25 Ultra smartphone - bottom view.jpg\" by HuangWending18072009, CC0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Samsung Galaxy S25 Ultra Titanium Silverblue.jpg",
-    "width": 3060,
-    "height": 4080,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Alvis Jean",
-    "attribution": "\"Samsung Galaxy S25 Ultra Titanium Silverblue.jpg\" by Alvis Jean, CC BY-SA 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Samsung Galaxy S25+.jpg",
-    "width": 3364,
-    "height": 2523,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25%2B.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Samsung_Galaxy_S25%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 4.0",
-    "author": "Jakub CA",
-    "attribution": "\"Samsung Galaxy S25+.jpg\" by Jakub CA, CC BY 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "Samsung Galaxy S25 Ultra.jpg",
-    "width": 3317,
-    "height": 2488,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Samsung_Galaxy_S25_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 4.0",
-    "author": "Jakub CA",
-    "attribution": "\"Samsung Galaxy S25 Ultra.jpg\" by Jakub CA, CC BY 4.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "第一手！Samsung Galaxy S25系列拿到了：5个升级！S Pen不支持蓝牙了？ (2160p 50fps VP9-96kbit AAC)-00.07.47.789.png",
-    "width": 3840,
-    "height": 2160,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_(2160p_50fps_VP9-96kbit_AAC)-00.07.47.789.png",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.47.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 3.0",
-    "author": "可恩Ke En",
-    "attribution": "\"第一手！Samsung Galaxy S25系列拿到了：5个升级！S Pen不支持蓝牙了？ (2160p 50fps VP9-96kbit AAC)-00.07.47.789.png\" by 可恩Ke En, CC BY 3.0, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://img.us.news.samsung.com/us/wp-content/uploads/2025/01/22132755/%EA%B0%A4%EB%9F%AD%EC%8B%9C_S25_%EC%8B%9C%EB%A6%AC%EC%A6%88.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/03/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.03.900.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/0/06/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.53.461.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/0/0e/Samsung_Galaxy_S25%2B.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/0/0e/Samsung_Galaxy_S25%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/1/1e/Samsung_Galaxy_S25_Ultra_2025.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/2/28/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.06.03.789.png",
+   "https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S25_Edge_%282%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.27.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/5/5f/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.04.800.png",
+   "https://upload.wikimedia.org/wikipedia/commons/6/60/Rear_view_of_the_Samsung_Galaxy_S25_Ultra_smartphone.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/6/60/Rear_view_of_the_Samsung_Galaxy_S25_Ultra_smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/6/61/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/6/62/Samsung_Galaxy_S25_Ultra_phone%27s_screen.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/6/62/Samsung_Galaxy_S25_Ultra_phone%27s_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/6/64/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.01.21.000.png",
+   "https://upload.wikimedia.org/wikipedia/commons/7/73/Samsung_Galaxy_S25_Ultra_2025_%281%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.06.59.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a7/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.31.789.png",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.41.261.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/a/ae/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.19.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/b/b0/Samsung_Galaxy_S25_Ultra.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/b/b0/Samsung_Galaxy_S25_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_Galaxy_S25_Ultra_smartphone_-_side_view.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_Galaxy_S25_Ultra_smartphone_-_side_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.47.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.47.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.31.661.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/d1/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.45.561.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/da/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.05.200.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/db/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.01.00.700.png",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.07.100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/ff/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.32.600.png"
   ],
   "failures": {}
  },
@@ -6010,24 +5820,32 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-press",
-    "title": "The new Pixel 9 phones bring you the best of Google AI",
-    "sourcePage": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-pro-xl/",
-    "originalUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/P9P9PThumbnail_16x9_Opt2_2.width-1300.jpg",
-    "width": null,
-    "height": null,
-    "licence": "© Google - press/product image, used for a non-commercial student lab demo",
-    "author": "Google",
-    "attribution": "Image © Google, from blog.google"
-   }
-  ],
+  "candidates": [],
   "rejected": [
    "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/P9P9PThumbnail_16x9_Opt2_2.width-1300.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/1/10/Google_Pixel_9_Pro_Fold_%28Obsidian%29_rear_folded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/1/11/Google_Pixel_9_Pro_Fold_%28Porcelain%29_front_folded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Pixel_9_%28Peony%29_front.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/5/58/Google_Pixel_9_%28Peony%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/7/7b/Google_Pixel_9_Pro_%28Hazel%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9d/Google_Pixel_9_Pro_Fold_%28Porcelain%29_unfolded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a7/Google_Pixel_9_Pro_%28Hazel%29_front.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/a/ae/Google_Pixel_9_%28Obsidian%29_front.svg",
    "https://upload.wikimedia.org/wikipedia/commons/b/b0/Camera_of_Google_Pixel_9_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/b/b8/Google_Pixel_9_%28Wintergreen%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/c/c2/Google_Pixel_9_Pro_Fold_%28Porcelain%29_rear_folded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/d/d4/Google_Pixel_9_%28Porcelain%29_rear.svg",
    "https://upload.wikimedia.org/wikipedia/commons/d/d7/Camera_of_Google_Pixel_9_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "https://upload.wikimedia.org/wikipedia/commons/f/f7/Camera_of_Google_Pixel_9_-_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "https://upload.wikimedia.org/wikipedia/commons/d/d8/Google_Pixel_9_%28Obsidian%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/d/dc/Google_Pixel_9_Pro_Fold_%28Obsidian%29_front_folded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Pixel_9_Pro_XL_%28back%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/e/ef/Google_Pixel_9_Pro_%28Obsidian%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pixel_9_Pro_Fold_%28Obsidian%29_unfolded.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f7/Camera_of_Google_Pixel_9_-_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f7/Google_Pixel_9_Pro_%28Rose_Quartz%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f7/Google_Pixel_9_Pro_XL_%28front%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f8/Google_Pixel_9_Pro_%28Porcelain%29_rear.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/f/fd/Google_Pixel_9_Pro_XL_%28Rose_Quartz%29_front.svg"
   ],
   "failures": {}
  },
@@ -6084,24 +5902,31 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "Nothing Phone (1) back - white.jpg",
-    "width": 2001,
-    "height": 3556,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nothing_Phone_(1)_back_-_white.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "Premeditated",
-    "attribution": "\"Nothing Phone (1) back - white.jpg\" by Premeditated, CC BY-SA 4.0, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
    "https://cdn.shopify.com/s/files/1/0376/5420/0459/products/phone1black1600x2160.png?v=1658461176",
+   "https://live.staticflickr.com/8392/8536957466_3b672733ca_b.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/0b/Nothing_Phone_%28Glyph_pet%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/1/16/Nothing_Phone_%28Glyph_bug%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/3/35/Nothing_phone_%282a%29_Special_edition_%28back%29.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/3/39/%E5%8D%8A%E5%A4%9C%E9%A6%96%E5%8F%91%EF%BC%81%E7%AC%AC%E4%B8%80%E6%89%8B%E6%8B%BF%E5%88%B0%E4%BA%86Nothing_Phone_%283%29_%EF%BC%81%E7%81%AF%E6%9D%A1%E6%B2%A1%E4%BA%86%E3%80%81%E8%83%8C%E5%90%8E%E5%A4%9A%E4%B8%80%E4%B8%AAscreen%EF%BC%81-00.00.11.457.png",
+   "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/4/4d/Nothing_Phone_%28Glyph_latency%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/4/4d/Nothing_phone%281%29_White.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/5/5f/Nothing_Phone_%28Glyph_pneumatic%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/7/78/Nothing_Phone_%28Glyph_molitor%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/7/7c/Nothing_Phone_%28Glyph_radiate%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/8/82/Nothing_Phone_%28Glyph_wow%21%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nothing_phone.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nothing_phone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nothing_Phone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "https://upload.wikimedia.org/wikipedia/commons/8/8f/Nothing_Phone_%28Glyph_karha%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nothing_Phone.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nothing_Phone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/c/c8/Nothing_Phone_%28Glyph_squirrels%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nothing_phone_%282%29_%28Booredatwork.com%29_001.png",
+   "https://upload.wikimedia.org/wikipedia/commons/e/e4/Nothing_Phone_%28Glyph_pepelu%29.gif",
+   "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nothing_Phone_%28Glyph_beetle%29.gif"
   ],
   "failures": {}
  },
@@ -6461,72 +6286,46 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "モバイルバッテリー ANKER Power Bank 4,500mAh (9716812225).jpg",
-    "width": 4288,
-    "height": 2848,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4,500mAh_(9716812225).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716812225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 2.0",
-    "author": "Tranpan23",
-    "attribution": "\"モバイルバッテリー ANKER Power Bank 4,500mAh (9716812225).jpg\" by Tranpan23, CC BY 2.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "モバイルバッテリー ANKER Power Bank 4,500mAh (9716813167).jpg",
-    "width": 4288,
-    "height": 2848,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4,500mAh_(9716813167).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716813167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 2.0",
-    "author": "Tranpan23",
-    "attribution": "\"モバイルバッテリー ANKER Power Bank 4,500mAh (9716813167).jpg\" by Tranpan23, CC BY 2.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "モバイルバッテリー ANKER Power Bank 4,500mAh (9716814211).jpg",
-    "width": 4194,
-    "height": 2786,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4,500mAh_(9716814211).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716814211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 2.0",
-    "author": "Tranpan23",
-    "attribution": "\"モバイルバッテリー ANKER Power Bank 4,500mAh (9716814211).jpg\" by Tranpan23, CC BY 2.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "モバイルバッテリー ANKER Power Bank 4,500mAh (9720039628).jpg",
-    "width": 4103,
-    "height": 2695,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4,500mAh_(9720039628).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720039628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 2.0",
-    "author": "Tranpan23",
-    "attribution": "\"モバイルバッテリー ANKER Power Bank 4,500mAh (9720039628).jpg\" by Tranpan23, CC BY 2.0, via Wikimedia Commons"
-   },
-   {
-    "source": "wikimedia",
-    "title": "モバイルバッテリー ANKER Power Bank 4,500mAh (9720040694).jpg",
-    "width": 4049,
-    "height": 2689,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4,500mAh_(9720040694).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720040694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY 2.0",
-    "author": "Tranpan23",
-    "attribution": "\"モバイルバッテリー ANKER Power Bank 4,500mAh (9720040694).jpg\" by Tranpan23, CC BY 2.0, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/20250625-105940.png?v=1750820407",
+   "https://live.staticflickr.com/2815/9716813167_a241341402_b.jpg",
+   "https://live.staticflickr.com/2825/9716820049_dd8bf4194d_b.jpg",
+   "https://live.staticflickr.com/2853/9716822557_9a750963dd_b.jpg",
+   "https://live.staticflickr.com/2861/9716814211_94401b9475_b.jpg",
+   "https://live.staticflickr.com/2888/9720049988_b34e78b0c0_b.jpg",
+   "https://live.staticflickr.com/3730/9720042710_592883d23c_b.jpg",
+   "https://live.staticflickr.com/3738/9720040694_41095a0899_b.jpg",
+   "https://live.staticflickr.com/3745/9720052690_733188bb62_b.jpg",
+   "https://live.staticflickr.com/5336/9720039628_6bd9e3255a_b.jpg",
+   "https://live.staticflickr.com/5338/9716810135_3202fe3356_b.jpg",
+   "https://live.staticflickr.com/5462/9716806927_060ddbd931_b.jpg",
+   "https://live.staticflickr.com/5462/9716812225_ba15d2c7cb_b.jpg",
+   "https://live.staticflickr.com/7290/9720048992_259ac7c769_b.jpg",
+   "https://live.staticflickr.com/7363/9716815187_d7e58f5f1b_b.jpg",
+   "https://live.staticflickr.com/7372/9716823735_45855b6d05_b.jpg",
+   "https://live.staticflickr.com/7401/9720047900_d2798df398_b.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/0b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716823735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/0/0f/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720040694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/1/11/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716812225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/1/15/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720049988%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/1/17/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720047900%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/2/2b/Anker_521_Power_Bank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/4/4e/Anker_power_bank_lit.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/4/4e/Anker_power_bank_lit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/5/58/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716820049%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/6/61/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720052690%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/7/79/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716815187%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716814211%29.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716814211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716813167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720039628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716810135%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716810135%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/9/9c/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716806927%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720042710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/e/ec/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720048992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anker_power_bank_and_cable.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716822557%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
   "failures": {}
  },
@@ -6563,19 +6362,7 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Mobile | TV | Home Appliances | Samsung Hong Kong",
-    "sourcePage": "https://www.samsung.com/hk_en/mobile-accessories/wireless-battery-pack-u1200-eb-u1200csegww/",
-    "originalUrl": "https://images.samsung.com/is/image/samsung/assets/hk_en/home/2026-samsung-week/26_sw_2h_hd08_herokv_static_pc_1920x1080.jpg?imwidth=1366",
-    "width": null,
-    "height": null,
-    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
-    "author": "Samsung",
-    "attribution": "Image © Samsung, from www.samsung.com"
-   }
-  ],
+  "candidates": [],
   "rejected": [
    "https://images.samsung.com/is/image/samsung/assets/hk_en/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$",
    "https://images.samsung.com/is/image/samsung/assets/hk_en/home/2026-samsung-week/26_sw_2h_hd08_herokv_static_pc_1920x1080.jpg?imwidth=1366"
@@ -6798,19 +6585,7 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "All Samsung Accessories | Samsung Jordan",
-    "sourcePage": "https://www.samsung.com/levant/mobile-accessories/5a-usb-c-to-usb-c-cable-1m-black-ep-dn975bbegww/",
-    "originalUrl": "https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/mobile-accessories/Visual-LNB_Galaxy-Smartphone-Accessories_144x144.png?$ORIGIN_PNG$",
-    "width": null,
-    "height": null,
-    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
-    "author": "Samsung",
-    "attribution": "Image © Samsung, from www.samsung.com"
-   }
-  ],
+  "candidates": [],
   "rejected": [
    "https://images.samsung.com/is/image/samsung/assets/levant/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$",
    "https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/mobile-accessories/Visual-LNB_Galaxy-Smartphone-Accessories_144x144.png?$ORIGIN_PNG$"
@@ -7813,22 +7588,15 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "wikimedia",
-    "title": "Apple Watch Series 8.jpg",
-    "width": 6000,
-    "height": 3376,
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Apple_Watch_Series_8.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "licence": "CC BY-SA 4.0",
-    "author": "iGeeksBlog",
-    "attribution": "\"Apple Watch Series 8.jpg\" by iGeeksBlog, CC BY-SA 4.0, via Wikimedia Commons"
-   }
-  ],
+  "candidates": [],
   "rejected": [
+   "https://live.staticflickr.com/5766/32177776552_cafafabd93_b.jpg",
+   "https://live.staticflickr.com/8610/28683400086_05c32e366b_b.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/0/01/Apple_Watch_SE_2.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/6/65/Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a1/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_-_Backside.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/a/a1/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_-_Backside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://www.apple.com/in/apple-watch-se-3/images/meta/apple-watch-se-3__d0wwc67lzg02_og.png?202610140506"
   ],
@@ -7873,25 +7641,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Ładowarka S355 firmy Spigen do zegarka Google Pixel Watch 3 (41 mm / 45 mm)",
-    "sourcePage": "https://store.google.com/pl/product/spigen_s355_stand_pixel_watch_3?hl=pl",
-    "originalUrl": "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff",
-    "width": null,
-    "height": null,
-    "licence": "© Google - press/product image, used for a non-commercial student lab demo",
-    "author": "Google",
-    "attribution": "Image © Google, from store.google.com"
-   }
-  ],
-  "failures": {
-   "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff": "only 720x572"
-  },
+  "candidates": [],
   "rejected": [
    "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff"
-  ]
+  ],
+  "failures": {}
  },
  "W-01-105": {
   "status": "ok",
@@ -8259,7 +8013,10 @@
   "matchChecked": false,
   "candidates": [],
   "rejected": [
+   "https://live.staticflickr.com/3670/19799793778_73e4ff904e_b.jpg",
+   "https://live.staticflickr.com/5795/22655463937_19c4e64827_b.jpg",
    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-bands-og-image-202609?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1787121002930",
+   "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg",
    "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
   "failures": {}
@@ -8485,25 +8242,11 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [
-   {
-    "source": "brand-site",
-    "title": "Discover Oura's health, fitness, and sleep rings | Oura",
-    "sourcePage": "https://ouraring.com/store/rings/oura-ring-4",
-    "originalUrl": "https://ouraring.com/assets/icons/opengraph-400x400.png",
-    "width": null,
-    "height": null,
-    "licence": "© Oura - press/product image, used for a non-commercial student lab demo",
-    "author": "Oura",
-    "attribution": "Image © Oura, from ouraring.com"
-   }
-  ],
-  "failures": {
-   "https://ouraring.com/assets/icons/opengraph-400x400.png": "only 400x400"
-  },
+  "candidates": [],
   "rejected": [
    "https://ouraring.com/assets/icons/opengraph-400x400.png"
-  ]
+  ],
+  "failures": {}
  },
  "W-04-404": {
   "status": "ok",
