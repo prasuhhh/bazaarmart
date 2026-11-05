@@ -19,9 +19,11 @@ const TIMEOUT_MS = 30000;
 const FULL = 800;
 const THUMB = 300;
 const CREAM = '#FAF6EC';
-const SHORTEST_SIDE = 600;
+const SHORTEST_SIDE = 400; // agreed down from 600: the 800 px output is then at most a 2x upscale
 const MAX_BYTES = 150 * 1024;
 const QUALITIES = [80, 70, 60, 50];
+const MAX_UPSCALE = 2;
+const TIGHTEN = new Set(['A-01-103', 'D-03-305']);
 
 const sleep = ms => new Promise(resolve => { setTimeout(resolve, ms); });
 const lastCall = new Map();
@@ -55,6 +57,16 @@ function originalFile(sku, url) {
   const extension = /\.(png|webp|jpe?g)(\?|$)/i.exec(url)?.[1]?.toLowerCase() ?? 'jpg';
   const version = createHash('sha1').update(url).digest('hex').slice(0, 8);
   return new URL(`${sku}-${version}.${extension}`, ORIGINALS);
+}
+
+// Photos with wide empty margins lose them, but never past a 2x enlargement.
+async function tightened(input) {
+  const { data, info } = await sharp(input).rotate().flatten({ background: CREAM }).trim({ threshold: 18 }).png().toBuffer({ resolveWithObject: true });
+  const side = Math.max(info.width, info.height, FULL / MAX_UPSCALE);
+  const pad = (space, before = Math.floor(space / 2)) => [before, space - before];
+  const [left, right] = pad(side - info.width);
+  const [top, bottom] = pad(side - info.height);
+  return sharp(data).extend({ left, right, top, bottom, background: CREAM }).png().toBuffer();
 }
 
 async function square(input, size, quality) {
@@ -91,6 +103,7 @@ async function makeFiles(sku, candidate) {
     if (size && Math.min(size.width, size.height) > Math.min(width, height)) ({ width, height } = size), source = better;
   }
   if (Math.min(width, height) < SHORTEST_SIDE) throw new Error(`only ${width}x${height}`);
+  if (TIGHTEN.has(sku)) source = await tightened(source);
   writeFileSync(new URL(`${sku}.webp`, OUTPUT), await underLimit(source));
   writeFileSync(new URL(`${sku}-thumb.webp`, OUTPUT), await square(source, THUMB, QUALITIES[0]));
   return { width, height };

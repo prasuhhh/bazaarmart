@@ -1821,14 +1821,14 @@
   "failures": {}
  },
  "B-05-505": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.omronhealthcare-ap.com/in/product/12-hem-7120",
+  "originalUrl": "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg",
+  "licence": "© Omron - press/product image, used for a non-commercial student lab demo",
+  "author": "Omron",
+  "attribution": "Image © Omron, from www.omronhealthcare-ap.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -1844,7 +1844,11 @@
   ],
   "failures": {
    "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg": "only 500x500"
-  }
+  },
+  "width": 500,
+  "height": 500,
+  "file": "/products/B-05-505.webp",
+  "processedFrom": "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg"
  },
  "B-05-506": {
   "status": "missing",
@@ -2243,14 +2247,14 @@
   "failures": {}
  },
  "C-03-304": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://secrid.com/en-us/miniwallet-original-black/",
+  "originalUrl": "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870",
+  "licence": "© Secrid - press/product image, used for a non-commercial student lab demo",
+  "author": "Secrid",
+  "attribution": "Image © Secrid, from secrid.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -2266,7 +2270,11 @@
   ],
   "failures": {
    "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870": "only 416x720"
-  }
+  },
+  "width": 416,
+  "height": 720,
+  "file": "/products/C-03-304.webp",
+  "processedFrom": "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870"
  },
  "C-03-305": {
   "status": "ok",
@@ -2433,38 +2441,14 @@
  },
  "C-04-403": {
   "status": "ok",
-  "source": "openverse",
-  "sourcePage": "https://www.flickr.com/photos/8449858@N06/2982700398",
-  "originalUrl": "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg",
-  "licence": "CC BY 2.0",
-  "author": "burgermac",
-  "attribution": "\"Apple plug World travel adapter kit\" by burgermac, CC BY 2.0, via Openverse",
+  "source": "brand-site",
+  "sourcePage": "https://www.apple.com/in/shop/product/mlfr4g/a/world-travel-adapter-kit",
+  "originalUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518",
+  "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
+  "author": "Apple",
+  "attribution": "Image © Apple, from www.apple.com",
   "matchChecked": true,
   "candidates": [
-   {
-    "source": "openverse",
-    "title": "Apple plug World travel adapter kit",
-    "tags": "2008 24 adapter alu apple blanc ikea imac kit late macbook macintosh plug pro travel unibody white world business indoors room technology",
-    "width": 1024,
-    "height": 768,
-    "sourcePage": "https://www.flickr.com/photos/8449858@N06/2982700398",
-    "originalUrl": "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg",
-    "licence": "CC BY 2.0",
-    "author": "burgermac",
-    "attribution": "\"Apple plug World travel adapter kit\" by burgermac, CC BY 2.0, via Openverse"
-   },
-   {
-    "source": "openverse",
-    "title": "Apple & Lenovo",
-    "tags": "adapter apple backfrombarcelona kit lenovo travel world",
-    "width": 1024,
-    "height": 768,
-    "sourcePage": "https://www.flickr.com/photos/16105436@N00/2267690742",
-    "originalUrl": "https://live.staticflickr.com/2288/2267690742_0a870eaf32_b.jpg",
-    "licence": "CC BY 2.0",
-    "author": "Kai Hendry",
-    "attribution": "\"Apple & Lenovo\" by Kai Hendry, CC BY 2.0, via Openverse"
-   },
    {
     "source": "brand-site",
     "title": "World Travel Adapter Kit",
@@ -2477,11 +2461,14 @@
     "attribution": "Image © Apple, from www.apple.com"
    }
   ],
-  "width": 1024,
-  "height": 768,
+  "width": 1200,
+  "height": 630,
   "file": "/products/C-04-403.webp",
-  "processedFrom": "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg",
-  "failures": {}
+  "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518",
+  "failures": {},
+  "rejected": [
+   "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg"
+  ]
  },
  "C-04-404": {
   "status": "ok",
@@ -2746,7 +2733,10 @@
   ],
   "failures": {
    "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999": "only 1200x492"
-  }
+  },
+  "rejected": [
+   "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999"
+  ]
  },
  "C-05-507": {
   "status": "missing",
@@ -3370,8 +3360,8 @@
  "D-03-305": {
   "status": "ok",
   "source": "brand-site",
-  "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g50f-27-inch-180hz-qhd-ls27fg502ewxxl/",
-  "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373",
+  "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g55c-27-inch-165hz-curved-qhd-ls27cg550ewxxl/",
+  "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257",
   "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
   "author": "Samsung",
   "attribution": "Image © Samsung, from www.samsung.com",
@@ -3379,9 +3369,9 @@
   "candidates": [
    {
     "source": "brand-site",
-    "title": "Buy 68.5 cm (27) Odyssey Gaming Monitor LS27FG502EW  | Samsung India",
-    "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g50f-27-inch-180hz-qhd-ls27fg502ewxxl/",
-    "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373",
+    "title": "Buy 68.5 cm G55C QHD Curved Gaming Monitor | Samsung India",
+    "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g55c-27-inch-165hz-curved-qhd-ls27cg550ewxxl/",
+    "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257",
     "width": null,
     "height": null,
     "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
@@ -3395,7 +3385,10 @@
   "width": 1300,
   "height": 1038,
   "file": "/products/D-03-305.webp",
-  "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373"
+  "rejected": [
+   "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373"
+  ],
+  "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257"
  },
  "D-03-306": {
   "status": "missing",
@@ -3410,14 +3403,14 @@
   "failures": {}
  },
  "D-03-307": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://raindesigninc.com/blogs/press/forbes-awards-mstand360-best-minimalist-laptop-stand-and-mbar-pro-best-portable-laptop-stand",
+  "originalUrl": "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483",
+  "licence": "© Rain Design - press/product image, used for a non-commercial student lab demo",
+  "author": "Rain Design",
+  "attribution": "Image © Rain Design, from raindesigninc.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -3433,7 +3426,11 @@
   ],
   "failures": {
    "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483": "only 1140x563"
-  }
+  },
+  "width": 1140,
+  "height": 563,
+  "file": "/products/D-03-307.webp",
+  "processedFrom": "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483"
  },
  "D-04-401": {
   "status": "missing",
@@ -4493,14 +4490,14 @@
   "failures": {}
  },
  "G-05-501": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.greensoul.online/products/renewed-monster-t-gaming-chair",
+  "originalUrl": "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840",
+  "licence": "© Green Soul - press/product image, used for a non-commercial student lab demo",
+  "author": "Green Soul",
+  "attribution": "Image © Green Soul, from www.greensoul.online",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -4516,7 +4513,11 @@
   ],
   "failures": {
    "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840": "only 600x511"
-  }
+  },
+  "width": 600,
+  "height": 511,
+  "file": "/products/G-05-501.webp",
+  "processedFrom": "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840"
  },
  "G-05-502": {
   "status": "ok",
@@ -4946,14 +4947,14 @@
   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Nest_Mini_-_202001_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "L-02-205": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://store.google.com/be/config/nest_hub_2nd_gen?hl=nl",
+  "originalUrl": "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff",
+  "licence": "© Google - press/product image, used for a non-commercial student lab demo",
+  "author": "Google",
+  "attribution": "Image © Google, from store.google.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -4974,7 +4975,11 @@
   ],
   "failures": {
    "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff": "only 544x434"
-  }
+  },
+  "width": 512,
+  "height": 408,
+  "file": "/products/L-02-205.webp",
+  "processedFrom": "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff"
  },
  "L-02-206": {
   "status": "ok",
@@ -5278,14 +5283,14 @@
   "failures": {}
  },
  "L-04-404": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://shop.ttkprestige.com/prestige-high-power-750-w-juicer-mixer-grinder.html",
+  "originalUrl": "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450",
+  "licence": "© Prestige - press/product image, used for a non-commercial student lab demo",
+  "author": "Prestige",
+  "attribution": "Image © Prestige, from shop.ttkprestige.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -5301,7 +5306,11 @@
   ],
   "failures": {
    "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450": "only 450x450"
-  }
+  },
+  "width": 450,
+  "height": 450,
+  "file": "/products/L-04-404.webp",
+  "processedFrom": "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450"
  },
  "L-04-405": {
   "status": "ok",
@@ -7582,7 +7591,10 @@
   ],
   "failures": {
    "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff": "only 720x572"
-  }
+  },
+  "rejected": [
+   "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff"
+  ]
  },
  "W-01-105": {
   "status": "ok",
@@ -7681,14 +7693,14 @@
   "failures": {}
  },
  "W-02-202": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://store.google.com/in/product/fitbit_charge_6?hl=en-IN",
+  "originalUrl": "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff",
+  "licence": "© Fitbit - press/product image, used for a non-commercial student lab demo",
+  "author": "Fitbit",
+  "attribution": "Image © Fitbit, from store.google.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "brand-site",
@@ -7704,7 +7716,11 @@
   ],
   "failures": {
    "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff": "only 740x592"
-  }
+  },
+  "width": 512,
+  "height": 410,
+  "file": "/products/W-02-202.webp",
+  "processedFrom": "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff"
  },
  "W-02-203": {
   "status": "ok",
@@ -8062,14 +8078,14 @@
   "failures": {}
  },
  "W-04-401": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
+  "status": "ok",
+  "source": "brand-press",
+  "sourcePage": "https://news.samsung.com/za/meet-the-galaxy-ring-a-personalised-health-care-device-encased-in-an-elegant-charging-case-now-available-in-south-africa",
+  "originalUrl": "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg",
+  "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
+  "author": "Samsung",
+  "attribution": "Image © Samsung, from news.samsung.com",
+  "matchChecked": true,
   "candidates": [
    {
     "source": "openverse",
@@ -8142,7 +8158,11 @@
   ],
   "failures": {
    "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg": "only 728x485"
-  }
+  },
+  "width": 728,
+  "height": 485,
+  "file": "/products/W-04-401.webp",
+  "processedFrom": "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg"
  },
  "W-04-402": {
   "status": "missing",
@@ -8183,7 +8203,10 @@
   ],
   "failures": {
    "https://ouraring.com/assets/icons/opengraph-400x400.png": "only 400x400"
-  }
+  },
+  "rejected": [
+   "https://ouraring.com/assets/icons/opengraph-400x400.png"
+  ]
  },
  "W-04-404": {
   "status": "ok",

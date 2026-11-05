@@ -259,7 +259,12 @@ async function main() {
   console.log(`Brand pages for ${Object.keys(found).length} products. Sites refusing: ${outcomes.filter(o => o.skipped).length} of ${outcomes.length}.`);
 }
 
-if (process.argv[2] === '--urls') {
+if (process.argv[2] === '--page') {
+  mkdirSync(CACHE, { recursive: true });
+  const site = new Site(new URL(process.argv[3]).origin);
+  await site.readRobots();
+  console.log(site.allowed(process.argv[3]) ? await site.imageOf(process.argv[3]) : 'blocked by robots.txt');
+} else if (process.argv[2] === '--urls') {
   mkdirSync(CACHE, { recursive: true });
   const urls = await new Site(process.argv[3]).productUrls();
   console.log(urls.length);

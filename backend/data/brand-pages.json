@@ -681,17 +681,6 @@
   "author": "boAt",
   "attribution": "Image © boAt, from www.boat-lifestyle.com"
  },
- "C-04-403": {
-  "source": "brand-site",
-  "title": "World Travel Adapter Kit",
-  "sourcePage": "https://www.apple.com/in/shop/product/mlfr4g/a/world-travel-adapter-kit",
-  "originalUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518",
-  "width": null,
-  "height": null,
-  "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
-  "author": "Apple",
-  "attribution": "Image © Apple, from www.apple.com"
- },
  "B-03-307": {
   "source": "brand-site",
   "title": "ER-GN30-K541 Wet &amp; Dry Nose Hair Trimmer | Panasonic AU",
@@ -1544,17 +1533,6 @@
   "title": "Buy Galaxy Buds3 Pro (White) - Price & Specs | Samsung India",
   "sourcePage": "https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds3-pro-white-sm-r630nzwainu/",
   "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzwainu-thumb-542134838",
-  "width": null,
-  "height": null,
-  "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
-  "author": "Samsung",
-  "attribution": "Image © Samsung, from www.samsung.com"
- },
- "D-03-305": {
-  "source": "brand-site",
-  "title": "Buy 68.5 cm (27) Odyssey Gaming Monitor LS27FG502EW  | Samsung India",
-  "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g50f-27-inch-180hz-qhd-ls27fg502ewxxl/",
-  "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373",
   "width": null,
   "height": null,
   "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
@@ -2490,6 +2468,28 @@
   "title": "Galaxy Watch Ultra Marine Band Green | Samsung India",
   "sourcePage": "https://www.samsung.com/in/mobile-accessories/galaxy-watch-ultra-marine-band-green-et-snl70mkegin/",
   "originalUrl": "https://resources.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/the-frame-bezel-popup-modern-pc.jpg?$636_300_JPG$",
+  "width": null,
+  "height": null,
+  "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
+  "author": "Samsung",
+  "attribution": "Image © Samsung, from www.samsung.com"
+ },
+ "C-04-403": {
+  "source": "brand-site",
+  "title": "World Travel Adapter Kit",
+  "sourcePage": "https://www.apple.com/in/shop/product/mlfr4g/a/world-travel-adapter-kit",
+  "originalUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518",
+  "width": null,
+  "height": null,
+  "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
+  "author": "Apple",
+  "attribution": "Image © Apple, from www.apple.com"
+ },
+ "D-03-305": {
+  "source": "brand-site",
+  "title": "Buy 68.5 cm G55C QHD Curved Gaming Monitor | Samsung India",
+  "sourcePage": "https://www.samsung.com/in/monitors/gaming/odyssey-g5-g55c-27-inch-165hz-curved-qhd-ls27cg550ewxxl/",
+  "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257",
   "width": null,
   "height": null,
   "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",

@@ -261,7 +261,7 @@
  },
  "C-04-403": {
   "verdict": "correct",
-  "url": "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg"
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518"
  },
  "C-04-404": {
   "verdict": "correct",
@@ -349,7 +349,7 @@
  },
  "D-03-305": {
   "verdict": "correct",
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257"
  },
  "D-04-401": {
   "verdict": "wrong",
@@ -520,8 +520,8 @@
   "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Nest_Mini_-_202001_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
  },
  "L-02-205": {
-  "verdict": "wrong",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Google_Nest_Hub.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "verdict": "correct",
+  "url": "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff"
  },
  "L-02-206": {
   "verdict": "correct",
@@ -796,8 +796,8 @@
   "url": "http://spigen.in/cdn/shop/files/title_web_apple_watch_ultra_duraproarmor_01.jpg?v=1756702218"
  },
  "W-04-401": {
-  "verdict": "wrong",
-  "url": "https://live.staticflickr.com/65535/49789132321_236f4249e1_b.jpg"
+  "verdict": "correct",
+  "url": "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg"
  },
  "W-04-402": {
   "verdict": "wrong",
@@ -862,5 +862,41 @@
  "W-04-407": {
   "verdict": "correct",
   "url": "https://myjiostatic.cdn.jio.com/cms/assets/jiotag2ndgeneration/banner_desktop.webp"
+ },
+ "B-05-505": {
+  "verdict": "correct",
+  "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg"
+ },
+ "C-03-304": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870"
+ },
+ "C-05-506": {
+  "verdict": "wrong",
+  "url": "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999"
+ },
+ "D-03-307": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483"
+ },
+ "G-05-501": {
+  "verdict": "correct",
+  "url": "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840"
+ },
+ "L-04-404": {
+  "verdict": "correct",
+  "url": "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450"
+ },
+ "W-01-104": {
+  "verdict": "wrong",
+  "url": "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff"
+ },
+ "W-02-202": {
+  "verdict": "correct",
+  "url": "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff"
+ },
+ "W-04-403": {
+  "verdict": "wrong",
+  "url": "https://ouraring.com/assets/icons/opengraph-400x400.png"
  }
 }
