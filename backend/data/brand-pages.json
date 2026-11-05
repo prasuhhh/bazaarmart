@@ -2693,5 +2693,27 @@
   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
   "author": "Levi's",
   "attribution": "Image © Levi's, from levi.in"
+ },
+ "G-02-206": {
+  "source": "brand-site",
+  "title": "Nuka-Cola™ HS80 RGB WIRELESS",
+  "sourcePage": "https://www.corsair.com/us/en/p/gaming-headsets/ca-9011236-nuk/nuka-cola-hs80-rgb-wireless-ca-9011236-nuk",
+  "originalUrl": "https://assets.corsair.com/image/upload/v1765428735/products/nuka-cola/gallery/hs80/nukacola-hs80_01.png",
+  "width": null,
+  "height": null,
+  "licence": "© Corsair - press/product image, used for a non-commercial student lab demo",
+  "author": "Corsair",
+  "attribution": "Image © Corsair, from www.corsair.com"
+ },
+ "G-05-506": {
+  "source": "brand-site",
+  "title": "MM300 Anti-Fray Cloth Gaming Mouse Pad — Extended",
+  "sourcePage": "https://www.corsair.com/us/en/p/mousepads/ch-9000108-ww/mm300-anti-fray-cloth-gaming-mouse-pad-extended-ch-9000108-ww",
+  "originalUrl": "https://res.cloudinary.com/corsair-pwa/image/upload/c_scale%2Cq_auto%2Cw_96/products/Gaming-Mousepads/CH-9000108-WW/Gallery/MM300_001.png",
+  "width": null,
+  "height": null,
+  "licence": "© Corsair - press/product image, used for a non-commercial student lab demo",
+  "author": "Corsair",
+  "attribution": "Image © Corsair, from www.corsair.com"
  }
 }

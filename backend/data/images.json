@@ -4175,6 +4175,9 @@
   "attribution": null,
   "matchChecked": false,
   "candidates": [],
+  "rejected": [
+   "https://assets.corsair.com/image/upload/v1765428735/products/nuka-cola/gallery/hs80/nukacola-hs80_01.png"
+  ],
   "failures": {}
  },
  "G-03-301": {
@@ -4704,8 +4707,22 @@
   "author": null,
   "attribution": null,
   "matchChecked": false,
-  "candidates": [],
-  "failures": {}
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "MM300 Anti-Fray Cloth Gaming Mouse Pad — Extended",
+    "sourcePage": "https://www.corsair.com/us/en/p/mousepads/ch-9000108-ww/mm300-anti-fray-cloth-gaming-mouse-pad-extended-ch-9000108-ww",
+    "originalUrl": "https://res.cloudinary.com/corsair-pwa/image/upload/c_scale%2Cq_auto%2Cw_96/products/Gaming-Mousepads/CH-9000108-WW/Gallery/MM300_001.png",
+    "width": null,
+    "height": null,
+    "licence": "© Corsair - press/product image, used for a non-commercial student lab demo",
+    "author": "Corsair",
+    "attribution": "Image © Corsair, from www.corsair.com"
+   }
+  ],
+  "failures": {
+   "https://res.cloudinary.com/corsair-pwa/image/upload/c_scale%2Cq_auto%2Cw_96/products/Gaming-Mousepads/CH-9000108-WW/Gallery/MM300_001.png": "only 96x59"
+  }
  },
  "L-01-101": {
   "status": "missing",
@@ -5727,6 +5744,7 @@
    "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.31.661.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/d/d1/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.45.561.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/d/da/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.05.200.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "https://upload.wikimedia.org/wikipedia/commons/d/da/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.05.35.661.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/d/db/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.01.00.700.png",
    "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.07.100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "https://upload.wikimedia.org/wikipedia/commons/f/ff/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.00.32.600.png"

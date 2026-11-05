@@ -68,7 +68,7 @@ Moved to the placeholder because the photo was a different product: B-04-406 (ph
 
 ## Rebuild review
 
-A rebuild from a clean checkout found 10 new photos. Each was checked on a contact sheet, then every other search result for those products was checked too, so a later rebuild doesn't bring up more of them. That was 163 results in all, and 1 photo was accepted.
+A rebuild from a clean checkout found 10 new photos. Each was checked on a contact sheet, then the other search results for those products were checked too, so a later rebuild doesn't bring up more of them. That was 163 results, and 1 photo was accepted. The next rebuild found 2 more, G-02-206 and another P-01-103 video frame, and both were rejected.
 
 Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body, titled as the fifth generation on Commons.
 
@@ -78,6 +78,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 | C-04-401 | Amazon Kindle Paperwhite (2024) | Paperwhite 3 | Older generation. The other results are 2013 models or close-ups |
 | G-01-103 | Xbox Wireless Controller | Close-up of the A, B, X and Y buttons | Shows the buttons, not the controller. The maker's image is a 216 x 46 logo |
 | P-01-103 | Samsung Galaxy S25 | Video still of three phones under a caption | Shows the whole series with captions. Samsung's press image also shows three models together |
+| G-02-206 | Corsair HS80 RGB Wireless Headset | Nuka-Cola limited edition HS80 | A themed licensed edition, not the listed headset |
 | P-01-105 | Google Pixel 9 | Pixel 9 Pro XL | Different model. The results labelled Pixel 9 are flat drawings, not photos |
 | P-01-107 | Nothing Phone (3a) | Nothing Phone (1) | Different model. The other results are the Phone (1), (2) and (3) |
 | P-04-401 | Anker Power Bank (20,000 mAh, 45 W, Dual Built-in USB-C Cables) | Box of a 4,500 mAh Anker power bank | Different model. One other result is an unnamed Anker power bank |
@@ -86,7 +87,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 
 ## Missing, by reason
 
-### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (44)
+### Photos found, all rejected by eye (wrong model, logo or lifestyle shot) (45)
 
 - A-01-101 Apple AirPods Pro 2 (USB-C)
 - A-01-105 Nothing Ear (a)
@@ -133,7 +134,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - W-03-305 Samsung Galaxy Watch Sport Band (20 mm)
 - W-04-402 Ultrahuman Ring Air
 
-### Photo found, under 400 px or not usable (23)
+### Photo found, under 400 px or not usable (24)
 
 - A-01-106 JBL Tune 230NC TWS
 - A-04-402 JBL Bar 5.0 MultiBeam
@@ -145,6 +146,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - D-03-301 Dell UltraSharp U2723QE 27-inch 4K USB-C Hub Monitor
 - D-03-302 Dell S2421HN 24-inch Full HD Monitor
 - G-01-105 Nintendo Joy-Con (L)/(R) Pair
+- G-05-506 Corsair MM300 PRO Extended Mouse Pad
 - L-01-103 Philips Smart Wi-Fi LED Bulb 9W B22
 - P-03-304 Anker Nano Charger (30W)
 - P-03-305 Belkin BoostCharge Pro 65W Dual USB-C GaN Charger
@@ -167,6 +169,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - C-04-406 Wildcraft Expedition DUF 35 Duffel Backpack
 - C-05-504 Owala FreeSip Bottle (24 oz)
 - D-05-507 Anker 11-in-1 USB-C Docking Station
+- G-02-206 Corsair HS80 RGB Wireless Headset
 - G-03-307 Redragon K552 Kumara
 - G-04-406 SteelSeries Rival 3 Gen 2
 - L-04-403 Nespresso Essenza Mini Coffee Machine
@@ -178,7 +181,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - S-03-306 Adidas Tiro 24 Slim Training Pants
 - W-02-201 Huawei Band 9
 
-### Maker site refused access (16)
+### Maker site refused access (14)
 
 - A-04-403 Sony HT-S20R 5.1 Soundbar
 - B-01-106 La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+ (50 ml)
@@ -188,8 +191,6 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - C-05-507 Contigo Autoseal West Loop Travel Mug (470 ml)
 - D-03-306 Ergotron LX Desk Mount Monitor Arm
 - D-04-404 Elgato Key Light Air
-- G-02-206 Corsair HS80 RGB Wireless Headset
-- G-05-506 Corsair MM300 PRO Extended Mouse Pad
 - L-01-104 Wipro 9W B22 Wi-Fi Smart LED Bulb (NS9400)
 - L-03-301 LEGO Icons Bonsai Tree 10281
 - L-03-302 LEGO Icons Orchid 10311

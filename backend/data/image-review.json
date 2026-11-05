@@ -970,5 +970,9 @@
  "S-05-502": {
   "verdict": "correct",
   "url": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048"
+ },
+ "G-02-206": {
+  "verdict": "wrong",
+  "url": "https://assets.corsair.com/image/upload/v1765428735/products/nuka-cola/gallery/hs80/nukacola-hs80_01.png"
  }
 }
