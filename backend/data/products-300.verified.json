@@ -35,11 +35,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGD74?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1755025001125"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -93,12 +89,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/A-01-102.webp",
-   "failures": {},
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -157,14 +148,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "failures": {
-    "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzwainu-thumb-542134838": "only 330x330"
-   },
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/A-01-103.webp",
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzwainu-thumb-542134838"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -217,8 +201,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -270,18 +253,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nothing_ear_%281%29_earphone_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/4/46/Nothing_ear_%281%29_earphone_%28inner%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/8/89/Nothing_ear_%281%29_earphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Nothing_ear_%281%29_earphones_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nothing_ear_%281%29_earphones_%28inner_-_black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nothing_ear_%281%29_open_wireless_charging_case_%28black%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nothing_ear_%281%29_accessories.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -334,10 +306,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://iprsoftwaremedia.com/214/files/20217/612cce5db3aed343631f89b3_2.%20JBL_Tune_130NC%20TWS_Lifestyle/2.%20JBL_Tune_130NC%20TWS_Lifestyle_mid.jpg?v=f4834dc3-98e5-4646-ab1b-519dec005f96": "only 750x380"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -392,12 +361,7 @@
    "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
    "author": "boAt",
    "attribution": "Image © boAt, from www.boat-lifestyle.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/A-01-107.webp",
-   "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/files/AD141-FI_Grey01.png?v=1698391770",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -449,12 +413,7 @@
    "licence": "© Sony - press/product image, used for a non-commercial student lab demo",
    "author": "Sony",
    "attribution": "Image © Sony, from www.sony.co.in",
-   "matchChecked": true,
-   "width": 2515,
-   "height": 1320,
-   "file": "/products/A-02-201.webp",
-   "processedFrom": "https://www.sony.co.in/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -505,11 +464,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://assets.bosecreative.com/transform/a1c57de9-609e-40d9-b09e-211e3d8fafc0/QCUH-VictorSolomon_Secondary_Hero_Desktop_2716x1506?io=width:1200,height:630,transform:fill"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -563,12 +518,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "SimonWaldherr",
    "attribution": "\"Apple AirPods Max 5.jpg\" by SimonWaldherr, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 6048,
-   "height": 4838,
-   "file": "/products/A-02-203.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Apple_AirPods_Max_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -620,12 +570,7 @@
    "licence": "© Sennheiser - press/product image, used for a non-commercial student lab demo",
    "author": "Sennheiser",
    "attribution": "Image © Sennheiser, from us.sennheiser-hearing.com",
-   "matchChecked": true,
-   "width": 2400,
-   "height": 2400,
-   "file": "/products/A-02-204.webp",
-   "processedFrom": "http://us.sennheiser-hearing.com/cdn/shop/files/MOMENTUM_4_Black.jpg?v=1759511980",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -678,12 +623,7 @@
    "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
    "author": "boAt",
    "attribution": "Image © boAt, from www.boat-lifestyle.com",
-   "matchChecked": true,
-   "width": 2560,
-   "height": 2560,
-   "file": "/products/A-02-205.webp",
-   "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -744,12 +684,7 @@
    "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
    "author": "Bose",
    "attribution": "Image © Bose, from www.bose.com",
-   "matchChecked": true,
-   "width": 816,
-   "height": 609,
-   "file": "/products/A-02-206.webp",
-   "processedFrom": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -810,12 +745,7 @@
    "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
    "author": "boAt",
    "attribution": "Image © boAt, from www.boat-lifestyle.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/A-02-207.webp",
-   "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800.png?v=1673002681",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -867,14 +797,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://live.staticflickr.com/1675/23753555613_f9077f8869_b.jpg",
-    "https://live.staticflickr.com/1689/24018300592_e19de6c8dc_b.jpg"
-   ],
-   "failures": {
-    "https://iprsoftwaremedia.com/214/files/20217/612ccc1ab3aed343661f8c58_5.%20JBL_FLIP6_BLUE_LIFESYLE/5.%20JBL_FLIP6_BLUE_LIFESYLE_mid.jpg?v=ff3a93bd-5c1b-4304-962d-c13146d2364a": "only 750x380"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -926,13 +849,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://live.staticflickr.com/1640/23960965610_a5b58f12c1_b.jpg"
-   ],
-   "failures": {
-    "https://iprsoftwaremedia.com/214/files/20210/5ff4db7b2cfac225067e94de_JBL%20Charge%205/JBL%20Charge%205_mid.jpg?v=7042567c-a40f-4c82-b1bc-6949fcc93f6a": "only 750x380"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -986,12 +903,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "TaurusEmerald",
    "attribution": "\"Bose SoundLink Flex Speaker.jpg\" by TaurusEmerald, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 3810,
-   "height": 2359,
-   "file": "/products/A-03-303.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bose_SoundLink_Flex_Speaker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1046,12 +958,7 @@
    "licence": "© Marshall - press/product image, used for a non-commercial student lab demo",
    "author": "Marshall",
    "attribution": "Image © Marshall, from www.marshall.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1600,
-   "file": "/products/A-03-304.webp",
-   "processedFrom": "https://images.ctfassets.net/javen7msabdh/JC7uarI9Ndr7OmV3r1D0n/90253470635d356b544b19732dbdac91/emberton-ii-front_side-desktop-1.jpeg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1104,12 +1011,7 @@
    "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
    "author": "Bose",
    "attribution": "Image © Bose, from www.bose.com",
-   "matchChecked": true,
-   "width": 816,
-   "height": 609,
-   "file": "/products/A-03-305.webp",
-   "processedFrom": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1168,12 +1070,7 @@
    "licence": "© Marshall - press/product image, used for a non-commercial student lab demo",
    "author": "Marshall",
    "attribution": "Image © Marshall, from www.marshall.com",
-   "matchChecked": true,
-   "width": 960,
-   "height": 960,
-   "file": "/products/A-03-306.webp",
-   "processedFrom": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1234,12 +1131,7 @@
    "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
    "author": "boAt",
    "attribution": "Image © boAt, from www.boat-lifestyle.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/A-03-307.webp",
-   "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/products/74a6b20d-9842-49da-b279-022812b81e1f.png?v=1673001663",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1291,12 +1183,7 @@
    "licence": "© Sonos - press/product image, used for a non-commercial student lab demo",
    "author": "Sonos",
    "attribution": "Image © Sonos, from www.sonos.com",
-   "matchChecked": true,
-   "width": 3000,
-   "height": 1834,
-   "file": "/products/A-04-401.webp",
-   "processedFrom": "https://media.sonos.com/images/znqtjj88/production/c79156fe93547d1b0a993dc1fb7b381d8773737a-3000x1834.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1345,10 +1232,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://iprsoftwaremedia.com/214/files/20210/5ff4da702cfac224e47e93da_JBL%20Bar%205.0%20MultiBeam/JBL%20Bar%205.0%20MultiBeam_mid.jpg?v=cb71a014-d218-48a3-8c88-f59453e6acfe": "only 750x380"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1397,8 +1281,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1448,10 +1331,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://nwzimg.wezhan.net/contents/sitefiles3600/18000638/images/5250649.png": "only 260x260"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1510,12 +1390,7 @@
    "licence": "© AudioQuest - press/product image, used for a non-commercial student lab demo",
    "author": "AudioQuest",
    "attribution": "Image © AudioQuest, from www.audioquest.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1200,
-   "file": "/products/A-04-405.webp",
-   "processedFrom": "http://www.audioquest.com/cdn/shop/articles/requiem-for-a-dac-dragonfly-cobalt-9500862.jpg?crop=center&height=1200&v=1769723469&width=1200",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1566,12 +1441,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/A-04-406.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MU7E2?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1539385665732",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1624,12 +1494,7 @@
    "licence": "© Shure - press/product image, used for a non-commercial student lab demo",
    "author": "Shure",
    "attribution": "Image © Shure, from www.shure.com",
-   "matchChecked": true,
-   "width": 1140,
-   "height": 820,
-   "file": "/products/A-05-501.webp",
-   "processedFrom": "https://products.shureweb.eu/shure_product_db/product_main_images/files/31e/242/4b-/setcard/8f8ab8329c1107e0758c041654d7cc30.jpeg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1681,12 +1546,7 @@
    "licence": "CC0",
    "author": "Guillaume Pasquier from Geneva",
    "attribution": "\"Blue Yeti Blackout USB microphone (51844234538).jpg\" by Guillaume Pasquier from Geneva, CC0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 3024,
-   "height": 4032,
-   "file": "/products/A-05-502.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/21/Blue_Yeti_Blackout_USB_microphone_%2851844234538%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1737,12 +1597,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Martin Michlmayr",
    "attribution": "\"Rode NT-USB Mini microphone 001.jpg\" by Martin Michlmayr, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 4624,
-   "height": 3468,
-   "file": "/products/A-05-503.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rode_NT-USB_Mini_microphone_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1793,12 +1648,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "-stk",
    "attribution": "\"Rode Wireless Go II Set.jpg\" by -stk, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 6022,
-   "height": 4016,
-   "file": "/products/A-05-504.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rode_Wireless_Go_II_Set.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1849,12 +1699,7 @@
    "licence": "© DJI - press/product image, used for a non-commercial student lab demo",
    "author": "DJI",
    "attribution": "Image © DJI, from store.dji.com",
-   "matchChecked": true,
-   "width": 1280,
-   "height": 1280,
-   "file": "/products/A-05-505.webp",
-   "processedFrom": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/c17064092388fdfb18ea7f1ec0dd0ef0@ultra.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1905,12 +1750,7 @@
    "licence": "© Zoom - press/product image, used for a non-commercial student lab demo",
    "author": "Zoom",
    "attribution": "Image © Zoom, from zoomcorp.com",
-   "matchChecked": true,
-   "width": 643,
-   "height": 1500,
-   "file": "/products/A-05-506.webp",
-   "processedFrom": "https://zoomcorp.com/media/images/Zoom_H1n_HandyRecorder.original.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -1959,11 +1799,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://oss.boyamic.com/uploads/images/20241211/20241211164742675.png"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2015,12 +1851,7 @@
    "licence": "CC BY-SA 2.0",
    "author": "ekosunaryo",
    "attribution": "\"CeraVe Moisturizing Cream 19 Ounce Daily Face and Body Moisturizer for Dry Skin\" by ekosunaryo, CC BY-SA 2.0, via Openverse",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/B-01-101.webp",
-   "processedFrom": "https://live.staticflickr.com/7822/46403608295_4ae8f02582_b.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2072,12 +1903,7 @@
    "licence": "© Cetaphil - press/product image, used for a non-commercial student lab demo",
    "author": "Cetaphil",
    "attribution": "Image © Cetaphil, from www.cetaphil.in",
-   "matchChecked": true,
-   "width": 900,
-   "height": 900,
-   "file": "/products/B-01-102.webp",
-   "processedFrom": "https://www.cetaphil.in/dw/image/v2/bggn_prd/on/demandware.static/-/Sites-galderma-in-m-catalog/default/dw311450bb/GSC%20Revive%20A+/236%20ml/ATF/1.FoP-236.png?sw=900&sh=900&sm=fit&q=85",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2129,12 +1955,7 @@
    "licence": "© The Ordinary - press/product image, used for a non-commercial student lab demo",
    "author": "The Ordinary",
    "attribution": "Image © The Ordinary, from theordinary.com",
-   "matchChecked": true,
-   "width": 1150,
-   "height": 920,
-   "file": "/products/B-01-103.webp",
-   "processedFrom": "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw665025d6/theordinary/homepage/slotA/heroes-slot-a-mobile.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2186,12 +2007,7 @@
    "licence": "© Minimalist - press/product image, used for a non-commercial student lab demo",
    "author": "Minimalist",
    "attribution": "Image © Minimalist, from global.beminimalist.co",
-   "matchChecked": true,
-   "width": 720,
-   "height": 1046,
-   "file": "/products/B-01-104.webp",
-   "processedFrom": "http://global.beminimalist.co/cdn/shop/products/NewNia10_720x_30d37e0e-0147-4caa-8160-449c2bbefbe1.webp?v=1681190554",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2243,12 +2059,7 @@
    "licence": "© Neutrogena - press/product image, used for a non-commercial student lab demo",
    "author": "Neutrogena",
    "attribution": "Image © Neutrogena, from www.neutrogena.in",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/B-01-105.webp",
-   "processedFrom": "https://images.ctfassets.net/3zfcttr0ztpr/2KI14YhORnDh2caKjEM5q0/1448273144ed4727c6b50bc3d9e3e5d3/water_gel_50g_front-en-in",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2298,8 +2109,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2349,11 +2159,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://assets.beiersdorf.com/-/media/images/5/3/0/2/019f8a3ee8e671db90cd3ee5e97595e9-print.jpg?mh=1200&mw=1200&ctx=IN&rx=0&ry=384&rw=2020&rh=1057&hash=EDC12C0197F7C1685D46480E14871019"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2408,12 +2214,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "F ASTILY",
    "attribution": "\"Dyson Supersonic Hair Dryer 1 2017-01-28.jpg\" by F ASTILY, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 4032,
-   "height": 3024,
-   "file": "/products/B-02-201.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dyson_Supersonic_Hair_Dryer_1_2017-01-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2465,12 +2266,7 @@
    "licence": "© Moroccanoil - press/product image, used for a non-commercial student lab demo",
    "author": "Moroccanoil",
    "attribution": "Image © Moroccanoil, from www.moroccanoil.com",
-   "matchChecked": true,
-   "width": 1795,
-   "height": 2286,
-   "file": "/products/B-02-202.webp",
-   "processedFrom": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2529,12 +2325,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/B-02-203.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/ef2f4e053f404af59958ae7d014d8c71?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2584,11 +2375,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://olaplex.com/cdn/shop/articles/2025_No3PLUS_Model_Solo_Nina_0806_ExtraWide_5eee29a3-470a-4c3c-bca5-d85981071df5.jpg?v=1791304979"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2640,12 +2427,7 @@
    "licence": "© Moroccanoil - press/product image, used for a non-commercial student lab demo",
    "author": "Moroccanoil",
    "attribution": "Image © Moroccanoil, from www.moroccanoil.com",
-   "matchChecked": true,
-   "width": 1795,
-   "height": 2286,
-   "file": "/products/B-02-205.webp",
-   "processedFrom": "http://www.moroccanoil.com/cdn/shop/files/153_TREATMENT_ORIGINAL_100mL_v3.jpg?v=1774983361",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2696,11 +2478,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/banners/hair-care/haircare_total-repair-5.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2750,11 +2528,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://mamaearth.in/cdn/shop/files/mamaearth-og-image.jpg?v=1787645067"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2807,12 +2581,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/B-03-301.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/1c05ecd419764de39f09af8d0077f6ca?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2867,12 +2636,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/B-03-302.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/310e7762fede46cdb4cdb30900fa2ea9?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2929,8 +2693,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -2981,10 +2744,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://cdn11.bigcommerce.com/s-dukhrgn8mp/products/331/images/1825/gillette_proglide_plp-razor-closeup_1280x1280__20253.1615264014.386.513.jpg?c=2": "only 386x386"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3037,12 +2797,7 @@
    "licence": "© Xiaomi - press/product image, used for a non-commercial student lab demo",
    "author": "Xiaomi",
    "attribution": "Image © Xiaomi, from www.mi.com",
-   "matchChecked": true,
-   "width": 800,
-   "height": 800,
-   "file": "/products/B-03-305.webp",
-   "processedFrom": "https://i03.appmifile.com/776_item_in/04/07/2024/110249879a690ea8234ab9f91f82bbc2.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3095,12 +2850,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/B-03-306.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/b3d1c5b707174a44b943ae7d00c3e18e?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3153,12 +2903,7 @@
    "licence": "© Panasonic - press/product image, used for a non-commercial student lab demo",
    "author": "Panasonic",
    "attribution": "Image © Panasonic, from www.panasonic.com",
-   "matchChecked": true,
-   "width": 3750,
-   "height": 2000,
-   "file": "/products/B-03-307.webp",
-   "processedFrom": "https://panasonic.com/content/dam/panasonic/au/en/pim/dam/ER/ER-GN3/ER-GN30/ast-1771328.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3209,10 +2954,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://images.openbeautyfacts.org/images/products/360/734/272/7120/front_de.7.full.jpg": "only 272x584"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3265,12 +3007,7 @@
    "licence": "CC BY-SA 3.0",
    "author": "Open Beauty Facts contributors",
    "attribution": "\"CK one\" by Open Beauty Facts contributors, CC BY-SA 3.0, via Open Beauty Facts",
-   "matchChecked": true,
-   "failures": {},
-   "width": 1000,
-   "height": 1333,
-   "file": "/products/B-04-402.webp",
-   "processedFrom": "https://images.openbeautyfacts.org/images/products/000/008/279/5622/front_fr.3.full.jpg"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3323,12 +3060,7 @@
    "licence": "© Dior - press/product image, used for a non-commercial student lab demo",
    "author": "Dior",
    "attribution": "Image © Dior, from www.dior.com",
-   "matchChecked": true,
-   "width": 1850,
-   "height": 2000,
-   "file": "/products/B-04-403.webp",
-   "processedFrom": "https://www.dior.com/on/demandware.static/-/Sites-master_dior/default/dw9507a7bb/Y0685240/Y0685240_F068524009_E01_GHC.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3378,11 +3110,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://images.openbeautyfacts.org/images/products/000/830/912/4568/front_xx.6.full.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3432,8 +3160,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3486,12 +3213,7 @@
    "licence": "© Versace - press/product image, used for a non-commercial student lab demo",
    "author": "Versace",
    "attribution": "Image © Versace, from www.versace.com",
-   "matchChecked": true,
-   "width": 850,
-   "height": 1063,
-   "file": "/products/B-04-406.webp",
-   "processedFrom": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3542,8 +3264,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3597,12 +3318,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/B-05-501.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/3647e799703048eebad8ac5e004b972c?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3658,12 +3374,7 @@
    "licence": "CC BY 2.0",
    "author": "electricteeth",
    "attribution": "\"Oral-B iO Series 5 Electric Toothbrush\" by electricteeth, CC BY 2.0, via Openverse",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/B-05-502.webp",
-   "processedFrom": "https://live.staticflickr.com/65535/52303664560_af469ec84f_b.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3716,11 +3427,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://cdn11.bigcommerce.com/s-2idmiil7bp/product_images/uploaded_images/best-etb-100.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3775,12 +3482,7 @@
    "licence": "© Waterpik - press/product image, used for a non-commercial student lab demo",
    "author": "Waterpik",
    "attribution": "Image © Waterpik, from www.waterpik.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/B-05-504.webp",
-   "processedFrom": "https://www.waterpik.com/products/images/waterpik-aquarius-water-flosser-wp-660-white.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3834,14 +3536,7 @@
    "licence": "© Omron - press/product image, used for a non-commercial student lab demo",
    "author": "Omron",
    "attribution": "Image © Omron, from www.omronhealthcare-ap.com",
-   "matchChecked": true,
-   "failures": {
-    "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg": "only 500x500"
-   },
-   "width": 500,
-   "height": 500,
-   "file": "/products/B-05-505.webp",
-   "processedFrom": "https://www.omronhealthcare-ap.com/Content/uploads/products/HEM-7120.jpg"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3893,10 +3588,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.omronhealthcare-ap.com/Content/images/menu_close-white.png": "only 27x27"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -3951,12 +3643,7 @@
    "licence": "© Therabody - press/product image, used for a non-commercial student lab demo",
    "author": "Therabody",
    "attribution": "Image © Therabody, from www.therabody.com",
-   "matchChecked": true,
-   "width": 650,
-   "height": 758,
-   "file": "/products/B-05-507.webp",
-   "processedFrom": "http://www.therabody.com/cdn/shop/files/Mini-Gen-3-Oat-PLP-Thumbnail-1.png?v=1741752123",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4011,8 +3698,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4067,12 +3753,7 @@
    "licence": "© Herschel - press/product image, used for a non-commercial student lab demo",
    "author": "Herschel",
    "attribution": "Image © Herschel, from herschel.com",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1280,
-   "file": "/products/C-01-102.webp",
-   "processedFrom": "http://herschel.com/cdn/shop/files/11390-00007-os-01-kPscBXok.jpg?v=1781467867&width=1024",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4125,11 +3806,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://assets.thenorthface.com/image/upload/q_auto:best,f_auto:image,d_na.png/v1779914971/recon_vs_borealis_desktop_image"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4183,8 +3860,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4237,12 +3913,7 @@
    "licence": "© Herschel - press/product image, used for a non-commercial student lab demo",
    "author": "Herschel",
    "attribution": "Image © Herschel, from herschel.com",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1280,
-   "file": "/products/C-01-105.webp",
-   "processedFrom": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4304,12 +3975,7 @@
    "licence": "© Quechua - press/product image, used for a non-commercial student lab demo",
    "author": "Quechua",
    "attribution": "Image © Quechua, from www.decathlon.in",
-   "matchChecked": true,
-   "width": 768,
-   "height": 768,
-   "file": "/products/C-01-106.webp",
-   "processedFrom": "https://contents.mediadecathlon.com/p3079409/7015727a7b822ae4534d8469caccb141/p3079409.jpg?format=auto&f=768x0",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4365,12 +4031,7 @@
    "licence": "© Osprey - press/product image, used for a non-commercial student lab demo",
    "author": "Osprey",
    "attribution": "Image © Osprey, from www.osprey.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1600,
-   "file": "/products/C-01-107.webp",
-   "processedFrom": "https://www.osprey.com/media/catalog/product/f/a/farpoint40_s26_side_cascadebluetorrentblue.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4424,11 +4085,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "http://www.tomtoc.com/cdn/shop/collections/best_macbook_sleeve.jpg?v=1699148163"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4483,12 +4140,7 @@
    "licence": "© Incase - press/product image, used for a non-commercial student lab demo",
    "author": "Incase",
    "attribution": "Image © Incase, from www.incase.com",
-   "matchChecked": true,
-   "width": 800,
-   "height": 800,
-   "file": "/products/C-02-202.webp",
-   "processedFrom": "http://www.incase.com/cdn/shop/files/inmb100725-blp_incase_iconsleeve_mbp14_2021_d.jpg?crop=center&height=1200&v=1750471411&width=1200",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4545,12 +4197,7 @@
    "licence": "© Peak Design - press/product image, used for a non-commercial student lab demo",
    "author": "Peak Design",
    "attribution": "Image © Peak Design, from www.peakdesign.com",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/C-02-203.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/2986/1172/files/smalltechpouch-black-159A0505_10187358-9116-45c9-bf04-93a326319830.jpg?v=1762275795",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4605,12 +4252,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/C-02-204.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MWK73?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1716915397369",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4664,12 +4306,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1374,
-   "file": "/products/C-02-205.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mobility/combo-touch-for-ipad-air/gallery/combo-touch-ipad-air-12.9-inch-gallery1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4721,8 +4358,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4778,12 +4414,7 @@
    "licence": "© Bellroy - press/product image, used for a non-commercial student lab demo",
    "author": "Bellroy",
    "attribution": "Image © Bellroy, from bellroy.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 1000,
-   "file": "/products/C-03-301.webp",
-   "processedFrom": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WNSC-BLK-301/0",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4838,12 +4469,7 @@
    "licence": "© Bellroy - press/product image, used for a non-commercial student lab demo",
    "author": "Bellroy",
    "attribution": "Image © Bellroy, from bellroy.com",
-   "matchChecked": true,
-   "width": 2250,
-   "height": 1500,
-   "file": "/products/C-03-302.webp",
-   "processedFrom": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WHSD-CAR-301/0",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4898,8 +4524,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -4956,14 +4581,7 @@
    "licence": "© Secrid - press/product image, used for a non-commercial student lab demo",
    "author": "Secrid",
    "attribution": "Image © Secrid, from secrid.com",
-   "matchChecked": true,
-   "failures": {
-    "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870": "only 416x720"
-   },
-   "width": 416,
-   "height": 720,
-   "file": "/products/C-03-304.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/2658/9686/products/M-original_black.png?v=1514904870"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5017,12 +4635,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/C-03-305.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MKV64?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786052580762",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5077,14 +4690,7 @@
    "licence": "© Tommy Hilfiger - press/product image, used for a non-commercial student lab demo",
    "author": "Tommy Hilfiger",
    "attribution": "Image © Tommy Hilfiger, from usa.tommy.com",
-   "matchChecked": true,
-   "failures": {
-    "https://shoptommy.scene7.com/is/image/ShopTommy/AM13034_BDS_BCK": "only 300x400"
-   },
-   "width": 1000,
-   "height": 1334,
-   "file": "/products/C-03-306.webp",
-   "processedFrom": "https://shoptommy.scene7.com/is/image/ShopTommy/AM13034_BDS_BCK"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5136,17 +4742,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/01/Amazon_Kindle_Paperwhite_%282nd_Generation%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/3/38/2023_Amazon_Kindle_Paperwhite_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/4/43/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/4/45/2023_Amazon_Kindle_Paperwhite_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/6/66/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader_in_etui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a3/Amazon_Kindle_Paperwhite_5_Eleventh_Generation_%28C2V2L3%29_6-inch_e-reader._Font_Bookerly%2C_size_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5201,12 +4797,7 @@
    "licence": "© Cabeau - press/product image, used for a non-commercial student lab demo",
    "author": "Cabeau",
    "attribution": "Image © Cabeau, from cabeau.com",
-   "matchChecked": true,
-   "width": 1080,
-   "height": 1350,
-   "file": "/products/C-04-402.webp",
-   "processedFrom": "http://cabeau.com/cdn/shop/files/26Evolution_S3_Steel_Hero.jpg?v=1772206207",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5258,15 +4849,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/C-04-403.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MLFR4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1792705566518",
-   "failures": {},
-   "rejected": [
-    "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5326,12 +4909,7 @@
    "licence": "© Forclaz - press/product image, used for a non-commercial student lab demo",
    "author": "Forclaz",
    "attribution": "Image © Forclaz, from www.decathlon.in",
-   "matchChecked": true,
-   "width": 768,
-   "height": 768,
-   "file": "/products/C-04-404.webp",
-   "processedFrom": "https://contents.mediadecathlon.com/p3079543/a67c8d2d03d2e42f092dd6a55b1b1f01/p3079543.jpg?format=auto&f=768x0",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5389,12 +4967,7 @@
    "licence": "© Victorinox - press/product image, used for a non-commercial student lab demo",
    "author": "Victorinox",
    "attribution": "Image © Victorinox, from www.victorinox.com",
-   "matchChecked": true,
-   "width": 2425,
-   "height": 2079,
-   "file": "/products/C-04-405.webp",
-   "processedFrom": "https://imageengine.victorinox.com/transform/dc7dd17a-fd08-4cf3-bbaf-28c4418396c0/SAK_0_6221_26__S1",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5446,8 +5019,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5506,12 +5078,7 @@
    "licence": "© Milton - press/product image, used for a non-commercial student lab demo",
    "author": "Milton",
    "attribution": "Image © Milton, from www.milton.in",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/C-05-501.webp",
-   "processedFrom": "https://www.milton.in/cdn/shop/files/SI.01_3ceb1c6d-4972-4d6c-8edb-fed17d04ebdd.jpg?v=1783066821",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5566,12 +5133,7 @@
    "licence": "© Hydro Flask - press/product image, used for a non-commercial student lab demo",
    "author": "Hydro Flask",
    "attribution": "Image © Hydro Flask, from www.hydroflask.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/C-05-502.webp",
-   "processedFrom": "https://www.hydroflask.com/media/catalog/product/cache/94b0175a6caa1be035fa7b19e7ad3303/w/3/w32cts114_32ozwideflexcap_oat_straighton_1_1.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5628,12 +5190,7 @@
    "licence": "© Stanley - press/product image, used for a non-commercial student lab demo",
    "author": "Stanley",
    "attribution": "Image © Stanley, from www.stanley1913.com",
-   "matchChecked": true,
-   "width": 1515,
-   "height": 1515,
-   "file": "/products/C-05-503.webp",
-   "processedFrom": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-TheQuencherH20FlutedTextureTumbler40OZ-BlackPVD-Front.png?v=1762182298",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5685,8 +5242,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5738,15 +5294,7 @@
    "licence": "CC BY-SA 3.0",
    "author": "BrokenSphere",
    "attribution": "\"Blue 1000 ml Nalgene everyday wide mouth bottle 2.JPG\" by BrokenSphere, CC BY-SA 3.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 2008,
-   "height": 3264,
-   "file": "/products/C-05-505.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/db/Blue_1000_ml_Nalgene_everyday_wide_mouth_bottle_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {},
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/3/35/Blue_1000_ml_Nalgene_everyday_wide_mouth_bottle_cap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5800,13 +5348,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999": "only 1200x492"
-   },
-   "rejected": [
-    "http://lifestraw.com/cdn/shop/articles/1464x600_GoSeries_Glass_Lifestyle_1200x1200.png?v=1771006999"
-   ]
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5856,8 +5398,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5911,12 +5452,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 3840,
-   "height": 2160,
-   "file": "/products/D-01-101.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-s/migration-assets-for-delorean-2025/gallery/mx-keys-s-top-view-graphite-us.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -5970,12 +5506,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 3840,
-   "height": 2160,
-   "file": "/products/D-01-102.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/pebble-keys-2-k380s/2026/gallery/tonal-rose/pebble-keys-k380s-2-tonal-rose-top-angle-gallery-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6029,12 +5560,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 800,
-   "file": "/products/D-01-103.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/multi-keyboard-k380/gallery/k380-sand-gallery-1-us.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6086,12 +5612,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Dbirdz",
    "attribution": "\"Magic Keyboard with Touch ID for Mac models with Apple silicon - Swiss.jpg\" by Dbirdz, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 3862,
-   "height": 2028,
-   "file": "/products/D-01-104.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Magic_Keyboard_with_Touch_ID_for_Mac_models_with_Apple_silicon_-_Swiss.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6144,12 +5665,7 @@
    "licence": "© Keychron - press/product image, used for a non-commercial student lab demo",
    "author": "Keychron",
    "attribution": "Image © Keychron, from www.keychron.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1200,
-   "file": "/products/D-01-105.webp",
-   "processedFrom": "http://www.keychron.in/cdn/shop/files/products_Keychron-K2-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-red-with-type-C-RGB-white-backlight-exclusive-color.jpg?crop=center&height=1200&v=1752104865&width=1200",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6202,12 +5718,7 @@
    "licence": "© Keychron - press/product image, used for a non-commercial student lab demo",
    "author": "Keychron",
    "attribution": "Image © Keychron, from www.keychron.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1200,
-   "file": "/products/D-01-106.webp",
-   "processedFrom": "http://www.keychron.com/cdn/shop/files/K8-Max-Iconic-Features.jpg?crop=center&height=1200&v=1760934296&width=1200",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6261,18 +5772,7 @@
    "licence": "CC BY 4.0",
    "author": "Hayden Schiff",
    "attribution": "\"Logitech MX Master 3S HS03.jpg\" by Hayden Schiff, CC BY 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/2/25/Logitech_MX_Master_3S_HS03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/9/90/Logitech_MX_Master_3S_HS01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/6/61/Logitech_MX_Master_3S_HS02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/d/da/Logitech_MX_Master_3S_HS05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a3/Logitech_MX_Master_3S_HS06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 6000,
-   "height": 4000,
-   "file": "/products/D-02-201.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/25/Logitech_MX_Master_3S_HS03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6327,12 +5827,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/D-02-202.webp",
-   "processedFrom": "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-anywhere-3s-for-business/mx-anywhere-3s-business-og-image.jpg?v=1",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6386,11 +5881,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-for-business/lift-vertical-ergonomic-mouse-business-og-image.jpg?v=1"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6446,12 +5937,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 2500,
-   "height": 2160,
-   "file": "/products/D-02-204.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/pebble-mouse-2-m350s/2026-refresh/gallery/pebble-mouse-2-m350s-tonal-rose-top-angle-gallery-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6504,11 +5990,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/common/og-generic/og-image-electrico.png"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6561,18 +6043,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Tris T7",
    "attribution": "\"Apple Magic Mouse by Trisorn Triboon.jpg\" by Tris T7, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/a/a0/Apple_Magic_Mouse_by_Trisorn_Triboon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/4/44/Apple_Magic_Mouse_%288350133438%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/0/01/Bad_design_-_Apple_Magic_Mouse_2%2C_unusable_when_charging.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bad_design_-_Apple_Magic_Mouse_2%2C_unusable_when_charging_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/1/1a/Bad_design_-_Apple_Magic_Mouse_2%2C_unusable_when_charging_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 8256,
-   "height": 5504,
-   "file": "/products/D-02-206.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Apple_Magic_Mouse_by_Trisorn_Triboon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6626,12 +6097,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1374,
-   "file": "/products/D-02-207.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m720/gallery/m720-gallery-1a.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6688,10 +6154,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/u-series/u2723qe/spi/ng/monitor-u2723qe-campaign-hero-504x350-ng.psd?fmt=jpg&wid=504&hei=350": "only 504x350"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6741,10 +6204,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/s-series/s2421hn/pdp/73402-s2421hn-monitor-pdp-hero.jpg?fmt=jpg&wid=504&hei=350": "only 504x350"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6796,12 +6256,7 @@
    "licence": "© BenQ - press/product image, used for a non-commercial student lab demo",
    "author": "BenQ",
    "attribution": "Image © BenQ, from www.benq.com",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/D-03-303.webp",
-   "processedFrom": "https://image.benq.com/is/image/benqco/pd2705u-right45-3?$ResponsivePreset$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6852,18 +6307,7 @@
    "licence": "CC0",
    "author": "AzureSaturn",
    "attribution": "\"Apple Studio Display and Mac Studio with Peripherals.jpg\" by AzureSaturn, CC0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/2/29/Apple_Studio_Display_and_Mac_Studio_with_Peripherals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/e/ec/Apple_Studio_Display_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Apple_Studio_Display_7671.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/9/98/Mac_Studio_with_Studio_Display%2C_Magic_Keyboard%2C_and_Magic_Trackpad_in_Apple_Store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/c/cd/Apple_Studio_Display.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 5712,
-   "height": 4284,
-   "file": "/products/D-03-304.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/29/Apple_Studio_Display_and_Mac_Studio_with_Peripherals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6921,17 +6365,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "failures": {
-    "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373": "only 330x330"
-   },
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/D-03-305.webp",
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373"
-   ],
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27cg550ewxxl/gallery/in-odyssey-g5-g55c-ls27cg550ewxxl-thumb-541041257"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -6982,8 +6416,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7038,14 +6471,7 @@
    "licence": "© Rain Design - press/product image, used for a non-commercial student lab demo",
    "author": "Rain Design",
    "attribution": "Image © Rain Design, from raindesigninc.com",
-   "matchChecked": true,
-   "failures": {
-    "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483": "only 1140x563"
-   },
-   "width": 1140,
-   "height": 563,
-   "file": "/products/D-03-307.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/0620/1982/9841/files/mstand360_silver_main.jpg?v=1722880483"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7095,11 +6521,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7151,12 +6573,7 @@
    "licence": "© BenQ - press/product image, used for a non-commercial student lab demo",
    "author": "BenQ",
    "attribution": "Image © BenQ, from www.benq.com",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/D-04-402.webp",
-   "processedFrom": "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7209,12 +6626,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitech.com",
-   "matchChecked": true,
-   "width": 3200,
-   "height": 3200,
-   "file": "/products/D-04-403.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7270,8 +6682,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7324,12 +6735,7 @@
    "licence": "© Xiaomi - press/product image, used for a non-commercial student lab demo",
    "author": "Xiaomi",
    "attribution": "Image © Xiaomi, from www.mi.com",
-   "matchChecked": true,
-   "width": 800,
-   "height": 800,
-   "file": "/products/D-04-405.webp",
-   "processedFrom": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1666850673.95389721.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7382,12 +6788,7 @@
    "licence": "CC BY 2.0",
    "author": "Jimmy Benson",
    "attribution": "\"IKEA - FORSÅ WORK LAMP\" by Jimmy Benson, CC BY 2.0, via Openverse",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 602,
-   "file": "/products/D-04-406.webp",
-   "processedFrom": "https://live.staticflickr.com/2022/32083310453_29c59b8812_b.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7440,12 +6841,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/D-04-407.webp",
-   "processedFrom": "https://www.ikea.com/ee/en/images/products/tertial-work-lamp-white__0609308_pe684439_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7497,12 +6893,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1374,
-   "file": "/products/D-05-501.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920/gallery/c920-gallery-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7555,12 +6946,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/D-05-502.webp",
-   "processedFrom": "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio/brio-og-image-new.jpg?v=1",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7614,12 +7000,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitech.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1374,
-   "file": "/products/D-05-503.webp",
-   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7677,12 +7058,7 @@
    "licence": "© Insta360 - press/product image, used for a non-commercial student lab demo",
    "author": "Insta360",
    "attribution": "Image © Insta360, from insta360india.com",
-   "matchChecked": true,
-   "width": 2000,
-   "height": 2000,
-   "file": "/products/D-05-504.webp",
-   "processedFrom": "http://www.insta360india.com/cdn/shop/files/insta360-link-2-736669.webp?v=1739277279",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7740,12 +7116,7 @@
    "licence": "© Anker - press/product image, used for a non-commercial student lab demo",
    "author": "Anker",
    "attribution": "Image © Anker, from www.anker.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1500,
-   "file": "/products/D-05-505.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/61thMtrP5rL.png?v=1723458964",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7796,11 +7167,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MD826?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1566858915905"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7850,8 +7217,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7913,12 +7279,7 @@
    "licence": "© Sony - press/product image, used for a non-commercial student lab demo",
    "author": "Sony",
    "attribution": "Image © Sony, from www.playstation.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-01-101.webp",
-   "processedFrom": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -7973,12 +7334,7 @@
    "licence": "© Sony - press/product image, used for a non-commercial student lab demo",
    "author": "Sony",
    "attribution": "Image © Sony, from www.playstation.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-01-102.webp",
-   "processedFrom": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$facebook$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8030,13 +7386,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {
-    "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png": "only 216x46"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8089,21 +7439,7 @@
    "licence": "Public domain",
    "author": "Evan-Amos",
    "attribution": "\"Nintendo-Switch-Pro-Controller-BR.jpg\" by Evan-Amos, Public domain, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mytrix_Pro_Wireless_Controller_Sakura_Pink_for_Nintendo_Switch_%2853158671472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nintendo-Switch-Pro-Controller-BR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/7/7a/Nintendo-Switch-Pro-Controller-BR-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nintendo-Switch-Pro-Controller-FL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/e/ea/Nintendo-Switch-Pro-Controller-FL-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 4500,
-   "height": 3500,
-   "file": "/products/G-01-104.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nintendo-Switch-Pro-Controller-BR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mytrix_Pro_Wireless_Controller_Sakura_Pink_for_Nintendo_Switch_%2853158671472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8154,10 +7490,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://assets.nintendo.com.au/image/upload/NAL/Articles/nintendo-default-news-image.png": "only 588x331"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8211,11 +7544,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://www.8bitdo.com/images/2024/ultimate-3-mode/01-l.jpg?0"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8274,12 +7603,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-01-107.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/db9ab8c533ed562e2f7a9a2c685ec65d/razer-kishi-v2-ogimage-1200x630-update.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8333,12 +7657,7 @@
    "licence": "© HyperX - press/product image, used for a non-commercial student lab demo",
    "author": "HyperX",
    "attribution": "Image © HyperX, from hyperx.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 1500,
-   "file": "/products/G-02-201.webp",
-   "processedFrom": "http://hyperx.com/cdn/shop/files/hyperx_cloud_blue_66x0568a_main_1.jpg?v=1763563224",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8393,12 +7712,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-02-202.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/8864ce1bcf7bbd3001fb4bdf4fc88965/razer-blackshark-v2-x-og-image.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8451,12 +7765,7 @@
    "licence": "© SteelSeries - press/product image, used for a non-commercial student lab demo",
    "author": "SteelSeries",
    "attribution": "Image © SteelSeries, from steelseries.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-02-203.webp",
-   "processedFrom": "https://images.ctfassets.net/w5r1fvmogo3f/3llphQqI8bKEhpprVT5TRq/64d4105c210ac4b1382c8078738bfaaa/arctis_nova_7_wl_gen_2_blog_headers_1.jpg?fit=fill&w=1200&h=630&q=80&fm=avif",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8512,12 +7821,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 2500,
-   "height": 2160,
-   "file": "/products/G-02-204.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g435/2025/gallery/g435-3qtr-front-left-angle-black-gallery-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8573,12 +7877,7 @@
    "licence": "© Sony - press/product image, used for a non-commercial student lab demo",
    "author": "Sony",
    "attribution": "Image © Sony, from www.playstation.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-02-205.webp",
-   "processedFrom": "https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-product-thumbnail-01-en-14sep21?$facebook$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8630,8 +7929,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8684,12 +7982,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 1510,
-   "height": 1112,
-   "file": "/products/G-03-301.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-1-nb.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8743,12 +8036,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-03-302.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/razer-huntsman-mini/razer-huntsman-mini-2020-OGimg.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8801,12 +8089,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-03-303.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/12571f27f3f0008c0b2761309d6b26e8/razer-blackwidow-v4-x-og-image-1200x630.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8858,12 +8141,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 1384,
-   "height": 1038,
-   "file": "/products/G-03-304.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8922,12 +8200,7 @@
    "licence": "© HyperX - press/product image, used for a non-commercial student lab demo",
    "author": "HyperX",
    "attribution": "Image © HyperX, from hyperx.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1600,
-   "file": "/products/G-03-305.webp",
-   "processedFrom": "http://hyperx.com/cdn/shop/files/hyperx_alloy_origins_core_us_1_top_down_renamed_0.jpg?v=1774442094",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -8981,12 +8254,7 @@
    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech",
    "attribution": "Image © Logitech, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 3840,
-   "height": 2160,
-   "file": "/products/G-03-306.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g413-se-tkl/2025/gallery/g413-tkl-se-mechanical-keyboard-top-angle-gallery-1.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9046,8 +8314,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9099,11 +8366,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/og-fallback.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9156,17 +8419,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Panthermail",
    "attribution": "\"Logitech G502 Hero.jpg\" by Panthermail, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 4030,
-   "height": 2267,
-   "file": "/products/G-04-402.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Logitech_G502_Hero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/a/a7/Logitech_G502_Hero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "rejected": [
-    "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/editorial-content-lp/g502-g502x/g502-g502x-meta-og-2.jpg"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9222,14 +8475,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 2500,
-   "height": 2160,
-   "file": "/products/G-04-403.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight-2-se-pdp/gallery/pro-x-superlight-2-se-black-top-angle-gallery-1.png",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/8/88/Logitech_Pro_X_Superlight_2_sample_20231216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   }
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9282,12 +8528,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-04-404.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/b993b88204244288b62d053375f5be2e/razer-deathadder-v3-og-image.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9342,12 +8583,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-04-405.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/24970f67be4ba9644e28720377d91cfb/razer-viper-v3-pro-1200x630.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9399,8 +8635,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9461,12 +8696,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 1384,
-   "height": 1038,
-   "file": "/products/G-04-407.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9527,14 +8757,7 @@
    "licence": "© Green Soul - press/product image, used for a non-commercial student lab demo",
    "author": "Green Soul",
    "attribution": "Image © Green Soul, from www.greensoul.online",
-   "matchChecked": true,
-   "failures": {
-    "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840": "only 600x511"
-   },
-   "width": 600,
-   "height": 511,
-   "file": "/products/G-05-501.webp",
-   "processedFrom": "http://www.greensoul.online/cdn/shop/products/39_grande.png?v=1756712840"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9589,12 +8812,7 @@
    "licence": "© Cooler Master - press/product image, used for a non-commercial student lab demo",
    "author": "Cooler Master",
    "attribution": "Image © Cooler Master, from www.coolermaster.com",
-   "matchChecked": true,
-   "width": 2000,
-   "height": 2000,
-   "file": "/products/G-05-502.webp",
-   "processedFrom": "https://www.coolermaster.com/on/demandware.static/-/Sites-cooler-master-main/default/dwbd635eb9/Assets/caliber-r3/large/caliber-r3-original-gallery-01.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9652,12 +8870,7 @@
    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
    "author": "Logitech G",
    "attribution": "Image © Logitech G, from www.logitechg.com",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1374,
-   "file": "/products/G-05-503.webp",
-   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g640/g640-gallery-1-new.png",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9709,12 +8922,7 @@
    "licence": "© SteelSeries - press/product image, used for a non-commercial student lab demo",
    "author": "SteelSeries",
    "attribution": "Image © SteelSeries, from steelseries.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 600,
-   "file": "/products/G-05-504.webp",
-   "processedFrom": "https://images.ctfassets.net/hmm5mo4qf4mf/2ExXL7hykTrgpNU4tPIMdw/66262132d4bb57a4e9a97bb8a59582d3/1200x_buy_qck-hard_m_01.jpg__1920x1080_q100_crop-fit_optimize_subsampling-2-3559.jpg?w=1200&h=600&fit=fill&fm=jpg&q=85",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9767,12 +8975,7 @@
    "licence": "© Razer - press/product image, used for a non-commercial student lab demo",
    "author": "Razer",
    "attribution": "Image © Razer, from www.razer.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/G-05-505.webp",
-   "processedFrom": "https://assets2.razerzone.com/images/pnx.assets/b761ba62aece1bcec7a7d9c998177cb9/razer-goliathus-chroma-3xl-ogimage_1200x630.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9822,8 +9025,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9876,11 +9078,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://www.philips-hue.com/content/dam/hue/general-1-1.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9935,12 +9133,7 @@
    "licence": "© Philips Hue - press/product image, used for a non-commercial student lab demo",
    "author": "Philips Hue",
    "attribution": "Image © Philips Hue, from www.philips-hue.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 1500,
-   "file": "/products/L-01-102.webp",
-   "processedFrom": "https://www.assets.signify.com/is/image/Signify/7820130U7-Carousel-MainProduct-RTP-01",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -9991,10 +9184,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.assets.signify.com/is/image/Signify/8718699732561-Philips-RTP": "only 266x405"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10046,8 +9236,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10097,11 +9286,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://cdn.homemate.co.in/wp-content/uploads/2023/05/blog-image-33-2.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10161,12 +9346,7 @@
    "licence": "© Nanoleaf - press/product image, used for a non-commercial student lab demo",
    "author": "Nanoleaf",
    "attribution": "Image © Nanoleaf, from nanoleaf.me",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1200,
-   "file": "/products/L-01-106.webp",
-   "processedFrom": "https://nanoleaf.me/cdn/shop/files/pdp-image-shapes-hex-5pk-1.png?v=1786332461&width=1200",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10219,12 +9399,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-01-107.webp",
-   "processedFrom": "https://www.ikea.com/in/en/images/products/hektar-floor-lamp-dark-grey__0149974_pe308131_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10278,18 +9453,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/3/35/Amazon_Echo_Dot_%28RS03QR%29_-_LED_and_microphone_board-0548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/4/40/Amazon_Echo_Dot_%28RS03QR%29-0479.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/6/6e/Amazon_Echo_Dot_%28RS03QR%29-0483.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/95/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Alexa_amazon_echo_dot_%2842820690351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/a/ac/Amazon_Echo_Dot_%28RS03QR%29-0480.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c0/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0552.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/e/ec/Amazon_Echo_Dot_%28RS03QR%29_-_cover_removed-0547.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10342,12 +9506,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/06/Amazon_Echo_Show_5_Gen2.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/06/Amazon_Echo_Show_5_Gen2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10398,11 +9557,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/b/b3/Amazon_Fire_TV_4k.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10456,15 +9611,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Sikander Iqbal",
    "attribution": "\"Google Nest Mini - 202001 - 01.jpg\" by Sikander Iqbal, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Nest_Mini_-_202001_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/8/81/Google_Nest_Mini_-_202001_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 2777,
-   "height": 3693,
-   "file": "/products/L-02-204.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Nest_Mini_-_202001_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10518,19 +9665,7 @@
    "licence": "© Google - press/product image, used for a non-commercial student lab demo",
    "author": "Google",
    "attribution": "Image © Google, from store.google.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/0f/Google_Nest_Hub.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/1/16/Back_of_Google_Nest_Hub_in_Gray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/e/e2/Google_Nest_Hub_MAX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {
-    "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff": "only 544x434"
-   },
-   "width": 512,
-   "height": 408,
-   "file": "/products/L-02-205.webp",
-   "processedFrom": "https://lh3.googleusercontent.com/qXS4bZYwsTFZt6tuxdIp-w6Dc3pdHjcA1YFY5lG42JYKckt6VrlxK8-bX6jSZOWybvNz98pnaYn0gaIul4iTSYIvaBxhbIohBCA=rw-rj-sc0xffffffff"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10586,14 +9721,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/L-02-206.webp",
-   "processedFrom": "https://www.apple.com/v/homepod-mini/l/images/meta/homepod_mini__ev9e390azxyu_og.png?202610120439",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/b/b9/Apple_HomePod_mini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   }
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10647,12 +9775,7 @@
    "licence": "© TP-Link - press/product image, used for a non-commercial student lab demo",
    "author": "TP-Link",
    "attribution": "Image © TP-Link, from www.tp-link.com",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/L-02-207.webp",
-   "processedFrom": "https://static.tp-link.com/upload/image-line/01_large_20230817224004v.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10703,8 +9826,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10755,8 +9877,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10809,12 +9930,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-03-303.webp",
-   "processedFrom": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-calathea__1389891_pe965296_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10866,12 +9982,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-03-304.webp",
-   "processedFrom": "https://www.ikea.com/ee/en/images/products/edsbruk-frame-white__0706489_pe725877_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10930,12 +10041,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-03-305.webp",
-   "processedFrom": "https://www.ikea.com/in/en/images/products/knapper-standing-mirror-white__0594294_pe676198_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10987,12 +10093,7 @@
    "licence": "© Yankee Candle - press/product image, used for a non-commercial student lab demo",
    "author": "Yankee Candle",
    "attribution": "Image © Yankee Candle, from www.yankeecandle.com",
-   "matchChecked": true,
-   "width": 1280,
-   "height": 1280,
-   "file": "/products/L-03-306.webp",
-   "processedFrom": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11044,12 +10145,7 @@
    "licence": "© Bath & Body Works - press/product image, used for a non-commercial student lab demo",
    "author": "Bath & Body Works",
    "attribution": "Image © Bath & Body Works, from www.bathandbodyworks.in",
-   "matchChecked": true,
-   "width": 675,
-   "height": 909,
-   "file": "/products/L-03-307.webp",
-   "processedFrom": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11103,12 +10199,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/L-04-401.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/vrs_2f33f1f6_df4a_422d_a135c88b6c90aaef?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11162,12 +10253,7 @@
    "licence": "© Instant Pot - press/product image, used for a non-commercial student lab demo",
    "author": "Instant Pot",
    "attribution": "Image © Instant Pot, from instantpot.com",
-   "matchChecked": true,
-   "width": 766,
-   "height": 800,
-   "file": "/products/L-04-402.webp",
-   "processedFrom": "http://instantpot.com/cdn/shop/files/112-0170-01_Duo_6_Qt_Silo_01_ATF.png?v=1752158152",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11219,8 +10305,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11274,14 +10359,7 @@
    "licence": "© Prestige - press/product image, used for a non-commercial student lab demo",
    "author": "Prestige",
    "attribution": "Image © Prestige, from shop.ttkprestige.com",
-   "matchChecked": true,
-   "failures": {
-    "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450": "only 450x450"
-   },
-   "width": 450,
-   "height": 450,
-   "file": "/products/L-04-404.webp",
-   "processedFrom": "https://shop.ttkprestige.com/media/catalog/product/0/0/0017-42542-IMG1.jpeg?optimize=medium&fit=bounds&height=450&width=450"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11335,12 +10413,7 @@
    "licence": "© Philips - press/product image, used for a non-commercial student lab demo",
    "author": "Philips",
    "attribution": "Image © Philips, from www.philips.co.in",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/L-04-405.webp",
-   "processedFrom": "https://images.philips.com/is/image/philipsconsumer/vrs_47e6922e_e609_4e9b_95704ead2a9089f1?$png$&wid=1200&hei=630",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11394,12 +10467,7 @@
    "licence": "© AeroPress - press/product image, used for a non-commercial student lab demo",
    "author": "AeroPress",
    "attribution": "Image © AeroPress, from aeropress.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 1200,
-   "file": "/products/L-04-406.webp",
-   "processedFrom": "http://aeropress.com/cdn/shop/files/AP_OG_CollegeBundle_1_1200x1200.png?v=1766111254",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11451,8 +10519,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11503,8 +10570,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11556,12 +10622,7 @@
    "licence": "© The Sleep Company - press/product image, used for a non-commercial student lab demo",
    "author": "The Sleep Company",
    "attribution": "Image © The Sleep Company, from thesleepcompany.in",
-   "matchChecked": true,
-   "width": 2501,
-   "height": 3126,
-   "file": "/products/L-05-502.webp",
-   "processedFrom": "https://thesleepcompany.in/cdn/shop/files/1_cd00ef68-bd19-479c-93a0-491342836260.webp?v=1790339923",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11617,11 +10678,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://www.ikea.com/global/assets/range-categorisation/images/cushion-covers-18903.jpeg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11674,12 +10731,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-05-504.webp",
-   "processedFrom": "https://www.ikea.com/in/en/images/products/fialisa-cushion-pad-white__0618537_pe688538_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11738,12 +10790,7 @@
    "licence": "© IKEA - press/product image, used for a non-commercial student lab demo",
    "author": "IKEA",
    "attribution": "Image © IKEA, from www.ikea.com",
-   "matchChecked": true,
-   "width": 1400,
-   "height": 1400,
-   "file": "/products/L-05-505.webp",
-   "processedFrom": "https://www.ikea.com/in/en/images/products/aengslilja-duvet-cover-and-pillowcase-natural__1599403_pe1042236_s5.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11794,8 +10841,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11851,20 +10897,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://live.staticflickr.com/3316/5831604849_8813f32efc_b.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/2/26/Screenshot_of_the_Mapillary_mobile_app_taken_from_an_Apple_iPhone_16_Pro_Max_by_Sebbog13%2C_28.08.2025%2C_IMG_9427.png",
-    "https://upload.wikimedia.org/wikipedia/commons/6/64/IPhone_16_series_in_Apple_Store_Nagoya_Sakae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/e/e3/Apple_iPhone_2G_8GB_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/e/e5/Apple_iPad_11_gen._%26_Apple_iPhone_16_%28still_in_a_box%29_%282025-12-02%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/e/e5/Apple_iPad_11_gen._%26_Apple_iPhone_16_%28still_in_a_box%29_%282025-12-02%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-01-101.webp",
-   "processedFrom": "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/geo/Apple-iPhone-16-lineup-geo-240909-lp.jpg.og.jpg?202608191726",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11919,21 +10952,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://live.staticflickr.com/3013/2686861572_765be1e24e_b.jpg",
-    "https://live.staticflickr.com/65535/54008841186_bca1a8bdc6_b.jpg",
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MK9G4?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1786052582421",
-    "https://upload.wikimedia.org/wikipedia/commons/2/26/Screenshot_of_the_Mapillary_mobile_app_taken_from_an_Apple_iPhone_16_Pro_Max_by_Sebbog13%2C_28.08.2025%2C_IMG_9427.png",
-    "https://upload.wikimedia.org/wikipedia/commons/2/26/Screenshot_of_the_Mapillary_mobile_app_taken_from_an_Apple_iPhone_16_Pro_Max_by_Sebbog13%2C_28.08.2025%2C_IMG_9427.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Apple_MacBook_Pro_16%22_M2_Max_and_iPhone_13_Pro.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Apple_MacBook_Pro_16%22_M2_Max_and_iPhone_13_Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-01-102.webp",
-   "processedFrom": "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-geo-240909-lp.jpg.og.jpg?202608191703",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -11986,18 +11005,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/0e/Samsung_Galaxy_S25%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/6/60/Rear_view_of_the_Samsung_Galaxy_S25_Ultra_smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/6/62/Samsung_Galaxy_S25_Ultra_phone%27s_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b0/Samsung_Galaxy_S25_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_Galaxy_S25_Ultra_smartphone_-_side_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E7%AC%AC%E4%B8%80%E6%89%8B%EF%BC%81Samsung_Galaxy_S25%E7%B3%BB%E5%88%97%E6%8B%BF%E5%88%B0%E4%BA%86%EF%BC%9A5%E4%B8%AA%E5%8D%87%E7%BA%A7%EF%BC%81S_Pen%E4%B8%8D%E6%94%AF%E6%8C%81%E8%93%9D%E7%89%99%E4%BA%86%EF%BC%9F_%282160p_50fps_VP9-96kbit_AAC%29-00.07.47.789.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12052,18 +11060,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Captainmorlypogi1959",
    "attribution": "\"Samsung Galaxy S25 Ultra 2025.jpg\" by Captainmorlypogi1959, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/1/1e/Samsung_Galaxy_S25_Ultra_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/8/8f/Samsung_Galaxy_A04s_and_Samsung_Galaxy_S25_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/5/52/Samsung_Galaxy_S25_Ultra_2025_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/6/62/Samsung_Galaxy_S25_Ultra_phone%27s_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/6/60/Rear_view_of_the_Samsung_Galaxy_S25_Ultra_smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 6120,
-   "height": 8160,
-   "file": "/products/P-01-104.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Samsung_Galaxy_S25_Ultra_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12117,14 +11114,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/P9P9PThumbnail_16x9_Opt2_2.width-1300.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b0/Camera_of_Google_Pixel_9_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d7/Camera_of_Google_Pixel_9_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f7/Camera_of_Google_Pixel_9_-_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12179,17 +11169,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "Maksdroider",
    "attribution": "\"OnePlus 13 back.jpg\" by Maksdroider, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/1/13/OnePlus_13_volume_slider.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/7/7b/GD_%E5%BB%A3%E6%9D%B1_ZS_%E4%B8%AD%E5%B1%B1%E5%B8%82_Zhongshan_%E7%9F%B3%E5%B2%90_ShiQi_%E9%B3%B3%E9%B3%B4%E8%B7%AF_46_FengMing_Road_%E5%A3%B9%E5%8A%A0%E5%A3%B9%E8%B6%85%E5%B8%82_One_Plus_One_Super_Store_food_September_2024_R12S_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/97/OnePlus_AC2003_with_a_broken_screen%2C_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "width": 1710,
-   "height": 3421,
-   "file": "/products/P-01-106.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/14/OnePlus_13_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12242,14 +11222,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://cdn.shopify.com/s/files/1/0376/5420/0459/products/phone1black1600x2160.png?v=1658461176",
-    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nothing_phone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/9e/Nothing_Phone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12303,11 +11276,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MA6A4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1723935350333"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12360,12 +11329,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-02-202.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MA6A4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1723935350333",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12419,12 +11383,7 @@
    "licence": "© Spigen - press/product image, used for a non-commercial student lab demo",
    "author": "Spigen",
    "attribution": "Image © Spigen, from spigen.in",
-   "matchChecked": true,
-   "width": 1430,
-   "height": 1430,
-   "file": "/products/P-02-203.webp",
-   "processedFrom": "http://spigen.in/cdn/shop/files/title_web_iphone_16_pro_ultra_hybrid_navy_blue_01.jpg?v=1780899976",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12477,12 +11436,7 @@
    "licence": "© Spigen - press/product image, used for a non-commercial student lab demo",
    "author": "Spigen",
    "attribution": "Image © Spigen, from spigen.in",
-   "matchChecked": true,
-   "width": 1600,
-   "height": 1600,
-   "file": "/products/P-02-204.webp",
-   "processedFrom": "http://spigen.in/cdn/shop/files/title_iPhone_16_core_armor_magfit_01_ADMIN_Dec-18-011441-2024_Conflict.jpg?v=1790643012",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12542,13 +11496,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/assets/in/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$"
-   ],
-   "failures": {
-    "https://resources.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/the-frame-bezel-popup-modern-pc.jpg?$636_300_JPG$": "only 636x300"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12601,12 +11549,7 @@
    "licence": "© ESR - press/product image, used for a non-commercial student lab demo",
    "author": "ESR",
    "attribution": "Image © ESR, from www.esrtech.com",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/P-02-206.webp",
-   "processedFrom": "http://www.esrtech.com/cdn/shop/files/iPhone-16-Pro-Classic-Hybrid-Case-magsafe-clear-1.jpg?v=1741854261",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12665,12 +11608,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-03-301.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUVR3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1751998599125",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12722,14 +11660,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-03-302.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGDM4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1755025168066",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/1/1d/Apple_iBook_puck_and_brick_chargers_before_MagSafe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   }
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12783,14 +11714,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "failures": {
-    "https://images.samsung.com/is/image/samsung/p6pim/in/ep-t2510nbngin/gallery/in-25w-power-adapter-ep-t2510-506974-ep-t2510nbngin-thumb-550015825": "only 330x330"
-   },
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/P-03-303.webp",
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/ep-t2510nbngin/gallery/in-25w-power-adapter-ep-t2510-506974-ep-t2510nbngin-thumb-550015825"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12842,10 +11766,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/20250625-105940.png?v=1750820407": "only 200x200"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12896,10 +11817,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dwd635f1a5/images/hi-res/7/7c7a91cb42f34231_CAB002BT0M-BLK_BoostCharge_USB-A_to_USB-C_Gallery_Shot_03_WEB.jpg?sw=280&sh=280&sm=fit&sfrm=png": "only 280x280"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -12959,12 +11877,7 @@
    "licence": "© UGREEN - press/product image, used for a non-commercial student lab demo",
    "author": "UGREEN",
    "attribution": "Image © UGREEN, from eu.ugreen.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/P-03-306.webp",
-   "processedFrom": "http://eu.ugreen.com/cdn/shop/products/ugreen-nexode-65w-usb-c-gan-charger-3-ports-wall-charger-493502.png?v=1697187408",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13014,8 +11927,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13067,18 +11979,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/0f/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720040694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/1/11/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716812225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2b/Anker_521_Power_Bank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/4/4e/Anker_power_bank_lit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716814211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716813167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/8/89/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289720039628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716810135%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13136,8 +12037,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13195,8 +12095,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13248,12 +12147,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/assets/hk_en/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$",
-    "https://images.samsung.com/is/image/samsung/assets/hk_en/home/2026-samsung-week/26_sw_2h_hd08_herokv_static_pc_1920x1080.jpg?imwidth=1366"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13305,10 +12199,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dwd635f1a5/images/hi-res/7/7c7a91cb42f34231_CAB002BT0M-BLK_BoostCharge_USB-A_to_USB-C_Gallery_Shot_03_WEB.jpg?sw=280&sh=280&sm=fit&sfrm=png": "only 280x280"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13365,12 +12256,7 @@
    "licence": "© Ambrane - press/product image, used for a non-commercial student lab demo",
    "author": "Ambrane",
    "attribution": "Image © Ambrane, from ambraneindia.com",
-   "matchChecked": true,
-   "width": 4167,
-   "height": 4167,
-   "file": "/products/P-04-406.webp",
-   "processedFrom": "http://ambraneindia.com/cdn/shop/files/20k_Black_8copy_8copy_1-transformed.png?v=1722839466",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13429,12 +12315,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-05-501.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MU2G3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1773174615384",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13487,12 +12368,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/P-05-502.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MQKJ3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1770844094916",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13542,11 +12418,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MD818?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1600799997000"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13602,12 +12474,7 @@
    "licence": "© Anker - press/product image, used for a non-commercial student lab demo",
    "author": "Anker",
    "attribution": "Image © Anker, from www.anker.com",
-   "matchChecked": true,
-   "width": 2000,
-   "height": 2000,
-   "file": "/products/P-05-504.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/A8553012_Rich_image_TD01_US_V1.png?v=1753062423",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13667,10 +12534,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dwda796e5e/images/hi-res/NaN/e7b3ea56170112c0_CCB005btBK_Dual_USB-C_Port%20CarCharger(MCP239)NPI_gallery.1.jpg?sw=280&sh=280&sm=fit&sfrm=png": "only 280x280"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13723,12 +12587,7 @@
    "licence": "© UGREEN - press/product image, used for a non-commercial student lab demo",
    "author": "UGREEN",
    "attribution": "Image © UGREEN, from uk.ugreen.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/P-05-506.webp",
-   "processedFrom": "http://uk.ugreen.com/cdn/shop/products/ugreen-usb-c-to-usb-c-charger-cable-100w-usb-c-cable-fast-charging-data-sync-lead-with-e-marker-chip-565190.png?v=1692927424",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13781,12 +12640,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/assets/levant/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$",
-    "https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/mobile-accessories/Visual-LNB_Galaxy-Smartphone-Accessories_144x144.png?$ORIGIN_PNG$"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13839,12 +12693,7 @@
    "licence": "© Uniqlo - press/product image, used for a non-commercial student lab demo",
    "author": "Uniqlo",
    "attribution": "Image © Uniqlo, from www.uniqlo.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 2000,
-   "file": "/products/S-01-101.webp",
-   "processedFrom": "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/482522/item/ingoods_07_482522_3x4.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13905,12 +12754,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-01-102.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/169600932_01_Front_264050f7-7ee3-4736-bd6a-57a2d8b8c71f.jpg?v=1712744459",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -13968,11 +12812,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://c.static-nike.com/a/images/w_1200,c_limit/bzl2wmsfh7kgdkufrrjq/seo-title.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14023,8 +12863,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14074,8 +12913,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14127,12 +12965,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-01-106.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14192,12 +13025,7 @@
    "licence": "© Jockey - press/product image, used for a non-commercial student lab demo",
    "author": "Jockey",
    "attribution": "Image © Jockey, from www.jockey.in",
-   "matchChecked": true,
-   "width": 1800,
-   "height": 2200,
-   "file": "/products/S-01-107.webp",
-   "processedFrom": "http://www.jockey.in/cdn/shop/files/2714_NAVY_0105_S123_JKY_1_5ccb74a9-804e-4bf7-87a7-6c162587f9fd.webp?v=1725619825",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14248,10 +13076,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://imagescdn.allensolly.com/img/app/product/8/888367-31616275.jpg?q=75&auto=format&w=150": "only 150x225"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14310,12 +13135,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-02-202.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14373,12 +13193,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-02-203.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/857440117_01_Styleshot_a6c08ad6-fdbe-4a8d-b6d7-abbe51f9ab48.jpg?v=1770115638",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14430,12 +13245,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-02-204.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14493,14 +13303,7 @@
    "licence": "© Tommy Hilfiger - press/product image, used for a non-commercial student lab demo",
    "author": "Tommy Hilfiger",
    "attribution": "Image © Tommy Hilfiger, from usa.tommy.com",
-   "matchChecked": true,
-   "failures": {
-    "https://shoptommy.scene7.com/is/image/ShopTommy/78J3837_VP8_main": "only 300x400"
-   },
-   "width": 1000,
-   "height": 1334,
-   "file": "/products/S-02-205.webp",
-   "processedFrom": "https://shoptommy.scene7.com/is/image/ShopTommy/78J3837_VP8_main"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14525,7 +13328,7 @@
   "bayName": "Shirts",
   "brand": "Levi's",
   "colours": [
-   "Mint"
+   "Blue"
   ],
   "use": [
    "dress",
@@ -14540,7 +13343,7 @@
   "warrantyMonths": 0,
   "arrivesInDays": 3,
   "isNew": false,
-  "description": "A mint linen shirt from Levi's with a spread collar, a classic look that pairs well with chinos in warm weather.",
+  "description": "A pale blue linen shirt from Levi's with a spread collar, a classic look that pairs well with chinos in warm weather.",
   "images": [
    "/products/S-02-206.webp"
   ],
@@ -14552,12 +13355,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-02-206.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14568,7 +13366,7 @@
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Colour read from the product photo; store text says yellow. Fit not stated on the page",
+   "flag": "Fit not stated on the page",
    "swap": {
     "status": "applied",
     "from": "H&M Regular Fit Linen-blend Shirt",
@@ -14615,10 +13413,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "http://levi.in/cdn/shop/collections/slim.webp?v=1739365418": "only 253x385"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14672,12 +13467,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-03-302.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/005013730_01_Front.jpg?v=1767769933",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14728,12 +13518,7 @@
    "licence": "© Uniqlo - press/product image, used for a non-commercial student lab demo",
    "author": "Uniqlo",
    "attribution": "Image © Uniqlo, from www.uniqlo.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 2000,
-   "file": "/products/S-03-303.webp",
-   "processedFrom": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475578/item/goods_57_475578_3x4.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14783,10 +13568,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://dockers.in/cdn/shop/files/423b6bf80cbe3d804d8e59057c66306304731076.png?v=1788778604&width=272": "only 272x80"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14844,12 +13626,7 @@
    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
    "author": "Levi's",
    "attribution": "Image © Levi's, from levi.in",
-   "matchChecked": true,
-   "width": 1034,
-   "height": 1376,
-   "file": "/products/S-03-305.webp",
-   "processedFrom": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14905,8 +13682,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -14958,14 +13734,7 @@
    "licence": "CC BY 2.0",
    "author": "38142119@N00",
    "attribution": "\"Nike Air Force 1 '07 LV8 (53783096186).png\" by 38142119@N00, CC BY 2.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nike_Air_Force_1_%2707_LV8_%2853783096186%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 4032,
-   "height": 3024,
-   "file": "/products/S-04-401.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nike_Air_Force_1_%2707_LV8_%2853783096186%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15018,14 +13787,7 @@
    "licence": "CC0",
    "author": "LeDroider",
    "attribution": "\"Adidas Samba OG.jpg\" by LeDroider, CC0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/f/fa/Adidas_Samba_OG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 4000,
-   "height": 2431,
-   "file": "/products/S-04-402.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Adidas_Samba_OG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15076,11 +13838,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "http://converse.in/cdn/shop/files/162062c_a_107x1-web.jpg?v=1785503414"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15133,12 +13891,7 @@
    "licence": "CC BY 2.0",
    "author": "reeqhair",
    "attribution": "\"Vans old skool\" by reeqhair, CC BY 2.0, via Openverse",
-   "matchChecked": true,
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/S-04-404.webp",
-   "processedFrom": "https://live.staticflickr.com/7489/27610218422_1b6ed671b1_b.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15190,18 +13943,7 @@
    "licence": "CC BY 4.0",
    "author": "Petar Milošević",
    "attribution": "\"New Balance 574 enfants.jpg\" by Petar Milošević, CC BY 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/6/67/New_Balance_574_enfants.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a2/New_Balance_574_Classic._%2817079561049%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/d/dd/New_Balance_574_Classic._%2816643317234%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/2/22/New_Balance_574.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/3/32/New_balance_camo_574_2014-03-25_21-50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 4608,
-   "height": 2425,
-   "file": "/products/S-04-405.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/6/67/New_Balance_574_enfants.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15252,8 +13994,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15305,11 +14046,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://live.staticflickr.com/65535/54968996356_aaa551634f_b.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15362,12 +14099,7 @@
    "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
    "author": "New Era",
    "attribution": "Image © New Era, from neweracap.in",
-   "matchChecked": true,
-   "width": 1920,
-   "height": 1920,
-   "file": "/products/S-05-501.webp",
-   "processedFrom": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15424,12 +14156,7 @@
    "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
    "author": "New Era",
    "attribution": "Image © New Era, from neweracap.in",
-   "matchChecked": true,
-   "width": 1920,
-   "height": 1920,
-   "file": "/products/S-05-502.webp",
-   "processedFrom": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15486,10 +14213,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://assets2.oakley.com/cdn-record-files-pi/b42cba54-46a9-4104-a473-a77c011fbcaf/88654352-26fd-473d-bb2a-ad7a003bbc43/0OO9102__9102E8__P21__noshad__qt.png?impolicy=PI20_Oakley_Resize&wid=640": "only 640x384"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15541,21 +14265,7 @@
    "licence": "CC BY-SA 3.0",
    "author": "ItzANormalFioko",
    "attribution": "\"Rayban x Meta glasses Generazione 2 con lenti Polaroid, wayfarer.jpg\" by ItzANormalFioko, CC BY-SA 3.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/d/d0/Custodia_dei_Rayban_Meta_Gen2_%28Wayfarer%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/9/92/Rayban_x_Meta_glasses_Generazione_2_con_lenti_Polaroid%2C_wayfarer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a8/Corona_Beer_Display_Publix_Ray_Ban_Meta_Wayfarer_Smart_Glasses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b4/Brickell_Ray_Ban_Meta_Wayfarer_Smart_Glasses_-_2_May_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/3/3d/Brickell_Ray_Ban_Meta_Wayfarer_Smart_Glasses_-_Colorful_facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 4000,
-   "height": 3000,
-   "file": "/products/S-05-504.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/92/Rayban_x_Meta_glasses_Generazione_2_con_lenti_Polaroid%2C_wayfarer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/d/d0/Custodia_dei_Rayban_Meta_Gen2_%28Wayfarer%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15608,12 +14318,7 @@
    "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
    "author": "New Era",
    "attribution": "Image © New Era, from neweracap.in",
-   "matchChecked": true,
-   "width": 1000,
-   "height": 1000,
-   "file": "/products/S-05-505.webp",
-   "processedFrom": "http://neweracap.in/cdn/shop/files/60915961_1.jpg?v=1787654689&width=2048",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15664,11 +14369,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://c.static-nike.com/a/images/w_1200,c_limit/bzl2wmsfh7kgdkufrrjq/seo-title.jpg"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15722,19 +14423,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MKR64?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1790722492861",
-    "https://upload.wikimedia.org/wikipedia/commons/0/06/Apple_Watch_Series_10.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2e/Apple_Watch_Series_10.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_Watch_Series_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/8/86/Apple_Watch_Series_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "width": 1200,
-   "height": 630,
-   "file": "/products/W-01-101.webp",
-   "processedFrom": "https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/tile/Apple-Watch-Series-10-hero-240909-lp.jpg.og.jpg?202608191703",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15787,14 +14476,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://upload.wikimedia.org/wikipedia/commons/6/65/Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a1/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_-_Backside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://www.apple.com/in/apple-watch-se-3/images/meta/apple-watch-se-3__d0wwc67lzg02_og.png?202610140506"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15848,14 +14530,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "failures": {
-    "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-watch7-l305-sm-l305fzeains-thumb-542367109": "only 330x330"
-   },
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/W-01-103.webp",
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-watch7-l305-sm-l305fzeains-thumb-542367109"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15908,13 +14583,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff": "only 720x572"
-   },
-   "rejected": [
-    "https://lh3.googleusercontent.com/sIjpDVQC6oidNGe9Io5MV9dGm1PgaRWpsa9qUrncM_spqskfYP-yjvdt5B27KLN7nFz4Biqp-q32SetgyON9PuUoluV8V7Ose4Cd=rj-sc0xffffffff"
-   ]
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -15969,14 +14638,7 @@
    "licence": "CC BY-SA 4.0",
    "author": null,
    "attribution": "\"Garmin Forerunner 265 musicG.jpg\", CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "width": 3055,
-   "height": 2789,
-   "file": "/products/W-01-105.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16029,12 +14691,7 @@
    "licence": "© Amazfit - press/product image, used for a non-commercial student lab demo",
    "author": "Amazfit",
    "attribution": "Image © Amazfit, from in.amazfit.com",
-   "matchChecked": true,
-   "width": 2700,
-   "height": 1350,
-   "file": "/products/W-01-106.webp",
-   "processedFrom": "http://in.amazfit.com/cdn/shop/collections/fbbc8f602c38b689bfe13d0d440e7e68.jpg?v=1667995239",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16088,10 +14745,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://cdn.shopify.com/s/files/1/0997/6284/files/image_10_4.png?v=1776236007": "only 600x315"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16143,8 +14797,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16206,14 +14859,7 @@
    "licence": "© Fitbit - press/product image, used for a non-commercial student lab demo",
    "author": "Fitbit",
    "attribution": "Image © Fitbit, from store.google.com",
-   "matchChecked": true,
-   "failures": {
-    "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff": "only 740x592"
-   },
-   "width": 512,
-   "height": 410,
-   "file": "/products/W-02-202.webp",
-   "processedFrom": "https://lh3.googleusercontent.com/4fHe7o06nMhfBJhr2NPnn49GnXZV4m60iqWNfmNl5H5MjD1nuMhEGTz1hNR_Du9rlsnA5HyEF5NKcfNeE22YZAghCtEZl0BX_Q=rj-sc0xffffffff"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16269,15 +14915,7 @@
    "licence": "CC BY 4.0",
    "author": "Tatsuo Yamashita",
    "attribution": "\"Fitbit inspire 3 (55322650282).jpg\" by Tatsuo Yamashita, CC BY 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/2/2f/Fitbit_inspire_3_%2855322650282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://lh3.googleusercontent.com/PSvw-n--5o5mN9_KGWSBzfTeOO3PQqfZIvtaWJ5R4NbOKe2heDrXUAbf8-jsYSU8u4qq2MsOg5ou9xHDtl8XgwL8VQU1J2aA0DI=rw-e365-w700-rj-sc0xffffffff": "only 656x524"
-   },
-   "width": 4032,
-   "height": 3024,
-   "file": "/products/W-02-203.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Fitbit_inspire_3_%2855322650282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16332,15 +14970,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/assets/in/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$"
-   ],
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/W-02-204.webp",
-   "processedFrom": "https://images.samsung.com/is/image/samsung/assets/in/support/mobile-devices/test-mode-in-samsung-galaxy-fit3/tap-on-settings-galaxy-fit3.png?$LazyLoad_Home_PNG$",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16394,12 +15024,7 @@
    "licence": "© Amazfit - press/product image, used for a non-commercial student lab demo",
    "author": "Amazfit",
    "attribution": "Image © Amazfit, from in.amazfit.com",
-   "matchChecked": true,
-   "width": 1500,
-   "height": 1500,
-   "file": "/products/W-02-205.webp",
-   "processedFrom": "http://in.amazfit.com/cdn/shop/products/Black-1-sw.jpg?v=1701612314",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16453,12 +15078,7 @@
    "licence": "© Garmin - press/product image, used for a non-commercial student lab demo",
    "author": "Garmin",
    "attribution": "Image © Garmin, from www.garmin.com",
-   "matchChecked": true,
-   "width": 600,
-   "height": 600,
-   "file": "/products/W-02-206.webp",
-   "processedFrom": "https://res.garmin.com/en/products/010-02645-00/v/cf-lg-fd35ce34-6881-494f-a5c8-5a7e94cba980.jpg",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16513,18 +15133,7 @@
    "licence": "CC BY-SA 2.0",
    "author": "William Hook from Stafford, United Kingdom",
    "attribution": "\"Apple Watch - Green Sport Band (17870207014).jpg\" by William Hook from Stafford, United Kingdom, CC BY-SA 2.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 5184,
-   "height": 3456,
-   "file": "/products/W-03-301.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/6/60/Apple_Watch_-_Green_Sport_Band_%2817870207014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/6/60/Apple_Watch_-_Green_Sport_Band_%2817870207014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Apple_Watch_-_Green_Sport_Band_%2818488537942%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-bands-og-image-202609?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1787121002930"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16577,17 +15186,7 @@
    "licence": "CC0",
    "author": "AzureSaturn",
    "attribution": "\"Apple Watch SE 2 (GPS + Cellular, 40mm, Midnight) with Anchor Blue Sport Loop.jpg\" by AzureSaturn, CC0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 4284,
-   "height": 5712,
-   "file": "/products/W-03-302.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-bands-og-image-202609?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1787121002930"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16637,12 +15236,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-bands-og-image-202609?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1787121002930",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16701,14 +15295,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/W-03-304.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MJNL4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786680217656",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/1/1e/Apple_Watch_S6_%2840mm%29_Gold_Aluminum_Case_%2B_Gold_Milanese_Loop._%2850528057056%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   }
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16762,13 +15349,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://images.samsung.com/is/image/samsung/assets/in/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$"
-   ],
-   "failures": {
-    "https://resources.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/the-frame-bezel-popup-modern-pc.jpg?$636_300_JPG$": "only 636x300"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16818,8 +15399,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16879,12 +15459,7 @@
    "licence": "© Spigen - press/product image, used for a non-commercial student lab demo",
    "author": "Spigen",
    "attribution": "Image © Spigen, from spigen.in",
-   "matchChecked": true,
-   "width": 1430,
-   "height": 1430,
-   "file": "/products/W-03-307.webp",
-   "processedFrom": "http://spigen.in/cdn/shop/files/title_web_apple_watch_ultra_duraproarmor_01.jpg?v=1756702218",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -16940,23 +15515,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from news.samsung.com",
-   "matchChecked": true,
-   "rejected": [
-    "https://live.staticflickr.com/65535/40788841443_0bd58ef52a_b.jpg",
-    "https://live.staticflickr.com/65535/49789132321_236f4249e1_b.jpg",
-    "https://live.staticflickr.com/65535/49910105131_5ea145d258_b.jpg",
-    "https://live.staticflickr.com/7526/15769487709_ba1478fe1d_b.jpg",
-    "https://live.staticflickr.com/7553/15762818597_7422db60a6_b.jpg",
-    "https://live.staticflickr.com/7564/28572718885_1cb2c112ba_b.jpg",
-    "https://live.staticflickr.com/8648/27957533003_d0220ba361_b.jpg"
-   ],
-   "failures": {
-    "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg": "only 728x485"
-   },
-   "width": 728,
-   "height": 485,
-   "file": "/products/W-04-401.webp",
-   "processedFrom": "https://img.global.news.samsung.com/za/wp-content/uploads/2025/04/Samsung-Mobile-Wearable-Galaxy-Ring-Unboxing_main3-e1743511308164.jpg"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17010,11 +15569,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "rejected": [
-    "https://public-web-assets.uh-static.com/web_v2/thumb/uh-icon-1000x1000.png"
-   ],
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17067,13 +15622,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://ouraring.com/assets/icons/opengraph-400x400.png": "only 400x400"
-   },
-   "rejected": [
-    "https://ouraring.com/assets/icons/opengraph-400x400.png"
-   ]
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17125,15 +15674,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/W-04-404.webp",
-   "processedFrom": "https://www.apple.com/v/airtag/g/images/meta/og__ck3n0k1jl6j6.png?202603260000",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/e/eb/Apple_AirTag_%2851334123725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/3/37/Apple_AirTags_einrichten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   }
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17185,18 +15726,7 @@
    "licence": "CC BY 2.0",
    "author": "ajay_suresh",
    "attribution": "\"Apple AirTag (51334123725).jpg\" by ajay_suresh, CC BY 2.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "width": 4917,
-   "height": 2766,
-   "file": "/products/W-04-405.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Apple_AirTag_%2851334123725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/e/eb/Apple_AirTag_%2851334123725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/3/37/Apple_AirTags_einrichten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429"
-   },
-   "rejected": [
-    "https://www.apple.com/v/airtag/g/images/meta/og__ck3n0k1jl6j6.png?202603260000"
-   ]
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17250,16 +15780,7 @@
    "licence": "CC BY-SA 4.0",
    "author": "ItzANormalFioko",
    "attribution": "\"White Samsung Galaxy SmartTag2.png\" by ItzANormalFioko, CC BY-SA 4.0, via Wikimedia Commons",
-   "matchChecked": true,
-   "failures": {
-    "https://upload.wikimedia.org/wikipedia/commons/f/f1/White_Samsung_Galaxy_SmartTag2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://upload.wikimedia.org/wikipedia/commons/0/03/Back_of_White_Samsung_Galaxy_SmartTag2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original": "HTTP 429",
-    "https://images.samsung.com/is/image/samsung/p6pim/in/ei-t5600bbegin/gallery/in-galaxy-smarttag2-ei-t5600-ei-t5600bbegin-thumb-538343296": "only 330x330"
-   },
-   "width": 3000,
-   "height": 4000,
-   "file": "/products/W-04-406.webp",
-   "processedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/f1/White_Samsung_Galaxy_SmartTag2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17314,12 +15835,7 @@
    "licence": "© Jio - press/product image, used for a non-commercial student lab demo",
    "author": "Jio",
    "attribution": "Image © Jio, from www.jio.com",
-   "matchChecked": true,
-   "width": 1776,
-   "height": 888,
-   "file": "/products/W-04-407.webp",
-   "processedFrom": "https://myjiostatic.cdn.jio.com/cms/assets/jiotag2ndgeneration/banner_desktop.webp",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17371,12 +15887,7 @@
    "licence": "© Apple - press/product image, used for a non-commercial student lab demo",
    "author": "Apple",
    "attribution": "Image © Apple, from www.apple.com",
-   "matchChecked": true,
-   "width": 1200,
-   "height": 630,
-   "file": "/products/W-05-501.webp",
-   "processedFrom": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ML434?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786671476699",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17426,10 +15937,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {
-    "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dwdcb1dd9b/images/hi-res/6/22bf1d60b3493a64_WIZ038dqBL-2in1-FoldableMagneticCharger-web-01.jpg?sw=280&sh=280&sm=fit&sfrm=png": "only 280x280"
-   }
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17483,12 +15991,7 @@
    "licence": "© Anker - press/product image, used for a non-commercial student lab demo",
    "author": "Anker",
    "attribution": "Image © Anker, from www.anker.com",
-   "matchChecked": true,
-   "width": 4000,
-   "height": 4000,
-   "file": "/products/W-05-503.webp",
-   "processedFrom": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/Y1812_H21.png?v=1773220362",
-   "failures": {}
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17540,14 +16043,7 @@
    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
    "author": "Samsung",
    "attribution": "Image © Samsung, from www.samsung.com",
-   "matchChecked": true,
-   "failures": {
-    "https://images.samsung.com/is/image/samsung/p6pim/hk_en/ep-p5400tbeggb/gallery/hk-en-ep-p5400-ep-p5400tbeggb-thumb-531747296": "only 330x330"
-   },
-   "width": 1300,
-   "height": 1038,
-   "file": "/products/W-05-504.webp",
-   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/hk_en/ep-p5400tbeggb/gallery/hk-en-ep-p5400-ep-p5400tbeggb-thumb-531747296"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17603,8 +16099,7 @@
    "licence": null,
    "author": null,
    "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -17662,14 +16157,7 @@
    "licence": "© Fitbit - press/product image, used for a non-commercial student lab demo",
    "author": "Fitbit",
    "attribution": "Image © Fitbit, from www.fitbit.com",
-   "matchChecked": true,
-   "failures": {
-    "https://lh3.googleusercontent.com/5IBcSBZZF5SyAryvBkwC-oxe6vBNwM7Lm2uYM5AJPWQ3pm42l1YC-jZUgZvt-ySFSHGI_qYb7LJMFqJXN5EH93VMaGmeprp-xB8=rj-sc0xffffffff": "only 512x512"
-   },
-   "width": 1024,
-   "height": 1024,
-   "file": "/products/W-05-506.webp",
-   "processedFrom": "https://lh3.googleusercontent.com/5IBcSBZZF5SyAryvBkwC-oxe6vBNwM7Lm2uYM5AJPWQ3pm42l1YC-jZUgZvt-ySFSHGI_qYb7LJMFqJXN5EH93VMaGmeprp-xB8=rj-sc0xffffffff"
+   "matchChecked": true
   },
   "priceNote": {
    "checkedAt": "2026-11-05",

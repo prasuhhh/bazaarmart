@@ -688,7 +688,7 @@ Price basis: selling 243, estimate 29, mrp 7, launch-mrp 21.
 | S-02-203 | Rs 2,598 is a sale price (regular Rs 4,999). Material and fit wording come from foreign Levi's listings. levi.in gives the colour as Blue; foreign sites call it Indigo Stonewash. Amazon.in also lists a Barstow in Eddlyn Ecru, not included. |
 | S-02-204 | Colour read from the product photo; the store's URL says pink |
 | S-02-205 | MRP Rs 5,999. Amazon.in showed a similar listing at Rs 3,419. Fit detail, material and Light Blue colour come from foreign retailers, not the India listing; White from the file is unconfirmed and dropped. |
-| S-02-206 | Colour read from the product photo; store text says yellow. Fit not stated on the page |
+| S-02-206 | Fit not stated on the page |
 | S-03-301 | Price varies by wash: Rs 3,289 is one blue listing's sale price (regular Rs 4,699); other sale prices seen were Rs 1,823 to Rs 3,159. The summary did not tie the figure to one URL, so url left out. |
 | S-03-302 | Price varies by wash: Rs 4,938 is the Light Blue sale price (regular Rs 6,501); other sale prices seen were Rs 1,800 to Rs 7,218. File's Medium Stonewash not found. Cotton content not confirmed. url left out as the figure was not tied to one URL. |
 | S-03-303 | Price is an aggregator figure from a June 2026 Zoutons roundup for the Cotton version, far below the file's Rs 2,990; the Uniqlo India page gave no price. Black seen only on resale sites; file's Navy and Beige dropped. Stretch not confirmed. Url is the product page, not the price source. |

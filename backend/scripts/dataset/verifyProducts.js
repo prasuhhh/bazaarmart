@@ -11,6 +11,7 @@ const OUTPUT = new URL('../../data/products-300.verified.json', import.meta.url)
 const IMAGES = new URL('../../data/images.json', import.meta.url);
 const REPORTS = new URL('../../data/reports/', import.meta.url);
 
+const IMAGE_FIELDS = ['status', 'source', 'sourcePage', 'originalUrl', 'licence', 'author', 'attribution', 'matchChecked'];
 const CHECKED_AT = '2026-11-05';
 const BIG_PRICE_CHANGE = 0.15;
 const REVIEW_PRICE_CHANGE = 0.25;
@@ -135,8 +136,10 @@ function main() {
   // Image work lives in its own file, so re-running this script never loses it.
   const images = existsSync(IMAGES) ? JSON.parse(readFileSync(IMAGES, 'utf8')) : {};
   const merged = products.map(product => {
-    const { candidates, ...image } = images[product.productId] ?? {};
-    return image.status ? { ...product, image, images: image.file ? [image.file] : product.images } : product;
+    const found = images[product.productId];
+    if (!found?.status) return product;
+    const image = Object.fromEntries(IMAGE_FIELDS.map(field => [field, found[field] ?? (field === 'matchChecked' ? false : null)]));
+    return { ...product, image, images: found.status === 'ok' && found.matchChecked ? [found.file] : [] };
   });
 
   mkdirSync(REPORTS, { recursive: true });
