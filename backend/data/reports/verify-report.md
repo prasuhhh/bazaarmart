@@ -4,19 +4,22 @@ Checked 2026-11-05. 300 of 300 products verified, 0 with incomplete records, 0 n
 
 Facts come from web search summaries of press, retailer and maker pages. `priceNote.from` names the site each price came from. Prices are the selling price at a major Indian retailer or official store where one was found, and otherwise an MRP or estimate, as `priceNote.type` records. They were not read live from brand sites.
 
-Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
+Price basis: selling 243, estimate 29, mrp 7, launch-mrp 21.
 
 ## For your review
 
-132 products: estimates, snippet-only prices, and prices more than 25% away from the file.
+141 products: estimates, snippet-only prices, and prices more than 25% away from the file.
 
 | SKU | Product | File | Verified | From | Why |
 | --- | --- | --- | --- | --- | --- |
-| A-01-102 | Sony WF-1000XM5 | 19990 | 13990 | reliancedigital.in | -30% against the file |
+| A-01-102 | Samsung Galaxy Buds3 | 19990 | 13999 | reliancedigital.in | -30% against the file |
 | A-01-105 | Nothing Ear (a) | 7999 | 4999 | flipkart.com | -38% against the file |
 | A-02-201 | Sony WH-1000XM5 | 29990 | 19989 | amazon.in | -33% against the file |
 | A-02-202 | Bose QuietComfort Ultra Headphones | 35900 | 30900 | reliancedigital.in | snippet-only price |
-| A-03-305 | Sony ULT Field 1 | 8995 | 7989 | pricebefore.com | snippet-only price |
+| A-02-205 | boAt Nirvana 751 ANC | 13999 | 5099 | boat-lifestyle.com | -64% against the file |
+| A-02-206 | Bose QuietComfort Ultra Headphones (2nd Gen) | 5999 | 31990 | amazon.in | +433% against the file |
+| A-03-305 | Bose SoundLink Micro (2nd Gen) | 8995 | 11900 | amazon.in | +32% against the file |
+| A-03-306 | Marshall Middleton II | 4990 | 31999 | amazon.in | +541% against the file |
 | A-04-402 | JBL Bar 5.0 MultiBeam | 39999 | 34537 | fullspecs.net | estimate |
 | A-04-405 | AudioQuest DragonFly Cobalt USB DAC | 26990 | 36900 | theaudio.co | +37% against the file |
 | A-05-505 | DJI Mic 2 (2 TX + 1 RX + Charging Case) | 29990 | 38990 | bajajfinserv.in | +30% against the file |
@@ -24,6 +27,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | B-01-102 | Cetaphil Gentle Skin Cleanser (250 ml) | 1100 | 707 | 1mg.com | -36% against the file |
 | B-01-106 | La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+ (50 ml) | 2100 | 1400 | nykaa.com | -33% against the file |
 | B-02-201 | Dyson Supersonic Hair Dryer | 39900 | 29900 | reliancedigital.in | -25% against the file |
+| B-02-202 | Moroccanoil Intense Hydrating Mask (250 ml) | 49900 | 3600 | tirabeauty.com | -93% against the file |
 | B-02-206 | L'Oréal Paris Total Repair 5 Shampoo (340 ml) | 399 | 270 | purplle.com | -32% against the file |
 | B-03-301 | Philips OneBlade QP2724/10 | 2499 | 1759 | flipkart.com via pricebefore.com | -30% against the file |
 | B-03-302 | Philips OneBlade Turbo2X Face & Body QP2824/10 | 6499 | 2230 | amazon.in | -66% against the file |
@@ -39,6 +43,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | C-01-101 | Fjällräven Kånken Classic Backpack | 8999 | 6300 | trekkit.in | -30% against the file |
 | C-01-102 | Herschel Little America Backpack | 9999 | 13398 | ubuy.co.in | estimate, +34% against the file |
 | C-01-103 | The North Face Borealis Backpack | 9999 | 13986 | ubuy.co.in | estimate, +40% against the file |
+| C-01-105 | Herschel Settlement Mid-Volume Backpack | 2295 | 6734 | amazon.in | snippet-only price, +193% against the file |
 | C-01-106 | Quechua Arpenaz 100 20L Hiking Backpack | 399 | 1299 | decathlon.in | +226% against the file |
 | C-01-107 | Osprey Farpoint 40 Travel Pack | 17999 | 42552 | amazon.in | snippet-only price, +136% against the file |
 | C-02-202 | Incase ICON Sleeve with Woolenex for 14-inch MacBook Pro | 5999 | 14485 | tanotis.com | +141% against the file |
@@ -66,18 +71,18 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | D-03-306 | Ergotron LX Desk Mount Monitor Arm | 17999 | 37915 | amazon.in | +111% against the file |
 | D-03-307 | Rain Design mStand Laptop Stand | 5999 | 8276 | amazon.in | +38% against the file |
 | D-04-402 | BenQ ScreenBar Monitor Light | 9990 | 11799 | amazon.in | snippet-only price |
-| D-04-403 | Elgato Key Light | 17999 | 29225 | tanotis.com | +62% against the file |
 | D-04-405 | Xiaomi Mi Smart LED Desk Lamp 1S | 3499 | 2091 | reliancedigital.in | -40% against the file |
 | D-04-406 | IKEA FORSÅ Work Lamp (Nickel-plated) | 1990 | 3490 | ikea.com/in | +75% against the file |
-| D-05-503 | Elgato Facecam | 13999 | 17499 | amazon.in | snippet-only price, +25% against the file |
 | D-05-505 | Anker 341 USB-C Hub (7-in-1) | 3499 | 7646 | pricehistory.app | snippet-only price, +119% against the file |
 | D-05-507 | Anker 11-in-1 USB-C Docking Station | 39999 | 11623 | amazon.in | -71% against the file |
 | G-01-105 | Nintendo Joy-Con (L)/(R) Pair | 7499 | 8645 | ubuy.co.in | estimate |
 | G-01-106 | 8BitDo Ultimate 3-mode Controller for Xbox | 5499 | 6199 | genesispc.in | snippet-only price |
 | G-02-203 | SteelSeries Arctis Nova 7 Wireless | 18999 | 29990 | smartprix.com | estimate, +58% against the file |
 | G-03-302 | Razer Huntsman Mini | 9999 | 7415 | computechstore.in | -26% against the file |
+| G-03-304 | Logitech G512 Mechanical Gaming Keyboard (GX Brown) | 15999 | 8995 | amazon.in | -44% against the file |
 | G-03-306 | Logitech G413 TKL SE Mechanical Gaming Keyboard | 19999 | 5499 | amazon.in | snippet-only price, -73% against the file |
 | G-04-402 | Logitech G502 HERO | 4495 | 3250 | primeabgb.com | -28% against the file |
+| G-04-407 | Logitech G Pro X Superlight Wireless Gaming Mouse | 4499 | 11995 | flipkart.com | +167% against the file |
 | G-05-501 | Green Soul Monster Ultimate (S) Gaming Chair | 17999 | 16999 | greensoul.online | snippet-only price |
 | G-05-502 | Cooler Master Caliber R3 Gaming Chair | 52999 | 20299 | varietyinfotech.com | snippet-only price, -62% against the file |
 | G-05-505 | Razer Goliathus Extended Chroma | 4999 | 6499 | reliancedigital.in | +30% against the file |
@@ -116,15 +121,19 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | P-05-507 | Samsung 5A USB-C to USB-C Cable (1 m) | 1199 | 5523 | amazon.in | +361% against the file |
 | S-01-102 | Levi's Men's Brand Logo Crew Neck T-shirt | 1299 | 559 | levi.in | -57% against the file |
 | S-01-105 | Puma ESS Logo Tee | 1299 | 839 | in.puma.com | -35% against the file |
+| S-01-106 | Levi's Men's Graphic Print Slim Fit T-shirt | 499 | 899 | levi.in | +80% against the file |
 | S-02-201 | Allen Solly Men's Oxford Solid Regular Fit Casual Shirt | 2490 | 679 | amazon.in | snippet-only price, -73% against the file |
-| S-02-202 | Uniqlo Men's Premium Linen Long-Sleeve Shirt | 2990 | 2490 | zoutons.com | estimate |
+| S-02-202 | Levi's Men's Checkered Spread Collar Shirt | 2990 | 999 | levi.in | -67% against the file |
 | S-02-203 | Levi's Men's Barstow Standard Fit Western Denim Shirt | 3999 | 2598 | levi.in | -35% against the file |
-| S-02-204 | Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt | 12900 | 20900 | ralphlauren.global/in | +62% against the file |
+| S-02-204 | Levi's Men's Solid Spread Collar Shirt | 12900 | 1135 | levi.in | -91% against the file |
 | S-02-205 | Tommy Hilfiger Solid Regular Fit Oxford Shirt | 5999 | 4199 | tommyhilfiger.nnnow.com | -30% against the file |
+| S-02-206 | Levi's Men's Solid Spread Collar Linen Shirt | 2299 | 1279 | levi.in | -44% against the file |
 | S-03-303 | Uniqlo Smart Ankle Pants | 2990 | 1490 | zoutons.com | estimate, -50% against the file |
 | S-03-304 | Dockers Signature Go Khaki Slim Fit Trousers | 3999 | 2399 | dockers.in | -40% against the file |
+| S-03-305 | Levi's Men's 512 Slim Tapered Fit Jeans | 3495 | 1347 | levi.in | -61% against the file |
 | S-04-404 | Vans Old Skool | 5999 | 4499 | flipkart.com | -25% against the file |
-| S-05-502 | Ray-Ban Original Wayfarer Classic RB2140 | 9590 | 14990 | india.ray-ban.com | +56% against the file |
+| S-05-501 | New Era Chicago Bulls Essential Outline 9FORTY Cap | 9890 | 2999 | neweracap.in | -70% against the file |
+| S-05-502 | New Era New York Yankees Essential Camo 9FORTY Cap | 9590 | 2999 | neweracap.in | -69% against the file |
 | S-05-506 | Nike Dri-FIT Club Structured Blank Front Cap | 1695 | 995 | nike.com/in | -41% against the file |
 | W-01-101 | Apple Watch Series 10 (GPS, 42 mm) | 46900 | 30999 | smartprix.com | estimate, -34% against the file |
 | W-01-102 | Apple Watch SE (2nd generation, GPS, 40 mm) | 24900 | 23119 | smartprix.com | estimate |
@@ -149,19 +158,29 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 
 | SKU | Status | From | To | Reason |
 | --- | --- | --- | --- | --- |
-| A-03-305 | applied | Ultimate Ears Wonderboom 3 | Sony ULT Field 1 | User decision: Wonderboom 4's Amazon.in seller was unconfirmed, so a speaker clearly sold in India replaces it. Launched in India May 2024 at ₹10,990, listed by Reliance Digital |
+| A-01-102 | applied | Sony WF-1000XM5 | Samsung Galaxy Buds3 | User-approved replacement: the original maker site refused access, so no photo was available |
+| A-02-205 | applied | Audio-Technica ATH-M50x | boAt Nirvana 751 ANC | User-approved replacement: the original maker site refused access, so no photo was available |
+| A-02-206 | applied | JBL Tune 760NC | Bose QuietComfort Ultra Headphones (2nd Gen) | User-approved replacement: the original maker site refused access, so no photo was available |
+| A-03-305 | applied | Sony ULT Field 1 | Bose SoundLink Micro (2nd Gen) | User-approved replacement: the original maker site refused access, so no photo was available |
+| A-03-306 | applied | Sony SRS-XB100 | Marshall Middleton II | User-approved replacement: the original maker site refused access, so no photo was available |
 | A-04-404 | applied | FiiO BTR5 (2021) Bluetooth DAC | FiiO BTR7 Bluetooth DAC | BTR5 2021 is discontinued: Headphone Zone India lists it as end-of-life and other retailers show it sold out or withdrawn |
+| B-02-202 | applied | Dyson Airwrap Multi-styler Complete Long | Moroccanoil Intense Hydrating Mask (250 ml) | User-approved replacement: the original maker site refused access, so no photo was available |
 | B-03-302 | applied | Philips OneBlade Pro 360 QP6551 | Philips OneBlade Turbo2X Face & Body QP2824/10 | QP6551 was found only at UK and EU retailers, with no Indian listing or rupee price. QP2824/10 is the same brand and bay and is listed on Amazon.in, Flipkart, Croma and Reliance Digital. |
+| C-01-105 | applied | Nike Brasilia 9.5 Training Backpack (Medium, 24L) | Herschel Settlement Mid-Volume Backpack | User-approved replacement: the original maker site refused access, so no photo was available |
 | C-04-403 | applied | Apple World Travel Adapter Kit (MD837ZM/A) | Apple World Travel Adapter Kit (MLFR4G/A) | The older MD837ZM/A has no reliable Indian price and is unavailable on Amazon.in; Apple's India store sells the current MLFR4G/A |
 | C-04-404 | applied | Eagle Creek Pack-It Isolate Cube Set | Forclaz Kit of 3 Trekking Travel Storage Bags | User decision: Eagle Creek looks import-only in India; Forclaz is sold by Decathlon India |
 | C-04-406 | applied | Peak Design Travel Duffel 35L | Wildcraft Expedition DUF 35 Duffel Backpack | No Indian listing or rupee price found for the Peak Design duffel after three searches; this 35 L duffel is on Amazon.in |
 | D-02-207 | applied | Microsoft Bluetooth Ergonomic Mouse | Logitech M720 Triathlon Multi-Device Wireless Mouse | No India listing or rupee price found for the Microsoft mouse in two rounds of searching. The M720 is in the same bay, clearly listed on Amazon.in and Flipkart, and not already in the catalogue. |
 | D-03-304 | applied | Apple Studio Display | Apple Studio Display (2026) | The 2022 model at 1,59,900 was succeeded by the 2026 model, launched in India in March 2026 at 1,89,900. |
+| D-04-403 | applied | Elgato Key Light | Logitech G Litra Beam LX Streaming Light | User-approved replacement: the original maker site refused access, so no photo was available |
+| D-05-503 | applied | Elgato Facecam | Logitech Brio 500 Webcam | User-approved replacement: the original maker site refused access, so no photo was available |
 | D-05-504 | applied | Insta360 Link AI Webcam | Insta360 Link 2 4K AI Webcam | No Indian price found for the original 2022 Link; the Link 2 is its successor and is sold on Insta360's India site |
 | D-05-507 | applied | CalDigit TS4 Thunderbolt 4 Dock | Anker 11-in-1 USB-C Docking Station | User decision: the TS4 looks import-only in India; the Anker dock is on Amazon.in |
 | G-01-106 | applied | 8BitDo Ultimate Bluetooth Controller | 8BitDo Ultimate 3-mode Controller for Xbox | No Indian listing found for the Bluetooth model; the 3-mode Xbox model is the closest 8BitDo Ultimate controller confirmed at an Indian seller. |
+| G-03-304 | applied | Corsair K70 RGB PRO | Logitech G512 Mechanical Gaming Keyboard (GX Brown) | User-approved replacement: the original maker site refused access, so no photo was available |
 | G-03-306 | applied | SteelSeries Apex Pro TKL | Logitech G413 TKL SE Mechanical Gaming Keyboard | No Amazon.in, Flipkart or other Indian retailer listing confirmed for the Apex Pro TKL across two rounds of searching; only an aggregator figure of Rs 22,999 and a single reseller. G413 TKL SE is a tenkeyless gaming keyboard listed on Amazon.in and not already in the catalogue. It is not a like-for-like model: it lacks adjustable-actuation switches and is far cheaper. |
 | G-04-406 | applied | SteelSeries Rival 3 | SteelSeries Rival 3 Gen 2 | No seller listing found in India for the original wired Rival 3, only a third-party estimate; the Gen 2 wired model is on sale at an Indian retailer. |
+| G-04-407 | applied | Corsair Harpoon RGB Wireless | Logitech G Pro X Superlight Wireless Gaming Mouse | User-approved replacement: the original maker site refused access, so no photo was available |
 | G-05-502 | applied | Secretlab TITAN Evo | Cooler Master Caliber R3 Gaming Chair | User-approved exception to the same-brand rule: no evidence Secretlab sells TITAN Evo in India. Brand changed to Cooler Master because the two preferred chairs, Corsair TC100 Relaxed and Razer Iskur V2, could not be confirmed on sale in India. |
 | L-01-105 | applied | Govee RGBIC LED Strip Lights (10 m) | HomeMate Wi-Fi Multicolour Smart LED Strip Kit (10 m) | The basic Govee 10 m strip has no Indian listing; Govee's 10 m models on Amazon.in are outdoor or neon strips at ₹18,324 and above |
 | L-03-304 | applied | IKEA RIBBA Frame (30x40 cm) | IKEA EDSBRUK Frame, White (30x40 cm) | Two searches found no RIBBA listing on IKEA India or any Indian retailer. EDSBRUK is the same brand and size, and is listed on IKEA India. |
@@ -176,9 +195,15 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | P-05-504 | applied | Anker 643 USB-C to USB-C Cable (Flow, 1.8 m) | Anker 643 USB-C to USB-C Cable (Flow, 0.9 m) | The 1.8 m (6 ft, A8553) version exists on Amazon.in but no rupee price was found in two searches; the 0.9 m version has a confirmed price. |
 | S-01-101 | applied | Uniqlo U Crew Neck Short-Sleeve T-Shirt | Uniqlo AIRism Cotton Crew Neck T-Shirt | No India listing or rupee price found for the Uniqlo U crew neck; this is the closest men's short-sleeved crew tee on uniqlo.com/in. Not proven discontinued in India. |
 | S-01-102 | applied | Levi's Original Housemark Tee | Levi's Men's Brand Logo Crew Neck T-shirt | Original Housemark Tee appeared only on European Levi's sites and no India listing was found; this is the closest logo tee on levi.in. |
+| S-01-106 | applied | H&M Regular Fit Round-Neck T-Shirt | Levi's Men's Graphic Print Slim Fit T-shirt | User-approved replacement: the original maker site refused access, so no photo was available |
 | S-02-201 | applied | Uniqlo Oxford Long-Sleeve Shirt | Allen Solly Men's Oxford Solid Regular Fit Casual Shirt | No Uniqlo India listing or rupee price found for an Oxford shirt in repeated searches. Replaced with a well-known Oxford shirt listed on Amazon.in, same bay, not in the catalogue. Not proven unavailable from Uniqlo India. |
-| S-02-204 | applied | Polo Ralph Lauren Custom Fit Oxford Shirt | Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt | No rupee price found for the Custom Fit Oxford in two searches; the brand's India site lists Classic Fit Oxford shirts. Not proven unavailable in India. |
+| S-02-202 | applied | Uniqlo Men's Premium Linen Long-Sleeve Shirt | Levi's Men's Checkered Spread Collar Shirt | User-approved replacement: the original maker site refused access, so no photo was available |
+| S-02-204 | applied | Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt | Levi's Men's Solid Spread Collar Shirt | User-approved replacement: the original maker site refused access, so no photo was available |
+| S-02-206 | applied | H&M Regular Fit Linen-blend Shirt | Levi's Men's Solid Spread Collar Linen Shirt | User-approved replacement: the original maker site refused access, so no photo was available |
 | S-03-304 | applied | Dockers Alpha Khaki Slim Fit Chinos | Dockers Signature Go Khaki Slim Fit Trousers | Alpha Khaki pages on Amazon.in showed no price in two searches and some were marked unavailable. Replaced with the closest slim khaki on dockers.in. Alpha Khaki is not proven discontinued. |
+| S-03-305 | applied | Nike Sportswear Club Fleece Joggers | Levi's Men's 512 Slim Tapered Fit Jeans | User-approved replacement: the original maker site refused access, so no photo was available |
+| S-05-501 | applied | Ray-Ban Aviator Classic RB3025 | New Era Chicago Bulls Essential Outline 9FORTY Cap | User-approved replacement: the original maker site refused access, so no photo was available |
+| S-05-502 | applied | Ray-Ban Original Wayfarer Classic RB2140 | New Era New York Yankees Essential Camo 9FORTY Cap | User-approved replacement: the original maker site refused access, so no photo was available |
 | W-02-201 | applied | Xiaomi Smart Band 9 | Huawei Band 9 | No India sale confirmed for the Smart Band 9; Huawei Band 9 is listed on Amazon.in and Flipkart |
 | W-03-303 | applied | Apple Solo Loop (42 mm) | Apple Sport Loop (42 mm) | No Indian price or listing for the Solo Loop after three searches; the 42 mm Sport Loop is in stock on Amazon.in |
 | W-03-306 | applied | Garmin QuickFit 22 Silicone Band | Abanen 22 mm QuickFit Silicone Watch Band | Garmin's own band shows as unavailable or unpriced on Amazon.in; this third-party QuickFit band is listed there |
@@ -198,7 +223,6 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | B-03-307 | Panasonic ER-GN30 Nose & Ear Trimmer | Panasonic ER-GN30-K Nose & Ear Trimmer |
 | B-05-501 | Philips Sonicare ProtectiveClean 4300 | Philips Sonicare ProtectiveClean 4300 HX6807/24 |
 | C-01-104 | Peak Design Everyday Backpack 20L | Peak Design Everyday Backpack 20L V2 |
-| C-01-105 | Nike Brasilia 9.5 Training Backpack | Nike Brasilia 9.5 Training Backpack (Medium, 24L) |
 | C-01-106 | Quechua NH Arpenaz 100 Hiking Backpack 20L | Quechua Arpenaz 100 20L Hiking Backpack |
 | C-02-201 | tomtoc 360 Protective Laptop Sleeve (14-inch) | tomtoc Defender-A13 Laptop Sleeve (14-inch) |
 | C-02-202 | Incase Icon Sleeve with Woolenex (14-inch) | Incase ICON Sleeve with Woolenex for 14-inch MacBook Pro |
@@ -228,13 +252,10 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | P-05-506 | UGREEN 100W USB-C to USB-C Braided Cable (2 m) | UGREEN 100W USB-C to USB-C Cable (2 m) |
 | S-01-104 | Adidas Essentials 3-Stripes T-Shirt | Adidas Essentials 3-Stripes Tee |
 | S-01-105 | Puma Essentials Logo Tee | Puma ESS Logo Tee |
-| S-01-106 | H&M Regular Fit T-shirt | H&M Regular Fit Round-Neck T-Shirt |
-| S-02-202 | Uniqlo Premium Linen Long-Sleeve Shirt | Uniqlo Men's Premium Linen Long-Sleeve Shirt |
 | S-02-203 | Levi's Barstow Western Standard Shirt | Levi's Men's Barstow Standard Fit Western Denim Shirt |
 | S-02-205 | Tommy Hilfiger Regular Fit Oxford Shirt | Tommy Hilfiger Solid Regular Fit Oxford Shirt |
 | S-03-306 | Adidas Tiro 24 Training Pants | Adidas Tiro 24 Slim Training Pants |
 | S-04-403 | Converse Chuck 70 High Top | Converse Chuck 70 Canvas High Top |
-| S-05-502 | Ray-Ban Original Wayfarer RB2140 | Ray-Ban Original Wayfarer Classic RB2140 |
 | S-05-505 | New Era New York Yankees 9FORTY Cap | New Era New York Yankees Essential 9FORTY Cap |
 | S-05-506 | Nike Dri-FIT Club Cap | Nike Dri-FIT Club Structured Blank Front Cap |
 | W-05-502 | Belkin BoostCharge Pro 3-in-1 Wireless Charging Stand with MagSafe | Belkin MagSafe 3-in-1 Qi2 Wireless Charger Stand 15W |
@@ -244,13 +265,16 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | SKU | File | Verified | Change | From |
 | --- | --- | --- | --- | --- |
 | A-01-101 | 24900 | 18900 | -24% | reliancedigital.in |
-| A-01-102 | 19990 | 13990 | -30% | reliancedigital.in |
+| A-01-102 | 19990 | 13999 | -30% | reliancedigital.in |
 | A-01-105 | 7999 | 4999 | -38% | flipkart.com |
 | A-01-107 | 1299 | 1499 | +15% | cashify.in |
 | A-02-201 | 29990 | 19989 | -33% | amazon.in |
 | A-02-204 | 26990 | 20990 | -22% | reliancedigital.in |
-| A-02-206 | 5999 | 4999 | -17% | 91mobiles.com |
+| A-02-205 | 13999 | 5099 | -64% | boat-lifestyle.com |
+| A-02-206 | 5999 | 31990 | +433% | amazon.in |
 | A-03-303 | 14900 | 11990 | -20% | flipkart.com |
+| A-03-305 | 8995 | 11900 | +32% | amazon.in |
+| A-03-306 | 4990 | 31999 | +541% | amazon.in |
 | A-03-307 | 1799 | 1499 | -17% | pricebefore.com |
 | A-04-405 | 26990 | 36900 | +37% | theaudio.co |
 | A-05-505 | 29990 | 38990 | +30% | bajajfinserv.in |
@@ -260,6 +284,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | B-01-106 | 2100 | 1400 | -33% | nykaa.com |
 | B-01-107 | 299 | 225 | -25% | flipkart.com |
 | B-02-201 | 39900 | 29900 | -25% | reliancedigital.in |
+| B-02-202 | 49900 | 3600 | -93% | tirabeauty.com |
 | B-02-206 | 399 | 270 | -32% | purplle.com |
 | B-03-301 | 2499 | 1759 | -30% | flipkart.com via pricebefore.com |
 | B-03-302 | 6499 | 2230 | -66% | amazon.in |
@@ -281,7 +306,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | C-01-101 | 8999 | 6300 | -30% | trekkit.in |
 | C-01-102 | 9999 | 13398 | +34% | ubuy.co.in |
 | C-01-103 | 9999 | 13986 | +40% | ubuy.co.in |
-| C-01-105 | 2295 | 2795 | +22% | nike.in |
+| C-01-105 | 2295 | 6734 | +193% | amazon.in |
 | C-01-106 | 399 | 1299 | +226% | decathlon.in |
 | C-01-107 | 17999 | 42552 | +136% | amazon.in |
 | C-02-202 | 5999 | 14485 | +141% | tanotis.com |
@@ -312,12 +337,11 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | D-03-306 | 17999 | 37915 | +111% | amazon.in |
 | D-03-307 | 5999 | 8276 | +38% | amazon.in |
 | D-04-402 | 9990 | 11799 | +18% | amazon.in |
-| D-04-403 | 17999 | 29225 | +62% | tanotis.com |
+| D-04-403 | 17999 | 14495 | -19% | amazon.in |
 | D-04-405 | 3499 | 2091 | -40% | reliancedigital.in |
 | D-04-406 | 1990 | 3490 | +75% | ikea.com/in |
 | D-04-407 | 1590 | 1290 | -19% | ikea.com/in |
 | D-05-502 | 19995 | 24790 | +24% | amazon.in |
-| D-05-503 | 13999 | 17499 | +25% | amazon.in |
 | D-05-505 | 3499 | 7646 | +119% | pricehistory.app |
 | D-05-507 | 39999 | 11623 | -71% | amazon.in |
 | G-01-103 | 5390 | 6590 | +22% | amazon.in |
@@ -326,10 +350,12 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | G-02-203 | 18999 | 29990 | +58% | smartprix.com |
 | G-02-204 | 5995 | 6995 | +17% | amazon.in |
 | G-03-302 | 9999 | 7415 | -26% | computechstore.in |
+| G-03-304 | 15999 | 8995 | -44% | amazon.in |
 | G-03-306 | 19999 | 5499 | -73% | amazon.in |
 | G-04-402 | 4495 | 3250 | -28% | primeabgb.com |
 | G-04-405 | 14999 | 12489 | -17% | varietyinfotech.com |
 | G-04-406 | 2999 | 3489 | +16% | varietyinfotech.com |
+| G-04-407 | 4499 | 11995 | +167% | flipkart.com |
 | G-05-502 | 52999 | 20299 | -62% | varietyinfotech.com |
 | G-05-505 | 4999 | 6499 | +30% | reliancedigital.in |
 | L-01-101 | 9999 | 6791 | -32% | reliancedigital.in |
@@ -379,19 +405,21 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | S-01-103 | 1695 | 1295 | -24% | nike.com/in |
 | S-01-104 | 1999 | 1599 | -20% | adidas.co.in |
 | S-01-105 | 1299 | 839 | -35% | in.puma.com |
+| S-01-106 | 499 | 899 | +80% | levi.in |
 | S-02-201 | 2490 | 679 | -73% | amazon.in |
-| S-02-202 | 2990 | 2490 | -17% | zoutons.com |
+| S-02-202 | 2990 | 999 | -67% | levi.in |
 | S-02-203 | 3999 | 2598 | -35% | levi.in |
-| S-02-204 | 12900 | 20900 | +62% | ralphlauren.global/in |
+| S-02-204 | 12900 | 1135 | -91% | levi.in |
 | S-02-205 | 5999 | 4199 | -30% | tommyhilfiger.nnnow.com |
-| S-02-206 | 2299 | 1799 | -22% | hm.com/en_in |
+| S-02-206 | 2299 | 1279 | -44% | levi.in |
 | S-03-303 | 2990 | 1490 | -50% | zoutons.com |
 | S-03-304 | 3999 | 2399 | -40% | dockers.in |
-| S-03-305 | 3495 | 2895 | -17% | myntra.com |
+| S-03-305 | 3495 | 1347 | -61% | levi.in |
 | S-03-306 | 3999 | 3220 | -19% | adidas.co.in |
 | S-04-404 | 5999 | 4499 | -25% | flipkart.com |
 | S-04-406 | 15999 | 13599 | -15% | ajio.com |
-| S-05-502 | 9590 | 14990 | +56% | india.ray-ban.com |
+| S-05-501 | 9890 | 2999 | -70% | neweracap.in |
+| S-05-502 | 9590 | 2999 | -69% | neweracap.in |
 | S-05-505 | 2499 | 2999 | +20% | neweracap.in |
 | S-05-506 | 1695 | 995 | -41% | nike.com/in |
 | W-01-101 | 46900 | 30999 | -34% | smartprix.com |
@@ -416,7 +444,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | SKU | Note |
 | --- | --- |
 | A-01-101 | MRP ₹24,900; other retail listings ₹17,990 to ₹19,990 |
-| A-01-102 | Amazon.in ₹13,989, Vijay Sales ₹16,990; WF-1000XM6 now succeeds this model |
+| A-01-102 | Amazon.in sellers ₹11,349 to ₹11,999; MRP ₹14,999. Battery claims vary by listing |
 | A-01-103 | MRP ₹19,999; Amazon.in ₹15,980 to ₹17,999, some of those listings are imported variants |
 | A-01-104 | MRP ₹6,499. Sources disagree: Flipkart ₹4,299 (Smartprix, Oct 2026), Amazon ₹5,498, Vijay Sales ₹6,099 and shown unavailable online |
 | A-01-105 | MRP ₹9,999; Amazon.in also ₹4,999; Smartprix showed ₹5,999 on 7 Oct 2026 |
@@ -426,14 +454,15 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | A-02-202 | Reliance price from search snippet, White Smoke; Amazon.in ₹35,989 to ₹39,990. A 2nd Gen model (₹49,900) now also sells in India; this is the recently sold 1st Gen |
 | A-02-203 | AirPods Max 2 (₹67,900) replaced this in March 2026; this USB-C model is recently sold |
 | A-02-204 | MRP ₹34,990; Amazon.in and Flipkart also ₹20,990, Vijay Sales ₹24,990 |
-| A-02-205 | File said wireless; this model is wired (ATH-M50xBT is the wireless one). Driver size from one listing only |
+| A-02-205 | Regular ₹7,990; Amazon.in and Flipkart snapshots ₹2,399 to ₹3,999 |
+| A-02-206 | Amazon.in and Flipkart ₹31,990; Reliance Digital list ₹49,900 |
 | A-02-207 | Aqua Blue from one retailer listing only, boAt's own page unreachable; price sources range ₹999 to ₹1,799 |
 | A-03-301 | Launch ₹14,999. Flipkart ₹8,999 by tracker; Smartprix shows Amazon ₹8,999, out of stock |
 | A-03-302 | Other listings ₹15,598 to ₹23,999, some for the Wi-Fi variant |
 | A-03-303 | 1st Gen, Stone Blue, seller RetailNet, stock unclear. MRP ₹15,900; Vijay Sales ₹15,490. File colour 'Blue Dusk' (2nd Gen) replaced with launch colours; 1st Gen Black not seen at retail in this pass |
 | A-03-304 | Listings range ₹12,540 to ₹15,999, regular price ₹19,999 |
-| A-03-305 | Amazon.in price from an undated price tracker; launch ₹10,990; Reliance Digital MRP ₹16,990 less 35% |
-| A-03-306 | MRP ₹5,990. Wide spread: Flipkart ₹2,489 (Grey, seller TBL Online), Amazon.in ₹2,990 (Blue, Orange) to ₹3,999 (Grey) |
+| A-03-305 | Amazon.in ₹11,900; Reliance Digital and MRP ₹15,900 |
+| A-03-306 | Same price at Reliance Digital and Croma; Flipkart offer ₹29,924 |
 | A-03-307 | MRP ₹3,490, sale ₹1,099 to ₹1,599 |
 | A-04-401 | Listings ₹49,999 to ₹56,999. File said wired; it has Wi-Fi streaming but no Bluetooth |
 | A-04-402 | UNCERTAIN: only an aggregator estimate of the India price, no Indian retailer confirmed |
@@ -456,7 +485,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | B-01-106 | Amazon.in two-pack works out to about 1330 per tube. Skin type unconfirmed from an Indian source. Colour is a placeholder. |
 | B-01-107 | Sellers disagree widely: 172 to 276, and MRP is shown as 195 to 290. Colour is a placeholder. |
 | B-02-201 | Price varies by colour and seller, about 24900 to 34900. File colours Fuchsia/Nickel and Black/Nickel were not confirmed and were replaced. |
-| B-02-202 | Other sellers 44399; launch price 45900. Reliance page title says Nickel/Copper while its URL says Prussian Blue/Copper. Weight left out because sources disagree. Hair-length note comes from a Dyson New Zealand listing. |
+| B-02-202 | Same ₹3,600 at Myntra and Nykaa; Amazon.in ₹3,240; Flipkart up to ₹4,694 |
 | B-02-203 | Newest dated price is from 2024 or earlier and some sellers are out of stock. Purple comes from price-tracker listing titles only; file colour Black was not confirmed. Power unconfirmed. |
 | B-02-204 | Nykaa MRP 3300; other sellers 2336 to 2720. Colour is a placeholder. |
 | B-02-205 | Nykaa listings show both 4320 and 4660; Pixies sale price 3888. Colour is a placeholder. |
@@ -487,7 +516,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | C-01-102 | No major Indian retailer found. Price is Ubuy's US import listing, excluding shipping and customs. Capacity left out: sources give 21, 25 and 30 L. Colours from non-Indian listings; Ash Rose not confirmed. |
 | C-01-103 | Ubuy import price. Amazon.in lists the separate Borealis Laptop model at 28515 (low of 14369), and Borealis Classic is a third model; do not mix. Specs from Ubuy only. File colours TNF Black and Summit Navy not confirmed. |
 | C-01-104 | heyjimmy.in shows it sold out at 24690 (regular 25900). imastudent.com lists 36594, inconsistent; the cheaper Zip v2 at 21990 is another model. Laptop fit and material from a single Sri Lankan listing. India colour stock unconfirmed. |
-| C-01-105 | Bay price is Nike's India MRP. SCS Sports shows 2515 and a third-party deal post shows 1118 at Flipkart (unverified). Sesame colourway size not stated. 9.5 is the model name, not capacity; a 30L XL also exists at 3495. |
+| C-01-105 | Amazon.in sellers range ₹6,659 to ₹16,321 by seller and colour; capacity not confirmed |
 | C-01-106 | Decathlon India shows 1299 against MRP 2499 and 4 colours, naming only Beige and Brown; Green and Purple come from the UK store. File Blue and Black not confirmed. Weight and size not confirmed for this model, so left out. |
 | C-01-107 | Amazon.in prices disagree: 42552 main listing, 28523 (MRP 37938) on a search page, 41365 and 90660 from other sellers. The price could not be tied to one exact page. Flipkart's 999 listing has mismatched specs (nylon, 906 g), so it was dropped as the source. Weight left out: sources give 1.48 to 1.58 kg. |
 | C-02-201 | Renamed: no product is sold under the file name; Defender-A13 (A13-C01D01) is the closest match. Other A13 variants list 3499 at Reliance Digital and BigBasket. Weight is from the A13D2B2 variant. File Grey not confirmed for A13. |
@@ -537,14 +566,14 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | D-03-307 | Price is for the Black model (10075). Amazon.in prices vary widely by colour and seller, 6,860 to 13,508; Starlight is 11,565. Specs come from getpc.co.in and reseller summaries, not a retailer spec table. |
 | D-04-401 | Black is the file colour and was not confirmed. Price is the launch offer against a listed 19,990. Amazon.in listing B0CJRSTPVC shows unavailable on one page, with stale-looking 18,799 and 25,115 on others; the Halo 2 (17,490) is now the current model, so sale of the original is unconfirmed. |
 | D-04-402 | Weight and power from non-Indian listings |
-| D-04-403 | Only import resellers priced it: Tanotis 29,225 with GST and duties, Poshace 31,599. Amazon.in lists the product but no price was seen. Black is the file colour, unconfirmed. Sources disagree on 5 GHz Wi-Fi support. Connectivity changed from n/a. |
+| D-04-403 | Power from Croma listing |
 | D-04-404 | Black is the file colour, unconfirmed. Priced by small Indian retailers, Variety Infotech 13,699 and SMC International 13,499; getpc.co.in estimates 9,600 to 10,600. An MK.2 version with 2100 lumens is also on Amazon.in, so the original may be fading out. Connectivity changed from n/a. |
 | D-04-405 | White seen only on overseas listings. MRP 2,999. Lumen figure omitted because sources disagree, 300 against 520. Reliance Digital price date unknown. Connectivity changed from n/a. |
 | D-04-406 | File colours Black and White not confirmed for India; those appear only on other countries' IKEA sites. An older IKEA India brochure shows 1,990 against 3,490 on the product page. |
 | D-04-407 | File colour White dropped: not found on IKEA India. IKEA India brochures also show beige at 1,290 and black at 1,490, which may be older. |
 | D-05-501 | Black is the file colour, not stated in results. Amazon.in configurations range to 11,894; Flipkart also about 7,995. |
 | D-05-502 | Flipkart showed 22,490 and a sold-out 16,499. Weight is from Flipkart only. Do not mix with the MX Brio or Brio for Business listings. |
-| D-05-503 | Amazon.in listings conflict: 17,499 from several sellers against 29,546. Elgato Facecam MK.2 (23,432) and Neo (7,399) are separate models. |
+| D-05-503 | Reliance Digital ₹12,042 to ₹12,995; MRP ₹14,999 |
 | D-05-504 | Colour carried from the file, not confirmed |
 | D-05-505 | Tracker price from April 2026, more than double the file; getpc.co.in says ₹3,800 to ₹4,200 but looks unreliable. Colour carried from the file. 'Battery' row is power delivery, the desk label set has no power row |
 | D-05-506 | Reliance lists model MJ1K2ZM/A; current model is MUF82ZM/A at ₹5,865 to ₹6,900 elsewhere |
@@ -565,7 +594,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | G-03-301 | Colour carried from file, not stated in results. MRP Rs 4,995; other listings Rs 3,399 to 4,100. |
 | G-03-302 | Price is the Linear Red Mercury model; Clicky Purple Mercury Rs 6,949 at the same store, Rs 8,470 at MD Computers, MRP Rs 15,999. Indian listings found were mostly Mercury; Black confirmed from launch coverage only. |
 | G-03-303 | Price is the Yellow switch model; other Indian listings Rs 10,750 to 11,089, MSRP Rs 17,999. Colour carried from file, not stated in results. |
-| G-03-304 | Price is the Cherry MX Speed version. Not the K70 PRO with OPX switches. Page shows Add to cart but no explicit stock wording. |
+| G-03-304 | Other listings ₹7,575 to ₹8,199; MRP ₹11,695 |
 | G-03-305 | Price is the Aqua model, in stock at ADS Store, though that page also carries a stray Red Switch tag. Other listings Rs 6,427 to 10,999; launch MRP Rs 10,900. |
 | G-03-306 | Price from a search summary of Amazon.in: Rs 5,499 against list Rs 7,395; other snapshots of the listing ranged Rs 6,295 to 9,090 and one variant was unavailable. Weight left out because listings disagree (650 g and 680 g). No Flipkart listing found for the TKL SE. |
 | G-03-307 | Price is the RGB White model at Redragon India; RGB Black is Rs 2,910, regular price Rs 4,490. The Rainbow version uses Red switches. Flipkart's White listing was sold out. |
@@ -575,7 +604,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | G-04-404 | Sold out at Variety Infotech when read. Other Indian listings show Rs 3,729 to 6,799, MRP Rs 12,999. White in the file was not confirmed and was dropped; all Indian listings found were black. Not the Pro or HyperSpeed. |
 | G-04-405 | Connectivity corrected from wired to wireless. Price is the black model, shown with Add to cart; MRP Rs 25,999. Special editions cost more. |
 | G-04-406 | Variety's listed original price of Rs 23,000 looks unreliable. White seen on an Amazon listing tracker, not an Indian store. DPI from a European listing. Not the Rival 3 Wireless. |
-| G-04-407 | Connectivity corrected from wired to wireless. Out of stock at Flipkart and Smartprix (Rs 3,899, June 2026), so treat as recently sold. Sensor name differs by source and weight comes from a third-party page; colour carried from file. |
+| G-04-407 | Flipkart ₹11,995, list ₹15,995; Amazon.in ₹13,999 |
 | G-05-501 | Renamed because the line has two sizes, (S) and (T); (S) is closest to the file's price. (T) is Rs 19,990. Price from a search snippet of the official site, whose page returned 429; Flipkart (S) Rs 18,990. Official colours given as single words, so the two-tone names are partly assumed. Specs may be shared across (S) and (T). |
 | G-05-502 | Third choice: Corsair TC100 Relaxed showed out of stock or email-when-available at every Indian seller readable (Variety Infotech, ADS Store, PrimeABGB, Vedant, KRG Kart); Razer Iskur V2 sold out at Variety Infotech and Black out of stock at EZPZ. Caliber R3 Black (CMI-GCR3-BK) shows Add to cart at Rs 20,299 at Variety Infotech, and a search snippet showed In Stock at MD Computers (page returned 403, not read directly), but PC Hub shows out of stock and PrimeABGB email-when-available, so stock is patchy. Specialist PC retailers only; no Amazon.in or Flipkart listing confirmed. Purple/Black price is higher (Rs 21,499 at Variety Infotech). Price dates not shown on pages. |
 | G-05-503 | Other listings Rs 2,519 to 2,971; PrimeABGB out of stock. Logitech sells several regional SKUs of this pad. |
@@ -653,19 +682,17 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | S-01-103 | 100% cotton comes from other regional Nike pages; heather colourways of the related non-Club tee are a cotton/polyester mix, so Dark Grey Heather may differ. No discounted selling price found, so MRP used. |
 | S-01-104 | Rs 1,599 is the listed price on adidas.co.in; sale snapshots of Rs 960 to Rs 1,120 also appeared. Several similarly named tees exist. Black/White was seen in the mixed listing results and is not tied to this exact code. |
 | S-01-105 | Sale price, marked down from Rs 1,399. India colour range not in results; Black rests on a US listing (PUMA Black) and on the file. File's White not confirmed, so dropped. |
-| S-01-106 | File colours Black and Beige not confirmed for this single tee, so dropped; White and Grey have listings. Nykaa page may be an older snapshot. |
 | S-01-107 | Rs 579 is shown as both selling price and MRP at Indian retailers; Nykaa Man shows Rs 599 for Grey Melange. The 80% cotton figure comes from one listing only. |
 | S-02-201 | Flipkart ₹560 to ₹874, MRP ₹1,699. Blue and grey seen on similar Allen Solly solid shirts, not confirmed for this exact style |
-| S-02-202 | Price is an aggregator figure from a May 2026 Zoutons roundup, no uniqlo.com/in page returned. Material is from the UK listing. White seen only in resale listings; India colour range unconfirmed, file's Navy and Beige dropped. |
+| S-02-202 | Colour read from the product photo; the store's URL says navy |
 | S-02-203 | Rs 2,598 is a sale price (regular Rs 4,999). Material and fit wording come from foreign Levi's listings. levi.in gives the colour as Blue; foreign sites call it Indigo Stonewash. Amazon.in also lists a Barstow in Eddlyn Ecru, not included. |
-| S-02-204 | Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. Official store Classic Fit Oxford ₹21,500; Myntra lists a Classic Fit Oxford at ₹10,690 |
+| S-02-204 | Colour read from the product photo; the store's URL says pink |
 | S-02-205 | MRP Rs 5,999. Amazon.in showed a similar listing at Rs 3,419. Fit detail, material and Light Blue colour come from foreign retailers, not the India listing; White from the file is unconfirmed and dropped. |
-| S-02-206 | Only White confirmed for this article; file's Light Beige not found, so dropped. Rs 1,799 is the listed MRP on H&M India. |
+| S-02-206 | Colour read from the product photo; store text says yellow. Fit not stated on the page |
 | S-03-301 | Price varies by wash: Rs 3,289 is one blue listing's sale price (regular Rs 4,699); other sale prices seen were Rs 1,823 to Rs 3,159. The summary did not tie the figure to one URL, so url left out. |
 | S-03-302 | Price varies by wash: Rs 4,938 is the Light Blue sale price (regular Rs 6,501); other sale prices seen were Rs 1,800 to Rs 7,218. File's Medium Stonewash not found. Cotton content not confirmed. url left out as the figure was not tied to one URL. |
 | S-03-303 | Price is an aggregator figure from a June 2026 Zoutons roundup for the Cotton version, far below the file's Rs 2,990; the Uniqlo India page gave no price. Black seen only on resale sites; file's Navy and Beige dropped. Stretch not confirmed. Url is the product page, not the price source. |
 | S-03-304 | Material not confirmed, so left out. Only Beige confirmed. The summary said it could not show this is the same style as any Alpha Khaki. |
-| S-03-305 | Below the file's Rs 3,495. Myntra also showed Rs 2,026 at 30% off in some sizes. Dark Grey Heather is from nike.com US; Black is the file colour and is unconfirmed for this exact style. Material is from the product name only. |
 | S-03-306 | Sale price Rs 3,219.50 rounded up; MRP Rs 4,599. File name lacked 'Slim'; Amazon.in showed another Tiro 24 pant at Rs 2,759. |
 | S-04-401 | Sources disagree: Superkicks and Ajio show Rs 7,495, but nike.com/in showed Rs 9,207 against MRP Rs 9,695 (garbled page text). Materials from Ajio listings. |
 | S-04-402 | Rs 10,999 is for the white B75806; other colourways range from Rs 7,800 on sale to Rs 11,999. Superkicks lists origin Vietnam and about 0.95 kg. |
@@ -674,8 +701,7 @@ Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 | S-04-405 | Ajio offered a coupon price of Rs 7,199; Myntra showed Rs 6,049. Some grey 574 listings state a leather upper, so material varies by version. Navy not confirmed, so dropped. |
 | S-04-406 | MRP Rs 15,999. Prices disagree widely across retailers. Upper material is from Ajio's blue listing title only. Colours from Amazon.in. |
 | S-04-407 | Croslite material is from a Flipkart listing, not the Crocs India page. |
-| S-05-501 | Rs 10,990 is for black and gunmetal G-15 versions; a black/green version was Rs 8,690 and a gold polarised one Rs 14,990. The India store uses RB3025 and RB3025I codes. Gold/Green and Black/Grey from the file not found, so dropped. No single product URL tied to the price. |
-| S-05-502 | Well above the file's Rs 9,590; this is the polarised 901/58. A non-polarised black RB2140 Wayfarer was Rs 12,790. |
+| S-05-502 | Colour named from the product title |
 | S-05-503 | Rs 11,489 (list Rs 13,190) is for matte black with grey lenses; the matte black Prizm Black version was Rs 27,169 on Amazon.in, which looks high. No official Oakley India price found. No single URL tied to the Rs 11,489 price. |
 | S-05-504 | Connectivity fixed from n/a to wireless. Transitions lens versions cost up to Rs 45,700. Video spec from TechStories India; storage from Croma. |
 | S-05-505 | Navy is from the collection page listing only. Material and closure not confirmed. |

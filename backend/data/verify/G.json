@@ -299,22 +299,28 @@
   "flag": "Price is the Yellow switch model; other Indian listings Rs 10,750 to 11,089, MSRP Rs 17,999. Colour carried from file, not stated in results."
  },
  "G-03-304": {
-  "price": 14750,
+  "productName": "Logitech G512 Mechanical Gaming Keyboard (GX Brown)",
+  "brand": "Logitech G",
+  "price": 8995,
   "priceType": "selling",
-  "from": "varietyinfotech.com",
-  "url": "https://varietyinfotech.com/product/corsair-k70-rgb-pro-mechanical-gaming-keyboard-backlit-rgb-led-cherry-mx-speed-silver-keyswitch/",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-Mechanical-Keyboard-Lightsync-Customizable/dp/B084YX4XJP",
   "specs": {
-   "Connection": "Wired, braided cable",
-   "Layout": "Full size, 104 keys",
-   "Switches": "Cherry MX Speed, Red or Brown",
-   "Polling": "8,000 Hz"
+   "Connection": "Wired USB with passthrough",
+   "Switches/DPI": "GX Brown tactile"
   },
   "colours": [
-   "Black"
+   "Carbon"
   ],
   "connectivity": "wired",
-  "description": "Full-size wired keyboard with an aluminium frame, Cherry MX switches, per-key RGB, double-shot PBT keycaps and an 8,000 Hz report rate.",
-  "flag": "Price is the Cherry MX Speed version. Not the K70 PRO with OPX switches. Page shows Add to cart but no explicit stock wording."
+  "description": "A wired mechanical gaming keyboard with GX Brown tactile switches, LIGHTSYNC RGB, a brushed aluminium case and USB passthrough.",
+  "flag": "Other listings ₹7,575 to ₹8,199; MRP ₹11,695",
+  "swap": {
+   "status": "applied",
+   "from": "Corsair K70 RGB PRO",
+   "to": "Logitech G512 Mechanical Gaming Keyboard (GX Brown)",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "G-03-305": {
   "price": 6999,
@@ -496,22 +502,31 @@
   }
  },
  "G-04-407": {
-  "price": 4649,
+  "productName": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+  "brand": "Logitech G",
+  "price": 11995,
   "priceType": "selling",
   "from": "flipkart.com",
-  "url": "https://www.flipkart.com/hi/corsair-harpoon-rgb-wireless-optical-gaming-mouse-bluetooth/p/itm25e86e7fd9887",
+  "url": "https://www.flipkart.com/logitech-g-pro-x-superlight-hero-25k-sensor-adj-dpi-25-6k-dpi-5-programmable-buttons-wireless-optical-gaming-mouse/p/itme45b8388c6388",
   "specs": {
-   "Connection": "Slipstream wireless, Bluetooth, USB",
-   "Switches/DPI": "Up to 10,000 DPI",
-   "Weight": "About 99 g",
-   "Battery": "Up to 60 hours with lighting off"
+   "Connection": "LIGHTSPEED wireless",
+   "Weight": "Under 63 g",
+   "Switches/DPI": "Up to 25,600 DPI"
   },
   "colours": [
-   "Black"
+   "Black",
+   "White",
+   "Pink"
   ],
   "connectivity": "wireless",
-  "description": "Wireless gaming mouse that links by Slipstream, Bluetooth or USB, with a sensor up to 10,000 DPI and up to 40 hours of Bluetooth use with lighting on or 60 with it off.",
-  "flag": "Connectivity corrected from wired to wireless. Out of stock at Flipkart and Smartprix (Rs 3,899, June 2026), so treat as recently sold. Sensor name differs by source and weight comes from a third-party page; colour carried from file."
+  "description": "An ultra-light wireless gaming mouse under 63 g with a HERO 25K sensor and LIGHTSPEED wireless for pro-level play.",
+  "flag": "Flipkart ₹11,995, list ₹15,995; Amazon.in ₹13,999",
+  "swap": {
+   "status": "applied",
+   "from": "Corsair Harpoon RGB Wireless",
+   "to": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "G-05-501": {
   "productName": "Green Soul Monster Ultimate (S) Gaming Chair",

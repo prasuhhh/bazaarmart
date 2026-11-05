@@ -103,22 +103,27 @@
   "flag": "Sale price, marked down from Rs 1,399. India colour range not in results; Black rests on a US listing (PUMA Black) and on the file. File's White not confirmed, so dropped."
  },
  "S-01-106": {
-  "productName": "H&M Regular Fit Round-Neck T-Shirt",
-  "price": 499,
+  "productName": "Levi's Men's Graphic Print Slim Fit T-shirt",
+  "brand": "Levi's",
+  "price": 899,
   "priceType": "selling",
-  "from": "nykaafashion.com",
-  "url": "https://www.nykaafashion.com/h-m-regular-fit-round-neck-t-shirt-white/p/23065774",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-crew-neck-t-shirt-169600962",
   "specs": {
-   "Material": "Lightweight cotton jersey",
-   "Fit": "Regular fit, half sleeves, ribbed round neck"
+   "Material": "100% cotton",
+   "Fit": "Slim fit"
   },
   "colours": [
-   "White",
-   "Grey"
+   "Pink"
   ],
   "connectivity": "n/a",
-  "description": "A plain H&M T-shirt in lightweight cotton jersey with a regular fit, ribbed round neck and no logos or graphics, sold in India through Nykaa.",
-  "flag": "File colours Black and Beige not confirmed for this single tee, so dropped; White and Grey have listings. Nykaa page may be an older snapshot."
+  "description": "A soft cotton crew-neck T-shirt from Levi's with an understated graphic print, cut in a slim fit for everyday wear.",
+  "swap": {
+   "status": "applied",
+   "from": "H&M Regular Fit Round-Neck T-Shirt",
+   "to": "Levi's Men's Graphic Print Slim Fit T-shirt",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "S-01-107": {
   "price": 579,
@@ -166,21 +171,28 @@
   ]
  },
  "S-02-202": {
-  "productName": "Uniqlo Men's Premium Linen Long-Sleeve Shirt",
-  "price": 2490,
-  "priceType": "estimate",
-  "from": "zoutons.com",
-  "url": "https://zoutons.com/news/uniqlo-india-summer-sale-linen-airism-picks-2026",
+  "productName": "Levi's Men's Checkered Spread Collar Shirt",
+  "brand": "Levi's",
+  "price": 999,
+  "priceType": "selling",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-navy-checks-casual-shirt-219830321",
   "specs": {
-   "Material": "100% premium linen",
-   "Sleeve": "Long sleeve"
+   "Material": "100% cotton",
+   "Fit": "Slim fit"
   },
   "colours": [
-   "White"
+   "Yellow/Black"
   ],
   "connectivity": "n/a",
-  "description": "A long-sleeved men's shirt from Uniqlo made entirely from premium linen, a lighter fabric option listed among its summer range in India.",
-  "flag": "Price is an aggregator figure from a May 2026 Zoutons roundup, no uniqlo.com/in page returned. Material is from the UK listing. White seen only in resale listings; India colour range unconfirmed, file's Navy and Beige dropped."
+  "description": "A yellow and black checked cotton shirt from Levi's with a spread collar and a slim fit, easy to dress up or wear casually.",
+  "swap": {
+   "status": "applied",
+   "from": "Uniqlo Men's Premium Linen Long-Sleeve Shirt",
+   "to": "Levi's Men's Checkered Spread Collar Shirt",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  },
+  "flag": "Colour read from the product photo; the store's URL says navy"
  },
  "S-02-203": {
   "productName": "Levi's Men's Barstow Standard Fit Western Denim Shirt",
@@ -200,28 +212,28 @@
   "url": "https://levi.in/products/mens-solid-blue-spread-collar-shirt-857440117"
  },
  "S-02-204": {
-  "productName": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
-  "price": 20900,
+  "productName": "Levi's Men's Solid Spread Collar Shirt",
+  "brand": "Levi's",
+  "price": 1135,
   "priceType": "selling",
-  "from": "ralphlauren.global/in",
-  "url": "https://ralphlauren.global/in/en/classic-fit-garment-dyed-oxford-shirt--100007647.html",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-pink-collar-shirt-342260088",
   "specs": {
-   "Fit": "Classic fit, cut fuller through chest, waist and sleeve",
-   "Style": "Garment-dyed Oxford"
-  },
-  "connectivity": "n/a",
-  "description": "A garment-dyed Oxford shirt from Polo Ralph Lauren in the Classic Fit, which is cut fuller through the chest, waist and sleeve, sold on the brand's India site.",
-  "flag": "Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. Official store Classic Fit Oxford ₹21,500; Myntra lists a Classic Fit Oxford at ₹10,690",
-  "swap": {
-   "status": "applied",
-   "from": "Polo Ralph Lauren Custom Fit Oxford Shirt",
-   "to": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
-   "reason": "No rupee price found for the Custom Fit Oxford in two searches; the brand's India site lists Classic Fit Oxford shirts. Not proven unavailable in India."
+   "Material": "100% cotton",
+   "Fit": "Regular fit"
   },
   "colours": [
-   "White",
-   "Black"
-  ]
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A solid white full-sleeved cotton shirt from Levi's with a spread collar and a regular fit, for casual or smart days.",
+  "swap": {
+   "status": "applied",
+   "from": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
+   "to": "Levi's Men's Solid Spread Collar Shirt",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  },
+  "flag": "Colour read from the product photo; the store's URL says pink"
  },
  "S-02-205": {
   "specs": {
@@ -241,20 +253,28 @@
   "url": "https://tommyhilfiger.nnnow.com/tommy-hilfiger-solid-regular-fit-oxford-shirts-OSQXXDF9G0O"
  },
  "S-02-206": {
-  "price": 1799,
-  "priceType": "mrp",
-  "from": "hm.com/en_in",
-  "url": "https://www2.hm.com/en_in/productpage.1248677002.html",
+  "productName": "Levi's Men's Solid Spread Collar Linen Shirt",
+  "brand": "Levi's",
+  "price": 1279,
+  "priceType": "selling",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-solid-spread-collar-shirt-a13230030",
   "specs": {
-   "Material": "52% linen, 48% cotton",
-   "Fit": "Regular fit, turn-down collar, French front"
+   "Material": "Linen",
+   "Fit": "Regular fit"
   },
   "colours": [
-   "White"
+   "Mint"
   ],
   "connectivity": "n/a",
-  "description": "A regular fit H&M shirt woven from a linen and cotton mix, with a turn-down collar, French front and a yoke at the back.",
-  "flag": "Only White confirmed for this article; file's Light Beige not found, so dropped. Rs 1,799 is the listed MRP on H&M India."
+  "description": "A mint linen shirt from Levi's with a spread collar, a classic look that pairs well with chinos in warm weather.",
+  "flag": "Colour read from the product photo; store text says yellow. Fit not stated on the page",
+  "swap": {
+   "status": "applied",
+   "from": "H&M Regular Fit Linen-blend Shirt",
+   "to": "Levi's Men's Solid Spread Collar Linen Shirt",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "S-03-301": {
   "price": 3289,
@@ -331,22 +351,27 @@
   }
  },
  "S-03-305": {
-  "productName": "Nike Sportswear Club Fleece Joggers",
-  "price": 2895,
+  "productName": "Levi's Men's 512 Slim Tapered Fit Jeans",
+  "brand": "Levi's",
+  "price": 1347,
   "priceType": "selling",
-  "from": "myntra.com",
-  "url": "https://www.myntra.com/track-pants/nike/nike-sportswear-club-fleece-joggers/36600785/buy",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-512-black-slim-tapered-jeans-360870181",
   "specs": {
-   "Material": "Fleece",
-   "Style": "Joggers"
+   "Material": "Cotton and polyester blend",
+   "Fit": "Slim tapered, mid rise"
   },
   "colours": [
-   "Dark Grey Heather",
    "Black"
   ],
   "connectivity": "n/a",
-  "description": "Men's fleece joggers from Nike's Sportswear Club range, a casual track pant sold in India through Myntra.",
-  "flag": "Below the file's Rs 3,495. Myntra also showed Rs 2,026 at 30% off in some sizes. Dark Grey Heather is from nike.com US; Black is the file colour and is unconfirmed for this exact style. Material is from the product name only."
+  "description": "Levi's 512 jeans in black, slim through the thigh with a tapered leg and a mid rise for a sharp everyday look.",
+  "swap": {
+   "status": "applied",
+   "from": "Nike Sportswear Club Fleece Joggers",
+   "to": "Levi's Men's 512 Slim Tapered Fit Jeans",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "S-03-306": {
   "productName": "Adidas Tiro 24 Slim Training Pants",
@@ -487,38 +512,52 @@
   "flag": "Croslite material is from a Flipkart listing, not the Crocs India page."
  },
  "S-05-501": {
-  "price": 10990,
+  "productName": "New Era Chicago Bulls Essential Outline 9FORTY Cap",
+  "brand": "New Era",
+  "price": 2999,
   "priceType": "selling",
-  "from": "india.ray-ban.com",
+  "from": "neweracap.in",
+  "url": "https://neweracap.in/products/chicago-bulls-essential-outline-black-9forty-cap-12292586",
   "specs": {
-   "Material": "Metal frame",
-   "Lens": "G-15 green, polarised on some versions"
-  },
-  "colours": [
-   "Gunmetal/G-15 Green",
-   "Black/Green",
-   "Gold/Brown"
-  ],
-  "connectivity": "n/a",
-  "description": "Ray-Ban's metal-framed Aviator Classic pilot sunglasses, sold on the brand's India store in several frame and lens combinations.",
-  "flag": "Rs 10,990 is for black and gunmetal G-15 versions; a black/green version was Rs 8,690 and a gold polarised one Rs 14,990. The India store uses RB3025 and RB3025I codes. Gold/Green and Black/Grey from the file not found, so dropped. No single product URL tied to the price."
- },
- "S-05-502": {
-  "productName": "Ray-Ban Original Wayfarer Classic RB2140",
-  "price": 14990,
-  "priceType": "selling",
-  "from": "india.ray-ban.com",
-  "url": "https://india.ray-ban.com/0rb2140-green-901-58.html",
-  "specs": {
-   "Material": "Acetate frame",
-   "Lens": "Green, polarised"
+   "Material": "100% cotton woven",
+   "Fit": "Adjustable",
+   "Sizes": "One size"
   },
   "colours": [
    "Black"
   ],
   "connectivity": "n/a",
-  "description": "Ray-Ban's Original Wayfarer Classic sunglasses with a black acetate frame and green polarised lenses, sold on the brand's India store.",
-  "flag": "Well above the file's Rs 9,590; this is the polarised 901/58. A non-polarised black RB2140 Wayfarer was Rs 12,790."
+  "description": "A black cotton 9FORTY cap with an outlined Chicago Bulls logo, a contoured crown and an adjustable strap.",
+  "swap": {
+   "status": "applied",
+   "from": "Ray-Ban Aviator Classic RB3025",
+   "to": "New Era Chicago Bulls Essential Outline 9FORTY Cap",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
+ },
+ "S-05-502": {
+  "productName": "New Era New York Yankees Essential Camo 9FORTY Cap",
+  "brand": "New Era",
+  "price": 2999,
+  "priceType": "selling",
+  "from": "neweracap.in",
+  "url": "https://neweracap.in/products/new-york-yankees-essential-camo-9forty-cap-11357008",
+  "specs": {
+   "Fit": "Adjustable",
+   "Sizes": "One size"
+  },
+  "colours": [
+   "Camo"
+  ],
+  "connectivity": "n/a",
+  "description": "A camouflage-print 9FORTY cap with the New York Yankees logo, a contoured crown and an adjustable closure.",
+  "flag": "Colour named from the product title",
+  "swap": {
+   "status": "applied",
+   "from": "Ray-Ban Original Wayfarer Classic RB2140",
+   "to": "New Era New York Yankees Essential Camo 9FORTY Cap",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "S-05-503": {
   "price": 11489,

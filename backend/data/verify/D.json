@@ -405,21 +405,28 @@
   "snippetOnly": true
  },
  "D-04-403": {
-  "price": 29225,
+  "productName": "Logitech G Litra Beam LX Streaming Light",
+  "brand": "Logitech G",
+  "price": 14495,
   "priceType": "selling",
-  "from": "tanotis.com",
-  "url": "https://tanotis.com/products/elgato-key-light",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-Dual-Sided-Streaming-TrueSoft-Bluetooth/dp/B0BSQYC6BJ",
   "specs": {
-   "Power": "Up to 45 W",
-   "Connection": "Wi-Fi 802.11 b/g/n",
-   "Size": "2800 lumens, 2900 to 7000 K"
+   "Connection": "USB-C and Bluetooth",
+   "Power": "24 W LED with RGB accent"
   },
   "colours": [
-   "Black"
+   "Graphite"
   ],
   "connectivity": "wireless",
-  "description": "App-controlled LED studio panel rated at 2800 lumens with a 2900 to 7000 K colour range. It links over Wi-Fi and comes with a desk clamp.",
-  "flag": "Only import resellers priced it: Tanotis 29,225 with GST and duties, Poshace 31,599. Amazon.in lists the product but no price was seen. Black is the file colour, unconfirmed. Sources disagree on 5 GHz Wi-Fi support. Connectivity changed from n/a."
+  "description": "A dual-sided desktop streaming light with a soft front key light, RGB accent lighting at the back and a desk stand.",
+  "flag": "Power from Croma listing",
+  "swap": {
+   "status": "applied",
+   "from": "Elgato Key Light",
+   "to": "Logitech G Litra Beam LX Streaming Light",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "D-04-404": {
   "price": 13699,
@@ -523,21 +530,30 @@
   "flag": "Flipkart showed 22,490 and a sold-out 16,499. Weight is from Flipkart only. Do not mix with the MX Brio or Brio for Business listings."
  },
  "D-05-503": {
-  "price": 17499,
+  "productName": "Logitech Brio 500 Webcam",
+  "brand": "Logitech",
+  "price": 11995,
   "priceType": "selling",
-  "from": "amazon.in",
-  "url": "https://www.amazon.in/Elgato-Facecam-Fixed-Focus-Optimized-Detachable/dp/B0973DV11T",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/laptop-accessories/logitech~brand/pr?sid=search.flipkart.com%2C6bo%2Cai3%2Cr3e",
   "specs": {
-   "Connection": "Detachable USB-C",
-   "Size": "Uncompressed 1080p60, up to 82-degree view, f/2.4 fixed focus"
+   "Connection": "USB-C",
+   "Size": "1080p video, up to 90 degree view"
   },
   "colours": [
-   "Black"
+   "Graphite",
+   "White",
+   "Rose"
   ],
   "connectivity": "wired",
-  "description": "Full HD webcam with uncompressed 1080p60 output, a Sony STARVIS sensor and a fixed-focus f/2.4 lens. Onboard memory recalls image settings.",
-  "snippetOnly": true,
-  "flag": "Amazon.in listings conflict: 17,499 from several sellers against 29,546. Elgato Facecam MK.2 (23,432) and Neo (7,399) are separate models."
+  "description": "A 1080p USB-C webcam with auto light correction, auto-framing, dual noise-reducing mics and a built-in privacy shutter.",
+  "flag": "Reliance Digital ₹12,042 to ₹12,995; MRP ₹14,999",
+  "swap": {
+   "status": "applied",
+   "from": "Elgato Facecam",
+   "to": "Logitech Brio 500 Webcam",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "D-05-504": {
   "productName": "Insta360 Link 2 4K AI Webcam",

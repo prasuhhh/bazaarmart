@@ -23,7 +23,7 @@ const SHORTEST_SIDE = 400; // agreed down from 600: the 800 px output is then at
 const MAX_BYTES = 150 * 1024;
 const QUALITIES = [80, 70, 60, 50];
 const MAX_UPSCALE = 2;
-const TIGHTEN = new Set(['A-01-103', 'D-03-305']);
+const TIGHTEN = new Set(['A-01-102', 'A-01-103']);
 
 const sleep = ms => new Promise(resolve => { setTimeout(resolve, ms); });
 const lastCall = new Map();

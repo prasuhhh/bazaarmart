@@ -55,17 +55,17 @@
  },
  {
   "productId": "A-01-102",
-  "productName": "Sony WF-1000XM5",
-  "productPrice": 13990,
+  "productName": "Samsung Galaxy Buds3",
+  "productPrice": 13999,
   "quantity": 30,
   "category": "Audio",
   "zoneCode": "A",
   "bay": 1,
   "bayName": "Earbuds",
-  "brand": "Sony",
+  "brand": "Samsung",
   "colours": [
-   "Black",
-   "Silver"
+   "Silver",
+   "White"
   ],
   "use": [
    "studio",
@@ -73,37 +73,49 @@
   ],
   "connectivity": "wireless",
   "specs": {
-   "Battery": "8 h with ANC, 12 h without",
-   "Driver": "8.4 mm Dynamic Driver X",
-   "Water": "IPX4"
+   "Battery": "Up to 36 h with case",
+   "Driver": "11 mm",
+   "Water": "IP57"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 12,
   "arrivesInDays": 5,
   "isNew": false,
-  "description": "Sony's flagship noise-cancelling earbuds, using an 8.4 mm driver and two processors, with LDAC support and an IPX4 rating.",
-  "images": [],
+  "description": "Open-fit Samsung earbuds with an 11 mm driver, active noise cancelling, Galaxy AI interpreter features and an IP57 rating.",
+  "images": [
+   "/products/A-01-102.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
-   "failures": {}
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds3-silver-sm-r530nzaainu/",
+   "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249",
+   "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
+   "author": "Samsung",
+   "attribution": "Image © Samsung, from www.samsung.com",
+   "matchChecked": true,
+   "width": 1300,
+   "height": 1038,
+   "file": "/products/A-01-102.webp",
+   "failures": {},
+   "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249"
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
    "from": "reliancedigital.in",
    "type": "selling",
-   "url": "https://www.reliancedigital.in/product/sony-wf1000xm5-tws-earbuds-with-up-to-36-hours-battery-life-and-quick-charge-active-noise-cancellation-black-ln0fcs-7534140"
+   "url": "https://www.reliancedigital.in/product/samsung-galaxy-buds-3-true-wireless-buds-white-lyre9m-7960699"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Amazon.in ₹13,989, Vijay Sales ₹16,990; WF-1000XM6 now succeeds this model"
+   "flag": "Amazon.in sellers ₹11,349 to ₹11,999; MRP ₹14,999. Battery claims vary by listing",
+   "swap": {
+    "status": "applied",
+    "from": "Sony WF-1000XM5",
+    "to": "Samsung Galaxy Buds3",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -629,68 +641,83 @@
  },
  {
   "productId": "A-02-205",
-  "productName": "Audio-Technica ATH-M50x",
-  "productPrice": 12990,
+  "productName": "boAt Nirvana 751 ANC",
+  "productPrice": 5099,
   "quantity": 24,
   "category": "Audio",
   "zoneCode": "A",
   "bay": 2,
   "bayName": "Headphones",
-  "brand": "Audio-Technica",
+  "brand": "boAt",
   "colours": [
-   "Black"
+   "Black",
+   "Bold Blue"
   ],
   "use": [
    "home",
    "commute"
   ],
-  "connectivity": "wired",
+  "connectivity": "wireless",
   "specs": {
-   "Driver": "45 mm",
-   "Connection": "3.5 mm wired"
+   "Battery": "65 h, 54 h with ANC",
+   "Driver": "40 mm"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 12,
   "arrivesInDays": 1,
   "isNew": false,
-  "description": "A wired studio monitoring headphone with 45 mm drivers, popular with producers and listeners who want a detailed, closed-back sound.",
-  "images": [],
+  "description": "Wireless headphones with 40 mm drivers, hybrid noise cancelling up to 33 dB and as much as 65 hours of playback per charge.",
+  "images": [
+   "/products/A-02-205.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.boat-lifestyle.com/products/nirvana-751-anc-headphone",
+   "originalUrl": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
+   "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
+   "author": "boAt",
+   "attribution": "Image © boAt, from www.boat-lifestyle.com",
+   "matchChecked": true,
+   "width": 2560,
+   "height": 2560,
+   "file": "/products/A-02-205.webp",
+   "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "smartprix.com",
-   "type": "selling"
+   "from": "boat-lifestyle.com",
+   "type": "selling",
+   "url": "https://www.boat-lifestyle.com/products/nirvana-751-anc-headphone"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "File said wireless; this model is wired (ATH-M50xBT is the wireless one). Driver size from one listing only"
+   "flag": "Regular ₹7,990; Amazon.in and Flipkart snapshots ₹2,399 to ₹3,999",
+   "swap": {
+    "status": "applied",
+    "from": "Audio-Technica ATH-M50x",
+    "to": "boAt Nirvana 751 ANC",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
   "productId": "A-02-206",
-  "productName": "JBL Tune 760NC",
-  "productPrice": 4999,
+  "productName": "Bose QuietComfort Ultra Headphones (2nd Gen)",
+  "productPrice": 31990,
   "quantity": 80,
   "category": "Audio",
   "zoneCode": "A",
   "bay": 2,
   "bayName": "Headphones",
-  "brand": "JBL",
+  "brand": "Bose",
   "colours": [
    "Black",
-   "Blue",
-   "White"
+   "White Smoke",
+   "Driftwood Sand",
+   "Desert Gold"
   ],
   "use": [
    "gym",
@@ -698,35 +725,48 @@
   ],
   "connectivity": "wireless",
   "specs": {
-   "Battery": "35 h with ANC, 50 h without",
-   "Driver": "40 mm",
-   "Weight": "220 g"
+   "Battery": "Up to 30 h",
+   "Weight": "480 g"
   },
   "seller": "BazaarMart Retail",
   "warrantyMonths": 12,
   "arrivesInDays": 1,
   "isNew": false,
-  "description": "Lightweight wireless headphones with 40 mm drivers and active noise cancelling, offering up to 50 hours of playback with ANC off.",
-  "images": [],
+  "description": "Second-generation Bose over-ear headphones with spatial audio and noise cancelling, offering up to 30 hours of battery life.",
+  "images": [
+   "/products/A-02-206.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
+   "originalUrl": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+   "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+   "author": "Bose",
+   "attribution": "Image © Bose, from www.bose.com",
+   "matchChecked": true,
+   "width": 816,
+   "height": 609,
+   "file": "/products/A-02-206.webp",
+   "processedFrom": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "91mobiles.com",
-   "type": "selling"
+   "from": "amazon.in",
+   "type": "selling",
+   "url": "https://www.amazon.in/Bose-QuietComfort-Bluetooth-Headphones-Cancelling/dp/B0FDKR293G"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
-   "status": "ok"
+   "status": "flagged",
+   "flag": "Amazon.in and Flipkart ₹31,990; Reliance Digital list ₹49,900",
+   "swap": {
+    "status": "applied",
+    "from": "JBL Tune 760NC",
+    "to": "Bose QuietComfort Ultra Headphones (2nd Gen)",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -1026,19 +1066,17 @@
  },
  {
   "productId": "A-03-305",
-  "productName": "Sony ULT Field 1",
-  "productPrice": 7989,
+  "productName": "Bose SoundLink Micro (2nd Gen)",
+  "productPrice": 11900,
   "quantity": 80,
   "category": "Audio",
   "zoneCode": "A",
   "bay": 3,
   "bayName": "Speakers",
-  "brand": "Sony",
+  "brand": "Bose",
   "colours": [
    "Black",
-   "Off White",
-   "Forest Gray",
-   "Orange"
+   "Blue Dusk"
   ],
   "use": [
    "outdoor",
@@ -1048,59 +1086,62 @@
   "specs": {
    "Battery": "Up to 12 h",
    "Water": "IP67",
-   "Weight": "650 g"
+   "Weight": "330 g"
   },
   "seller": "UrbanKart",
   "warrantyMonths": 12,
   "arrivesInDays": 2,
   "isNew": false,
-  "description": "A compact Bluetooth speaker with Sony's ULT bass boost, a detachable strap, USB-C charging, IP67 protection and up to 12 hours of battery.",
-  "images": [],
+  "description": "A small rubber-strapped Bluetooth speaker with IP67 water and dust protection and up to 12 hours of playback from one charge.",
+  "images": [
+   "/products/A-03-305.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.bose.com/p/speakers/bose-soundlink-micro-portable-speaker-2nd-gen/SLMC2-SPEAKERWIRELESS.html",
+   "originalUrl": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+   "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+   "author": "Bose",
+   "attribution": "Image © Bose, from www.bose.com",
+   "matchChecked": true,
+   "width": 816,
+   "height": 609,
+   "file": "/products/A-03-305.webp",
+   "processedFrom": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "pricebefore.com",
+   "from": "amazon.in",
    "type": "selling",
-   "url": "https://www.pricebefore.com/sony-ult-field-1-massive-bass-p876309.html"
+   "url": "https://www.amazon.in/Bose-SoundLink-Generation-Bluetooth-Resistant/dp/B0FDLD34V5"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Amazon.in price from an undated price tracker; launch ₹10,990; Reliance Digital MRP ₹16,990 less 35%",
+   "flag": "Amazon.in ₹11,900; Reliance Digital and MRP ₹15,900",
    "swap": {
     "status": "applied",
-    "from": "Ultimate Ears Wonderboom 3",
-    "to": "Sony ULT Field 1",
-    "reason": "User decision: Wonderboom 4's Amazon.in seller was unconfirmed, so a speaker clearly sold in India replaces it. Launched in India May 2024 at ₹10,990, listed by Reliance Digital"
-   },
-   "snippetOnly": true
+    "from": "Sony ULT Field 1",
+    "to": "Bose SoundLink Micro (2nd Gen)",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
   "productId": "A-03-306",
-  "productName": "Sony SRS-XB100",
-  "productPrice": 4490,
+  "productName": "Marshall Middleton II",
+  "productPrice": 31999,
   "quantity": 18,
   "category": "Audio",
   "zoneCode": "A",
   "bay": 3,
   "bayName": "Speakers",
-  "brand": "Sony",
+  "brand": "Marshall",
   "colours": [
-   "Black",
-   "Blue",
-   "Light Grey",
-   "Orange"
+   "Black and Brass",
+   "Cream"
   ],
   "use": [
    "party",
@@ -1108,37 +1149,48 @@
   ],
   "connectivity": "wireless",
   "specs": {
-   "Battery": "Up to 16 h",
-   "Water": "IP67",
-   "Weight": "274 g"
+   "Battery": "30+ h",
+   "Water": "IP67"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 12,
   "arrivesInDays": 1,
   "isNew": false,
-  "description": "A pocketable Sony Bluetooth speaker with up to 16 hours of battery, USB-C charging and IP67 protection against water and dust.",
-  "images": [],
+  "description": "A portable 360-degree Bluetooth speaker with an IP67 rating, more than 30 hours of playtime and a power bank function.",
+  "images": [
+   "/products/A-03-306.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.marshall.com/vn/en/product/middleton-ii?pid=1007428",
+   "originalUrl": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
+   "licence": "© Marshall - press/product image, used for a non-commercial student lab demo",
+   "author": "Marshall",
+   "attribution": "Image © Marshall, from www.marshall.com",
+   "matchChecked": true,
+   "width": 960,
+   "height": 960,
+   "file": "/products/A-03-306.webp",
+   "processedFrom": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "reliancedigital.in",
+   "from": "amazon.in",
    "type": "selling",
-   "url": "https://www.reliancedigital.in/product/sony-bluetooth-speaker-srs-xb100lzin-blue-llgisy-7533247"
+   "url": "https://www.amazon.in/Marshall-Middleton-Bluetooth-Portable-Waterproof/dp/B0FBHTGL16"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "MRP ₹5,990. Wide spread: Flipkart ₹2,489 (Grey, seller TBL Online), Amazon.in ₹2,990 (Blue, Orange) to ₹3,999 (Grey)"
+   "flag": "Same price at Reliance Digital and Croma; Flipkart offer ₹29,924",
+   "swap": {
+    "status": "applied",
+    "from": "Sony SRS-XB100",
+    "to": "Marshall Middleton II",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -2377,18 +2429,16 @@
  },
  {
   "productId": "B-02-202",
-  "productName": "Dyson Airwrap Multi-styler Complete Long",
-  "productPrice": 43900,
+  "productName": "Moroccanoil Intense Hydrating Mask (250 ml)",
+  "productPrice": 3600,
   "quantity": 4,
   "category": "Body care",
   "zoneCode": "B",
   "bay": 2,
   "bayName": "Haircare",
-  "brand": "Dyson",
+  "brand": "Moroccanoil",
   "colours": [
-   "Nickel/Copper",
-   "Prussian Blue/Rich Copper",
-   "Vinca Blue/Rosé"
+   "Standard"
   ],
   "use": [
    "styling",
@@ -2396,38 +2446,48 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Power": "1300 W",
-   "Heat settings": "3 heat, 3 speed",
-   "Attachments": "30 mm and 40 mm long barrels, brushes, dryer",
-   "Skin/Hair type": "Chest-length or longer hair"
+   "Size": "250 ml",
+   "Skin/Hair type": "Medium to thick, dry hair"
   },
   "seller": "Northgate Supply",
   "warrantyMonths": 0,
   "arrivesInDays": 7,
   "isNew": false,
-  "description": "A 1300 W multi-styler with long 30 mm and 40 mm barrels plus brushes, meant for chest-length or longer hair. It has three heat and three speed settings.",
-  "images": [],
+  "description": "A rich conditioning hair mask with argan oil, made to deeply hydrate dry medium to thick hair in a 250 ml jar.",
+  "images": [
+   "/products/B-02-202.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.moroccanoil.com/products/intense-hydrating-mask",
+   "originalUrl": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
+   "licence": "© Moroccanoil - press/product image, used for a non-commercial student lab demo",
+   "author": "Moroccanoil",
+   "attribution": "Image © Moroccanoil, from www.moroccanoil.com",
+   "matchChecked": true,
+   "width": 1795,
+   "height": 2286,
+   "file": "/products/B-02-202.webp",
+   "processedFrom": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "reliancedigital.in",
+   "from": "tirabeauty.com",
    "type": "selling",
-   "url": "https://www.reliancedigital.in/product/dyson-airwrap-long-styler-prussian-bluecopper-lkrn0x"
+   "url": "https://www.tirabeauty.com/product/moroccanoil-intense-hydrating-mask-250ml-urmvdzciuzv"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Other sellers 44399; launch price 45900. Reliance page title says Nickel/Copper while its URL says Prussian Blue/Copper. Weight left out because sources disagree. Hair-length note comes from a Dyson New Zealand listing."
+   "flag": "Same ₹3,600 at Myntra and Nykaa; Amazon.in ₹3,240; Flipkart up to ₹4,694",
+   "swap": {
+    "status": "applied",
+    "from": "Dyson Airwrap Multi-styler Complete Long",
+    "to": "Moroccanoil Intense Hydrating Mask (250 ml)",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -4140,18 +4200,17 @@
  },
  {
   "productId": "C-01-105",
-  "productName": "Nike Brasilia 9.5 Training Backpack (Medium, 24L)",
-  "productPrice": 2795,
+  "productName": "Herschel Settlement Mid-Volume Backpack",
+  "productPrice": 6734,
   "quantity": 58,
   "category": "Carry",
   "zoneCode": "C",
   "bay": 1,
   "bayName": "Backpacks",
-  "brand": "Nike",
+  "brand": "Herschel",
   "colours": [
-   "Black/White",
-   "Sesame/Black/Pale Ivory",
-   "Blue"
+   "Black",
+   "Grey"
   ],
   "use": [
    "travel",
@@ -4159,36 +4218,49 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Capacity": "24 L",
-   "Material": "At least 50% recycled polyester"
+   "Size": "41.3 x 28.6 x 11.4 cm",
+   "Weight": "470 g"
   },
   "seller": "BazaarMart Retail",
   "warrantyMonths": 6,
   "arrivesInDays": 5,
   "isNew": true,
-  "description": "A 24 litre training backpack with a laptop sleeve, side mesh bottle pockets and an inside zip pocket, made from at least 50% recycled polyester.",
-  "images": [],
+  "description": "A clean-lined everyday backpack from Herschel in a mid-volume size, weighing about 470 g and suited to daily carry.",
+  "images": [
+   "/products/C-01-105.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://herschel.com/products/settlement-backpack-1",
+   "originalUrl": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
+   "licence": "© Herschel - press/product image, used for a non-commercial student lab demo",
+   "author": "Herschel",
+   "attribution": "Image © Herschel, from herschel.com",
+   "matchChecked": true,
+   "width": 1024,
+   "height": 1280,
+   "file": "/products/C-01-105.webp",
+   "processedFrom": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "nike.in",
-   "type": "mrp",
-   "url": "https://www.nike.in/nike-brasilia-9-5-training-backpack-medium-24l/p/24810526"
+   "from": "amazon.in",
+   "type": "selling",
+   "url": "https://www.amazon.in/Herschel-Supply-Co-Settlement-Backpack/dp/B00QG818WY"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Bay price is Nike's India MRP. SCS Sports shows 2515 and a third-party deal post shows 1118 at Flipkart (unverified). Sesame colourway size not stated. 9.5 is the model name, not capacity; a 30L XL also exists at 3495."
+   "flag": "Amazon.in sellers range ₹6,659 to ₹16,321 by seller and colour; capacity not confirmed",
+   "swap": {
+    "status": "applied",
+    "from": "Nike Brasilia 9.5 Training Backpack (Medium, 24L)",
+    "to": "Herschel Settlement Mid-Volume Backpack",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   },
+   "snippetOnly": true
   }
  },
  {
@@ -7101,16 +7173,16 @@
  },
  {
   "productId": "D-04-403",
-  "productName": "Elgato Key Light",
-  "productPrice": 29225,
+  "productName": "Logitech G Litra Beam LX Streaming Light",
+  "productPrice": 14495,
   "quantity": 40,
   "category": "Desk setup",
   "zoneCode": "D",
   "bay": 4,
   "bayName": "Desk lighting",
-  "brand": "Elgato",
+  "brand": "Logitech G",
   "colours": [
-   "Black"
+   "Graphite"
   ],
   "use": [
    "study",
@@ -7118,37 +7190,48 @@
   ],
   "connectivity": "wireless",
   "specs": {
-   "Power": "Up to 45 W",
-   "Connection": "Wi-Fi 802.11 b/g/n",
-   "Size": "2800 lumens, 2900 to 7000 K"
+   "Connection": "USB-C and Bluetooth",
+   "Power": "24 W LED with RGB accent"
   },
   "seller": "UrbanKart",
   "warrantyMonths": 12,
   "arrivesInDays": 2,
   "isNew": true,
-  "description": "App-controlled LED studio panel rated at 2800 lumens with a 2900 to 7000 K colour range. It links over Wi-Fi and comes with a desk clamp.",
-  "images": [],
+  "description": "A dual-sided desktop streaming light with a soft front key light, RGB accent lighting at the back and a desk stand.",
+  "images": [
+   "/products/D-04-403.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.logitech.com/en-in/shop/p/litra-beam-lx-led-light",
+   "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
+   "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+   "author": "Logitech G",
+   "attribution": "Image © Logitech G, from www.logitech.com",
+   "matchChecked": true,
+   "width": 3200,
+   "height": 3200,
+   "file": "/products/D-04-403.webp",
+   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "tanotis.com",
+   "from": "amazon.in",
    "type": "selling",
-   "url": "https://tanotis.com/products/elgato-key-light"
+   "url": "https://www.amazon.in/Logitech-Dual-Sided-Streaming-TrueSoft-Bluetooth/dp/B0BSQYC6BJ"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Only import resellers priced it: Tanotis 29,225 with GST and duties, Poshace 31,599. Amazon.in lists the product but no price was seen. Black is the file colour, unconfirmed. Sources disagree on 5 GHz Wi-Fi support. Connectivity changed from n/a."
+   "flag": "Power from Croma listing",
+   "swap": {
+    "status": "applied",
+    "from": "Elgato Key Light",
+    "to": "Logitech G Litra Beam LX Streaming Light",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -7493,16 +7576,18 @@
  },
  {
   "productId": "D-05-503",
-  "productName": "Elgato Facecam",
-  "productPrice": 17499,
+  "productName": "Logitech Brio 500 Webcam",
+  "productPrice": 11995,
   "quantity": 16,
   "category": "Desk setup",
   "zoneCode": "D",
   "bay": 5,
   "bayName": "Webcams & hubs",
-  "brand": "Elgato",
+  "brand": "Logitech",
   "colours": [
-   "Black"
+   "Graphite",
+   "White",
+   "Rose"
   ],
   "use": [
    "home",
@@ -7510,37 +7595,48 @@
   ],
   "connectivity": "wired",
   "specs": {
-   "Connection": "Detachable USB-C",
-   "Size": "Uncompressed 1080p60, up to 82-degree view, f/2.4 fixed focus"
+   "Connection": "USB-C",
+   "Size": "1080p video, up to 90 degree view"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 12,
   "arrivesInDays": 2,
   "isNew": false,
-  "description": "Full HD webcam with uncompressed 1080p60 output, a Sony STARVIS sensor and a fixed-focus f/2.4 lens. Onboard memory recalls image settings.",
-  "images": [],
+  "description": "A 1080p USB-C webcam with auto light correction, auto-framing, dual noise-reducing mics and a built-in privacy shutter.",
+  "images": [
+   "/products/D-05-503.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.logitech.com/en-in/shop/p/brio-500-webcam",
+   "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
+   "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
+   "author": "Logitech",
+   "attribution": "Image © Logitech, from www.logitech.com",
+   "matchChecked": true,
+   "width": 1600,
+   "height": 1374,
+   "file": "/products/D-05-503.webp",
+   "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "amazon.in",
+   "from": "flipkart.com",
    "type": "selling",
-   "url": "https://www.amazon.in/Elgato-Facecam-Fixed-Focus-Optimized-Detachable/dp/B0973DV11T"
+   "url": "https://www.flipkart.com/laptop-accessories/logitech~brand/pr?sid=search.flipkart.com%2C6bo%2Cai3%2Cr3e"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Amazon.in listings conflict: 17,499 from several sellers against 29,546. Elgato Facecam MK.2 (23,432) and Neo (7,399) are separate models.",
-   "snippetOnly": true
+   "flag": "Reliance Digital ₹12,042 to ₹12,995; MRP ₹14,999",
+   "swap": {
+    "status": "applied",
+    "from": "Elgato Facecam",
+    "to": "Logitech Brio 500 Webcam",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -8726,16 +8822,16 @@
  },
  {
   "productId": "G-03-304",
-  "productName": "Corsair K70 RGB PRO",
-  "productPrice": 14750,
+  "productName": "Logitech G512 Mechanical Gaming Keyboard (GX Brown)",
+  "productPrice": 8995,
   "quantity": 24,
   "category": "Gaming",
   "zoneCode": "G",
   "bay": 3,
   "bayName": "Gaming keyboards",
-  "brand": "Corsair",
+  "brand": "Logitech G",
   "colours": [
-   "Black"
+   "Carbon"
   ],
   "use": [
    "PC",
@@ -8743,38 +8839,48 @@
   ],
   "connectivity": "wired",
   "specs": {
-   "Connection": "Wired, braided cable",
-   "Layout": "Full size, 104 keys",
-   "Switches": "Cherry MX Speed, Red or Brown",
-   "Polling": "8,000 Hz"
+   "Connection": "Wired USB with passthrough",
+   "Switches/DPI": "GX Brown tactile"
   },
   "seller": "Lifestyle Hub",
   "warrantyMonths": 12,
   "arrivesInDays": 2,
   "isNew": false,
-  "description": "Full-size wired keyboard with an aluminium frame, Cherry MX switches, per-key RGB, double-shot PBT keycaps and an 8,000 Hz report rate.",
-  "images": [],
+  "description": "A wired mechanical gaming keyboard with GX Brown tactile switches, LIGHTSYNC RGB, a brushed aluminium case and USB passthrough.",
+  "images": [
+   "/products/G-03-304.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.logitechg.com/en-in/shop/p/g512-mechanical-gaming-keyboard",
+   "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
+   "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+   "author": "Logitech G",
+   "attribution": "Image © Logitech G, from www.logitechg.com",
+   "matchChecked": true,
+   "width": 1384,
+   "height": 1038,
+   "file": "/products/G-03-304.webp",
+   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "varietyinfotech.com",
+   "from": "amazon.in",
    "type": "selling",
-   "url": "https://varietyinfotech.com/product/corsair-k70-rgb-pro-mechanical-gaming-keyboard-backlit-rgb-led-cherry-mx-speed-silver-keyswitch/"
+   "url": "https://www.amazon.in/Logitech-Mechanical-Keyboard-Lightsync-Customizable/dp/B084YX4XJP"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Price is the Cherry MX Speed version. Not the K70 PRO with OPX switches. Page shows Add to cart but no explicit stock wording."
+   "flag": "Other listings ₹7,575 to ₹8,199; MRP ₹11,695",
+   "swap": {
+    "status": "applied",
+    "from": "Corsair K70 RGB PRO",
+    "to": "Logitech G512 Mechanical Gaming Keyboard (GX Brown)",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -9316,16 +9422,18 @@
  },
  {
   "productId": "G-04-407",
-  "productName": "Corsair Harpoon RGB Wireless",
-  "productPrice": 4649,
+  "productName": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+  "productPrice": 11995,
   "quantity": 5,
   "category": "Gaming",
   "zoneCode": "G",
   "bay": 4,
   "bayName": "Gaming mice",
-  "brand": "Corsair",
+  "brand": "Logitech G",
   "colours": [
-   "Black"
+   "Black",
+   "White",
+   "Pink"
   ],
   "use": [
    "office",
@@ -9333,38 +9441,49 @@
   ],
   "connectivity": "wireless",
   "specs": {
-   "Connection": "Slipstream wireless, Bluetooth, USB",
-   "Switches/DPI": "Up to 10,000 DPI",
-   "Weight": "About 99 g",
-   "Battery": "Up to 60 hours with lighting off"
+   "Connection": "LIGHTSPEED wireless",
+   "Weight": "Under 63 g",
+   "Switches/DPI": "Up to 25,600 DPI"
   },
   "seller": "Northgate Supply",
   "warrantyMonths": 12,
   "arrivesInDays": 1,
   "isNew": false,
-  "description": "Wireless gaming mouse that links by Slipstream, Bluetooth or USB, with a sensor up to 10,000 DPI and up to 40 hours of Bluetooth use with lighting on or 60 with it off.",
-  "images": [],
+  "description": "An ultra-light wireless gaming mouse under 63 g with a HERO 25K sensor and LIGHTSPEED wireless for pro-level play.",
+  "images": [
+   "/products/G-04-407.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://www.logitechg.com/en-in/shop/p/pro-x-superlight-wireless-mouse",
+   "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
+   "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+   "author": "Logitech G",
+   "attribution": "Image © Logitech G, from www.logitechg.com",
+   "matchChecked": true,
+   "width": 1384,
+   "height": 1038,
+   "file": "/products/G-04-407.webp",
+   "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
    "from": "flipkart.com",
    "type": "selling",
-   "url": "https://www.flipkart.com/hi/corsair-harpoon-rgb-wireless-optical-gaming-mouse-bluetooth/p/itm25e86e7fd9887"
+   "url": "https://www.flipkart.com/logitech-g-pro-x-superlight-hero-25k-sensor-adj-dpi-25-6k-dpi-5-programmable-buttons-wireless-optical-gaming-mouse/p/itme45b8388c6388"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Connectivity corrected from wired to wireless. Out of stock at Flipkart and Smartprix (Rs 3,899, June 2026), so treat as recently sold. Sensor name differs by source and weight comes from a third-party page; colour carried from file."
+   "flag": "Flipkart ₹11,995, list ₹15,995; Amazon.in ₹13,999",
+   "swap": {
+    "status": "applied",
+    "from": "Corsair Harpoon RGB Wireless",
+    "to": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -13972,17 +14091,16 @@
  },
  {
   "productId": "S-01-106",
-  "productName": "H&M Regular Fit Round-Neck T-Shirt",
-  "productPrice": 499,
+  "productName": "Levi's Men's Graphic Print Slim Fit T-shirt",
+  "productPrice": 899,
   "quantity": 156,
   "category": "Style",
   "zoneCode": "S",
   "bay": 1,
   "bayName": "T-shirts",
-  "brand": "H&M",
+  "brand": "Levi's",
   "colours": [
-   "White",
-   "Grey"
+   "Pink"
   ],
   "use": [
    "daily",
@@ -13990,36 +14108,47 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "Lightweight cotton jersey",
-   "Fit": "Regular fit, half sleeves, ribbed round neck"
+   "Material": "100% cotton",
+   "Fit": "Slim fit"
   },
   "seller": "Northgate Supply",
   "warrantyMonths": 0,
   "arrivesInDays": 2,
   "isNew": false,
-  "description": "A plain H&M T-shirt in lightweight cotton jersey with a regular fit, ribbed round neck and no logos or graphics, sold in India through Nykaa.",
-  "images": [],
+  "description": "A soft cotton crew-neck T-shirt from Levi's with an understated graphic print, cut in a slim fit for everyday wear.",
+  "images": [
+   "/products/S-01-106.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://levi.in/products/mens-crew-neck-t-shirt-169600962",
+   "originalUrl": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
+   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+   "author": "Levi's",
+   "attribution": "Image © Levi's, from levi.in",
+   "matchChecked": true,
+   "width": 1034,
+   "height": 1376,
+   "file": "/products/S-01-106.webp",
+   "processedFrom": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "nykaafashion.com",
+   "from": "levi.in",
    "type": "selling",
-   "url": "https://www.nykaafashion.com/h-m-regular-fit-round-neck-t-shirt-white/p/23065774"
+   "url": "https://levi.in/products/mens-crew-neck-t-shirt-169600962"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
-   "status": "flagged",
-   "flag": "File colours Black and Beige not confirmed for this single tee, so dropped; White and Grey have listings. Nykaa page may be an older snapshot."
+   "status": "ok",
+   "swap": {
+    "status": "applied",
+    "from": "H&M Regular Fit Round-Neck T-Shirt",
+    "to": "Levi's Men's Graphic Print Slim Fit T-shirt",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -14145,16 +14274,16 @@
  },
  {
   "productId": "S-02-202",
-  "productName": "Uniqlo Men's Premium Linen Long-Sleeve Shirt",
-  "productPrice": 2490,
+  "productName": "Levi's Men's Checkered Spread Collar Shirt",
+  "productPrice": 999,
   "quantity": 156,
   "category": "Style",
   "zoneCode": "S",
   "bay": 2,
   "bayName": "Shirts",
-  "brand": "Uniqlo",
+  "brand": "Levi's",
   "colours": [
-   "White"
+   "Yellow/Black"
   ],
   "use": [
    "office",
@@ -14162,36 +14291,48 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "100% premium linen",
-   "Sleeve": "Long sleeve"
+   "Material": "100% cotton",
+   "Fit": "Slim fit"
   },
   "seller": "UrbanKart",
   "warrantyMonths": 0,
   "arrivesInDays": 7,
   "isNew": false,
-  "description": "A long-sleeved men's shirt from Uniqlo made entirely from premium linen, a lighter fabric option listed among its summer range in India.",
-  "images": [],
+  "description": "A yellow and black checked cotton shirt from Levi's with a spread collar and a slim fit, easy to dress up or wear casually.",
+  "images": [
+   "/products/S-02-202.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://levi.in/products/mens-navy-checks-casual-shirt-219830321",
+   "originalUrl": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
+   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+   "author": "Levi's",
+   "attribution": "Image © Levi's, from levi.in",
+   "matchChecked": true,
+   "width": 1034,
+   "height": 1376,
+   "file": "/products/S-02-202.webp",
+   "processedFrom": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "zoutons.com",
-   "type": "estimate",
-   "url": "https://zoutons.com/news/uniqlo-india-summer-sale-linen-airism-picks-2026"
+   "from": "levi.in",
+   "type": "selling",
+   "url": "https://levi.in/products/mens-navy-checks-casual-shirt-219830321"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Price is an aggregator figure from a May 2026 Zoutons roundup, no uniqlo.com/in page returned. Material is from the UK listing. White seen only in resale listings; India colour range unconfirmed, file's Navy and Beige dropped."
+   "flag": "Colour read from the product photo; the store's URL says navy",
+   "swap": {
+    "status": "applied",
+    "from": "Uniqlo Men's Premium Linen Long-Sleeve Shirt",
+    "to": "Levi's Men's Checkered Spread Collar Shirt",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -14253,17 +14394,16 @@
  },
  {
   "productId": "S-02-204",
-  "productName": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
-  "productPrice": 20900,
+  "productName": "Levi's Men's Solid Spread Collar Shirt",
+  "productPrice": 1135,
   "quantity": 16,
   "category": "Style",
   "zoneCode": "S",
   "bay": 2,
   "bayName": "Shirts",
-  "brand": "Polo Ralph Lauren",
+  "brand": "Levi's",
   "colours": [
-   "White",
-   "Black"
+   "White"
   ],
   "use": [
    "travel",
@@ -14271,41 +14411,47 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Fit": "Classic fit, cut fuller through chest, waist and sleeve",
-   "Style": "Garment-dyed Oxford"
+   "Material": "100% cotton",
+   "Fit": "Regular fit"
   },
   "seller": "BazaarMart Retail",
   "warrantyMonths": 0,
   "arrivesInDays": 1,
   "isNew": false,
-  "description": "A garment-dyed Oxford shirt from Polo Ralph Lauren in the Classic Fit, which is cut fuller through the chest, waist and sleeve, sold on the brand's India site.",
-  "images": [],
+  "description": "A solid white full-sleeved cotton shirt from Levi's with a spread collar and a regular fit, for casual or smart days.",
+  "images": [
+   "/products/S-02-204.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://levi.in/products/mens-pink-collar-shirt-342260088",
+   "originalUrl": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
+   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+   "author": "Levi's",
+   "attribution": "Image © Levi's, from levi.in",
+   "matchChecked": true,
+   "width": 1034,
+   "height": 1376,
+   "file": "/products/S-02-204.webp",
+   "processedFrom": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "ralphlauren.global/in",
+   "from": "levi.in",
    "type": "selling",
-   "url": "https://ralphlauren.global/in/en/classic-fit-garment-dyed-oxford-shirt--100007647.html"
+   "url": "https://levi.in/products/mens-pink-collar-shirt-342260088"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. Official store Classic Fit Oxford ₹21,500; Myntra lists a Classic Fit Oxford at ₹10,690",
+   "flag": "Colour read from the product photo; the store's URL says pink",
    "swap": {
     "status": "applied",
-    "from": "Polo Ralph Lauren Custom Fit Oxford Shirt",
-    "to": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
-    "reason": "No rupee price found for the Custom Fit Oxford in two searches; the brand's India site lists Classic Fit Oxford shirts. Not proven unavailable in India."
+    "from": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
+    "to": "Levi's Men's Solid Spread Collar Shirt",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
    }
   }
  },
@@ -14370,16 +14516,16 @@
  },
  {
   "productId": "S-02-206",
-  "productName": "H&M Regular Fit Linen-blend Shirt",
-  "productPrice": 1799,
+  "productName": "Levi's Men's Solid Spread Collar Linen Shirt",
+  "productPrice": 1279,
   "quantity": 23,
   "category": "Style",
   "zoneCode": "S",
   "bay": 2,
   "bayName": "Shirts",
-  "brand": "H&M",
+  "brand": "Levi's",
   "colours": [
-   "White"
+   "Mint"
   ],
   "use": [
    "dress",
@@ -14387,36 +14533,48 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "52% linen, 48% cotton",
-   "Fit": "Regular fit, turn-down collar, French front"
+   "Material": "Linen",
+   "Fit": "Regular fit"
   },
   "seller": "Lifestyle Hub",
   "warrantyMonths": 0,
   "arrivesInDays": 3,
   "isNew": false,
-  "description": "A regular fit H&M shirt woven from a linen and cotton mix, with a turn-down collar, French front and a yoke at the back.",
-  "images": [],
+  "description": "A mint linen shirt from Levi's with a spread collar, a classic look that pairs well with chinos in warm weather.",
+  "images": [
+   "/products/S-02-206.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://levi.in/products/mens-solid-spread-collar-shirt-a13230030",
+   "originalUrl": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
+   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+   "author": "Levi's",
+   "attribution": "Image © Levi's, from levi.in",
+   "matchChecked": true,
+   "width": 1034,
+   "height": 1376,
+   "file": "/products/S-02-206.webp",
+   "processedFrom": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "hm.com/en_in",
-   "type": "mrp",
-   "url": "https://www2.hm.com/en_in/productpage.1248677002.html"
+   "from": "levi.in",
+   "type": "selling",
+   "url": "https://levi.in/products/mens-solid-spread-collar-shirt-a13230030"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Only White confirmed for this article; file's Light Beige not found, so dropped. Rs 1,799 is the listed MRP on H&M India."
+   "flag": "Colour read from the product photo; store text says yellow. Fit not stated on the page",
+   "swap": {
+    "status": "applied",
+    "from": "H&M Regular Fit Linen-blend Shirt",
+    "to": "Levi's Men's Solid Spread Collar Linen Shirt",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -14650,16 +14808,15 @@
  },
  {
   "productId": "S-03-305",
-  "productName": "Nike Sportswear Club Fleece Joggers",
-  "productPrice": 2895,
+  "productName": "Levi's Men's 512 Slim Tapered Fit Jeans",
+  "productPrice": 1347,
   "quantity": 156,
   "category": "Style",
   "zoneCode": "S",
   "bay": 3,
   "bayName": "Trousers",
-  "brand": "Nike",
+  "brand": "Levi's",
   "colours": [
-   "Dark Grey Heather",
    "Black"
   ],
   "use": [
@@ -14668,36 +14825,47 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "Fleece",
-   "Style": "Joggers"
+   "Material": "Cotton and polyester blend",
+   "Fit": "Slim tapered, mid rise"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 0,
   "arrivesInDays": 5,
   "isNew": false,
-  "description": "Men's fleece joggers from Nike's Sportswear Club range, a casual track pant sold in India through Myntra.",
-  "images": [],
+  "description": "Levi's 512 jeans in black, slim through the thigh with a tapered leg and a mid rise for a sharp everyday look.",
+  "images": [
+   "/products/S-03-305.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://levi.in/products/mens-512-black-slim-tapered-jeans-360870181",
+   "originalUrl": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
+   "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+   "author": "Levi's",
+   "attribution": "Image © Levi's, from levi.in",
+   "matchChecked": true,
+   "width": 1034,
+   "height": 1376,
+   "file": "/products/S-03-305.webp",
+   "processedFrom": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "myntra.com",
+   "from": "levi.in",
    "type": "selling",
-   "url": "https://www.myntra.com/track-pants/nike/nike-sportswear-club-fleece-joggers/36600785/buy"
+   "url": "https://levi.in/products/mens-512-black-slim-tapered-jeans-360870181"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
-   "status": "flagged",
-   "flag": "Below the file's Rs 3,495. Myntra also showed Rs 2,026 at 30% off in some sizes. Dark Grey Heather is from nike.com US; Black is the file colour and is unconfirmed for this exact style. Material is from the product name only."
+   "status": "ok",
+   "swap": {
+    "status": "applied",
+    "from": "Nike Sportswear Club Fleece Joggers",
+    "to": "Levi's Men's 512 Slim Tapered Fit Jeans",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
@@ -15157,18 +15325,16 @@
  },
  {
   "productId": "S-05-501",
-  "productName": "Ray-Ban Aviator Classic RB3025",
-  "productPrice": 10990,
+  "productName": "New Era Chicago Bulls Essential Outline 9FORTY Cap",
+  "productPrice": 2999,
   "quantity": 117,
   "category": "Style",
   "zoneCode": "S",
   "bay": 5,
   "bayName": "Eyewear & caps",
-  "brand": "Ray-Ban",
+  "brand": "New Era",
   "colours": [
-   "Gunmetal/G-15 Green",
-   "Black/Green",
-   "Gold/Brown"
+   "Black"
   ],
   "use": [
    "travel",
@@ -15176,49 +15342,62 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "Metal frame",
-   "Lens": "G-15 green, polarised on some versions"
+   "Material": "100% cotton woven",
+   "Fit": "Adjustable",
+   "Sizes": "One size"
   },
   "seller": "BazaarMart Retail",
   "warrantyMonths": 0,
   "arrivesInDays": 7,
   "isNew": true,
-  "description": "Ray-Ban's metal-framed Aviator Classic pilot sunglasses, sold on the brand's India store in several frame and lens combinations.",
-  "images": [],
+  "description": "A black cotton 9FORTY cap with an outlined Chicago Bulls logo, a contoured crown and an adjustable strap.",
+  "images": [
+   "/products/S-05-501.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://neweracap.in/products/chicago-bulls-essential-outline-black-9forty-cap-12292586",
+   "originalUrl": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
+   "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+   "author": "New Era",
+   "attribution": "Image © New Era, from neweracap.in",
+   "matchChecked": true,
+   "width": 1920,
+   "height": 1920,
+   "file": "/products/S-05-501.webp",
+   "processedFrom": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "india.ray-ban.com",
-   "type": "selling"
+   "from": "neweracap.in",
+   "type": "selling",
+   "url": "https://neweracap.in/products/chicago-bulls-essential-outline-black-9forty-cap-12292586"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
-   "status": "flagged",
-   "flag": "Rs 10,990 is for black and gunmetal G-15 versions; a black/green version was Rs 8,690 and a gold polarised one Rs 14,990. The India store uses RB3025 and RB3025I codes. Gold/Green and Black/Grey from the file not found, so dropped. No single product URL tied to the price."
+   "status": "ok",
+   "swap": {
+    "status": "applied",
+    "from": "Ray-Ban Aviator Classic RB3025",
+    "to": "New Era Chicago Bulls Essential Outline 9FORTY Cap",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {
   "productId": "S-05-502",
-  "productName": "Ray-Ban Original Wayfarer Classic RB2140",
-  "productPrice": 14990,
+  "productName": "New Era New York Yankees Essential Camo 9FORTY Cap",
+  "productPrice": 2999,
   "quantity": 47,
   "category": "Style",
   "zoneCode": "S",
   "bay": 5,
   "bayName": "Eyewear & caps",
-  "brand": "Ray-Ban",
+  "brand": "New Era",
   "colours": [
-   "Black"
+   "Camo"
   ],
   "use": [
    "outdoor",
@@ -15226,36 +15405,48 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "Acetate frame",
-   "Lens": "Green, polarised"
+   "Fit": "Adjustable",
+   "Sizes": "One size"
   },
   "seller": "Lifestyle Hub",
   "warrantyMonths": 0,
   "arrivesInDays": 3,
   "isNew": false,
-  "description": "Ray-Ban's Original Wayfarer Classic sunglasses with a black acetate frame and green polarised lenses, sold on the brand's India store.",
-  "images": [],
+  "description": "A camouflage-print 9FORTY cap with the New York Yankees logo, a contoured crown and an adjustable closure.",
+  "images": [
+   "/products/S-05-502.webp"
+  ],
   "image": {
-   "status": "missing",
-   "source": null,
-   "sourcePage": null,
-   "originalUrl": null,
-   "licence": null,
-   "author": null,
-   "attribution": null,
-   "matchChecked": false,
+   "status": "ok",
+   "source": "brand-site",
+   "sourcePage": "https://neweracap.in/products/new-york-yankees-essential-camo-9forty-cap-11357008",
+   "originalUrl": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
+   "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+   "author": "New Era",
+   "attribution": "Image © New Era, from neweracap.in",
+   "matchChecked": true,
+   "width": 1920,
+   "height": 1920,
+   "file": "/products/S-05-502.webp",
+   "processedFrom": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
    "failures": {}
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "india.ray-ban.com",
+   "from": "neweracap.in",
    "type": "selling",
-   "url": "https://india.ray-ban.com/0rb2140-green-901-58.html"
+   "url": "https://neweracap.in/products/new-york-yankees-essential-camo-9forty-cap-11357008"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Well above the file's Rs 9,590; this is the polarised 901/58. A non-polarised black RB2140 Wayfarer was Rs 12,790."
+   "flag": "Colour named from the product title",
+   "swap": {
+    "status": "applied",
+    "from": "Ray-Ban Original Wayfarer Classic RB2140",
+    "to": "New Era New York Yankees Essential Camo 9FORTY Cap",
+    "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+   }
   }
  },
  {

@@ -80,23 +80,30 @@
   "flag": "heyjimmy.in shows it sold out at 24690 (regular 25900). imastudent.com lists 36594, inconsistent; the cheaper Zip v2 at 21990 is another model. Laptop fit and material from a single Sri Lankan listing. India colour stock unconfirmed."
  },
  "C-01-105": {
-  "productName": "Nike Brasilia 9.5 Training Backpack (Medium, 24L)",
-  "price": 2795,
-  "priceType": "mrp",
-  "from": "nike.in",
-  "url": "https://www.nike.in/nike-brasilia-9-5-training-backpack-medium-24l/p/24810526",
+  "productName": "Herschel Settlement Mid-Volume Backpack",
+  "brand": "Herschel",
+  "price": 6734,
+  "priceType": "selling",
+  "snippetOnly": true,
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Herschel-Supply-Co-Settlement-Backpack/dp/B00QG818WY",
   "specs": {
-   "Capacity": "24 L",
-   "Material": "At least 50% recycled polyester"
+   "Size": "41.3 x 28.6 x 11.4 cm",
+   "Weight": "470 g"
   },
   "colours": [
-   "Black/White",
-   "Sesame/Black/Pale Ivory",
-   "Blue"
+   "Black",
+   "Grey"
   ],
   "connectivity": "n/a",
-  "description": "A 24 litre training backpack with a laptop sleeve, side mesh bottle pockets and an inside zip pocket, made from at least 50% recycled polyester.",
-  "flag": "Bay price is Nike's India MRP. SCS Sports shows 2515 and a third-party deal post shows 1118 at Flipkart (unverified). Sesame colourway size not stated. 9.5 is the model name, not capacity; a 30L XL also exists at 3495."
+  "description": "A clean-lined everyday backpack from Herschel in a mid-volume size, weighing about 470 g and suited to daily carry.",
+  "flag": "Amazon.in sellers range ₹6,659 to ₹16,321 by seller and colour; capacity not confirmed",
+  "swap": {
+   "status": "applied",
+   "from": "Nike Brasilia 9.5 Training Backpack (Medium, 24L)",
+   "to": "Herschel Settlement Mid-Volume Backpack",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "C-01-106": {
   "productName": "Quechua Arpenaz 100 20L Hiking Backpack",

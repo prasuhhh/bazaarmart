@@ -16,22 +16,30 @@
   "flag": "MRP ₹24,900; other retail listings ₹17,990 to ₹19,990"
  },
  "A-01-102": {
-  "price": 13990,
+  "productName": "Samsung Galaxy Buds3",
+  "brand": "Samsung",
+  "price": 13999,
+  "priceType": "selling",
   "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/samsung-galaxy-buds-3-true-wireless-buds-white-lyre9m-7960699",
   "specs": {
-   "Battery": "8 h with ANC, 12 h without",
-   "Driver": "8.4 mm Dynamic Driver X",
-   "Water": "IPX4"
+   "Battery": "Up to 36 h with case",
+   "Driver": "11 mm",
+   "Water": "IP57"
   },
   "colours": [
-   "Black",
-   "Silver"
+   "Silver",
+   "White"
   ],
   "connectivity": "wireless",
-  "description": "Sony's flagship noise-cancelling earbuds, using an 8.4 mm driver and two processors, with LDAC support and an IPX4 rating.",
-  "priceType": "selling",
-  "url": "https://www.reliancedigital.in/product/sony-wf1000xm5-tws-earbuds-with-up-to-36-hours-battery-life-and-quick-charge-active-noise-cancellation-black-ln0fcs-7534140",
-  "flag": "Amazon.in ₹13,989, Vijay Sales ₹16,990; WF-1000XM6 now succeeds this model"
+  "description": "Open-fit Samsung earbuds with an 11 mm driver, active noise cancelling, Galaxy AI interpreter features and an IP57 rating.",
+  "flag": "Amazon.in sellers ₹11,349 to ₹11,999; MRP ₹14,999. Battery claims vary by listing",
+  "swap": {
+   "status": "applied",
+   "from": "Sony WF-1000XM5",
+   "to": "Samsung Galaxy Buds3",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "A-01-103": {
   "price": 17999,
@@ -193,36 +201,56 @@
   "url": "https://www.reliancedigital.in/product/sennheiser-momentum-4-wireless-headphone-white-lum76d-7538100"
  },
  "A-02-205": {
-  "price": 12990,
-  "from": "smartprix.com",
+  "productName": "boAt Nirvana 751 ANC",
+  "brand": "boAt",
+  "price": 5099,
+  "priceType": "selling",
+  "from": "boat-lifestyle.com",
+  "url": "https://www.boat-lifestyle.com/products/nirvana-751-anc-headphone",
   "specs": {
-   "Driver": "45 mm",
-   "Connection": "3.5 mm wired"
-  },
-  "colours": [
-   "Black"
-  ],
-  "connectivity": "wired",
-  "description": "A wired studio monitoring headphone with 45 mm drivers, popular with producers and listeners who want a detailed, closed-back sound.",
-  "flag": "File said wireless; this model is wired (ATH-M50xBT is the wireless one). Driver size from one listing only",
-  "priceType": "selling"
- },
- "A-02-206": {
-  "price": 4999,
-  "from": "91mobiles.com",
-  "specs": {
-   "Battery": "35 h with ANC, 50 h without",
-   "Driver": "40 mm",
-   "Weight": "220 g"
+   "Battery": "65 h, 54 h with ANC",
+   "Driver": "40 mm"
   },
   "colours": [
    "Black",
-   "Blue",
-   "White"
+   "Bold Blue"
   ],
   "connectivity": "wireless",
-  "description": "Lightweight wireless headphones with 40 mm drivers and active noise cancelling, offering up to 50 hours of playback with ANC off.",
-  "priceType": "selling"
+  "description": "Wireless headphones with 40 mm drivers, hybrid noise cancelling up to 33 dB and as much as 65 hours of playback per charge.",
+  "flag": "Regular ₹7,990; Amazon.in and Flipkart snapshots ₹2,399 to ₹3,999",
+  "swap": {
+   "status": "applied",
+   "from": "Audio-Technica ATH-M50x",
+   "to": "boAt Nirvana 751 ANC",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
+ },
+ "A-02-206": {
+  "productName": "Bose QuietComfort Ultra Headphones (2nd Gen)",
+  "brand": "Bose",
+  "price": 31990,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Bose-QuietComfort-Bluetooth-Headphones-Cancelling/dp/B0FDKR293G",
+  "specs": {
+   "Battery": "Up to 30 h",
+   "Weight": "480 g"
+  },
+  "colours": [
+   "Black",
+   "White Smoke",
+   "Driftwood Sand",
+   "Desert Gold"
+  ],
+  "connectivity": "wireless",
+  "description": "Second-generation Bose over-ear headphones with spatial audio and noise cancelling, offering up to 30 hours of battery life.",
+  "flag": "Amazon.in and Flipkart ₹31,990; Reliance Digital list ₹49,900",
+  "swap": {
+   "status": "applied",
+   "from": "JBL Tune 760NC",
+   "to": "Bose QuietComfort Ultra Headphones (2nd Gen)",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "A-02-207": {
   "price": 1499,
@@ -316,53 +344,55 @@
   "priceType": "selling"
  },
  "A-03-305": {
-  "productName": "Sony ULT Field 1",
-  "brand": "Sony",
-  "price": 7989,
+  "productName": "Bose SoundLink Micro (2nd Gen)",
+  "brand": "Bose",
+  "price": 11900,
   "priceType": "selling",
-  "snippetOnly": true,
-  "from": "pricebefore.com",
-  "url": "https://www.pricebefore.com/sony-ult-field-1-massive-bass-p876309.html",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Bose-SoundLink-Generation-Bluetooth-Resistant/dp/B0FDLD34V5",
   "specs": {
    "Battery": "Up to 12 h",
    "Water": "IP67",
-   "Weight": "650 g"
+   "Weight": "330 g"
   },
   "colours": [
    "Black",
-   "Off White",
-   "Forest Gray",
-   "Orange"
+   "Blue Dusk"
   ],
   "connectivity": "wireless",
-  "description": "A compact Bluetooth speaker with Sony's ULT bass boost, a detachable strap, USB-C charging, IP67 protection and up to 12 hours of battery.",
+  "description": "A small rubber-strapped Bluetooth speaker with IP67 water and dust protection and up to 12 hours of playback from one charge.",
+  "flag": "Amazon.in ₹11,900; Reliance Digital and MRP ₹15,900",
   "swap": {
    "status": "applied",
-   "from": "Ultimate Ears Wonderboom 3",
-   "to": "Sony ULT Field 1",
-   "reason": "User decision: Wonderboom 4's Amazon.in seller was unconfirmed, so a speaker clearly sold in India replaces it. Launched in India May 2024 at ₹10,990, listed by Reliance Digital"
-  },
-  "flag": "Amazon.in price from an undated price tracker; launch ₹10,990; Reliance Digital MRP ₹16,990 less 35%"
+   "from": "Sony ULT Field 1",
+   "to": "Bose SoundLink Micro (2nd Gen)",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "A-03-306": {
-  "price": 4490,
-  "from": "reliancedigital.in",
+  "productName": "Marshall Middleton II",
+  "brand": "Marshall",
+  "price": 31999,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Marshall-Middleton-Bluetooth-Portable-Waterproof/dp/B0FBHTGL16",
   "specs": {
-   "Battery": "Up to 16 h",
-   "Water": "IP67",
-   "Weight": "274 g"
+   "Battery": "30+ h",
+   "Water": "IP67"
   },
   "colours": [
-   "Black",
-   "Blue",
-   "Light Grey",
-   "Orange"
+   "Black and Brass",
+   "Cream"
   ],
   "connectivity": "wireless",
-  "description": "A pocketable Sony Bluetooth speaker with up to 16 hours of battery, USB-C charging and IP67 protection against water and dust.",
-  "priceType": "selling",
-  "url": "https://www.reliancedigital.in/product/sony-bluetooth-speaker-srs-xb100lzin-blue-llgisy-7533247",
-  "flag": "MRP ₹5,990. Wide spread: Flipkart ₹2,489 (Grey, seller TBL Online), Amazon.in ₹2,990 (Blue, Orange) to ₹3,999 (Grey)"
+  "description": "A portable 360-degree Bluetooth speaker with an IP67 rating, more than 30 hours of playtime and a power bank function.",
+  "flag": "Same price at Reliance Digital and Croma; Flipkart offer ₹29,924",
+  "swap": {
+   "status": "applied",
+   "from": "Sony SRS-XB100",
+   "to": "Marshall Middleton II",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "A-03-307": {
   "price": 1499,

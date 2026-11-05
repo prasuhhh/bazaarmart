@@ -15,16 +15,32 @@
   "failures": {}
  },
  "A-01-102": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
-  "failures": {}
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds3-silver-sm-r530nzaainu/",
+  "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249",
+  "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
+  "author": "Samsung",
+  "attribution": "Image © Samsung, from www.samsung.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Buy new Galaxy Buds3 (Silver) - Price & Specs | Samsung India",
+    "sourcePage": "https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds3-silver-sm-r530nzaainu/",
+    "originalUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249",
+    "width": null,
+    "height": null,
+    "licence": "© Samsung - press/product image, used for a non-commercial student lab demo",
+    "author": "Samsung",
+    "attribution": "Image © Samsung, from www.samsung.com"
+   }
+  ],
+  "width": 1300,
+  "height": 1038,
+  "file": "/products/A-01-102.webp",
+  "failures": {},
+  "processedFrom": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r530nzaainu/gallery/in-galaxy-buds3-r530-sm-r530nzaainu-thumb-546681249"
  },
  "A-01-103": {
   "status": "ok",
@@ -344,27 +360,59 @@
   "failures": {}
  },
  "A-02-205": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.boat-lifestyle.com/products/nirvana-751-anc-headphone",
+  "originalUrl": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
+  "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
+  "author": "boAt",
+  "attribution": "Image © boAt, from www.boat-lifestyle.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "boAt Nirvana 751 ANC | Wireless Headphone with 40 mm drivers, 65 Hours (54 Hours with ANC), Type C, Dual Compatibility",
+    "sourcePage": "https://www.boat-lifestyle.com/products/nirvana-751-anc-headphone",
+    "originalUrl": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
+    "width": null,
+    "height": null,
+    "licence": "© boAt - press/product image, used for a non-commercial student lab demo",
+    "author": "boAt",
+    "attribution": "Image © boAt, from www.boat-lifestyle.com"
+   }
+  ],
+  "width": 2560,
+  "height": 2560,
+  "file": "/products/A-02-205.webp",
+  "processedFrom": "http://www.boat-lifestyle.com/cdn/shop/files/751ANC_Black_3.png?v=1771312622",
   "failures": {}
  },
  "A-02-206": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
+  "originalUrl": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+  "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+  "author": "Bose",
+  "attribution": "Image © Bose, from www.bose.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Shop Bose QuietComfort Ultra Headphones (2nd Gen)",
+    "sourcePage": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
+    "originalUrl": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+    "width": null,
+    "height": null,
+    "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+    "author": "Bose",
+    "attribution": "Image © Bose, from www.bose.com"
+   }
+  ],
+  "width": 816,
+  "height": 609,
+  "file": "/products/A-02-206.webp",
+  "processedFrom": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
   "failures": {}
  },
  "A-02-207": {
@@ -533,27 +581,59 @@
   "failures": {}
  },
  "A-03-305": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.bose.com/p/speakers/bose-soundlink-micro-portable-speaker-2nd-gen/SLMC2-SPEAKERWIRELESS.html",
+  "originalUrl": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+  "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+  "author": "Bose",
+  "attribution": "Image © Bose, from www.bose.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Shop Bose SoundLink Micro Portable Speaker (2nd Gen)",
+    "sourcePage": "https://www.bose.com/p/speakers/bose-soundlink-micro-portable-speaker-2nd-gen/SLMC2-SPEAKERWIRELESS.html",
+    "originalUrl": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
+    "width": null,
+    "height": null,
+    "licence": "© Bose - press/product image, used for a non-commercial student lab demo",
+    "author": "Bose",
+    "attribution": "Image © Bose, from www.bose.com"
+   }
+  ],
+  "width": 816,
+  "height": 609,
+  "file": "/products/A-03-305.webp",
+  "processedFrom": "https://assets.bosecreative.com/transform/e70dcf89-8868-43bc-b582-9b810c1ff593/FY27_SLMIILE27-DewdropMint_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95&io=width:816,height:667,transform:fit",
   "failures": {}
  },
  "A-03-306": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.marshall.com/vn/en/product/middleton-ii?pid=1007428",
+  "originalUrl": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
+  "licence": "© Marshall - press/product image, used for a non-commercial student lab demo",
+  "author": "Marshall",
+  "attribution": "Image © Marshall, from www.marshall.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Middleton II with 30+ hours of playtime | Marshall.com",
+    "sourcePage": "https://www.marshall.com/vn/en/product/middleton-ii?pid=1007428",
+    "originalUrl": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
+    "width": null,
+    "height": null,
+    "licence": "© Marshall - press/product image, used for a non-commercial student lab demo",
+    "author": "Marshall",
+    "attribution": "Image © Marshall, from www.marshall.com"
+   }
+  ],
+  "width": 960,
+  "height": 960,
+  "file": "/products/A-03-306.webp",
+  "processedFrom": "https://images.ctfassets.net/javen7msabdh/50Pu4mtWoYDycEtr53grRt/d489841a293a0879338bbd0711907219/middleton-ii-black-and-brass.jpg",
   "failures": {}
  },
  "A-03-307": {
@@ -1233,15 +1313,31 @@
   "failures": {}
  },
  "B-02-202": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.moroccanoil.com/products/intense-hydrating-mask",
+  "originalUrl": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
+  "licence": "© Moroccanoil - press/product image, used for a non-commercial student lab demo",
+  "author": "Moroccanoil",
+  "attribution": "Image © Moroccanoil, from www.moroccanoil.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Intense Hydrating Mask",
+    "sourcePage": "https://www.moroccanoil.com/products/intense-hydrating-mask",
+    "originalUrl": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
+    "width": null,
+    "height": null,
+    "licence": "© Moroccanoil - press/product image, used for a non-commercial student lab demo",
+    "author": "Moroccanoil",
+    "attribution": "Image © Moroccanoil, from www.moroccanoil.com"
+   }
+  ],
+  "width": 1795,
+  "height": 2286,
+  "file": "/products/B-02-202.webp",
+  "processedFrom": "http://www.moroccanoil.com/cdn/shop/files/121_MASK_INTENSE-HYDRATING_250mL_v3.jpg?v=1682737044",
   "failures": {}
  },
  "B-02-203": {
@@ -1972,15 +2068,31 @@
   "failures": {}
  },
  "C-01-105": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://herschel.com/products/settlement-backpack-1",
+  "originalUrl": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
+  "licence": "© Herschel - press/product image, used for a non-commercial student lab demo",
+  "author": "Herschel",
+  "attribution": "Image © Herschel, from herschel.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Settlement Backpack",
+    "sourcePage": "https://herschel.com/products/settlement-backpack-1",
+    "originalUrl": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
+    "width": null,
+    "height": null,
+    "licence": "© Herschel - press/product image, used for a non-commercial student lab demo",
+    "author": "Herschel",
+    "attribution": "Image © Herschel, from herschel.com"
+   }
+  ],
+  "width": 1024,
+  "height": 1280,
+  "file": "/products/C-01-105.webp",
+  "processedFrom": "http://herschel.com/cdn/shop/files/11407-00001-os-01-Y5ajw3T5.jpg?v=1781467074&width=1024",
   "failures": {}
  },
  "C-01-106": {
@@ -3476,15 +3588,31 @@
   "failures": {}
  },
  "D-04-403": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.logitech.com/en-in/shop/p/litra-beam-lx-led-light",
+  "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
+  "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+  "author": "Logitech G",
+  "attribution": "Image © Logitech G, from www.logitech.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Litra Beam LX Streaming Light | Logitech G",
+    "sourcePage": "https://www.logitech.com/en-in/shop/p/litra-beam-lx-led-light",
+    "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
+    "width": null,
+    "height": null,
+    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+    "author": "Logitech G",
+    "attribution": "Image © Logitech G, from www.logitech.com"
+   }
+  ],
+  "width": 3200,
+  "height": 3200,
+  "file": "/products/D-04-403.webp",
+  "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-cameras-lighting/pdp-litra-beam-lx-led-light/litra-beam-gallery-5.png",
   "failures": {}
  },
  "D-04-404": {
@@ -3664,15 +3792,31 @@
   "failures": {}
  },
  "D-05-503": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.logitech.com/en-in/shop/p/brio-500-webcam",
+  "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
+  "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
+  "author": "Logitech",
+  "attribution": "Image © Logitech, from www.logitech.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Brio 500 1080p HDR Webcam with Show Mode | Logitech",
+    "sourcePage": "https://www.logitech.com/en-in/shop/p/brio-500-webcam",
+    "originalUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
+    "width": null,
+    "height": null,
+    "licence": "© Logitech - press/product image, used for a non-commercial student lab demo",
+    "author": "Logitech",
+    "attribution": "Image © Logitech, from www.logitech.com"
+   }
+  ],
+  "width": 1600,
+  "height": 1374,
+  "file": "/products/D-05-503.webp",
+  "processedFrom": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-500/gallery/brio-500-gallery-graphite-1.png",
   "failures": {}
  },
  "D-05-504": {
@@ -4230,15 +4374,31 @@
   "failures": {}
  },
  "G-03-304": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.logitechg.com/en-in/shop/p/g512-mechanical-gaming-keyboard",
+  "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
+  "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+  "author": "Logitech G",
+  "attribution": "Image © Logitech G, from www.logitechg.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Logitech G512 Mechanical Gaming Keyboard │Logitech G",
+    "sourcePage": "https://www.logitechg.com/en-in/shop/p/g512-mechanical-gaming-keyboard",
+    "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
+    "width": null,
+    "height": null,
+    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+    "author": "Logitech G",
+    "attribution": "Image © Logitech G, from www.logitechg.com"
+   }
+  ],
+  "width": 1384,
+  "height": 1038,
+  "file": "/products/G-03-304.webp",
+  "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/flying-v-mx-g512/g512-keyboard-gallery-2-2x-nb.png",
   "failures": {}
  },
  "G-03-305": {
@@ -4478,15 +4638,31 @@
   "failures": {}
  },
  "G-04-407": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://www.logitechg.com/en-in/shop/p/pro-x-superlight-wireless-mouse",
+  "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
+  "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+  "author": "Logitech G",
+  "attribution": "Image © Logitech G, from www.logitechg.com",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+    "sourcePage": "https://www.logitechg.com/en-in/shop/p/pro-x-superlight-wireless-mouse",
+    "originalUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
+    "width": null,
+    "height": null,
+    "licence": "© Logitech G - press/product image, used for a non-commercial student lab demo",
+    "author": "Logitech G",
+    "attribution": "Image © Logitech G, from www.logitechg.com"
+   }
+  ],
+  "width": 1384,
+  "height": 1038,
+  "file": "/products/G-04-407.webp",
+  "processedFrom": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-white-gallery-6.png",
   "failures": {}
  },
  "G-05-501": {
@@ -6728,15 +6904,31 @@
   "failures": {}
  },
  "S-01-106": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://levi.in/products/mens-crew-neck-t-shirt-169600962",
+  "originalUrl": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
+  "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+  "author": "Levi's",
+  "attribution": "Image © Levi's, from levi.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Men's Graphic Print Slim Fit T-shirt",
+    "sourcePage": "https://levi.in/products/mens-crew-neck-t-shirt-169600962",
+    "originalUrl": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
+    "width": null,
+    "height": null,
+    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+    "author": "Levi's",
+    "attribution": "Image © Levi's, from levi.in"
+   }
+  ],
+  "width": 1034,
+  "height": 1376,
+  "file": "/products/S-01-106.webp",
+  "processedFrom": "http://levi.in/cdn/shop/files/169600962_02_Front_216af4ca-e6e4-4c57-be71-2d839ab9809f.jpg?v=1750165587",
   "failures": {}
  },
  "S-01-107": {
@@ -6794,15 +6986,31 @@
   }
  },
  "S-02-202": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://levi.in/products/mens-navy-checks-casual-shirt-219830321",
+  "originalUrl": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
+  "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+  "author": "Levi's",
+  "attribution": "Image © Levi's, from levi.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Men's Checkered Spread Collar Shirt",
+    "sourcePage": "https://levi.in/products/mens-navy-checks-casual-shirt-219830321",
+    "originalUrl": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
+    "width": null,
+    "height": null,
+    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+    "author": "Levi's",
+    "attribution": "Image © Levi's, from levi.in"
+   }
+  ],
+  "width": 1034,
+  "height": 1376,
+  "file": "/products/S-02-202.webp",
+  "processedFrom": "http://levi.in/cdn/shop/files/219830321_01_Front_31e4b478-aa2d-488f-a9c0-9249b6e3e07b.jpg?v=1699256949",
   "failures": {}
  },
  "S-02-203": {
@@ -6834,15 +7042,31 @@
   "failures": {}
  },
  "S-02-204": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://levi.in/products/mens-pink-collar-shirt-342260088",
+  "originalUrl": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
+  "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+  "author": "Levi's",
+  "attribution": "Image © Levi's, from levi.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Men's Solid Spread Collar Shirt",
+    "sourcePage": "https://levi.in/products/mens-pink-collar-shirt-342260088",
+    "originalUrl": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
+    "width": null,
+    "height": null,
+    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+    "author": "Levi's",
+    "attribution": "Image © Levi's, from levi.in"
+   }
+  ],
+  "width": 1034,
+  "height": 1376,
+  "file": "/products/S-02-204.webp",
+  "processedFrom": "http://levi.in/cdn/shop/files/342260088_01_Style_Shot_227dd040-2a8d-4016-adbe-2e0eff364c16.jpg?v=1695730929",
   "failures": {}
  },
  "S-02-205": {
@@ -6876,15 +7100,31 @@
   "processedFrom": "https://shoptommy.scene7.com/is/image/ShopTommy/78J3837_VP8_main"
  },
  "S-02-206": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://levi.in/products/mens-solid-spread-collar-shirt-a13230030",
+  "originalUrl": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
+  "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+  "author": "Levi's",
+  "attribution": "Image © Levi's, from levi.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Men's Solid Spread Collar Linen Shirt",
+    "sourcePage": "https://levi.in/products/mens-solid-spread-collar-shirt-a13230030",
+    "originalUrl": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
+    "width": null,
+    "height": null,
+    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+    "author": "Levi's",
+    "attribution": "Image © Levi's, from levi.in"
+   }
+  ],
+  "width": 1034,
+  "height": 1376,
+  "file": "/products/S-02-206.webp",
+  "processedFrom": "http://levi.in/cdn/shop/files/A13230030_01_Style_Shot_6c217f71-e602-4b01-8b61-ef43fc8d6ffa.jpg?v=1712744486",
   "failures": {}
  },
  "S-03-301": {
@@ -6996,15 +7236,31 @@
   }
  },
  "S-03-305": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://levi.in/products/mens-512-black-slim-tapered-jeans-360870181",
+  "originalUrl": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
+  "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+  "author": "Levi's",
+  "attribution": "Image © Levi's, from levi.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Men's 512 Black Slim Tapered Fit Mid Rise Jeans",
+    "sourcePage": "https://levi.in/products/mens-512-black-slim-tapered-jeans-360870181",
+    "originalUrl": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
+    "width": null,
+    "height": null,
+    "licence": "© Levi's - press/product image, used for a non-commercial student lab demo",
+    "author": "Levi's",
+    "attribution": "Image © Levi's, from levi.in"
+   }
+  ],
+  "width": 1034,
+  "height": 1376,
+  "file": "/products/S-03-305.webp",
+  "processedFrom": "http://levi.in/cdn/shop/files/360870181_07_Model_Front_4fc8b568-f93a-4db2-b415-33009e6a85a0.jpg?v=1767769623",
   "failures": {}
  },
  "S-03-306": {
@@ -7277,27 +7533,59 @@
   "failures": {}
  },
  "S-05-501": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://neweracap.in/products/chicago-bulls-essential-outline-black-9forty-cap-12292586",
+  "originalUrl": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
+  "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+  "author": "New Era",
+  "attribution": "Image © New Era, from neweracap.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "Chicago Bulls Essential Outline Black 9FORTY Cap",
+    "sourcePage": "https://neweracap.in/products/chicago-bulls-essential-outline-black-9forty-cap-12292586",
+    "originalUrl": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
+    "width": null,
+    "height": null,
+    "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+    "author": "New Era",
+    "attribution": "Image © New Era, from neweracap.in"
+   }
+  ],
+  "width": 1920,
+  "height": 1920,
+  "file": "/products/S-05-501.webp",
+  "processedFrom": "http://neweracap.in/cdn/shop/files/12292586.jpg?v=1733990978&width=2048",
   "failures": {}
  },
  "S-05-502": {
-  "status": "missing",
-  "source": null,
-  "sourcePage": null,
-  "originalUrl": null,
-  "licence": null,
-  "author": null,
-  "attribution": null,
-  "matchChecked": false,
-  "candidates": [],
+  "status": "ok",
+  "source": "brand-site",
+  "sourcePage": "https://neweracap.in/products/new-york-yankees-essential-camo-9forty-cap-11357008",
+  "originalUrl": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
+  "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+  "author": "New Era",
+  "attribution": "Image © New Era, from neweracap.in",
+  "matchChecked": true,
+  "candidates": [
+   {
+    "source": "brand-site",
+    "title": "New York Yankees Essential Camo 9FORTY Cap",
+    "sourcePage": "https://neweracap.in/products/new-york-yankees-essential-camo-9forty-cap-11357008",
+    "originalUrl": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
+    "width": null,
+    "height": null,
+    "licence": "© New Era - press/product image, used for a non-commercial student lab demo",
+    "author": "New Era",
+    "attribution": "Image © New Era, from neweracap.in"
+   }
+  ],
+  "width": 1920,
+  "height": 1920,
+  "file": "/products/S-05-502.webp",
+  "processedFrom": "http://neweracap.in/cdn/shop/files/11357008.jpg?v=1768731142&width=2048",
   "failures": {}
  },
  "S-05-503": {

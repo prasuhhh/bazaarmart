@@ -133,24 +133,28 @@
   "flag": "Price varies by colour and seller, about 24900 to 34900. File colours Fuchsia/Nickel and Black/Nickel were not confirmed and were replaced."
  },
  "B-02-202": {
-  "price": 43900,
+  "productName": "Moroccanoil Intense Hydrating Mask (250 ml)",
+  "brand": "Moroccanoil",
+  "price": 3600,
   "priceType": "selling",
-  "from": "reliancedigital.in",
-  "url": "https://www.reliancedigital.in/product/dyson-airwrap-long-styler-prussian-bluecopper-lkrn0x",
+  "from": "tirabeauty.com",
+  "url": "https://www.tirabeauty.com/product/moroccanoil-intense-hydrating-mask-250ml-urmvdzciuzv",
   "specs": {
-   "Power": "1300 W",
-   "Heat settings": "3 heat, 3 speed",
-   "Attachments": "30 mm and 40 mm long barrels, brushes, dryer",
-   "Skin/Hair type": "Chest-length or longer hair"
+   "Size": "250 ml",
+   "Skin/Hair type": "Medium to thick, dry hair"
   },
   "colours": [
-   "Nickel/Copper",
-   "Prussian Blue/Rich Copper",
-   "Vinca Blue/Rosé"
+   "Standard"
   ],
   "connectivity": "n/a",
-  "description": "A 1300 W multi-styler with long 30 mm and 40 mm barrels plus brushes, meant for chest-length or longer hair. It has three heat and three speed settings.",
-  "flag": "Other sellers 44399; launch price 45900. Reliance page title says Nickel/Copper while its URL says Prussian Blue/Copper. Weight left out because sources disagree. Hair-length note comes from a Dyson New Zealand listing."
+  "description": "A rich conditioning hair mask with argan oil, made to deeply hydrate dry medium to thick hair in a 250 ml jar.",
+  "flag": "Same ₹3,600 at Myntra and Nykaa; Amazon.in ₹3,240; Flipkart up to ₹4,694",
+  "swap": {
+   "status": "applied",
+   "from": "Dyson Airwrap Multi-styler Complete Long",
+   "to": "Moroccanoil Intense Hydrating Mask (250 ml)",
+   "reason": "User-approved replacement: the original maker site refused access, so no photo was available"
+  }
  },
  "B-02-203": {
   "price": 2584,
