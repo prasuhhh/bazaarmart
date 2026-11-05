@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useMoveToReceipt } from '../../hooks/useMoveToReceipt.js';
 import { useNotice } from '../../context/NoticeContext.jsx';
 import ProductGrid from './ProductGrid.jsx';
+import ShelfCheckoutButton from './ShelfCheckoutButton.jsx';
 import ShelfItem, { toReceiptEntry } from './ShelfItem.jsx';
 
 export default function ShelfCard({ shelf, busy, onRename, onDelete, onRemoveItem }) {
@@ -45,6 +46,7 @@ export default function ShelfCard({ shelf, busy, onRename, onDelete, onRemoveIte
       ) : <p className="muted shelf-empty">Nothing here yet. Tap ☆ on any product to save it.</p>}
 
       <footer className="shelf-foot">
+        <ShelfCheckoutButton items={shelf.items} to={`/counter?shelf=${shelf._id}`} />
         <button type="button" className="shelf-move" disabled={!shelf.items.length} onClick={() => moveToReceipt(shelf.items.map(toReceiptEntry))}>
           Move whole shelf to receipt
         </button>

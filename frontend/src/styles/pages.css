@@ -277,6 +277,18 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .receipt-total { margin-bottom: 4px; font-weight: 700; }
 .receipt-error { color: var(--danger); font-size: var(--text-caption); }
 .pay-button { align-self: center; margin-top: 6px; }
+.shelf-back { align-self: center; text-decoration: none; }
+.shelf-bulk { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 4px; font-size: var(--text-caption); }
+.shelf-bulk label { display: flex; align-items: center; gap: 8px; }
+.shelf-bulk input { width: 64px; padding: 6px 8px; border: var(--dashed); border-radius: 0; background: none; font-size: var(--text-caption); }
+.shelf-bulk .outline { padding: 6px 10px; font-size: var(--text-caption); }
+.shelf-lines li { flex-wrap: wrap; align-items: center; }
+.shelf-lines li.out { color: var(--muted); }
+.shelf-line-pick { display: flex; flex: 1 1 160px; align-items: flex-start; gap: 8px; min-width: 0; }
+.shelf-line-pick input { flex: none; margin-top: 3px; }
+.shelf-line-amount { display: flex; flex: 1 0 auto; align-items: center; justify-content: flex-end; gap: 10px; }
+.shelf-remove { display: flex; align-items: flex-start; gap: 8px; margin-top: 6px; font-size: var(--text-caption); }
+.shelf-remove input { flex: none; margin-top: 2px; }
 .mock-amount { font: 700 var(--text-title) var(--font-title); }
 
 @media (max-width: 1099px) {
@@ -315,6 +327,8 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 .price-rise { color: var(--muted); }
 .shelf-empty { padding: 18px 0; }
 .shelf-foot { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.shelf-checkout { align-self: flex-start; }
+.shelf-foot .field-help { margin-top: 0; }
 .shelf-move { align-self: flex-start; padding: 0; border: 0; background: none; font-size: var(--text-caption); text-align: left; text-decoration: underline; }
 .shelf-move:disabled { opacity: 0.45; cursor: not-allowed; }
 .shelf-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }

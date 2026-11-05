@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom';
 import ProductGrid from '../components/shop/ProductGrid.jsx';
+import ShelfCheckoutButton from '../components/shop/ShelfCheckoutButton.jsx';
 import ShelfItem, { toReceiptEntry } from '../components/shop/ShelfItem.jsx';
 import { useFetch } from '../hooks/useFetch.js';
 import { useMoveToReceipt } from '../hooks/useMoveToReceipt.js';
 import Placeholder from './Placeholder.jsx';
 
-// Public, so it stays read-only and shows nothing about the shelf's owner.
+// Public, so it shows nothing about the shelf's owner. Buying works; changing it doesn't.
 export default function SharedShelf() {
   const { shareId } = useParams();
   const { data: shelf, error } = useFetch(`/shelves/shared/${encodeURIComponent(shareId)}`);
@@ -28,6 +29,7 @@ export default function SharedShelf() {
           ? <ProductGrid as="ul">{shelf.items.map(item => <ShelfItem key={item.productId} item={item} />)}</ProductGrid>
           : <p className="muted shelf-empty">This shelf is empty.</p>}
         <footer className="shelf-foot">
+          <ShelfCheckoutButton items={shelf.items} to={`/counter?share=${encodeURIComponent(shareId)}`} />
           <button type="button" className="shelf-move" disabled={!shelf.items.length} onClick={() => moveToReceipt(shelf.items.map(toReceiptEntry))}>
             Move whole shelf to receipt
           </button>
