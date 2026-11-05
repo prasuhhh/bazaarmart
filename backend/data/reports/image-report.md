@@ -110,6 +110,7 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - D-05-506 Apple USB-C Digital AV Multiport Adapter
 - G-01-103 Xbox Wireless Controller
 - G-01-106 8BitDo Ultimate 3-mode Controller for Xbox
+- G-02-206 Corsair HS80 RGB Wireless Headset
 - G-04-401 Logitech G102 Lightsync
 - L-01-101 Philips Hue Go Portable Table Lamp
 - L-01-105 HomeMate Wi-Fi Multicolour Smart LED Strip Kit (10 m)
@@ -169,7 +170,6 @@ Accepted: L-02-201 Amazon Echo Dot (5th Gen). A real photo of the spherical body
 - C-04-406 Wildcraft Expedition DUF 35 Duffel Backpack
 - C-05-504 Owala FreeSip Bottle (24 oz)
 - D-05-507 Anker 11-in-1 USB-C Docking Station
-- G-02-206 Corsair HS80 RGB Wireless Headset
 - G-03-307 Redragon K552 Kumara
 - G-04-406 SteelSeries Rival 3 Gen 2
 - L-04-403 Nespresso Essenza Mini Coffee Machine
