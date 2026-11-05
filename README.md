@@ -4,7 +4,7 @@
 
 It behaves like a physical store floor: you walk in through a **store map** of zones, browse **bays** of products, keep things on a **receipt**, save them to **shelves**, pay at the **counter** and follow the **parcel**.
 
-- Phone OTP sign-in (mock SMS), email login and registration, and guest checkout
+- Phone OTP sign-in (real SMS through textbee, or a mock for development), email login and registration, and guest checkout
 - A store map sized by stock, with a peek panel, a drag-to-receipt conveyor and kits
 - Filter dials, shelf, list and bench views, and a product sheet with reviews and Q&A
 - A three-step counter with simulated payment, a server-priced receipt and coupons
@@ -42,12 +42,13 @@ Fill in `backend/.env`:
 | `PORT` | No | API port, default `5000` |
 | `CLIENT_ORIGIN` | No | Frontend URL allowed by CORS, default `http://localhost:5173` |
 | `DNS_SERVERS` | No | Comma-separated DNS servers, only if MongoDB SRV lookups fail on your network |
-| `OTP_MOCK` | No | `true` turns on the mock SMS provider. Without it, phone sign-in returns 503 |
+| `OTP_MOCK` | No | `true` turns on the mock SMS provider and takes priority over `TEXTBEE_API_KEY` |
+| `TEXTBEE_API_KEY` | No | Sends real SMS through textbee when `OTP_MOCK` isn't `true`. With neither set, phone sign-in returns 503 |
 | `REQUIRE_AUTH_FOR_CATALOGUE` | No | `true` restores the lab rule that product data needs a login. Default is public |
 
 `frontend/.env` holds one setting, `VITE_API_URL`, the API address ending in `/api`. Catalogue photos are served by the website itself, from `frontend/public/products/`.
 
-The mock SMS provider prints sign-in codes to the server console. `REQUIRE_AUTH_FOR_CATALOGUE=true` makes the product list, category, product sheet, search and kit detail routes return 401 without a token.
+The mock SMS provider prints sign-in codes to the server console. For real SMS, follow [Real SMS with textbee](#real-sms-with-textbee). `REQUIRE_AUTH_FOR_CATALOGUE=true` makes the product list, category, product sheet, search and kit detail routes return 401 without a token.
 
 Then seed the database and start both apps:
 
@@ -157,9 +158,20 @@ Protected routes need the header `Authorization: Bearer <token>`.
 
 | Method | Path | Access | Result |
 |---|---|---|---|
-| POST | `/api/auth/otp/request` | Public | `{ "phone": "+919876543210" }`. Sends a 6-digit code valid for 5 minutes; returns it as `data.devCode` outside production. Limited to 5 requests per 10 minutes, per phone and per IP |
+| POST | `/api/auth/otp/request` | Public | `{ "phone": "+919876543210" }`. Sends a 6-digit code valid for 5 minutes; returns it as `data.devCode` in mock mode outside production, and 503 if the SMS can't be sent. Limited to 5 requests per 10 minutes, per phone and per IP |
 | POST | `/api/auth/otp/verify` | Public | `{ "phone", "code" }`. Returns `data.token` and `data.user`, creating the account if new: 200, 400 expired, 401 wrong code, 429 after 5 wrong attempts |
 | POST | `/api/auth/google` | Public | 501 until Google sign-in is configured |
+
+#### Real SMS with textbee
+
+[textbee](https://textbee.dev) sends each code from the SIM of an Android phone, so it costs only what that SIM plan charges for an SMS. The free plan allows 50 messages a day and 300 a month.
+
+1. Create a textbee account and verify your email.
+2. On an Android 7+ phone with an active SIM, install the app from [textbee.dev/download](https://textbee.dev/download), register the device, and grant the SMS permission.
+3. In the dashboard, generate an API key.
+4. In `backend/.env`, set `OTP_MOCK=false` and `TEXTBEE_API_KEY=<your key>`, then restart the backend.
+
+A 200 from `/api/auth/otp/request` means textbee queued the message for the phone, not that it arrived. If nothing arrives, check the phone's connection and the message status in the textbee dashboard. The phone must stay on and online.
 
 ### Account details
 
@@ -337,7 +349,7 @@ These are deliberate for a lab project, and a real shop would need to change the
 | Area | What it does now | What a real shop would do |
 |---|---|---|
 | Login token | The JWT sits in `localStorage`, where any script on the page could read it (an XSS risk) | Use httpOnly cookies |
-| Phone OTP | A mock provider prints the code to the server log and, outside production, shows it on screen | Connect a real SMS provider |
+| Phone OTP | Real SMS is sent from one Android phone through textbee's free plan, and a mock is the default | Move to a DLT-registered Indian SMS provider before launch |
 | Payments | Simulated. No money moves, and only the method is stored | Connect a payment gateway |
 | Saved payment methods | Display labels only, and checkout doesn't use them | Store gateway tokens |
 | Route map | A drawn line, with the marker placed by order status | Use real courier GPS |
