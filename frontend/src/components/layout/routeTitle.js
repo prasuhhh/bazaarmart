@@ -4,6 +4,7 @@ const FIXED_TITLES = {
   '/counter': 'Counter · checkout',
   '/orders': 'Orders',
   '/profile': 'Profile',
+  '/credits': 'Photo credits',
   '/signin': 'Sign in',
   '/p': 'Product sheet',
   '/track': 'Track parcel',

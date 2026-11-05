@@ -58,7 +58,7 @@ export default function ProductForm({ product, zones, busy, onSubmit, onCancel }
       <label>Price (₹)<input name="productPrice" type="number" min="0" step="any" defaultValue={product?.productPrice} required /></label>
       <label>Stock<input name="quantity" type="number" min="0" step="1" defaultValue={product?.quantity} required /></label>
       <label>Colours<input name="colours" defaultValue={product?.colours?.join(', ')} placeholder="Black, Sand" /></label>
-      <label className="full">Images<input name="images" defaultValue={product?.images?.join(', ')} placeholder="Image URLs, separated by commas" /></label>
+      <label className="full">Images (a /products/... path or an https URL)<input name="images" defaultValue={product?.images?.join(', ')} placeholder="/products/A-01-101.webp, https://..." /></label>
       <label className="full">Specs<textarea name="specs" rows="3" defaultValue={specsToText(product?.specs)} placeholder={'Battery: 24 h\nWeight: 42 g'} /></label>
       <label className="full">Description<textarea name="description" rows="3" defaultValue={product?.description} required /></label>
       <div className="form-actions full">

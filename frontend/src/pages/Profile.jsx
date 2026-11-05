@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import AccountPanel from '../components/profile/AccountPanel.jsx';
 import AddressesPanel from '../components/profile/AddressesPanel.jsx';
 import DevicesPanel from '../components/profile/DevicesPanel.jsx';
@@ -24,6 +25,7 @@ export default function Profile() {
         <NotificationsPanel prefs={profile.notificationPrefs} onChanged={reload} />
         <AccountPanel profile={profile} onChanged={reload} />
       </div>
+      <p className="muted"><Link to="/credits">Photo credits</Link></p>
     </div>
   );
 }

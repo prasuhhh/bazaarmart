@@ -65,6 +65,13 @@ export async function search(req, res) {
   ok(res, { data, count: data.length });
 }
 
+// Public: the licences on these photos require the credit to be visible.
+export async function listCredits(_req, res) {
+  const credited = await Product.find({ 'image.status': 'ok' })
+    .select('productId productName image.attribution image.licence image.sourcePage -_id').sort({ productId: 1 });
+  ok(res, { count: credited.length, data: credited });
+}
+
 export async function listKits(_req, res) {
   const kits = await Kit.find().select('-__v').sort({ createdAt: 1, _id: 1 });
   ok(res, { data: kits, count: kits.length });

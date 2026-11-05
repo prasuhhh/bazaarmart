@@ -4,6 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute.jsx';
 import AdminProducts from './pages/AdminProducts.jsx';
 import BrowseZone from './pages/BrowseZone.jsx';
 import Counter from './pages/Counter.jsx';
+import Credits from './pages/Credits.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Orders from './pages/Orders.jsx';
 import ProductSheet, { LastProductSheet } from './pages/ProductSheet.jsx';
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/p" element={<LastProductSheet />} />
         <Route path="/p/:sku" element={<ProductSheet />} />
         <Route path="/counter" element={<Counter />} />
+        <Route path="/credits" element={<Credits />} />
         <Route path="/track" element={<TrackParcel />} />
         <Route path="/track/:orderNo" element={<TrackParcel />} />
         <Route path="/signin" element={<SignIn />} />

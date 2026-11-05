@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useBench } from '../../context/BenchContext.jsx';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 import PriceChip from './PriceChip.jsx';
 import { SaveAndAdd, StockLabel } from './ProductCard.jsx';
 
@@ -11,7 +12,7 @@ export default function ProductRow({ product, onSave }) {
 
   return (
     <article className="product-row">
-      <Link to={`/p/${product.productId}`} tabIndex={-1} aria-hidden="true"><Thumb src={product.images?.[0]} /></Link>
+      <Link to={`/p/${product.productId}`} tabIndex={-1} aria-hidden="true"><Thumb src={thumbOf(product.images?.[0])} /></Link>
       <div className="product-row-main">
         <Link className="product-name" to={`/p/${product.productId}`}>{product.productName}</Link>
         <small className="muted">{product.productId} · {product.brand}</small>

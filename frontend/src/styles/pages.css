@@ -423,3 +423,13 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
   .is-compact .member-card { gap: 14px; padding: 12px; }
   .is-compact .member-avatar { width: 64px; height: 64px; }
 }
+
+/* Photo credits */
+.gallery.single { grid-template-columns: minmax(0, 1fr); }
+.gallery-view { min-width: 0; }
+.photo-credit { margin-top: 8px; font: 400 11px/16px var(--font-mono, ui-monospace, Menlo, monospace); color: var(--muted); overflow-wrap: anywhere; }
+.photo-credit a { color: inherit; text-decoration: underline; }
+.credits table { width: 100%; border-collapse: collapse; font-size: var(--text-body); }
+.credits th, .credits td { padding: 8px 10px 8px 0; border-bottom: var(--dashed); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.credits td:first-child { white-space: nowrap; }
+.credits-note { margin-bottom: 14px; }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useFetch } from '../../hooks/useFetch.js';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 
 const PEEK_SIZE = 9;
 const PEEK_COLUMNS = 3;
@@ -25,7 +26,7 @@ export default function PeekPanel({ zone }) {
         <div className="peek-row" key={row[0].productId}>
           {row.map(product => (
             <Link key={product.productId} className="peek-item" to={`/p/${product.productId}`} aria-label={product.productName}>
-              <Thumb src={product.images?.[0]} />
+              <Thumb src={thumbOf(product.images?.[0])} />
               <small>{product.productId}</small>
             </Link>
           ))}

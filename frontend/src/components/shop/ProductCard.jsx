@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useReceipt } from '../../context/ReceiptContext.jsx';
 import { useAddToReceipt } from '../../hooks/useAddToReceipt.js';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 import PriceChip from './PriceChip.jsx';
 
 const LOW_STOCK_THRESHOLD = 5;
@@ -28,7 +29,7 @@ export default function ProductCard({ product, onSave }) {
   const href = `/p/${product.productId}`;
   return (
     <article className="product-card">
-      <Link to={href} tabIndex={-1} aria-hidden="true"><Thumb src={product.images?.[0]} /></Link>
+      <Link to={href} tabIndex={-1} aria-hidden="true"><Thumb src={thumbOf(product.images?.[0])} alt={product.productName} /></Link>
       <Link className="product-name" to={href} title={product.productName}>{product.productName}</Link>
       <div className="product-foot">
         <PriceChip value={product.productPrice} />

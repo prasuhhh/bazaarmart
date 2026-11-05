@@ -6,6 +6,7 @@ import { useAddToReceipt } from '../../hooks/useAddToReceipt.js';
 import { useDragToReceipt } from '../../hooks/useDragToReceipt.js';
 import { useFetch } from '../../hooks/useFetch.js';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 import PriceChip from './PriceChip.jsx';
 
 const DESIGN_PX_PER_SECOND = 40;
@@ -20,7 +21,7 @@ function ConveyorCard({ product, isCopy }) {
   const addToReceipt = useAddToReceipt();
   const isUnavailable = qtyOf(product.productId) >= product.quantity;
   const { drag, dragProps } = useDragToReceipt(() => { if (!isUnavailable) addToReceipt(product); });
-  const image = product.images?.[0];
+  const image = thumbOf(product.images?.[0]);
   const hiddenProps = isCopy ? { tabIndex: -1 } : {};
 
   return (

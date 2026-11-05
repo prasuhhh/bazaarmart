@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import PriceChip from '../shop/PriceChip.jsx';
 import ProductGrid from '../shop/ProductGrid.jsx';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 
 export default function ProductTable({ products, busy, onEdit, onDelete }) {
   const [text, setText] = useState('');
@@ -17,7 +18,7 @@ export default function ProductTable({ products, busy, onEdit, onDelete }) {
       <ProductGrid>
         {shown.map(product => (
           <article className="product-card" key={product.productId}>
-            <Thumb src={product.images?.[0]} />
+            <Thumb src={thumbOf(product.images?.[0])} />
             <span className="product-name">{product.productName}</span>
             <small className="muted">{product.productId} · {product.category}</small>
             <div className="product-foot">

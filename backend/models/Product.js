@@ -2,6 +2,29 @@ import mongoose from 'mongoose';
 
 export const ZONE_CODES = ['A', 'W', 'D', 'L', 'S', 'G', 'C', 'P', 'B'];
 
+// A local /products/... file or a full URL. The admin form accepts either.
+const IMAGE_PATH = /^(https?:\/\/\S+|\/products\/\S+)$/;
+
+// Where a catalogue photo came from, and whether it was checked by eye.
+const imageSchema = new mongoose.Schema({
+  status: String,
+  source: String,
+  sourcePage: String,
+  originalUrl: String,
+  licence: String,
+  author: String,
+  attribution: String,
+  matchChecked: Boolean
+}, { _id: false });
+
+// `type` has to be declared this way, or Mongoose reads the block as a field of that type.
+const priceNoteSchema = new mongoose.Schema({
+  checkedAt: String,
+  from: String,
+  type: { type: String },
+  url: String
+}, { _id: false });
+
 // The store fields are optional so the lab's six-field POST /api/products keeps working.
 const productSchema = new mongoose.Schema({
   productId: { type: String, required: true, unique: true, trim: true }, // the SKU, like A-01-117
@@ -23,7 +46,13 @@ const productSchema = new mongoose.Schema({
   use: [String],
   connectivity: { type: String, enum: ['wired', 'wireless', 'n/a'], default: 'n/a' },
   specs: { type: Map, of: String },
-  images: [String],
+  images: {
+    type: [String],
+    validate: { validator: paths => paths.every(path => IMAGE_PATH.test(path)), message: 'Images must be a /products/ path or a full URL.' }
+  },
+  image: imageSchema,
+  priceNote: priceNoteSchema,
+  source: { type: String, trim: true }, // the dataset a product was imported from
   seller: { type: String, trim: true },
   warrantyMonths: { type: Number, min: 0 },
   arrivesInDays: { type: Number, min: 0 },

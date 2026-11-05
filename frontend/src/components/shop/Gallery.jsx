@@ -11,6 +11,7 @@ export default function Gallery({ product }) {
   const [index, setIndex] = useState(0);
   const dragRef = useRef(null);
   const lastIndex = images.length - 1;
+  const credit = product.image?.status === 'ok' ? product.image.attribution : null;
   const hasScaleView = lastIndex > 0 && /-scale\.svg$/.test(images[lastIndex]);
   const scaleLabel = hasScaleView ? SCALE_VIEWS[product.zoneCode] : null;
 
@@ -23,8 +24,8 @@ export default function Gallery({ product }) {
   }
 
   return (
-    <div className="gallery">
-      <div className="gallery-strip">
+    <div className={`gallery${lastIndex === 0 ? ' single' : ''}`}>
+      {lastIndex > 0 && <div className="gallery-strip">
         {images.map((image, position) => (
           <button
             type="button"
@@ -35,7 +36,8 @@ export default function Gallery({ product }) {
             onClick={() => setIndex(position)}
           ><Thumb src={image} /></button>
         ))}
-      </div>
+      </div>}
+      <div className="gallery-view">
       <div
         className="gallery-main"
         onPointerDown={event => {
@@ -54,6 +56,12 @@ export default function Gallery({ product }) {
             {index === lastIndex ? 'Full view' : scaleLabel}
           </button>
         )}
+      </div>
+      {credit && (
+        <p className="photo-credit">
+          {product.image.sourcePage ? <a href={product.image.sourcePage} target="_blank" rel="noreferrer">{credit}</a> : credit}
+        </p>
+      )}
       </div>
     </div>
   );

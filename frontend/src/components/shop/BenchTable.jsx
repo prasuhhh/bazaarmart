@@ -5,6 +5,7 @@ import { useBench } from '../../context/BenchContext.jsx';
 import { useReceipt } from '../../context/ReceiptContext.jsx';
 import { useAddToReceipt } from '../../hooks/useAddToReceipt.js';
 import Thumb from '../ui/Thumb.jsx';
+import { thumbOf } from '../../utils/productImage.js';
 import { specRows } from './SpecTable.jsx';
 
 // Prices and stock are fetched fresh, so the comparison is never out of date.
@@ -39,7 +40,7 @@ export default function BenchTable() {
             {products.map(product => (
               <th scope="col" key={product.productId}>
                 <Link to={`/p/${product.productId}`}>
-                  <Thumb src={product.images?.[0]} />
+                  <Thumb src={thumbOf(product.images?.[0])} />
                   <span>{product.productName}</span>
                 </Link>
               </th>
