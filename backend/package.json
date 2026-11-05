@@ -10,8 +10,8 @@
     "catalogue:images": "node scripts/dataset/findBrandPages.js && node scripts/dataset/fetchImages.js && node scripts/dataset/processImages.js",
     "catalogue:check": "node scripts/dataset/checkImages.js",
     "catalogue:validate": "node scripts/dataset/validateDataset.js",
-    "images": "node scripts/generateProductImages.js",
-    "photos": "node scripts/fetchProductPhotos.js",
+    "catalogue:credits": "node scripts/dataset/writeCredits.js",
+    "catalogue:import": "node scripts/dataset/importCatalogue.js",
     "test": "node --test tests/api.test.js tests/models.test.js tests/auth.test.js tests/catalogue.test.js tests/seed.test.js tests/shelves.test.js tests/orders.test.js tests/acceptance.test.js tests/images.test.js"
   },
   "dependencies": {

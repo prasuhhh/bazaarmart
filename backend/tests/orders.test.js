@@ -56,7 +56,7 @@ after(async () => {
 
 beforeEach(async () => {
   await Promise.all([User, Product, Order, Counter].map(model => model.deleteMany({})));
-  const base = { category: 'Audio', description: 'Small.', images: ['a.jpg'], arrivesInDays: 2 };
+  const base = { category: 'Audio', description: 'Small.', images: ['/products/a.webp'], arrivesInDays: 2 };
   await Product.create([
     { ...base, productId: 'P-CHEAP', productName: 'Cable', productPrice: 300, quantity: 10 },
     { ...base, productId: 'P-MID', productName: 'Earbuds', productPrice: 2000, quantity: 5 },

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import mongoose from 'mongoose';
 import { connectDB } from './config/db.js';
-import { demoOrders, demoUser, kits, movedDemoSkus, products, retiredSkus, zones } from './data/catalogue.js';
+import { demoOrders, demoUser, kits, movedDemoSkus, products, zones } from './data/catalogue.js';
 import { isValidEmail, isValidPassword } from './middleware/validate.js';
 import Counter from './models/Counter.js';
 import Kit from './models/Kit.js';
@@ -13,6 +13,7 @@ import Review from './models/Review.js';
 import Shelf from './models/Shelf.js';
 import User from './models/User.js';
 import Zone from './models/Zone.js';
+import { importProducts } from './scripts/dataset/importCatalogue.js';
 
 const ALL_MODELS = [Counter, Kit, Order, Otp, Product, Question, Review, Shelf, User, Zone];
 
@@ -35,48 +36,10 @@ async function seedZonesAndKits() {
   console.log(`Zones ready: ${zones.length}. Kits ready: ${kits.length}.`);
 }
 
-// Upserts by SKU. Price and stock are live data, so a product that is still the same
-// one keeps them. A SKU now holding a different product takes everything from the file.
-// Timestamps stay put so the "new drops" order doesn't shift.
+// The same import as `npm run catalogue:import`, so the two can't drift apart.
 async function seedProducts() {
-  const existing = new Map((await Product.find({}, 'productId productName').lean())
-    .map(({ productId, productName }) => [productId, productName]));
-
-  const missing = products.filter(({ productId }) => !existing.has(productId));
-  if (missing.length) await Product.insertMany(missing);
-
-  const updates = products.filter(({ productId }) => existing.has(productId)).map(product => {
-    const { productId, productPrice, quantity, ...fields } = product;
-    const isSameProduct = existing.get(productId) === product.productName;
-    return {
-      updateOne: {
-        filter: { productId },
-        update: { $set: isSameProduct ? fields : { ...fields, productPrice, quantity } },
-        timestamps: false
-      }
-    };
-  });
-  if (updates.length) await Product.bulkWrite(updates);
-
-  const fileSkus = new Set(products.map(({ productId }) => productId));
-  const { deletedCount } = await Product.deleteMany({
-    productId: { $in: retiredSkus.filter(sku => !fileSkus.has(sku)) }
-  });
-  console.log(`Products added: ${missing.length}. Updated: ${updates.length}. Removed: ${deletedCount}.`);
-}
-
-const OLD_IMAGE_HOST = /picsum\.photos/;
-
-// Orders keep a copy of the image from when they were placed.
-async function refreshOrderImages() {
-  await Order.bulkWrite(products.map(({ productId, images }) => ({
-    updateMany: {
-      filter: { items: { $elemMatch: { productId, image: OLD_IMAGE_HOST } } },
-      update: { $set: { 'items.$[line].image': images[0] } },
-      arrayFilters: [{ 'line.productId': productId, 'line.image': OLD_IMAGE_HOST }],
-      timestamps: false
-    }
-  })));
+  const { added, replacedOld, kept } = await importProducts(products, { keepCurrent: true });
+  console.log(`Products added: ${added}. Replaced: ${replacedOld}. Kept: ${kept}.`);
 }
 
 function seedCredentials(prefix) {
@@ -162,7 +125,6 @@ try {
   await syncIndexes();
   await seedZonesAndKits();
   await seedProducts();
-  await refreshOrderImages();
   await seedAdmin();
   await seedDemoUser();
 } catch (error) {

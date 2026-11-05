@@ -10,18 +10,19 @@ import Question from '../models/Question.js';
 import Review from '../models/Review.js';
 import User from '../models/User.js';
 import Zone from '../models/Zone.js';
+import { SKU } from './fixtures/skus.js';
 
 process.env.JWT_SECRET = 'test-secret';
 
 const app = createApp({ authRateLimit: 100000 });
 const base = { description: 'A product.', quantity: 5 };
 const products = [
-  { ...base, productId: 'A-01-117', productName: 'Pulse Earbuds', productPrice: 1999, category: 'Audio', zoneCode: 'A', bay: 1, bayName: 'Earbuds', brand: 'Noise', colours: ['Black', 'Sand'], use: ['gym', 'commute'], connectivity: 'wireless', isNewDrop: true },
+  { ...base, productId: SKU.earbuds, productName: 'Pulse Earbuds', productPrice: 1999, category: 'Audio', zoneCode: 'A', bay: 1, bayName: 'Earbuds', brand: 'Noise', colours: ['Black', 'Sand'], use: ['gym', 'commute'], connectivity: 'wireless', isNewDrop: true },
   { ...base, productId: 'A-01-118', productName: 'Studio Earbuds', productPrice: 3499, category: 'Audio', zoneCode: 'A', bay: 1, bayName: 'Earbuds', brand: 'Sony', colours: ['Black'], use: ['studio'], connectivity: 'wired', quantity: 2 },
   { ...base, productId: 'A-02-001', productName: 'Arc Headphones', productPrice: 7999, category: 'Audio', zoneCode: 'A', bay: 2, bayName: 'Headphones', brand: 'Sony', colours: ['Olive'], use: ['commute'], connectivity: 'wireless' },
   { ...base, productId: 'A-03-001', productName: 'Mini Speaker', productPrice: 2599, category: 'Audio', zoneCode: 'A', bay: 3, bayName: 'Speakers', brand: 'JBL', connectivity: 'wireless' },
   { ...base, productId: 'A-03-002', productName: 'Tower Speaker', productPrice: 9999, category: 'Audio', zoneCode: 'A', bay: 3, bayName: 'Speakers', brand: 'JBL', connectivity: 'wired' },
-  { ...base, productId: 'S-03-020', productName: 'Linen Shirt', productPrice: 1499, category: 'Style', zoneCode: 'S', bay: 3, bayName: 'Shirts', brand: 'Fabindia', colours: ['Sand'], isNewDrop: true },
+  { ...base, productId: SKU.shirt, productName: 'Linen Shirt', productPrice: 1499, category: 'Style', zoneCode: 'S', bay: 3, bayName: 'Shirts', brand: 'Fabindia', colours: ['Sand'], isNewDrop: true },
   { ...base, productId: 'P001', productName: 'Notebook', productPrice: 120, category: 'Stationery' }
 ];
 const newProduct = { productId: 'D-01-001', productName: 'Desk Lamp', productPrice: 899, category: 'Desk setup', quantity: 5, description: 'Warm light.' };
@@ -83,13 +84,13 @@ describe('GET /api/products', () => {
   });
 
   it('filters by colour, use and connectivity', async () => {
-    assert.deepEqual(ids(await list({ colour: 'sand' })), ['A-01-117', 'S-03-020']);
+    assert.deepEqual(ids(await list({ colour: 'sand' })), [SKU.earbuds, SKU.shirt]);
     assert.deepEqual(ids(await list({ use: 'studio' })), ['A-01-118']);
     assert.deepEqual(ids(await list({ zone: 'A', connectivity: 'wired' })), ['A-01-118', 'A-03-002']);
   });
 
   it('filters by isNew', async () => {
-    assert.deepEqual(ids(await list({ isNew: 'true' })), ['A-01-117', 'S-03-020']);
+    assert.deepEqual(ids(await list({ isNew: 'true' })), [SKU.earbuds, SKU.shirt]);
     assert.equal((await list({ isNew: 'false' })).body.count, 5);
   });
 
@@ -146,11 +147,11 @@ describe('REQUIRE_AUTH_FOR_CATALOGUE', () => {
 
 describe('GET /api/products/sheet/:productId', () => {
   it('returns the product and up to 3 others from the same zone', async () => {
-    const res = await request(app).get('/api/products/sheet/A-01-117');
+    const res = await request(app).get(`/api/products/sheet/${SKU.earbuds}`);
     assert.equal(res.status, 200);
     assert.equal(res.body.data.product.productName, 'Pulse Earbuds');
     assert.equal(res.body.data.related.length, 3);
-    assert.ok(res.body.data.related.every(item => item.zoneCode === 'A' && item.productId !== 'A-01-117'));
+    assert.ok(res.body.data.related.every(item => item.zoneCode === 'A' && item.productId !== SKU.earbuds));
   });
 
   it('falls back to the category for a product with no zone', async () => {
@@ -185,17 +186,17 @@ describe('GET /api/search', () => {
   const search = q => request(app).get('/api/search').query({ q });
 
   it('puts an exact SKU first, in any case', async () => {
-    assert.equal(ids(await search('a-01-117'))[0], 'A-01-117');
+    assert.equal(ids(await search(SKU.earbuds.toLowerCase()))[0], SKU.earbuds);
   });
 
   it('finds by name, brand and zone name', async () => {
-    assert.deepEqual(ids(await search('linen shirt')), ['S-03-020']);
-    assert.ok(ids(await search('fabindia')).includes('S-03-020'));
+    assert.deepEqual(ids(await search('linen shirt')), [SKU.shirt]);
+    assert.ok(ids(await search('fabindia')).includes(SKU.shirt));
     assert.equal((await search('audio')).body.count, 5);
   });
 
   it('finds partial words', async () => {
-    assert.deepEqual(ids(await search('earb')).sort(), ['A-01-117', 'A-01-118']);
+    assert.deepEqual(ids(await search('earb')).sort(), [SKU.earbuds, 'A-01-118']);
   });
 
   it('never repeats a product or returns more than 8', async () => {
@@ -261,18 +262,18 @@ describe('managing products', () => {
   });
 
   it('updates the store fields and runs validators', async () => {
-    const res = await put('A-01-117', { brand: 'boAt', specs: { Battery: '30 h' }, isNew: false });
+    const res = await put(SKU.earbuds, { brand: 'boAt', specs: { Battery: '30 h' }, isNew: false });
     assert.equal(res.status, 200);
     assert.equal(res.body.data.brand, 'boAt');
     assert.equal(res.body.data.specs.Battery, '30 h');
     assert.equal(res.body.data.isNew, false);
-    assert.equal((await put('A-01-117', { connectivity: 'bluetooth' })).status, 400);
-    assert.equal((await put('A-01-117', { zoneCode: 'Z' })).status, 400);
+    assert.equal((await put(SKU.earbuds, { connectivity: 'bluetooth' })).status, 400);
+    assert.equal((await put(SKU.earbuds, { zoneCode: 'Z' })).status, 400);
   });
 
   it('cannot change a productId', async () => {
-    await put('A-01-117', { productId: 'CHANGED', brand: 'X' });
-    assert.ok(await Product.exists({ productId: 'A-01-117' }));
+    await put(SKU.earbuds, { productId: 'CHANGED', brand: 'X' });
+    assert.ok(await Product.exists({ productId: SKU.earbuds }));
     assert.equal(await Product.exists({ productId: 'CHANGED' }), null);
   });
 
@@ -300,12 +301,12 @@ describe('managing products', () => {
 });
 
 describe('reviews', () => {
-  const add = (body, token = userToken, sku = 'A-01-117') =>
+  const add = (body, token = userToken, sku = SKU.earbuds) =>
     auth(request(app).post(`/api/products/${sku}/reviews`), token).send(body);
 
   it('is public to read and shows only the username of the writer', async () => {
     await add({ rating: 4, text: 'Solid.' });
-    const res = await request(app).get('/api/products/A-01-117/reviews');
+    const res = await request(app).get(`/api/products/${SKU.earbuds}/reviews`);
     assert.equal(res.status, 200);
     assert.equal(res.body.count, 1);
     assert.equal(res.body.data[0].user.username, 'Asha');
@@ -313,7 +314,7 @@ describe('reviews', () => {
   });
 
   it('needs a login to write', async () => {
-    const res = await request(app).post('/api/products/A-01-117/reviews').send({ rating: 4, text: 'Solid.' });
+    const res = await request(app).post(`/api/products/${SKU.earbuds}/reviews`).send({ rating: 4, text: 'Solid.' });
     assert.equal(res.status, 401);
   });
 
@@ -340,21 +341,21 @@ describe('reviews', () => {
   it('survives a deleted reviewer', async () => {
     await add({ rating: 4, text: 'Solid.' });
     await User.deleteOne({ emailId: 'asha@example.com' });
-    const res = await request(app).get('/api/products/A-01-117/reviews');
+    const res = await request(app).get(`/api/products/${SKU.earbuds}/reviews`);
     assert.equal(res.status, 200);
     assert.equal(res.body.data[0].user, null);
   });
 });
 
 describe('questions', () => {
-  const ask = (body, token = userToken) => auth(request(app).post('/api/products/A-01-117/questions'), token).send(body);
+  const ask = (body, token = userToken) => auth(request(app).post(`/api/products/${SKU.earbuds}/questions`), token).send(body);
 
   it('is public to read and needs a login to ask', async () => {
     assert.equal((await ask({ text: 'Is it waterproof?' })).status, 201);
-    const res = await request(app).get('/api/products/A-01-117/questions');
+    const res = await request(app).get(`/api/products/${SKU.earbuds}/questions`);
     assert.equal(res.body.count, 1);
     assert.equal(res.body.data[0].text, 'Is it waterproof?');
-    assert.equal((await request(app).post('/api/products/A-01-117/questions').send({ text: 'Hi?' })).status, 401);
+    assert.equal((await request(app).post(`/api/products/${SKU.earbuds}/questions`).send({ text: 'Hi?' })).status, 401);
   });
 
   it('ignores an answer sent by the person asking', async () => {
@@ -384,12 +385,12 @@ describe('kits', () => {
     const kit = await Kit.create({ title: 'Pair a look', query: { zone: 'S,A', maxPrice: '2000' } });
     const res = await request(app).get(`/api/kits/${kit._id}`);
     assert.equal(res.status, 200);
-    assert.deepEqual(res.body.data.products.map(p => p.productId).sort(), ['A-01-117', 'S-03-020']);
+    assert.deepEqual(res.body.data.products.map(p => p.productId).sort(), [SKU.earbuds, SKU.shirt]);
     assert.equal(res.body.count, 2);
   });
 
   it('resolves a hand-picked kit to its products', async () => {
-    const kit = await Kit.create({ title: 'Desk', productIds: ['P001', 'A-01-117'] });
+    const kit = await Kit.create({ title: 'Desk', productIds: ['P001', SKU.earbuds] });
     const res = await request(app).get(`/api/kits/${kit._id}`);
     assert.equal(res.body.count, 2);
   });

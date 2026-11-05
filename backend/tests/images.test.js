@@ -1,126 +1,181 @@
 import assert from 'node:assert/strict';
-import { readFile, readdir } from 'node:fs/promises';
-import { describe, it } from 'node:test';
+import { existsSync, readFileSync } from 'node:fs';
+import { after, before, describe, it } from 'node:test';
+import { MongoMemoryServer } from 'mongodb-memory-server';
+import mongoose from 'mongoose';
 import request from 'supertest';
 import { createApp } from '../app.js';
-import { imagesFor, products } from '../data/catalogue.js';
-import { commonsLicense, isUsable, matchScore } from '../scripts/fetchProductPhotos.js';
-import { FALLBACK_ICON, OUTPUT_DIR, iconFor, renderImages } from '../scripts/generateProductImages.js';
+import { products } from '../data/catalogue.js';
+import Order from '../models/Order.js';
+import Product from '../models/Product.js';
+import Shelf from '../models/Shelf.js';
+import { matchesProduct, searchName } from '../scripts/dataset/fetchImages.js';
+import { SOURCE, deleteOldRecords, findOldRecords, importProducts, toDocument } from '../scripts/dataset/importCatalogue.js';
+import { validateDataset } from '../scripts/dataset/validateDataset.js';
 
-const app = createApp();
+const FILES = new URL('../../frontend/public/products/', import.meta.url);
+const raw = JSON.parse(readFileSync(new URL('../data/products-300.json', import.meta.url), 'utf8'));
+const copy = () => structuredClone(raw);
 
-describe('product images', () => {
-  it('gives each product one photo, or its three SVGs when it has none', () => {
-    for (const { productId, images } of products) {
-      assert.deepEqual(images, imagesFor(productId));
-      assert.ok(images[0].startsWith(`/products/${productId}`));
-      if (images.length === 1) assert.equal(images[0], `/products/${productId}-1.jpg`);
-      else assert.equal(images.at(-1), `/products/${productId}-scale.svg`);
+describe('the catalogue', () => {
+  it('passes validation, with missing photos only a warning', () => {
+    const { errors, missing } = validateDataset(raw);
+    assert.deepEqual(errors, []);
+    assert.equal(raw.length - missing.length, raw.filter(({ image }) => image.status === 'ok').length);
+  });
+
+  it('rejects bad data', () => {
+    const bad = copy();
+    bad[0].productPrice = 10.5;
+    bad[1].connectivity = 'bluetooth';
+    bad[2].specs = {};
+    bad[3].productName = bad[4].productName;
+    const { errors } = validateDataset(bad);
+    for (const text of ['price 10.5', 'connectivity bluetooth', '0 spec rows', 'duplicate name']) {
+      assert.ok(errors.some(error => error.includes(text)), text);
     }
   });
 
-  it('has a credited file on disk for every photo', async () => {
-    const files = new Set(await readdir(OUTPUT_DIR));
-    const credits = await readFile(new URL('CREDITS.md', OUTPUT_DIR), 'utf8').catch(() => '');
-    for (const { productId, images } of products.filter(product => product.images.length === 1)) {
-      assert.ok(files.has(`${productId}-1.jpg`), productId);
-      assert.ok(credits.includes(`| ${productId} |`), productId);
+  it('rejects a photo nobody checked', () => {
+    const bad = copy();
+    bad.find(({ images }) => images.length).image.matchChecked = false;
+    assert.ok(validateDataset(bad).errors.some(error => error.includes('not confirmed')));
+  });
+
+  it('gives each confirmed product a credited photo and thumb on disk', () => {
+    for (const { productId, images, image } of products.filter(({ image: { status } }) => status === 'ok')) {
+      assert.deepEqual(images, [`/products/${productId}.webp`]);
+      assert.ok(image.attribution && image.sourcePage, productId);
+      assert.ok(existsSync(new URL(`${productId}.webp`, FILES)), productId);
+      assert.ok(existsSync(new URL(`${productId}-thumb.webp`, FILES)), productId);
     }
   });
 
-  it('draws a specific icon for every catalogue product', () => {
-    assert.deepEqual(products.filter(product => iconFor(product) === FALLBACK_ICON).map(p => p.productId), []);
-  });
-
-  it('matches mixed bays by product name', () => {
-    const icon = name => iconFor(products.find(product => product.productName === name));
-    assert.equal(icon('Prism ANC Earbuds'), 'earbuds');
-    assert.equal(icon('Drift Smart Ring'), 'ring');
-    assert.equal(icon('Zephyr Key Tracker'), 'tracker');
-    assert.equal(icon('Cinder Ring Light'), 'bulb');
-    assert.equal(icon('Vector Round Sunglasses'), 'sunglasses');
-    assert.equal(icon('Echo Blue-light Glasses'), 'glasses');
-  });
-
-  it('falls back to the generic icon for an unknown bay or product', () => {
-    assert.equal(iconFor({ bayName: 'Mystery', productName: 'Thing' }), FALLBACK_ICON);
-    assert.equal(iconFor({ bayName: 'Earbuds', productName: 'Thing' }), FALLBACK_ICON);
-  });
-
-  it('has up-to-date files on disk and nothing left over', async () => {
-    const expected = Object.assign({}, ...products.map(renderImages));
-    assert.deepEqual((await readdir(OUTPUT_DIR)).filter(name => name.endsWith('.svg')).sort(), Object.keys(expected).sort());
-    for (const [name, svg] of Object.entries(expected)) {
-      assert.equal(await readFile(new URL(name, OUTPUT_DIR), 'utf8'), svg, `${name} is stale: run npm run images`);
+  it('leaves a product with no photo on the placeholder', () => {
+    for (const { images, image } of products.filter(({ image: { status } }) => status !== 'ok')) {
+      assert.deepEqual(images, []);
+      assert.equal(image.source, null);
     }
-  });
-
-  it('shows each colour and the SKU, and labels the scale view', () => {
-    const product = products.find(({ productId }) => productId === 'A-01-117');
-    const images = renderImages(product);
-    for (const colour of product.colours) assert.ok(images['A-01-117-colours.svg'].includes(`>${colour}<`), colour);
-    for (const svg of Object.values(images)) assert.ok(svg.includes('>A-01-117<'));
-    assert.ok(images['A-01-117-scale.svg'].includes('ON DESK'));
-    const watch = products.find(({ zoneCode }) => zoneCode === 'W');
-    assert.ok(renderImages(watch)[`${watch.productId}-scale.svg`].includes('ON WRIST'));
-  });
-
-  it('escapes product names', () => {
-    const [svg] = Object.values(renderImages({ productId: 'X-01-001', productName: 'A & B 14"', zoneCode: 'A', bayName: 'Earbuds' }));
-    assert.ok(svg.includes('<title>A &amp; B 14&quot;</title>'));
   });
 });
 
-describe('choosing product photos', () => {
-  const photo = fields => ({ title: 'Black earbuds', tags: ['audio'], url: 'https://example.com/a.jpg', license: 'by', ...fields });
+describe('matching a photo to a product', () => {
+  const sony = { brand: 'Sony', productName: 'Sony WH-1000XM5' };
+  const flip = { brand: 'JBL', productName: 'JBL Flip 6' };
 
-  it('keeps only reuse-friendly licences', () => {
-    for (const license of ['cc0', 'pdm', 'by', 'by-sa']) assert.ok(isUsable(photo({ license }), 'earbuds'), license);
-    for (const license of ['by-nc', 'by-nd', 'cc-by-nc-sa', undefined]) assert.equal(isUsable(photo({ license }), 'earbuds'), false);
+  it('tells close models apart', () => {
+    assert.ok(matchesProduct('Sony WH-1000XM5 headphones.jpg', sony));
+    assert.equal(matchesProduct('Sony WH-1000XM4 black', sony), false);
+    assert.equal(matchesProduct('JBL Flip 5 speaker', flip), false);
   });
 
-  it('skips people, logos and artwork, in the title or the tags', () => {
-    assert.equal(isUsable(photo({ title: 'Woman wearing earbuds' }), 'earbuds'), false);
-    assert.equal(isUsable(photo({ tags: ['portrait'] }), 'earbuds'), false);
-    assert.equal(isUsable(photo({ title: 'Earbuds logo' }), 'earbuds'), false);
-    assert.ok(isUsable(photo({ title: 'Manual for earbuds' }), 'earbuds'), 'man inside a longer word');
+  it('does not read a model number out of a camera file name', () => {
+    assert.equal(matchesProduct('JBL Flip 3 bluetooth speaker (DSCF2653)', flip), false);
   });
 
-  it('does not block a word the query itself asks for', () => {
-    assert.ok(isUsable(photo({ title: 'Face wash bottle' }), 'face wash'));
+  it('accepts a model split across two words', () => {
+    assert.ok(matchesProduct('Sony WH 1000XM5', { brand: 'Sony', productName: 'Sony WH1000XM5' }));
   });
 
-  it('skips a file type it cannot use', () => {
-    assert.equal(isUsable(photo({ url: 'https://example.com/a.svg' }), 'earbuds'), false);
-  });
-
-  it('prefers a photo naming the product over one sharing a side word', () => {
-    const named = matchScore(photo({ title: 'Earbuds on a desk' }), 'wireless earbuds');
-    const side = matchScore(photo({ title: 'Wireless router' }), 'wireless earbuds');
-    assert.ok(named > side);
-    assert.equal(matchScore(photo({ title: 'Sunset', tags: [] }), 'wireless earbuds'), 0);
-  });
-
-  it('reads a Commons licence name', () => {
-    const name = value => ({ LicenseShortName: { value } });
-    assert.equal(commonsLicense(name('CC BY-SA 4.0')), 'by-sa');
-    assert.equal(commonsLicense(name('CC BY 2.0')), 'by');
-    assert.equal(commonsLicense(name('CC0')), 'cc0');
-    assert.equal(commonsLicense(name('Public domain')), 'pdm');
-    assert.equal(commonsLicense(name('GFDL')), null);
+  it('searches without the bracketed detail', () => {
+    assert.equal(searchName('Apple AirPods Pro 2 (USB-C)'), 'Apple AirPods Pro 2');
   });
 });
 
-describe('GET /products/:file', () => {
-  it('serves an SVG that another origin may use in an <img>', async () => {
-    const res = await request(app).get('/products/A-01-117.svg');
+describe('the catalogue import', () => {
+  let mongo;
+  const documents = products.slice(0, 3);
+  const [first, second] = documents;
+
+  before(async () => {
+    mongo = await MongoMemoryServer.create();
+    await mongoose.connect(mongo.getUri(), { dbName: 'bazaarmart' });
+  });
+
+  after(async () => {
+    await mongoose.disconnect();
+    await mongo.stop();
+  });
+
+  it('writes nothing on a dry run', async () => {
+    assert.equal((await importProducts(documents, { dryRun: true })).added, 3);
+    assert.equal(await Product.countDocuments(), 0);
+  });
+
+  it('adds the products, then is safe to run again', async () => {
+    assert.equal((await importProducts(documents)).added, 3);
+    const counts = await importProducts(documents);
+    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 3, kept: 0 });
+    assert.equal(await Product.countDocuments(), 3);
+  });
+
+  it('keeps live stock on a product from this catalogue', async () => {
+    await Product.updateOne({ productId: first.productId }, { quantity: 1 });
+    await importProducts(documents);
+    assert.equal((await Product.findOne({ productId: first.productId })).quantity, 1);
+  });
+
+  it('leaves current products alone when asked, so a reseed keeps Admin edits', async () => {
+    await Product.updateOne({ productId: first.productId }, { productPrice: 1 });
+    const counts = await importProducts(documents, { keepCurrent: true });
+    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 0, kept: 3 });
+    assert.equal((await Product.findOne({ productId: first.productId })).productPrice, 1);
+    await importProducts(documents);
+    assert.equal((await Product.findOne({ productId: first.productId })).productPrice, first.productPrice);
+  });
+
+  it('takes every field when a SKU still holds an old product', async () => {
+    await Product.updateOne({ productId: second.productId }, { source: 'old', quantity: 1, productName: 'Old thing' });
+    assert.equal((await importProducts(documents)).replacedOld, 1);
+    const product = await Product.findOne({ productId: second.productId });
+    assert.equal(product.productName, second.productName);
+    assert.equal(product.quantity, second.quantity);
+  });
+
+  it('finds old products with the orders and shelves that use them, and leaves users alone', async () => {
+    const base = { productPrice: 1, category: 'Audio', quantity: 1, description: 'Old.' };
+    const old = await Product.create({ ...base, productId: 'Z-OLD', productName: 'Old', source: 'seed' });
+    const line = { productId: 'Z-OLD', name: 'Old', price: 1, qty: 1 };
+    const address = { name: 'A', phone: '9876543210', line1: 'x', city: 'x', state: 'x', pincode: '600001' };
+    const guest = { name: 'A', phone: '9876543210', email: 'a@b.co' };
+    const order = await Order.create({ orderNo: 'BM-1', guest, items: [line], subtotal: 1, total: 1, address, slot: { label: 'x', date: new Date() }, payment: { method: 'cod' } });
+    const shelf = await Shelf.create({ user: new mongoose.Types.ObjectId(), name: 'Old', items: [{ product: 'Z-OLD', savedPrice: 1 }] });
+
+    const records = await findOldRecords(documents, []);
+    assert.deepEqual(records.products.map(({ _id }) => String(_id)), [String(old._id)]);
+    assert.deepEqual(records.orders.map(({ _id }) => String(_id)), [String(order._id)]);
+    assert.deepEqual(records.shelves.map(({ _id }) => String(_id)), [String(shelf._id)]);
+
+    assert.deepEqual(await deleteOldRecords(records), { products: 1, orders: 1, shelves: 1 });
+    assert.equal(await Product.countDocuments({ source: SOURCE }), 3);
+  });
+
+  it('accepts a local or full image address and refuses anything else', async () => {
+    const product = toDocument({ ...raw[0], isNew: false });
+    assert.equal(new Product({ ...product, images: ['/products/x.webp', 'https://a.co/b.jpg'] }).validateSync(), undefined);
+    assert.ok(new Product({ ...product, images: ['javascript:alert(1)'] }).validateSync());
+    assert.ok(new Product({ ...product, images: ['a.jpg'] }).validateSync());
+  });
+});
+
+describe('GET /api/credits', () => {
+  let mongo;
+
+  before(async () => {
+    mongo = await MongoMemoryServer.create();
+    await mongoose.connect(mongo.getUri(), { dbName: 'bazaarmart' });
+    await importProducts(products);
+  });
+
+  after(async () => {
+    await mongoose.disconnect();
+    await mongo.stop();
+  });
+
+  it('lists every photo credit with no login', async () => {
+    const res = await request(createApp()).get('/api/credits');
     assert.equal(res.status, 200);
-    assert.match(res.headers['content-type'], /^image\/svg\+xml/);
-    assert.equal(res.headers['cross-origin-resource-policy'], 'cross-origin');
-  });
-
-  it('answers 404 for a missing image, and keeps files outside the folder private', async () => {
-    assert.equal((await request(app).get('/products/nope.svg')).status, 404);
-    assert.equal((await request(app).get('/products/..%2F..%2F.env')).status, 404);
+    assert.equal(res.body.count, products.filter(({ image }) => image.status === 'ok').length);
+    assert.ok(res.body.data.every(({ image }) => image.attribution && image.sourcePage));
   });
 });

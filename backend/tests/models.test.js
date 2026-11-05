@@ -12,12 +12,13 @@ import Review from '../models/Review.js';
 import Shelf from '../models/Shelf.js';
 import User from '../models/User.js';
 import Zone from '../models/Zone.js';
+import { SKU } from './fixtures/skus.js';
 
 const MODELS = [Counter, Kit, Order, Otp, Product, Question, Review, Shelf, User, Zone];
 const objectId = () => new mongoose.Types.ObjectId();
 const orderFields = () => ({
   user: objectId(),
-  items: [{ productId: 'A-01-117', name: 'Earbuds', price: 999, qty: 1 }],
+  items: [{ productId: SKU.earbuds, name: 'Earbuds', price: 999, qty: 1 }],
   subtotal: 999,
   total: 999
 });
@@ -127,11 +128,11 @@ describe('Product', () => {
 
   it('stores a full SKU product and returns specs as plain JSON', async () => {
     await Product.create({
-      productId: 'A-01-117', ...productFields, zoneCode: 'a', bay: 1, bayName: 'Earbuds', brand: 'Noise',
+      productId: SKU.earbuds, ...productFields, zoneCode: 'a', bay: 1, bayName: 'Earbuds', brand: 'Noise',
       colours: ['Black'], use: ['gym'], connectivity: 'wireless', specs: { Battery: '30 h', Weight: '48 g' },
-      images: ['a.jpg'], seller: 'BazaarMart', warrantyMonths: 12, arrivesInDays: 2, isNewDrop: true
+      images: ['/products/a.webp'], seller: 'BazaarMart', warrantyMonths: 12, arrivesInDays: 2, isNewDrop: true
     });
-    const json = JSON.parse(JSON.stringify(await Product.findOne({ productId: 'A-01-117' })));
+    const json = JSON.parse(JSON.stringify(await Product.findOne({ productId: SKU.earbuds })));
     assert.equal(json.zoneCode, 'A');
     assert.equal(json.isNew, true);
     assert.deepEqual(json.specs, { Battery: '30 h', Weight: '48 g' });
@@ -187,7 +188,7 @@ describe('Shelf', () => {
   });
 
   it('records the saved price and time for each item', async () => {
-    const shelf = await Shelf.create({ user: objectId(), name: 'New desk', items: [{ product: 'A-01-117', savedPrice: 999 }] });
+    const shelf = await Shelf.create({ user: objectId(), name: 'New desk', items: [{ product: SKU.earbuds, savedPrice: 999 }] });
     assert.ok(shelf.items[0].savedAt instanceof Date);
   });
 });

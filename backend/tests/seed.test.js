@@ -11,6 +11,7 @@ import Order from '../models/Order.js';
 import Product, { ZONE_CODES } from '../models/Product.js';
 import User from '../models/User.js';
 import Zone from '../models/Zone.js';
+import { SKU } from './fixtures/skus.js';
 
 process.env.JWT_SECRET = 'test-secret';
 
@@ -44,8 +45,8 @@ function runSeed(extraEnv = {}) {
 const login = credentials => request(app).post('/api/login').send(credentials);
 
 describe('catalogue data', () => {
-  it('has 135 products with unique, well-formed SKUs', () => {
-    assert.equal(products.length, 135);
+  it('has 300 products with unique, well-formed SKUs', () => {
+    assert.equal(products.length, 300);
     assert.equal(new Set(products.map(product => product.productId)).size, products.length);
     for (const { productId, zoneCode, bay } of products) {
       assert.match(productId, /^[AWDLSGCPB]-\d{2}-\d{3}$/);
@@ -53,10 +54,10 @@ describe('catalogue data', () => {
     }
   });
 
-  it('includes the SKUs shown on the wireframes', () => {
+  it('includes the SKUs the tests rely on', () => {
     const skus = new Set(products.map(product => product.productId));
-    for (const sku of ['A-01-117', 'W-03-311', 'S-02-211']) assert.ok(skus.has(sku), sku);
-    assert.match(products.find(product => product.productId === 'S-02-211').productName, /Linen Shirt/);
+    for (const sku of Object.values(SKU)) assert.ok(skus.has(sku), sku);
+    assert.match(products.find(product => product.productId === SKU.shirt).productName, /Shirt/);
   });
 
   it('every product is valid against the model', async () => {
@@ -68,9 +69,9 @@ describe('catalogue data', () => {
     const stock = code => products.filter(p => p.zoneCode === code).reduce((sum, p) => sum + p.quantity, 0);
     const totals = ZONE_CODES.map(stock);
     assert.ok(Math.min(...totals) > 0);
-    assert.ok(Math.max(...totals) >= Math.min(...totals) * 5, totals.join());
+    assert.ok(Math.max(...totals) >= Math.min(...totals) * 4, totals.join());
     const drops = products.filter(product => product.isNewDrop).length;
-    assert.ok(drops >= 5 && drops <= 25, `${drops} new drops`);
+    assert.ok(drops >= 5 && drops <= 40, `${drops} new drops`);
   });
 
   it('every demo order uses a real SKU', () => {
@@ -105,7 +106,7 @@ describe('npm run seed', () => {
     const byCode = Object.fromEntries(body.data.map(zone => [zone.code, zone]));
     assert.deepEqual(byCode.L.layout, { col: 3, row: 2 });
     assert.deepEqual(byCode.B.layout, { col: 1, row: 1 });
-    assert.ok(byCode.P.totalStock > byCode.B.totalStock * 5);
+    assert.ok(byCode.S.totalStock > byCode.G.totalStock * 4);
     assert.ok(byCode.A.bays.length === 5);
     assert.equal(byCode.A.bays[0].bayName, 'Earbuds');
   });
@@ -126,9 +127,10 @@ describe('npm run seed', () => {
     assert.deepEqual(res.body.data.map(order => order.status).sort(), ['out_for_delivery', 'packed']);
     assert.deepEqual(res.body.data.map(order => order.orderNo).sort(), ['BM-2041', 'BM-2042']);
 
-    const linen = res.body.data.flatMap(order => order.items).find(item => item.productId === 'S-02-211');
-    assert.equal(linen.price, 799);
-    assert.equal(linen.name, 'Drift Linen Shirt');
+    const shirt = res.body.data.flatMap(order => order.items).find(item => item.productId === SKU.shirt);
+    const listed = products.find(({ productId }) => productId === SKU.shirt);
+    assert.equal(shirt.price, listed.productPrice);
+    assert.equal(shirt.name, listed.productName);
     for (const order of res.body.data) {
       assert.equal(order.total, order.items.reduce((sum, item) => sum + item.price * item.qty, 0));
       assert.equal(order.events.at(-1).status, order.status);
@@ -147,7 +149,7 @@ describe('npm run seed', () => {
   });
 
   it('keeps edits, live stock and a changed admin password', async () => {
-    await Product.updateOne({ productId: 'A-01-117' }, { productPrice: 1, quantity: 3 });
+    await Product.updateOne({ productId: SKU.earbuds }, { productPrice: 1, quantity: 3 });
     await login(ADMIN).then(async ({ body }) => {
       const res = await request(app).put('/api/users').query({ emailId: ADMIN.emailId })
         .set({ Authorization: `Bearer ${body.data.token}` })
@@ -156,72 +158,44 @@ describe('npm run seed', () => {
     });
 
     assert.equal((await runSeed()).code, 0);
-    const product = await Product.findOne({ productId: 'A-01-117' });
+    const product = await Product.findOne({ productId: SKU.earbuds });
     assert.equal(product.productPrice, 1);
     assert.equal(product.quantity, 3);
     assert.equal((await login({ emailId: ADMIN.emailId, password: 'changed-pass' })).status, 200);
   });
 
-  it('replaces old photo links without touching anything else', async () => {
-    const oldImages = ['https://picsum.photos/seed/A-01-117-1/600/600'];
-    await Product.updateOne({ productId: 'A-01-117' }, { images: oldImages, quantity: 7 });
-    const untouched = await Product.findOne({ productId: 'A-01-117' }).lean();
-    await Order.updateOne(
-      { orderNo: 'BM-2041' },
-      { $set: { 'items.$[].image': oldImages[0], 'address.city': 'Kept' } }
-    );
-    const before = await Order.findOne({ orderNo: 'BM-2041' }).lean();
-
-    assert.equal((await runSeed()).code, 0);
-
-    const product = await Product.findOne({ productId: 'A-01-117' }).lean();
-    assert.deepEqual(product.images, products.find(({ productId }) => productId === 'A-01-117').images);
-    assert.equal(product.quantity, 7);
-    assert.deepEqual(product.updatedAt, untouched.updatedAt);
-
-    const order = await Order.findOne({ orderNo: 'BM-2041' }).lean();
-    assert.equal(order.address.city, 'Kept');
-    assert.deepEqual(order.updatedAt, before.updatedAt);
-    for (const item of order.items) {
-      assert.equal(item.image, products.find(({ productId }) => productId === item.productId).images[0]);
-    }
-    assert.equal(await Order.countDocuments({ 'items.image': /picsum/ }), 0);
-  });
-
   it('restores only the product that went missing', async () => {
-    await Product.deleteOne({ productId: 'B-02-212' });
+    await Product.deleteOne({ productId: 'B-02-202' });
     const { output } = await runSeed();
     assert.match(output, /Products added: 1/);
-    assert.ok(await Product.exists({ productId: 'B-02-212' }));
+    assert.ok(await Product.exists({ productId: 'B-02-202' }));
   });
 
-  it('moves an old catalogue over, keeping Admin products and other orders', async () => {
-    const old = { productPrice: 2499, category: 'Wearables', quantity: 9, description: 'Old.', images: ['/products/W-01-101.svg'] };
-    await Product.create([
-      { ...old, productId: 'W-01-101', productName: 'Pace Smartwatch' },
-      { ...old, productId: 'X-01-001', productName: 'Added on the Admin page' }
-    ]);
-    await Product.updateOne({ productId: 'A-01-117' }, { productName: 'Halo ANC Earbuds', productPrice: 1, quantity: 3 });
+  it('replaces a reused SKU, keeps other products, and moves only the demo orders', async () => {
+    const old = { productPrice: 2499, category: 'Wearables', quantity: 9, description: 'Old.', images: ['/products/W-01-111.svg'] };
+    await Product.create({ ...old, productId: 'X-01-001', productName: 'Added on the Admin page' });
+    await Product.updateOne({ productId: SKU.earbuds }, { source: 'old', productName: 'Halo ANC Earbuds', productPrice: 1, quantity: 3 });
 
     const demo = await User.findOne({ emailId: DEMO.emailId });
     await Order.updateOne({ user: demo._id, orderNo: 'BM-2041' }, {
-      $set: { items: [{ productId: 'W-01-101', name: 'Pace Smartwatch', price: 2499, qty: 2, image: '/products/W-01-101.svg' }], subtotal: 4998, total: 4998 }
+      $set: { items: [{ productId: 'W-01-111', name: 'Pace Smartwatch', price: 2499, qty: 2, image: '/products/W-01-111.svg' }], subtotal: 4998, total: 4998 }
     });
-    const stranger = await Order.create({ guest: { phone: '+919000000001' }, items: [{ productId: 'W-01-101', name: 'Pace Smartwatch', price: 2499, qty: 1 }], subtotal: 2499, total: 2499 });
+    const stranger = await Order.create({ guest: { phone: '+919000000001' }, items: [{ productId: 'W-01-111', name: 'Pace Smartwatch', price: 2499, qty: 1 }], subtotal: 2499, total: 2499 });
 
     assert.equal((await runSeed()).code, 0);
 
-    assert.equal(await Product.exists({ productId: 'W-01-101' }), null);
     assert.ok(await Product.exists({ productId: 'X-01-001' }));
-    const reused = await Product.findOne({ productId: 'A-01-117' });
-    assert.equal(reused.productName, 'Mercury Buds');
-    assert.equal(reused.productPrice, 6499);
-    assert.equal(reused.quantity, 6);
+    const earbuds = products.find(({ productId }) => productId === SKU.earbuds);
+    const reused = await Product.findOne({ productId: SKU.earbuds });
+    assert.equal(reused.productName, earbuds.productName);
+    assert.equal(reused.productPrice, earbuds.productPrice);
+    assert.equal(reused.quantity, earbuds.quantity);
 
+    const watch = products.find(({ productId }) => productId === 'W-01-101');
     const moved = await Order.findOne({ orderNo: 'BM-2041' }).lean();
-    assert.equal(moved.items[0].productId, 'W-01-111');
-    assert.equal(moved.total, 15998);
-    assert.equal((await Order.findById(stranger._id).lean()).items[0].productId, 'W-01-101');
+    assert.equal(moved.items[0].productId, 'W-01-101');
+    assert.equal(moved.total, watch.productPrice * 2);
+    assert.equal((await Order.findById(stranger._id).lean()).items[0].productId, 'W-01-111');
     await Product.deleteOne({ productId: 'X-01-001' });
     await Order.deleteOne({ _id: stranger._id });
   });
