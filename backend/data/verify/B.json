@@ -1,0 +1,617 @@
+{
+ "B-01-101": {
+  "productName": "CeraVe Moisturizing Cream (340 g)",
+  "price": 1572,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/cerave-moisturizing-cream-for-dry-to-very-dry-skin-with-ceramides-hyaluronic-acid/p/14509764",
+  "specs": {
+   "Size": "340 g",
+   "Skin/Hair type": "Dry to very dry skin",
+   "Key ingredients": "Ceramides, hyaluronic acid"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A moisturising cream in a 340 g tub for dry to very dry skin, made with ceramides and hyaluronic acid.",
+  "flag": "Sellers differ: Nykaa 1572, Cureka 1352, MRP 1690. Colour is a placeholder; a cream has no colour variant."
+ },
+ "B-01-102": {
+  "price": 707,
+  "priceType": "selling",
+  "from": "1mg.com",
+  "url": "https://www.1mg.com/otc/cetaphil-gentle-skin-cleanser-for-dry-to-normal-sensitive-skin-otc543740",
+  "specs": {
+   "Size": "250 ml",
+   "Skin/Hair type": "Dry to normal, sensitive skin"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A mild face and skin cleanser in a 250 ml bottle, sold for dry to normal and sensitive skin.",
+  "flag": "Sellers differ: 584 to 731 at pharmacies, MRP 769. Colour is a placeholder."
+ },
+ "B-01-103": {
+  "price": 600,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/the-ordinary-niacinamide-10percent-zinc-1percent/p/15707745?skuId=5003164",
+  "specs": {
+   "Size": "30 ml",
+   "Key ingredients": "Niacinamide 10%, zinc 1%"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A 30 ml serum with 10% niacinamide and 1% zinc, sold in India to regulate sebum and minimise the look of pores.",
+  "flag": "A third-party blog gives MRP 750 and says the brand has no official India distribution; Nykaa lists 600. Skin type unconfirmed. Colour is a placeholder."
+ },
+ "B-01-104": {
+  "price": 569,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/a/p/itm50B8203A314D8",
+  "specs": {
+   "Size": "30 ml",
+   "Skin/Hair type": "All skin types, acne-prone skin"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A 30 ml niacinamide face serum aimed at acne marks, blemishes and oily skin, listed for all skin types.",
+  "flag": "Colour is a placeholder."
+ },
+ "B-01-105": {
+  "price": 989,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/neutrogena-hydro-boost-water-gel-face-moisturizer/p/itmfahkrd8tu5hsg",
+  "specs": {
+   "Size": "50 g",
+   "Key ingredients": "Hyaluronic acid"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A gel-textured face moisturiser made with hyaluronic acid, sold in a 50 g pack in India.",
+  "flag": "Flipkart listing date unclear; other sellers 921 to 1131, MRP 1190. Skin type unconfirmed. Colour is a placeholder."
+ },
+ "B-01-106": {
+  "price": 1400,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/la-roche-posay-anthelios-uvmune-400-invisible-fluid-spf-50-ultra-light-sunscreen/p/23326361?skuId=23326350",
+  "specs": {
+   "Size": "50 ml",
+   "SPF": "SPF 50+"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "An ultra-light fluid sunscreen rated SPF 50+, sold in a 50 ml tube.",
+  "flag": "Amazon.in two-pack works out to about 1330 per tube. Skin type unconfirmed from an Indian source. Colour is a placeholder."
+ },
+ "B-01-107": {
+  "price": 225,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/nivea-soft-light-moisturizer-face-hand-body-non-sticky-cream-vitamin-e-jojoba-oil/p/itm3a9bccab3c3f8",
+  "specs": {
+   "Size": "100 ml",
+   "Key ingredients": "Vitamin E, jojoba oil"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A light, non-sticky moisturising cream for face, hands and body, made with vitamin E and jojoba oil.",
+  "flag": "Sellers disagree widely: 172 to 276, and MRP is shown as 195 to 290. Colour is a placeholder."
+ },
+ "B-02-201": {
+  "price": 29900,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/dyson-supersonic-hair-dryer-vinca-blue-rose/p/493666503",
+  "specs": {
+   "Power": "1380 W",
+   "Heat settings": "4 heat, 3 speed",
+   "Weight": "655 g"
+  },
+  "colours": [
+   "Vinca Blue/Rose",
+   "Prussian Blue/Rich Copper",
+   "Nickel/Copper"
+  ],
+  "connectivity": "n/a",
+  "description": "A 1380 W hair dryer with four heat and three speed settings. It measures air temperature over 40 times a second and comes with magnetic attachments.",
+  "flag": "Price varies by colour and seller, about 24900 to 34900. File colours Fuchsia/Nickel and Black/Nickel were not confirmed and were replaced."
+ },
+ "B-02-202": {
+  "price": 43900,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/dyson-airwrap-long-styler-prussian-bluecopper-lkrn0x",
+  "specs": {
+   "Power": "1300 W",
+   "Heat settings": "3 heat, 3 speed",
+   "Attachments": "30 mm and 40 mm long barrels, brushes, dryer",
+   "Skin/Hair type": "Chest-length or longer hair"
+  },
+  "colours": [
+   "Nickel/Copper",
+   "Prussian Blue/Rich Copper",
+   "Vinca Blue/Rosé"
+  ],
+  "connectivity": "n/a",
+  "description": "A 1300 W multi-styler with long 30 mm and 40 mm barrels plus brushes, meant for chest-length or longer hair. It has three heat and three speed settings.",
+  "flag": "Other sellers 44399; launch price 45900. Reliance page title says Nickel/Copper while its URL says Prussian Blue/Copper. Weight left out because sources disagree. Hair-length note comes from a Dyson New Zealand listing."
+ },
+ "B-02-203": {
+  "price": 2584,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/philips-bhs386-bhs-386-kerashine-protection-hair-straightener/p/itme9bc03f51aa0f",
+  "specs": {
+   "Plates": "KeraShine coating, 90 mm long",
+   "Heat-up": "60 seconds",
+   "Cord": "1.6 m swivel cord"
+  },
+  "colours": [
+   "Purple"
+  ],
+  "connectivity": "n/a",
+  "description": "A hair straightener with KeraShine-coated plates that heats up in 60 seconds, with two temperature settings and a 1.6 m swivel cord.",
+  "flag": "Newest dated price is from 2024 or earlier and some sellers are out of stock. Purple comes from price-tracker listing titles only; file colour Black was not confirmed. Power unconfirmed."
+ },
+ "B-02-204": {
+  "price": 3201,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/olaplex-hair-perfector-no-3/p/275303",
+  "specs": {
+   "Size": "100 ml",
+   "Use": "Pre-shampoo bond repair treatment"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A 100 ml pre-shampoo treatment meant to strengthen and repair damaged hair.",
+  "flag": "Nykaa MRP 3300; other sellers 2336 to 2720. Colour is a placeholder."
+ },
+ "B-02-205": {
+  "price": 4320,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/moroccanoil-treatment-oil/p/8551062",
+  "specs": {
+   "Size": "100 ml",
+   "Skin/Hair type": "All hair types"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "An argan oil hair treatment in a 100 ml bottle, sold for all hair types.",
+  "flag": "Nykaa listings show both 4320 and 4660; Pixies sale price 3888. Colour is a placeholder."
+ },
+ "B-02-206": {
+  "price": 270,
+  "priceType": "selling",
+  "from": "purplle.com",
+  "url": "https://www.purplle.com/product/loreal-paris-total-repair-5-repairing-shampoo-400-ml-17-13-70",
+  "specs": {
+   "Size": "340 ml",
+   "Skin/Hair type": "Damaged and weak hair",
+   "Key ingredients": "Pro-keratin, ceramide"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A repairing shampoo for damaged and weak hair, made with pro-keratin and ceramide, in a 340 ml bottle.",
+  "flag": "Sellers differ widely: 259 to 360 for 340 ml, MRP 355 to 379. Colour is a placeholder."
+ },
+ "B-02-207": {
+  "price": 480,
+  "priceType": "selling",
+  "from": "bigbasket.com",
+  "url": "https://www.bigbasket.com/pb/mamaearth/hair-oil-serum/",
+  "specs": {
+   "Size": "250 ml",
+   "Key ingredients": "Onion, Redensyl"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A hair oil with onion and Redensyl, sold in a 250 ml bottle for hair fall control.",
+  "flag": "Sellers differ: 449 to 587, MRP 533 to 599. Colour is a placeholder."
+ },
+ "B-03-301": {
+  "price": 1759,
+  "priceType": "selling",
+  "from": "flipkart.com via pricebefore.com",
+  "url": "https://www.pricebefore.com/philips-qp2724-10-trimmer-45-min-p815840.html",
+  "specs": {
+   "Battery": "45 min after an 8 h charge",
+   "Water": "Wet and dry use",
+   "Attachments": "3 stubble combs, travel case"
+  },
+  "colours": [
+   "Lime Green/Charcoal Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A cordless rechargeable hybrid trimmer and shaver for wet or dry use, giving about 45 minutes of run time after an 8 hour charge, with three stubble combs.",
+  "flag": "Amazon deal 1649 (June 2026); Reliance Digital MRP 2299. Colour named differently by sellers: Black Green, Grey and Green, Lime Green/Charcoal Grey."
+ },
+ "B-03-302": {
+  "productName": "Philips OneBlade Turbo2X Face & Body QP2824/10",
+  "price": 2230,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Philips-OneBlade-Perfected-Electric-10/dp/B0FJ2RGX3K",
+  "specs": {
+   "Battery": "About 45 min run time, USB charging",
+   "Water": "Wet and dry use, washable",
+   "Weight": "140 g",
+   "Attachments": "3 click-on stubble combs (1, 3, 5 mm)"
+  },
+  "colours": [
+   "Black",
+   "Lime Green"
+  ],
+  "connectivity": "n/a",
+  "description": "A cordless face and body hybrid trimmer and shaver for wet or dry use, charged over USB, with about 45 minutes of run time and three click-on stubble combs.",
+  "flag": "Amazon also shows 2 offers from 2349; Flipkart 2486; Reliance Digital 2369; Croma lowest 2349 per Smartprix. Run time and weight come from Smartprix only. QP2824/30 is a different bundle.",
+  "swap": {
+   "status": "applied",
+   "from": "Philips OneBlade Pro 360 QP6551",
+   "to": "Philips OneBlade Turbo2X Face & Body QP2824/10",
+   "reason": "QP6551 was found only at UK and EU retailers, with no Indian listing or rupee price. QP2824/10 is the same brand and bay and is listed on Amazon.in, Flipkart, Croma and Reliance Digital."
+  }
+ },
+ "B-03-303": {
+  "productName": "Braun Series 9 Pro+ 9567cc Electric Shaver",
+  "price": 22499,
+  "priceType": "selling",
+  "from": "tirabeauty.com",
+  "url": "https://fp-cdn.tirabeauty.com/product/braun-series-9-pro-9567cc-wet-dry-electric-shaver-9567-7692488",
+  "specs": {
+   "Battery": "60 min run time, 60 min charge",
+   "Water": "Wet and dry use",
+   "Blade": "5 cutting elements, foil head"
+  },
+  "colours": [
+   "Silver"
+  ],
+  "connectivity": "n/a",
+  "description": "A foil electric shaver with five cutting elements for wet or dry use, rechargeable, sold with a 6-in-1 SmartCare centre and a travel case.",
+  "flag": "Tira is the only India price found (MRP 24999). File had no model number, so this is pinned to 9567cc; other Pro+ models cost far more on Amazon trackers. Battery figures come from European listings for the range."
+ },
+ "B-03-304": {
+  "price": 549,
+  "priceType": "selling",
+  "from": "amazon.in via magicdrop.in",
+  "url": "https://magicdrop.in/drops/beard-razor",
+  "specs": {
+   "Blades": "5 per cartridge",
+   "Head": "FlexBall pivoting head",
+   "Cartridges": "Fits Gillette 5-blade handles"
+  },
+  "colours": [
+   "Black/Silver"
+  ],
+  "connectivity": "n/a",
+  "description": "A manual five-blade razor with a pivoting FlexBall head that follows the contours of the face. It takes Gillette 5-blade cartridges.",
+  "flag": "Amazon price from a June 2026 roundup, MRP 575; 1mg lists 494 for the FlexBall razor. File colour Black/Silver not confirmed for India; an Australian listing says Black/Silver/Blue."
+ },
+ "B-03-305": {
+  "price": 899,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/mi-xiaomi-2c-for-men-beard-trimmer-lynxwk-7916490",
+  "specs": {
+   "Battery": "90 min run time",
+   "Charging": "USB Type-C, 5 min charge gives 10 min use",
+   "Length settings": "40 settings, 0.5 to 20 mm"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A cordless beard trimmer with stainless steel blades and 40 length settings, giving about 90 minutes of run time and charging over USB Type-C.",
+  "flag": "Launch price 1199; a comparison site still lists 1199 and a tracker shows 599 to 1399."
+ },
+ "B-03-306": {
+  "productName": "Philips Multigroom Series 7000 MG7715 13-in-1",
+  "price": 3999,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/phillips-7000-13-in-1-multigroom-trimmer-with-self-sharpening-blades-mg7715-65/p/492864867",
+  "specs": {
+   "Battery": "Up to 120 min, 1 h full charge",
+   "Water": "Showerproof",
+   "Attachments": "13 for face, head and body"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A cordless grooming kit with 13 attachments for face, head and body, self-sharpening blades and up to 120 minutes of run time from a one-hour charge.",
+  "flag": "Sold as MG7715/65 and MG7715/15. Colour differs: Croma says Black, 1mg and Truemeds say Silver. MRP 4295 to 4595; some sellers out of stock."
+ },
+ "B-03-307": {
+  "productName": "Panasonic ER-GN30-K Nose & Ear Trimmer",
+  "price": 1830,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/panasonic-er-gn30-k-runtime-30-min-trimmer-men/p/itm2ee642e54bf68",
+  "specs": {
+   "Battery": "1 AA battery",
+   "Water": "Water resistant, washable head",
+   "Blade": "Stainless steel"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A battery-powered nose and ear hair trimmer with stainless steel blades and a washable, water-resistant head.",
+  "flag": "Sellers differ: 1688 to 1830 for ER-GN30-K; Panasonic India sells the grey ER-GN30-H24B at 1399. Runtime left out because sources disagree (30 min vs 1.5 h)."
+ },
+ "B-04-401": {
+  "price": 2950,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/davidoff-cool-water-edt-125-ml/p/itmf3wj2vfscryf2",
+  "specs": {
+   "Size": "125 ml",
+   "Type": "Eau de toilette",
+   "For": "Men"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's eau de toilette from Davidoff's Cool Water line, sold in a 125 ml bottle.",
+  "flag": "Sellers disagree widely: tracker 2398, Flipkart 2950, Aar 4199, Nykaa 5995, MRP 5900. Colour is a placeholder."
+ },
+ "B-04-402": {
+  "price": 4850,
+  "priceType": "selling",
+  "from": "sephora.in",
+  "url": "https://sephora.in/product/calvin-klein-ck-one-edt-spray-v-100ml",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Eau de toilette",
+   "For": "Unisex"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A unisex eau de toilette from Calvin Klein in a 100 ml bottle.",
+  "flag": "Nykaa 4745 to 4995; Amazon 4245 via a July 2026 roundup; Aar 3249. Sephora figure is a list price with no offer shown. Colour is a placeholder."
+ },
+ "B-04-403": {
+  "price": 14500,
+  "priceType": "selling",
+  "from": "amazon.in via magicdrop.in",
+  "url": "https://magicdrop.in/drops/dior-sauvage-price",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Eau de toilette",
+   "For": "Men"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's eau de toilette from Dior's Sauvage line, sold in a 100 ml spray bottle.",
+  "flag": "Sources disagree: Amazon 14500 via a July 2026 roundup, Nykaa 12400 with size unstated, Aar 9999. Colour is a placeholder."
+ },
+ "B-04-404": {
+  "price": 12999,
+  "priceType": "selling",
+  "from": "aarfragrances.com",
+  "url": "https://www.aarfragrances.com/index.php/product/bleu-de-chanel-edp-1-1",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Eau de parfum"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "An eau de parfum for men from Chanel's Bleu de Chanel line, sold in a 100 ml bottle.",
+  "flag": "One small seller only; no major retailer price found for the standard 100 ml EDP. Noseunbox lists a tester at 8800 (crossed-out 13800), and a price guide says about 10000 to 13000. Nykaa's 23950 is L'Exclusif, a different edition. Flipkart's 'Chenel' listing looks fake and was not used."
+ },
+ "B-04-405": {
+  "price": 11800,
+  "priceType": "mrp",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/jo-malone-london-wood-sage-sea-salt-cologne/p/936415",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Cologne"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A cologne from Jo Malone London in the Wood Sage & Sea Salt scent, sold in a 100 ml bottle. Nykaa also lists the same scent in other sizes.",
+  "flag": "Nykaa results conflict. MRP 11800 is on the page titled Cologne (100ml), no selling price found. Nykaa also shows 2500 on page 344726, whose URL is a body and hand wash, and 1900 on a category page with no size; both rejected as not this item."
+ },
+ "B-04-406": {
+  "price": 6649,
+  "priceType": "selling",
+  "from": "aarfragrances.com",
+  "url": "https://www.aarfragrances.com/product/versace-eros-edt-100ml",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Eau de toilette",
+   "For": "Men"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's eau de toilette from Versace's Eros line, sold in a 100 ml bottle. Stronger Eau de Parfum and Parfum versions are separate products.",
+  "flag": "Small seller, list price 10300. Nykaa shows 8755 (list 10300) but the size is not stated, so it was not used. Beauty Baskets 7225; Flipkart 6750 out of stock per PriceDekho; Mumbai duty free 7911."
+ },
+ "B-04-407": {
+  "price": 2795,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/skinn-titan-mens-raw-eau-de-parfum-100-ml/p/itmf3wgxzsgfh4ju",
+  "specs": {
+   "Size": "100 ml",
+   "Type": "Eau de parfum",
+   "For": "Men"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's eau de parfum from Titan's SKINN fragrance line, sold in a 100 ml bottle. A smaller 50 ml size of the same scent is also sold in India.",
+  "flag": "PriceDekho shows 1895 for the same size, date unclear."
+ },
+ "B-05-501": {
+  "productName": "Philips Sonicare ProtectiveClean 4300 HX6807/24",
+  "price": 4390,
+  "priceType": "estimate",
+  "from": "cashkaro.com",
+  "url": "https://cashkaro.com/philips-hx6807-24-sonicare-protectiveclean-4300-electric-toothbrush-with-sonic-technology/CKS-Personal-Care-000295",
+  "snippetOnly": true,
+  "specs": {
+   "Battery": "Li-ion, about 14 days",
+   "Modes": "1 cleaning mode",
+   "Sensors": "Pressure sensor",
+   "Timer": "2 minutes"
+  },
+  "colours": [
+   "White Mint"
+  ],
+  "connectivity": "n/a",
+  "description": "A rechargeable sonic toothbrush with a Li-ion battery, one cleaning mode and a two-minute timer. A built-in sensor pulses to warn when you brush too hard.",
+  "flag": "Aggregator price, undated. Other figures: 2999 Amazon deal per indiafreestuff.in, 5060 out of stock at Bestomart. Croma lists this model but no price was shown. Renamed to the India model; file colour White corrected to White Mint. 14-day battery life comes from one manual summary."
+ },
+ "B-05-502": {
+  "price": 18612,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Oral-B-iO-Electric-Toothbrush-Rechargeable/dp/B0B5YPZS45",
+  "specs": {
+   "Modes": "5 cleaning modes",
+   "Sensors": "Pressure sensor",
+   "Timer": "2 minutes",
+   "Connection": "Bluetooth"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A rechargeable magnetic-drive electric toothbrush with five cleaning modes, a pressure sensor and a two-minute timer. It links to a phone by Bluetooth.",
+  "flag": "Price is White with 1 brush head. The same Amazon page showed 16517 and 21927 in other snapshots, MRP about 29000; Black 18105. Flipkart is far higher at 27193 to 36625. Imported third-party sellers; one Amazon listing has a UK 2-pin plug. Bluetooth from non-Indian listings."
+ },
+ "B-05-503": {
+  "price": 1499,
+  "priceType": "selling",
+  "from": "amazon.in via cashkaro.com",
+  "url": "https://cashkaro.com/oral-b-vitality-100-blue-criss-cross-electric-rechargeable-toothbrush/CKS-Personal-Care-000288",
+  "snippetOnly": true,
+  "specs": {
+   "Power": "Rechargeable, cordless",
+   "Brush head": "Round, cross-action bristles",
+   "Action": "2D cleaning"
+  },
+  "colours": [
+   "Blue",
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A cordless rechargeable electric toothbrush from Oral-B with a round cross-action brush head and 2D cleaning action. It accepts other Oral-B brush heads.",
+  "flag": "Price is for Blue, list price 1799; Flipkart 1599; White 1559 and Black 1599 in other snapshots. Snapshots undated. Battery life and timer not confirmed, so left out."
+ },
+ "B-05-504": {
+  "price": 12999,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Waterpik-Aquarius-Water-Flosser-WP-660/dp/B00HFQQ0VU",
+  "specs": {
+   "Power": "Corded electric",
+   "Pressure": "10 settings",
+   "Tips": "7 tips",
+   "Timer": "1 minute, with pacer"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A corded countertop water flosser with 10 pressure settings, seven tips and a one-minute timer with pacer.",
+  "flag": "Voltage risk: reviews say this US-voltage model does not work on Indian mains, and no 220-240V listing was confirmed. Amazon MRP 25000; other snapshots 15280, 15999, 16259. White confirmed; black and gray seen abroad only. Reservoir size from one retailer, left out."
+ },
+ "B-05-505": {
+  "price": 1898,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/omron-hem-7120-ap-free-phable-doctor-consultation-bp-monitor/p/itm7e8131aa6d301",
+  "specs": {
+   "Cuff": "22 to 32 cm arm size",
+   "Type": "Fully automatic upper-arm monitor",
+   "Technology": "IntelliSense",
+   "Detects": "Irregular heartbeat, body movement"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A fully automatic upper-arm blood pressure monitor with IntelliSense inflation and a 22 to 32 cm cuff. It shows a hypertension indicator and detects irregular heartbeat and body movement.",
+  "flag": "Flipkart listing is the HEM-7120-AP with a free Phable consultation, list price 2330. Pricee shows 1899 at Flipkart (August 2026); Pricebefore shows Amazon at 1849, date unclear. Warranty sources disagree (3 or 5 years), so left out."
+ },
+ "B-05-506": {
+  "price": 243,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/omron-mc-246-thermometer/p/itmczzyzvfrytwzy",
+  "specs": {
+   "Power": "Battery",
+   "Display": "LCD",
+   "Water": "Waterproof",
+   "Features": "Auto shut-off, memory, buzzer"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A battery-powered digital thermometer with an LCD readout, auto shut-off, memory and a buzzer. It is waterproof and is listed for mouth, underarm or rectal use.",
+  "flag": "Flipkart MRP 266, page undated. Amazon 231 per Pricebefore. One seller (lntsufin.com) calls it infrared, which conflicts with the other listings; treated as a standard digital thermometer."
+ },
+ "B-05-507": {
+  "price": 14999,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Theragun-Mini-2-0-Percussion-Attachments/dp/B0B6RVQQG3",
+  "specs": {
+   "Speeds": "3 (1750, 2100, 2400 PPM)",
+   "Amplitude": "12 mm",
+   "Charging": "USB-C",
+   "Connection": "Bluetooth"
+  },
+  "colours": [
+   "Black",
+   "Desert Rose"
+  ],
+  "connectivity": "wireless",
+  "description": "A compact percussive massage gun with three speeds and a 12 mm amplitude, 20% smaller and 30% lighter than the earlier Mini. It charges by USB-C and links to the Therabody app by Bluetooth.",
+  "flag": "Sold on Amazon.in as Mini 2.0, MRP 19999. Festival price 12999; other listings 17599 to 19999. Black confirmed in India; Desert Rose seen only abroad. Specs from non-Indian listings. Amazon also lists a separate 3rd Gen."
+ }
+}

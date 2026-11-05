@@ -1,0 +1,591 @@
+{
+ "S-01-101": {
+  "productName": "Uniqlo AIRism Cotton Crew Neck T-Shirt",
+  "price": 990,
+  "priceType": "selling",
+  "from": "uniqlo.com/in",
+  "url": "https://www.uniqlo.com/in/en/products/E482522-000/00",
+  "specs": {
+   "Material": "61% cotton, 33% elastomultiester, 6% elastane",
+   "Fit": "Crew neck, short sleeve",
+   "Sizes": "S to 3XL"
+  },
+  "colours": [
+   "Gray"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's short-sleeved crew neck T-shirt in Uniqlo's AIRism Cotton fabric, a cotton blend with elastane, sold in sizes S to 3XL.",
+  "flag": "Only Gray confirmed on the India page; the full India colour range was not returned, so the file's White, Black and Olive are dropped.",
+  "swap": {
+   "status": "applied",
+   "from": "Uniqlo U Crew Neck Short-Sleeve T-Shirt",
+   "to": "Uniqlo AIRism Cotton Crew Neck T-Shirt",
+   "reason": "No India listing or rupee price found for the Uniqlo U crew neck; this is the closest men's short-sleeved crew tee on uniqlo.com/in. Not proven discontinued in India."
+  }
+ },
+ "S-01-102": {
+  "productName": "Levi's Men's Brand Logo Crew Neck T-shirt",
+  "price": 535,
+  "priceType": "selling",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-brand-logo-crew-neck-t-shirt-169601195",
+  "specs": {
+   "Fit": "Regular fit",
+   "Style": "Crew neck, brand logo, half sleeves",
+   "Material": "100% cotton"
+  },
+  "connectivity": "n/a",
+  "description": "A short-sleeved Levi's crew neck T-shirt in 100% cotton with a regular fit and the brand logo, sold in white and black on Levi's India store.",
+  "flag": "Rs 535 is a sale snapshot of one listing (regular Rs 1,029). Sibling white and black listings on levi.in showed Rs 1,099 to Rs 1,679 (regular Rs 1,299 to Rs 2,399), so the price may be low. Page does not use the Housemark name, so the logo design may differ. Material varies by colourway listing.",
+  "swap": {
+   "status": "applied",
+   "from": "Levi's Original Housemark Tee",
+   "to": "Levi's Men's Brand Logo Crew Neck T-shirt",
+   "reason": "Original Housemark Tee appeared only on European Levi's sites and no India listing was found; this is the closest logo tee on levi.in."
+  },
+  "colours": [
+   "White",
+   "Black"
+  ]
+ },
+ "S-01-103": {
+  "price": 1295,
+  "priceType": "mrp",
+  "from": "nike.com/in",
+  "url": "https://www.nike.com/in/t/sportswear-club-t-shirt-K8nM0q",
+  "specs": {
+   "Material": "100% cotton",
+   "Fit": "Standard fit"
+  },
+  "colours": [
+   "Dark Grey Heather/Black",
+   "Black/White",
+   "White/Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A plain everyday cotton T-shirt from Nike's Sportswear Club line in a standard fit that sits relaxed through the body and hips.",
+  "flag": "100% cotton comes from other regional Nike pages; heather colourways of the related non-Club tee are a cotton/polyester mix, so Dark Grey Heather may differ. No discounted selling price found, so MRP used."
+ },
+ "S-01-104": {
+  "productName": "Adidas Essentials 3-Stripes Tee",
+  "price": 1599,
+  "priceType": "selling",
+  "from": "adidas.co.in",
+  "url": "https://www.adidas.co.in/essentials-3-stripes-tee/HE4410.html",
+  "specs": {
+   "Material": "Cotton blend",
+   "Feel": "Soft, quick drying"
+  },
+  "colours": [
+   "Scarlet",
+   "Black/White"
+  ],
+  "connectivity": "n/a",
+  "description": "A cotton-blend T-shirt from Adidas Essentials with the three stripes, described as soft to the touch and quick drying.",
+  "flag": "Rs 1,599 is the listed price on adidas.co.in; sale snapshots of Rs 960 to Rs 1,120 also appeared. Several similarly named tees exist. Black/White was seen in the mixed listing results and is not tied to this exact code."
+ },
+ "S-01-105": {
+  "productName": "Puma ESS Logo Tee",
+  "price": 839,
+  "priceType": "selling",
+  "from": "in.puma.com",
+  "url": "https://in.puma.com/in/en/pd/ess-logo-tee/845575",
+  "specs": {
+   "Material": "100% cotton",
+   "Fit": "Regular fit, crew neck"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A short-sleeved Puma Essentials logo T-shirt made from 100% cotton, cut in a regular fit with a crew neck.",
+  "flag": "Sale price, marked down from Rs 1,399. India colour range not in results; Black rests on a US listing (PUMA Black) and on the file. File's White not confirmed, so dropped."
+ },
+ "S-01-106": {
+  "productName": "H&M Regular Fit Round-Neck T-Shirt",
+  "price": 499,
+  "priceType": "selling",
+  "from": "nykaafashion.com",
+  "url": "https://www.nykaafashion.com/h-m-regular-fit-round-neck-t-shirt-white/p/23065774",
+  "specs": {
+   "Material": "Lightweight cotton jersey",
+   "Fit": "Regular fit, half sleeves, ribbed round neck"
+  },
+  "colours": [
+   "White",
+   "Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A plain H&M T-shirt in lightweight cotton jersey with a regular fit, ribbed round neck and no logos or graphics, sold in India through Nykaa.",
+  "flag": "File colours Black and Beige not confirmed for this single tee, so dropped; White and Grey have listings. Nykaa page may be an older snapshot."
+ },
+ "S-01-107": {
+  "price": 579,
+  "priceType": "selling",
+  "from": "bigbasket.com",
+  "url": "https://www.bigbasket.com/pd/40326021/jockey-jockey-2714-mens-super-combed-cotton-rich-solid-round-neck-half-sleeve-t-shirt-white-1-pc-m/",
+  "specs": {
+   "Material": "Super combed cotton rich, about 80% cotton with polyester",
+   "Fit": "Regular fit, round neck, half sleeve"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Navy Blue",
+   "Grey Melange"
+  ],
+  "connectivity": "n/a",
+  "description": "A solid half-sleeve round neck T-shirt from Jockey in a super combed cotton-rich fabric blended with polyester, with a ribbed neck.",
+  "flag": "Rs 579 is shown as both selling price and MRP at Indian retailers; Nykaa Man shows Rs 599 for Grey Melange. The 80% cotton figure comes from one listing only."
+ },
+ "S-02-201": {
+  "productName": "Allen Solly Men's Oxford Solid Regular Fit Casual Shirt",
+  "brand": "Allen Solly",
+  "price": 679,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "snippetOnly": true,
+  "specs": {
+   "Material": "Cotton",
+   "Fit": "Regular fit"
+  },
+  "connectivity": "n/a",
+  "description": "A men's solid Oxford casual shirt from Allen Solly in cotton with a regular fit, listed on Amazon.in with similar styles on Flipkart.",
+  "flag": "Flipkart ₹560 to ₹874, MRP ₹1,699. Blue and grey seen on similar Allen Solly solid shirts, not confirmed for this exact style",
+  "swap": {
+   "status": "applied",
+   "from": "Uniqlo Oxford Long-Sleeve Shirt",
+   "to": "Allen Solly Men's Oxford Solid Regular Fit Casual Shirt",
+   "reason": "No Uniqlo India listing or rupee price found for an Oxford shirt in repeated searches. Replaced with a well-known Oxford shirt listed on Amazon.in, same bay, not in the catalogue. Not proven unavailable from Uniqlo India."
+  },
+  "url": "https://www.amazon.in/allen-solly-solid-shirts-for-men/s?k=allen+solly+solid+shirts+for+men",
+  "colours": [
+   "Blue",
+   "Grey"
+  ]
+ },
+ "S-02-202": {
+  "productName": "Uniqlo Men's Premium Linen Long-Sleeve Shirt",
+  "price": 2490,
+  "priceType": "estimate",
+  "from": "zoutons.com",
+  "url": "https://zoutons.com/news/uniqlo-india-summer-sale-linen-airism-picks-2026",
+  "specs": {
+   "Material": "100% premium linen",
+   "Sleeve": "Long sleeve"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A long-sleeved men's shirt from Uniqlo made entirely from premium linen, a lighter fabric option listed among its summer range in India.",
+  "flag": "Price is an aggregator figure from a May 2026 Zoutons roundup, no uniqlo.com/in page returned. Material is from the UK listing. White seen only in resale listings; India colour range unconfirmed, file's Navy and Beige dropped."
+ },
+ "S-02-203": {
+  "productName": "Levi's Men's Barstow Standard Fit Western Denim Shirt",
+  "specs": {
+   "Material": "100% cotton denim, non-stretch",
+   "Fit": "Standard fit, long sleeves"
+  },
+  "colours": [
+   "Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A long-sleeved Levi's Western shirt in non-stretch 100% cotton denim with a standard fit, sold on Levi's India store.",
+  "flag": "Rs 2,598 is a sale price (regular Rs 4,999). Material and fit wording come from foreign Levi's listings. levi.in gives the colour as Blue; foreign sites call it Indigo Stonewash. Amazon.in also lists a Barstow in Eddlyn Ecru, not included.",
+  "price": 2598,
+  "priceType": "selling",
+  "from": "levi.in",
+  "url": "https://levi.in/products/mens-solid-blue-spread-collar-shirt-857440117"
+ },
+ "S-02-204": {
+  "productName": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
+  "price": 20900,
+  "priceType": "selling",
+  "from": "ralphlauren.global/in",
+  "url": "https://ralphlauren.global/in/en/classic-fit-garment-dyed-oxford-shirt--100007647.html",
+  "specs": {
+   "Fit": "Classic fit, cut fuller through chest, waist and sleeve",
+   "Style": "Garment-dyed Oxford"
+  },
+  "connectivity": "n/a",
+  "description": "A garment-dyed Oxford shirt from Polo Ralph Lauren in the Classic Fit, which is cut fuller through the chest, waist and sleeve, sold on the brand's India site.",
+  "flag": "Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description.",
+  "swap": {
+   "status": "applied",
+   "from": "Polo Ralph Lauren Custom Fit Oxford Shirt",
+   "to": "Polo Ralph Lauren Classic Fit Garment-Dyed Oxford Shirt",
+   "reason": "No rupee price found for the Custom Fit Oxford in two searches; the brand's India site lists Classic Fit Oxford shirts. Not proven unavailable in India."
+  },
+  "colours": [
+   "White",
+   "Black"
+  ]
+ },
+ "S-02-205": {
+  "specs": {
+   "Fit": "Regular fit, button-down collar",
+   "Material": "Cotton; some versions have a little elastane"
+  },
+  "colours": [
+   "Light Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A solid-coloured Tommy Hilfiger Oxford shirt in a regular fit with a button-down collar, sold on the brand's official India store.",
+  "flag": "MRP Rs 5,999. Amazon.in showed a similar listing at Rs 3,419. Fit detail, material and Light Blue colour come from foreign retailers, not the India listing; White from the file is unconfirmed and dropped.",
+  "productName": "Tommy Hilfiger Solid Regular Fit Oxford Shirt",
+  "price": 4199,
+  "priceType": "selling",
+  "from": "tommyhilfiger.nnnow.com",
+  "url": "https://tommyhilfiger.nnnow.com/tommy-hilfiger-solid-regular-fit-oxford-shirts-OSQXXDF9G0O"
+ },
+ "S-02-206": {
+  "price": 1799,
+  "priceType": "mrp",
+  "from": "hm.com/en_in",
+  "url": "https://www2.hm.com/en_in/productpage.1248677002.html",
+  "specs": {
+   "Material": "52% linen, 48% cotton",
+   "Fit": "Regular fit, turn-down collar, French front"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A regular fit H&M shirt woven from a linen and cotton mix, with a turn-down collar, French front and a yoke at the back.",
+  "flag": "Only White confirmed for this article; file's Light Beige not found, so dropped. Rs 1,799 is the listed MRP on H&M India."
+ },
+ "S-03-301": {
+  "price": 3289,
+  "priceType": "selling",
+  "from": "levi.in",
+  "specs": {
+   "Fit": "Slim fit from hip to ankle",
+   "Material": "Cotton blend with stretch, varies by style (one listing 99% cotton, 1% elastane)"
+  },
+  "colours": [
+   "Dark Indigo",
+   "Mid Indigo",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Levi's 511 jeans are cut close to the body with a slim line from hip to ankle, and most styles are a cotton blend with a little stretch.",
+  "flag": "Price varies by wash: Rs 3,289 is one blue listing's sale price (regular Rs 4,699); other sale prices seen were Rs 1,823 to Rs 3,159. The summary did not tie the figure to one URL, so url left out."
+ },
+ "S-03-302": {
+  "price": 4938,
+  "priceType": "selling",
+  "from": "levi.in",
+  "specs": {
+   "Fit": "Straight fit, mid rise",
+   "Closure": "Button fly"
+  },
+  "colours": [
+   "Light Blue",
+   "Medium Indigo",
+   "Dark Blue",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Levi's 501 Original jeans in a straight fit, with a button fly on the listed style, sold on Levi's India store in a range of washes.",
+  "flag": "Price varies by wash: Rs 4,938 is the Light Blue sale price (regular Rs 6,501); other sale prices seen were Rs 1,800 to Rs 7,218. File's Medium Stonewash not found. Cotton content not confirmed. url left out as the figure was not tied to one URL."
+ },
+ "S-03-303": {
+  "price": 1490,
+  "priceType": "estimate",
+  "from": "zoutons.com",
+  "url": "https://www.uniqlo.com/in/en/products/E475578-000",
+  "specs": {
+   "Material": "Cotton (this price); wool-like, lightweight and jersey versions also exist",
+   "Fit": "Ankle length"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Uniqlo's Smart Ankle Pants are ankle-length trousers with their own page on Uniqlo India; the cotton version is priced here, and other fabrics exist.",
+  "flag": "Price is an aggregator figure from a June 2026 Zoutons roundup for the Cotton version, far below the file's Rs 2,990; the Uniqlo India page gave no price. Black seen only on resale sites; file's Navy and Beige dropped. Stretch not confirmed. Url is the product page, not the price source."
+ },
+ "S-03-304": {
+  "productName": "Dockers Signature Go Khaki Slim Fit Trousers",
+  "price": 2399,
+  "priceType": "selling",
+  "from": "dockers.in",
+  "url": "https://www.dockers.in/men/trousers/slim-beige-8905409579626",
+  "specs": {
+   "Fit": "Slim fit",
+   "Style": "Khaki trousers"
+  },
+  "colours": [
+   "Beige"
+  ],
+  "connectivity": "n/a",
+  "description": "Slim-fit khaki trousers from the Dockers Signature Go range in beige, sold on the Dockers India store.",
+  "flag": "Material not confirmed, so left out. Only Beige confirmed. The summary said it could not show this is the same style as any Alpha Khaki.",
+  "swap": {
+   "status": "applied",
+   "from": "Dockers Alpha Khaki Slim Fit Chinos",
+   "to": "Dockers Signature Go Khaki Slim Fit Trousers",
+   "reason": "Alpha Khaki pages on Amazon.in showed no price in two searches and some were marked unavailable. Replaced with the closest slim khaki on dockers.in. Alpha Khaki is not proven discontinued."
+  }
+ },
+ "S-03-305": {
+  "productName": "Nike Sportswear Club Fleece Joggers",
+  "price": 2895,
+  "priceType": "selling",
+  "from": "myntra.com",
+  "url": "https://www.myntra.com/track-pants/nike/nike-sportswear-club-fleece-joggers/36600785/buy",
+  "specs": {
+   "Material": "Fleece",
+   "Style": "Joggers"
+  },
+  "colours": [
+   "Dark Grey Heather",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Men's fleece joggers from Nike's Sportswear Club range, a casual track pant sold in India through Myntra.",
+  "flag": "Below the file's Rs 3,495. Myntra also showed Rs 2,026 at 30% off in some sizes. Dark Grey Heather is from nike.com US; Black is the file colour and is unconfirmed for this exact style. Material is from the product name only."
+ },
+ "S-03-306": {
+  "productName": "Adidas Tiro 24 Slim Training Pants",
+  "price": 3220,
+  "priceType": "selling",
+  "from": "adidas.co.in",
+  "url": "https://www.adidas.co.in/tiro-24-slim-training-pants/IP1953.html",
+  "specs": {
+   "Material": "Recycled polyester",
+   "Fit": "Slim"
+  },
+  "colours": [
+   "Black/White",
+   "Team Navy Blue 2/White"
+  ],
+  "connectivity": "n/a",
+  "description": "Slim-fitting Adidas football training pants from the Tiro 24 range, made from recycled polyester and sold in black or navy with white stripes.",
+  "flag": "Sale price Rs 3,219.50 rounded up; MRP Rs 4,599. File name lacked 'Slim'; Amazon.in showed another Tiro 24 pant at Rs 2,759."
+ },
+ "S-04-401": {
+  "productName": "Nike Air Force 1 '07",
+  "price": 7495,
+  "priceType": "selling",
+  "from": "superkicks.in",
+  "url": "https://www.superkicks.in/products/air-force-1-07-triple-white-1-shoes-for-men",
+  "specs": {
+   "Material": "Leather upper, rubber sole",
+   "Fit": "Low-top, lace-up"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Nike's low-top lace-up sneaker in triple white, with a leather upper, rubber sole and Nike Air cushioning in the insole.",
+  "flag": "Sources disagree: Superkicks and Ajio show Rs 7,495, but nike.com/in showed Rs 9,207 against MRP Rs 9,695 (garbled page text). Materials from Ajio listings."
+ },
+ "S-04-402": {
+  "price": 10999,
+  "priceType": "selling",
+  "from": "adidas.co.in",
+  "url": "https://www.adidas.co.in/samba-og-shoes/B75806.html",
+  "specs": {
+   "Material": "Soft leather upper, suede overlays, gum sole",
+   "Fit": "Low-profile, lace-up"
+  },
+  "colours": [
+   "Cloud White/Core Black/Clear Granite",
+   "Core Black/Core Black/Gum"
+  ],
+  "connectivity": "n/a",
+  "description": "Adidas's low-profile Samba OG sneaker with a soft leather upper, suede overlays and a gum sole, sold on the Adidas India store.",
+  "flag": "Rs 10,999 is for the white B75806; other colourways range from Rs 7,800 on sale to Rs 11,999. Superkicks lists origin Vietnam and about 0.95 kg."
+ },
+ "S-04-403": {
+  "productName": "Converse Chuck 70 Canvas High Top",
+  "price": 6399,
+  "priceType": "selling",
+  "from": "converse.in",
+  "url": "https://www.converse.in/unisex-converse-chuck-70-canvas-high-top-162050c-black.html",
+  "specs": {
+   "Material": "Canvas",
+   "Fit": "High top, unisex",
+   "Sizes": "UK 3 to 12"
+  },
+  "colours": [
+   "Black/Black/Egret"
+  ],
+  "connectivity": "n/a",
+  "description": "A unisex canvas high-top sneaker from Converse in black with egret detailing, sold on the Converse India store in UK sizes 3 to 12.",
+  "flag": "File colour Parchment not found on the India listing, so dropped. Sizes 11 and 12 showed no stock status. Ajio and Myntra match Rs 6,399."
+ },
+ "S-04-404": {
+  "price": 4499,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/vans-old-skool-sneakers-men/p/itm9771424b67b85",
+  "colours": [
+   "Black/White"
+  ],
+  "connectivity": "n/a",
+  "description": "The classic low-top Vans skate shoe with a suede and canvas upper, padded tongue and lining, and the rubber waffle outsole.",
+  "flag": "Flipkart ₹4,499; Superkicks clearance ₹1,759. Materials vary by listing and reviewers report it runs large",
+  "specs": {
+   "Material": "Suede and canvas upper, rubber waffle sole",
+   "Fit": "Low-top, padded tongue and lining",
+   "Sizes": "UK/India sizes"
+  }
+ },
+ "S-04-405": {
+  "price": 8999,
+  "priceType": "selling",
+  "from": "ajio.com",
+  "url": "https://luxe.ajio.com/new-balance-574-lace-up-shoes/p/469633939_grey",
+  "specs": {
+   "Material": "Suede and mesh upper",
+   "Midsole": "ENCAP: soft foam inside a polyurethane rim"
+  },
+  "colours": [
+   "Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "New Balance's 574 lace-up sneaker in grey with a suede and mesh upper and an ENCAP midsole that wraps soft foam in a firmer rim.",
+  "flag": "Ajio offered a coupon price of Rs 7,199; Myntra showed Rs 6,049. Some grey 574 listings state a leather upper, so material varies by version. Navy not confirmed, so dropped."
+ },
+ "S-04-406": {
+  "price": 13599,
+  "priceType": "selling",
+  "from": "ajio.com",
+  "url": "https://www.ajio.com/asics-men-gel-kayano-31-lace-up-running-shoes/p/700216295_black",
+  "specs": {
+   "Material": "Synthetic fibre upper",
+   "Fit": "Men's lace-up running shoe"
+  },
+  "colours": [
+   "Black/Rainy Lake",
+   "Rich Navy/Spice Latte"
+  ],
+  "connectivity": "n/a",
+  "description": "The 31st version of Asics's Gel-Kayano men's running shoe, a lace-up model sold in India through Ajio, Myntra, Flipkart and Amazon.in.",
+  "flag": "MRP Rs 15,999. Prices disagree widely across retailers. Upper material is from Ajio's blue listing title only. Colours from Amazon.in."
+ },
+ "S-04-407": {
+  "price": 4495,
+  "priceType": "selling",
+  "from": "crocs.in",
+  "url": "https://www.crocs.in/classic-black-unisex-clog.html",
+  "specs": {
+   "Material": "Croslite",
+   "Fit": "Unisex clog"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Navy"
+  ],
+  "connectivity": "n/a",
+  "description": "The unisex Crocs Classic Clog, a moulded slip-on shoe sold on the Crocs India store in black, white, navy and other colours.",
+  "flag": "Croslite material is from a Flipkart listing, not the Crocs India page."
+ },
+ "S-05-501": {
+  "price": 10990,
+  "priceType": "selling",
+  "from": "india.ray-ban.com",
+  "specs": {
+   "Material": "Metal frame",
+   "Lens": "G-15 green, polarised on some versions"
+  },
+  "colours": [
+   "Gunmetal/G-15 Green",
+   "Black/Green",
+   "Gold/Brown"
+  ],
+  "connectivity": "n/a",
+  "description": "Ray-Ban's metal-framed Aviator Classic pilot sunglasses, sold on the brand's India store in several frame and lens combinations.",
+  "flag": "Rs 10,990 is for black and gunmetal G-15 versions; a black/green version was Rs 8,690 and a gold polarised one Rs 14,990. The India store uses RB3025 and RB3025I codes. Gold/Green and Black/Grey from the file not found, so dropped. No single product URL tied to the price."
+ },
+ "S-05-502": {
+  "productName": "Ray-Ban Original Wayfarer Classic RB2140",
+  "price": 14990,
+  "priceType": "selling",
+  "from": "india.ray-ban.com",
+  "url": "https://india.ray-ban.com/0rb2140-green-901-58.html",
+  "specs": {
+   "Material": "Acetate frame",
+   "Lens": "Green, polarised"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Ray-Ban's Original Wayfarer Classic sunglasses with a black acetate frame and green polarised lenses, sold on the brand's India store.",
+  "flag": "Well above the file's Rs 9,590; this is the polarised 901/58. A non-polarised black RB2140 Wayfarer was Rs 12,790."
+ },
+ "S-05-503": {
+  "price": 11489,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "specs": {
+   "Sizes": "55 mm and 57 mm",
+   "Lens": "Prizm options including Black, Sapphire and Slate"
+  },
+  "colours": [
+   "Matte Black/Grey",
+   "Matte Black/Prizm Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Oakley's Holbrook (OO9102) square sunglasses, sold on Amazon.in in a matte black frame with grey or Prizm lenses and other combinations.",
+  "flag": "Rs 11,489 (list Rs 13,190) is for matte black with grey lenses; the matte black Prizm Black version was Rs 27,169 on Amazon.in, which looks high. No official Oakley India price found. No single URL tied to the Rs 11,489 price."
+ },
+ "S-05-504": {
+  "price": 39900,
+  "priceType": "mrp",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/ray-ban-meta-wayfarer-gen-2-shiny-black-green-lenses-mnzmh5-10018440",
+  "specs": {
+   "Battery": "Up to 8 h; case adds up to 48 h",
+   "Sensors": "12 MP ultra-wide camera, 3K video at 30fps",
+   "Storage": "32 GB"
+  },
+  "colours": [
+   "Shiny Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Camera and audio smart glasses from Ray-Ban and Meta with a 12 MP camera, open-ear speakers and Meta AI, launched in India in December 2025.",
+  "flag": "Connectivity fixed from n/a to wireless. Transitions lens versions cost up to Rs 45,700. Video spec from TechStories India; storage from Croma."
+ },
+ "S-05-505": {
+  "productName": "New Era New York Yankees Essential 9FORTY Cap",
+  "price": 2999,
+  "priceType": "selling",
+  "from": "neweracap.in",
+  "url": "https://neweracap.in/products/new-york-yankees-essential-black-9forty-cap-10531941",
+  "specs": {
+   "Fit": "9FORTY",
+   "Style": "New York Yankees logo"
+  },
+  "colours": [
+   "Black",
+   "Navy"
+  ],
+  "connectivity": "n/a",
+  "description": "A New Era 9FORTY cap carrying the New York Yankees logo from the Essential line, sold on New Era's India store.",
+  "flag": "Navy is from the collection page listing only. Material and closure not confirmed."
+ },
+ "S-05-506": {
+  "productName": "Nike Dri-FIT Club Structured Blank Front Cap",
+  "price": 995,
+  "priceType": "selling",
+  "from": "nike.com/in",
+  "url": "https://www.nike.com/in/t/dri-fit-club-structured-blank-front-cap-Q2FPVD",
+  "specs": {
+   "Material": "Dri-FIT fabric",
+   "Fit": "Structured, blank front"
+  },
+  "colours": [
+   "Black/White",
+   "White/Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A structured Nike cap in Dri-FIT fabric with a plain front, style FB6452, sold on Nike's India store.",
+  "flag": "The file name is ambiguous; Nike India also lists an Unstructured Dri-FIT Club Cap at Rs 1,195. Material is from the product name."
+ }
+}

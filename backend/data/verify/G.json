@@ -1,0 +1,628 @@
+{
+ "G-01-101": {
+  "price": 5899,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://gamingnation.in/best-ps5-controller-india/",
+  "specs": {
+   "Connection": "Bluetooth 5.1, USB-C",
+   "Platform": "PS5, PC, Mac, mobile",
+   "Battery": "1,560 mAh rechargeable",
+   "Weight": "280 g"
+  },
+  "colours": [
+   "White",
+   "Midnight Black",
+   "Cosmic Red"
+  ],
+  "connectivity": "wireless",
+  "description": "PS5 controller with adaptive triggers that links over Bluetooth 5.1 or USB-C. Its built-in 1,560 mAh battery recharges through the USB-C port.",
+  "flag": "Price is the Amazon.in white model as reported by a July 2026 buying guide, not read from Amazon.in; about Rs 5,849 to 5,899 by colour. Weight and battery from non-Indian retailers and a spec guide."
+ },
+ "G-01-102": {
+  "price": 17590,
+  "priceType": "selling",
+  "from": "microcenterindia.com",
+  "url": "https://microcenterindia.com/product/sony-dualsense-edge-wl-controller-wh",
+  "specs": {
+   "Connection": "Bluetooth, USB-C",
+   "Platform": "PS5",
+   "Battery": "1,050 mAh",
+   "Weight": "About 325 g"
+  },
+  "colours": [
+   "White",
+   "Midnight Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Customisable PS5 controller with two rear buttons, function buttons under the sticks and adjustable trigger travel. Its 1,050 mAh battery is smaller than the standard DualSense's.",
+  "flag": "Price is the white model at one specialist retailer; launch MRP Rs 18,990. Microcenter's black listing at Rs 13,990 was out of stock on one page. Weight sources differ: 322 g (iFixit), 325 g (Sony). Midnight Black added from Indian launch coverage."
+ },
+ "G-01-103": {
+  "price": 6590,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://pricehistory.app/p/xbox-wireless-controller-robot-white-wja43tce",
+  "specs": {
+   "Connection": "Xbox Wireless, Bluetooth, USB-C",
+   "Platform": "Xbox Series X|S, Xbox One, Windows, Android",
+   "Battery": "2 AA, up to 40 hours"
+  },
+  "colours": [
+   "Carbon Black",
+   "Robot White"
+  ],
+  "connectivity": "wireless",
+  "description": "Microsoft gamepad for Xbox consoles, Windows PCs and Android devices, using Xbox Wireless, Bluetooth or USB-C. It runs on two AA batteries for up to 40 hours.",
+  "flag": "Sources disagree on price: Amazon.in Rs 6,590 via a July 2026 price tracker (Robot White); undated Variety Infotech Rs 5,199 White, Rs 5,349 Black. Weight left out because listings conflict (200 to 490 g)."
+ },
+ "G-01-104": {
+  "price": 5057,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://inrdeals.com/index.php/nintendo-switch-pro-controller-joystickblack-for-wii-at-lowest-price-in-online-india-ACCFVMD63XCWARTE-offer",
+  "specs": {
+   "Connection": "Bluetooth 3.0, USB-C charging",
+   "Platform": "Nintendo Switch",
+   "Battery": "1,300 mAh, up to 40 hours"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Wireless Nintendo Switch controller with motion controls and HD Rumble. Its built-in 1,300 mAh battery is rated for about 40 hours of play.",
+  "flag": "Price is the Flipkart figure from a price tracker dated 13 Aug 2026; an undated Flipkart page showed Rs 4,939 and Smartprix (June 2026) showed Rs 5,028 but out of stock. Battery life from a European retailer. Not the Switch 2 Pro Controller."
+ },
+ "G-01-105": {
+  "price": 8645,
+  "priceType": "estimate",
+  "from": "ubuy.co.in",
+  "url": "https://www.ubuy.co.in/productde/IEKV7QYLU-joy-con",
+  "specs": {
+   "Connection": "Bluetooth 3.0",
+   "Platform": "Nintendo Switch",
+   "Battery": "525 mAh"
+  },
+  "colours": [
+   "Neon Red/Neon Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Pair of detachable left and right Nintendo Switch controllers that run on built-in lithium polymer batteries and can be shared for two-player games.",
+  "flag": "Only one undated Indian price found, from an import reseller; no standalone Amazon.in or Flipkart listing confirmed, and Madhu Infotech showed 0 available with no price. Switch 2 Joy-Con pairs are a different product (Rs 7,999 at Variety Infotech)."
+ },
+ "G-01-106": {
+  "productName": "8BitDo Ultimate 3-mode Controller for Xbox",
+  "price": 6199,
+  "priceType": "selling",
+  "from": "genesispc.in",
+  "url": "https://www.genesispc.in/products/8bitdo-ultimate-3-mode-controller-for-xbox-wired-for-xbox-series-x-s-and-xbox-one-wireless-for-windows-and-android",
+  "specs": {
+   "Connection": "USB for Xbox, 2.4G for Windows, Bluetooth for Apple and Android",
+   "Platform": "Xbox Series X|S, Xbox One, Windows, Android, Apple",
+   "Battery": "Up to 20 hours",
+   "Weight": "250 g"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Jade"
+  ],
+  "connectivity": "wireless",
+  "description": "Multi-platform controller that plugs into Xbox consoles by USB and pairs with Windows over 2.4G or Apple and Android over Bluetooth. It comes with a charging dock and is rated for 20 hours of play.",
+  "flag": "Price from a search snippet of one Indian seller; the page itself returned 429, so stock is unconfirmed. Weight is 8BitDo's figure; retailers give 220 to 225 g. Colours from 8BitDo's site, not Indian listings.",
+  "swap": {
+   "status": "applied",
+   "from": "8BitDo Ultimate Bluetooth Controller",
+   "to": "8BitDo Ultimate 3-mode Controller for Xbox",
+   "reason": "No Indian listing found for the Bluetooth model; the 3-mode Xbox model is the closest 8BitDo Ultimate controller confirmed at an Indian seller."
+  }
+ },
+ "G-01-107": {
+  "price": 8839,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/razer-kishi-v2-usb-c-wireless-mobile-game-controller/",
+  "specs": {
+   "Connection": "USB-C dock with pass-through charging",
+   "Platform": "Android, iOS, PC",
+   "Weight": "123 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Phone controller that docks directly to a handset's USB-C port and has a second USB-C port for pass-through charging. It weighs about 123 g and adds capture and Share buttons.",
+  "flag": "Connectivity corrected from wireless to wired: it plugs into the phone by USB-C, though Variety's URL says wireless. Indian prices differ: Rs 8,839 Variety, Rs 10,800 Micro Center India, Rs 9,699 to 9,990 for the iPhone model."
+ },
+ "G-02-201": {
+  "price": 7300,
+  "priceType": "selling",
+  "from": "pcstudio.in",
+  "url": "https://www.pcstudio.in/?p=514630",
+  "specs": {
+   "Connection": "USB, 3.5 mm",
+   "Driver": "53 mm neodymium",
+   "Weight": "About 320 g"
+  },
+  "colours": [
+   "Red",
+   "Gun Metal"
+  ],
+  "connectivity": "wired",
+  "description": "Closed-back wired gaming headset with 53 mm drivers, a noise-cancelling microphone and virtual 7.1 surround through its USB audio control box.",
+  "flag": "Connectivity corrected from wireless to wired. Prices vary: Rs 6,990 ntptechstore, Rs 7,300 PC Studio, Rs 10,990 Micro Center (Gun Metal, out of stock). Weight sources give 319 to 330 g."
+ },
+ "G-02-202": {
+  "price": 4495,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://cashkaro.com/razer-blackshark-v2-x-wired-gaming-on-ear-headset/CKS-Headphones-000559",
+  "specs": {
+   "Connection": "3.5 mm",
+   "Driver": "50 mm",
+   "Weight": "240 g",
+   "Platform": "PC, PS4, PS5, Xbox, Switch, mobile"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Wired 3.5 mm esports headset with 50 mm drivers, a HyperClear cardioid boom mic and a 240 g frame. It works with PC, consoles and mobile, with no USB soundcard in the box.",
+  "flag": "Connectivity corrected from wireless to wired. Amazon price seen via CashKaro, not read from Amazon.in; Micro Center India shows Rs 4,039 and Cashify Rs 5,499."
+ },
+ "G-02-203": {
+  "price": 29990,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/mobile_headphones/steelseries-arctis-nova-7-wireless-gaming-ppd15ien64vl",
+  "specs": {
+   "Connection": "2.4 GHz, Bluetooth",
+   "Driver": "40 mm neodymium",
+   "Battery": "Up to 38 hours"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Multi-platform wireless headset that mixes 2.4 GHz and Bluetooth audio, with 40 mm drivers, USB-C charging and about 38 hours of battery life.",
+  "flag": "Aggregator price only (Smartprix, updated June 2026), with a Rs 12,103 monthly jump, so it may be inflated; a GCC Gamers India page shows about Rs 16,302. No direct Indian retailer price read. White in the file was not confirmed and was dropped. Not the Gen 2, 7X or 7P."
+ },
+ "G-02-204": {
+  "price": 6995,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.mysmartprice.com/audio/logitech-g435-bluetooth-headset-msf613636",
+  "specs": {
+   "Connection": "Lightspeed 2.4 GHz, Bluetooth",
+   "Driver": "40 mm",
+   "Battery": "Up to 18 hours",
+   "Weight": "165 g"
+  },
+  "colours": [
+   "Black and Neon Yellow",
+   "Blue and Raspberry",
+   "Off-White and Lilac"
+  ],
+  "connectivity": "wireless",
+  "description": "Lightweight 165 g wireless headset with 40 mm drivers and dual beamforming mics, using Lightspeed 2.4 GHz or Bluetooth and rated for up to 18 hours.",
+  "flag": "Price is undated, shown by a comparison page for Amazon and Croma; launch MRP Rs 7,495. A tracker's Rs 4,550 could not be tied to this model; a Flipkart page showed out of stock. Colours given with their full two-tone names."
+ },
+ "G-02-205": {
+  "price": 8000,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/sony-pulse-3d-bluetooth-wireless-headphone-for-playstation-5-with-fine-tuned-for-3d-audio-white-kxeudd",
+  "specs": {
+   "Connection": "Wireless, 3.5 mm jack",
+   "Platform": "PS5",
+   "Battery": "Up to 12 hours",
+   "Weight": "292 g"
+  },
+  "colours": [
+   "White",
+   "Black",
+   "Grey Camouflage"
+  ],
+  "connectivity": "wireless",
+  "description": "Wireless PS5 headset tuned for 3D audio, with up to 12 hours of battery life, USB-C charging and a 3.5 mm jack for wired use.",
+  "flag": "Price is the white model; Croma Rs 8,590, Micro Center India Rs 7,843, an aggregator Rs 5,806 on Amazon. Listings say black, not Midnight Black. Wireless link type varies by listing, so left general. Weight from Cashify only."
+ },
+ "G-02-206": {
+  "price": 14399,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/corsair-hs80-wireless-headset/",
+  "specs": {
+   "Connection": "Slipstream Wireless USB transmitter",
+   "Driver": "50 mm neodymium",
+   "Battery": "Up to 20 hours"
+  },
+  "colours": [
+   "Carbon",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Wireless gaming headset with 50 mm neodymium drivers and Dolby Atmos support, linking through a USB Slipstream transmitter and rated for up to 20 hours per charge.",
+  "flag": "Prices vary: Smartprix from Rs 10,768 (Dec 2025), Digit Rs 13,999, Variety Rs 14,399, Micro Center India Rs 14,999 (out of stock). Battery figure from a listing title. Not the HS80 MAX."
+ },
+ "G-03-301": {
+  "price": 3990,
+  "priceType": "selling",
+  "from": "mdcomputers.in",
+  "url": "https://mdcomputers.in/logitech-g213-prodigy-920-008096.html",
+  "specs": {
+   "Connection": "Wired USB, 1.8 m cable",
+   "Switches": "Mech-Dome membrane",
+   "Size": "452 x 218 x 33 mm"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Wired USB keyboard with Logitech's Mech-Dome membrane keys, five-zone RGB lighting, media keys and spill resistance tested with 60 ml of liquid.",
+  "flag": "Colour carried from file, not stated in results. MRP Rs 4,995; other listings Rs 3,399 to 4,100."
+ },
+ "G-03-302": {
+  "price": 7415,
+  "priceType": "selling",
+  "from": "computechstore.in",
+  "url": "https://computechstore.in/product/razer-huntsman-mini-linear-red-mercury/",
+  "specs": {
+   "Connection": "Detachable USB-C",
+   "Layout": "60%",
+   "Switches": "Clicky Purple or Linear Red optical"
+  },
+  "colours": [
+   "Black",
+   "Mercury White"
+  ],
+  "connectivity": "wired",
+  "description": "Compact 60% keyboard with optical switches rated for 100 million keystrokes, doubleshot PBT keycaps, an aluminium chassis and a detachable USB-C cable.",
+  "flag": "Price is the Linear Red Mercury model; Clicky Purple Mercury Rs 6,949 at the same store, Rs 8,470 at MD Computers, MRP Rs 15,999. Indian listings found were mostly Mercury; Black confirmed from launch coverage only."
+ },
+ "G-03-303": {
+  "price": 11999,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/razer-blackwidow-v4-x-yellow-switch/",
+  "specs": {
+   "Connection": "Wired USB",
+   "Layout": "Full size with 6 macro keys",
+   "Switches": "Razer Yellow linear or Green clicky"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Full-size wired mechanical keyboard with Razer Yellow or Green switches, six dedicated macro keys, Chroma RGB lighting, and stabilisers and PCB foam for quieter typing.",
+  "flag": "Price is the Yellow switch model; other Indian listings Rs 10,750 to 11,089, MSRP Rs 17,999. Colour carried from file, not stated in results."
+ },
+ "G-03-304": {
+  "price": 14750,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/corsair-k70-rgb-pro-mechanical-gaming-keyboard-backlit-rgb-led-cherry-mx-speed-silver-keyswitch/",
+  "specs": {
+   "Connection": "Wired, braided cable",
+   "Layout": "Full size, 104 keys",
+   "Switches": "Cherry MX Speed, Red or Brown",
+   "Polling": "8,000 Hz"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Full-size wired keyboard with an aluminium frame, Cherry MX switches, per-key RGB, double-shot PBT keycaps and an 8,000 Hz report rate.",
+  "flag": "Price is the Cherry MX Speed version. Not the K70 PRO with OPX switches. Page shows Add to cart but no explicit stock wording."
+ },
+ "G-03-305": {
+  "price": 6999,
+  "priceType": "selling",
+  "from": "adsstore.in",
+  "url": "https://adsstore.in/product/hyperx-alloy-origins-core-mechanical-gaming-keyboard-aqua-tactile-switches",
+  "specs": {
+   "Connection": "Detachable USB-C",
+   "Layout": "Tenkeyless",
+   "Switches": "HyperX Red, Aqua or Blue"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Tenkeyless wired keyboard with an aluminium body, detachable USB-C cable, HyperX switches rated for 80 million presses, and onboard memory for three profiles.",
+  "flag": "Price is the Aqua model, in stock at ADS Store, though that page also carries a stray Red Switch tag. Other listings Rs 6,427 to 10,999; launch MRP Rs 10,900."
+ },
+ "G-03-306": {
+  "productName": "Logitech G413 TKL SE Mechanical Gaming Keyboard",
+  "brand": "Logitech",
+  "price": 5499,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-G413-TKL-Mechanical-Keyboard/dp/B0B2RCQ3ZX",
+  "snippetOnly": true,
+  "specs": {
+   "Connection": "Wired USB-A",
+   "Platform": "Windows, macOS",
+   "Layout": "Tenkeyless",
+   "Switches": "Tactile mechanical"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Wired tenkeyless keyboard with tactile mechanical switches, PBT keycaps, a brushed aluminium top case, white LED backlighting and 6-key rollover.",
+  "flag": "Price from a search summary of Amazon.in: Rs 5,499 against list Rs 7,395; other snapshots of the listing ranged Rs 6,295 to 9,090 and one variant was unavailable. Weight left out because listings disagree (650 g and 680 g). No Flipkart listing found for the TKL SE.",
+  "swap": {
+   "status": "applied",
+   "from": "SteelSeries Apex Pro TKL",
+   "to": "Logitech G413 TKL SE Mechanical Gaming Keyboard",
+   "reason": "No Amazon.in, Flipkart or other Indian retailer listing confirmed for the Apex Pro TKL across two rounds of searching; only an aggregator figure of Rs 22,999 and a single reseller. G413 TKL SE is a tenkeyless gaming keyboard listed on Amazon.in and not already in the catalogue. It is not a like-for-like model: it lacks adjustable-actuation switches and is far cheaper."
+  }
+ },
+ "G-03-307": {
+  "price": 2590,
+  "priceType": "selling",
+  "from": "redragon.in",
+  "url": "https://redragon.in/products/kumara-k552-rgb-white-mechanical",
+  "specs": {
+   "Connection": "Wired USB",
+   "Layout": "Tenkeyless, 87 keys",
+   "Switches": "Outemu Blue",
+   "Weight": "0.88 kg"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Tenkeyless wired mechanical keyboard with 87 RGB-lit keys and Outemu Blue switches. The official listing gives a weight of 0.88 kg.",
+  "flag": "Price is the RGB White model at Redragon India; RGB Black is Rs 2,910, regular price Rs 4,490. The Rainbow version uses Red switches. Flipkart's White listing was sold out."
+ },
+ "G-04-401": {
+  "price": 1495,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://cashkaro.com/logitech-g102-usb-light-sync-gaming-mouse-with-customizable-rgb-lighting/CKS-Electronics-Accessories-000075",
+  "specs": {
+   "Connection": "Wired USB, 2.1 m cable",
+   "Switches/DPI": "200 to 8,000 DPI",
+   "Weight": "About 85 g"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Wired six-button gaming mouse with an optical sensor up to 8,000 DPI, RGB lighting and a 2.1 m cable, weighing about 85 g.",
+  "flag": "Price seen on a deal page, not read from Amazon.in; forum post cites a Rs 1,095 low, launch price Rs 1,995. Weight sources give 85 to 100 g."
+ },
+ "G-04-402": {
+  "price": 3250,
+  "priceType": "selling",
+  "from": "primeabgb.com",
+  "url": "https://www.primeabgb.com/online-price-reviews-india/logitech-g502-hero-high-performance-gaming-mouse-910-005472/",
+  "specs": {
+   "Connection": "Wired USB, 2.1 m cable",
+   "Switches/DPI": "HERO sensor, up to 16,000 DPI",
+   "Weight": "121 g, plus optional weights up to 18 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Wired gaming mouse with a HERO sensor, 11 programmable buttons and a 121 g body that takes up to 18 g of optional weights.",
+  "flag": "DPI differs by listing: PrimeABGB says 16,000 (HERO 16K), others say 25,600 (HERO 25K), so check the unit. PrimeABGB showed only 2 left. Colour carried from file and one reseller title."
+ },
+ "G-04-403": {
+  "price": 14695,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.smartprix.com/bytes/logitech-g-pro-x-superlight-2-launched-in-india-check-specifications-and-price-here/",
+  "specs": {
+   "Connection": "Lightspeed wireless",
+   "Switches/DPI": "HERO 2, up to 32,000 DPI, hybrid optical-mechanical",
+   "Weight": "60 g",
+   "Battery": "Up to 95 hours"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Magenta"
+  ],
+  "connectivity": "wireless",
+  "description": "60 g wireless esports mouse with a HERO 2 sensor up to 32,000 DPI, hybrid optical-mechanical switches and up to 95 hours of battery life.",
+  "flag": "Connectivity corrected from wired to wireless. Price is the Amazon figure from launch-era coverage and may be old; India launch price Rs 16,995. Not the cheaper SE (910-007649)."
+ },
+ "G-04-404": {
+  "price": 6480,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/razer-deathadder-v3/",
+  "specs": {
+   "Connection": "Wired, Speedflex cable",
+   "Switches/DPI": "Focus Pro 30K, up to 30,000 DPI",
+   "Weight": "59 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Ultra-light 59 g wired esports mouse with a Focus Pro 30K sensor, Gen-3 optical switches, six programmable buttons and 8,000 Hz HyperPolling.",
+  "flag": "Sold out at Variety Infotech when read. Other Indian listings show Rs 3,729 to 6,799, MRP Rs 12,999. White in the file was not confirmed and was dropped; all Indian listings found were black. Not the Pro or HyperSpeed."
+ },
+ "G-04-405": {
+  "price": 12489,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/razer-viper-v3-pro-wireless-mouse-blk/",
+  "specs": {
+   "Connection": "HyperSpeed Wireless, wired",
+   "Switches/DPI": "Focus Pro 35K Gen-2, up to 35,000 DPI",
+   "Weight": "54 g",
+   "Battery": "Up to 95 hours at 1000 Hz"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "54 g wireless esports mouse with a Focus Pro 35K Gen-2 sensor up to 35,000 DPI. Battery life runs up to 95 hours at 1000 Hz and falls at higher polling rates.",
+  "flag": "Connectivity corrected from wired to wireless. Price is the black model, shown with Add to cart; MRP Rs 25,999. Special editions cost more."
+ },
+ "G-04-406": {
+  "productName": "SteelSeries Rival 3 Gen 2",
+  "price": 3489,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/steelseries-rival-3-gen-2-wired-gaming-mouse-black/",
+  "specs": {
+   "Connection": "Wired USB",
+   "Switches/DPI": "Up to 8,500 DPI",
+   "Weight": "77 g"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Wired six-button gaming mouse with RGB lighting, a sensor that adjusts in 100-CPI steps up to 8,500 and a 77 g body.",
+  "flag": "Variety's listed original price of Rs 23,000 looks unreliable. White seen on an Amazon listing tracker, not an Indian store. DPI from a European listing. Not the Rival 3 Wireless.",
+  "swap": {
+   "status": "applied",
+   "from": "SteelSeries Rival 3",
+   "to": "SteelSeries Rival 3 Gen 2",
+   "reason": "No seller listing found in India for the original wired Rival 3, only a third-party estimate; the Gen 2 wired model is on sale at an Indian retailer."
+  }
+ },
+ "G-04-407": {
+  "price": 4649,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/hi/corsair-harpoon-rgb-wireless-optical-gaming-mouse-bluetooth/p/itm25e86e7fd9887",
+  "specs": {
+   "Connection": "Slipstream wireless, Bluetooth, USB",
+   "Switches/DPI": "Up to 10,000 DPI",
+   "Weight": "About 99 g",
+   "Battery": "Up to 60 hours with lighting off"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Wireless gaming mouse that links by Slipstream, Bluetooth or USB, with a sensor up to 10,000 DPI and up to 40 hours of Bluetooth use with lighting on or 60 with it off.",
+  "flag": "Connectivity corrected from wired to wireless. Out of stock at Flipkart and Smartprix (Rs 3,899, June 2026), so treat as recently sold. Sensor name differs by source and weight comes from a third-party page; colour carried from file."
+ },
+ "G-05-501": {
+  "productName": "Green Soul Monster Ultimate (S) Gaming Chair",
+  "price": 16999,
+  "priceType": "selling",
+  "from": "greensoul.online",
+  "url": "https://greensoul.online/products/monster-ultimate-s-gaming-chair",
+  "specs": {
+   "Material": "Spandex fabric and PU leather",
+   "Frame": "Metal",
+   "Swivel": "360 degrees"
+  },
+  "colours": [
+   "Black & Grey",
+   "Black & Red",
+   "Black & Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "Multi-functional ergonomic gaming chair upholstered in spandex fabric and PU leather over a metal frame, with 360-degree swivel, casters and height adjustment.",
+  "flag": "Renamed because the line has two sizes, (S) and (T); (S) is closest to the file's price. (T) is Rs 19,990. Price from a search snippet of the official site, whose page returned 429; Flipkart (S) Rs 18,990. Official colours given as single words, so the two-tone names are partly assumed. Specs may be shared across (S) and (T)."
+ },
+ "G-05-502": {
+  "productName": "Cooler Master Caliber R3 Gaming Chair",
+  "brand": "Cooler Master",
+  "price": 20299,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/cooler-master-caliber-r3-chair-blk/",
+  "specs": {
+   "Material": "Perforated PU with cut-foam backrest and cold-moulded foam seat",
+   "Frame": "Steel frame and steel base",
+   "Capacity": "Up to 150 kg",
+   "Recline": "90 to 180 degrees"
+  },
+  "colours": [
+   "Black",
+   "Purple/Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Reclining gaming chair in perforated PU over a steel frame and base, with a backrest that goes from 90 to 180 degrees and a rated load of 150 kg.",
+  "flag": "Third choice: Corsair TC100 Relaxed showed out of stock or email-when-available at every Indian seller readable (Variety Infotech, ADS Store, PrimeABGB, Vedant, KRG Kart); Razer Iskur V2 sold out at Variety Infotech and Black out of stock at EZPZ. Caliber R3 Black (CMI-GCR3-BK) shows Add to cart at Rs 20,299 at Variety Infotech, and a search snippet showed In Stock at MD Computers (page returned 403, not read directly), but PC Hub shows out of stock and PrimeABGB email-when-available, so stock is patchy. Specialist PC retailers only; no Amazon.in or Flipkart listing confirmed. Purple/Black price is higher (Rs 21,499 at Variety Infotech). Price dates not shown on pages.",
+  "swap": {
+   "status": "applied",
+   "from": "Secretlab TITAN Evo",
+   "to": "Cooler Master Caliber R3 Gaming Chair",
+   "reason": "User-approved exception to the same-brand rule: no evidence Secretlab sells TITAN Evo in India. Brand changed to Cooler Master because the two preferred chairs, Corsair TC100 Relaxed and Razer Iskur V2, could not be confirmed on sale in India."
+  }
+ },
+ "G-05-503": {
+  "price": 2550,
+  "priceType": "selling",
+  "from": "pcstudio.in",
+  "url": "https://pcstudio.in/product/logitech-g640-gaming-mouse-pad-large",
+  "specs": {
+   "Size": "460 x 400 x 3 mm",
+   "Material": "Cloth with rubber base"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Large cloth gaming mouse pad measuring 460 x 400 mm, with a low 3 mm profile and an anti-slip rubber base.",
+  "flag": "Other listings Rs 2,519 to 2,971; PrimeABGB out of stock. Logitech sells several regional SKUs of this pad."
+ },
+ "G-05-504": {
+  "price": 2689,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/steelseries-qck-heavy-mouse-pad-black/",
+  "specs": {
+   "Size": "450 x 400 x 6 mm",
+   "Material": "Cloth with non-slip rubber base"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Extra-thick cloth gaming mouse pad measuring 450 x 400 x 6 mm, with a non-slip rubber base.",
+  "flag": "Variety's page shows SKU 63008, which other retailers list as the Large, but gives no size; size is from non-Indian retailers. Its original price of Rs 7,999 looks unreliable. Shows Add to cart with no explicit stock wording."
+ },
+ "G-05-505": {
+  "price": 6499,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/razer-goliathus-extended-chroma-gaming-mouse-pad-quartz-customizable-chroma-rgb-lighting-soft-cloth-material-balanced-control-and-speed-non-slip-rubber-base-lwucgy-7684548",
+  "specs": {
+   "Size": "920 x 294 x 3 mm",
+   "Material": "Soft cloth with rubber base"
+  },
+  "colours": [
+   "Black",
+   "Quartz"
+  ],
+  "connectivity": "n/a",
+  "description": "Extended soft cloth mouse pad of 920 x 294 mm and 3 mm thick, with customisable Chroma RGB lighting and a non-slip rubber base.",
+  "flag": "Price is the Quartz model; black is estimated at about Rs 4,699 to 5,299 by a less reliable page. Connectivity left n/a from the file, but the RGB may need a USB link, which results did not state."
+ },
+ "G-05-506": {
+  "price": 2499,
+  "priceType": "selling",
+  "from": "computechstore.in",
+  "url": "https://computechstore.in/product/corsair-mm300-pro-mouse-pad-extended/",
+  "specs": {
+   "Size": "930 x 300 x 3 mm",
+   "Material": "Micro-weave fabric with textured rubber base"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Extended spill-proof cloth mouse pad of 930 x 300 mm and 3 mm thick, with a micro-weave fabric surface and a textured anti-skid rubber base.",
+  "flag": "Sold out at Computech Store when read, MRP Rs 3,400, so no in-stock Indian seller confirmed. An import reseller shows Rs 5,370. Colour confirmed from a Brazilian listing only."
+ }
+}

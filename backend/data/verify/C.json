@@ -1,0 +1,627 @@
+{
+ "C-01-101": {
+  "price": 6300,
+  "priceType": "selling",
+  "from": "trekkit.in",
+  "url": "https://trekkit.in/products/fjallraven-classic-kanken-backpack",
+  "specs": {
+   "Capacity": "16 L",
+   "Material": "Vinylon F fabric",
+   "Weight": "300 g",
+   "Size": "38 x 27 x 13 cm"
+  },
+  "colours": [
+   "Black",
+   "Ultramarine",
+   "Clay",
+   "Super Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A 16 litre square backpack in Vinylon F fabric with two side pockets, a front zip pocket and canvas straps that also allow tote-style carry.",
+  "flag": "One Indian source: trekkit.in, sale price from MRP 8999, low stock. Specs from Galaxus. Colours from a US listing, India availability unconfirmed; file colours Navy and Ochre not confirmed."
+ },
+ "C-01-102": {
+  "price": 13398,
+  "priceType": "estimate",
+  "from": "ubuy.co.in",
+  "url": "https://www.ubuy.co.in/product/M005SJ0VK-herschel-supply-co-little-america-backpack",
+  "specs": {
+   "Material": "Polyester",
+   "Size": "Padded sleeve fits 15 to 16 inch laptop"
+  },
+  "colours": [
+   "Black",
+   "Navy",
+   "Green",
+   "Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A polyester backpack with a magnetic strap closure, adjustable shoulder straps, ventilated mesh back padding and a padded fleece-lined laptop sleeve.",
+  "flag": "No major Indian retailer found. Price is Ubuy's US import listing, excluding shipping and customs. Capacity left out: sources give 21, 25 and 30 L. Colours from non-Indian listings; Ash Rose not confirmed."
+ },
+ "C-01-103": {
+  "price": 13986,
+  "priceType": "estimate",
+  "from": "ubuy.co.in",
+  "url": "https://www.ubuy.co.in/product/U5NV4K3LW-borealis-backpack-blue-eclipse-one-size",
+  "specs": {
+   "Capacity": "27 L",
+   "Material": "Polyester",
+   "Size": "Fits 15 inch laptop"
+  },
+  "colours": [
+   "Dark Cornflower",
+   "Blue Eclipse",
+   "Bark Mist/TNF Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 27 litre polyester day pack from The North Face with seven pockets and room for a 15 inch laptop.",
+  "flag": "Ubuy import price. Amazon.in lists the separate Borealis Laptop model at 28515 (low of 14369), and Borealis Classic is a third model; do not mix. Specs from Ubuy only. File colours TNF Black and Summit Navy not confirmed."
+ },
+ "C-01-104": {
+  "productName": "Peak Design Everyday Backpack 20L V2",
+  "price": 24690,
+  "priceType": "selling",
+  "from": "heyjimmy.in",
+  "url": "https://heyjimmy.in/products/peak-design-everyday-backpack-20l-v2",
+  "specs": {
+   "Capacity": "20 L",
+   "Material": "Weatherproof recycled shell",
+   "Size": "Fits 15 inch laptop"
+  },
+  "colours": [
+   "Black",
+   "Midnight",
+   "Charcoal",
+   "Ash"
+  ],
+  "connectivity": "n/a",
+  "description": "A 20 litre camera and everyday backpack with a magnetic top latch, dual side-access panels and three FlexFold dividers included.",
+  "flag": "heyjimmy.in shows it sold out at 24690 (regular 25900). imastudent.com lists 36594, inconsistent; the cheaper Zip v2 at 21990 is another model. Laptop fit and material from a single Sri Lankan listing. India colour stock unconfirmed."
+ },
+ "C-01-105": {
+  "productName": "Nike Brasilia 9.5 Training Backpack (Medium, 24L)",
+  "price": 2795,
+  "priceType": "mrp",
+  "from": "nike.in",
+  "url": "https://www.nike.in/nike-brasilia-9-5-training-backpack-medium-24l/p/24810526",
+  "specs": {
+   "Capacity": "24 L",
+   "Material": "At least 50% recycled polyester"
+  },
+  "colours": [
+   "Black/White",
+   "Sesame/Black/Pale Ivory",
+   "Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A 24 litre training backpack with a laptop sleeve, side mesh bottle pockets and an inside zip pocket, made from at least 50% recycled polyester.",
+  "flag": "Bay price is Nike's India MRP. SCS Sports shows 2515 and a third-party deal post shows 1118 at Flipkart (unverified). Sesame colourway size not stated. 9.5 is the model name, not capacity; a 30L XL also exists at 3495."
+ },
+ "C-01-106": {
+  "productName": "Quechua Arpenaz 100 20L Hiking Backpack",
+  "brand": "Quechua",
+  "price": 1299,
+  "priceType": "selling",
+  "from": "decathlon.in",
+  "url": "https://www.decathlon.in/p/8955898/20l-hiking-backpack-arpenaz-100-beige",
+  "specs": {
+   "Capacity": "20 L",
+   "Compartments": "Multiple, with a laptop pocket"
+  },
+  "colours": [
+   "Beige",
+   "Brown",
+   "Green",
+   "Purple"
+  ],
+  "connectivity": "n/a",
+  "description": "A 20 litre Decathlon day-hike backpack with several compartments, including a dedicated pocket for a laptop.",
+  "flag": "Decathlon India shows 1299 against MRP 2499 and 4 colours, naming only Beige and Brown; Green and Purple come from the UK store. File Blue and Black not confirmed. Weight and size not confirmed for this model, so left out."
+ },
+ "C-01-107": {
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Osprey-Farpoint-Mens-Travel-Backpack/dp/B0BDWZ26B3",
+  "specs": {
+   "Capacity": "40 L",
+   "Material": "450D recycled polyester",
+   "Size": "55 x 35 x 23 cm"
+  },
+  "colours": [
+   "Black",
+   "Tunnel Vision Grey",
+   "Antique Blue",
+   "Sawdust Tan"
+  ],
+  "connectivity": "n/a",
+  "description": "A 40 litre carry-on sized travel pack with a LightWire frame, hipbelt, zipped mesh pocket and external attachment loops. It is compatible with the Farpoint/Fairview Daypack.",
+  "flag": "Amazon.in prices disagree: 42552 main listing, 28523 (MRP 37938) on a search page, 41365 and 90660 from other sellers. The price could not be tied to one exact page. Flipkart's 999 listing has mismatched specs (nylon, 906 g), so it was dropped as the source. Weight left out: sources give 1.48 to 1.58 kg.",
+  "price": 42552,
+  "priceType": "selling",
+  "snippetOnly": true
+ },
+ "C-02-201": {
+  "productName": "tomtoc Defender-A13 Laptop Sleeve (14-inch)",
+  "price": 2999,
+  "priceType": "selling",
+  "from": "croma.com",
+  "url": "https://croma.com/tomtoc-defender-recycled-fabrics-laptop-sleeve-for-13-5-14-14-4-inch-laptop-water-resistant-black-/p/261022",
+  "specs": {
+   "Material": "Recycled fabric",
+   "Size": "Fits 13.5, 14 and 14.4 inch laptops",
+   "Weight": "260 g"
+  },
+  "colours": [
+   "Black",
+   "Navy Blue",
+   "Pink"
+  ],
+  "connectivity": "n/a",
+  "description": "A padded water-resistant sleeve in recycled fabric for 13.5 to 14.4 inch laptops, with soft lining, one main compartment and a one year warranty.",
+  "flag": "Renamed: no product is sold under the file name; Defender-A13 (A13-C01D01) is the closest match. Other A13 variants list 3499 at Reliance Digital and BigBasket. Weight is from the A13D2B2 variant. File Grey not confirmed for A13."
+ },
+ "C-02-202": {
+  "productName": "Incase ICON Sleeve with Woolenex for 14-inch MacBook Pro",
+  "price": 14485,
+  "priceType": "selling",
+  "from": "tanotis.com",
+  "url": "https://www.tanotis.com/products/incase-icon-sleeve-for-14-macbook-pro-graphite",
+  "specs": {
+   "Material": "300D and 600D Woolenex polyester",
+   "Weight": "230 g",
+   "Size": "14.3 x 10 x 0.5 in"
+  },
+  "colours": [
+   "Graphite",
+   "Navy",
+   "Pink"
+  ],
+  "connectivity": "n/a",
+  "description": "A slim sleeve for the 14 inch MacBook Pro (M1 to M4, 2021 to 2024), with a Woolenex polyester shell and a soft faux-fur lined interior.",
+  "flag": "One Indian source: Tanotis, price includes import duties. Closure conflicts between listings (zipper vs magnetic), so left out. Navy and Pink from non-Indian listings."
+ },
+ "C-02-203": {
+  "price": 5390,
+  "priceType": "selling",
+  "from": "heyjimmy.in",
+  "url": "https://heyjimmy.in/product/peak-design-travel-tech-pouch-charcoal-online-buy-india",
+  "specs": {
+   "Capacity": "2 L",
+   "Material": "Recycled 200D nylon with DWR",
+   "Weight": "288 g",
+   "Size": "15 x 24 x 10 cm"
+  },
+  "colours": [
+   "Black",
+   "Sage",
+   "Charcoal",
+   "Bone"
+  ],
+  "connectivity": "n/a",
+  "description": "A 2 litre organiser pouch for cables and small tech, with a water-resistant nylon shell, zipped and elastic pockets and a cable pass-through.",
+  "flag": "Sources disagree: heyjimmy 5390 (Charcoal, one unit, sold as Travel Tech Pouch) vs Tanotis import price 12990 (2L Eclipse). Do not mix with the 1L Small Tech Pouch. Weight and size approximate, from one review."
+ },
+ "C-02-204": {
+  "price": 8500,
+  "priceType": "mrp",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-smartfolio-for-2794-cm-11-inch-ipad-air-m2-charcoal-grey-lwgfnd-7671468",
+  "specs": {
+   "Size": "Fits iPad Air 11-inch (M2), 4th and 5th generation",
+   "Attachment": "Magnetic"
+  },
+  "colours": [
+   "Charcoal Grey",
+   "Light Violet",
+   "Sage",
+   "Denim"
+  ],
+  "connectivity": "n/a",
+  "description": "A thin magnetic cover protecting the front and back of the iPad Air. It wakes and sleeps the tablet on opening and closing, and folds for reading or typing angles.",
+  "flag": "Reliance Digital shows MRP 8500 with a 17% discount; the discounted figure was not returned, so MRP used. A newer sliding-design Folio covers M3/M4 models; these facts are for the M2 version."
+ },
+ "C-02-205": {
+  "productName": "Logitech Combo Touch for iPad Air 11-inch (M2)",
+  "price": 31845,
+  "priceType": "selling",
+  "from": "tanotis.com",
+  "url": "https://www.tanotis.com/products/logitech-combo-touch-backlit-keyboard-case-for-apple-11-ipad-air-m2-oxford-gray",
+  "specs": {
+   "Connection": "Smart Connector",
+   "Layout": "Detachable backlit keyboard with trackpad"
+  },
+  "colours": [
+   "Oxford Grey",
+   "Graphite",
+   "Sand"
+  ],
+  "connectivity": "wired",
+  "description": "A folio-style case with a detachable backlit keyboard and trackpad for the 11 inch iPad Air, connected by Smart Connector and fitted with a flexible kickstand.",
+  "flag": "Tanotis price includes import duties, so likely above local price. Croma lists Oxford Grey and Graphite but no price was returned. Set wired: physical Smart Connector, not a cable or wireless, so judgement call. Sand from an Australian listing."
+ },
+ "C-02-206": {
+  "price": 241,
+  "priceType": "estimate",
+  "from": "dealsmagnet.com",
+  "url": "https://www.dealsmagnet.com/deal/amazon-basics-laptop-sleeve-case-cover-pouch-for-1-1d0LB4Uk",
+  "specs": {
+   "Material": "Neoprene",
+   "Weight": "0.51 lb",
+   "Size": "14.96 x 11.02 x 0.79 in"
+  },
+  "colours": [
+   "Black",
+   "Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A simple padded neoprene sleeve with a zipper closure for 14 inch laptops, sold under Amazon's own Basics label.",
+  "flag": "No live Amazon.in listing returned. Price is a deal-site offer for the Grey version (Aug 2026, MRP 1099); other deals show 349 and 429 for Black. Several similar sleeves share this name. Dimensions from a UK listing of the Black."
+ },
+ "C-03-301": {
+  "specs": {
+   "Capacity": "4 to 11 cards plus coin pouch",
+   "Size": "102 x 90 mm",
+   "Weight": "70 g"
+  },
+  "colours": [
+   "Black",
+   "Cocoa",
+   "Ocean",
+   "Ranger Green"
+  ],
+  "connectivity": "n/a",
+  "description": "A slim leather wallet with RFID protection that holds 4 to 11 cards, flat notes and coins in a coin pouch. It carries a three year warranty.",
+  "flag": "Price is for Black RFID (MRP 8800). A second Modern Quests listing shows 7995 and Sienna 8995. Amazon.in shows about 14000 to 23000, so sources disagree. Colours come from a non-Indian retailer; Cocoa is confirmed on Amazon.in.",
+  "price": 7895,
+  "priceType": "selling",
+  "from": "modernquests.com",
+  "url": "https://www.modernquests.com/products/note-sleeve-wallet-black-rfid"
+ },
+ "C-03-302": {
+  "price": 7995,
+  "priceType": "selling",
+  "from": "modernquests.com",
+  "url": "https://modernquests.com/products/hide-and-seek-java-rfid",
+  "specs": {
+   "Material": "Leather",
+   "Size": "115 x 85 mm (Lo version)"
+  },
+  "colours": [
+   "Black",
+   "Java",
+   "Caramel",
+   "Navy"
+  ],
+  "connectivity": "n/a",
+  "description": "A slim leather billfold with quick-access card slots and a hidden compartment. The Hi and Lo versions suit taller or shorter banknotes.",
+  "flag": "One Indian source: price is for Java RFID (MRP 8800). Size is the Lo version; Hi and Lo differ. File colour Ocean not confirmed. Colours other than Java from non-Indian sources."
+ },
+ "C-03-303": {
+  "specs": {
+   "Material": "6061-T6 aluminium",
+   "Capacity": "12 cards",
+   "Weight": "60 g",
+   "Size": "86 x 54 x 6 mm"
+  },
+  "colours": [
+   "Gunmetal",
+   "Matte Black",
+   "Alpine Navy",
+   "Burnt Titanium"
+  ],
+  "connectivity": "n/a",
+  "description": "A minimalist RFID-blocking card holder made from 6061-T6 aluminium plates with replaceable elastic, holding up to 12 cards.",
+  "flag": "Aggregator figure only: tracker snapshot of 26 June 2026 for the Basecamp Orange colourway, which is not in colours; no price found for the listed colours, and the model behind it is not confirmed as aluminium. Tracker range 13820 to 34771. Tracker page URL not identified.",
+  "price": 14624,
+  "priceType": "estimate",
+  "from": "price tracker quoting amazon.in",
+  "snippetOnly": true
+ },
+ "C-03-304": {
+  "specs": {
+   "Capacity": "6 flat or 4 embossed cards, plus cash",
+   "Material": "Aluminium and European leather",
+   "Size": "65 x 102 x 21 mm",
+   "Weight": "72 g"
+  },
+  "colours": [
+   "Crisple Black",
+   "Vintage Grey/Black",
+   "Vintage Chocolate",
+   "Mat Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A compact wallet pairing an aluminium card case with a European leather outer and press-stud closure, holding six flat cards plus cash.",
+  "flag": "Price is for Crisple Pumpkin (MRP 9050), a colour not in the list. Listed colours come from European listings and are unconfirmed in India. The follow-up search for them failed with a rate-limit error.",
+  "price": 7240,
+  "priceType": "selling",
+  "from": "nykaa.com",
+  "url": "https://www.nykaa.com/secrid-mini-wallet-crisple-pumpkin/p/16823665"
+ },
+ "C-03-305": {
+  "price": 5900,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/iphone-15-finewoven-wallet-with-magsafe-black/p/493839277",
+  "specs": {
+   "Material": "FineWoven micro-twill",
+   "Capacity": "Up to 3 cards"
+  },
+  "colours": [
+   "Black",
+   "Taupe",
+   "Moss"
+  ],
+  "connectivity": "n/a",
+  "description": "A micro-twill wallet that snaps magnetically to the back of an iPhone, holds up to three cards and can show its last known location through Find My.",
+  "flag": "Price is from a listing labelled iPhone 15 (Black), date unclear. Ubuy lists 7236. Colours are those seen on Reliance Digital; palettes vary by generation and the current Indian list is unconfirmed."
+ },
+ "C-03-306": {
+  "specs": {
+   "Material": "Genuine leather",
+   "Capacity": "6 card pockets and removable ID window",
+   "Size": "13.6 x 3.4 x 11.6 cm"
+  },
+  "colours": [
+   "Black",
+   "Brown",
+   "Tan"
+  ],
+  "connectivity": "n/a",
+  "description": "A men's bifold wallet in soft genuine leather with six card pockets and a removable ID window.",
+  "flag": "Aggregator figure only: undated 30-day average for a navy two-fold leather wallet (range 1289 to 2999), not a live price. A September 2025 deal post gave 1299 for a brown one. Generic name covers many models; specs from one UAE listing, colours from eBay and PriceSpy.",
+  "price": 1989,
+  "priceType": "estimate",
+  "from": "pricehistoryapp.com quoting myntra.com",
+  "url": "https://pricehistoryapp.com/product/tommy-hilfiger-men-navy-blue-solid-two-fold-leather-wallet",
+  "snippetOnly": true
+ },
+ "C-04-401": {
+  "price": 16999,
+  "priceType": "launch-mrp",
+  "from": "amazon.in launch price, via startuptalky.com",
+  "url": "https://startuptalky.com/news/amazon-releases-kindle-paperwhite/",
+  "specs": {
+   "Storage": "16 GB",
+   "Display": "7 inch 300 ppi glare-free e-ink",
+   "Battery": "Up to 12 weeks"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A 7 inch e-reader with a 300 ppi glare-free display, adjustable warm light and 16 GB of storage. It connects over Wi-Fi only.",
+  "flag": "Connectivity corrected to wireless (Wi-Fi). Launch price April 2025; a blog gives list 21999 and a tracker showed 14999 in November 2025, out of stock. No current price found. File colour Jade dropped: reports say black only in India."
+ },
+ "C-04-402": {
+  "price": 1400,
+  "priceType": "estimate",
+  "from": "adanione.com",
+  "url": "https://www.adanione.com/csmia-mumbai-airport/duty-free/p/cabeau-travel-pillow-evolution-pillow-s3-cardinal/18A01162",
+  "specs": {
+   "Material": "Memory foam",
+   "Size": "24 x 25 x 13 cm"
+  },
+  "colours": [
+   "Jet Black",
+   "Indigo Blue",
+   "Slate Grey",
+   "Cardinal Red"
+  ],
+  "connectivity": "n/a",
+  "description": "A memory foam neck pillow with a strap system for attaching it to an aircraft seat, supplied with a travel bag. The straps are not for use in cars.",
+  "flag": "Weak price: Mumbai airport duty-free figure for Cardinal Red, marked unavailable, and well below 39.99 dollars in the US. Flipkart unavailable with no price. Weight left out: sources give 329 and 360 g. Colour names vary by retailer."
+ },
+ "C-04-403": {
+  "from": "apple.com/in",
+  "url": "https://www.apple.com/in/shop/product/mlfr4g/a/world-travel-adapter-kit",
+  "specs": {
+   "Model": "MLFR4G/A",
+   "Fit": "Fits existing Apple power adapters"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "An Apple kit of interchangeable plugs that fit an existing Apple power adapter, so it can be used in other countries' sockets.",
+  "flag": "Bought with an existing Apple adapter, not stand-alone",
+  "productName": "Apple World Travel Adapter Kit (MLFR4G/A)",
+  "price": 4900,
+  "priceType": "selling",
+  "swap": {
+   "status": "applied",
+   "from": "Apple World Travel Adapter Kit (MD837ZM/A)",
+   "to": "Apple World Travel Adapter Kit (MLFR4G/A)",
+   "reason": "The older MD837ZM/A has no reliable Indian price and is unavailable on Amazon.in; Apple's India store sells the current MLFR4G/A"
+  }
+ },
+ "C-04-404": {
+  "productName": "Eagle Creek Pack-It Isolate Cube Set XS/S/M",
+  "specs": {
+   "Material": "Ocean-recycled fabric",
+   "Size": "36 x 25 x 8 cm"
+  },
+  "colours": [
+   "Black",
+   "Storm Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A set of three lightweight zip packing cubes in sizes XS, S and M, made from ocean-recycled fabric, to keep a suitcase organised.",
+  "flag": "Amazon.in listing at import-level pricing; other Eagle Creek sets ₹5,200 to ₹13,700",
+  "price": 12384,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Eagle-Creek-Isolate-Packing-Travel/dp/B0BKZTQSZQ"
+ },
+ "C-04-405": {
+  "productName": "Victorinox Classic SD Alox Swiss Army Knife (Wild Jungle)",
+  "price": 3800,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Victorinox-Classic-Pocket-Colors-Collection/dp/B099G5R5V4",
+  "specs": {
+   "Size": "58 mm",
+   "Material": "Alox scales"
+  },
+  "colours": [
+   "Wild Jungle"
+  ],
+  "connectivity": "n/a",
+  "description": "A compact 58 mm Swiss Army pocket knife with ribbed Alox scales, from Victorinox's Classic Colors collection.",
+  "flag": "Classic SD prices run ₹1,649 to ₹3,960 by colour and function count, so a specific colour is named"
+ },
+ "C-04-406": {
+  "specs": {
+   "Capacity": "35 L",
+   "Material": "Polyester",
+   "Weight": "300 g"
+  },
+  "colours": [
+   "Black Twill",
+   "Blue Twill"
+  ],
+  "connectivity": "n/a",
+  "description": "A light 35 L polyester duffel that can also be worn as a backpack, for short trips and weekend travel.",
+  "flag": "Far below the file because it is a different product. MRP ₹2,199",
+  "productName": "Wildcraft Expedition DUF 35 Duffel Backpack",
+  "brand": "Wildcraft",
+  "price": 1119,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Wildcraft-Polyester-Backpack-Men-Women/dp/B0DSG6LT3M",
+  "swap": {
+   "status": "applied",
+   "from": "Peak Design Travel Duffel 35L",
+   "to": "Wildcraft Expedition DUF 35 Duffel Backpack",
+   "reason": "No Indian listing or rupee price found for the Peak Design duffel after three searches; this 35 L duffel is on Amazon.in"
+  }
+ },
+ "C-05-501": {
+  "price": 1026,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/milton-thermosteel-1000-ml-flask/p/itm621df53b6ea5d",
+  "snippetOnly": true,
+  "specs": {
+   "Capacity": "1000 ml",
+   "Material": "Stainless steel",
+   "Insulation": "Up to 24 hours hot or cold"
+  },
+  "colours": [
+   "Silver"
+  ],
+  "connectivity": "n/a",
+  "description": "A 1000 ml double-walled stainless steel vacuum flask with a flip lid. Flipkart listings state ISI certification and up to 24 hours of hot or cold retention.",
+  "flag": "Summary gave 1026 (MRP 1315, 30-day low 936) without tying it to one page; URL is the listing with the matching title. Another Flipkart listing shows 940. Listings disagree on whether it is leak proof, so that claim is left out."
+ },
+ "C-05-502": {
+  "price": 11453,
+  "priceType": "estimate",
+  "from": "price-history.in quoting amazon.in",
+  "url": "https://price-history.in/product/hydro-flask-water-bottle-wide-mouth-3gykktce",
+  "snippetOnly": true,
+  "specs": {
+   "Capacity": "32 oz",
+   "Material": "Insulated stainless steel"
+  },
+  "colours": [
+   "Black",
+   "Indigo",
+   "Oat"
+  ],
+  "connectivity": "n/a",
+  "description": "A 32 oz vacuum-insulated stainless steel water bottle with a wide mouth opening, sold in several colours and with a choice of lids.",
+  "flag": "Aggregator figure only and stale: Amazon.in tracker, updated 4 November 2025, for the Wide Mouth 2.0 32 oz in Black with Straw Lid. Range 10164 to 22407. Colours from US listings; no Indian colour list found. File colour White not confirmed, so dropped."
+ },
+ "C-05-503": {
+  "price": 14598,
+  "priceType": "estimate",
+  "from": "price tracker quoting amazon.in",
+  "snippetOnly": true,
+  "specs": {
+   "Capacity": "40 oz (1.18 L)",
+   "Material": "Insulated stainless steel",
+   "Lid": "FlowState 3-position lid with straw"
+  },
+  "colours": [
+   "Shale",
+   "Fuchsia",
+   "Vivid Violet",
+   "Wisteria Shine"
+  ],
+  "connectivity": "n/a",
+  "description": "A 40 oz (1.18 L) insulated stainless steel tumbler with a handle, a straw and a three-position FlowState lid. It is shaped to fit a car cup holder.",
+  "flag": "Aggregator figure only, for Shale (MRP 18598). Fuchsia was 20403 in July 2026, and other sites show 9131 to 13599. Listings at 2051 to 2599 on okiedoky.com look unreliable. Tracker page URL not identified. File colours Charcoal and Rose Quartz not confirmed, so dropped."
+ },
+ "C-05-504": {
+  "price": 2529,
+  "priceType": "selling",
+  "from": "bbag.in",
+  "url": "https://bbag.in/products/owala-freesip-tumbler-710ml-vacuum-insulated-leakproof-water-bottle",
+  "specs": {
+   "Capacity": "24 oz (710 ml)",
+   "Material": "Vacuum-insulated stainless steel"
+  },
+  "colours": [
+   "Green",
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A 24 oz (710 ml) vacuum-insulated stainless steel water bottle with a leakproof design and a built-in straw.",
+  "flag": "One small Indian retailer only, showing low stock, in Green. No Amazon.in listing found. Black and White come from US listings. File colours Shy Marshmallow and Very Very Dark not confirmed, so dropped."
+ },
+ "C-05-505": {
+  "specs": {
+   "Capacity": "1 L (32 oz)",
+   "Material": "Tritan, BPA-free"
+  },
+  "colours": [
+   "Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A 32 oz Tritan water bottle with a wide mouth that fits most filters, free of BPA, BPS and phthalates, and made in the USA.",
+  "flag": "Amazon.in ₹2,951 to ₹5,342 by colour and seller, list ₹5,310",
+  "price": 3125,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Blue-Nalgene-Tritan-BPA-Free-Bottle/dp/B001NCDE8O"
+ },
+ "C-05-506": {
+  "price": 3690,
+  "priceType": "estimate",
+  "from": "price tracker quoting amazon.in",
+  "snippetOnly": true,
+  "specs": {
+   "Capacity": "650 ml",
+   "Material": "Tritan, BPA-free",
+   "Filter": "Removes bacteria, parasites and microplastics"
+  },
+  "colours": [
+   "Laguna Teal",
+   "Nordic Noir",
+   "Cherry Blossom",
+   "Icelandic Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A 650 ml BPA-free Tritan water bottle with a built-in filter that retailers say removes bacteria, parasites and microplastics.",
+  "flag": "Aggregator figure only and sources disagree: trackers show 3229 to 3790, one later shows 10605, and Rocare India shows 1600 out of stock. Tracker page URL not identified. Laguna Teal confirmed on Flipkart; other colours from Australian listings. File colours Blue and Black not confirmed, so dropped."
+ },
+ "C-05-507": {
+  "productName": "Contigo Autoseal West Loop Travel Mug (470 ml)",
+  "price": 2249,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Contigo-AutoSeal-Stainless-Travel-Black/dp/B07TN8SXSP",
+  "specs": {
+   "Capacity": "470 ml",
+   "Material": "Vacuum-insulated stainless steel"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 470 ml vacuum-insulated stainless steel travel mug with a leakproof Autoseal lid for hot and cold drinks on the move.",
+  "flag": "Other sizes and third-party sellers run ₹4,771 to ₹6,464"
+ }
+}

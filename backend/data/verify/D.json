@@ -1,0 +1,615 @@
+{
+ "D-01-101": {
+  "price": 9699,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/logitech-mx-keys-s-pale-grey/",
+  "specs": {
+   "Connection": "Bluetooth and 2.4 GHz, up to 3 devices",
+   "Layout": "Full-size with numpad, scissor switches",
+   "Battery": "USB-C rechargeable"
+  },
+  "colours": [
+   "Graphite",
+   "Pale Grey"
+  ],
+  "connectivity": "wireless",
+  "description": "Full-size wireless keyboard with scissor keys, a numeric pad and backlighting that reacts to your hands. It charges over USB-C and pairs with up to three devices.",
+  "flag": "Price is from a smaller retailer; Smartprix showed 10,995 in an older list. No major-retailer price in results."
+ },
+ "D-01-102": {
+  "price": 3195,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/logitech-k380s-pebble-keys-2-multi-device-bluetooth-wireless-keyboard-rose-lnaf9m-7534347",
+  "specs": {
+   "Connection": "Bluetooth, up to 3 devices (Easy-Switch)",
+   "Layout": "Compact with circular keys and customisable FN keys"
+  },
+  "colours": [
+   "Graphite",
+   "White",
+   "Rose"
+  ],
+  "connectivity": "wireless",
+  "description": "Slim Bluetooth keyboard with round keys and customisable function keys. Easy-Switch moves between three paired devices, and the body uses at least 49% recycled plastic.",
+  "flag": "Price is the Rose variant; Reliance Digital listed White at 3,495. Launch price 4,195. Sources disagree on colours; the three used are Reliance Digital's. File's Off-white read as White."
+ },
+ "D-01-103": {
+  "price": 2799,
+  "priceType": "selling",
+  "from": "krgkart.com",
+  "url": "https://www.krgkart.com/product/logitech-k380-wireless-bluetooth-keyboard/",
+  "specs": {
+   "Connection": "Bluetooth 3.0, 10 m range, up to 3 devices",
+   "Battery": "Up to 24 months on 2 AAA cells"
+  },
+  "colours": [
+   "Black",
+   "Off-White",
+   "Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Compact Bluetooth keyboard with low-profile scissor keys that pairs with up to three devices. Two AAA batteries are rated for up to 24 months of use.",
+  "flag": "Price from a small retailer. File colours Dark Grey and Rose not confirmed; colours used come from theitdepot (Black), Croma (Off-White) and launch coverage (Blue). Superseded by the K380s, so stock may be thin."
+ },
+ "D-01-104": {
+  "productName": "Apple Magic Keyboard with Touch ID (USB-C)",
+  "price": 14500,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-magic-keyboard-with-touch-id-m2vbk3-8697761",
+  "specs": {
+   "Connection": "Bluetooth, USB-C for charging",
+   "Layout": "Compact, no numeric keypad"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Wireless Apple keyboard with a Touch ID sensor for Mac models with Apple silicon. It recharges through a USB-C port and comes with a woven USB-C charge cable.",
+  "flag": "Model MXCK3HN/A. Flipkart's 12,077 appears to be the non-Touch ID MXCL3HN/A, so it was not used."
+ },
+ "D-01-105": {
+  "productName": "Keychron K2 Wireless Mechanical Keyboard (Version 2)",
+  "price": 7504,
+  "priceType": "selling",
+  "from": "keychron.in",
+  "url": "https://keychron.in/product/keychron-",
+  "specs": {
+   "Connection": "Bluetooth 5.1 and detachable USB-C",
+   "Layout": "75%, Gateron switches",
+   "Weight": "About 663 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Compact 75% mechanical keyboard that works over Bluetooth 5.1 or a detachable USB-C cable. It uses Gateron switches, with white or RGB backlight versions.",
+  "flag": "Prices vary: Meckeys 7,199, Prime ABGB 9,985. Switch type varies by variant. Colour Black carried from file, not confirmed."
+ },
+ "D-01-106": {
+  "productName": "Keychron K8 Pro QMK/VIA Wireless Mechanical Keyboard",
+  "price": 10442,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/computer_keyboards/keychron-brand",
+  "specs": {
+   "Connection": "Bluetooth 5.1",
+   "Layout": "80% TKL, hot-swappable, QMK/VIA",
+   "Battery": "4000 mAh rechargeable"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Tenkeyless 80% wireless mechanical keyboard with hot-swappable switches and QMK/VIA key remapping. It connects over Bluetooth 5.1 and has a 4000 mAh battery.",
+  "flag": "Aggregator price only; Smartprix (June 2026) marks it out of stock and some retailers list it as discontinued. Recently sold in India, so kept. Colour Black carried from file, not confirmed."
+ },
+ "D-02-201": {
+  "price": 6995,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/logitech-mx-master-3s-right-handed-touch-mouse/p/itm271ade01ff274",
+  "specs": {
+   "Connection": "Bluetooth LE and Logi Bolt, up to 3 devices",
+   "DPI": "8,000 optical sensor",
+   "Battery": "Up to 70 days per charge, USB-C"
+  },
+  "colours": [
+   "Graphite",
+   "Pale Grey"
+  ],
+  "connectivity": "wireless",
+  "description": "Right-handed wireless mouse with an 8,000 DPI sensor that tracks on glass, a MagSpeed scroll wheel and quiet clicks. It pairs with up to three devices.",
+  "flag": "Flipkart's 6,995 is well below other sellers (about 8,979 to 8,999; launch 10,995). Black and White also appear at some retailers."
+ },
+ "D-02-202": {
+  "price": 7495,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/logitech-mx-anywhere-3s-wireless-optical-mouse-bluetooth/p/itmb10f5865cf6d4",
+  "specs": {
+   "Connection": "Bluetooth LE and Logi Bolt, up to 3 devices",
+   "DPI": "8,000",
+   "Battery": "USB-C rechargeable"
+  },
+  "colours": [
+   "Graphite",
+   "Pale Grey",
+   "Rose"
+  ],
+  "connectivity": "wireless",
+  "description": "Compact wireless mouse with an 8,000 DPI sensor and quieter clicks than the MX Anywhere 3. It charges over USB-C and works with up to three devices.",
+  "flag": "Other sellers lower: MDComputers 5,790, Shwetha Computers 5,999; MSRP 9,225."
+ },
+ "D-02-203": {
+  "price": 5795,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/logitech-lift-vertical-ergonomic-multi-device-upto-3-device-wireless-optical-mouse/p/itmc75445fe48632",
+  "specs": {
+   "Connection": "Bluetooth and Logi Bolt USB receiver",
+   "DPI": "400 to 4,000",
+   "Battery": "Up to 24 months on 1 AA",
+   "Weight": "125 g"
+  },
+  "colours": [
+   "Graphite",
+   "Pale Grey",
+   "Rose"
+  ],
+  "connectivity": "wireless",
+  "description": "Vertical wireless mouse with a 57-degree grip, shaped for small to medium hands. It connects by Bluetooth or Logi Bolt and runs on a single AA battery.",
+  "flag": "Flipkart price is for the Rose model; other sellers 4,299 to 5,399. Weight from one listing only. Pale Grey added from retailer listings."
+ },
+ "D-02-204": {
+  "price": 1495,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/logitech-pebble-2-m350s-wireless-ambidextrous-optical-mouse-bluetooth/p/itm92cb79bba13d0",
+  "specs": {
+   "Connection": "Bluetooth, Easy-Switch",
+   "DPI": "4,000",
+   "Battery": "Up to 2 years on 1 AA",
+   "Weight": "76 g"
+  },
+  "colours": [
+   "Graphite",
+   "Rose",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Slim, quiet Bluetooth mouse with Silent Touch clicks and a 4,000 DPI optical sensor. A single AA battery is rated for up to two years of use.",
+  "flag": "One source mentions a 2.4 GHz USB receiver, not used. DPI and weight come from a US distributor listing. Reliance Digital listed White at 1,649."
+ },
+ "D-02-205": {
+  "price": 1199,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/logitech-m331-silent-plus-wireless-optical-mouse-black",
+  "specs": {
+   "Connection": "2.4 GHz nano receiver, up to 10 m",
+   "DPI": "1,000",
+   "Battery": "Up to 24 months on 1 AA"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Red"
+  ],
+  "connectivity": "wireless",
+  "description": "Quiet wireless mouse using SilentTouch to cut click noise by over 90%. It links through a 2.4 GHz nano receiver and runs on one AA battery.",
+  "flag": "Mysmartprice's 6400 DPI conflicts with Flipkart and Croma's 1000 DPI; 1000 used."
+ },
+ "D-02-206": {
+  "price": 7500,
+  "priceType": "selling",
+  "from": "amazon.in (via thetechoutlook.com)",
+  "url": "https://www.thetechoutlook.com/offers/apple-magic-mouse-is-now-available-on-amazon-at-₹7500/",
+  "specs": {
+   "Connection": "Wireless, USB-C port on the base for charging",
+   "Battery": "About a month or more per charge"
+  },
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Rechargeable Apple mouse with a Multi-Touch top surface. Its USB-C port sits on the underside, so it cannot be used while charging.",
+  "flag": "7,500 is a reported Amazon deal of uncertain date; a March 2026 price table still lists 9,500, which may be the safer figure. Wireless standard not stated in results."
+ },
+ "D-02-207": {
+  "productName": "Logitech M720 Triathlon Multi-Device Wireless Mouse",
+  "brand": "Logitech",
+  "price": 5495,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-Triathlon-Multi-Device-Wireless-Mouse/dp/B01M330LFW",
+  "specs": {
+   "Connection": "Bluetooth or Logitech Unifying USB receiver",
+   "DPI": "1000",
+   "Battery": "Up to 24 months on one AA cell",
+   "Weight": "135 g"
+  },
+  "colours": [
+   "Graphite Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Right-handed multi-device mouse with six buttons and a 1000 DPI sensor. It connects by Bluetooth or a Unifying receiver and runs on one AA battery.",
+  "flag": "Flipkart showed about 3,600 to 3,995 for the same mouse against Amazon.in's 5,495. Graphite Black is the only colour seen in Indian listings.",
+  "swap": {
+   "status": "applied",
+   "from": "Microsoft Bluetooth Ergonomic Mouse",
+   "to": "Logitech M720 Triathlon Multi-Device Wireless Mouse",
+   "reason": "No India listing or rupee price found for the Microsoft mouse in two rounds of searching. The M720 is in the same bay, clearly listed on Amazon.in and Flipkart, and not already in the catalogue."
+  }
+ },
+ "D-03-301": {
+  "productName": "Dell UltraSharp U2723QE 27-inch 4K USB-C Hub Monitor",
+  "price": 49398,
+  "priceType": "estimate",
+  "from": "smartprix.com (lowest seller Flipkart)",
+  "url": "https://www.smartprix.com/monitors/dell-ultrasharp-u2723qe-ultra-hd-4k-monitor-ppd1e6kibmbv",
+  "specs": {
+   "Connection": "USB-C hub",
+   "Size": "27-inch 4K UHD IPS, 60 Hz",
+   "Weight": "4.48 kg"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "27-inch 4K IPS monitor with a built-in USB-C hub, rated at 400 cd/m2 brightness and a 2000:1 contrast ratio. It runs at 60 Hz.",
+  "flag": "Aggregator price (July 2026). Response time differs by listing (5 ms vs 8 ms), so left out. Colour Black carried from file, not confirmed."
+ },
+ "D-03-302": {
+  "price": 12086,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/dell-s2421hn-24-inch-6096-cm-full-hd-ips-ultra-thin-bezel-monitor-adaptive-amd-freesync-silver-kzh57k",
+  "specs": {
+   "Connection": "2 x HDMI 1.4",
+   "Size": "24-inch Full HD IPS, 75 Hz, 4 ms"
+  },
+  "colours": [
+   "Silver"
+  ],
+  "connectivity": "wired",
+  "description": "24-inch Full HD IPS monitor with a 75 Hz refresh rate, AMD FreeSync, 99% sRGB coverage and ultra-thin bezels. It takes two HDMI inputs and supports VESA mounts.",
+  "flag": "File colour Black replaced with Silver from the Reliance Digital title; Black not confirmed for this model. Many sellers out of stock. Reliance title mentions DisplayPort; Flipkart and Smartprix list HDMI x2. Sellers mix S2421HN and S2421HNM."
+ },
+ "D-03-303": {
+  "price": 37500,
+  "priceType": "selling",
+  "from": "Indian retailer (seller not named in search summary)",
+  "specs": {
+   "Connection": "HDMI, DisplayPort, USB-C with 65 W power delivery",
+   "Size": "27-inch 4K UHD IPS, 60 Hz"
+  },
+  "colours": [
+   "Grey"
+  ],
+  "connectivity": "wired",
+  "description": "27-inch 4K IPS monitor for design work covering 99% of Rec. 709, with HDR10 support and factory calibration. It takes HDMI, DisplayPort and USB-C inputs.",
+  "flag": "Exact seller not identifiable and no major-retailer price; listings 35,099 to 37,500, MRP 54,990, several out of stock. 65 W and calibration each from one listing. Colour Grey carried from file, not confirmed. Not the PD2705UA."
+ },
+ "D-03-304": {
+  "productName": "Apple Studio Display (2026)",
+  "price": 189900,
+  "priceType": "selling",
+  "from": "amazon.in (via smartprix.com)",
+  "url": "https://www.smartprix.com/monitors/apple-studio-display-27-inch-5k-monitor-ppd1rmnx3j71",
+  "specs": {
+   "Connection": "Thunderbolt 5",
+   "Size": "27-inch 5K Retina"
+  },
+  "colours": [
+   "Silver"
+  ],
+  "connectivity": "wired",
+  "description": "27-inch 5K Retina display with a 12-megapixel Center Stage camera with Desk View, built-in microphones and speakers, and Thunderbolt 5 connectivity.",
+  "flag": "Price is the standard-glass model; Smartprix last changed 14 Apr 2026. Colour Silver carried from file, not confirmed: one source says black and white, and the follow-up search could not run.",
+  "swap": {
+   "status": "applied",
+   "from": "Apple Studio Display",
+   "to": "Apple Studio Display (2026)",
+   "reason": "The 2022 model at 1,59,900 was succeeded by the 2026 model, launched in India in March 2026 at 1,89,900."
+  }
+ },
+ "D-03-305": {
+  "productName": "Samsung Odyssey G5 27-inch QHD Curved Gaming Monitor (LS27CG550EWXXL)",
+  "price": 17599,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "specs": {
+   "Size": "27-inch QHD, 1000R curve",
+   "Refresh": "165 Hz, 1 ms"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "27-inch curved gaming monitor with QHD resolution, a tight 1000R curve, a 165 Hz refresh rate and a 1 ms response time.",
+  "flag": "File name was generic; pinned to LS27CG550EWXXL, the model with an Amazon India figure. Price from a third-party mention, no page URL. LS27AG550EWXXL is 21,100 to 22,399. Colour Black carried from file, not confirmed."
+ },
+ "D-03-306": {
+  "productName": "Ergotron LX Desk Mount Monitor Arm",
+  "price": 37915,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Ergotron-Desk-Mount-LCD-Arm/dp/B00358RIRC",
+  "specs": {
+   "Size": "Monitors up to 34 inches",
+   "Capacity": "Displays of 7 to 25 lb"
+  },
+  "colours": [
+   "Polished Aluminium",
+   "Matte Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Desk-mounted single monitor arm for screens up to 34 inches and 7 to 25 lb. Cables route under the arm to keep the desk clear.",
+  "flag": "Amazon.in figure rounded from 37,914.75; another Amazon.in page shows 39,360 and Tanotis lists the white arm at 33,200 with import duties. Colours come from overseas and reseller listings. Weight range is from the Tanotis white listing."
+ },
+ "D-03-307": {
+  "price": 8276,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Rain-Design-10075-mStand-Laptop/dp/B095RSLNMY",
+  "specs": {
+   "Material": "Single piece of aluminium, also acts as a heatsink",
+   "Size": "Lifts the screen about 5.9 inches; laptops under about 10.3 inches deep"
+  },
+  "colours": [
+   "Silver",
+   "Space Gray",
+   "Black",
+   "Starlight"
+  ],
+  "connectivity": "n/a",
+  "description": "Fixed-height laptop stand machined from one piece of aluminium, with a cable cut-out at the back. The body doubles as a heatsink and it does not fold.",
+  "flag": "Price is for the Black model (10075). Amazon.in prices vary widely by colour and seller, 6,860 to 13,508; Starlight is 11,565. Specs come from getpc.co.in and reseller summaries, not a retailer spec table."
+ },
+ "D-04-401": {
+  "price": 15990,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://fonearena.com/blog/?p=408555",
+  "specs": {
+   "Power": "Dual-colour LED, CRI Ra 95 or higher",
+   "Size": "800 lux centre illuminance at 45 cm height"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Monitor-top LED light bar with a wireless controller on the desk. Dual-colour LEDs have a colour rendering index of Ra 95 or higher.",
+  "flag": "Black is the file colour and was not confirmed. Price is the launch offer against a listed 19,990. Amazon.in listing B0CJRSTPVC shows unavailable on one page, with stale-looking 18,799 and 25,115 on others; the Halo 2 (17,490) is now the current model, so sale of the original is unconfirmed."
+ },
+ "D-04-402": {
+  "price": 11799,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/BenQ-ScreenBar-Auto-Dimming-Adjustment-ScreenBar_Black/dp/B076VNFZJG",
+  "specs": {
+   "Connection": "USB powered, USB-C cable",
+   "Weight": "530 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Original BenQ ScreenBar e-Reading LED lamp that sits on top of a computer monitor. It has auto-dimming and is sold on Amazon.in in black.",
+  "flag": "Weight and power from non-Indian listings",
+  "snippetOnly": true
+ },
+ "D-04-403": {
+  "price": 29225,
+  "priceType": "selling",
+  "from": "tanotis.com",
+  "url": "https://tanotis.com/products/elgato-key-light",
+  "specs": {
+   "Power": "Up to 45 W",
+   "Connection": "Wi-Fi 802.11 b/g/n",
+   "Size": "2800 lumens, 2900 to 7000 K"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "App-controlled LED studio panel rated at 2800 lumens with a 2900 to 7000 K colour range. It links over Wi-Fi and comes with a desk clamp.",
+  "flag": "Only import resellers priced it: Tanotis 29,225 with GST and duties, Poshace 31,599. Amazon.in lists the product but no price was seen. Black is the file colour, unconfirmed. Sources disagree on 5 GHz Wi-Fi support. Connectivity changed from n/a."
+ },
+ "D-04-404": {
+  "price": 13699,
+  "priceType": "selling",
+  "from": "varietyinfotech.com",
+  "url": "https://varietyinfotech.com/product/elgato-key-light-air-led-desk-light-for-streaming-1400-lumens/",
+  "specs": {
+   "Connection": "Wi-Fi 2.4 GHz 802.11 b/g/n",
+   "Size": "1400 lumens"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Smaller Elgato LED desk light for streaming, rated at 1400 lumens, model 10LAB9901. It connects over 2.4 GHz Wi-Fi.",
+  "flag": "Black is the file colour, unconfirmed. Priced by small Indian retailers, Variety Infotech 13,699 and SMC International 13,499; getpc.co.in estimates 9,600 to 10,600. An MK.2 version with 2100 lumens is also on Amazon.in, so the original may be fading out. Connectivity changed from n/a."
+ },
+ "D-04-405": {
+  "price": 2091,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://reliancedigital.in/product/mi-smart-led-desk-lamp-1s-with-wi-fi-enabled-adjustable-colour-temperature-mjtd01syl-l2exy2",
+  "specs": {
+   "Power": "10 W",
+   "Connection": "Wi-Fi, Mi Home app, Alexa, Google Assistant, HomeKit",
+   "Size": "2700 to 6500 K colour temperature"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Wi-Fi desk lamp with an all-metal body and a foldable head that tilts through 135 degrees. Brightness and colour temperature change from the Mi Home app or by voice.",
+  "flag": "White seen only on overseas listings. MRP 2,999. Lumen figure omitted because sources disagree, 300 against 520. Reliance Digital price date unknown. Connectivity changed from n/a."
+ },
+ "D-04-406": {
+  "productName": "IKEA FORSÅ Work Lamp (Nickel-plated)",
+  "price": 3490,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/forsa-work-lamp-nickel-plated-50314022",
+  "specs": {
+   "Power": "Max 40 W, bulb sold separately",
+   "Size": "35 cm high, 15 cm base, 12 cm shade",
+   "Material": "Nickel-plated finish"
+  },
+  "colours": [
+   "Nickel-plated"
+  ],
+  "connectivity": "n/a",
+  "description": "Adjustable desk work lamp in a nickel-plated finish, 35 cm high with a 1.8 m cord. It takes an E14 bulb, which is sold separately.",
+  "flag": "File colours Black and White not confirmed for India; those appear only on other countries' IKEA sites. An older IKEA India brochure shows 1,990 against 3,490 on the product page."
+ },
+ "D-04-407": {
+  "price": 1290,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/tertial-work-lamp-dark-grey-20450803/",
+  "specs": {
+   "Power": "Max 13 W, bulb sold separately",
+   "Size": "17 cm shade, 1.5 m cord"
+  },
+  "colours": [
+   "Dark Grey",
+   "Light Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "Adjustable work lamp with a 17 cm shade and a 1.5 m cord. It takes an E27 bulb, which is sold separately.",
+  "flag": "File colour White dropped: not found on IKEA India. IKEA India brochures also show beige at 1,290 and black at 1,490, which may be older."
+ },
+ "D-05-501": {
+  "price": 7995,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-C920-Pro-Webcam-Microphones/dp/B006JH8T3S",
+  "specs": {
+   "Connection": "USB 2.0, 1.5 m cable",
+   "Size": "1080p at 30 fps, 78-degree view"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Full HD USB webcam recording 1080p at 30 fps through a glass autofocus lens with a 78-degree view. It has a built-in stereo microphone and a universal clip.",
+  "flag": "Black is the file colour, not stated in results. Amazon.in configurations range to 11,894; Flipkart also about 7,995."
+ },
+ "D-05-502": {
+  "price": 24790,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Logitech-Calling-Noise-Canceling-Correction-Microsoft/dp/B09NBWWP79",
+  "specs": {
+   "Connection": "USB-A to USB-C cable",
+   "Size": "4K, or 90 fps at 720p, 5x digital zoom",
+   "Weight": "63 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "4K USB webcam with autofocus, adjustable field of view and RightLight 3 light correction. A privacy shutter and mounting clip come in the box.",
+  "flag": "Flipkart showed 22,490 and a sold-out 16,499. Weight is from Flipkart only. Do not mix with the MX Brio or Brio for Business listings."
+ },
+ "D-05-503": {
+  "price": 17499,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Elgato-Facecam-Fixed-Focus-Optimized-Detachable/dp/B0973DV11T",
+  "specs": {
+   "Connection": "Detachable USB-C",
+   "Size": "Uncompressed 1080p60, up to 82-degree view, f/2.4 fixed focus"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "Full HD webcam with uncompressed 1080p60 output, a Sony STARVIS sensor and a fixed-focus f/2.4 lens. Onboard memory recalls image settings.",
+  "snippetOnly": true,
+  "flag": "Amazon.in listings conflict: 17,499 from several sellers against 29,546. Elgato Facecam MK.2 (23,432) and Neo (7,399) are separate models."
+ },
+ "D-05-504": {
+  "productName": "Insta360 Link 2 4K AI Webcam",
+  "price": 24990,
+  "priceType": "selling",
+  "from": "insta360india.com",
+  "url": "https://insta360india.com/products/insta360-link-2",
+  "specs": {
+   "Size": "1/2 inch sensor",
+   "Connection": "4K video at 30 fps"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "A 4K webcam on a motorised gimbal with AI tracking, a whiteboard mode, a desk view, autofocus and HDR, using a 1/2-inch sensor.",
+  "swap": {
+   "status": "applied",
+   "from": "Insta360 Link AI Webcam",
+   "to": "Insta360 Link 2 4K AI Webcam",
+   "reason": "No Indian price found for the original 2022 Link; the Link 2 is its successor and is sold on Insta360's India site"
+  },
+  "flag": "Colour carried from the file, not confirmed"
+ },
+ "D-05-505": {
+  "price": 7646,
+  "priceType": "selling",
+  "snippetOnly": true,
+  "from": "pricehistory.app",
+  "url": "https://pricehistory.app/p/anker-341-usb-c-hub-7-1-9fPokASj",
+  "specs": {
+   "Connection": "HDMI 4K at 30 Hz, USB-C, USB-A, Ethernet",
+   "Battery": "100 W PD input, 85 W pass-through"
+  },
+  "colours": [
+   "Grey"
+  ],
+  "connectivity": "wired",
+  "description": "A 7-in-1 USB-C hub adding HDMI at up to 4K 30 Hz, USB-A and USB-C data ports and Ethernet, with up to 85 W of laptop pass-through charging.",
+  "flag": "Tracker price from April 2026, more than double the file; getpc.co.in says ₹3,800 to ₹4,200 but looks unreliable. Colour carried from the file. 'Battery' row is power delivery, the desk label set has no power row"
+ },
+ "D-05-506": {
+  "price": 5800,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-mj1k2zma-usb-c-to-digital-av-multiport-adapter-lyt063-7995597",
+  "specs": {
+   "Connection": "HDMI, USB-A, USB-C charging",
+   "Size": "4K at 60 Hz output"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "An Apple adapter that adds HDMI video at up to 4K 60 Hz, a USB-A port and USB-C charging to a Mac or iPad with a USB-C port.",
+  "flag": "Reliance lists model MJ1K2ZM/A; current model is MUF82ZM/A at ₹5,865 to ₹6,900 elsewhere"
+ },
+ "D-05-507": {
+  "price": 67799,
+  "priceType": "estimate",
+  "from": "poshace.com",
+  "url": "https://poshace.com/caldigit-ts4-thunderbolt-4-dock-with-18-ports-98w-charging-40gbps-usb-a-usb-c-25gbe-8k-displays-compatible-with-mac-pc-and-chrome.html",
+  "specs": {
+   "Connection": "Thunderbolt 4, 40 Gb/s",
+   "Size": "18 ports",
+   "Battery": "98 W host charging"
+  },
+  "colours": [
+   "Space Grey"
+  ],
+  "connectivity": "wired",
+  "description": "An 18-port Thunderbolt 4 dock with three 40 Gb/s ports, five USB-A, three USB-C, 2.5 GbE, SD UHS-II and 98 W of host charging.",
+  "flag": "No major Indian retailer found; Indian import listings run ₹67,799 to ₹84,400 against ₹39,999 in the file. Colour carried from the file. 'Battery' row is host charging"
+ }
+}

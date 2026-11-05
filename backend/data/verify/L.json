@@ -1,0 +1,637 @@
+{
+ "L-01-101": {
+  "price": 6791,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/philips-6-watts-915005202401-hue-go-smart-light/p/491431682",
+  "specs": {
+   "Power": "Up to 6 W",
+   "Battery": "About 4 h to fully charge",
+   "Size": "About 35 x 14.2 cm",
+   "Connection": "Bluetooth, Hue Bridge optional"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A portable battery-powered table lamp with a Hue app and voice control. It connects over Bluetooth, and a Hue Bridge unlocks the wider Hue system.",
+  "flag": "Only Indian price is an undated Reliance Digital listing for model 915005202401, which may be an older version. Weight differs between sources (973 g vs 1.28 kg), so it is left out. Colours came from non-Indian listings."
+ },
+ "L-01-102": {
+  "productName": "Philips Hue White and Color Ambiance Play Light Bar",
+  "price": 16419,
+  "priceType": "estimate",
+  "from": "tanotis.com",
+  "url": "https://www.tanotis.com/products/philips-hue-white-color-ambiance-play-light-bar-black-4-pack-7",
+  "specs": {
+   "Light": "530 lm",
+   "Colour temperature": "2000-6500 K",
+   "Size": "25.4 x 4.3 x 3.6 cm",
+   "Connection": "Hue Bridge required for full control"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A slim LED light bar for placing behind a TV or monitor, with colour and white light. A Hue Bridge is needed to unlock its full smart control.",
+  "flag": "No Indian single-pack price found. Estimate is the only INR figure, Tanotis import 4-pack at Rs 65,675 divided by 4, so it is not a real single-unit price. One Philips listing says 500 lm, not 530. Not confirmed on a major Indian retailer."
+ },
+ "L-01-103": {
+  "productName": "Philips Smart Wi-Fi LED Bulb 9W B22",
+  "price": 549,
+  "priceType": "selling",
+  "from": "in.shop.lighting.philips.com",
+  "url": "https://in.shop.lighting.philips.com/products/philips-smart-wi-fi-pro-led-bulb",
+  "specs": {
+   "Power": "9 W",
+   "Light": "825 lm",
+   "Base": "B22"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A single 9 W B22 smart LED bulb controlled over Wi-Fi, sold on its own in India through the Philips store and major online retailers.",
+  "flag": "Single bulb confirmed for India. Rs 549 is the Philips store page for the Smart Wi-Fi Pro bulb, which covers 9 W, 10 W and 12 W variants, so the 9 W figure is not fully certain. Aggregators show Flipkart at Rs 399 (Oct 2026) and Amazon at Rs 449 to 548. 825 lm comes from the pack-of-2 page. White body colour carried from the file, unconfirmed."
+ },
+ "L-01-104": {
+  "productName": "Wipro 9W B22 Wi-Fi Smart LED Bulb (NS9400)",
+  "price": 699,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/wipro-9-watts-b22-wi-fi-smart-led-bulb-with-16-million-colours-music-sync-amazon-alexa-and-google-assistant-ns9400-kudxbs",
+  "specs": {
+   "Power": "9 W",
+   "Base": "B22",
+   "Light colours": "16 million, with music sync",
+   "Connection": "Wi-Fi, Alexa and Google Assistant"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A 9 W B22 smart bulb that offers 16 million colours and music sync, and works with Amazon Alexa and Google Assistant over Wi-Fi.",
+  "flag": "File name fits several Wipro models (NS9100, NS9400, NS9500); fixed to NS9400 because a price and spec came from one listing. White body colour carried from the file, unconfirmed. A deals site showed Rs 589 on Amazon.in in July 2026."
+ },
+ "L-01-105": {
+  "productName": "HomeMate Wi-Fi Multicolour Smart LED Strip Kit (10 m)",
+  "specs": {
+   "Size": "10 m",
+   "Power": "Mains adapter, no hub required"
+  },
+  "colours": [
+   "Multicolour"
+  ],
+  "connectivity": "wireless",
+  "description": "A 10 m colour-changing LED strip kit that connects over Wi-Fi with no hub, with music sync and Alexa, Google and Siri control.",
+  "flag": "Not confirmed as RGBIC. MRP ₹4,990",
+  "brand": "HomeMate",
+  "price": 1999,
+  "priceType": "selling",
+  "snippetOnly": true,
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/rgbic-led-strip-lights-10m/s?k=rgbic+led+strip+lights+10m",
+  "swap": {
+   "status": "applied",
+   "from": "Govee RGBIC LED Strip Lights (10 m)",
+   "to": "HomeMate Wi-Fi Multicolour Smart LED Strip Kit (10 m)",
+   "reason": "The basic Govee 10 m strip has no Indian listing; Govee's 10 m models on Amazon.in are outdoor or neon strips at ₹18,324 and above"
+  }
+ },
+ "L-01-106": {
+  "productName": "Nanoleaf Shapes Hexagons Starter Kit (9 Panels)",
+  "price": 19890,
+  "priceType": "selling",
+  "from": "avstore.in",
+  "url": "https://www.avstore.in/products/nanoleaf-hexagon-starter-kit",
+  "specs": {
+   "Panels": "9, with controller and mounting plates",
+   "Light": "16M+ colours, 1200-6500 K white",
+   "Connection": "Bluetooth"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A wall-mounted kit of nine hexagonal light panels with a controller and mounting parts. It offers colour and tunable white light, and has a built-in rhythm module.",
+  "flag": "Price is from AV Store, a specialist Indian seller, and matches Sollfege; no Amazon.in or major retailer price found. Flipkart lists the kit as 'Smarter Kits' with no full price. Panel count differs by region. Bluetooth from one listing only."
+ },
+ "L-01-107": {
+  "price": 6490,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/hektar-floor-lamp-dark-grey-50314814/",
+  "specs": {
+   "Power": "Up to 53 W",
+   "Size": "181 cm tall, 31.5 cm shade, 34 cm base",
+   "Material": "Powder-coated steel tube, aluminium shade"
+  },
+  "colours": [
+   "Dark Grey"
+  ],
+  "connectivity": "n/a",
+  "description": "A tall dark grey floor lamp with a large aluminium shade and a steel stem. The head adjusts to aim the light, and the bulb is sold separately.",
+  "flag": "Connectivity corrected from wireless: this is a mains lamp with a 187 cm cord. A separate 3-spot HEKTAR sells at Rs 7,990; this record is the single-head article 503.148.14."
+ },
+ "L-02-201": {
+  "price": 4949,
+  "priceType": "estimate",
+  "from": "inrdeals.com (Flipkart offer)",
+  "url": "https://inrdeals.com/alexa-echo-dot-5th-gen-bluetooth-with-alexa-assistant-smart-speakerblack-at-lowest-price-in-online-india-ACCH4N5D5DYKVDG9-offer",
+  "specs": {
+   "Speaker": "1.73 in front-firing",
+   "Connection": "Dual-band Wi-Fi, Bluetooth",
+   "Sensors": "Motion, temperature, tap gesture",
+   "Weight": "304 g"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A compact Alexa smart speaker with a 1.73-inch driver, a temperature sensor, ultrasound motion detection and tap gestures. It has no 3.5 mm audio jack.",
+  "flag": "Price is an aggregator figure for a Flipkart offer; Smartprix lists Rs 5,499 (the launch MRP) and a deals site showed Rs 2,999 in July 2026. No Croma or Reliance price found. Coverage names colours only as black, blue and white, so the file's Charcoal, Glacier White and Deep Sea Blue are unconfirmed."
+ },
+ "L-02-202": {
+  "price": 10999,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/amazon-echo-show-5-3rd-gen-smart-display-with-alexa-2x-bass-speaker-clearer-sound-camera-for-home-monitoring-bluetooth-speaker-cloud-blue-mdocwj-9303595",
+  "specs": {
+   "Display": "5.5 in, 960 x 480",
+   "Speaker": "1.7 in rear-facing",
+   "Size": "147 x 91 x 82 mm",
+   "Weight": "456 g"
+  },
+  "colours": [
+   "Charcoal",
+   "Cloud Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "A small Alexa smart display with a 5.5-inch touchscreen and a built-in camera with a shutter. It can control compatible lights, fans, ACs and geysers.",
+  "flag": "Rs 10,999 was reported as an introductory price at the July 2025 launch, with Rs 11,999 MRP; Reliance Digital shows Rs 10,999 for Cloud Blue, date unknown."
+ },
+ "L-02-203": {
+  "productName": "Amazon Fire TV Stick 4K (2024)",
+  "price": 5999,
+  "priceType": "launch-mrp",
+  "from": "91mobiles.com",
+  "url": "https://www.91mobiles.com/hub/amazon-fire-tv-stick-4k-wifi-6-launched-india-price-specifications/",
+  "specs": {
+   "Video": "4K Ultra HD, Dolby Vision, Dolby Atmos",
+   "Processor": "1.7 GHz quad-core, 2 GB RAM",
+   "Connection": "Wi-Fi 6, HDMI"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A plug-in streaming stick for HDMI TVs that plays 4K video with Dolby Vision and Dolby Atmos, and comes with Alexa voice control over Wi-Fi 6.",
+  "flag": "Launch price only; no current selling price confirmed. Reliance Digital shows Rs 6,499 on a listing that may be the Max model. Newer Fire TV Stick 4K Select (Rs 5,499) and 4K Plus (tracker Rs 6,999) exist, so this model may be fading out. One source says Wi-Fi 6E."
+ },
+ "L-02-204": {
+  "price": 4499,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/298831/google-nest-mini-price-india.html",
+  "specs": {
+   "Size": "About 9.8 x 4.2 cm",
+   "Connection": "Wi-Fi, Bluetooth",
+   "Material": "Fabric top from recycled plastic bottles"
+  },
+  "colours": [
+   "Chalk",
+   "Charcoal"
+  ],
+  "connectivity": "wireless",
+  "description": "A small Google Assistant smart speaker with a fabric top made from recycled plastic bottles. It supports English and Hindi and Voice Match for up to six users.",
+  "flag": "Launch price only; Flipkart listings showed the product as currently unavailable with no price, so it may no longer be on sale new in India. Weight and power figures conflict between Flipkart listings and are left out."
+ },
+ "L-02-205": {
+  "price": 7999,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/354967/google-nest-hub-2nd-gen-price-india-features.html/amp",
+  "specs": {
+   "Display": "7 in LCD, 1024 x 600",
+   "Sensors": "Ambient light sensor",
+   "Material": "Parts with 54% recycled post-consumer plastic"
+  },
+  "colours": [
+   "Chalk",
+   "Charcoal"
+  ],
+  "connectivity": "wireless",
+  "description": "A smart display with a 7-inch edgeless glass screen and an ambient light sensor that adjusts brightness. Soli sleep tracking is disabled on the India model.",
+  "flag": "Launch price from January 2022 only; no current Indian price or stock found. Sold at launch on Flipkart, Tata Cliq and Reliance Digital. Wi-Fi not stated in results; connectivity left as the file value."
+ },
+ "L-02-206": {
+  "price": 15900,
+  "priceType": "selling",
+  "from": "digit.in",
+  "url": "https://www.digit.in/news/general/homepod-mini-2-vs-homepod-mini-price-in-india-to-features-how-apples-2026-smart-speaker-is-different-from-its-predecessor.html",
+  "specs": {
+   "Chip": "Apple S5",
+   "Connection": "Wi-Fi 802.11n, Bluetooth 5.0",
+   "Microphones": "4",
+   "Size": "3.3 in tall"
+  },
+  "colours": [
+   "White",
+   "Midnight",
+   "Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Apple's small smart speaker from 2020, built around the S5 chip for 360-degree sound, with four microphones, Wi-Fi and Bluetooth 5.0.",
+  "flag": "Price is what Digit says the original retailed at after a hike; launch price was Rs 9,900, and no retailer page was found. Successor HomePod mini 2 launched Oct 2026 at Rs 18,900, but no source says the original is discontinued, so it is kept, not swapped. File's Space Grey replaced with Midnight, per later coverage."
+ },
+ "L-02-207": {
+  "price": 1499,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/tp-link-tapo-c200-wifi-security-camera/p/491838067",
+  "specs": {
+   "Video": "1080p Full HD (1920 x 1080)",
+   "Coverage": "360 degree pan, 114 degree tilt",
+   "Connection": "2.4 GHz Wi-Fi",
+   "Storage": "microSD up to 128 GB"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "An indoor pan and tilt home security camera that records 1080p video, with two-way audio, night vision, motion detection and a sound and light alarm.",
+  "flag": "Flipkart also shows Rs 1,499. Warranty differs by retailer (1 year at Reliance Digital, 24 months at Croma), so it is left out."
+ },
+ "L-03-301": {
+  "price": 5449,
+  "priceType": "selling",
+  "from": "toycra.com",
+  "url": "https://toycra.com/products/lego-10281-icons-bonsai-tree",
+  "specs": {
+   "Pieces": "878",
+   "Size": "Over 18 cm tall including pot",
+   "Age": "18+"
+  },
+  "colours": [
+   "Multicolour"
+  ],
+  "connectivity": "n/a",
+  "description": "An 878-piece display model of a bonsai tree in a pot, for adult builders. It can be finished with green leaves or pink cherry blossoms.",
+  "flag": "Only Indian price is Toycra, and that page showed the set as sold out, so the figure may be stale. Colour is taken from retailer titles saying multicolour, replacing the file's 'Standard'. Brick Owl says 886 pieces, an outlier."
+ },
+ "L-03-302": {
+  "productName": "LEGO Icons Orchid 10311",
+  "price": 3499,
+  "priceType": "selling",
+  "from": "toycra.com",
+  "url": "https://toycra.com/products/lego-10311-icons-orchid",
+  "specs": {
+   "Pieces": "608",
+   "Size": "Over 39 cm tall",
+   "Age": "18+"
+  },
+  "colours": [
+   "Multicolour"
+  ],
+  "connectivity": "n/a",
+  "description": "A 608-piece LEGO Botanical Collection model of a potted orchid, standing over 39 cm high and aimed at adult builders.",
+  "flag": "One Indian source only: Toycra Rs 3,499, down from Rs 6,999. BrickRanker reports the set retired in December 2025, so stock is likely limited. Multicolour is a placeholder replacing the file's 'Standard', colour unconfirmed. Brick Owl says 614 pieces, an outlier."
+ },
+ "L-03-303": {
+  "productName": "IKEA FEJKA Artificial Potted Plant, In/Outdoor Calathea (12 cm)",
+  "price": 599,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/fejka-artificial-potted-plant-in-outdoor-calathea-40600887",
+  "specs": {
+   "Size": "12 cm pot diameter",
+   "Material": "Polyethylene and EVA plastic leaves, polypropylene inner pot",
+   "Weight": "0.15 kg"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "An artificial calathea from IKEA's FEJKA range, sized for a 12 cm pot and suitable for use both indoors and outdoors.",
+  "flag": "No colour named in any source, so Standard is used (decor with no colour options). Material and weight come from IKEA pages outside India. File name had no plant type, so it is fixed to Calathea, the closest 12 cm match; other 12 cm FEJKA plants run Rs 499 to 1,190. Rs 599 is a 25% sale price from Rs 799."
+ },
+ "L-03-304": {
+  "productName": "IKEA EDSBRUK Frame, White (30x40 cm)",
+  "price": 699,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/edsbruk-frame-white-10427323/",
+  "specs": {
+   "Size": "37 x 47 x 2.5 cm, takes a 30 x 40 cm picture",
+   "Material": "Paper mount; frame is fibreboard with paper foil"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A white picture frame that takes a 30 x 40 cm picture, or a 21 x 30 cm picture with the acid-free paper mount included.",
+  "flag": "Replacement is listed on IKEA India, not checked on Amazon.in or Flipkart; kept in the same brand and size. Rs 699 is a 22% sale price from Rs 899. Only the paper mount is confirmed on the India page; the frame material comes from the Philippines page.",
+  "swap": {
+   "status": "applied",
+   "from": "IKEA RIBBA Frame (30x40 cm)",
+   "to": "IKEA EDSBRUK Frame, White (30x40 cm)",
+   "reason": "Two searches found no RIBBA listing on IKEA India or any Indian retailer. EDSBRUK is the same brand and size, and is listed on IKEA India."
+  }
+ },
+ "L-03-305": {
+  "price": 3990,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/knapper-standing-mirror-white-80396243",
+  "specs": {
+   "Size": "48 x 160 cm",
+   "Material": "Powder-coated steel, glass mirror",
+   "Weight": "11 kg"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A freestanding white mirror, 48 cm wide and 160 cm tall, with a steel frame. Reviewers note the hanging space behind the mirror for clothes.",
+  "flag": "File price of Rs 6,990 was wrong; IKEA India lists Rs 3,990 (article 803.962.43), capture date not shown."
+ },
+ "L-03-306": {
+  "specs": {
+   "Size": "623 g large jar",
+   "Burn time": "110-150 hours"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A large 22 oz jar candle with Yankee's fresh Clean Cotton scent, rated for roughly 110 to 150 hours of burning.",
+  "flag": "Amazon.in large jar ₹5,830, list ₹9,328; Nykaa has a Clean Cotton jar at ₹2,563 with no size stated",
+  "price": 5830,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Yankee-Candle-Large-Clean-Cotton/dp/B0002PW0WO"
+ },
+ "L-03-307": {
+  "price": 1999,
+  "priceType": "selling",
+  "from": "bathandbodyworks.in",
+  "specs": {
+   "Size": "411 g / 14.5 oz",
+   "Wicks": "3"
+  },
+  "colours": [
+   "Standard"
+  ],
+  "connectivity": "n/a",
+  "description": "A 411 g three-wick scented candle in Bath & Body Works' Mahogany Teakwood fragrance, sold in India through the brand's own store.",
+  "flag": "Official India pages disagree: Rs 1,999 against MRP Rs 3,299, a Rs 799 limited offer, and another page showing MRP Rs 3,999. The exact page for Rs 1,999 was not identified. Burn time left out: 40 and 45 hours in non-Indian listings.",
+  "snippetOnly": true
+ },
+ "L-04-401": {
+  "productName": "Philips Digital Airfryer HD9252/90 (4.1 L)",
+  "price": 8495,
+  "priceType": "selling",
+  "from": "domesticappliances.philips.co.in",
+  "url": "https://www.domesticappliances.philips.co.in/kitchen-appliances/philips-air-care/kitchen-appliances/kitchen-appliances/hd9252-90",
+  "specs": {
+   "Power": "1400 W",
+   "Capacity": "4.1 L",
+   "Size": "33.8 x 35.5 x 28 cm",
+   "Weight": "4.55 kg"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 4.1 L digital air fryer with a touch panel, seven preset menus and a 1400 W heater that uses Philips RapidAir circulation.",
+  "flag": "Philips India sells this as the Digital Airfryer, so the name is fixed. Philips pages disagree, Rs 8,495 and Rs 7,499, both against MRP Rs 13,995. Flipkart snapshot shows Rs 8,649 and may be old. Pricebefore shows Rs 10,899 in October 2026."
+ },
+ "L-04-402": {
+  "price": 9792,
+  "priceType": "selling",
+  "from": "mahajanelectronics.com",
+  "url": "https://mahajanelectronics.com/products/instant-pot-duo-321-60-6qt-5-7l-electric-pressure-cooker",
+  "specs": {
+   "Power": "1000 W",
+   "Capacity": "5.7 L",
+   "Size": "37 x 32 x 35 cm",
+   "Material": "SS304 stainless steel inner pot"
+  },
+  "colours": [
+   "Stainless Steel"
+  ],
+  "connectivity": "n/a",
+  "description": "A 5.7 L multi-use electric pressure cooker rated at 1000 W, with an SS304 stainless steel inner pot and a brushed stainless steel body.",
+  "flag": "One Delhi NCR retailer only, not a major chain; its model is the Duo 321 60. Avshack lists Rs 12,490. No current Amazon.in or Flipkart price found, and the follow-up search failed with an error."
+ },
+ "L-04-403": {
+  "price": 14685,
+  "priceType": "selling",
+  "from": "nespresso.com/in",
+  "url": "https://www.nespresso.com/in/en/essenza-mini-c",
+  "specs": {
+   "Capacity": "0.6 L water tank",
+   "Pressure": "19 bar",
+   "Weight": "2.31 kg"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A compact capsule coffee machine with a 19 bar pump, a removable 0.6 L water tank and two programmable cup sizes.",
+  "flag": "Nespresso India says 3 colours but does not name them. Black and White come from other markets; the file's Red is unconfirmed and dropped. Rs 14,685 is a special price from Rs 16,500."
+ },
+ "L-04-404": {
+  "price": 2949,
+  "priceType": "selling",
+  "from": "amazon.in via digit.in",
+  "url": "https://www.digit.in/juicer-mixer-grinder/prestige-iris-750-watt-mixer-grinder.html",
+  "specs": {
+   "Power": "750 W",
+   "Capacity": "4 jars, including a 0.3 L chutney jar",
+   "Material": "Stainless steel jars plus a juicer jar"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A 750 W mixer grinder sold in a four-jar set with three stainless steel jars and a juicer jar, for grinding, blending and juicing.",
+  "flag": "Amazon price seen only through Digit, updated March 2026. Pricebefore shows Rs 3,649; TTK Prestige lists Rs 6,295 for the white model. Iris, Iris Plus and Iris Pro names are used loosely by sellers. The file's Purple is unconfirmed and dropped.",
+  "snippetOnly": true
+ },
+ "L-04-405": {
+  "price": 3549,
+  "priceType": "selling",
+  "from": "amazon.in via pricee.com",
+  "url": "https://pricee.com/philips-hl7756-00-750-w-mixer-grinder-price-in-india-54369",
+  "specs": {
+   "Power": "750 W",
+   "Capacity": "3 jars: 1.5 L, 1 L and 0.3 L",
+   "Material": "Stainless steel jars"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 750 W mixer grinder with three stainless steel jars of 1.5 L, 1 L and 0.3 L, and a three-speed control.",
+  "flag": "Amazon price seen only through Pricee. Retailers range up to Rs 4,395, with Ankur Electricals at Rs 4,136. Some listings mix this model with the HL7756/01 and HL7757/00. One Surat seller lists a black and grey version.",
+  "snippetOnly": true
+ },
+ "L-04-406": {
+  "price": 4150,
+  "priceType": "selling",
+  "from": "brewinggadgets.in",
+  "url": "https://brewinggadgets.in/products/aeropress-coffee",
+  "specs": {
+   "Capacity": "1 to 3 cups",
+   "Weight": "7.75 oz",
+   "Filter": "Standard size"
+  },
+  "colours": [
+   "Clear"
+  ],
+  "connectivity": "n/a",
+  "description": "A hand-pressed coffee maker with a chamber and plunger, using standard-size filters to brew American-style, cold brew-style or espresso-style coffee.",
+  "flag": "Smaller Indian retailer, and the page shows it out of stock. Cart2India lists an import at Rs 9,100. No Amazon.in listing found. Clear carried from the file, unconfirmed."
+ },
+ "L-04-407": {
+  "price": 6553,
+  "priceType": "selling",
+  "from": "amazon.in via instacuppastore.com",
+  "url": "https://instacuppastore.com/blogs/main-page/instacuppa-vs-bodum-french-press-rs-1-500-vs-rs-4-000-worth-the-premium",
+  "specs": {
+   "Capacity": "1 L, 8 cups",
+   "Material": "Glass carafe"
+  },
+  "colours": [
+   "Chrome",
+   "Copper",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 1 L French press with a clear glass carafe, serving eight cups, sold in chrome, copper and black-framed versions.",
+  "flag": "One source: a competitor's blog gives Amazon.in at Rs 6,553 on 4 October 2026, from an import seller. Cart2India lists Rs 9,200 for Matte Chrome. Colours come from non-Indian retailers.",
+  "snippetOnly": true
+ },
+ "L-05-501": {
+  "connectivity": "n/a",
+  "flag": "Renamed from 'Orthopedic Memory Foam Pillow' to the listed product. MRP ₹1,748. Colour carried from the file",
+  "productName": "Wakefit Memory Foam Pillow (Medium, 23 x 15 x 4 in)",
+  "price": 848,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Wakefit-Memory-Warranty-Sleeping-Orthopedic/dp/B0D133D1PH",
+  "specs": {
+   "Size": "23 x 15 x 4 in",
+   "Material": "Memory foam"
+  },
+  "colours": [
+   "White"
+  ],
+  "description": "A medium single memory foam bed pillow from Wakefit, sized 23 x 15 x 4 inches and sold with a two-year warranty."
+ },
+ "L-05-502": {
+  "productName": "The Sleep Company SmartGRID Cervical Pillow",
+  "price": 1799,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/sleep-company-microfibre-solid-sleeping-pillow-pack-1/p/itm33dcb6eced0d9",
+  "specs": {
+   "Material": "SmartGRID foam",
+   "Fit": "Cervical, high-low curve design"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A cervical foam pillow built around The Sleep Company's SmartGRID layer, with a high-low curve shape, sold as a single pillow.",
+  "flag": "File name was a generic range name, so it is fixed to the one SmartGRID pillow with an Indian retailer price. Rs 1,799 against MRP Rs 4,199, few units left then. Size not confirmed. White carried from the file, unconfirmed.",
+  "swap": {
+   "status": "applied",
+   "from": "The Sleep Company SmartGRID Pillow",
+   "to": "The Sleep Company SmartGRID Cervical Pillow",
+   "reason": "No product has the generic name. The brand sells several SmartGRID pillows, and this one had a Flipkart price."
+  }
+ },
+ "L-05-503": {
+  "specs": {
+   "Size": "50 x 50 cm",
+   "Material": "100% cotton, min. 50% recycled"
+  },
+  "colours": [
+   "Green"
+  ],
+  "connectivity": "n/a",
+  "description": "A plain 50 x 50 cm cotton cushion cover from IKEA with a zip, sold on its own, so the inner cushion is bought separately.",
+  "flag": "IKEA India regular price ₹199, also seen on sale at ₹129. Only the green colour confirmed in India",
+  "price": 199,
+  "priceType": "selling",
+  "snippetOnly": true,
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/cat/cushion-covers-18903/?page=3"
+ },
+ "L-05-504": {
+  "specs": {
+   "Size": "50 x 50 cm",
+   "Material": "Cotton cover, polyester hollow-fibre filling"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "A 50 x 50 cm inner cushion made in India, with a 100% cotton cover and soft polyester hollow-fibre filling, for use inside cushion covers.",
+  "flag": "Product page ₹450, MRP ₹720; a bundle listing shows ₹500",
+  "productName": "IKEA FIALISA Cushion Pad (50x50 cm)",
+  "price": 450,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/fialisa-cushion-pad-white-60415822/",
+  "swap": {
+   "status": "applied",
+   "from": "IKEA FJÄDRAR Inner Cushion (50x50 cm)",
+   "to": "IKEA FIALISA Cushion Pad (50x50 cm)",
+   "reason": "FJÄDRAR is not listed on IKEA India; FIALISA is IKEA India's own 50 x 50 cm pad"
+  }
+ },
+ "L-05-505": {
+  "specs": {
+   "Size": "150 x 200 cm with 50 x 80 cm pillowcase",
+   "Material": "100% pre-washed cotton"
+  },
+  "colours": [
+   "Natural",
+   "Dark Blue"
+  ],
+  "connectivity": "n/a",
+  "description": "A single duvet cover and pillowcase set in soft pre-washed cotton, sized 150 x 200 cm with a 50 x 80 cm pillowcase.",
+  "price": 1790,
+  "priceType": "selling",
+  "from": "ikea.com/in",
+  "url": "https://www.ikea.com/in/en/p/aengslilja-duvet-cover-and-pillowcase-natural-00591984/"
+ },
+ "L-05-506": {
+  "price": 1198,
+  "priceType": "selling",
+  "from": "amazon.in via magicdrop.in",
+  "url": "https://magicdrop.in/drops/double-bed-quilt",
+  "specs": {
+   "Size": "230 x 254 cm (Double)",
+   "Material": "Microfibre with polyester fill"
+  },
+  "colours": [
+   "Ocean Blue & Mild Blue",
+   "Aqua Blue & Olive Green",
+   "Subtle Beige & Walnut Brown"
+  ],
+  "connectivity": "n/a",
+  "description": "A reversible double-size microfibre comforter with a polyester fill, sold in two-tone colour pairs such as ocean blue and mild blue.",
+  "flag": "Price from a July 2026 roundup, no live Amazon.in page seen. Listings disagree on weight (120, 200 and 300 GSM), so it is left out, and one gives 198.1 x 152.4 cm. Colours come from reseller and deal listings.",
+  "snippetOnly": true
+ }
+}

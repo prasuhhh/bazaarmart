@@ -1,0 +1,598 @@
+{
+ "A-01-101": {
+  "price": 18900,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Chip": "Apple H2",
+   "Water": "IP54"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Noise-cancelling earbuds with Apple's H2 chip, a USB-C MagSafe charging case and an IP54 rating against dust, sweat and water.",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/apple-airpods-pro-2nd-gen-usb-c-type-with-magsafe-charging-case-true-wireless-with-active-noise-cancellation-touch-control-ip54-dust-sweat-and-water-resistant-bluetooth-v53-upto-30-hrs-of-playtime-white-lmho1u-7533663",
+  "flag": "MRP ₹24,900; other retail listings ₹17,990 to ₹19,990"
+ },
+ "A-01-102": {
+  "price": 13990,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "8 h with ANC, 12 h without",
+   "Driver": "8.4 mm Dynamic Driver X",
+   "Water": "IPX4"
+  },
+  "colours": [
+   "Black",
+   "Silver"
+  ],
+  "connectivity": "wireless",
+  "description": "Sony's flagship noise-cancelling earbuds, using an 8.4 mm driver and two processors, with LDAC support and an IPX4 rating.",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/sony-wf1000xm5-tws-earbuds-with-up-to-36-hours-battery-life-and-quick-charge-active-noise-cancellation-black-ln0fcs-7534140",
+  "flag": "Amazon.in ₹13,989, Vijay Sales ₹16,990; WF-1000XM6 now succeeds this model"
+ },
+ "A-01-103": {
+  "price": 17999,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Driver": "10.5 mm dynamic + 6.1 mm planar",
+   "Water": "IP57 (earbuds only)"
+  },
+  "colours": [
+   "Silver",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Stem-style noise-cancelling earbuds with a two-way driver system, Bluetooth 5.4 and Galaxy AI interpreter features.",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/samsung-galaxy-buds-3-pro-true-wireless-buds-gray-lyre9m-7960698",
+  "flag": "MRP ₹19,999; Amazon.in ₹15,980 to ₹17,999, some of those listings are imported variants"
+ },
+ "A-01-104": {
+  "price": 5499,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "Up to 44 h with case, ANC off",
+   "Driver": "10.4 mm woofer + 6 mm tweeter",
+   "Water": "IP55 earbuds, IPX4 case"
+  },
+  "colours": [
+   "Metallic Gray",
+   "Splendid Blue",
+   "Minty Green"
+  ],
+  "connectivity": "wireless",
+  "description": "Mid-range noise-cancelling earbuds from OnePlus, built around coaxial dual drivers with a 10.4 mm woofer.",
+  "flag": "MRP ₹6,499. Sources disagree: Flipkart ₹4,299 (Smartprix, Oct 2026), Amazon ₹5,498, Vijay Sales ₹6,099 and shown unavailable online",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/oneplus-buds-3-bluetooth-earbuds-metallic-gray-e509a-lsbegb-7536347"
+ },
+ "A-01-105": {
+  "price": 4999,
+  "from": "flipkart.com",
+  "specs": {
+   "Battery": "Up to 42.5 h with case",
+   "Driver": "11 mm dynamic"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Yellow"
+  ],
+  "connectivity": "wireless",
+  "description": "Transparent-design earbuds with an 11 mm driver, up to 45 dB noise cancelling and a total playback of up to 42.5 hours.",
+  "priceType": "selling",
+  "url": "https://www.flipkart.com/nothing-ear-a-2024-chatgpt-compatible-hi-res-audio-ldac-bluetooth/p/itm2d49dccfaa98b",
+  "flag": "MRP ₹9,999; Amazon.in also ₹4,999; Smartprix showed ₹5,999 on 7 Oct 2026"
+ },
+ "A-01-106": {
+  "price": 5290,
+  "from": "amazon.in",
+  "specs": {
+   "Battery": "Up to 40 h with case",
+   "Driver": "6 mm",
+   "Water": "IPX4"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Budget noise-cancelling earbuds with 6 mm drivers, four microphones, Bluetooth 5.2 and up to 40 hours of playtime with the case.",
+  "flag": "Blue listing. MRP ₹7,999; Flipkart ₹5,399 to ₹7,199, Vijay Sales ₹5,799, Reliance Digital ₹5,999; 91mobiles reports a ₹3,999 Amazon low",
+  "priceType": "selling",
+  "url": "https://arcus-www.amazon.in/JBL-Cancellation-Playtime-Adjustable-Bluetooth/dp/B09HGSKKRB"
+ },
+ "A-01-107": {
+  "price": 1499,
+  "from": "cashify.in",
+  "specs": {
+   "Battery": "Up to 42 h with case",
+   "Driver": "8 mm",
+   "Water": "IPX4"
+  },
+  "colours": [
+   "Bold Black",
+   "White",
+   "Cider Cyan"
+  ],
+  "connectivity": "wireless",
+  "description": "Entry-level true wireless earbuds with 8 mm drivers, Bluetooth 5.1 and up to 42 hours of playback using the charging case.",
+  "flag": "Price sources range ₹899 to ₹1,499; most listings name these colours, others add Olive Green and Thunder Blue",
+  "priceType": "selling"
+ },
+ "A-02-201": {
+  "price": 19989,
+  "from": "amazon.in",
+  "specs": {
+   "Battery": "30 h with ANC, 40 h without",
+   "Driver": "30 mm"
+  },
+  "colours": [
+   "Black",
+   "Silver"
+  ],
+  "connectivity": "wireless",
+  "description": "Over-ear noise-cancelling headphones with 30 mm drivers, eight microphones, LDAC support and up to 30 hours of listening with ANC on.",
+  "priceType": "selling",
+  "url": "https://www.amazon.in/Sony-WH-1000XM5-Wireless-Cancelling-Headphones/dp/B09XS7JWHH",
+  "flag": "MRP ₹34,990; Reliance Digital ₹19,980, Vijay Sales ₹19,999; WH-1000XM6 now succeeds this model"
+ },
+ "A-02-202": {
+  "price": 30900,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "Up to 24 h, 18 h with Immersive Audio",
+   "Weight": "254 g"
+  },
+  "colours": [
+   "Black",
+   "White Smoke"
+  ],
+  "connectivity": "wireless",
+  "description": "First-generation QuietComfort Ultra over-ears with Immersive Audio, offering up to 24 hours of battery life and quick USB-C charging.",
+  "flag": "Reliance price from search snippet, White Smoke; Amazon.in ₹35,989 to ₹39,990. A 2nd Gen model (₹49,900) now also sells in India; this is the recently sold 1st Gen",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/bose-quietcomfort-ultra-headphones-white-smoke-lr4juj-7535646"
+ },
+ "A-02-203": {
+  "price": 59900,
+  "from": "cashify.in",
+  "specs": {
+   "Battery": "Up to 20 h with ANC",
+   "Weight": "386 g"
+  },
+  "colours": [
+   "Midnight",
+   "Starlight",
+   "Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Apple's over-ear headphones with a USB-C port, active noise cancelling and spatial audio, rated for up to 20 hours of listening.",
+  "flag": "AirPods Max 2 (₹67,900) replaced this in March 2026; this USB-C model is recently sold",
+  "priceType": "selling"
+ },
+ "A-02-204": {
+  "price": 20990,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "Up to 60 h",
+   "Driver": "42 mm"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Over-ear noise-cancelling headphones with 42 mm transducers and up to 60 hours of battery, plus six hours from a ten-minute charge.",
+  "flag": "MRP ₹34,990; Amazon.in and Flipkart also ₹20,990, Vijay Sales ₹24,990",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/sennheiser-momentum-4-wireless-headphone-white-lum76d-7538100"
+ },
+ "A-02-205": {
+  "price": 12990,
+  "from": "smartprix.com",
+  "specs": {
+   "Driver": "45 mm",
+   "Connection": "3.5 mm wired"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "A wired studio monitoring headphone with 45 mm drivers, popular with producers and listeners who want a detailed, closed-back sound.",
+  "flag": "File said wireless; this model is wired (ATH-M50xBT is the wireless one). Driver size from one listing only",
+  "priceType": "selling"
+ },
+ "A-02-206": {
+  "price": 4999,
+  "from": "91mobiles.com",
+  "specs": {
+   "Battery": "35 h with ANC, 50 h without",
+   "Driver": "40 mm",
+   "Weight": "220 g"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Lightweight wireless headphones with 40 mm drivers and active noise cancelling, offering up to 50 hours of playback with ANC off.",
+  "priceType": "selling"
+ },
+ "A-02-207": {
+  "price": 1499,
+  "from": "koshurstore.com",
+  "specs": {
+   "Battery": "Up to 15 h",
+   "Driver": "40 mm",
+   "Weight": "168 g"
+  },
+  "colours": [
+   "Luscious Black",
+   "Hazel Beige",
+   "Aqua Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Affordable foldable on-ear wireless headphones with 40 mm drivers, padded ear cushions, an AUX input and up to 15 hours of playback.",
+  "flag": "Aqua Blue from one retailer listing only, boAt's own page unreachable; price sources range ₹999 to ₹1,799",
+  "priceType": "selling"
+ },
+ "A-03-301": {
+  "price": 8999,
+  "from": "croma.com",
+  "specs": {
+   "Battery": "Up to 12 h",
+   "Water": "IP67",
+   "Weight": "550 g"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Squad"
+  ],
+  "connectivity": "wireless",
+  "description": "A compact cylindrical Bluetooth speaker with IP67 water and dust protection, PartyBoost pairing and up to 12 hours of playback.",
+  "flag": "Launch ₹14,999. Flipkart ₹8,999 by tracker; Smartprix shows Amazon ₹8,999, out of stock",
+  "priceType": "selling",
+  "url": "https://www.croma.com/l/jbl-partyboost-flip-6-0arz00a.html"
+ },
+ "A-03-302": {
+  "price": 14998,
+  "from": "flipkart.com",
+  "specs": {
+   "Battery": "Up to 20 h",
+   "Water": "IP67",
+   "Weight": "960 g"
+  },
+  "colours": [
+   "Black",
+   "Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "A portable IP67 Bluetooth speaker with about 20 hours of playback and a 7,500 mAh battery that can also charge your phone.",
+  "flag": "Other listings ₹15,598 to ₹23,999, some for the Wi-Fi variant",
+  "priceType": "selling"
+ },
+ "A-03-303": {
+  "price": 11990,
+  "from": "flipkart.com",
+  "specs": {
+   "Battery": "Up to 12 h",
+   "Water": "IP67",
+   "Weight": "590 g"
+  },
+  "colours": [
+   "Black",
+   "Stone Blue",
+   "White Smoke"
+  ],
+  "connectivity": "wireless",
+  "description": "A rugged IP67 Bluetooth speaker that can float in water, with PositionIQ orientation tuning and up to 12 hours of battery life.",
+  "flag": "1st Gen, Stone Blue, seller RetailNet, stock unclear. MRP ₹15,900; Vijay Sales ₹15,490. File colour 'Blue Dusk' (2nd Gen) replaced with launch colours; 1st Gen Black not seen at retail in this pass",
+  "priceType": "selling",
+  "url": "https://www.flipkart.com/bose-soundlink-flex-ipx67-rating-bluetooth-party-speaker/p/itmf556a019a11b8"
+ },
+ "A-03-304": {
+  "price": 14999,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "30+ h",
+   "Water": "IP67",
+   "Weight": "0.7 kg"
+  },
+  "colours": [
+   "Black & Brass",
+   "Black & Steel",
+   "Cream"
+  ],
+  "connectivity": "wireless",
+  "description": "A small Marshall-styled Bluetooth speaker with an IP67 rating and more than 30 hours of portable playback from one charge.",
+  "flag": "Listings range ₹12,540 to ₹15,999, regular price ₹19,999",
+  "priceType": "selling"
+ },
+ "A-03-305": {
+  "productName": "Sony ULT Field 1",
+  "brand": "Sony",
+  "price": 7989,
+  "priceType": "selling",
+  "snippetOnly": true,
+  "from": "pricebefore.com",
+  "url": "https://www.pricebefore.com/sony-ult-field-1-massive-bass-p876309.html",
+  "specs": {
+   "Battery": "Up to 12 h",
+   "Water": "IP67",
+   "Weight": "650 g"
+  },
+  "colours": [
+   "Black",
+   "Off White",
+   "Forest Gray",
+   "Orange"
+  ],
+  "connectivity": "wireless",
+  "description": "A compact Bluetooth speaker with Sony's ULT bass boost, a detachable strap, USB-C charging, IP67 protection and up to 12 hours of battery.",
+  "swap": {
+   "status": "applied",
+   "from": "Ultimate Ears Wonderboom 3",
+   "to": "Sony ULT Field 1",
+   "reason": "User decision: Wonderboom 4's Amazon.in seller was unconfirmed, so a speaker clearly sold in India replaces it. Launched in India May 2024 at ₹10,990, listed by Reliance Digital"
+  },
+  "flag": "Amazon.in price from an undated price tracker; launch ₹10,990; Reliance Digital MRP ₹16,990 less 35%"
+ },
+ "A-03-306": {
+  "price": 4490,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Battery": "Up to 16 h",
+   "Water": "IP67",
+   "Weight": "274 g"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Light Grey",
+   "Orange"
+  ],
+  "connectivity": "wireless",
+  "description": "A pocketable Sony Bluetooth speaker with up to 16 hours of battery, USB-C charging and IP67 protection against water and dust.",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/sony-bluetooth-speaker-srs-xb100lzin-blue-llgisy-7533247",
+  "flag": "MRP ₹5,990. Wide spread: Flipkart ₹2,489 (Grey, seller TBL Online), Amazon.in ₹2,990 (Blue, Orange) to ₹3,999 (Grey)"
+ },
+ "A-03-307": {
+  "price": 1499,
+  "from": "pricebefore.com",
+  "specs": {
+   "Battery": "About 12 h",
+   "Water": "IPX7",
+   "Power": "10 W RMS"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Red"
+  ],
+  "connectivity": "wireless",
+  "description": "A 10 W mono Bluetooth speaker with IPX7 water protection, about 12 hours of playback and TWS pairing for a stereo setup.",
+  "flag": "MRP ₹3,490, sale ₹1,099 to ₹1,599",
+  "priceType": "selling"
+ },
+ "A-04-401": {
+  "price": 49999,
+  "from": "avstore.in",
+  "specs": {
+   "Connection": "HDMI eARC, Wi-Fi, Ethernet",
+   "Weight": "2.8 kg"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "A compact smart soundbar with Dolby Atmos over HDMI eARC, plus Wi-Fi and Ethernet for AirPlay 2 and Sonos multi-room audio.",
+  "flag": "Listings ₹49,999 to ₹56,999. File said wired; it has Wi-Fi streaming but no Bluetooth",
+  "priceType": "selling"
+ },
+ "A-04-402": {
+  "price": 34537,
+  "from": "fullspecs.net",
+  "specs": {
+   "Power": "250 W peak",
+   "Connection": "HDMI eARC, optical, Wi-Fi, Bluetooth"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A one-piece 5.0-channel soundbar using MultiBeam side-firing drivers and passive radiators, with HDMI eARC, AirPlay 2 and Chromecast.",
+  "flag": "UNCERTAIN: only an aggregator estimate of the India price, no Indian retailer confirmed",
+  "priceType": "estimate"
+ },
+ "A-04-403": {
+  "price": 13990,
+  "from": "reliancedigital.in",
+  "specs": {
+   "Power": "400 W",
+   "Connection": "HDMI ARC, optical, Bluetooth, USB"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A real 5.1-channel home theatre with a soundbar, separate subwoofer and wired rear speakers, rated at 400 W with Dolby Digital.",
+  "flag": "MRP ₹19,990; Amazon.in ₹13,989 to ₹15,528, Flipkart ₹14,989. Connectivity changed to wireless because it has Bluetooth",
+  "priceType": "selling",
+  "url": "https://www.reliancedigital.in/product/sony-ht-s20r-51ch-dolby-digital-soundbar-home-theatre-systembluetooth-connectivityusb-connectivity"
+ },
+ "A-04-404": {
+  "productName": "FiiO BTR7 Bluetooth DAC",
+  "price": 11999,
+  "from": "headphonezone.in",
+  "specs": {
+   "DAC": "Dual ES9219C",
+   "Amplifier": "Dual THX AAA-28"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A portable Bluetooth DAC and headphone amplifier built around twin ES9219C chips and two THX AAA-28 amplifier stages.",
+  "swap": {
+   "status": "applied",
+   "from": "FiiO BTR5 (2021) Bluetooth DAC",
+   "to": "FiiO BTR7 Bluetooth DAC",
+   "reason": "BTR5 2021 is discontinued: Headphone Zone India lists it as end-of-life and other retailers show it sold out or withdrawn"
+  },
+  "flag": "MRP ₹19,999, selling ₹11,999. Black confirmed at Headphone Zone; a white-and-blue variant exists but no Indian listing found",
+  "priceType": "selling",
+  "url": "https://headphonezone.in/products/fiio-btr7"
+ },
+ "A-04-405": {
+  "price": 36900,
+  "from": "theaudio.co",
+  "specs": {
+   "Weight": "22 g",
+   "Output": "2.1 Vrms",
+   "Connection": "USB-A, USB-C adapter included"
+  },
+  "colours": [
+   "Blue"
+  ],
+  "connectivity": "wired",
+  "description": "A thumb-sized USB DAC and headphone amplifier with an ESS ES9038Q2M chip, MQA playback and a USB-C adapter in the box.",
+  "flag": "One Indian price only, ₹36,900 against ₹26,990 in the file",
+  "priceType": "selling"
+ },
+ "A-04-406": {
+  "price": 849,
+  "from": "flipkart.com",
+  "specs": {
+   "Connection": "USB-C to 3.5 mm",
+   "Model": "MW2Q3ZM/A"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "A small Apple adapter that connects wired headphones with a 3.5 mm plug to a phone, tablet or laptop that has a USB-C port.",
+  "priceType": "selling",
+  "url": "https://www.flipkart.com/apple-aux-cable-0-88-m-mw2q3zm-a/p/itm5934e423de300",
+  "flag": "Part number MW2Q3ZM/A matches, but Flipkart titles it 'AUX Cable 0.88 m'; seller TrueComRetail. Amazon.in ₹1,090, Tata CLiQ ₹799, MRP ₹900"
+ },
+ "A-05-501": {
+  "productName": "Shure SM58-LC Vocal Microphone",
+  "price": 10990,
+  "from": "proaudiovideo.in",
+  "specs": {
+   "Pattern": "Cardioid dynamic",
+   "Frequency": "50 Hz to 15 kHz",
+   "Weight": "298 g"
+  },
+  "colours": [
+   "Grey"
+  ],
+  "connectivity": "wired",
+  "description": "A cardioid dynamic vocal microphone for live performance and studio work, with a built-in spherical filter that reduces breath noise.",
+  "flag": "Listings ₹10,299 to ₹14,768; variant named exactly",
+  "priceType": "selling"
+ },
+ "A-05-502": {
+  "productName": "Blue Yeti USB Microphone",
+  "brand": "Blue",
+  "price": 12995,
+  "from": "avstore.in",
+  "specs": {
+   "Weight": "550 g",
+   "Size": "12 x 29.5 cm"
+  },
+  "colours": [
+   "Blackout",
+   "Silver"
+  ],
+  "connectivity": "wired",
+  "description": "A multi-pattern USB condenser microphone from Logitech-owned Blue, widely used for podcasts, streaming and home recording.",
+  "flag": "'Logitech G Yeti USB Microphone' was not found under that name; renamed to the Blue Yeti listing. Sample listing is marked sold out",
+  "priceType": "selling"
+ },
+ "A-05-503": {
+  "price": 10290,
+  "from": "omaxphoto.com",
+  "specs": {
+   "Weight": "585 g",
+   "Connection": "USB-C"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "A compact studio-quality USB condenser microphone with a magnetic desk stand, USB-C output and a headphone monitoring socket.",
+  "flag": "Weight from RØDE's own datasheet",
+  "priceType": "selling"
+ },
+ "A-05-504": {
+  "price": 25999,
+  "from": "proaudiovideo.in",
+  "specs": {
+   "Battery": "About 7 h",
+   "Range": "200 m line of sight"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A dual-channel clip-on wireless microphone kit with about seven hours of battery per charge and a 200 m line-of-sight range.",
+  "flag": "File said wired; this is a wireless system. No white GO II listing found in India, so Black only",
+  "priceType": "selling"
+ },
+ "A-05-505": {
+  "productName": "DJI Mic 2 (2 TX + 1 RX + Charging Case)",
+  "price": 38990,
+  "from": "bajajfinserv.in",
+  "specs": {
+   "Battery": "About 6 h per transmitter",
+   "Range": "250 m"
+  },
+  "colours": [
+   "Shadow Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A two-person wireless microphone kit with two transmitters, a receiver and a charging case, with noise cancelling and a 250 m range.",
+  "flag": "File said wired; it is wireless. Kit named exactly: ₹26,099 to ₹38,990 depending on kit",
+  "priceType": "selling"
+ },
+ "A-05-506": {
+  "price": 8490,
+  "from": "heyjimmy.in",
+  "specs": {
+   "Battery": "About 10 h on 2 AAA",
+   "Weight": "60 g"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "A pocket stereo recorder with built-in X/Y microphones, microSD storage and about ten hours of recording on two AAA cells.",
+  "flag": "Gearank lists it as discontinued, H1essential succeeds it; still listed by Indian retailers, some out of stock",
+  "priceType": "selling"
+ },
+ "A-05-507": {
+  "price": 599,
+  "from": "shopyvision.com",
+  "specs": {
+   "Pattern": "Omnidirectional condenser",
+   "Cable": "6 m"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "A clip-on omnidirectional lavalier microphone with a long 6 m cable, suited to phones, cameras and simple video interviews.",
+  "flag": "Listings ₹412 to ₹715; file had ₹999",
+  "priceType": "selling"
+ }
+}

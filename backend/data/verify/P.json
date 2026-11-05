@@ -1,0 +1,659 @@
+{
+ "P-01-101": {
+  "price": 79900,
+  "priceType": "launch-mrp",
+  "from": "theweek.in",
+  "url": "https://www.theweek.in/news/biz-tech/2024/09/10/how-much-does-iphone-16-cost-in-india-pre-order-date-colours-and-price-explained.amp.html",
+  "specs": {
+   "Storage": "128 GB, 256 GB, 512 GB",
+   "Display": "6.1-inch Super Retina XDR"
+  },
+  "colours": [
+   "Ultramarine",
+   "Teal",
+   "Pink",
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Apple's 2024 phone with a 6.1-inch Super Retina XDR display, the A18 chip, a 48 MP main camera and IP68 water and dust resistance.",
+  "flag": "Launch price only. Two aggregators (Bajaj Finserv, CashKaro) show Rs 69,900, likely a later price; not confirmed at a retailer. White also exists; list capped at 4 colours. Digit's A16 chip entry conflicts with other sources."
+ },
+ "P-01-102": {
+  "price": 119900,
+  "priceType": "launch-mrp",
+  "from": "republicworld.com",
+  "url": "https://www.republicworld.com/tech/iphone-16-iphone-16-pro-india-prices-sale-date-announced",
+  "specs": {
+   "Storage": "128 GB, 256 GB, 512 GB, 1 TB",
+   "Display": "6.3-inch Super Retina XDR OLED"
+  },
+  "colours": [
+   "Black Titanium",
+   "White Titanium",
+   "Natural Titanium",
+   "Desert Titanium"
+  ],
+  "connectivity": "wireless",
+  "description": "Titanium-framed Pro iPhone with a 6.3-inch OLED display, A18 Pro chip, 8 GB of RAM, a Camera Control button and an IP68 rating.",
+  "flag": "Launch price only. Bajaj Finserv lists Rs 1,09,900 and Beebom mentions a December 2025 price cut; neither confirmed at a retailer."
+ },
+ "P-01-103": {
+  "price": 80999,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/444701/samsung-galaxy-s25-s25-plus-s25-ultra-india-price.html",
+  "specs": {
+   "Storage": "256 GB, 512 GB",
+   "Display": "6.2-inch Dynamic AMOLED 2X, FHD+, 120 Hz"
+  },
+  "colours": [
+   "Navy",
+   "Silver Shadow",
+   "Icyblue",
+   "Mint"
+  ],
+  "connectivity": "wireless",
+  "description": "Compact Samsung flagship with a flat 6.2-inch 120 Hz AMOLED display, Snapdragon 8 Elite chip, Wi-Fi 7, an IP68 rating and a 162 g body.",
+  "flag": "Launch price only; current selling price not confirmed. Bajaj Finserv's spec page (Exynos 2200, 6.8-inch) conflicts with all other sources and was ignored."
+ },
+ "P-01-104": {
+  "price": 129999,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/444701/samsung-galaxy-s25-s25-plus-s25-ultra-india-price.html",
+  "specs": {
+   "Storage": "512 GB, 1 TB",
+   "Battery": "5000 mAh, 45 W wired charging"
+  },
+  "colours": [
+   "Titanium Silverblue",
+   "Titanium Gray",
+   "Titanium Black",
+   "Titanium Whitesilver"
+  ],
+  "connectivity": "wireless",
+  "description": "Samsung's top 2025 phone with a titanium frame, S Pen, Snapdragon 8 Elite chip, a 200 MP main camera and a 5000 mAh battery.",
+  "flag": "Launch price only. Sources disagree on whether Rs 1,29,999 is the 256 GB or 512 GB model. Undated reports show discounts to Rs 94,999 and Rs 84,999. 256 GB left out of Storage for that reason."
+ },
+ "P-01-105": {
+  "price": 79999,
+  "priceType": "launch-mrp",
+  "from": "croma.com",
+  "url": "https://croma.com/unboxed/google-pixel-9-series-price-in-india",
+  "specs": {
+   "Storage": "256 GB",
+   "Display": "6.3-inch, 1080 x 2424, up to 2700 nits",
+   "Battery": "4700 mAh, 45 W charging"
+  },
+  "colours": [
+   "Porcelain",
+   "Obsidian",
+   "Peony",
+   "Wintergreen"
+  ],
+  "connectivity": "wireless",
+  "description": "Google's 2024 phone with a 6.3-inch display, Tensor G4 chip, a 4700 mAh battery, an IP68 rating and seven years of updates.",
+  "flag": "Launch price only; current selling price not confirmed. The Quint's Rs 74,999 128 GB figure conflicts with the other reports."
+ },
+ "P-01-106": {
+  "price": 69999,
+  "priceType": "launch-mrp",
+  "from": "businesstoday.in",
+  "url": "https://www.businesstoday.in/technology/news/story/oneplus-13-and-oneplus-13r-launched-check-specifications-price-and-details-here-459944-2025-01-07",
+  "specs": {
+   "Storage": "256 GB, 512 GB, 1 TB",
+   "Display": "6.82-inch QHD+ LTPO, 120 Hz",
+   "Battery": "6000 mAh"
+  },
+  "colours": [
+   "Arctic Dawn",
+   "Black Eclipse",
+   "Midnight Ocean"
+  ],
+  "connectivity": "wireless",
+  "description": "OnePlus flagship with a 6.82-inch QHD+ LTPO display, Snapdragon 8 Elite chip, a 6000 mAh battery, Hasselblad cameras and IP68 and IP69 ratings.",
+  "flag": "Launch price used. Aggregators disagree on current price: Findprix Rs 57,684 (Flipkart), Smartprix Rs 71,999; neither confirmed at the retailer."
+ },
+ "P-01-107": {
+  "price": 24999,
+  "priceType": "launch-mrp",
+  "from": "mobigyaan.com",
+  "url": "https://www.mobigyaan.com/nothing-phone-3a-and-nothing-phone-3a-pro-launched-in-india-starting-at-%e2%82%b924999",
+  "specs": {
+   "Storage": "128 GB, 256 GB",
+   "Display": "6.77-inch, 120 Hz",
+   "Battery": "5000 mAh, 50 W wired charging"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Blue"
+  ],
+  "connectivity": "wireless",
+  "description": "Mid-range Nothing phone with a 6.77-inch 120 Hz display, Snapdragon 7s Gen 3 chip, a 50 MP telephoto camera, an IP64 rating and an Essential button.",
+  "flag": "Launch price for 8 GB + 128 GB; current selling price not confirmed. Bajaj Finserv figures (Rs 27,990, Rs 42,999) conflict with launch reports."
+ },
+ "P-02-201": {
+  "price": 4099,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/iphone-16-silicone-mobile-case-with-magsafe-denim-m10n6p-8595512",
+  "specs": {
+   "Material": "Silicone",
+   "Compatibility": "iPhone 16",
+   "Charging": "MagSafe"
+  },
+  "colours": [
+   "Black",
+   "Denim",
+   "Lake Green",
+   "Peony"
+  ],
+  "connectivity": "n/a",
+  "description": "Apple's own silicone case for the iPhone 16, with built-in MagSafe compatibility. Sold in India in several seasonal colours.",
+  "flag": "Price seen on the Denim listing; MRP Rs 4,900. Reliance also labels one Denim listing as iPhone 16 Pro. File colour Fuchsia not confirmed and dropped."
+ },
+ "P-02-202": {
+  "price": 3920,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/iphone-16-clear-mobile-case-with-magsafe-m10n0h-8595507",
+  "specs": {
+   "Model": "MA6A4ZM/A",
+   "Compatibility": "iPhone 16",
+   "Charging": "MagSafe"
+  },
+  "colours": [
+   "Clear"
+  ],
+  "connectivity": "n/a",
+  "description": "Apple's transparent MagSafe-compatible case for the iPhone 16, sold in India through Apple resellers and large electronics chains.",
+  "flag": "Sources disagree: Reliance product page Rs 3,920, Reliance sale page Rs 4,099, Maple Store Rs 4,410; MRP Rs 4,900."
+ },
+ "P-02-203": {
+  "price": 1599,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/spigen-back-cover-apple-iphone-16/p/itm83d9e670a40af",
+  "specs": {
+   "Material": "PC + TPU",
+   "Compatibility": "iPhone 16 (6.1-inch)",
+   "Charging": "MagFit (MagSafe-style magnets)"
+  },
+  "colours": [
+   "Black",
+   "Crystal Clear"
+  ],
+  "connectivity": "n/a",
+  "description": "Spigen's hybrid polycarbonate and TPU case for the 6.1-inch iPhone 16, with magnets for MagSafe-style accessories and chargers.",
+  "flag": "Rs 1,599 seen on both Flipkart and an Amazon.in Black listing (MRP Rs 2,799); prices vary by colour. Crystal Clear seen on UK and Bangladesh listings only, not on an Indian page. File colour Frost Black dropped (confirmed only for Pro sizes)."
+ },
+ "P-02-204": {
+  "productName": "Spigen Rugged Armor MagFit for iPhone 16",
+  "brand": "Spigen",
+  "price": 1709,
+  "priceType": "selling",
+  "from": "spigen.in",
+  "url": "https://spigen.in/products/iphone-16-series-case-rugged-armor-magfit",
+  "specs": {
+   "Material": "TPU + polycarbonate",
+   "Compatibility": "iPhone 16",
+   "Charging": "MagFit (MagSafe compatible)"
+  },
+  "colours": [
+   "Matte Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Spigen's rugged TPU and polycarbonate case for the iPhone 16, with MagFit magnets for MagSafe chargers and accessories.",
+  "flag": "Spigen India page covers the iPhone 16 series, so the Rs 1,709 (regular Rs 3,099) may not be specific to the base iPhone 16. Amazon.in shows Rs 1,499 to Rs 1,599. Gray also mentioned but not confirmed for this size.",
+  "swap": {
+   "status": "applied",
+   "from": "OtterBox Defender Series for iPhone 16",
+   "to": "Spigen Rugged Armor MagFit for iPhone 16",
+   "reason": "No Indian listing or rupee price for the OtterBox iPhone 16 Defender after two searches; Spigen Rugged Armor MagFit is a well-reviewed rugged MagSafe case listed on Amazon.in and Spigen India."
+  }
+ },
+ "P-02-205": {
+  "price": 1671,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/mobile_cases_covers/samsung-brand",
+  "specs": {
+   "Material": "Silicone",
+   "Compatibility": "Galaxy S25",
+   "Model": "EF-PS931"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Light Blue",
+   "Mint"
+  ],
+  "connectivity": "n/a",
+  "description": "Samsung's own silicone case for the standard Galaxy S25. Samsung India's listing also offers it in a red colour option.",
+  "flag": "Aggregator figure for Mint, dated March 2026; Samsung India page did not show a price. Red also exists; list capped at 4 colours."
+ },
+ "P-02-206": {
+  "productName": "ESR Classic Hybrid Case (HaloLock) for iPhone 16",
+  "brand": "ESR",
+  "price": 841,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/ESR-Classic-Hybrid-iPhone-Frosted/dp/B0D792CVZ5",
+  "specs": {
+   "Material": "TPU",
+   "Compatibility": "iPhone 16",
+   "Charging": "HaloLock magnets (MagSafe compatible)"
+  },
+  "colours": [
+   "Frosted Black"
+  ],
+  "connectivity": "n/a",
+  "description": "ESR's hybrid case for the iPhone 16 with built-in HaloLock magnets for MagSafe chargers and military-grade drop protection.",
+  "flag": "Rs 841 (MRP Rs 2,099) on one Amazon.in listing; another listing shows Rs 1,499. Clear variant mentioned but not confirmed for this listing.",
+  "swap": {
+   "status": "applied",
+   "from": "CASETiFY Impact Case for iPhone 16",
+   "to": "ESR Classic Hybrid Case (HaloLock) for iPhone 16",
+   "reason": "No Indian listing or rupee price for the CASETiFY Impact case after two searches; ESR Classic Hybrid is a protective MagSafe case clearly listed on Amazon.in."
+  }
+ },
+ "P-03-301": {
+  "price": 1499,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/apple-20w-usb-c-power-charging-adapter-iphone-ipad-airpods/p/itm692bb2cec57f7",
+  "specs": {
+   "Output": "20 W",
+   "Ports": "1 USB-C",
+   "Cable": "Not included"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Apple's compact 20 W wall charger with one USB-C port, for fast charging of iPhones and iPads. A charging cable is sold separately.",
+  "flag": "Flipkart listings vary between Rs 1,499 and Rs 1,599; MRP Rs 1,900. Connectivity changed from wired to n/a since it has no data or audio link."
+ },
+ "P-03-302": {
+  "price": 3819,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-magsafe-charger-100-cm-1-m-m0xtdy-8590411",
+  "specs": {
+   "Output": "Up to 25 W with a 30 W adapter",
+   "Length": "1 m"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Magnetic wireless charging puck with an attached 1 m USB-C cable, reaching up to 25 W on compatible iPhones with a 30 W adapter.",
+  "flag": "Reliance also shows Rs 3,628 after offers; iPlanet Rs 4,500 and izone Rs 4,275; MRP Rs 4,500. Connectivity changed from wired to n/a since it only delivers power."
+ },
+ "P-03-303": {
+  "price": 1399,
+  "priceType": "selling",
+  "from": "viveks.com",
+  "url": "https://legacy.viveks.com/samsung-25w-adapter-without-cable-ep-t2510nbngin-black-2",
+  "specs": {
+   "Output": "25 W Super Fast Charging, PD 3.0",
+   "Ports": "1 USB-C",
+   "Cable": "Not included"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Samsung's 25 W wall charger with a single USB-C port and Power Delivery 3.0. It is sold without a cable in black or white.",
+  "flag": "Smaller retailers only: Vivek's Rs 1,399, Sanwariya Rs 999. No Samsung India or major-retailer price found. Connectivity changed from wired to n/a."
+ },
+ "P-03-304": {
+  "price": 3525,
+  "priceType": "estimate",
+  "from": "tanotis.com",
+  "url": "https://tanotis.com/products/anker-30w-usb-c-gan-nano-wall-charger",
+  "specs": {
+   "Output": "30 W",
+   "Ports": "1 USB-C",
+   "Size": "50 x 50 x 32 mm"
+  },
+  "colours": [
+   "Shell White",
+   "Black Stone"
+  ],
+  "connectivity": "n/a",
+  "description": "Small single-port GaN wall charger from Anker rated at 30 W, with a USB-C port. Anker says it is sold in Shell White and Black Stone.",
+  "flag": "Imported-unit price only (Tanotis Rs 3,525, Cart2India Rs 6,000); no official Anker India or major-retailer price. Overlaps with Anker 511 Nano naming; check model number. Connectivity changed from wired to n/a."
+ },
+ "P-03-305": {
+  "productName": "Belkin BoostCharge Pro 65W Dual USB-C GaN Charger",
+  "brand": "Belkin",
+  "price": 2849,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Belkin-Charger-Technology-Compact-MacBook/dp/B0BCNQCWHS",
+  "specs": {
+   "Output": "65 W (45 W + 20 W)",
+   "Ports": "2 USB-C",
+   "Technology": "GaN"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Belkin's compact GaN wall charger with two USB-C ports that share 65 W, split as 45 W and 20 W, for a laptop and a phone together.",
+  "snippetOnly": true,
+  "flag": "Price from a search summary: Rs 2,849 and Rs 3,299 both seen against MRP Rs 5,999. BoostCharge Pro naming comes from a review page; the Amazon.in title just says Belkin 65W GaN Charger.",
+  "swap": {
+   "status": "applied",
+   "from": "Anker 735 Charger (Nano II 65W)",
+   "to": "Belkin BoostCharge Pro 65W Dual USB-C GaN Charger",
+   "reason": "Anker 735 has an Amazon.in page but no rupee price was found after two searches; the Belkin 65W GaN charger is listed on Amazon.in with a price."
+  }
+ },
+ "P-03-306": {
+  "productName": "UGREEN Nexode 65W 3-Port PD GaN Fast Charger",
+  "price": 3999,
+  "priceType": "selling",
+  "from": "ugreenindia.com",
+  "url": "https://www.ugreenindia.com/products/ugreen-15334-nexode-65w-3-port-pd-gan-fast-charger-white",
+  "specs": {
+   "Output": "65 W max on a single USB-C device",
+   "Ports": "3 ports, USB-C PD and USB-A",
+   "Model": "15334"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Three-port GaN wall charger from UGREEN giving up to 65 W to a single USB-C device, with PD and PPS support for phones and laptops.",
+  "flag": "Several 65 W Nexode models exist; matched to SKU 15334 and renamed. File colour Grey belongs to a different GaN II model, so White used from the listing. Regular price shown Rs 8,999. Connectivity changed from wired to n/a."
+ },
+ "P-03-307": {
+  "price": 1799,
+  "priceType": "estimate",
+  "from": "shopyvision.com",
+  "url": "https://www.shopyvision.com/?p=177372",
+  "specs": {
+   "Output": "80 W max (11 V / 7.3 A), or 5 V / 2 A",
+   "Input": "100-240 V, 1.8 A"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "OnePlus wall adapter for SUPERVOOC charging at up to 80 W on supported OnePlus phones. Other brands' phones are limited to 10 W.",
+  "flag": "Undated small-reseller prices only (Shopy Vision Rs 1,799, adsstore Rs 1,925). Croma, Reliance Digital, Vijay Sales and OnePlus India list it, but no price was returned. Connectivity changed from wired to n/a."
+ },
+ "P-04-401": {
+  "productName": "Anker Power Bank (20,000 mAh, 45 W, Dual Built-in USB-C Cables)",
+  "price": 5998,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Anker-Upgraded-Version-Charging-Battery/dp/B0DSZKKJTK",
+  "specs": {
+   "Capacity": "20,000 mAh",
+   "Output": "45 W",
+   "Cables": "2 built-in USB-C cables"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "Anker's 20,000 mAh power bank with up to 45 W output and two built-in USB-C cables, so no separate cable is needed.",
+  "flag": "Amazon.in Rs 5,998 (MRP Rs 9,299); Flipkart lists an Anker 20000 mAh 45 W at Rs 5,999. Exact model number not confirmed.",
+  "swap": {
+   "status": "applied",
+   "from": "Anker 737 Power Bank (PowerCore 24K)",
+   "to": "Anker Power Bank (20,000 mAh, 45 W, Dual Built-in USB-C Cables)",
+   "reason": "No Indian retailer listing or credible rupee price for the 737; possibly discontinued. This Anker 20,000 mAh bank is listed on Amazon.in and Flipkart."
+  }
+ },
+ "P-04-402": {
+  "productName": "Spigen ArcHybrid MagFit 5000 mAh MagSafe Power Bank",
+  "brand": "Spigen",
+  "price": 949,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Spigen-Magnetic-Wireless-Charging-Compatible/dp/B09MJVXYMF",
+  "specs": {
+   "Capacity": "5000 mAh",
+   "Output": "7.5 W wireless",
+   "Weight": "135 g",
+   "Size": "6.4 x 9.8 x 1.7 cm"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Spigen's 5000 mAh magnetic battery that snaps onto MagSafe-era iPhones and charges them wirelessly at up to 7.5 W.",
+  "flag": "Rs 949 against MRP Rs 3,299 on Amazon.in, a deep discount from one listing only. Listing gives two slightly different sizes.",
+  "swap": {
+   "status": "applied",
+   "from": "Anker 621 Magnetic Battery (MagGo, 5000 mAh)",
+   "to": "Spigen ArcHybrid MagFit 5000 mAh MagSafe Power Bank",
+   "reason": "No Indian listing or rupee price for the Anker 621; the Spigen ArcHybrid MagFit is a 5000 mAh magnetic battery listed on Amazon.in."
+  }
+ },
+ "P-04-403": {
+  "productName": "Mi Power Bank 3i 20000 mAh",
+  "price": 1699,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/mi-3i-20000-mah-power-bank-fast-charging-18w/p/itmd42cbbe08e65e",
+  "specs": {
+   "Capacity": "20,000 mAh",
+   "Output": "18 W fast charging",
+   "Ports": "USB-C and micro-USB in, triple output",
+   "Battery": "Lithium polymer"
+  },
+  "colours": [
+   "Sandstone Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Xiaomi's 20,000 mAh lithium-polymer power bank with 18 W two-way fast charging, USB-C and micro-USB inputs and three outputs.",
+  "flag": "Launched in India in 2020. Flipkart Rs 1,699 (list Rs 3,499); Amazon.in seller shows Rs 2,149; one tracker marks it out of stock. File colour Blue not confirmed, so dropped. Connectivity changed from wired to n/a."
+ },
+ "P-04-404": {
+  "price": 1494,
+  "priceType": "selling",
+  "from": "croma.com",
+  "specs": {
+   "Capacity": "10,000 mAh",
+   "Output": "15 W max wired in and out",
+   "Charging": "Wireless charging pad"
+  },
+  "colours": [
+   "Silver",
+   "Pink"
+  ],
+  "connectivity": "n/a",
+  "description": "Samsung's 10,000 mAh battery pack (EB-U1200) that can charge a phone wirelessly by laying it on top, or by cable.",
+  "snippetOnly": true,
+  "flag": "Price from a search summary only: Croma Silver Rs 1,494, also marked out of stock on Smartprix; launch price Rs 3,699 (2019); a tracker shows Rs 3,999. Reliance Digital pages exist (EB-U1200CSNGIN, EB-U1200CPNGIN) but showed no price. File colour Beige belongs to the newer 25 W model, so replaced. Connectivity changed from wired to n/a."
+ },
+ "P-04-405": {
+  "productName": "Belkin BoostCharge Pro Qi2 Magnetic Power Bank 5K",
+  "price": 2999,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Belkin-BoostCharge-Magnetic-Power-iPhone/dp/B0CTJC8H3Q",
+  "specs": {
+   "Capacity": "5000 mAh",
+   "Output": "15 W Qi2 wireless",
+   "Charging": "MagSafe compatible"
+  },
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Belkin's 5000 mAh magnetic power bank that snaps onto Qi2 and MagSafe phones and charges them wirelessly at up to 15 W.",
+  "snippetOnly": true,
+  "flag": "Price from a search summary: Rs 2,999 (list Rs 8,999) and Rs 4,799 both seen; the Rs 2,999 / Rs 8,999 pair also appears on Belkin's older 7.5 W 5000 mAh listing, so it may be mixed up. Connectivity changed from wired to n/a."
+ },
+ "P-04-406": {
+  "productName": "Ambrane Stylo 20K 20000 mAh Power Bank",
+  "price": 1699,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/ambrane-stylo-20000-mah-power-bank-with-20-watts-fast-charging-input-output-blue-/p/492850788",
+  "specs": {
+   "Capacity": "20,000 mAh",
+   "Output": "20 W fast charging",
+   "Ports": "2 USB-A, 1 USB-C",
+   "Weight": "410 g"
+  },
+  "colours": [
+   "Blue",
+   "Green",
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Ambrane's 20,000 mAh lithium-polymer power bank with 20 W fast charging, Quick Charge 3.0 and three ports (two USB-A, one USB-C).",
+  "flag": "Weight from Croma only. Flipkart lists Rs 2,300; MRP Rs 2,499. Connectivity changed from wired to n/a.",
+  "swap": {
+   "status": "applied",
+   "from": "Ambrane 20000 mAh Stylo Pro Power Bank",
+   "to": "Ambrane Stylo 20K 20000 mAh Power Bank",
+   "reason": "Ambrane's Stylo Pro is a 27,000 mAh model; no 20,000 mAh Stylo Pro exists. The Stylo 20K is Ambrane's 20,000 mAh Stylo model."
+  }
+ },
+ "P-05-501": {
+  "price": 2399,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.flipkart.com/apple-usb-type-c-cable-2-m-myqt3zm-a/p/itma4b1aee937702",
+  "specs": {
+   "Output/Length": "240 W, 2 m",
+   "Build": "Woven",
+   "Model": "MYQT3ZM/A"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Apple's 2 m woven USB-C to USB-C cable rated for charging at up to 240 W, for MacBooks, iPads and iPhones.",
+  "flag": "Amazon.in Rs 2,299, Reliance Digital Rs 2,499, Apple India MRP Rs 2,900. Colour White carried from the file, not confirmed in results."
+ },
+ "P-05-502": {
+  "price": 1799,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-60-w-100-cm-1-m-usb-c-charging-cable-m1z16g-8651005",
+  "specs": {
+   "Output/Length": "60 W, 1 m",
+   "Build": "Woven",
+   "Model": "MW493ZM/A"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Apple's 1 m woven USB-C to USB-C cable rated for charging at up to 60 W, for iPhones, iPads and other USB-C devices.",
+  "flag": "Model code MW493ZM/A from the Flipkart and Vijay Sales listings, not the Reliance page. Vijay Sales Rs 1,599 and Flipkart Rs 1,499 to Rs 1,699; MRP Rs 1,900."
+ },
+ "P-05-503": {
+  "price": 1599,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Apple-USB-C-Lightning-Cable-1m/dp/B0CX23929Q",
+  "specs": {
+   "Output/Length": "1 m",
+   "Connectors": "USB-C to Lightning"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Apple's 1 m cable with a USB-C plug on one end and Lightning on the other, for charging and syncing older iPhones and accessories.",
+  "flag": "MRP Rs 1,900. Colour White carried from the file, not confirmed in results."
+ },
+ "P-05-504": {
+  "productName": "Anker 643 USB-C to USB-C Cable (Flow, 0.9 m)",
+  "price": 488,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Anker-Powerline-Charging-Charge-MacBook/dp/B093GFJ74C",
+  "specs": {
+   "Output/Length": "100 W, 0.9 m (3 ft)",
+   "Material": "Silicone",
+   "Durability": "25,000 bends"
+  },
+  "colours": [
+   "Cloud White",
+   "Midnight Black",
+   "Misty Blue",
+   "Mint Green"
+  ],
+  "connectivity": "wired",
+  "description": "Anker's soft silicone USB-C to USB-C cable that carries up to 100 W with a Power Delivery charger, rated for 25,000 bends.",
+  "snippetOnly": true,
+  "flag": "Price from a search summary: Cloud White 3 ft at Rs 488 or Rs 490 (list Rs 1,998). Seven colours exist; four listed. Data speed sources conflict, so left out.",
+  "swap": {
+   "status": "applied",
+   "from": "Anker 643 USB-C to USB-C Cable (Flow, 1.8 m)",
+   "to": "Anker 643 USB-C to USB-C Cable (Flow, 0.9 m)",
+   "reason": "The 1.8 m (6 ft, A8553) version exists on Amazon.in but no rupee price was found in two searches; the 0.9 m version has a confirmed price."
+  }
+ },
+ "P-05-505": {
+  "price": 799,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Belkin-Apple-Certified-USB-C-Cable/dp/B0F9FMGYZN",
+  "specs": {
+   "Output/Length": "60 W, 2 m",
+   "Certification": "Apple certified"
+  },
+  "colours": [
+   "Black",
+   "White",
+   "Blue",
+   "Pink"
+  ],
+  "connectivity": "wired",
+  "description": "Belkin's 2 m USB-C to USB-C cable rated at 60 W for fast charging phones, tablets and laptops.",
+  "snippetOnly": true,
+  "flag": "Price from a search summary, not tied to one listing: Rs 799 (list Rs 1,399) and Rs 899 seen. Current Amazon.in titles say Belkin Apple Certified rather than BoostCharge. Sand colour also listed."
+ },
+ "P-05-506": {
+  "productName": "UGREEN 100W USB-C to USB-C Cable (2 m)",
+  "price": 1456,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/UGREEN-Delivery-Charging-Matebook-Chromebook/dp/B07V6TQTD8",
+  "specs": {
+   "Output/Length": "100 W, 2 m",
+   "Material": "Nylon braided"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wired",
+  "description": "UGREEN's 2 m USB-C to USB-C cable with Power Delivery charging at up to 100 W for laptops, tablets and phones.",
+  "flag": "Rs 1,456 (list Rs 3,238). Nylon braid confirmed on the 2-pack listing, not explicitly on this single listing. File colour Grey not confirmed; replaced with Black."
+ },
+ "P-05-507": {
+  "price": 5523,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Samsung-Official-USB-C-Cable-Black/dp/B07V7GDKBJ",
+  "specs": {
+   "Output/Length": "100 W (20 V, 5 A), 1 m",
+   "Data": "USB 2.0, 480 Mb/s",
+   "Weight": "31.94 g",
+   "Model": "EP-DN975"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wired",
+  "description": "Samsung's 1 m USB-C to USB-C cable rated for 5 A, carrying up to 100 W, with USB 2.0 data speeds.",
+  "flag": "Only Amazon.in listing found is Rs 5,523 (list Rs 9,330), likely an import seller; another shows Rs 5,738. Samsung UK lists about GBP 15, so the Indian figure looks inflated. White from Samsung Austria and Germany pages."
+ }
+}

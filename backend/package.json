@@ -6,6 +6,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "seed": "node seed.js",
+    "catalogue:verify": "node scripts/dataset/verifyProducts.js",
     "images": "node scripts/generateProductImages.js",
     "photos": "node scripts/fetchProductPhotos.js",
     "test": "node --test tests/api.test.js tests/models.test.js tests/auth.test.js tests/catalogue.test.js tests/seed.test.js tests/shelves.test.js tests/orders.test.js tests/acceptance.test.js tests/images.test.js"

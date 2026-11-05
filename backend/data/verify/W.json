@@ -1,0 +1,636 @@
+{
+ "W-01-101": {
+  "price": 30999,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/smartwatches/apple-watch-x-ppd1oro5ruzl",
+  "specs": {
+   "Display": "1.53 inch OLED",
+   "Water": "50 m, WR50, IP6X",
+   "Sensors": "Heart rate, SpO2"
+  },
+  "colours": [
+   "Jet Black",
+   "Silver"
+  ],
+  "connectivity": "wireless",
+  "description": "Aluminium 42 mm GPS smartwatch with an OLED display and heart rate and SpO2 tracking. Connects over Wi-Fi and Bluetooth 5.3 and is water resistant to 50 m.",
+  "flag": "Aggregator price only; sources disagree: Smartprix 30999 on product page and 35999 on list page, Amazon 29999 in a May 2026 tracker (zoutons), launch 46900. Rose Gold unconfirmed, so left out. Display size comes from aggregator listings only. Battery not confirmed."
+ },
+ "W-01-102": {
+  "price": 23119,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/smartwatches/apple-watch-se-2nd-gen-40mm-gps-ppd1uva7b7io",
+  "specs": {
+   "Display": "1.57 inch touch display",
+   "Water": "50 m",
+   "Sensors": "Heart rate"
+  },
+  "colours": [
+   "Midnight",
+   "Starlight",
+   "Silver"
+  ],
+  "connectivity": "wireless",
+  "description": "40 mm GPS smartwatch with a touch display, heart rate monitoring and 50 m water resistance. Connects over Wi-Fi and Bluetooth, and comes in Midnight, Starlight and Silver.",
+  "flag": "Aggregator price only; sources disagree: original MSRP 29900, Smartprix 23119, a dated Amazon deal 16999. Smartprix also lists an SpO2 monitor, left out as doubtful for this model. Bluetooth version disagrees (5.0 vs 5.3). Battery not confirmed."
+ },
+ "W-01-103": {
+  "price": 29999,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/?p=428545",
+  "specs": {
+   "Battery": "300 mAh",
+   "Display": "1.31 inch Super AMOLED",
+   "Water": "IP68"
+  },
+  "colours": [
+   "Green",
+   "Cream"
+  ],
+  "connectivity": "wireless",
+  "description": "40 mm Bluetooth smartwatch with a 1.31 inch Super AMOLED display and a 300 mAh battery. It runs Samsung's One UI watch software on Wear OS and is IP68 rated.",
+  "flag": "No selling price confirmed for the 40 mm Bluetooth model. Price is the July 2024 launch price; Cashify also gives 29999 as a starting price. Retail figures found were for the LTE model (Smartprix 26999, Flipkart 32999), so they were not used."
+ },
+ "W-01-104": {
+  "price": 24990,
+  "priceType": "estimate",
+  "from": "91mobiles.com (lowest price, flipkart.com)",
+  "url": "https://www.91mobiles.com/google-pixel-watch-3-smart-watch-price-in-india",
+  "specs": {
+   "Battery": "Up to 24 hours with always-on display, 36 hours in battery saver",
+   "Display": "AMOLED, 320 ppi, up to 2000 nits, Gorilla Glass 5"
+  },
+  "colours": [
+   "Obsidian",
+   "Porcelain",
+   "Hazel",
+   "Rose Quartz"
+  ],
+  "connectivity": "wireless",
+  "description": "41 mm Wi-Fi smartwatch running Wear OS 5 with a curved always-on AMOLED display. Battery lasts up to 24 hours, or 36 hours in battery saver mode.",
+  "flag": "Aggregator price only: 91mobiles shows Flipkart at 24990, Smartprix 24989 out of stock; launch 39900 to 39990 by source. Colours are band names per Gizbot; another source lists case finishes instead (Matte Black, Polished Silver, Champagne Gold, Matte Hazel). Water rating not confirmed."
+ },
+ "W-01-105": {
+  "price": 32990,
+  "priceType": "estimate",
+  "from": "smartprix.com",
+  "url": "https://www.smartprix.com/smartwatches/garmin-forerunner-265-smartwatch-ppd1l1l63rpz",
+  "specs": {
+   "Battery": "Up to 13 days in smartwatch mode",
+   "Display": "1.3 inch AMOLED, 416 x 416, Gorilla Glass 4",
+   "Water": "5 ATM"
+  },
+  "colours": [
+   "Black",
+   "Aqua",
+   "Whitestone"
+  ],
+  "connectivity": "wireless",
+  "description": "46 mm running smartwatch with a 1.3 inch AMOLED touchscreen, 5 ATM water rating and up to 13 days of battery in smartwatch mode. A smaller 42 mm version is sold as the 265S.",
+  "flag": "Aggregator price only; sources disagree: Smartprix 32990 (dated 8 May 2026), a review 40990, launch 50490. Colours disagree: one 91mobiles listing says Black and Gold; Aqua, Black and Whitestone reported most often."
+ },
+ "W-01-106": {
+  "price": 16999,
+  "priceType": "launch-mrp",
+  "from": "themobileindian.com",
+  "url": "https://www.themobileindian.com/news/amazfit-gtr-4-smartwatch-launched-in-india-price-availability-features-and-more",
+  "specs": {
+   "Battery": "475 mAh, up to 14 days",
+   "Display": "1.43 inch always-on AMOLED, 466 x 466"
+  },
+  "colours": [
+   "Superspeed Black",
+   "Racetrack Grey"
+  ],
+  "connectivity": "wireless",
+  "description": "Round smartwatch with a 1.43 inch always-on AMOLED display, a 475 mAh battery rated up to 14 days, and Bluetooth calling. Not the same as the later GTR 4 New.",
+  "flag": "No retailer selling price confirmed; aggregators disagree on Flipkart (16899 vs 20059), so launch price used. One source says 1.45 inch display. Water rating not confirmed. Colour spelt Superseed in one source."
+ },
+ "W-01-107": {
+  "price": 2999,
+  "priceType": "estimate",
+  "from": "pricekeeda.com (lowest price, amazon.in)",
+  "url": "https://www.pricekeeda.com/noise-colorfit-pro-5-price-in-india/",
+  "specs": {
+   "Battery": "Up to 7 days",
+   "Display": "1.85 inch AMOLED, 390 x 450",
+   "Water": "IP68"
+  },
+  "colours": [
+   "Elite Black",
+   "Sage Green",
+   "Shadow Black",
+   "Classic Brown"
+  ],
+  "connectivity": "wireless",
+  "description": "Budget smartwatch with a 1.85 inch AMOLED display, Bluetooth calling, SOS feature and an IP68 rating. Battery is rated at up to 7 days and straps come in silicone, leather, nylon and metal.",
+  "flag": "Aggregator price only; sources disagree: Pricekeeda and Bajaj Finserv (August 2025) 2999, MySmartPrice 3999, launch 3999 and 4999 Elite edition. File colours Jet Black and Rose Pink not confirmed for this model, so replaced; Sage Green, Shadow Black and Classic Brown are reported strap variants, and some sources tie them to the Pro 5 Max."
+ },
+ "W-02-201": {
+  "price": 2699,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://www.smartprix.com/fitness_bands/huawei-band-9-ppd1e0a25yz7",
+  "specs": {
+   "Battery": "Up to 14 days",
+   "Display": "1.47 inch AMOLED",
+   "Water": "5 ATM",
+   "Sensors": "Heart rate, SpO2"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "A slim 14 g fitness band with a 1.47-inch AMOLED screen, sleep, heart rate and SpO2 tracking, 100 workout modes and up to 14 days of battery.",
+  "flag": "Flipkart price via Smartprix, Amazon.in snippets show ₹2,999 to ₹3,999; sources disagree on resolution",
+  "swap": {
+   "status": "applied",
+   "from": "Xiaomi Smart Band 9",
+   "to": "Huawei Band 9",
+   "reason": "No India sale confirmed for the Smart Band 9; Huawei Band 9 is listed on Amazon.in and Flipkart"
+  },
+  "productName": "Huawei Band 9",
+  "brand": "Huawei",
+  "snippetOnly": true
+ },
+ "W-02-202": {
+  "price": 14998,
+  "priceType": "estimate",
+  "from": "smartprix.com (lowest price, Myntra)",
+  "url": "https://www.smartprix.com/fitness_bands/fitbit-charge-6-fitness-band-ppd10ccze2vi",
+  "specs": {
+   "Battery": "Up to 7 days",
+   "Display": "1.04 inch AMOLED",
+   "Sensors": "Heart rate, SpO2, temperature, built-in GPS"
+  },
+  "colours": [
+   "Obsidian",
+   "Porcelain",
+   "Coral"
+  ],
+  "connectivity": "wireless",
+  "description": "Fitness band with a 1.04 inch AMOLED display, built-in GPS, heart rate and SpO2 tracking and 40 exercise modes. Battery is rated for up to seven days.",
+  "flag": "Aggregator price only (dated 20 May 2026). Bajaj Finserv lists 13999 for Obsidian and Porcelain, 14899 for Coral. PriceKeeda marks it out of stock. Water rating not confirmed."
+ },
+ "W-02-203": {
+  "price": 8999,
+  "priceType": "launch-mrp",
+  "from": "fonearena.com",
+  "url": "https://www.fonearena.com/blog/375587/fitbit-sense-2-versa-4-inspire-3-price-india-features.html/amp",
+  "specs": {
+   "Battery": "Up to 10 days",
+   "Display": "0.74 inch always-on AMOLED",
+   "Water": "Up to 50 m",
+   "Sensors": "SpO2, ambient light"
+  },
+  "colours": [
+   "Midnight Zen",
+   "Lilac Bliss",
+   "Morning Glow"
+  ],
+  "connectivity": "wireless",
+  "description": "Slim fitness band with an always-on AMOLED display, SpO2 monitoring and swim-proof water resistance to 50 m. Battery life is rated at up to 10 days.",
+  "flag": "Launch price from September 2022; an aggregator updated December 2025 still shows 8999 with Amazon lowest, but no retailer page confirmed it. Display size disagrees: Croma's listing says 0.74 inch, another spec sheet 1.46 inch; Croma used."
+ },
+ "W-02-204": {
+  "price": 4999,
+  "priceType": "launch-mrp",
+  "from": "digit.in",
+  "url": "https://www.digit.in/news/wearable-devices/samsung-galaxy-fit3-with-amoled-display-launched-in-india-price-specifications-and-features.html",
+  "specs": {
+   "Battery": "208 mAh, up to 13 days",
+   "Display": "1.6 inch AMOLED, 256 x 402",
+   "Water": "5 ATM, IP68"
+  },
+  "colours": [
+   "Gray",
+   "Silver",
+   "Pink Gold"
+  ],
+  "connectivity": "wireless",
+  "description": "Fitness band with a 1.6 inch AMOLED display, aluminium body and Bluetooth 5.3. Its 208 mAh battery is rated for up to 13 days.",
+  "flag": "Launch price from February 2024; no current selling price found. File colour Dark Grey renamed Gray as reported. Sources word the water rating differently (IP68 to 50 m vs 5 ATM plus IP68)."
+ },
+ "W-02-205": {
+  "price": 3499,
+  "priceType": "launch-mrp",
+  "from": "digit.in",
+  "url": "https://www.digit.in/news/wearable-devices/amazfit-band-7-to-go-on-sale-in-india-from-november-8-price-and-details-65925.html",
+  "specs": {
+   "Battery": "Up to 18 days",
+   "Display": "1.47 inch AMOLED, 198 x 368",
+   "Water": "5 ATM"
+  },
+  "colours": [
+   "Black",
+   "Beige"
+  ],
+  "connectivity": "wireless",
+  "description": "Fitness band with a 1.47 inch AMOLED display, 120 sports modes, built-in Alexa and Bluetooth 5.2. It has no built-in GPS and uses the phone's GPS for routes.",
+  "flag": "Launch price from November 2022; no current selling price or current availability found. Colours disagree: Classic Black and Elegant Beige in one source, black, white and pink in others. One source gives up to 24 days in battery saver mode."
+ },
+ "W-02-206": {
+  "price": 14990,
+  "priceType": "launch-mrp",
+  "from": "zeebiz.com",
+  "url": "https://www.zeebiz.com/technology/news-garmin-vivosmart-5-fitness-band-with-7-day-battery-life-launched-at-rs-14990-in-india-check-details-186756",
+  "specs": {
+   "Battery": "Up to 7 days",
+   "Display": "0.73 inch OLED, 88 x 154",
+   "Water": "Swim and shower proof"
+  },
+  "colours": [
+   "Black",
+   "Mint"
+  ],
+  "connectivity": "wireless",
+  "description": "Fitness band with a small 0.73 inch OLED display, pulse ox and heart rate monitoring, and up to 7 days of battery. Comes in small, medium and large sizes.",
+  "flag": "Launch price from June 2022 (some sources say 14999). 91mobiles shows 16990 out of stock, so current availability is unclear. Colours disagree: some sources add White. Official spelling is vivosmart with an accented i in some sources; name left as is."
+ },
+ "W-03-301": {
+  "price": 4500,
+  "priceType": "mrp",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-watch-46-mm-black-sport-band-xl-m1p0k2-8639416",
+  "specs": {
+   "Material": "Fluoroelastomer",
+   "Fit": "Pin-and-tuck closure, for 46 mm Apple Watch cases",
+   "Sizes": "S/M, M/L"
+  },
+  "colours": [
+   "Black",
+   "Denim",
+   "Plum"
+  ],
+  "connectivity": "n/a",
+  "description": "Fluoroelastomer watch band with a pin-and-tuck closure for 46 mm Apple Watch cases. Sold in S/M and M/L sizes, with Black, Denim and Plum listed at Reliance Digital.",
+  "flag": "MRP from the Black XL listing; no selling price found, and Denim and Plum prices not confirmed. File colour Light Blush has no Indian listing, so replaced with Plum."
+ },
+ "W-03-302": {
+  "price": 4500,
+  "priceType": "selling",
+  "from": "iplanet.one",
+  "url": "https://iplanet.one/products/2024-apple-watch-sport-loop-mxl53zm-a",
+  "specs": {
+   "Material": "Nylon, polyester and spandex",
+   "Fit": "For 46 mm Apple Watch cases"
+  },
+  "colours": [
+   "Plum",
+   "Blue Cloud"
+  ],
+  "connectivity": "n/a",
+  "description": "Woven Apple Watch band made from nylon, polyester and spandex, for 46 mm cases. Listed in Blue Cloud and Plum at Indian retailers.",
+  "flag": "Price is for Blue Cloud at iPlanet; Reliance Digital lists Plum and Blue Cloud but no figure was returned, so Plum price is unconfirmed. Band sizes not confirmed."
+ },
+ "W-03-303": {
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Apple-Watch-Band-Sport-Burgundy/dp/B0HJ9Y8J72",
+  "specs": {
+   "Fit": "For 42 mm Apple Watch cases",
+   "Sizes": "One size, fits most"
+  },
+  "colours": [
+   "Burgundy Plaid"
+  ],
+  "connectivity": "n/a",
+  "description": "Apple's own fabric loop strap for 42 mm Apple Watch cases, in a one-size design that fits most wrists.",
+  "productName": "Apple Sport Loop (42 mm)",
+  "price": 4500,
+  "priceType": "selling",
+  "swap": {
+   "status": "applied",
+   "from": "Apple Solo Loop (42 mm)",
+   "to": "Apple Sport Loop (42 mm)",
+   "reason": "No Indian price or listing for the Solo Loop after three searches; the 42 mm Sport Loop is in stock on Amazon.in"
+  }
+ },
+ "W-03-304": {
+  "price": 9500,
+  "priceType": "selling",
+  "from": "reliancedigital.in",
+  "url": "https://www.reliancedigital.in/product/apple-watch-46-mm-slate-milanese-loop-sm-zml-m1hwxu-8619665",
+  "specs": {
+   "Material": "80% recycled stainless steel mesh",
+   "Fit": "For 46 mm Apple Watch cases",
+   "Sizes": "S/M, M/L"
+  },
+  "colours": [
+   "Slate",
+   "Natural"
+  ],
+  "connectivity": "n/a",
+  "description": "Stainless steel mesh band for 46 mm Apple Watch cases, sold in S/M and M/L sizes. Slate and Natural are listed at Reliance Digital.",
+  "flag": "Price is for Slate S/M; may be MRP as the listing type was not clear, and it is not confirmed live. File price was 9900. File colour Silver found only for 41 mm and 45 mm bands, so replaced with Natural."
+ },
+ "W-03-305": {
+  "from": "croma.com",
+  "url": "https://www.croma.com/l/samsung-fitness-watch-bands-0asz00a.html",
+  "specs": {
+   "Material": "HNBR",
+   "Fit": "20 mm, fits Galaxy Watch4 to Watch7",
+   "Sizes": "S/M, M/L"
+  },
+  "colours": [
+   "Green",
+   "Orange",
+   "Cream",
+   "Dark Gray"
+  ],
+  "connectivity": "n/a",
+  "description": "20 mm sport band for Galaxy Watch4 to Watch7 in S/M and M/L sizes, using model ET-SNL30. Croma India lists HNBR versions in green and orange.",
+  "flag": "Croma ₹4,999; Flipkart ₹4,299 but unavailable; Amazon.in Dark Gray unavailable",
+  "price": 4999,
+  "priceType": "selling"
+ },
+ "W-03-306": {
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Abanen-Silicone-Forerunner-Waterproof-Wristband/dp/B0BHQYBZLZ",
+  "specs": {
+   "Material": "Silicone",
+   "Fit": "22 mm QuickFit, for Garmin Fenix, Forerunner and Instinct"
+  },
+  "colours": [
+   "Dark Blue-Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A two-tone silicone strap with a 22 mm quick-fit fitting that suits Garmin Fenix, Forerunner and Instinct watches.",
+  "flag": "Third-party band, not made by Garmin",
+  "productName": "Abanen 22 mm QuickFit Silicone Watch Band",
+  "brand": "Abanen",
+  "price": 2215,
+  "priceType": "selling",
+  "swap": {
+   "status": "applied",
+   "from": "Garmin QuickFit 22 Silicone Band",
+   "to": "Abanen 22 mm QuickFit Silicone Watch Band",
+   "reason": "Garmin's own band shows as unavailable or unpriced on Amazon.in; this third-party QuickFit band is listed there"
+  }
+ },
+ "W-03-307": {
+  "price": 1614,
+  "priceType": "selling",
+  "from": "flipkart.com",
+  "url": "https://flipkart.com/spigen-062cs25324-smart-watch-strap/p/itmf9ec799ea5aea",
+  "specs": {
+   "Fit": "Combined case and band for Apple Watch",
+   "Sizes": "40/41 mm, 44/45 mm, 49 mm"
+  },
+  "colours": [
+   "Black",
+   "Charcoal Grey",
+   "Green"
+  ],
+  "connectivity": "n/a",
+  "description": "Combined protective case and band for Apple Watch, sold in versions for 40/41 mm, 44/45 mm and 49 mm models. Sold in India through Spigen India.",
+  "flag": "Price is for Green 44/45 mm at Flipkart (MRP 2699, 40% off), may be a sale price. Black and Charcoal Grey confirmed at overseas retailers only; file name Matte Black not found. Material not confirmed."
+ },
+ "W-04-401": {
+  "price": 38999,
+  "priceType": "launch-mrp",
+  "from": "digit.in",
+  "url": "https://www.digit.in/news/wearable-devices/samsung-galaxy-ring-launched-in-india-at-rs-38999-features-availability-and-more.html",
+  "specs": {
+   "Battery": "Up to 7 days",
+   "Water": "5 ATM, IP68",
+   "Sensors": "Accelerometer, optical heart rate, temperature",
+   "Weight": "2.3 to 3 g by size"
+  },
+  "colours": [
+   "Titanium Black",
+   "Titanium Silver",
+   "Titanium Gold"
+  ],
+  "connectivity": "wireless",
+  "description": "Titanium smart ring with optical heart rate, temperature and motion sensors, rated up to seven days per charge. Comes in nine sizes from 5 to 13 with a charging case.",
+  "flag": "Launch price from October 2024; no current selling price found. Some sources give 39999 as list price. One site says 10 ATM; 5 ATM used."
+ },
+ "W-04-402": {
+  "price": 19999,
+  "priceType": "estimate",
+  "from": "smartprix.com (lowest price, amazon.in)",
+  "url": "https://www.smartprix.com/smart_rings/ultrahuman-ring-air-ppd15b9fnrb5",
+  "specs": {
+   "Battery": "Up to 6 days",
+   "Water": "100 m",
+   "Sensors": "Infrared PPG, skin temperature, 6-axis motion",
+   "Weight": "2.4 to 3.6 g by size"
+  },
+  "colours": [
+   "Matte Grey",
+   "Bionic Gold",
+   "Aster Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Titanium smart ring that tracks sleep, movement, recovery and heart rate, with about 6 days of battery. Sold in India in sizes from 5 to 14, with no app fee for standard features.",
+  "flag": "Aggregator price only, dated December 2025; listings run from about 18500 to 28499, and Reliance Digital uses 28499 as list price. Aster Black confirmed on a German listing only. Water figure from Cashify only. Size range disagrees (5 to 14 vs 6 to 12); battery capacity disagrees (24 vs 32 mAh)."
+ },
+ "W-04-403": {
+  "price": 28900,
+  "priceType": "launch-mrp",
+  "from": "digit.in",
+  "url": "https://www.digit.in/news/wearable-devices/oura-ring-4-debuts-in-india-with-50-health-metrics-starts-at-rs-28900.html",
+  "specs": {
+   "Battery": "Up to 8 days",
+   "Sensors": "Red and IR LEDs (SpO2, heart rate), temperature, accelerometer",
+   "Material": "Titanium",
+   "Weight": "3.3 to 5.2 g"
+  },
+  "colours": [
+   "Silver",
+   "Black"
+  ],
+  "connectivity": "wireless",
+  "description": "Titanium smart ring with recessed sensors that tracks sleep, heart rate, SpO2 and temperature, with up to 8 days of battery. Comes in 12 sizes (4 to 15); full app features need a paid Oura membership.",
+  "flag": "No retailer selling price confirmed. Price is the March 2026 India launch price and applies to Silver and Black only; Stealth, Brushed Silver, Gold and Rose Gold launched at 39900, so file colour Gold was dropped. Smartprix search snippet showed 27930 at Amazon, but the page returned 403 and it is undated, so it was not used. Water rating not confirmed by search, so left out. Bluetooth not named in results; wireless kept from the file. One comparison page says Oura Ring 5 is now current."
+ },
+ "W-04-404": {
+  "price": 3490,
+  "priceType": "mrp",
+  "from": "themacindex.com",
+  "url": "https://themacindex.com/in/products/airtag/airtag-mx532",
+  "specs": {
+   "Battery": "Replaceable CR2032 coin cell, about a year",
+   "Water": "IP67, 1 m for up to 30 minutes"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Original first-generation AirTag item tracker using Bluetooth and a U1 chip with Apple's Find My network. It runs on a replaceable CR2032 coin cell and is rated IP67.",
+  "flag": "Superseded: AirTag 2 launched in India in 2026 at 3790, so retailers may be clearing stock. Not swapped as still listed. Price is the base India price from an index site; Izone Digital shows 3315, a dated Desidime post shows 2849 at Amazon and 3190 at Croma; launch price was 3190. No current major retailer price confirmed."
+ },
+ "W-04-405": {
+  "price": 11900,
+  "priceType": "mrp",
+  "from": "themacindex.com",
+  "url": "https://themacindex.com/in/products/airtag/airtag-4-pack-mx542",
+  "specs": {
+   "Battery": "Replaceable CR2032 coin cell, about a year",
+   "Water": "IP67, 1 m for up to 30 minutes"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Pack of four original first-generation AirTag item trackers for Apple's Find My network. Each uses a replaceable CR2032 coin cell and is rated IP67.",
+  "flag": "Superseded: AirTag 2 launched in India in 2026 with a four-pack at 12900. Not swapped as the original is still listed. Price is the base India price from an index site; launch price was 10900. No Indian retailer price confirmed for the pack."
+ },
+ "W-04-406": {
+  "price": 2799,
+  "priceType": "launch-mrp",
+  "from": "ibtimes.co.in",
+  "url": "https://www.ibtimes.co.in/samsung-launches-galaxy-smarttag2-india-costs-rs-2799-details-863452",
+  "specs": {
+   "Battery": "500 days, 700 days in power saving mode",
+   "Water": "IP67",
+   "Weight": "13.75 g"
+  },
+  "colours": [
+   "Black",
+   "White"
+  ],
+  "connectivity": "wireless",
+  "description": "Bluetooth and UWB item tracker for Samsung phones and tablets on Android 9 or later, with Lost Mode and Compass View. Rated IP67 with up to 500 days of battery in normal mode.",
+  "flag": "Launch price from October 2023; no current selling price found. NewsBytes says 2799 was limited-time and retail would be 2999."
+ },
+ "W-04-407": {
+  "brand": "Jio",
+  "price": 1499,
+  "priceType": "estimate",
+  "from": "republicworld.com",
+  "url": "https://www.republicworld.com/india/jiotag-air-affordable-apple-airtag-rival-launches-in-india-price-specifications-here",
+  "specs": {
+   "Battery": "Up to 2 years",
+   "Size": "3.8 x 3.8 x 0.7 cm",
+   "Weight": "10 g"
+  },
+  "colours": [
+   "Black",
+   "Blue",
+   "Red"
+  ],
+  "connectivity": "wireless",
+  "description": "Bluetooth 5.3 item tracker from Jio that works with Apple's Find My network and has a loud built-in speaker. Battery is rated for up to 2 years and it weighs about 10 g.",
+  "flag": "1499 is a limited-time launch price, MRP 2999; a BestBuysIndia listing quotes 999 on Amazon. No current retailer price confirmed. Colours disagree between reports (Blue, Red, Grey; Red, Black, Deep Blue; Black, Blue, Red/Orange). Specs from one source. Android support disputed. Brand changed to Jio. JioTag 2 launched in 2026."
+ },
+ "W-05-501": {
+  "price": 2199,
+  "priceType": "selling",
+  "from": "luxury.tatacliq.com",
+  "url": "https://luxury.tatacliq.com/apple-watch-magnetic-charger-to-usb-c-cable--1mtr-white/p-mp000000018527638",
+  "specs": {
+   "Length": "1 m",
+   "Connection": "USB-C to magnetic charger"
+  },
+  "colours": [
+   "White"
+  ],
+  "connectivity": "n/a",
+  "description": "White 1 m cable with a USB-C plug at one end and a magnetic charger at the other, for charging Apple Watch. Listed in India at an MRP of 2900 rupees.",
+  "flag": "Listing says Magnetic Charger, not Magnetic Fast Charger, sold by Rising India; MRP 2900 matches the file. Adanione duty-free shows 2600, unavailable. No official Apple India price found. Connectivity changed from wired to n/a (charging only)."
+ },
+ "W-05-502": {
+  "price": 16999,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Belkin-MagSafe-Wireless-Charging-Included/dp/B0DQCDL8JJ",
+  "specs": {
+   "Output": "15 W Qi2",
+   "Adapter": "36 W charger included"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A three-device charging stand for an iPhone, Apple Watch and AirPods, with 15 W Qi2 magnetic charging and a 36 W adapter in the box.",
+  "flag": "Renamed to the Amazon.in listing; replaces the import price. List price ₹25,999, deal prices seen as low as ₹7,599",
+  "productName": "Belkin MagSafe 3-in-1 Qi2 Wireless Charger Stand 15W"
+ },
+ "W-05-503": {
+  "price": 21217,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Anker-Wireless-Foldable-Charging-Cleaning/dp/B0GXGNC578",
+  "specs": {
+   "Output": "Up to 15 W, Apple Watch pad 5 W",
+   "Size": "About 6 cm per side",
+   "Weight": "410 to 438 g by review"
+  },
+  "colours": [
+   "Black",
+   "Gray"
+  ],
+  "connectivity": "n/a",
+  "description": "Compact cube charger for iPhone, Apple Watch and AirPods at once, with up to 15 W output. A 30 W charger and a 1.5 m USB-C cable come in the box.",
+  "flag": "Replaces the import price. Amazon.in listing, weight taken from reviews"
+ },
+ "W-05-504": {
+  "productName": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Belkin-Wireless-Charging-Additional-USB-C/dp/B0CRKPBWHV",
+  "specs": {
+   "Output": "15 W Qi2",
+   "Connection": "Extra USB-C port"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A flat charging pad for an iPhone, Apple Watch and AirPods with 15 W Qi2 magnetic charging and one extra USB-C port.",
+  "flag": "List price ₹15,999. Far above the file because it is a different product",
+  "brand": "Belkin",
+  "price": 11999,
+  "priceType": "selling",
+  "swap": {
+   "status": "applied",
+   "from": "Samsung Galaxy Watch Fast Charger (USB-C)",
+   "to": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
+   "reason": "Amazon.in lists the Samsung charger with no price and no other Indian price was found"
+  }
+ },
+ "W-05-505": {
+  "productName": "ZORBES 2-in-1 Charging Cable for Garmin Watch",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Charging-Compatible-Forerunner-Instinct-Vivoactive/dp/B0FHJY5KBB",
+  "specs": {
+   "Length": "1 m (3.3 ft)",
+   "Fit": "Garmin Fenix 8 and 7, Forerunner"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "A 1 m replacement charging cable that fits Garmin watches such as the Fenix 8 and 7 and the Forerunner range, sold on Amazon.in.",
+  "flag": "Third-party cable, not made by Garmin. Colour not confirmed",
+  "brand": "ZORBES",
+  "price": 414,
+  "priceType": "selling",
+  "swap": {
+   "status": "applied",
+   "from": "Garmin Charging/Data Cable (USB-C)",
+   "to": "ZORBES 2-in-1 Charging Cable for Garmin Watch",
+   "reason": "Only third-party Garmin cables are listed in India; no official Garmin cable price found"
+  }
+ },
+ "W-05-506": {
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Fitbit-Charge-6-Charging-Cable/dp/B0CCSYZV3T",
+  "specs": {
+   "Connection": "USB-A to proprietary clip",
+   "Length": "1.7 ft"
+  },
+  "colours": [
+   "Black"
+  ],
+  "connectivity": "n/a",
+  "description": "Fitbit's own USB-A replacement charging cable for the Charge 6, Charge 5 and Luxe, about 1.7 ft long with a magnetic clip end.",
+  "flag": "Official cable from Amazon.in search snapshots, ₹5,565 to ₹5,822; one listing unavailable. Third-party cables sell at ₹287 to ₹499",
+  "price": 5565,
+  "priceType": "selling",
+  "snippetOnly": true
+ }
+}
