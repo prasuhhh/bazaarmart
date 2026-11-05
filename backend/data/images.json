@@ -1729,14 +1729,14 @@
   "failures": {}
  },
  "B-04-406": {
-  "status": "ok",
-  "source": "brand-site",
-  "sourcePage": "https://www.versace.com/fr/fr/homme/accessoires/parfums-et-soins-du-corps/eros/eau-de-parfum-eros-50%C2%A0ml/R740108-R050MLS_RNUL.html",
-  "originalUrl": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-  "licence": "© Versace - press/product image, used for a non-commercial student lab demo",
-  "author": "Versace",
-  "attribution": "Image © Versace, from www.versace.com",
-  "matchChecked": true,
+  "status": "missing",
+  "source": null,
+  "sourcePage": null,
+  "originalUrl": null,
+  "licence": null,
+  "author": null,
+  "attribution": null,
+  "matchChecked": false,
   "candidates": [
    {
     "source": "brand-site",
@@ -1754,7 +1754,10 @@
   "height": 1063,
   "file": "/products/B-04-406.webp",
   "processedFrom": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-  "failures": {}
+  "failures": {},
+  "rejected": [
+   "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true"
+  ]
  },
  "B-04-407": {
   "status": "missing",
@@ -5335,14 +5338,14 @@
   "failures": {}
  },
  "L-03-306": {
-  "status": "ok",
-  "source": "brand-site",
-  "sourcePage": "https://www.yankeecandle.com/yankee-candle/car/car-air-freshener-styles/car-jar/clean-cotton/SAP_1020639_PR.html",
-  "originalUrl": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-  "licence": "© Yankee Candle - press/product image, used for a non-commercial student lab demo",
-  "author": "Yankee Candle",
-  "attribution": "Image © Yankee Candle, from www.yankeecandle.com",
-  "matchChecked": true,
+  "status": "missing",
+  "source": null,
+  "sourcePage": null,
+  "originalUrl": null,
+  "licence": null,
+  "author": null,
+  "attribution": null,
+  "matchChecked": false,
   "candidates": [
    {
     "source": "brand-site",
@@ -5360,17 +5363,20 @@
   "height": 1280,
   "file": "/products/L-03-306.webp",
   "processedFrom": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-  "failures": {}
+  "failures": {},
+  "rejected": [
+   "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01"
+  ]
  },
  "L-03-307": {
-  "status": "ok",
-  "source": "brand-site",
-  "sourcePage": "https://www.bathandbodyworks.in/p/mahogany-teakwood-intense-667659363438.html",
-  "originalUrl": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-  "licence": "© Bath & Body Works - press/product image, used for a non-commercial student lab demo",
-  "author": "Bath & Body Works",
-  "attribution": "Image © Bath & Body Works, from www.bathandbodyworks.in",
-  "matchChecked": true,
+  "status": "missing",
+  "source": null,
+  "sourcePage": null,
+  "originalUrl": null,
+  "licence": null,
+  "author": null,
+  "attribution": null,
+  "matchChecked": false,
   "candidates": [
    {
     "source": "brand-site",
@@ -5388,7 +5394,10 @@
   "height": 909,
   "file": "/products/L-03-307.webp",
   "processedFrom": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-  "failures": {}
+  "failures": {},
+  "rejected": [
+   "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg"
+  ]
  },
  "L-04-401": {
   "status": "ok",

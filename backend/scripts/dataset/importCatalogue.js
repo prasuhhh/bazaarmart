@@ -7,6 +7,7 @@ import 'dotenv/config';
 import { copyFileSync, readFileSync } from 'node:fs';
 import { createInterface } from 'node:readline/promises';
 import { pathToFileURL } from 'node:url';
+import { isDeepStrictEqual } from 'node:util';
 import mongoose from 'mongoose';
 import { connectDB } from '../../config/db.js';
 import Order from '../../models/Order.js';
@@ -25,21 +26,31 @@ const BATCH = 100;
 
 export const toDocument = ({ isNew, verify, ...product }) => ({ ...product, isNewDrop: isNew });
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
+const plain = value => JSON.parse(JSON.stringify(value ?? null));
 
-// Stock is live, so a product already from this catalogue keeps it. A SKU that still holds
-// an old product takes every field from the file. keepCurrent leaves products from this catalogue
+// Cast the file's values the way the model stores them, then compare only the fields the file sets.
+function differs(fields, stored) {
+  const wanted = new Product(fields).toObject({ flattenMaps: true });
+  return Object.keys(fields).some(key => !isDeepStrictEqual(plain(wanted[key]), plain(stored[key])));
+}
+
+// Stock is live, so a product already from this catalogue keeps it and every other field the file
+// sets is overwritten. `changed` counts the refreshed products that actually differ. A SKU that still
+// holds an old product takes every field from the file. keepCurrent leaves products from this catalogue
 // untouched, which is how a reseed keeps edits made on the Admin page.
 export async function importProducts(documents, { dryRun = false, keepCurrent = false } = {}) {
-  const existing = new Map((await Product.find({}, 'productId source').lean()).map(({ productId, source }) => [productId, source]));
-  const counts = { added: 0, replacedOld: 0, refreshed: 0, kept: 0 };
+  const existing = new Map((await Product.find().lean()).map(product => [product.productId, product]));
+  const counts = { added: 0, replacedOld: 0, refreshed: 0, changed: 0, kept: 0 };
   const operations = documents.flatMap(document => {
     const { productId, quantity, ...fields } = document;
-    const isCurrent = existing.get(productId) === document.source;
+    const stored = existing.get(productId);
+    const isCurrent = stored?.source === document.source;
     if (isCurrent && keepCurrent) {
       counts.kept += 1;
       return [];
     }
-    counts[!existing.has(productId) ? 'added' : isCurrent ? 'refreshed' : 'replacedOld'] += 1;
+    counts[!stored ? 'added' : isCurrent ? 'refreshed' : 'replacedOld'] += 1;
+    if (isCurrent && differs(fields, stored)) counts.changed += 1;
     return [{
       updateOne: {
         filter: { productId },

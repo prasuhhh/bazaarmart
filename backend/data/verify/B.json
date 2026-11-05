@@ -1,6 +1,6 @@
 {
  "B-01-101": {
-  "productName": "CeraVe Moisturizing Cream (340 g)",
+  "productName": "CeraVe Moisturizing Cream",
   "price": 1572,
   "priceType": "selling",
   "from": "nykaa.com",
@@ -14,7 +14,7 @@
    "Standard"
   ],
   "connectivity": "n/a",
-  "description": "A moisturising cream in a 340 g tub for dry to very dry skin, made with ceramides and hyaluronic acid.",
+  "description": "A moisturising cream for dry to very dry skin, made with ceramides and hyaluronic acid.",
   "flag": "Sellers differ: Nykaa 1572, Cureka 1352, MRP 1690. Colour is a placeholder; a cream has no colour variant."
  },
  "B-01-102": {

@@ -217,7 +217,7 @@ Price basis: selling 243, estimate 29, mrp 7, launch-mrp 21.
 | A-05-501 | Shure SM58 Vocal Microphone | Shure SM58-LC Vocal Microphone |
 | A-05-502 | Logitech G Yeti USB Microphone | Blue Yeti USB Microphone |
 | A-05-505 | DJI Mic 2 | DJI Mic 2 (2 TX + 1 RX + Charging Case) |
-| B-01-101 | CeraVe Moisturising Cream (340 g) | CeraVe Moisturizing Cream (340 g) |
+| B-01-101 | CeraVe Moisturising Cream (340 g) | CeraVe Moisturizing Cream |
 | B-03-303 | Braun Series 9 Pro+ Electric Shaver | Braun Series 9 Pro+ 9567cc Electric Shaver |
 | B-03-306 | Philips Multigroom MG7715 13-in-1 | Philips Multigroom Series 7000 MG7715 13-in-1 |
 | B-03-307 | Panasonic ER-GN30 Nose & Ear Trimmer | Panasonic ER-GN30-K Nose & Ear Trimmer |

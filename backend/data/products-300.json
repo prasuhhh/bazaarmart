@@ -1814,7 +1814,7 @@
  },
  {
   "productId": "B-01-101",
-  "productName": "CeraVe Moisturizing Cream (340 g)",
+  "productName": "CeraVe Moisturizing Cream",
   "productPrice": 1572,
   "quantity": 56,
   "category": "Body care",
@@ -1839,7 +1839,7 @@
   "warrantyMonths": 0,
   "arrivesInDays": 5,
   "isNew": false,
-  "description": "A moisturising cream in a 340 g tub for dry to very dry skin, made with ceramides and hyaluronic acid.",
+  "description": "A moisturising cream for dry to very dry skin, made with ceramides and hyaluronic acid.",
   "images": [
    "/products/B-01-101.webp"
   ],
@@ -3202,18 +3202,16 @@
   "arrivesInDays": 2,
   "isNew": false,
   "description": "A men's eau de toilette from Versace's Eros line, sold in a 100 ml bottle. Stronger Eau de Parfum and Parfum versions are separate products.",
-  "images": [
-   "/products/B-04-406.webp"
-  ],
+  "images": [],
   "image": {
-   "status": "ok",
-   "source": "brand-site",
-   "sourcePage": "https://www.versace.com/fr/fr/homme/accessoires/parfums-et-soins-du-corps/eros/eau-de-parfum-eros-50%C2%A0ml/R740108-R050MLS_RNUL.html",
-   "originalUrl": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true",
-   "licence": "© Versace - press/product image, used for a non-commercial student lab demo",
-   "author": "Versace",
-   "attribution": "Image © Versace, from www.versace.com",
-   "matchChecked": true
+   "status": "missing",
+   "source": null,
+   "sourcePage": null,
+   "originalUrl": null,
+   "licence": null,
+   "author": null,
+   "attribution": null,
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10082,18 +10080,16 @@
   "arrivesInDays": 1,
   "isNew": false,
   "description": "A large 22 oz jar candle with Yankee's fresh Clean Cotton scent, rated for roughly 110 to 150 hours of burning.",
-  "images": [
-   "/products/L-03-306.webp"
-  ],
+  "images": [],
   "image": {
-   "status": "ok",
-   "source": "brand-site",
-   "sourcePage": "https://www.yankeecandle.com/yankee-candle/car/car-air-freshener-styles/car-jar/clean-cotton/SAP_1020639_PR.html",
-   "originalUrl": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01",
-   "licence": "© Yankee Candle - press/product image, used for a non-commercial student lab demo",
-   "author": "Yankee Candle",
-   "attribution": "Image © Yankee Candle, from www.yankeecandle.com",
-   "matchChecked": true
+   "status": "missing",
+   "source": null,
+   "sourcePage": null,
+   "originalUrl": null,
+   "licence": null,
+   "author": null,
+   "attribution": null,
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
@@ -10134,18 +10130,16 @@
   "arrivesInDays": 5,
   "isNew": false,
   "description": "A 411 g three-wick scented candle in Bath & Body Works' Mahogany Teakwood fragrance, sold in India through the brand's own store.",
-  "images": [
-   "/products/L-03-307.webp"
-  ],
+  "images": [],
   "image": {
-   "status": "ok",
-   "source": "brand-site",
-   "sourcePage": "https://www.bathandbodyworks.in/p/mahogany-teakwood-intense-667659363438.html",
-   "originalUrl": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg",
-   "licence": "© Bath & Body Works - press/product image, used for a non-commercial student lab demo",
-   "author": "Bath & Body Works",
-   "attribution": "Image © Bath & Body Works, from www.bathandbodyworks.in",
-   "matchChecked": true
+   "status": "missing",
+   "source": null,
+   "sourcePage": null,
+   "originalUrl": null,
+   "licence": null,
+   "author": null,
+   "attribution": null,
+   "matchChecked": false
   },
   "priceNote": {
    "checkedAt": "2026-11-05",

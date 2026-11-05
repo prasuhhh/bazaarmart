@@ -105,7 +105,7 @@ describe('the catalogue import', () => {
   it('adds the products, then is safe to run again', async () => {
     assert.equal((await importProducts(documents)).added, 3);
     const counts = await importProducts(documents);
-    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 3, kept: 0 });
+    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 3, changed: 0, kept: 0 });
     assert.equal(await Product.countDocuments(), 3);
   });
 
@@ -118,7 +118,9 @@ describe('the catalogue import', () => {
   it('leaves current products alone when asked, so a reseed keeps Admin edits', async () => {
     await Product.updateOne({ productId: first.productId }, { productPrice: 1 });
     const counts = await importProducts(documents, { keepCurrent: true });
-    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 0, kept: 3 });
+    assert.deepEqual(counts, { added: 0, replacedOld: 0, refreshed: 0, changed: 0, kept: 3 });
+    assert.equal((await Product.findOne({ productId: first.productId })).productPrice, 1);
+    assert.equal((await importProducts(documents, { dryRun: true })).changed, 1);
     assert.equal((await Product.findOne({ productId: first.productId })).productPrice, 1);
     await importProducts(documents);
     assert.equal((await Product.findOne({ productId: first.productId })).productPrice, first.productPrice);

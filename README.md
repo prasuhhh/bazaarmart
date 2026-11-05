@@ -81,7 +81,7 @@ Run these from the project root.
 
 The store sells 300 real products from `backend/data/products-300.json`. That file is the source of truth, so never regenerate it over verified data. Each product's price, specs and colours were checked against a real source, recorded in `backend/data/verify/` and `priceNote`.
 
-195 products have a confirmed photo of that exact model. The other 105 show the placeholder, and [image-report.md](backend/data/reports/image-report.md) gives the reason for each one. Every photo is credited on the `/credits` page, under the image on its product sheet, and in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md).
+192 products have a confirmed photo of that exact model. The other 108 show the placeholder, and [image-report.md](backend/data/reports/image-report.md) gives the reason for each one. Every photo is credited on the `/credits` page, under the image on its product sheet, and in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md).
 
 To rebuild, run these in order from `backend`:
 
@@ -98,7 +98,7 @@ To rebuild, run these in order from `backend`:
 
 `npm run seed` uses the same import, but leaves products from this catalogue as they are so Admin edits survive.
 
-Photo licences vary. Wikimedia and Openverse photos are CC or public domain. Brand photos are © their owners and are used here only for a non-commercial student demo. If this repo goes public, keep only the CC and public domain photos committed and rebuild the rest locally.
+Brand and product names are trademarks of their owners. Wikimedia and Openverse photos are CC or public domain, and brand photos are © their owners and are used only for this non-commercial lab demo. If this repo goes public, git-ignore the brand-site and brand-press photos, and `npm run catalogue:images` rebuilds them locally.
 
 These older files are no longer used: `backend/scripts/generateProductImages.js`, `backend/scripts/fetchProductPhotos.js`, `backend/public/products/`, `backend/data/products.json` and `backend/data/product-photos.json`. `backend/data/retiredSkus.json` and `products.json` are still read by `--prune-old`.
 
