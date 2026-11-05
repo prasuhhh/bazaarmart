@@ -96,6 +96,8 @@ To rebuild, run these in order from `backend`:
 | `npm run catalogue:import -- --dry-run` | Prints what would change and writes nothing |
 | `npm run catalogue:import -- --prune-old` | Lists old products with the orders and shelves that use them, then deletes them after you type `yes` |
 
+A rebuild can find new photos. `catalogue:validate` and `catalogue:import` refuse them until each one is confirmed by eye in `data/image-review.json`, so after that review run `catalogue:check` and `catalogue:verify` again.
+
 `npm run seed` uses the same import, but leaves products from this catalogue as they are so Admin edits survive.
 
 Brand and product names are trademarks of their owners. Wikimedia and Openverse photos are CC or public domain, and brand photos are © their owners and are used only for this non-commercial lab demo. If this repo goes public, git-ignore the brand-site and brand-press photos, and `npm run catalogue:images` rebuilds them locally.

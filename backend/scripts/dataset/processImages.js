@@ -160,7 +160,7 @@ async function main() {
       reasons[short] = (reasons[short] ?? 0) + 1;
     }
   }
-  console.log(`Processed ${made.length} of ${skus.length}. Total ${(bytes / 1048576).toFixed(1)} MB. Failures:`, reasons);
+  console.log(`Photos ready: ${made.length}. Total ${(bytes / 1048576).toFixed(1)} MB. Failures:`, reasons);
 }
 
 await main();
