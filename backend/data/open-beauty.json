@@ -1,0 +1,35 @@
+{
+ "B-04-404": {
+  "source": "openbeautyfacts",
+  "title": "bleu de chanel",
+  "sourcePage": "https://world.openbeautyfacts.org/product/0008309124568",
+  "originalUrl": "https://images.openbeautyfacts.org/images/products/000/830/912/4568/front_xx.6.full.jpg",
+  "width": null,
+  "height": null,
+  "licence": "CC BY-SA 3.0",
+  "author": "Open Beauty Facts contributors",
+  "attribution": "\"bleu de chanel\" by Open Beauty Facts contributors, CC BY-SA 3.0, via Open Beauty Facts"
+ },
+ "B-04-401": {
+  "source": "openbeautyfacts",
+  "title": "Cool Water Déodorant Stick",
+  "sourcePage": "https://world.openbeautyfacts.org/product/3607342727120",
+  "originalUrl": "https://images.openbeautyfacts.org/images/products/360/734/272/7120/front_de.7.full.jpg",
+  "width": null,
+  "height": null,
+  "licence": "CC BY-SA 3.0",
+  "author": "Open Beauty Facts contributors",
+  "attribution": "\"Cool Water Déodorant Stick\" by Open Beauty Facts contributors, CC BY-SA 3.0, via Open Beauty Facts"
+ },
+ "B-04-402": {
+  "source": "openbeautyfacts",
+  "title": "CK one",
+  "sourcePage": "https://world.openbeautyfacts.org/product/82795622",
+  "originalUrl": "https://images.openbeautyfacts.org/images/products/000/008/279/5622/front_fr.3.full.jpg",
+  "width": null,
+  "height": null,
+  "licence": "CC BY-SA 3.0",
+  "author": "Open Beauty Facts contributors",
+  "attribution": "\"CK one\" by Open Beauty Facts contributors, CC BY-SA 3.0, via Open Beauty Facts"
+ }
+}

@@ -12,6 +12,7 @@ const CACHE = new URL('cache/http/', DATA);
 const PRODUCTS = new URL('products-300.verified.json', DATA);
 const OUTPUT = new URL('images.json', DATA);
 const BRAND_PAGES = new URL('brand-pages.json', DATA);
+const OPEN_BEAUTY = new URL('open-beauty.json', DATA);
 
 const USER_AGENT = 'BazaarMartLabDataset/1.0 (student project)';
 const GAP_MS = { 'commons.wikimedia.org': 1000, 'api.openverse.org': 3200 }; // Openverse: 20 a minute
@@ -142,6 +143,7 @@ async function main() {
   const products = JSON.parse(readFileSync(PRODUCTS, 'utf8'));
   const images = existsSync(OUTPUT) ? JSON.parse(readFileSync(OUTPUT, 'utf8')) : {};
   const brandPages = existsSync(BRAND_PAGES) ? JSON.parse(readFileSync(BRAND_PAGES, 'utf8')) : {};
+  const openBeauty = existsSync(OPEN_BEAUTY) ? JSON.parse(readFileSync(OPEN_BEAUTY, 'utf8')) : {};
 
   for (const [index, product] of products.entries()) {
     const sku = product.productId;
@@ -152,8 +154,9 @@ async function main() {
     let candidates = usable(chooseFrom(await searchCommons(product), product));
     if (!candidates.length) candidates = usable(chooseFrom(await searchOpenverse(product), product));
     // Kept behind any open-licence photo, so Step 4 can fall back to it.
-    const brandPage = brandPages[sku];
-    if (brandPage && !rejected.has(brandPage.originalUrl)) candidates = [...candidates, brandPage];
+    for (const extra of [openBeauty[sku], brandPages[sku]]) {
+      if (extra && !rejected.has(extra.originalUrl)) candidates = [...candidates, extra];
+    }
 
     const top = candidates.slice(0, CANDIDATES_KEPT);
     images[sku] = { ...(top[0] ? asImage(top[0]) : emptyImage('missing')), candidates: top, ...(rejected.size && { rejected: [...rejected] }) };

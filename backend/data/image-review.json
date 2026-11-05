@@ -1,0 +1,866 @@
+{
+ "A-01-101": {
+  "verdict": "wrong",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGD74?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1755025001125"
+ },
+ "A-01-103": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzwainu-thumb-542134838"
+ },
+ "A-01-105": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Nothing_ear_%281%29_wireless_charging_case_%28pocket%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-01-107": {
+  "verdict": "correct",
+  "url": "http://www.boat-lifestyle.com/cdn/shop/files/AD141-FI_Grey01.png?v=1698391770"
+ },
+ "A-02-201": {
+  "verdict": "correct",
+  "url": "https://www.sony.co.in/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320"
+ },
+ "A-02-202": {
+  "verdict": "wrong",
+  "url": "https://assets.bosecreative.com/transform/a1c57de9-609e-40d9-b09e-211e3d8fafc0/QCUH-VictorSolomon_Secondary_Hero_Desktop_2716x1506?io=width:1200,height:630,transform:fill"
+ },
+ "A-02-203": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Apple_AirPods_Max_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-02-204": {
+  "verdict": "correct",
+  "url": "http://us.sennheiser-hearing.com/cdn/shop/files/MOMENTUM_4_Black.jpg?v=1759511980"
+ },
+ "A-02-207": {
+  "verdict": "correct",
+  "url": "http://www.boat-lifestyle.com/cdn/shop/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800.png?v=1673002681"
+ },
+ "A-03-301": {
+  "verdict": "wrong",
+  "url": "https://live.staticflickr.com/1689/24018300592_e19de6c8dc_b.jpg"
+ },
+ "A-03-302": {
+  "verdict": "wrong",
+  "url": "https://live.staticflickr.com/1640/23960965610_a5b58f12c1_b.jpg"
+ },
+ "A-03-303": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bose_SoundLink_Flex_Speaker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-03-304": {
+  "verdict": "correct",
+  "url": "https://images.ctfassets.net/javen7msabdh/JC7uarI9Ndr7OmV3r1D0n/90253470635d356b544b19732dbdac91/emberton-ii-front_side-desktop-1.jpeg"
+ },
+ "A-03-307": {
+  "verdict": "correct",
+  "url": "http://www.boat-lifestyle.com/cdn/shop/products/74a6b20d-9842-49da-b279-022812b81e1f.png?v=1673001663"
+ },
+ "A-04-401": {
+  "verdict": "correct",
+  "url": "https://media.sonos.com/images/znqtjj88/production/c79156fe93547d1b0a993dc1fb7b381d8773737a-3000x1834.png"
+ },
+ "A-04-405": {
+  "verdict": "correct",
+  "url": "http://www.audioquest.com/cdn/shop/articles/requiem-for-a-dac-dragonfly-cobalt-9500862.jpg?crop=center&height=1200&v=1769723469&width=1200"
+ },
+ "A-04-406": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MU7E2?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1539385665732"
+ },
+ "A-05-501": {
+  "verdict": "correct",
+  "url": "https://products.shureweb.eu/shure_product_db/product_main_images/files/31e/242/4b-/setcard/8f8ab8329c1107e0758c041654d7cc30.jpeg"
+ },
+ "A-05-502": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Blue_Yeti_Blackout_USB_microphone_%2851844234538%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-05-503": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rode_NT-USB_Mini_microphone_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-05-504": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rode_Wireless_Go_II_Set.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "A-05-505": {
+  "verdict": "correct",
+  "url": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/c17064092388fdfb18ea7f1ec0dd0ef0@ultra.png"
+ },
+ "A-05-506": {
+  "verdict": "correct",
+  "url": "https://zoomcorp.com/media/images/Zoom_H1n_HandyRecorder.original.png"
+ },
+ "A-05-507": {
+  "verdict": "wrong",
+  "url": "https://oss.boyamic.com/uploads/images/20241211/20241211164742675.png"
+ },
+ "B-01-101": {
+  "verdict": "correct",
+  "url": "https://live.staticflickr.com/7822/46403608295_4ae8f02582_b.jpg"
+ },
+ "B-01-102": {
+  "verdict": "correct",
+  "url": "https://www.cetaphil.in/dw/image/v2/bggn_prd/on/demandware.static/-/Sites-galderma-in-m-catalog/default/dw311450bb/GSC%20Revive%20A+/236%20ml/ATF/1.FoP-236.png?sw=900&sh=900&sm=fit&q=85"
+ },
+ "B-01-103": {
+  "verdict": "correct",
+  "url": "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw665025d6/theordinary/homepage/slotA/heroes-slot-a-mobile.jpg"
+ },
+ "B-01-104": {
+  "verdict": "correct",
+  "url": "http://global.beminimalist.co/cdn/shop/products/NewNia10_720x_30d37e0e-0147-4caa-8160-449c2bbefbe1.webp?v=1681190554"
+ },
+ "B-01-105": {
+  "verdict": "correct",
+  "url": "https://images.ctfassets.net/3zfcttr0ztpr/2KI14YhORnDh2caKjEM5q0/1448273144ed4727c6b50bc3d9e3e5d3/water_gel_50g_front-en-in"
+ },
+ "B-01-107": {
+  "verdict": "wrong",
+  "url": "https://assets.beiersdorf.com/-/media/images/5/3/0/2/019f8a3ee8e671db90cd3ee5e97595e9-print.jpg?mh=1200&mw=1200&ctx=IN&rx=0&ry=384&rw=2020&rh=1057&hash=EDC12C0197F7C1685D46480E14871019"
+ },
+ "B-02-201": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dyson_Supersonic_Hair_Dryer_1_2017-01-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "B-02-203": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/ef2f4e053f404af59958ae7d014d8c71?$png$&wid=1200&hei=630"
+ },
+ "B-02-204": {
+  "verdict": "wrong",
+  "url": "https://olaplex.com/cdn/shop/articles/2025_No3PLUS_Model_Solo_Nina_0806_ExtraWide_5eee29a3-470a-4c3c-bca5-d85981071df5.jpg?v=1791304979"
+ },
+ "B-02-205": {
+  "verdict": "correct",
+  "url": "http://www.moroccanoil.com/cdn/shop/files/153_TREATMENT_ORIGINAL_100mL_v3.jpg?v=1774983361"
+ },
+ "B-02-206": {
+  "verdict": "wrong",
+  "url": "https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/banners/hair-care/haircare_total-repair-5.jpg"
+ },
+ "B-02-207": {
+  "verdict": "wrong",
+  "url": "https://mamaearth.in/cdn/shop/files/mamaearth-og-image.jpg?v=1787645067"
+ },
+ "B-03-301": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/1c05ecd419764de39f09af8d0077f6ca?$png$&wid=1200&hei=630"
+ },
+ "B-03-302": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/310e7762fede46cdb4cdb30900fa2ea9?$png$&wid=1200&hei=630"
+ },
+ "B-03-305": {
+  "verdict": "correct",
+  "url": "https://i03.appmifile.com/776_item_in/04/07/2024/110249879a690ea8234ab9f91f82bbc2.png"
+ },
+ "B-03-306": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/b3d1c5b707174a44b943ae7d00c3e18e?$png$&wid=1200&hei=630"
+ },
+ "B-03-307": {
+  "verdict": "correct",
+  "url": "https://panasonic.com/content/dam/panasonic/au/en/pim/dam/ER/ER-GN3/ER-GN30/ast-1771328.jpg"
+ },
+ "B-04-402": {
+  "verdict": "correct",
+  "url": "https://images.openbeautyfacts.org/images/products/000/008/279/5622/front_fr.3.full.jpg"
+ },
+ "B-04-403": {
+  "verdict": "correct",
+  "url": "https://www.dior.com/on/demandware.static/-/Sites-master_dior/default/dw9507a7bb/Y0685240/Y0685240_F068524009_E01_GHC.jpg"
+ },
+ "B-04-404": {
+  "verdict": "wrong",
+  "url": "https://images.openbeautyfacts.org/images/products/000/830/912/4568/front_xx.6.full.jpg"
+ },
+ "B-04-406": {
+  "verdict": "correct",
+  "url": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7eeedffb/original/90_R740108-R050MLS_RNUL_20_ErosEDP50ml-Eros-Versace-online-store_3_5.jpg?sw=850&q=85&strip=true"
+ },
+ "B-05-501": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/3647e799703048eebad8ac5e004b972c?$png$&wid=1200&hei=630"
+ },
+ "B-05-502": {
+  "verdict": "correct",
+  "url": "https://live.staticflickr.com/65535/52303664560_af469ec84f_b.jpg"
+ },
+ "B-05-503": {
+  "verdict": "wrong",
+  "url": "https://cdn11.bigcommerce.com/s-2idmiil7bp/product_images/uploaded_images/best-etb-100.jpg"
+ },
+ "B-05-504": {
+  "verdict": "correct",
+  "url": "https://www.waterpik.com/products/images/waterpik-aquarius-water-flosser-wp-660-white.jpg"
+ },
+ "B-05-507": {
+  "verdict": "correct",
+  "url": "http://www.therabody.com/cdn/shop/files/Mini-Gen-3-Oat-PLP-Thumbnail-1.png?v=1741752123"
+ },
+ "C-01-102": {
+  "verdict": "correct",
+  "url": "http://herschel.com/cdn/shop/files/11390-00007-os-01-kPscBXok.jpg?v=1781467867&width=1024"
+ },
+ "C-01-103": {
+  "verdict": "wrong",
+  "url": "https://assets.thenorthface.com/image/upload/q_auto:best,f_auto:image,d_na.png/v1779914971/recon_vs_borealis_desktop_image"
+ },
+ "C-01-106": {
+  "verdict": "correct",
+  "url": "https://contents.mediadecathlon.com/p3079409/7015727a7b822ae4534d8469caccb141/p3079409.jpg?format=auto&f=768x0"
+ },
+ "C-01-107": {
+  "verdict": "correct",
+  "url": "https://www.osprey.com/media/catalog/product/f/a/farpoint40_s26_side_cascadebluetorrentblue.jpg"
+ },
+ "C-02-201": {
+  "verdict": "wrong",
+  "url": "http://www.tomtoc.com/cdn/shop/collections/best_macbook_sleeve.jpg?v=1699148163"
+ },
+ "C-02-202": {
+  "verdict": "correct",
+  "url": "http://www.incase.com/cdn/shop/files/inmb100725-blp_incase_iconsleeve_mbp14_2021_d.jpg?crop=center&height=1200&v=1750471411&width=1200"
+ },
+ "C-02-203": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/2986/1172/files/smalltechpouch-black-159A0505_10187358-9116-45c9-bf04-93a326319830.jpg?v=1762275795"
+ },
+ "C-02-204": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MWK73?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1716915397369"
+ },
+ "C-02-205": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mobility/combo-touch-for-ipad-air/gallery/combo-touch-ipad-air-12.9-inch-gallery1.png"
+ },
+ "C-03-301": {
+  "verdict": "correct",
+  "url": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WNSC-BLK-301/0"
+ },
+ "C-03-302": {
+  "verdict": "correct",
+  "url": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WHSD-CAR-301/0"
+ },
+ "C-03-305": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MKV64?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786052580762"
+ },
+ "C-03-306": {
+  "verdict": "correct",
+  "url": "https://shoptommy.scene7.com/is/image/ShopTommy/AM13034_BDS_BCK"
+ },
+ "C-04-401": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/2023_Amazon_Kindle_Paperwhite_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "C-04-402": {
+  "verdict": "correct",
+  "url": "http://cabeau.com/cdn/shop/files/26Evolution_S3_Steel_Hero.jpg?v=1772206207"
+ },
+ "C-04-403": {
+  "verdict": "correct",
+  "url": "https://live.staticflickr.com/3168/2982700398_8688f959dc_b.jpg"
+ },
+ "C-04-404": {
+  "verdict": "correct",
+  "url": "https://contents.mediadecathlon.com/p3079543/a67c8d2d03d2e42f092dd6a55b1b1f01/p3079543.jpg?format=auto&f=768x0"
+ },
+ "C-04-405": {
+  "verdict": "correct",
+  "url": "https://imageengine.victorinox.com/transform/dc7dd17a-fd08-4cf3-bbaf-28c4418396c0/SAK_0_6221_26__S1"
+ },
+ "C-05-501": {
+  "verdict": "correct",
+  "url": "https://www.milton.in/cdn/shop/files/SI.01_3ceb1c6d-4972-4d6c-8edb-fed17d04ebdd.jpg?v=1783066821"
+ },
+ "C-05-502": {
+  "verdict": "correct",
+  "url": "https://www.hydroflask.com/media/catalog/product/cache/94b0175a6caa1be035fa7b19e7ad3303/w/3/w32cts114_32ozwideflexcap_oat_straighton_1_1.jpg"
+ },
+ "C-05-503": {
+  "verdict": "correct",
+  "url": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-TheQuencherH20FlutedTextureTumbler40OZ-BlackPVD-Front.png?v=1762182298"
+ },
+ "C-05-505": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Blue_1000_ml_Nalgene_everyday_wide_mouth_bottle_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "D-01-101": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-s/migration-assets-for-delorean-2025/gallery/mx-keys-s-top-view-graphite-us.png"
+ },
+ "D-01-102": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/pebble-keys-2-k380s/2026/gallery/tonal-rose/pebble-keys-k380s-2-tonal-rose-top-angle-gallery-1.png"
+ },
+ "D-01-103": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/multi-keyboard-k380/gallery/k380-sand-gallery-1-us.png"
+ },
+ "D-01-104": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Magic_Keyboard_with_Touch_ID_for_Mac_models_with_Apple_silicon_-_Swiss.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "D-01-105": {
+  "verdict": "correct",
+  "url": "http://www.keychron.in/cdn/shop/files/products_Keychron-K2-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-red-with-type-C-RGB-white-backlight-exclusive-color.jpg?crop=center&height=1200&v=1752104865&width=1200"
+ },
+ "D-01-106": {
+  "verdict": "correct",
+  "url": "http://www.keychron.com/cdn/shop/files/K8-Max-Iconic-Features.jpg?crop=center&height=1200&v=1760934296&width=1200"
+ },
+ "D-02-201": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Logitech_MX_Master_3S_HS03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "D-02-202": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-anywhere-3s-for-business/mx-anywhere-3s-business-og-image.jpg?v=1"
+ },
+ "D-02-203": {
+  "verdict": "wrong",
+  "url": "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-for-business/lift-vertical-ergonomic-mouse-business-og-image.jpg?v=1"
+ },
+ "D-02-204": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/pebble-mouse-2-m350s/2026-refresh/gallery/pebble-mouse-2-m350s-tonal-rose-top-angle-gallery-1.png"
+ },
+ "D-02-205": {
+  "verdict": "wrong",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/common/og-generic/og-image-electrico.png"
+ },
+ "D-02-206": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Apple_Magic_Mouse_by_Trisorn_Triboon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "D-02-207": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m720/gallery/m720-gallery-1a.png"
+ },
+ "D-03-303": {
+  "verdict": "correct",
+  "url": "https://image.benq.com/is/image/benqco/pd2705u-right45-3?$ResponsivePreset$"
+ },
+ "D-03-304": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Apple_Studio_Display_and_Mac_Studio_with_Peripherals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "D-03-305": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27fg502ewxxl/gallery/in-odyssey-g5-g50f-570933-ls27fg502ewxxl-thumb-550608373"
+ },
+ "D-04-401": {
+  "verdict": "wrong",
+  "url": "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$"
+ },
+ "D-04-402": {
+  "verdict": "correct",
+  "url": "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$"
+ },
+ "D-04-405": {
+  "verdict": "correct",
+  "url": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1666850673.95389721.png"
+ },
+ "D-04-406": {
+  "verdict": "correct",
+  "url": "https://live.staticflickr.com/2022/32083310453_29c59b8812_b.jpg"
+ },
+ "D-04-407": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/ee/en/images/products/tertial-work-lamp-white__0609308_pe684439_s5.jpg"
+ },
+ "D-05-501": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920/gallery/c920-gallery-1.png"
+ },
+ "D-05-502": {
+  "verdict": "correct",
+  "url": "https://resource.logitech.com/w_1200,h_630,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio/brio-og-image-new.jpg?v=1"
+ },
+ "D-05-504": {
+  "verdict": "correct",
+  "url": "http://www.insta360india.com/cdn/shop/files/insta360-link-2-736669.webp?v=1739277279"
+ },
+ "D-05-505": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/61thMtrP5rL.png?v=1723458964"
+ },
+ "D-05-506": {
+  "verdict": "wrong",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MD826?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1566858915905"
+ },
+ "G-01-101": {
+  "verdict": "correct",
+  "url": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$"
+ },
+ "G-01-102": {
+  "verdict": "correct",
+  "url": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$facebook$"
+ },
+ "G-01-103": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "G-01-104": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Nintendo-Switch-Pro-Controller-BR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "G-01-107": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/db9ab8c533ed562e2f7a9a2c685ec65d/razer-kishi-v2-ogimage-1200x630-update.webp"
+ },
+ "G-02-201": {
+  "verdict": "correct",
+  "url": "http://hyperx.com/cdn/shop/files/hyperx_cloud_blue_66x0568a_main_1.jpg?v=1763563224"
+ },
+ "G-02-202": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/8864ce1bcf7bbd3001fb4bdf4fc88965/razer-blackshark-v2-x-og-image.webp"
+ },
+ "G-02-203": {
+  "verdict": "correct",
+  "url": "https://images.ctfassets.net/w5r1fvmogo3f/3llphQqI8bKEhpprVT5TRq/64d4105c210ac4b1382c8078738bfaaa/arctis_nova_7_wl_gen_2_blog_headers_1.jpg?fit=fill&w=1200&h=630&q=80&fm=avif"
+ },
+ "G-02-204": {
+  "verdict": "correct",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g435/2025/gallery/g435-3qtr-front-left-angle-black-gallery-1.png"
+ },
+ "G-02-205": {
+  "verdict": "correct",
+  "url": "https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-product-thumbnail-01-en-14sep21?$facebook$"
+ },
+ "G-03-301": {
+  "verdict": "correct",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-1-nb.png"
+ },
+ "G-03-302": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/razer-huntsman-mini/razer-huntsman-mini-2020-OGimg.jpg"
+ },
+ "G-03-303": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/12571f27f3f0008c0b2761309d6b26e8/razer-blackwidow-v4-x-og-image-1200x630.webp"
+ },
+ "G-03-305": {
+  "verdict": "correct",
+  "url": "http://hyperx.com/cdn/shop/files/hyperx_alloy_origins_core_us_1_top_down_renamed_0.jpg?v=1774442094"
+ },
+ "G-03-306": {
+  "verdict": "correct",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g413-se-tkl/2025/gallery/g413-tkl-se-mechanical-keyboard-top-angle-gallery-1.png"
+ },
+ "G-04-401": {
+  "verdict": "wrong",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/og-fallback.jpg"
+ },
+ "G-04-402": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Logitech_G502_Hero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "G-04-403": {
+  "verdict": "correct",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight-2-se-pdp/gallery/pro-x-superlight-2-se-black-top-angle-gallery-1.png"
+ },
+ "G-04-404": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/b993b88204244288b62d053375f5be2e/razer-deathadder-v3-og-image.webp"
+ },
+ "G-04-405": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/24970f67be4ba9644e28720377d91cfb/razer-viper-v3-pro-1200x630.webp"
+ },
+ "G-05-503": {
+  "verdict": "correct",
+  "url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g640/g640-gallery-1-new.png"
+ },
+ "G-05-504": {
+  "verdict": "correct",
+  "url": "https://images.ctfassets.net/hmm5mo4qf4mf/2ExXL7hykTrgpNU4tPIMdw/66262132d4bb57a4e9a97bb8a59582d3/1200x_buy_qck-hard_m_01.jpg__1920x1080_q100_crop-fit_optimize_subsampling-2-3559.jpg?w=1200&h=600&fit=fill&fm=jpg&q=85"
+ },
+ "G-05-505": {
+  "verdict": "correct",
+  "url": "https://assets2.razerzone.com/images/pnx.assets/b761ba62aece1bcec7a7d9c998177cb9/razer-goliathus-chroma-3xl-ogimage_1200x630.webp"
+ },
+ "L-01-101": {
+  "verdict": "wrong",
+  "url": "https://www.philips-hue.com/content/dam/hue/general-1-1.jpg"
+ },
+ "L-01-102": {
+  "verdict": "correct",
+  "url": "https://www.assets.signify.com/is/image/Signify/7820130U7-Carousel-MainProduct-RTP-01"
+ },
+ "L-01-105": {
+  "verdict": "wrong",
+  "url": "https://cdn.homemate.co.in/wp-content/uploads/2023/05/blog-image-33-2.jpg"
+ },
+ "L-01-106": {
+  "verdict": "correct",
+  "url": "https://nanoleaf.me/cdn/shop/files/pdp-image-shapes-hex-5pk-1.png?v=1786332461&width=1200"
+ },
+ "L-01-107": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/in/en/images/products/hektar-floor-lamp-dark-grey__0149974_pe308131_s5.jpg"
+ },
+ "L-02-201": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Amazon_Echo_Dot_%28RS03QR%29_-_motherboard-0557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "L-02-202": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Amazon_Echo_Show_5_Gen2.jpg"
+ },
+ "L-02-203": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Amazon_Fire_TV_4k.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "L-02-204": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Nest_Mini_-_202001_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "L-02-205": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Google_Nest_Hub.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "L-02-206": {
+  "verdict": "correct",
+  "url": "https://www.apple.com/v/homepod-mini/l/images/meta/homepod_mini__ev9e390azxyu_og.png?202610120439"
+ },
+ "L-02-207": {
+  "verdict": "correct",
+  "url": "https://static.tp-link.com/upload/image-line/01_large_20230817224004v.jpg"
+ },
+ "L-03-303": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-calathea__1389891_pe965296_s5.jpg"
+ },
+ "L-03-304": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/ee/en/images/products/edsbruk-frame-white__0706489_pe725877_s5.jpg"
+ },
+ "L-03-305": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/in/en/images/products/knapper-standing-mirror-white__0594294_pe676198_s5.jpg"
+ },
+ "L-03-306": {
+  "verdict": "correct",
+  "url": "https://s7d1.scene7.com/is/image/NewellBrands/hmfc0170_1020639_cfc1_us_image_01"
+ },
+ "L-03-307": {
+  "verdict": "correct",
+  "url": "https://www.bathandbodyworks.in/on/demandware.static/-/Sites-bathandbody_master_catalog/default/dw670e16f0/large/028013575.jpg"
+ },
+ "L-04-401": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/vrs_2f33f1f6_df4a_422d_a135c88b6c90aaef?$png$&wid=1200&hei=630"
+ },
+ "L-04-402": {
+  "verdict": "correct",
+  "url": "http://instantpot.com/cdn/shop/files/112-0170-01_Duo_6_Qt_Silo_01_ATF.png?v=1752158152"
+ },
+ "L-04-405": {
+  "verdict": "correct",
+  "url": "https://images.philips.com/is/image/philipsconsumer/vrs_47e6922e_e609_4e9b_95704ead2a9089f1?$png$&wid=1200&hei=630"
+ },
+ "L-04-406": {
+  "verdict": "correct",
+  "url": "http://aeropress.com/cdn/shop/files/AP_OG_CollegeBundle_1_1200x1200.png?v=1766111254"
+ },
+ "L-05-502": {
+  "verdict": "correct",
+  "url": "https://thesleepcompany.in/cdn/shop/files/1_cd00ef68-bd19-479c-93a0-491342836260.webp?v=1790339923"
+ },
+ "L-05-503": {
+  "verdict": "wrong",
+  "url": "https://www.ikea.com/global/assets/range-categorisation/images/cushion-covers-18903.jpeg"
+ },
+ "L-05-504": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/in/en/images/products/fialisa-cushion-pad-white__0618537_pe688538_s5.jpg"
+ },
+ "L-05-505": {
+  "verdict": "correct",
+  "url": "https://www.ikea.com/in/en/images/products/aengslilja-duvet-cover-and-pillowcase-natural__1599403_pe1042236_s5.jpg"
+ },
+ "P-01-101": {
+  "verdict": "correct",
+  "url": "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/geo/Apple-iPhone-16-lineup-geo-240909-lp.jpg.og.jpg?202608191726"
+ },
+ "P-01-102": {
+  "verdict": "correct",
+  "url": "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-geo-240909-lp.jpg.og.jpg?202608191703"
+ },
+ "P-01-103": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Samsung_Galaxy_S25_Ultra_smartphone_-_bottom_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "P-01-104": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Samsung_Galaxy_S25_Ultra_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "P-01-105": {
+  "verdict": "wrong",
+  "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/P9P9PThumbnail_16x9_Opt2_2.width-1300.jpg"
+ },
+ "P-01-106": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/OnePlus_13_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "P-01-107": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Nothing_Phone_%281%29_back_-_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "P-02-201": {
+  "verdict": "wrong",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MA6A4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1723935350333"
+ },
+ "P-02-202": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MA6A4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1723935350333"
+ },
+ "P-02-203": {
+  "verdict": "correct",
+  "url": "http://spigen.in/cdn/shop/files/title_web_iphone_16_pro_ultra_hybrid_navy_blue_01.jpg?v=1780899976"
+ },
+ "P-02-204": {
+  "verdict": "correct",
+  "url": "http://spigen.in/cdn/shop/files/title_iPhone_16_core_armor_magfit_01_ADMIN_Dec-18-011441-2024_Conflict.jpg?v=1790643012"
+ },
+ "P-02-206": {
+  "verdict": "correct",
+  "url": "http://www.esrtech.com/cdn/shop/files/iPhone-16-Pro-Classic-Hybrid-Case-magsafe-clear-1.jpg?v=1741854261"
+ },
+ "P-03-301": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUVR3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1751998599125"
+ },
+ "P-03-302": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGDM4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1755025168066"
+ },
+ "P-03-303": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/ep-t2510nbngin/gallery/in-25w-power-adapter-ep-t2510-506974-ep-t2510nbngin-thumb-550015825"
+ },
+ "P-03-306": {
+  "verdict": "correct",
+  "url": "http://eu.ugreen.com/cdn/shop/products/ugreen-nexode-65w-usb-c-gan-charger-3-ports-wall-charger-493502.png?v=1697187408"
+ },
+ "P-04-401": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC_ANKER_Power_Bank_4%2C500mAh_%289716812225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "P-04-406": {
+  "verdict": "correct",
+  "url": "http://ambraneindia.com/cdn/shop/files/20k_Black_8copy_8copy_1-transformed.png?v=1722839466"
+ },
+ "P-05-501": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MU2G3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1773174615384"
+ },
+ "P-05-502": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MQKJ3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1770844094916"
+ },
+ "P-05-503": {
+  "verdict": "wrong",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MD818?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1600799997000"
+ },
+ "P-05-504": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/A8553012_Rich_image_TD01_US_V1.png?v=1753062423"
+ },
+ "P-05-506": {
+  "verdict": "correct",
+  "url": "http://uk.ugreen.com/cdn/shop/products/ugreen-usb-c-to-usb-c-charger-cable-100w-usb-c-cable-fast-charging-data-sync-lead-with-e-marker-chip-565190.png?v=1692927424"
+ },
+ "S-01-101": {
+  "verdict": "correct",
+  "url": "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/482522/item/ingoods_07_482522_3x4.jpg"
+ },
+ "S-01-102": {
+  "verdict": "correct",
+  "url": "http://levi.in/cdn/shop/files/169600932_01_Front_264050f7-7ee3-4736-bd6a-57a2d8b8c71f.jpg?v=1712744459"
+ },
+ "S-01-103": {
+  "verdict": "wrong",
+  "url": "https://c.static-nike.com/a/images/w_1200,c_limit/bzl2wmsfh7kgdkufrrjq/seo-title.jpg"
+ },
+ "S-01-107": {
+  "verdict": "correct",
+  "url": "http://www.jockey.in/cdn/shop/files/2714_NAVY_0105_S123_JKY_1_5ccb74a9-804e-4bf7-87a7-6c162587f9fd.webp?v=1725619825"
+ },
+ "S-02-203": {
+  "verdict": "correct",
+  "url": "http://levi.in/cdn/shop/files/857440117_01_Styleshot_a6c08ad6-fdbe-4a8d-b6d7-abbe51f9ab48.jpg?v=1770115638"
+ },
+ "S-02-205": {
+  "verdict": "correct",
+  "url": "https://shoptommy.scene7.com/is/image/ShopTommy/78J3837_VP8_main"
+ },
+ "S-03-302": {
+  "verdict": "correct",
+  "url": "http://levi.in/cdn/shop/files/005013730_01_Front.jpg?v=1767769933"
+ },
+ "S-03-303": {
+  "verdict": "correct",
+  "url": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475578/item/goods_57_475578_3x4.jpg"
+ },
+ "S-04-401": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nike_Air_Force_1_%2707_LV8_%2853783096186%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "S-04-402": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Adidas_Samba_OG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "S-04-403": {
+  "verdict": "wrong",
+  "url": "http://converse.in/cdn/shop/files/162062c_a_107x1-web.jpg?v=1785503414"
+ },
+ "S-04-404": {
+  "verdict": "correct",
+  "url": "https://live.staticflickr.com/7489/27610218422_1b6ed671b1_b.jpg"
+ },
+ "S-04-405": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/New_Balance_574_enfants.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "S-04-407": {
+  "verdict": "wrong",
+  "url": "https://live.staticflickr.com/65535/54968996356_aaa551634f_b.jpg"
+ },
+ "S-05-504": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Rayban_x_Meta_glasses_Generazione_2_con_lenti_Polaroid%2C_wayfarer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "S-05-505": {
+  "verdict": "correct",
+  "url": "http://neweracap.in/cdn/shop/files/60915961_1.jpg?v=1787654689&width=2048"
+ },
+ "S-05-506": {
+  "verdict": "wrong",
+  "url": "https://c.static-nike.com/a/images/w_1200,c_limit/bzl2wmsfh7kgdkufrrjq/seo-title.jpg"
+ },
+ "W-01-101": {
+  "verdict": "correct",
+  "url": "https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/tile/Apple-Watch-Series-10-hero-240909-lp.jpg.og.jpg?202608191703"
+ },
+ "W-01-102": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-01-103": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-watch7-l305-sm-l305fzeains-thumb-542367109"
+ },
+ "W-01-105": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-01-106": {
+  "verdict": "correct",
+  "url": "http://in.amazfit.com/cdn/shop/collections/fbbc8f602c38b689bfe13d0d440e7e68.jpg?v=1667995239"
+ },
+ "W-02-203": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Fitbit_inspire_3_%2855322650282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-02-205": {
+  "verdict": "correct",
+  "url": "http://in.amazfit.com/cdn/shop/products/Black-1-sw.jpg?v=1701612314"
+ },
+ "W-02-206": {
+  "verdict": "correct",
+  "url": "https://res.garmin.com/en/products/010-02645-00/v/cf-lg-fd35ce34-6881-494f-a5c8-5a7e94cba980.jpg"
+ },
+ "W-03-301": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Apple_Watch_-_Green_Sport_Band_%2817870207014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-03-302": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-03-303": {
+  "verdict": "wrong",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-03-304": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MJNL4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786680217656"
+ },
+ "W-03-307": {
+  "verdict": "correct",
+  "url": "http://spigen.in/cdn/shop/files/title_web_apple_watch_ultra_duraproarmor_01.jpg?v=1756702218"
+ },
+ "W-04-401": {
+  "verdict": "wrong",
+  "url": "https://live.staticflickr.com/65535/49789132321_236f4249e1_b.jpg"
+ },
+ "W-04-402": {
+  "verdict": "wrong",
+  "url": "https://public-web-assets.uh-static.com/web_v2/thumb/uh-icon-1000x1000.png"
+ },
+ "W-04-404": {
+  "verdict": "correct",
+  "url": "https://www.apple.com/v/airtag/g/images/meta/og__ck3n0k1jl6j6.png?202603260000"
+ },
+ "W-04-405": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Apple_AirTag_%2851334123725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-04-406": {
+  "verdict": "correct",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/White_Samsung_Galaxy_SmartTag2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ "W-05-501": {
+  "verdict": "correct",
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ML434?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1786671476699"
+ },
+ "W-05-503": {
+  "verdict": "correct",
+  "url": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/Y1812_H21.png?v=1773220362"
+ },
+ "W-05-504": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/hk_en/ep-p5400tbeggb/gallery/hk-en-ep-p5400-ep-p5400tbeggb-thumb-531747296"
+ },
+ "W-05-506": {
+  "verdict": "correct",
+  "url": "https://lh3.googleusercontent.com/5IBcSBZZF5SyAryvBkwC-oxe6vBNwM7Lm2uYM5AJPWQ3pm42l1YC-jZUgZvt-ySFSHGI_qYb7LJMFqJXN5EH93VMaGmeprp-xB8=rj-sc0xffffffff"
+ },
+ "G-01-106": {
+  "verdict": "wrong",
+  "url": "https://www.8bitdo.com/images/2024/ultimate-3-mode/01-l.jpg?0"
+ },
+ "G-05-502": {
+  "verdict": "correct",
+  "url": "https://www.coolermaster.com/on/demandware.static/-/Sites-cooler-master-main/default/dwbd635eb9/Assets/caliber-r3/large/caliber-r3-original-gallery-01.png"
+ },
+ "P-02-205": {
+  "verdict": "wrong",
+  "url": "https://images.samsung.com/is/image/samsung/assets/in/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$"
+ },
+ "P-04-404": {
+  "verdict": "wrong",
+  "url": "https://images.samsung.com/is/image/samsung/assets/hk_en/home/2026-samsung-week/26_sw_2h_hd08_herokv_static_pc_1920x1080.jpg?imwidth=1366"
+ },
+ "P-05-507": {
+  "verdict": "wrong",
+  "url": "https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/mobile-accessories/Visual-LNB_Galaxy-Smartphone-Accessories_144x144.png?$ORIGIN_PNG$"
+ },
+ "W-02-204": {
+  "verdict": "correct",
+  "url": "https://images.samsung.com/is/image/samsung/assets/in/support/mobile-devices/test-mode-in-samsung-galaxy-fit3/tap-on-settings-galaxy-fit3.png?$LazyLoad_Home_PNG$"
+ },
+ "W-03-305": {
+  "verdict": "wrong",
+  "url": "https://images.samsung.com/is/image/samsung/assets/in/gnb/2609/Shop_L1_Highlights_2-2.png?$LazyLoad_Home_PNG$"
+ },
+ "W-04-407": {
+  "verdict": "correct",
+  "url": "https://myjiostatic.cdn.jio.com/cms/assets/jiotag2ndgeneration/banner_desktop.webp"
+ }
+}

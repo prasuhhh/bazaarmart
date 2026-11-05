@@ -7,7 +7,8 @@
     "start": "node server.js",
     "seed": "node seed.js",
     "catalogue:verify": "node scripts/dataset/verifyProducts.js",
-    "catalogue:images": "node scripts/dataset/findBrandPages.js && node scripts/dataset/fetchImages.js",
+    "catalogue:images": "node scripts/dataset/findBrandPages.js && node scripts/dataset/fetchImages.js && node scripts/dataset/processImages.js",
+    "catalogue:check": "node scripts/dataset/checkImages.js",
     "images": "node scripts/generateProductImages.js",
     "photos": "node scripts/fetchProductPhotos.js",
     "test": "node --test tests/api.test.js tests/models.test.js tests/auth.test.js tests/catalogue.test.js tests/seed.test.js tests/shelves.test.js tests/orders.test.js tests/acceptance.test.js tests/images.test.js"

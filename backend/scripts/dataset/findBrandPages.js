@@ -22,6 +22,12 @@ const FILTER_SITEMAPS = /product|pdp|item|catalog|shop|store/i;
 const INDIA_URL = /\/in\/|\/en-in\/|\/en_in\/|\/in-en\/|\.in\//i;
 const LOGO_IMAGE = /logo|favicon|placeholder|default[-_]?(og|share|image)|og-default|global-og|sprite|\.svg/i;
 
+// Official press rooms, read the same way. Their images are source c in the brief.
+const PRESS_SITES = {
+  Samsung: ['https://news.samsung.com'], Logitech: ['https://news.logitech.com'], 'Logitech G': ['https://news.logitech.com'], JBL: ['https://news.harman.com'],
+  Adidas: ['https://news.adidas.com'], Puma: ['https://about.puma.com'], Nike: ['https://about.nike.com']
+};
+
 // Each maker's own site. Indian site first where one exists.
 const SITES = {
   Apple: ['https://www.apple.com'], Samsung: ['https://www.samsung.com'], Logitech: ['https://www.logitech.com'], 'Logitech G': ['https://www.logitechg.com'],
@@ -141,7 +147,7 @@ class Site {
       html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${name}["'][^>]+content=["']([^"']+)["']`, 'i'))?.[1]
       ?? html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']${name}["']`, 'i'))?.[1] ?? '');
     const title = meta('og:title') || decode(html.match(/<title[^>]*>([^<]*)/i)?.[1] ?? '');
-    const image = [meta('og:image'), meta('twitter:image'), productDataImage(html)].find(found => found && !LOGO_IMAGE.test(found));
+    const image = [meta('og:image'), meta('twitter:image'), productDataImage(html), galleryImage(html, title)].find(found => found && !LOGO_IMAGE.test(found));
     return image ? { image: new URL(image, url).href, title } : null;
   }
 }
@@ -161,6 +167,24 @@ function productDataImage(html) {
   return '';
 }
 
+// Last resort: the first page image whose address or alt text names the product.
+function galleryImage(html, title) {
+  const wanted = title.toLowerCase().split(/[^a-z0-9]+/).filter(word => word.length > 3 && /\d/.test(word) || word.length > 6).slice(0, 4);
+  for (const [tag] of html.matchAll(/<img\b[^>]*>/gi)) {
+    const source = /(?:data-src|data-original|src)=["']([^"']+\.(?:jpe?g|png|webp)[^"']*)["']/i.exec(tag)?.[1];
+    if (!source || LOGO_IMAGE.test(source) || /icon|badge|payment|flag|banner|promo|gnb|menu|tile/i.test(source)) continue;
+    const text = `${source} ${/alt=["']([^"']*)/i.exec(tag)?.[1] ?? ''}`.toLowerCase();
+    if (wanted.some(word => text.includes(word))) return decode(source);
+  }
+  return '';
+}
+
+const brandRecord = (product, url, page, source) => ({
+  source, title: page.title, sourcePage: url, originalUrl: page.image, width: null, height: null,
+  licence: `© ${product.brand} - press/product image, used for a non-commercial student lab demo`,
+  author: product.brand, attribution: `Image © ${product.brand}, from ${new URL(url).host}`
+});
+
 const slugOf = url => decodeURIComponent(new URL(url).pathname).replace(/[/_.-]+/g, ' ');
 
 async function main() {
@@ -177,6 +201,36 @@ async function main() {
     }
   }
 
+  // Pages found by hand: same robots check, same image extraction, one site at a time per host.
+  const byHost = new Map();
+  for (const product of products) {
+    const url = manual[product.productId];
+    if (!url || found[product.productId]) continue;
+    const { origin } = new URL(url);
+    if (!byHost.has(origin)) byHost.set(origin, []);
+    byHost.get(origin).push([product, url]);
+  }
+  await Promise.all([...byHost].map(async ([origin, pairs]) => {
+    const site = new Site(origin);
+    await site.readRobots();
+    for (const [product, url] of pairs) {
+      const allowed = site.allowed(url);
+      const page = allowed ? await site.imageOf(url).catch(() => null) : null;
+      console.log(`  ${product.productId} ${allowed ? (page ? 'hand url ok' : `hand url no image ${site.note}`) : 'ROBOTS'} ${url.slice(0, 70)}`);
+      if (page) found[product.productId] = brandRecord(product, url, page, /newsroom|\/\/news\.|\/\/blog\./.test(url) ? 'brand-press' : 'brand-site');
+    }
+    writeFileSync(OUTPUT, `${JSON.stringify(found, null, 1)}\n`);
+  }));
+
+  for (const product of products) {
+    if (found[product.productId]) continue;
+    for (const origin of PRESS_SITES[product.brand] ?? []) {
+      if (!byOrigin.has(origin)) byOrigin.set(origin, []);
+      byOrigin.get(origin).push(product);
+    }
+  }
+  const pressOrigins = new Set(Object.values(PRESS_SITES).flat());
+
   const outcomes = await Promise.all([...byOrigin].map(async ([origin, wanted]) => {
     const site = new Site(origin);
     const urls = await site.productUrls().catch(error => { site.note = error.message; return []; });
@@ -191,11 +245,7 @@ async function main() {
         const page = await site.imageOf(url).catch(() => null);
         if (process.env.TRACE) console.log(`  ${product.productId} ${site.allowed(url) ? 'allowed' : 'ROBOTS'} ${page ? `img "${page.title.slice(0, 40)}"` : `no image ${site.note}`} ${url.slice(0, 80)}`);
         if (!page || (!known.includes(url) && !matchesProduct(`${product.brand} ${page.title} ${slugOf(url)}`, product))) continue;
-        found[product.productId] = {
-          source: 'brand-site', title: page.title, sourcePage: url, originalUrl: page.image, width: null, height: null,
-          licence: `© ${product.brand} - press/product image, used for a non-commercial student lab demo`,
-          author: product.brand, attribution: `Image © ${product.brand}, from ${new URL(url).host}`
-        };
+        found[product.productId] = brandRecord(product, url, page, pressOrigins.has(origin) ? 'brand-press' : 'brand-site');
         matched += 1;
         writeFileSync(OUTPUT, `${JSON.stringify(found, null, 1)}\n`);
         break;
