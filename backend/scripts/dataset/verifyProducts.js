@@ -3,11 +3,12 @@
 //   data/products-300.verified.json and data/reports/verify-report.md
 // Facts are collected by hand from web sources; this script never invents or fetches a value.
 // A product with no complete ledger record stays as it was, marked pending, and exit code is 1.
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 
 const SOURCE = new URL('../../../docs/dataset-300/products-300.json', import.meta.url);
 const LEDGER = new URL('../../data/verify/', import.meta.url);
 const OUTPUT = new URL('../../data/products-300.verified.json', import.meta.url);
+const IMAGES = new URL('../../data/images.json', import.meta.url);
 const REPORTS = new URL('../../data/reports/', import.meta.url);
 
 const CHECKED_AT = '2026-11-05';
@@ -131,8 +132,15 @@ function main() {
     return { ...product, verify: { status: 'pending' } };
   });
 
+  // Image work lives in its own file, so re-running this script never loses it.
+  const images = existsSync(IMAGES) ? JSON.parse(readFileSync(IMAGES, 'utf8')) : {};
+  const merged = products.map(product => {
+    const { candidates, ...image } = images[product.productId] ?? {};
+    return image.status ? { ...product, image, images: image.file ? [image.file] : product.images } : product;
+  });
+
   mkdirSync(REPORTS, { recursive: true });
-  writeFileSync(OUTPUT, `${JSON.stringify(products, null, 1)}\n`);
+  writeFileSync(OUTPUT, `${JSON.stringify(merged, null, 1)}\n`);
   writeFileSync(new URL('verify-report.md', REPORTS), report(products, ledger, incomplete));
 
   const pending = products.filter(product => product.verify.status === 'pending').length;

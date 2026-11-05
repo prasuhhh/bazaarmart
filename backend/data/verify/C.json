@@ -436,22 +436,30 @@
   }
  },
  "C-04-404": {
-  "productName": "Eagle Creek Pack-It Isolate Cube Set XS/S/M",
+  "productName": "Forclaz Kit of 3 Trekking Travel Storage Bags",
   "specs": {
-   "Material": "Ocean-recycled fabric",
-   "Size": "36 x 25 x 8 cm"
+   "Capacity": "23 L in total",
+   "Material": "Polyester with polyurethane coating",
+   "Weight": "About 200 g",
+   "Size": "39 x 31 x 10 cm and two of 30 x 20 x 9 cm"
   },
   "colours": [
-   "Black",
-   "Storm Grey"
+   "Carbon Grey"
   ],
   "connectivity": "n/a",
-  "description": "A set of three lightweight zip packing cubes in sizes XS, S and M, made from ocean-recycled fabric, to keep a suitcase organised.",
-  "flag": "Amazon.in listing at import-level pricing; other Eagle Creek sets ₹5,200 to ₹13,700",
-  "price": 12384,
+  "description": "A set of one large and two small zip storage bags for packing clothes in a backpack or suitcase, holding 23 litres in total.",
+  "flag": "Specs from Decathlon UK; colourway varies by listing; not waterproof. MRP ₹1,199",
+  "price": 799,
   "priceType": "selling",
-  "from": "amazon.in",
-  "url": "https://www.amazon.in/Eagle-Creek-Isolate-Packing-Travel/dp/B0BKZTQSZQ"
+  "from": "decathlon.in",
+  "url": "https://www.decathlon.in/p/8512006/kit-of-3-trekking-travel-storage-bags-travel?id=8512006&type=p",
+  "brand": "Forclaz",
+  "swap": {
+   "status": "applied",
+   "from": "Eagle Creek Pack-It Isolate Cube Set",
+   "to": "Forclaz Kit of 3 Trekking Travel Storage Bags",
+   "reason": "User decision: Eagle Creek looks import-only in India; Forclaz is sold by Decathlon India"
+  }
  },
  "C-04-405": {
   "productName": "Victorinox Classic SD Alox Swiss Army Knife (Wild Jungle)",

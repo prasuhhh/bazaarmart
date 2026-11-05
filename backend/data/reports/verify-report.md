@@ -4,7 +4,7 @@ Checked 2026-11-05. 300 of 300 products verified, 0 with incomplete records, 0 n
 
 Facts come from web search summaries of press, retailer and maker pages. `priceNote.from` names the site each price came from. Prices are the selling price at a major Indian retailer or official store where one was found, and otherwise an MRP or estimate, as `priceNote.type` records. They were not read live from brand sites.
 
-Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
+Price basis: selling 240, estimate 30, mrp 9, launch-mrp 21.
 
 ## For your review
 
@@ -48,7 +48,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | C-03-306 | Tommy Hilfiger Leather Bifold Wallet | 2499 | 1989 | pricehistoryapp.com quoting myntra.com | estimate, snippet-only price |
 | C-04-402 | Cabeau Evolution S3 Travel Pillow | 3999 | 1400 | adanione.com | estimate, -65% against the file |
 | C-04-403 | Apple World Travel Adapter Kit (MLFR4G/A) | 2900 | 4900 | apple.com/in | +69% against the file |
-| C-04-404 | Eagle Creek Pack-It Isolate Cube Set XS/S/M | 3999 | 12384 | amazon.in | +210% against the file |
+| C-04-404 | Forclaz Kit of 3 Trekking Travel Storage Bags | 3999 | 799 | decathlon.in | -80% against the file |
 | C-04-405 | Victorinox Classic SD Alox Swiss Army Knife (Wild Jungle) | 1999 | 3800 | amazon.in | +90% against the file |
 | C-04-406 | Wildcraft Expedition DUF 35 Duffel Backpack | 15999 | 1119 | amazon.in | -93% against the file |
 | C-05-501 | Milton Thermosteel Flip Lid Flask (1000 ml) | 999 | 1026 | flipkart.com | snippet-only price |
@@ -71,7 +71,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | D-04-406 | IKEA FORSÅ Work Lamp (Nickel-plated) | 1990 | 3490 | ikea.com/in | +75% against the file |
 | D-05-503 | Elgato Facecam | 13999 | 17499 | amazon.in | snippet-only price, +25% against the file |
 | D-05-505 | Anker 341 USB-C Hub (7-in-1) | 3499 | 7646 | pricehistory.app | snippet-only price, +119% against the file |
-| D-05-507 | CalDigit TS4 Thunderbolt 4 Dock | 39999 | 67799 | poshace.com | estimate, +70% against the file |
+| D-05-507 | Anker 11-in-1 USB-C Docking Station | 39999 | 11623 | amazon.in | -71% against the file |
 | G-01-105 | Nintendo Joy-Con (L)/(R) Pair | 7499 | 8645 | ubuy.co.in | estimate |
 | G-01-106 | 8BitDo Ultimate 3-mode Controller for Xbox | 5499 | 6199 | genesispc.in | snippet-only price |
 | G-02-203 | SteelSeries Arctis Nova 7 Wireless | 18999 | 29990 | smartprix.com | estimate, +58% against the file |
@@ -114,7 +114,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | P-05-505 | Belkin BoostCharge USB-C to USB-C Cable (2 m) | 1499 | 799 | amazon.in | snippet-only price, -47% against the file |
 | P-05-506 | UGREEN 100W USB-C to USB-C Cable (2 m) | 799 | 1456 | amazon.in | +82% against the file |
 | P-05-507 | Samsung 5A USB-C to USB-C Cable (1 m) | 1199 | 5523 | amazon.in | +361% against the file |
-| S-01-102 | Levi's Men's Brand Logo Crew Neck T-shirt | 1299 | 535 | levi.in | -59% against the file |
+| S-01-102 | Levi's Men's Brand Logo Crew Neck T-shirt | 1299 | 559 | levi.in | -57% against the file |
 | S-01-105 | Puma ESS Logo Tee | 1299 | 839 | in.puma.com | -35% against the file |
 | S-02-201 | Allen Solly Men's Oxford Solid Regular Fit Casual Shirt | 2490 | 679 | amazon.in | snippet-only price, -73% against the file |
 | S-02-202 | Uniqlo Men's Premium Linen Long-Sleeve Shirt | 2990 | 2490 | zoutons.com | estimate |
@@ -141,7 +141,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | W-04-407 | JioTag Air | 1499 | 1499 | republicworld.com | estimate |
 | W-05-502 | Belkin MagSafe 3-in-1 Qi2 Wireless Charger Stand 15W | 12999 | 16999 | amazon.in | +31% against the file |
 | W-05-503 | Anker 3-in-1 Cube with MagSafe | 14999 | 21217 | amazon.in | +41% against the file |
-| W-05-504 | Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W | 2499 | 11999 | amazon.in | +380% against the file |
+| W-05-504 | Samsung Wireless Charger Duo Pad (15W) | 2499 | 4999 | amazon.in | +100% against the file |
 | W-05-505 | ZORBES 2-in-1 Charging Cable for Garmin Watch | 2490 | 414 | amazon.in | -83% against the file |
 | W-05-506 | Fitbit Charge 6 Charging Cable | 1999 | 5565 | amazon.in | snippet-only price, +178% against the file |
 
@@ -153,10 +153,12 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | A-04-404 | applied | FiiO BTR5 (2021) Bluetooth DAC | FiiO BTR7 Bluetooth DAC | BTR5 2021 is discontinued: Headphone Zone India lists it as end-of-life and other retailers show it sold out or withdrawn |
 | B-03-302 | applied | Philips OneBlade Pro 360 QP6551 | Philips OneBlade Turbo2X Face & Body QP2824/10 | QP6551 was found only at UK and EU retailers, with no Indian listing or rupee price. QP2824/10 is the same brand and bay and is listed on Amazon.in, Flipkart, Croma and Reliance Digital. |
 | C-04-403 | applied | Apple World Travel Adapter Kit (MD837ZM/A) | Apple World Travel Adapter Kit (MLFR4G/A) | The older MD837ZM/A has no reliable Indian price and is unavailable on Amazon.in; Apple's India store sells the current MLFR4G/A |
+| C-04-404 | applied | Eagle Creek Pack-It Isolate Cube Set | Forclaz Kit of 3 Trekking Travel Storage Bags | User decision: Eagle Creek looks import-only in India; Forclaz is sold by Decathlon India |
 | C-04-406 | applied | Peak Design Travel Duffel 35L | Wildcraft Expedition DUF 35 Duffel Backpack | No Indian listing or rupee price found for the Peak Design duffel after three searches; this 35 L duffel is on Amazon.in |
 | D-02-207 | applied | Microsoft Bluetooth Ergonomic Mouse | Logitech M720 Triathlon Multi-Device Wireless Mouse | No India listing or rupee price found for the Microsoft mouse in two rounds of searching. The M720 is in the same bay, clearly listed on Amazon.in and Flipkart, and not already in the catalogue. |
 | D-03-304 | applied | Apple Studio Display | Apple Studio Display (2026) | The 2022 model at 1,59,900 was succeeded by the 2026 model, launched in India in March 2026 at 1,89,900. |
 | D-05-504 | applied | Insta360 Link AI Webcam | Insta360 Link 2 4K AI Webcam | No Indian price found for the original 2022 Link; the Link 2 is its successor and is sold on Insta360's India site |
+| D-05-507 | applied | CalDigit TS4 Thunderbolt 4 Dock | Anker 11-in-1 USB-C Docking Station | User decision: the TS4 looks import-only in India; the Anker dock is on Amazon.in |
 | G-01-106 | applied | 8BitDo Ultimate Bluetooth Controller | 8BitDo Ultimate 3-mode Controller for Xbox | No Indian listing found for the Bluetooth model; the 3-mode Xbox model is the closest 8BitDo Ultimate controller confirmed at an Indian seller. |
 | G-03-306 | applied | SteelSeries Apex Pro TKL | Logitech G413 TKL SE Mechanical Gaming Keyboard | No Amazon.in, Flipkart or other Indian retailer listing confirmed for the Apex Pro TKL across two rounds of searching; only an aggregator figure of Rs 22,999 and a single reseller. G413 TKL SE is a tenkeyless gaming keyboard listed on Amazon.in and not already in the catalogue. It is not a like-for-like model: it lacks adjustable-actuation switches and is far cheaper. |
 | G-04-406 | applied | SteelSeries Rival 3 | SteelSeries Rival 3 Gen 2 | No seller listing found in India for the original wired Rival 3, only a third-party estimate; the Gen 2 wired model is on sale at an Indian retailer. |
@@ -180,7 +182,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | W-02-201 | applied | Xiaomi Smart Band 9 | Huawei Band 9 | No India sale confirmed for the Smart Band 9; Huawei Band 9 is listed on Amazon.in and Flipkart |
 | W-03-303 | applied | Apple Solo Loop (42 mm) | Apple Sport Loop (42 mm) | No Indian price or listing for the Solo Loop after three searches; the 42 mm Sport Loop is in stock on Amazon.in |
 | W-03-306 | applied | Garmin QuickFit 22 Silicone Band | Abanen 22 mm QuickFit Silicone Watch Band | Garmin's own band shows as unavailable or unpriced on Amazon.in; this third-party QuickFit band is listed there |
-| W-05-504 | applied | Samsung Galaxy Watch Fast Charger (USB-C) | Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W | Amazon.in lists the Samsung charger with no price and no other Indian price was found |
+| W-05-504 | applied | Samsung Galaxy Watch Fast Charger (USB-C) | Samsung Wireless Charger Duo Pad (15W) | Samsung's own watch charger is ₹6,707 on Amazon.in, over the ₹5,000 limit; no Spigen or Anker watch charger listed under ₹5,000. User chose the Duo first |
 | W-05-505 | applied | Garmin Charging/Data Cable (USB-C) | ZORBES 2-in-1 Charging Cable for Garmin Watch | Only third-party Garmin cables are listed in India; no official Garmin cable price found |
 
 ## Renamed
@@ -201,7 +203,6 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | C-02-201 | tomtoc 360 Protective Laptop Sleeve (14-inch) | tomtoc Defender-A13 Laptop Sleeve (14-inch) |
 | C-02-202 | Incase Icon Sleeve with Woolenex (14-inch) | Incase ICON Sleeve with Woolenex for 14-inch MacBook Pro |
 | C-02-205 | Logitech Combo Touch for iPad Air 11-inch | Logitech Combo Touch for iPad Air 11-inch (M2) |
-| C-04-404 | Eagle Creek Pack-It Isolate Cube Set | Eagle Creek Pack-It Isolate Cube Set XS/S/M |
 | C-04-405 | Victorinox Swiss Army Classic SD | Victorinox Classic SD Alox Swiss Army Knife (Wild Jungle) |
 | C-05-507 | Contigo Autoseal West Loop Travel Mug | Contigo Autoseal West Loop Travel Mug (470 ml) |
 | D-01-104 | Apple Magic Keyboard with Touch ID | Apple Magic Keyboard with Touch ID (USB-C) |
@@ -290,7 +291,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | C-03-306 | 2499 | 1989 | -20% | pricehistoryapp.com quoting myntra.com |
 | C-04-402 | 3999 | 1400 | -65% | adanione.com |
 | C-04-403 | 2900 | 4900 | +69% | apple.com/in |
-| C-04-404 | 3999 | 12384 | +210% | amazon.in |
+| C-04-404 | 3999 | 799 | -80% | decathlon.in |
 | C-04-405 | 1999 | 3800 | +90% | amazon.in |
 | C-04-406 | 15999 | 1119 | -93% | amazon.in |
 | C-05-502 | 4500 | 11453 | +155% | price-history.in quoting amazon.in |
@@ -318,7 +319,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | D-05-502 | 19995 | 24790 | +24% | amazon.in |
 | D-05-503 | 13999 | 17499 | +25% | amazon.in |
 | D-05-505 | 3499 | 7646 | +119% | pricehistory.app |
-| D-05-507 | 39999 | 67799 | +70% | poshace.com |
+| D-05-507 | 39999 | 11623 | -71% | amazon.in |
 | G-01-103 | 5390 | 6590 | +22% | amazon.in |
 | G-01-104 | 6299 | 5057 | -20% | flipkart.com |
 | G-01-105 | 7499 | 8645 | +15% | ubuy.co.in |
@@ -374,7 +375,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | P-05-505 | 1499 | 799 | -47% | amazon.in |
 | P-05-506 | 799 | 1456 | +82% | amazon.in |
 | P-05-507 | 1199 | 5523 | +361% | amazon.in |
-| S-01-102 | 1299 | 535 | -59% | levi.in |
+| S-01-102 | 1299 | 559 | -57% | levi.in |
 | S-01-103 | 1695 | 1295 | -24% | nike.com/in |
 | S-01-104 | 1999 | 1599 | -20% | adidas.co.in |
 | S-01-105 | 1299 | 839 | -35% | in.puma.com |
@@ -406,7 +407,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | W-05-501 | 2900 | 2199 | -24% | luxury.tatacliq.com |
 | W-05-502 | 12999 | 16999 | +31% | amazon.in |
 | W-05-503 | 14999 | 21217 | +41% | amazon.in |
-| W-05-504 | 2499 | 11999 | +380% | amazon.in |
+| W-05-504 | 2499 | 4999 | +100% | amazon.in |
 | W-05-505 | 2490 | 414 | -83% | amazon.in |
 | W-05-506 | 1999 | 5565 | +178% | amazon.in |
 
@@ -504,7 +505,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | C-04-401 | Connectivity corrected to wireless (Wi-Fi). Launch price April 2025; a blog gives list 21999 and a tracker showed 14999 in November 2025, out of stock. No current price found. File colour Jade dropped: reports say black only in India. |
 | C-04-402 | Weak price: Mumbai airport duty-free figure for Cardinal Red, marked unavailable, and well below 39.99 dollars in the US. Flipkart unavailable with no price. Weight left out: sources give 329 and 360 g. Colour names vary by retailer. |
 | C-04-403 | Bought with an existing Apple adapter, not stand-alone |
-| C-04-404 | Amazon.in listing at import-level pricing; other Eagle Creek sets ₹5,200 to ₹13,700 |
+| C-04-404 | Specs from Decathlon UK; colourway varies by listing; not waterproof. MRP ₹1,199 |
 | C-04-405 | Classic SD prices run ₹1,649 to ₹3,960 by colour and function count, so a specific colour is named |
 | C-04-406 | Far below the file because it is a different product. MRP ₹2,199 |
 | C-05-501 | Summary gave 1026 (MRP 1315, 30-day low 936) without tying it to one page; URL is the listing with the matching title. Another Flipkart listing shows 940. Listings disagree on whether it is leak proof, so that claim is left out. |
@@ -547,7 +548,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | D-05-504 | Colour carried from the file, not confirmed |
 | D-05-505 | Tracker price from April 2026, more than double the file; getpc.co.in says ₹3,800 to ₹4,200 but looks unreliable. Colour carried from the file. 'Battery' row is power delivery, the desk label set has no power row |
 | D-05-506 | Reliance lists model MJ1K2ZM/A; current model is MUF82ZM/A at ₹5,865 to ₹6,900 elsewhere |
-| D-05-507 | No major Indian retailer found; Indian import listings run ₹67,799 to ₹84,400 against ₹39,999 in the file. Colour carried from the file. 'Battery' row is host charging |
+| D-05-507 | Colour not confirmed. Charger not included. 'Battery' row is pass-through charging. MRP ₹16,272 |
 | G-01-101 | Price is the Amazon.in white model as reported by a July 2026 buying guide, not read from Amazon.in; about Rs 5,849 to 5,899 by colour. Weight and battery from non-Indian retailers and a spec guide. |
 | G-01-102 | Price is the white model at one specialist retailer; launch MRP Rs 18,990. Microcenter's black listing at Rs 13,990 was out of stock on one page. Weight sources differ: 322 g (iFixit), 325 g (Sony). Midnight Black added from Indian launch coverage. |
 | G-01-103 | Sources disagree on price: Amazon.in Rs 6,590 via a July 2026 price tracker (Robot White); undated Variety Infotech Rs 5,199 White, Rs 5,349 Black. Weight left out because listings conflict (200 to 490 g). |
@@ -648,7 +649,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | P-05-506 | Rs 1,456 (list Rs 3,238). Nylon braid confirmed on the 2-pack listing, not explicitly on this single listing. File colour Grey not confirmed; replaced with Black. |
 | P-05-507 | Only Amazon.in listing found is Rs 5,523 (list Rs 9,330), likely an import seller; another shows Rs 5,738. Samsung UK lists about GBP 15, so the Indian figure looks inflated. White from Samsung Austria and Germany pages. |
 | S-01-101 | Only Gray confirmed on the India page; the full India colour range was not returned, so the file's White, Black and Olive are dropped. |
-| S-01-102 | Rs 535 is a sale snapshot of one listing (regular Rs 1,029). Sibling white and black listings on levi.in showed Rs 1,099 to Rs 1,679 (regular Rs 1,299 to Rs 2,399), so the price may be low. Page does not use the Housemark name, so the logo design may differ. Material varies by colourway listing. |
+| S-01-102 | levi.in prices vary by colour, ₹559 to ₹1,099; ₹559 is the blue. Amazon.in black ₹1,620 |
 | S-01-103 | 100% cotton comes from other regional Nike pages; heather colourways of the related non-Club tee are a cotton/polyester mix, so Dark Grey Heather may differ. No discounted selling price found, so MRP used. |
 | S-01-104 | Rs 1,599 is the listed price on adidas.co.in; sale snapshots of Rs 960 to Rs 1,120 also appeared. Several similarly named tees exist. Black/White was seen in the mixed listing results and is not tied to this exact code. |
 | S-01-105 | Sale price, marked down from Rs 1,399. India colour range not in results; Black rests on a US listing (PUMA Black) and on the file. File's White not confirmed, so dropped. |
@@ -657,7 +658,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | S-02-201 | Flipkart ₹560 to ₹874, MRP ₹1,699. Blue and grey seen on similar Allen Solly solid shirts, not confirmed for this exact style |
 | S-02-202 | Price is an aggregator figure from a May 2026 Zoutons roundup, no uniqlo.com/in page returned. Material is from the UK listing. White seen only in resale listings; India colour range unconfirmed, file's Navy and Beige dropped. |
 | S-02-203 | Rs 2,598 is a sale price (regular Rs 4,999). Material and fit wording come from foreign Levi's listings. levi.in gives the colour as Blue; foreign sites call it Indigo Stonewash. Amazon.in also lists a Barstow in Eddlyn Ecru, not included. |
-| S-02-204 | Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. |
+| S-02-204 | Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. Official store Classic Fit Oxford ₹21,500; Myntra lists a Classic Fit Oxford at ₹10,690 |
 | S-02-205 | MRP Rs 5,999. Amazon.in showed a similar listing at Rs 3,419. Fit detail, material and Light Blue colour come from foreign retailers, not the India listing; White from the file is unconfirmed and dropped. |
 | S-02-206 | Only White confirmed for this article; file's Light Beige not found, so dropped. Rs 1,799 is the listed MRP on H&M India. |
 | S-03-301 | Price varies by wash: Rs 3,289 is one blue listing's sale price (regular Rs 4,699); other sale prices seen were Rs 1,823 to Rs 3,159. The summary did not tie the figure to one URL, so url left out. |
@@ -708,7 +709,7 @@ Price basis: selling 239, estimate 31, mrp 9, launch-mrp 21.
 | W-05-501 | Listing says Magnetic Charger, not Magnetic Fast Charger, sold by Rising India; MRP 2900 matches the file. Adanione duty-free shows 2600, unavailable. No official Apple India price found. Connectivity changed from wired to n/a (charging only). |
 | W-05-502 | Renamed to the Amazon.in listing; replaces the import price. List price ₹25,999, deal prices seen as low as ₹7,599 |
 | W-05-503 | Replaces the import price. Amazon.in listing, weight taken from reviews |
-| W-05-504 | List price ₹15,999. Far above the file because it is a different product |
+| W-05-504 | Listings describe phone charging and do not confirm it charges a watch. MRP ₹5,199 |
 | W-05-505 | Third-party cable, not made by Garmin. Colour not confirmed |
 | W-05-506 | Official cable from Amazon.in search snapshots, ₹5,565 to ₹5,822; one listing unavailable. Third-party cables sell at ₹287 to ₹499 |
 

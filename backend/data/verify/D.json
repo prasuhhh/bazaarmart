@@ -596,20 +596,26 @@
   "flag": "Reliance lists model MJ1K2ZM/A; current model is MUF82ZM/A at ₹5,865 to ₹6,900 elsewhere"
  },
  "D-05-507": {
-  "price": 67799,
-  "priceType": "estimate",
-  "from": "poshace.com",
-  "url": "https://poshace.com/caldigit-ts4-thunderbolt-4-dock-with-18-ports-98w-charging-40gbps-usb-a-usb-c-25gbe-8k-displays-compatible-with-mac-pc-and-chrome.html",
+  "price": 11623,
+  "priceType": "selling",
+  "from": "amazon.in",
+  "url": "https://www.amazon.in/Docking-station-DisplayPort-Delivery-Ethernet/dp/B09Q5V9G5P",
   "specs": {
-   "Connection": "Thunderbolt 4, 40 Gb/s",
-   "Size": "18 ports",
-   "Battery": "98 W host charging"
+   "Connection": "4K HDMI, DisplayPort, Ethernet, 10 Gbps USB-C and USB-A",
+   "Battery": "85 W pass-through charging"
   },
   "colours": [
-   "Space Grey"
+   "Grey"
   ],
   "connectivity": "wired",
-  "description": "An 18-port Thunderbolt 4 dock with three 40 Gb/s ports, five USB-A, three USB-C, 2.5 GbE, SD UHS-II and 98 W of host charging.",
-  "flag": "No major Indian retailer found; Indian import listings run ₹67,799 to ₹84,400 against ₹39,999 in the file. Colour carried from the file. 'Battery' row is host charging"
+  "description": "An 11-in-1 USB-C dock for two monitors, with HDMI, DisplayPort, Ethernet, 10 Gbps data ports and 85 W pass-through charging.",
+  "flag": "Colour not confirmed. Charger not included. 'Battery' row is pass-through charging. MRP ₹16,272",
+  "productName": "Anker 11-in-1 USB-C Docking Station",
+  "swap": {
+   "status": "applied",
+   "from": "CalDigit TS4 Thunderbolt 4 Dock",
+   "to": "Anker 11-in-1 USB-C Docking Station",
+   "reason": "User decision: the TS4 looks import-only in India; the Anker dock is on Amazon.in"
+  }
  }
 }

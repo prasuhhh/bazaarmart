@@ -4721,17 +4721,16 @@
  },
  {
   "productId": "C-04-404",
-  "productName": "Eagle Creek Pack-It Isolate Cube Set XS/S/M",
-  "productPrice": 12384,
+  "productName": "Forclaz Kit of 3 Trekking Travel Storage Bags",
+  "productPrice": 799,
   "quantity": 31,
   "category": "Carry",
   "zoneCode": "C",
   "bay": 4,
   "bayName": "Travel",
-  "brand": "Eagle Creek",
+  "brand": "Forclaz",
   "colours": [
-   "Black",
-   "Storm Grey"
+   "Carbon Grey"
   ],
   "use": [
    "flight",
@@ -4739,14 +4738,16 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Material": "Ocean-recycled fabric",
-   "Size": "36 x 25 x 8 cm"
+   "Capacity": "23 L in total",
+   "Material": "Polyester with polyurethane coating",
+   "Weight": "About 200 g",
+   "Size": "39 x 31 x 10 cm and two of 30 x 20 x 9 cm"
   },
   "seller": "Northgate Supply",
   "warrantyMonths": 6,
   "arrivesInDays": 7,
   "isNew": false,
-  "description": "A set of three lightweight zip packing cubes in sizes XS, S and M, made from ocean-recycled fabric, to keep a suitcase organised.",
+  "description": "A set of one large and two small zip storage bags for packing clothes in a backpack or suitcase, holding 23 litres in total.",
   "images": [],
   "image": {
    "status": "pending",
@@ -4760,14 +4761,20 @@
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "amazon.in",
+   "from": "decathlon.in",
    "type": "selling",
-   "url": "https://www.amazon.in/Eagle-Creek-Isolate-Packing-Travel/dp/B0BKZTQSZQ"
+   "url": "https://www.decathlon.in/p/8512006/kit-of-3-trekking-travel-storage-bags-travel?id=8512006&type=p"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Amazon.in listing at import-level pricing; other Eagle Creek sets ₹5,200 to ₹13,700"
+   "flag": "Specs from Decathlon UK; colourway varies by listing; not waterproof. MRP ₹1,199",
+   "swap": {
+    "status": "applied",
+    "from": "Eagle Creek Pack-It Isolate Cube Set",
+    "to": "Forclaz Kit of 3 Trekking Travel Storage Bags",
+    "reason": "User decision: Eagle Creek looks import-only in India; Forclaz is sold by Decathlon India"
+   }
   }
  },
  {
@@ -6952,8 +6959,8 @@
  },
  {
   "productId": "D-05-507",
-  "productName": "CalDigit TS4 Thunderbolt 4 Dock",
-  "productPrice": 67799,
+  "productName": "Anker 11-in-1 USB-C Docking Station",
+  "productPrice": 11623,
   "quantity": 22,
   "category": "Desk setup",
   "zoneCode": "D",
@@ -6961,7 +6968,7 @@
   "bayName": "Webcams & hubs",
   "brand": "CalDigit",
   "colours": [
-   "Space Grey"
+   "Grey"
   ],
   "use": [
    "travel",
@@ -6969,15 +6976,14 @@
   ],
   "connectivity": "wired",
   "specs": {
-   "Connection": "Thunderbolt 4, 40 Gb/s",
-   "Size": "18 ports",
-   "Battery": "98 W host charging"
+   "Connection": "4K HDMI, DisplayPort, Ethernet, 10 Gbps USB-C and USB-A",
+   "Battery": "85 W pass-through charging"
   },
   "seller": "TechNest Traders",
   "warrantyMonths": 12,
   "arrivesInDays": 5,
   "isNew": false,
-  "description": "An 18-port Thunderbolt 4 dock with three 40 Gb/s ports, five USB-A, three USB-C, 2.5 GbE, SD UHS-II and 98 W of host charging.",
+  "description": "An 11-in-1 USB-C dock for two monitors, with HDMI, DisplayPort, Ethernet, 10 Gbps data ports and 85 W pass-through charging.",
   "images": [],
   "image": {
    "status": "pending",
@@ -6991,14 +6997,20 @@
   },
   "priceNote": {
    "checkedAt": "2026-11-05",
-   "from": "poshace.com",
-   "type": "estimate",
-   "url": "https://poshace.com/caldigit-ts4-thunderbolt-4-dock-with-18-ports-98w-charging-40gbps-usb-a-usb-c-25gbe-8k-displays-compatible-with-mac-pc-and-chrome.html"
+   "from": "amazon.in",
+   "type": "selling",
+   "url": "https://www.amazon.in/Docking-station-DisplayPort-Delivery-Ethernet/dp/B09Q5V9G5P"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "No major Indian retailer found; Indian import listings run ₹67,799 to ₹84,400 against ₹39,999 in the file. Colour carried from the file. 'Battery' row is host charging"
+   "flag": "Colour not confirmed. Charger not included. 'Battery' row is pass-through charging. MRP ₹16,272",
+   "swap": {
+    "status": "applied",
+    "from": "CalDigit TS4 Thunderbolt 4 Dock",
+    "to": "Anker 11-in-1 USB-C Docking Station",
+    "reason": "User decision: the TS4 looks import-only in India; the Anker dock is on Amazon.in"
+   }
   }
  },
  {
@@ -12343,7 +12355,7 @@
  {
   "productId": "S-01-102",
   "productName": "Levi's Men's Brand Logo Crew Neck T-shirt",
-  "productPrice": 535,
+  "productPrice": 559,
   "quantity": 156,
   "category": "Style",
   "zoneCode": "S",
@@ -12384,12 +12396,12 @@
    "checkedAt": "2026-11-05",
    "from": "levi.in",
    "type": "selling",
-   "url": "https://levi.in/products/mens-brand-logo-crew-neck-t-shirt-169601195"
+   "url": "https://levi.in/products/mens-brand-logo-crew-neck-t-shirt-169601075"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Rs 535 is a sale snapshot of one listing (regular Rs 1,029). Sibling white and black listings on levi.in showed Rs 1,099 to Rs 1,679 (regular Rs 1,299 to Rs 2,399), so the price may be low. Page does not use the Housemark name, so the logo design may differ. Material varies by colourway listing.",
+   "flag": "levi.in prices vary by colour, ₹559 to ₹1,099; ₹559 is the blue. Amazon.in black ₹1,620",
    "swap": {
     "status": "applied",
     "from": "Levi's Original Housemark Tee",
@@ -12861,7 +12873,7 @@
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description.",
+   "flag": "Rs 20,900 is well above the file's Rs 12,900. Page showed XS unavailable. Colours White and Black come from foreign listings of this garment-dyed shirt; India availability not confirmed. Fit wording comes from a US retailer's Classic Fit description. Official store Classic Fit Oxford ₹21,500; Myntra lists a Classic Fit Oxford at ₹10,690",
    "swap": {
     "status": "applied",
     "from": "Polo Ralph Lauren Custom Fit Oxford Shirt",
@@ -15525,14 +15537,14 @@
  },
  {
   "productId": "W-05-504",
-  "productName": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
-  "productPrice": 11999,
+  "productName": "Samsung Wireless Charger Duo Pad (15W)",
+  "productPrice": 4999,
   "quantity": 36,
   "category": "Wearables",
   "zoneCode": "W",
   "bay": 5,
   "bayName": "Wearable chargers",
-  "brand": "Belkin",
+  "brand": "Samsung",
   "colours": [
    "Black"
   ],
@@ -15542,14 +15554,14 @@
   ],
   "connectivity": "n/a",
   "specs": {
-   "Output": "15 W Qi2",
-   "Connection": "Extra USB-C port"
+   "Output": "15 W",
+   "Connection": "Two-device charging pad"
   },
   "seller": "UrbanKart",
   "warrantyMonths": 12,
   "arrivesInDays": 5,
   "isNew": false,
-  "description": "A flat charging pad for an iPhone, Apple Watch and AirPods with 15 W Qi2 magnetic charging and one extra USB-C port.",
+  "description": "A 15 W Samsung wireless charging pad with two charging positions, for topping up two devices at once from one socket.",
   "images": [],
   "image": {
    "status": "pending",
@@ -15565,17 +15577,17 @@
    "checkedAt": "2026-11-05",
    "from": "amazon.in",
    "type": "selling",
-   "url": "https://www.amazon.in/Belkin-Wireless-Charging-Additional-USB-C/dp/B0CRKPBWHV"
+   "url": "https://www.amazon.in/Samsung-Original-Wireless-Charger-Black/dp/B0B1ML4F73"
   },
   "source": "bazaarmart:real-300-v1",
   "verify": {
    "status": "flagged",
-   "flag": "List price ₹15,999. Far above the file because it is a different product",
+   "flag": "Listings describe phone charging and do not confirm it charges a watch. MRP ₹5,199",
    "swap": {
     "status": "applied",
     "from": "Samsung Galaxy Watch Fast Charger (USB-C)",
-    "to": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
-    "reason": "Amazon.in lists the Samsung charger with no price and no other Indian price was found"
+    "to": "Samsung Wireless Charger Duo Pad (15W)",
+    "reason": "Samsung's own watch charger is ₹6,707 on Amazon.in, over the ₹5,000 limit; no Spigen or Anker watch charger listed under ₹5,000. User chose the Duo first"
    }
   }
  },

@@ -569,27 +569,27 @@
   "flag": "Replaces the import price. Amazon.in listing, weight taken from reviews"
  },
  "W-05-504": {
-  "productName": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
+  "productName": "Samsung Wireless Charger Duo Pad (15W)",
   "from": "amazon.in",
-  "url": "https://www.amazon.in/Belkin-Wireless-Charging-Additional-USB-C/dp/B0CRKPBWHV",
+  "url": "https://www.amazon.in/Samsung-Original-Wireless-Charger-Black/dp/B0B1ML4F73",
   "specs": {
-   "Output": "15 W Qi2",
-   "Connection": "Extra USB-C port"
+   "Output": "15 W",
+   "Connection": "Two-device charging pad"
   },
   "colours": [
    "Black"
   ],
   "connectivity": "n/a",
-  "description": "A flat charging pad for an iPhone, Apple Watch and AirPods with 15 W Qi2 magnetic charging and one extra USB-C port.",
-  "flag": "List price ₹15,999. Far above the file because it is a different product",
-  "brand": "Belkin",
-  "price": 11999,
+  "description": "A 15 W Samsung wireless charging pad with two charging positions, for topping up two devices at once from one socket.",
+  "flag": "Listings describe phone charging and do not confirm it charges a watch. MRP ₹5,199",
+  "brand": "Samsung",
+  "price": 4999,
   "priceType": "selling",
   "swap": {
    "status": "applied",
    "from": "Samsung Galaxy Watch Fast Charger (USB-C)",
-   "to": "Belkin MagSafe 3-in-1 Qi2 Wireless Charging Pad 15W",
-   "reason": "Amazon.in lists the Samsung charger with no price and no other Indian price was found"
+   "to": "Samsung Wireless Charger Duo Pad (15W)",
+   "reason": "Samsung's own watch charger is ₹6,707 on Amazon.in, over the ₹5,000 limit; no Spigen or Anker watch charger listed under ₹5,000. User chose the Duo first"
   }
  },
  "W-05-505": {
