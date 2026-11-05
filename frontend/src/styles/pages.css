@@ -71,6 +71,7 @@
 .zone-tile strong { font: 800 var(--text-tile)/28px var(--font-title); }
 .zone-tile.active { background: var(--sticky); color: var(--sticky-ink); border: var(--border); }
 .zone-tile.active .caption { color: inherit; }
+.zone-tile.narrow strong { font-size: 15px; line-height: 20px; overflow-wrap: anywhere; }
 
 .peek-panel { padding: 12px; background: var(--panel); border: var(--border); border-radius: var(--radius); box-shadow: var(--hard-shadow); min-width: 0; }
 .peek-head { display: flex; justify-content: space-between; height: 24px; }
@@ -425,8 +426,13 @@ body[data-dragging='over'] .receipt-button { background: var(--sticky); color: v
 }
 
 /* Photo credits */
-.gallery.single { grid-template-columns: minmax(0, 1fr); }
-.gallery-view { min-width: 0; }
+/* .gallery is display: contents, so this wrapper is the grid item beside the strip. */
+.gallery-view { grid-column: 2; display: flex; flex-direction: column; min-width: 0; }
+.gallery-view .gallery-main { flex: 1; }
+.gallery.single .gallery-view { grid-column: 1 / 3; }
+.is-compact .gallery .gallery-view, .is-compact .gallery.single .gallery-view { grid-column: auto; }
+.is-compact .gallery-main { min-height: 0; }
+.is-compact .gallery-main .thumb { position: static; }
 .photo-credit { margin-top: 8px; font: 400 11px/16px var(--font-mono, ui-monospace, Menlo, monospace); color: var(--muted); overflow-wrap: anywhere; }
 .photo-credit a { color: inherit; text-decoration: underline; }
 .credits table { width: 100%; border-collapse: collapse; font-size: var(--text-body); }
