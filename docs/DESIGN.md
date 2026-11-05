@@ -71,6 +71,8 @@
 | `/p/:sku` | 03 Product sheet | public |
 | `/saved` | 04 Saved shelf | login |
 | `/counter` | 05 Counter (checkout) | **guest allowed** |
+| `/counter?shelf=:shelfId` | Counter loaded with one of your shelves (bulk order, see §5.5a) | login (own shelf) |
+| `/counter?share=:shareId` | Counter loaded with a shared shelf (bulk order) | **guest allowed** |
 | `/orders` | 06 Orders | login |
 | `/track/:orderNo` | 07 Track parcel | login (guests: order no. + phone) |
 | `/profile` | 08 Profile | login |
@@ -113,6 +115,15 @@
 ### 5.5 Saved shelf `/saved` (screen 05)
 - Three-column grid of **named shelves** (cards: "New desk", "Trip kit", "Birthday ideas"), each with a **SHARE** link (copies `/s/:shareId`), up to N items showing thumbnail, name, price and orange **↓ 12% since saved** (price-drop watch per item), and the underlined link **Move whole shelf to receipt**. Sticky note: *"Price-drop watch per item. Shelves can be shared as a link."*
 - Actions: create shelf, rename, delete shelf, remove item.
+- Each shelf card also has an orange button **Check out this shelf →** (under the items, above the "Move whole shelf to receipt" link). It goes straight to `/counter?shelf=:shelfId`, skipping the receipt. Disabled with the hint "Nothing in stock on this shelf" when every item is out of stock.
+
+#### 5.5a Shelf → counter (bulk order)
+Purpose: order a whole shelf in one go (office kit, gifts for a group, monthly restock) without loading it into the receipt and without disturbing what is already on the receipt.
+- **Entry points:** *Check out this shelf →* on `/saved` (`?shelf=:shelfId`, owner only) and on the public shared view `/s/:shareId` (`?share=:shareId`, guests allowed, so someone can order a shelf a friend shared).
+- **Counter in shelf mode:** the RECEIPT panel title becomes **RECEIPT · from shelf "Trip kit"**, with a dashed pill **Back to shelf**. Lines are the shelf's items at their **current** price (not savedPrice), each with a qty stepper (default 1, max = stock) and a checkbox (default on) so the buyer can drop lines. A **Set all qty to [ N ]** control above the lines makes bulk quantities one action. Out-of-stock items are listed greyed and unchecked with "Out of stock". The three accordion steps, extras and simulated payment are unchanged.
+- **The normal receipt is untouched:** shelf mode never reads, merges or clears `ReceiptContext`. The top bar **Receipt · N** keeps showing the cart. Plain `/counter` (no query) behaves exactly as in §5.6.
+- **Errors:** unknown/foreign `shelf` id → 404/403 page notice "That shelf isn't yours or no longer exists" with a link back to `/saved`; `?shelf=` while logged out → `/signin`, then back to the same URL; empty shelf → notice "This shelf is empty" and back to `/saved`; no lines checked → Pay disabled.
+- **On success:** order created with `source: { type: 'shelf', shelfId | shareId, shelfName }`, redirect to `/track/:orderNo` with notice "Order #BM-2042 placed from shelf Trip kit". A checkbox under Pay, **Remove ordered items from this shelf** (owner only, default off), clears those items after the order is placed. The shelf is otherwise kept.
 
 ### 5.6 Counter (checkout) `/counter` (screen 09)
 - Sticky note: *"All steps on one screen, no page jumps. Each step collapses when done."* Left: three accordion steps with numbered black circles:
@@ -123,6 +134,7 @@
 - Right: **RECEIPT** panel (shadowed): lines `SKU name ₹`, then Subtotal, Delivery, Coupon, **TOTAL**, orange **Pay ₹N** button.
 - Payment is **simulated** (no real gateway): choosing UPI/Card/Netbanking shows a mock "payment successful" step; COD places the order directly. Never collect or store real card numbers. **[CONFIRM]**
 - On success → order created (status `placed`), receipt cleared, redirect to `/track/:orderNo` with notice "Order #BM-2042 placed".
+- With `?shelf=` or `?share=` the counter runs in **shelf mode** (§5.5a): lines come from the shelf, and the receipt is not cleared.
 
 ### 5.7 Orders `/orders` (screen 08)
 - Sticky note: *"Orders as a timeline of receipts. 5-segment bar = ordered → packed → shipped → out → delivered."*
@@ -150,6 +162,7 @@ Styled in the same system (dashed cards, mono labels). Form + table to create/ed
 - **Product:** `productId` (= **SKU** like `A-01-117`, unique), `productName`, `productPrice`, `quantity` (stock), `category` (= zone name e.g. "Audio"), `zoneCode` (A/W/D/L/S/G/C/P/B), `bay` (number), `bayName`, `brand`, `colours[]`, `use[]` (gym/commute/studio…), `connectivity` (wired|wireless|n/a), `specs{label:value}` (map), `images[]`, `seller`, `warrantyMonths`, `arrivesInDays`, `isNew`, `description`, timestamps.
 - **Zone** (seeded, read-only): `code`, `name`, `order`, `layout{col,row}`. Stock per zone is aggregated from products.
 - **Shelf:** `user`, `name`, `shareId`, `items[{ product(SKU), savedPrice, savedAt }]`.
+- **Order.source** (optional): `{ type: 'receipt' | 'shelf' | 'buy_again', shelfId?, shareId?, shelfName? }`; default `receipt`. Informational only; prices still come from the DB.
 - **Order:** `orderNo` (`BM-2041`), `user?` (null for guest), `guest{name,phone,email}`, `items[{productId,name,price,qty,image}]`, `address`, `slot{label,date}`, `payment{method,status}`, `gift{wrap,note}`, `gst{invoice,gstin}`, `subtotal`, `delivery`, `coupon`, `total`, `status` (`placed|packed|shipped|out_for_delivery|delivered|returned|cancelled`), `events[{status,at}]`, `courier{name,phone}`, `etaAt`, `deliveryOtp`, timestamps.
 - **Review**, **Question**: `product`, `user`, `rating/text`, `answer?`.
 - **Kit** (seeded): `title`, `query` or `productIds[]`.
@@ -169,7 +182,8 @@ Styled in the same system (dashed cards, mono labels). Form + table to create/ed
 | POST/PUT/DELETE | `/products` (`?productId=`) | admin | unchanged from CONTEXT.md |
 | GET/POST | `/products/:productId/reviews`, `/questions` | read public / write login | |
 | GET/POST/PATCH/DELETE | `/shelves`, `/shelves/:id`, `/shelves/:id/items` | login | `GET /shelves/shared/:shareId` is public |
-| POST | `/orders` | **optional JWT** | guest checkout; server recomputes prices and totals from DB, validates stock, decrements atomically |
+| GET | `/shelves/:id/checkout` · `/shelves/shared/:shareId/checkout` | login (own) · public | shelf lines for the counter: `[{productId, name, image, price (current), stock, inStock}]`, plus `shelfName`; 404 unknown, 403 not owner |
+| POST | `/orders` | **optional JWT** | guest checkout; server recomputes prices and totals from DB, validates stock, decrements atomically. Optional `source {type:'shelf', shelfId \| shareId}`: server checks the shelf exists (and is the caller's for `shelfId`, else 403) and that every item belongs to it (else 400); optional `removeFromShelf: true` (owner only) pulls the ordered items after success |
 | GET | `/orders?status=live\|delivered\|returns\|cancelled` | login | |
 | GET | `/orders/:orderNo` / `/orders/:orderNo/track` | login (guest: `?phone=`) | journey events, ETA, courier, delivery OTP (owner only) |
 | PATCH | `/orders/:orderNo` | owner | change slot, leave-at-door note, cancel (only before `shipped`) |
@@ -232,5 +246,9 @@ frontend/src/
 - [ ] Order status advanced by admin updates Orders, the 5-segment bar, Track page, "2 live" badge and the LIVE ORDER card
 - [ ] OTP sign-in works with the mock code; wrong/expired code → 401/400 with clear message
 - [ ] Shelf create/share/price-drop/"move to receipt" work; shared link is viewable logged out
+- [ ] **Check out this shelf** opens `/counter?shelf=:id` with the shelf's in-stock items, current prices and qty steppers; "Set all qty" works; paying places one order for all checked lines and lands on Track
+- [ ] Shelf checkout leaves **Receipt · N** and its lines unchanged; plain `/counter` still uses the receipt
+- [ ] Shared shelf `/s/:shareId` → **Check out this shelf** works as a guest; `?shelf=` of another user's shelf → 403, unknown → 404, logged out → sign in then back
+- [ ] `POST /orders` with a shelf `source` rejects items not on that shelf (400) and other users' shelves (403); `removeFromShelf` clears only the ordered items
 - [ ] Profile: addresses CRUD, prefs toggles, plus PUT/PATCH/DELETE `?emailId=` (403 on someone else's)
 - [ ] Layout checked at 1440, 1024, 768 and 390 px in both themes
