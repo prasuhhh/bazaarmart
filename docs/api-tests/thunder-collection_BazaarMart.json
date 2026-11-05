@@ -3151,12 +3151,12 @@
       ]
     },
     {
-      "_id": "folder-shelves-160-remove-an-item",
+      "_id": "folder-shelves-160-checkout-lines",
       "colId": "bazaarmart-api",
       "containerId": "folder-shelves",
-      "name": "Remove an item → 204",
-      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
-      "method": "DELETE",
+      "name": "Checkout lines → 200",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/checkout",
+      "method": "GET",
       "sortNum": 160,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
@@ -3171,18 +3171,63 @@
           "type": "res-code",
           "custom": "",
           "action": "equal",
-          "value": "204"
+          "value": "200"
         }
       ]
     },
     {
-      "_id": "folder-shelves-170-remove-it-again",
+      "_id": "folder-shelves-170-checkout-lines-no-token",
       "colId": "bazaarmart-api",
       "containerId": "folder-shelves",
-      "name": "Remove it again → 404",
-      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
-      "method": "DELETE",
+      "name": "Checkout lines, no token → 401",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/checkout",
+      "method": "GET",
       "sortNum": 170,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-180-checkout-lines-someone-else-s",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Checkout lines, someone else's → 403",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/checkout",
+      "method": "GET",
+      "sortNum": 180,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-190-checkout-lines-unknown-shelf",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Checkout lines, unknown shelf → 404",
+      "url": "{{baseUrl}}/shelves/000000000000000000000000/checkout",
+      "method": "GET",
+      "sortNum": 190,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
       "headers": [
@@ -3201,13 +3246,228 @@
       ]
     },
     {
-      "_id": "folder-shelves-180-delete",
+      "_id": "folder-shelves-200-shared-checkout-lines-public",
       "colId": "bazaarmart-api",
       "containerId": "folder-shelves",
-      "name": "Delete → 204",
-      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "name": "Shared checkout lines, public → 200",
+      "url": "{{baseUrl}}/shelves/shared/{{shareId}}/checkout",
+      "method": "GET",
+      "sortNum": 200,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-210-shared-checkout-lines-unknown-link",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Shared checkout lines, unknown link → 404",
+      "url": "{{baseUrl}}/shelves/shared/nope/checkout",
+      "method": "GET",
+      "sortNum": 210,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-220-order-from-the-shelf",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Order from the shelf → 201",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 220,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-230-order-from-the-shelf-item-not-on-it",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Order from the shelf: item not on it → 400",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 230,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"A-01-117\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-240-order-from-someone-else-s-shelf",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Order from someone else's shelf → 403",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 240,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-250-order-by-shelf-id-as-a-guest",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Order by shelf id as a guest → 401",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 250,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"guest\": {\n    \"name\": \"Guest\",\n    \"phone\": \"{{guestPhone}}\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"{{shelfId}}\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-260-order-from-an-unknown-shelf",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Order from an unknown shelf → 404",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 260,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shelfId\": \"000000000000000000000000\"\n  }\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-270-remove-from-a-shelf-you-do-not-own",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Remove from a shelf you do not own → 403",
+      "url": "{{baseUrl}}/orders",
+      "method": "POST",
+      "sortNum": 270,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{otherToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"P900\",\n      \"qty\": 1\n    }\n  ],\n  \"address\": {\n    \"label\": \"Home\",\n    \"name\": \"Test Shopper\",\n    \"phone\": \"9876543210\",\n    \"line1\": \"221B Lake Road\",\n    \"city\": \"Chennai\",\n    \"state\": \"Tamil Nadu\",\n    \"pincode\": \"600001\"\n  },\n  \"slot\": {\n    \"label\": \"Tomorrow\"\n  },\n  \"payment\": {\n    \"method\": \"upi\"\n  },\n  \"source\": {\n    \"type\": \"shelf\",\n    \"shareId\": \"{{shareId}}\"\n  },\n  \"removeFromShelf\": true\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-280-remove-an-item",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Remove an item → 204",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
       "method": "DELETE",
-      "sortNum": 180,
+      "sortNum": 280,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
       "headers": [
@@ -3226,13 +3486,63 @@
       ]
     },
     {
-      "_id": "folder-shelves-190-delete-again",
+      "_id": "folder-shelves-290-remove-it-again",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Remove it again → 404",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}/items/P900",
+      "method": "DELETE",
+      "sortNum": 290,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-300-delete",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-shelves",
+      "name": "Delete → 204",
+      "url": "{{baseUrl}}/shelves/{{shelfId}}",
+      "method": "DELETE",
+      "sortNum": 300,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "204"
+        }
+      ]
+    },
+    {
+      "_id": "folder-shelves-310-delete-again",
       "colId": "bazaarmart-api",
       "containerId": "folder-shelves",
       "name": "Delete again → 404",
       "url": "{{baseUrl}}/shelves/{{shelfId}}",
       "method": "DELETE",
-      "sortNum": 190,
+      "sortNum": 310,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
       "headers": [

@@ -9,6 +9,8 @@ export const ORDER_STATUSES = [
   'placed', 'packed', 'shipped', 'out_for_delivery', 'delivered', 'returned', 'cancelled'
 ];
 
+export const ORDER_SOURCES = ['receipt', 'shelf', 'buy_again'];
+
 // Name, price and image are copied onto each item so past orders stay correct
 // after a product is edited or deleted.
 const orderItemSchema = new mongoose.Schema({
@@ -45,6 +47,13 @@ const orderSchema = new mongoose.Schema({
   gst: {
     invoice: { type: Boolean, default: false },
     gstin: { type: String, trim: true, uppercase: true }
+  },
+  // Where the order came from. Informational only: prices still come from the database.
+  source: {
+    type: { type: String, enum: ORDER_SOURCES, default: 'receipt' },
+    shelfId: { type: mongoose.Schema.Types.ObjectId, ref: 'Shelf' },
+    shareId: String,
+    shelfName: String
   },
   subtotal: { type: Number, required: true, min: 0 },
   delivery: { type: Number, default: 0, min: 0 },

@@ -276,6 +276,58 @@ describe('DESIGN.md section 11', () => {
     assert.doesNotMatch(shared.text, /asha|"user"/i);
   });
 
+  it('D12 shelf checkout: current prices and stock, and one order for all checked lines', async () => {
+    const shelf = (await api('post', '/shelves', token).send({ name: 'Trip kit' })).body.data;
+    await api('post', `/shelves/${shelf._id}/items`, token).send({ productId: 'A-01-117' });
+    await api('put', '/products?productId=A-01-117', adminToken).send({ productPrice: 3079 });
+
+    const { body } = await api('get', `/shelves/${shelf._id}/checkout`, token);
+    assert.equal(body.data.shelfName, 'Trip kit');
+    assert.equal(body.data.lines[0].price, 3079);
+    assert.equal(body.data.lines[0].inStock, true);
+
+    const placed = await api('post', '/orders', token).send({
+      ...details, items: [line('A-01-117', 3)], source: { type: 'shelf', shelfId: shelf._id }
+    });
+    assert.equal(placed.status, 201);
+    assert.equal(placed.body.data.total, 3079 * 3);
+    assert.match(placed.body.message, /placed from shelf Trip kit/);
+    assert.equal((await api('get', '/orders', token)).body.count, 1);
+  });
+
+  it('D14 shared shelf checkout works as a guest; other shelves give 403 and unknown ones 404', async () => {
+    const shelf = (await api('post', '/shelves', token).send({ name: 'Trip kit' })).body.data;
+    await api('post', `/shelves/${shelf._id}/items`, token).send({ productId: 'A-01-117' });
+
+    assert.equal((await api('get', `/shelves/shared/${shelf.shareId}/checkout`)).status, 200);
+    const placed = await api('post', '/orders').send({
+      ...details, guest: { name: 'Friend', phone }, items: [line()], source: { type: 'shelf', shareId: shelf.shareId }
+    });
+    assert.equal(placed.status, 201);
+
+    assert.equal((await api('get', `/shelves/${shelf._id}/checkout`, otherToken)).status, 403);
+    assert.equal((await api('get', '/shelves/64b000000000000000000000/checkout', token)).status, 404);
+  });
+
+  it('D15 a shelf order rejects stray items (400) and other shelves (403); removal takes only the ordered items', async () => {
+    const shelf = (await api('post', '/shelves', token).send({ name: 'Trip kit' })).body.data;
+    await api('post', `/shelves/${shelf._id}/items`, token).send({ productId: 'A-01-117' });
+    await api('post', `/shelves/${shelf._id}/items`, token).send({ productId: 'A-01-118' });
+    const source = { type: 'shelf', shelfId: shelf._id };
+
+    assert.equal((await api('post', '/orders', otherToken).send({ ...details, items: [line()], source })).status, 403);
+
+    await api('delete', `/shelves/${shelf._id}/items/A-01-118`, token);
+    const stray = await api('post', '/orders', token).send({ ...details, items: [line('A-01-118')], source });
+    assert.equal(stray.status, 400);
+
+    await api('post', `/shelves/${shelf._id}/items`, token).send({ productId: 'A-01-118' });
+    const placed = await api('post', '/orders', token).send({ ...details, items: [line()], source, removeFromShelf: true });
+    assert.equal(placed.status, 201);
+    const after = (await api('get', `/shelves/${shelf._id}`, token)).body.data;
+    assert.deepEqual(after.items.map(item => item.productId), ['A-01-118']);
+  });
+
   it('D10 profile: addresses CRUD, preference toggles, and 403 on another account', async () => {
     const address = { label: 'Home', ...details.address };
     const made = await api('post', '/users/me/addresses', token).send(address);

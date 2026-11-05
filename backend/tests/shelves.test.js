@@ -4,6 +4,7 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
 import request from 'supertest';
 import { createApp } from '../app.js';
+import Order from '../models/Order.js';
 import Product from '../models/Product.js';
 import Shelf from '../models/Shelf.js';
 import User from '../models/User.js';
@@ -28,7 +29,7 @@ async function signIn(emailId) {
 before(async () => {
   mongo = await MongoMemoryServer.create();
   await mongoose.connect(mongo.getUri(), { dbName: 'bazaarmart_shelves_test' });
-  await Promise.all([User.init(), Product.init(), Shelf.init()]);
+  await Promise.all([User.init(), Product.init(), Shelf.init(), Order.init()]);
 });
 
 after(async () => {
@@ -37,7 +38,7 @@ after(async () => {
 });
 
 beforeEach(async () => {
-  await Promise.all([User.deleteMany({}), Product.deleteMany({}), Shelf.deleteMany({})]);
+  await Promise.all([User.deleteMany({}), Product.deleteMany({}), Shelf.deleteMany({}), Order.deleteMany({})]);
   await Product.create({
     productId: 'A-01-117', productName: 'Halo Earbuds', productPrice: 1000, category: 'Audio',
     quantity: 5, description: 'Small.', images: ['a.jpg']
@@ -162,5 +163,163 @@ describe('shared shelves', () => {
 
   it('returns 404 for an unknown link', async () => {
     assert.equal((await request(app).get('/api/shelves/shared/nope')).status, 404);
+  });
+});
+
+describe('shelf checkout lines', () => {
+  async function fullShelf() {
+    const { _id: id, shareId } = (await newShelf('Trip kit')).body.data;
+    await addItem(id, 'A-01-117');
+    await addItem(id, 'D-01-101');
+    return { id, shareId };
+  }
+
+  it('gives the owner current prices, stock and an inStock flag', async () => {
+    const { id } = await fullShelf();
+    await Product.updateOne({ productId: 'A-01-117' }, { productPrice: 880 });
+    await Product.updateOne({ productId: 'D-01-101' }, { quantity: 0 });
+
+    const res = await auth(request(app).get(`/api/shelves/${id}/checkout`));
+    assert.equal(res.status, 200);
+    assert.equal(res.body.count, 2);
+    assert.equal(res.body.data.shelfName, 'Trip kit');
+    assert.deepEqual(res.body.data.lines[0], {
+      productId: 'A-01-117', name: 'Halo Earbuds', image: 'a.jpg', price: 880, stock: 5, inStock: true
+    });
+    assert.equal(res.body.data.lines[1].inStock, false);
+  });
+
+  it('leaves out a deleted product', async () => {
+    const { id } = await fullShelf();
+    await Product.deleteOne({ productId: 'D-01-101' });
+    const { body } = await auth(request(app).get(`/api/shelves/${id}/checkout`));
+    assert.deepEqual(body.data.lines.map(line => line.productId), ['A-01-117']);
+  });
+
+  it('is 401 logged out, 403 for another user, 404 unknown, 400 malformed', async () => {
+    const { id } = await fullShelf();
+    assert.equal((await request(app).get(`/api/shelves/${id}/checkout`)).status, 401);
+    assert.equal((await auth(request(app).get(`/api/shelves/${id}/checkout`), otherToken)).status, 403);
+    assert.equal((await auth(request(app).get('/api/shelves/64b000000000000000000000/checkout'))).status, 404);
+    assert.equal((await auth(request(app).get('/api/shelves/nope/checkout'))).status, 400);
+  });
+
+  it('is public through the share link, with no owner details', async () => {
+    const { shareId } = await fullShelf();
+    const res = await request(app).get(`/api/shelves/shared/${shareId}/checkout`);
+    assert.equal(res.status, 200);
+    assert.equal(res.body.data.lines.length, 2);
+    assert.doesNotMatch(res.text, /asha|"user"/i);
+    assert.equal((await request(app).get('/api/shelves/shared/nope/checkout')).status, 404);
+  });
+});
+
+describe('orders from a shelf', () => {
+  const delivery = {
+    address: { name: 'Asha', phone: '9876543210', line1: '221B Lake Road', city: 'Chennai', state: 'Tamil Nadu', pincode: '600001' },
+    slot: { label: 'Tomorrow' },
+    payment: { method: 'cod' }
+  };
+  const guest = { name: 'Friend', phone: '9876543210' };
+  const lines = (...skus) => skus.map(productId => ({ productId, qty: 2 }));
+  const order = (body, value = token) => auth(request(app).post('/api/orders'), value).send({ ...delivery, ...body });
+  const stock = async productId => (await Product.findOne({ productId })).quantity;
+  const skusOn = async id => (await Shelf.findById(id)).items.map(item => item.product);
+  let id;
+  let shareId;
+
+  beforeEach(async () => {
+    ({ _id: id, shareId } = (await newShelf('Trip kit')).body.data);
+    await addItem(id, 'A-01-117');
+    await addItem(id, 'D-01-101');
+  });
+
+  it('places one order for the shelf at current prices and records where it came from', async () => {
+    await Product.updateOne({ productId: 'A-01-117' }, { productPrice: 800 });
+    const res = await order({ items: lines('A-01-117', 'D-01-101'), source: { type: 'shelf', shelfId: id } });
+
+    assert.equal(res.status, 201);
+    assert.equal(res.body.message, `Order #${res.body.data.orderNo} placed from shelf Trip kit.`);
+    assert.equal(res.body.data.subtotal, 800 * 2 + 500 * 2);
+    assert.equal(res.body.data.source.type, 'shelf');
+    assert.equal(res.body.data.source.shelfId, id);
+    assert.equal(res.body.data.source.shelfName, 'Trip kit');
+    assert.equal(await stock('A-01-117'), 3);
+    assert.deepEqual(await skusOn(id), ['A-01-117', 'D-01-101']);
+  });
+
+  it('defaults to a receipt order', async () => {
+    const res = await order({ items: lines('A-01-117') });
+    assert.equal(res.body.data.source.type, 'receipt');
+    assert.equal(res.body.message, `Order #${res.body.data.orderNo} placed.`);
+  });
+
+  it('removes only the ordered items when asked', async () => {
+    const res = await order({ items: lines('A-01-117'), source: { type: 'shelf', shelfId: id }, removeFromShelf: true });
+    assert.equal(res.status, 201);
+    assert.deepEqual(await skusOn(id), ['D-01-101']);
+  });
+
+  it('lets a guest order through a share link, keeping the owner out of it', async () => {
+    const res = await request(app).post('/api/orders').send({
+      ...delivery, guest, items: lines('D-01-101'), source: { type: 'shelf', shareId }
+    });
+    assert.equal(res.status, 201);
+    assert.equal(res.body.data.source.shareId, shareId);
+    assert.equal(res.body.data.source.shelfId, undefined);
+    assert.equal(res.body.data.user, null);
+  });
+
+  it('lets another signed-in user order through a share link', async () => {
+    const res = await order({ items: lines('D-01-101'), source: { type: 'shelf', shareId } }, otherToken);
+    assert.equal(res.status, 201);
+  });
+
+  it('rejects an item that is not on the shelf, before touching stock', async () => {
+    await Product.create({ productId: 'X-01-100', productName: 'Extra', productPrice: 10, category: 'Audio', quantity: 5, description: 'Stray.' });
+    const res = await order({ items: lines('A-01-117', 'X-01-100'), source: { type: 'shelf', shelfId: id } });
+    assert.equal(res.status, 400);
+    assert.match(res.body.message, /X-01-100/);
+    assert.equal(await stock('A-01-117'), 5);
+    assert.equal(await Order.countDocuments(), 0);
+  });
+
+  it("rejects another user's shelf with 403, and a logged-out shelfId with 401", async () => {
+    const source = { type: 'shelf', shelfId: id };
+    assert.equal((await order({ items: lines('A-01-117'), source }, otherToken)).status, 403);
+    const guestRes = await request(app).post('/api/orders').send({ ...delivery, guest, items: lines('A-01-117'), source });
+    assert.equal(guestRes.status, 401);
+    assert.equal(await Order.countDocuments(), 0);
+  });
+
+  it('returns 404 for a shelf or link that is gone, and 400 for a bad source', async () => {
+    const items = lines('A-01-117');
+    assert.equal((await order({ items, source: { type: 'shelf', shelfId: '64b000000000000000000000' } })).status, 404);
+    assert.equal((await order({ items, source: { type: 'shelf', shareId: 'nope' } })).status, 404);
+    assert.equal((await order({ items, source: { type: 'shelf', shelfId: 'nope' } })).status, 400);
+    assert.equal((await order({ items, source: { type: 'shelf' } })).status, 400);
+    assert.equal((await order({ items, source: { type: 'shelf', shelfId: id, shareId } })).status, 400);
+    assert.equal((await order({ items, source: { type: 'shelf', shareId: { $ne: null } } })).status, 400);
+    assert.equal((await order({ items, source: { type: 'wishlist' } })).status, 400);
+    assert.equal((await order({ items, removeFromShelf: true })).status, 400);
+  });
+
+  it('only lets the owner remove items, even through a share link', async () => {
+    const items = lines('A-01-117');
+    const source = { type: 'shelf', shareId };
+    assert.equal((await order({ items, source, removeFromShelf: true }, otherToken)).status, 403);
+    const guestRes = await request(app).post('/api/orders').send({ ...delivery, guest, items, source, removeFromShelf: true });
+    assert.equal(guestRes.status, 403);
+    assert.equal(await Order.countDocuments(), 0);
+    assert.equal((await order({ items, source, removeFromShelf: true })).status, 201);
+    assert.deepEqual(await skusOn(id), ['D-01-101']);
+  });
+
+  it('keeps the shelf when the order fails on stock', async () => {
+    await Product.updateOne({ productId: 'D-01-101' }, { quantity: 1 });
+    const res = await order({ items: lines('A-01-117', 'D-01-101'), source: { type: 'shelf', shelfId: id }, removeFromShelf: true });
+    assert.equal(res.status, 409);
+    assert.equal(await stock('A-01-117'), 5);
+    assert.deepEqual(await skusOn(id), ['A-01-117', 'D-01-101']);
   });
 });

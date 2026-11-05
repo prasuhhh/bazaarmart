@@ -42,6 +42,21 @@ async function ownShelf(req) {
 
 const liveShelf = async shelf => (await withLivePrices([shelf]))[0];
 
+// A deleted product can't be bought, so it isn't a line. Out-of-stock lines stay,
+// because the counter shows them greyed out.
+async function sendCheckout(res, shelf) {
+  const { name, items } = await liveShelf(shelf);
+  const lines = items.filter(item => item.available).map(item => ({
+    productId: item.productId,
+    name: item.productName,
+    image: item.image,
+    price: item.currentPrice,
+    stock: item.stock,
+    inStock: item.stock > 0
+  }));
+  ok(res, { data: { shelfName: name, lines }, count: lines.length });
+}
+
 export async function listShelves(req, res) {
   const shelves = await Shelf.find({ user: req.user.userId }).sort({ createdAt: 1 });
   ok(res, { data: await withLivePrices(shelves), count: shelves.length });
@@ -54,6 +69,10 @@ export async function createShelf(req, res) {
 
 export async function getShelf(req, res) {
   ok(res, { data: await liveShelf(await ownShelf(req)) });
+}
+
+export async function getShelfCheckout(req, res) {
+  await sendCheckout(res, await ownShelf(req));
 }
 
 export async function renameShelf(req, res) {
@@ -95,10 +114,18 @@ export async function removeShelfItem(req, res) {
   noContent(res);
 }
 
-// Public: the owner's details are left out, as anyone with the link can read this.
-export async function getSharedShelf(req, res) {
+async function sharedShelf(req) {
   const shelf = await Shelf.findOne({ shareId: req.params.shareId });
   if (!shelf) throw new ApiError(404, 'Shelf not found.');
-  const { name, items } = await liveShelf(shelf);
+  return shelf;
+}
+
+// Public: the owner's details are left out, as anyone with the link can read this.
+export async function getSharedShelf(req, res) {
+  const { name, items } = await liveShelf(await sharedShelf(req));
   ok(res, { data: { name, items }, count: items.length });
+}
+
+export async function getSharedShelfCheckout(req, res) {
+  await sendCheckout(res, await sharedShelf(req));
 }

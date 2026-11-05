@@ -1,7 +1,8 @@
 import crypto from 'node:crypto';
 import { isValidEmail, normalizePhone } from '../middleware/validate.js';
-import Order from '../models/Order.js';
+import Order, { ORDER_SOURCES } from '../models/Order.js';
 import Product from '../models/Product.js';
+import Shelf from '../models/Shelf.js';
 import { ADDRESS_FIELDS, pick, REQUIRED_DELIVERY_FIELDS, requireAddressFields } from '../utils/address.js';
 import { priceOrder, requireCoupon } from '../utils/pricing.js';
 import { ApiError, created, ok } from '../utils/response.js';
@@ -99,6 +100,45 @@ function parseGst(gst) {
   return { invoice: true, gstin };
 }
 
+function parseSource(source) {
+  if (source === undefined) return { type: 'receipt' };
+  if (!ORDER_SOURCES.includes(source?.type)) throw new ApiError(400, `source type must be one of: ${ORDER_SOURCES.join(', ')}.`);
+  if (source.type !== 'shelf') return { type: source.type };
+
+  const shelfId = typeof source.shelfId === 'string' ? source.shelfId : '';
+  const shareId = typeof source.shareId === 'string' ? source.shareId : '';
+  if (Boolean(shelfId) === Boolean(shareId)) throw new ApiError(400, 'A shelf order needs either a shelfId or a shareId.');
+  return shelfId ? { type: 'shelf', shelfId } : { type: 'shelf', shareId };
+}
+
+// Checks a shelf order before any stock moves. Returns the shelf, or null for other orders.
+// A share link is enough to buy from a shelf, but only its owner can change it.
+async function loadSourceShelf(source, requested, user, removeFromShelf) {
+  if (source.type !== 'shelf') {
+    if (removeFromShelf) throw new ApiError(400, 'removeFromShelf only applies to a shelf order.');
+    return null;
+  }
+  if (source.shelfId && !user) throw new ApiError(401, 'Authentication required.');
+
+  const shelf = await (source.shelfId ? Shelf.findById(source.shelfId) : Shelf.findOne({ shareId: source.shareId }));
+  if (!shelf) throw new ApiError(404, 'Shelf not found.');
+  const isOwner = Boolean(user) && shelf.user.equals(user.userId);
+  if (source.shelfId && !isOwner) throw new ApiError(403, 'You can only order from your own shelves.');
+  if (removeFromShelf && !isOwner) throw new ApiError(403, 'Only the owner can change this shelf.');
+
+  const onShelf = new Set(shelf.items.map(item => item.product));
+  const stray = requested.find(line => !onShelf.has(line.productId));
+  if (stray) throw new ApiError(400, `${stray.productId} is not on this shelf.`);
+  return shelf;
+}
+
+// The order is already placed by now, so a failure here must not undo it.
+async function removeFromShelfAfterOrder(shelf, items) {
+  const skus = items.map(item => item.productId);
+  await Shelf.updateOne({ _id: shelf._id }, { $pull: { items: { product: { $in: skus } } } })
+    .catch(error => console.error(`Could not update shelf ${shelf._id}:`, error.message));
+}
+
 function lineProblem(product, { productId, colour, qty }) {
   if (!product) return new ApiError(404, `Product ${productId} no longer exists.`);
   if (colour && !product.colours.includes(colour)) {
@@ -134,7 +174,7 @@ export async function quoteOrder(req, res) {
 }
 
 export async function placeOrder(req, res) {
-  const { items, address, slot, payment, gift, gst, guest, coupon } = req.body;
+  const { items, address, slot, payment, gift, gst, guest, coupon, source } = req.body;
 
   // Everything is checked first, so a bad request never touches stock.
   const requested = parseItems(items);
@@ -147,9 +187,14 @@ export async function placeOrder(req, res) {
   };
   const owner = req.user ? { user: req.user.userId } : { guest: parseGuest(guest) };
   const couponCode = requireCoupon(coupon);
+  const parsedSource = parseSource(source);
+  const removeFromShelf = req.body.removeFromShelf === true;
+  const shelf = await loadSourceShelf(parsedSource, requested, req.user, removeFromShelf);
+  const orderSource = shelf ? { ...parsedSource, shelfName: shelf.name } : parsedSource;
 
   const reserved = [];
   let arrivalDays = 0;
+  let order;
 
   try {
     // Each decrement only matches when enough stock remains, so two buyers can't
@@ -169,20 +214,24 @@ export async function placeOrder(req, res) {
       arrivalDays = Math.max(arrivalDays, product.arrivesInDays ?? DEFAULT_ARRIVAL_DAYS);
     }
 
-    const order = await Order.create({
+    order = await Order.create({
       ...owner,
       ...details,
       ...priceOrder(reserved, couponCode),
       couponCode,
+      source: orderSource,
       items: reserved,
       courier: COURIERS[crypto.randomInt(COURIERS.length)],
       etaAt: details.slot.date ?? new Date(Date.now() + arrivalDays * DAY_MS)
     });
-    created(res, { message: `Order #${order.orderNo} placed.`, data: order });
   } catch (error) {
     await restoreStock(reserved);
     throw error;
   }
+
+  if (shelf && removeFromShelf) await removeFromShelfAfterOrder(shelf, reserved);
+  const from = shelf ? ` from shelf ${shelf.name}` : '';
+  created(res, { message: `Order #${order.orderNo} placed${from}.`, data: order });
 }
 
 export async function listMyOrders(req, res) {
