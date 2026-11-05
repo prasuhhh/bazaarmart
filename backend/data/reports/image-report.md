@@ -1,6 +1,6 @@
 # Image report
 
-Final state, checked by eye. 195 of 300 confirmed as the right model, 105 missing and left on the placeholder.
+Final state, checked by eye. 192 of 300 confirmed as the right model, 108 missing and left on the placeholder.
 
 Rules applied: real photos of the exact model only, a different colour of the same model allowed, shortest side at least 400 px, upscaled no more than 2x.
 
@@ -8,7 +8,7 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 
 | Source | Products |
 | --- | --- |
-| brand-site | 160 |
+| brand-site | 157 |
 | wikimedia | 26 |
 | openverse | 4 |
 | brand-press | 4 |
@@ -21,12 +21,12 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 | A | 23 | 11 |
 | W | 22 | 11 |
 | D | 25 | 9 |
-| L | 20 | 14 |
+| L | 18 | 16 |
 | S | 20 | 12 |
 | G | 25 | 8 |
 | C | 21 | 11 |
 | P | 17 | 16 |
-| B | 22 | 13 |
+| B | 21 | 14 |
 
 ## Replaced products
 
@@ -52,6 +52,19 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 | S-03-305 | Nike Sportswear Club Fleece Joggers | Levi's Men's 512 Slim Tapered Fit Jeans |
 | S-05-501 | Ray-Ban Aviator Classic RB3025 | New Era Chicago Bulls Essential Outline 9FORTY Cap |
 | S-05-502 | Ray-Ban Original Wayfarer Classic RB2140 | New Era New York Yankees Essential Camo 9FORTY Cap |
+
+## Size check
+
+Every confirmed photo of a product with a size, volume or pack count was looked at again for what its label shows. These photos stay, because they show the right product in another size.
+
+| SKU | Listed | Photo shows |
+| --- | --- | --- |
+| B-01-101 | CeraVe Moisturizing Cream, 340 g spec row | 19 oz (539 g) jar. Size removed from the name and description by decision |
+| B-01-102 | Cetaphil Gentle Skin Cleanser, 250 ml | 236 ml bottle |
+| B-04-402 | CK One, 100 ml | 200 ml box |
+| W-04-405 | Apple AirTag, 4 pack | One AirTag |
+
+Moved to the placeholder because the photo was a different product: B-04-406 (photo is Versace Eros Eau de Parfum 50 ml), L-03-306 (photo is a Clean Cotton car air freshener), L-03-307 (photo is the Mahogany Teakwood Intense scent).
 
 ## Missing, by reason
 
@@ -173,6 +186,12 @@ Rules applied: real photos of the exact model only, a different colour of the sa
 - L-05-506 Solimo Microfibre Reversible Comforter (Double)
 - W-03-306 Abanen 22 mm QuickFit Silicone Watch Band
 - W-05-505 ZORBES 2-in-1 Charging Cable for Garmin Watch
+
+### Photo showed a different product, found in the size check (3)
+
+- B-04-406 Versace Eros Eau de Toilette (100 ml)
+- L-03-306 Yankee Candle Clean Cotton Large Jar Candle
+- L-03-307 Bath & Body Works Mahogany Teakwood 3-Wick Candle
 
 ### Replacement dropped by decision: the Fjallraven Kanken stays on the placeholder (1)
 
