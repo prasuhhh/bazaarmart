@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import {
-  addAddress, addDevice, addPaymentMethod, deleteAddress, deleteDevice, deletePaymentMethod, getPrefs,
-  listAddresses, listDevices, listPaymentMethods, updateAddress, updateDevice, updatePrefs
+  addAddress, addDevice, addPaymentMethod, deleteAddress, deleteDevice, deletePaymentMethod, getPrefs, getReceipt,
+  listAddresses, listDevices, listPaymentMethods, saveReceipt, updateAddress, updateDevice, updatePrefs
 } from '../controllers/meController.js';
 
 const router = Router();
@@ -13,5 +13,6 @@ router.route('/devices/:id').put(updateDevice).delete(deleteDevice);
 router.route('/payment-methods').get(listPaymentMethods).post(addPaymentMethod);
 router.delete('/payment-methods/:id', deletePaymentMethod);
 router.route('/prefs').get(getPrefs).patch(updatePrefs);
+router.route('/receipt').get(getReceipt).put(saveReceipt);
 
 export default router;

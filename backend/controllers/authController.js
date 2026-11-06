@@ -5,6 +5,7 @@ import Otp, { OTP_LIFETIME_MS } from '../models/Otp.js';
 import User from '../models/User.js';
 import { ApiError, ok } from '../utils/response.js';
 import { createSession } from '../utils/session.js';
+import { isSmsConfigured, isSmsMock, sendSms } from '../utils/sms.js';
 
 const MAX_ATTEMPTS = 5;
 const OTP_HASH_COST = 10;
@@ -19,19 +20,21 @@ function requirePhone(value) {
 
 export async function requestOtp(req, res) {
   const phone = requirePhone(req.body.phone);
-  const isMock = process.env.OTP_MOCK === 'true';
-  if (!isMock) throw new ApiError(503, 'SMS sign-in is not configured.');
+  if (!isSmsConfigured()) throw new ApiError(503, 'SMS sign-in is not configured.');
 
   const code = generateCode();
+  const codeHash = await bcrypt.hash(code, OTP_HASH_COST);
+  // Sent before saving, so a failed send leaves any earlier code usable.
+  const minutes = OTP_LIFETIME_MS / 60_000;
+  await sendSms(phone, `Your BazaarMart sign-in code is ${code}. It expires in ${minutes} minutes. Do not share it.`);
   await Otp.findOneAndUpdate(
     { phone },
-    { codeHash: await bcrypt.hash(code, OTP_HASH_COST), attempts: 0, expiresAt: new Date(Date.now() + OTP_LIFETIME_MS) },
+    { codeHash, attempts: 0, expiresAt: new Date(Date.now() + OTP_LIFETIME_MS) },
     { upsert: true }
   );
-  console.log(`[mock SMS] OTP for ${phone}: ${code}`);
 
-  const data = process.env.NODE_ENV === 'production' ? undefined : { devCode: code };
-  ok(res, { message: 'OTP sent.', data });
+  const showCode = isSmsMock() && process.env.NODE_ENV !== 'production';
+  ok(res, { message: 'OTP sent.', data: showCode ? { devCode: code } : undefined });
 }
 
 export async function verifyOtp(req, res) {

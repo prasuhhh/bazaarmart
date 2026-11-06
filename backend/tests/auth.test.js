@@ -124,13 +124,83 @@ describe('phone OTP', () => {
     }
   });
 
-  it('returns 503 when mock mode is off, as no real SMS provider exists', async () => {
+  it('returns 503 when neither mock mode nor an SMS key is set', async () => {
     delete process.env.OTP_MOCK;
     try {
       assert.equal((await requestCode()).status, 503);
     } finally {
       process.env.OTP_MOCK = 'true';
     }
+  });
+
+  describe('with a real SMS provider', () => {
+    const realFetch = globalThis.fetch;
+    const realError = console.error;
+    const providerReplies = (status, body) => {
+      const calls = [];
+      // supertest talks to the app through node:http, so only the provider call lands here.
+      globalThis.fetch = async (url, options) => {
+        calls.push({ url, options });
+        return new Response(JSON.stringify(body), { status });
+      };
+      return calls;
+    };
+    const queued = { data: { success: true, message: 'SMS added to queue for processing', smsBatchId: 'b1', recipientCount: 1 } };
+
+    beforeEach(() => {
+      delete process.env.OTP_MOCK;
+      process.env.TEXTBEE_API_KEY = 'test-key';
+      console.error = () => {};
+    });
+
+    after(() => {
+      process.env.OTP_MOCK = 'true';
+      delete process.env.TEXTBEE_API_KEY;
+      globalThis.fetch = realFetch;
+      console.error = realError;
+    });
+
+    it('texts a code that signs in, and never exposes or logs it', async () => {
+      const logged = [];
+      console.log = line => logged.push(line);
+      const calls = providerReplies(200, queued);
+
+      const res = await requestCode();
+      assert.equal(res.status, 200);
+      assert.equal(res.body.data, undefined);
+
+      assert.equal(calls.length, 1);
+      assert.equal(calls[0].url, 'https://api.textbee.dev/api/v1/gateway/send-sms');
+      assert.equal(calls[0].options.headers['x-api-key'], 'test-key');
+      const sent = JSON.parse(calls[0].options.body);
+      assert.deepEqual(sent.recipients, [phone]);
+      const code = sent.message.match(/\d{6}/)[0];
+      assert.doesNotMatch(logged.join(), /\d{6}/);
+
+      assert.equal((await verifyCode(code)).status, 200);
+    });
+
+    for (const [name, status, body] of [
+      ['rejects the send', 400, { success: false, error: 'No enabled device found.' }],
+      ['cannot reach the phone', 200, { data: { success: true, successCount: 0, failureCount: 1 } }]
+    ]) {
+      it(`returns 503 and keeps the earlier code when the provider ${name}`, async () => {
+        const calls = providerReplies(200, queued);
+        await requestCode();
+        const earlier = JSON.parse(calls[0].options.body).message.match(/\d{6}/)[0];
+
+        providerReplies(status, body);
+        assert.equal((await requestCode()).status, 503);
+
+        assert.equal((await verifyCode(earlier)).status, 200);
+      });
+    }
+
+    it('returns 503 when the provider cannot be reached', async () => {
+      globalThis.fetch = async () => { throw new Error('network down'); };
+      assert.equal((await requestCode()).status, 503);
+      assert.equal(await Otp.findOne({ phone }), null);
+    });
   });
 
   it('rejects an invalid phone with 400', async () => {

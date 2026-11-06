@@ -8,3 +8,5 @@ backend/data/photo-cache.json
 docs/layout-check/
 backend/data/cache/
 backend/data/reports/sheets/
+.env
+node_modules/

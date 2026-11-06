@@ -1803,6 +1803,111 @@
       ]
     },
     {
+      "_id": "folder-preferences-50-save-the-receipt",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Save the receipt → 200",
+      "url": "{{baseUrl}}/users/me/receipt",
+      "method": "PUT",
+      "sortNum": 50,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"A-01-103\",\n      \"qty\": 1\n    }\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-60-save-a-bad-receipt",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Save a bad receipt → 400",
+      "url": "{{baseUrl}}/users/me/receipt",
+      "method": "PUT",
+      "sortNum": 60,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"A-01-103\"\n    }\n  ]\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-70-read-the-receipt",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Read the receipt → 200",
+      "url": "{{baseUrl}}/users/me/receipt",
+      "method": "GET",
+      "sortNum": 70,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-preferences-80-read-the-receipt-no-token",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-preferences",
+      "name": "Read the receipt: no token → 401",
+      "url": "{{baseUrl}}/users/me/receipt",
+      "method": "GET",
+      "sortNum": 80,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "401"
+        }
+      ]
+    },
+    {
       "_id": "folder-catalogue-10-list",
       "colId": "bazaarmart-api",
       "containerId": "folder-catalogue",
@@ -2699,13 +2804,189 @@
       ]
     },
     {
-      "_id": "folder-reviews-and-questions-120-read-questions",
+      "_id": "folder-reviews-and-questions-120-open-questions",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Open questions → 200",
+      "url": "{{baseUrl}}/admin/questions",
+      "method": "GET",
+      "sortNum": 120,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        },
+        {
+          "type": "set-env-var",
+          "custom": "json.data.0._id",
+          "action": "setto",
+          "value": "{{questionId}}"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-130-open-questions-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Open questions: not an admin → 403",
+      "url": "{{baseUrl}}/admin/questions",
+      "method": "GET",
+      "sortNum": 130,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-140-answer-no-text",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Answer: no text → 400",
+      "url": "{{baseUrl}}/admin/questions/{{questionId}}",
+      "method": "PATCH",
+      "sortNum": 140,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-150-answer-not-an-admin",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Answer: not an admin → 403",
+      "url": "{{baseUrl}}/admin/questions/{{questionId}}",
+      "method": "PATCH",
+      "sortNum": 150,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{token}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"answer\": \"Yes.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "403"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-160-answer-unknown-question",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Answer: unknown question → 404",
+      "url": "{{baseUrl}}/admin/questions/000000000000000000000000",
+      "method": "PATCH",
+      "sortNum": 160,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"answer\": \"Yes.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-170-answer",
+      "colId": "bazaarmart-api",
+      "containerId": "folder-reviews-and-questions",
+      "name": "Answer → 200",
+      "url": "{{baseUrl}}/admin/questions/{{questionId}}",
+      "method": "PATCH",
+      "sortNum": 170,
+      "created": "2026-11-05T00:00:00.000Z",
+      "modified": "2026-11-05T00:00:00.000Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{adminToken}}"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"answer\": \"Yes, IPX4.\"\n}",
+        "form": []
+      },
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "folder-reviews-and-questions-180-read-questions",
       "colId": "bazaarmart-api",
       "containerId": "folder-reviews-and-questions",
       "name": "Read questions → 200",
       "url": "{{baseUrl}}/products/P900/questions",
       "method": "GET",
-      "sortNum": 120,
+      "sortNum": 180,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
       "headers": [],
@@ -2719,13 +3000,13 @@
       ]
     },
     {
-      "_id": "folder-reviews-and-questions-130-read-questions-unknown-product",
+      "_id": "folder-reviews-and-questions-190-read-questions-unknown-product",
       "colId": "bazaarmart-api",
       "containerId": "folder-reviews-and-questions",
       "name": "Read questions: unknown product → 404",
       "url": "{{baseUrl}}/products/NOPE/questions",
       "method": "GET",
-      "sortNum": 130,
+      "sortNum": 190,
       "created": "2026-11-05T00:00:00.000Z",
       "modified": "2026-11-05T00:00:00.000Z",
       "headers": [],

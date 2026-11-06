@@ -1,9 +1,12 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { api } from '../api/client.js';
 import { useAuth } from './AuthContext.jsx';
 
 const GUEST_KEY = 'bazaarmart_receipt_guest';
 const ReceiptContext = createContext(null);
+const SYNC_DELAY_MS = 400;
 const userKey = owner => `bazaarmart_receipt_${owner}`;
+const dirtyKey = key => `${key}_dirty`;
 
 // Two colours of a product are two lines, so each colour gets its own id.
 export const lineIdOf = line => (line.colour ? `${line.productId}:${line.colour}` : line.productId);
@@ -30,6 +33,25 @@ function writeLines(key, lines) {
   }
 }
 
+// Dirty means this browser holds a change the server hasn't got yet, so that
+// change survives a reload or a failed save instead of being replaced.
+function isDirty(key) {
+  try {
+    return localStorage.getItem(dirtyKey(key)) === 'true';
+  } catch {
+    return false;
+  }
+}
+
+function setDirty(key, value) {
+  try {
+    if (value) localStorage.setItem(dirtyKey(key), 'true');
+    else localStorage.removeItem(dirtyKey(key));
+  } catch {
+    // Without storage the next save still sends the receipt.
+  }
+}
+
 function mergeLines(base, incoming) {
   const merged = base.map(line => ({ ...line }));
   for (const line of incoming) {
@@ -50,7 +72,8 @@ const toLine = (product, colour = product.colours?.[0]) => ({
   qty: 1
 });
 
-// Each account keeps its own receipt. Anything added as a guest joins it at sign-in.
+// Guests keep a receipt in this browser. For an account the server holds the receipt,
+// so it follows them between devices, and anything added as a guest joins it at sign-in.
 export function ReceiptProvider({ children }) {
   const { user } = useAuth();
   // A phone account can add an email later, so the phone comes first to keep the key stable.
@@ -59,23 +82,60 @@ export function ReceiptProvider({ children }) {
   const keyRef = useRef(storageKey);
   const [items, setItems] = useState(() => readLines(storageKey));
   const [isOpen, setIsOpen] = useState(false);
+  const [isSynced, setIsSynced] = useState(false);
 
   useEffect(() => {
     keyRef.current = storageKey;
+    setIsSynced(false);
     if (!owner) {
       setItems(readLines(GUEST_KEY));
-      return;
+      return undefined;
     }
-    const merged = mergeLines(readLines(storageKey), readLines(GUEST_KEY));
-    writeLines(storageKey, merged);
+
+    // Shows this browser's copy at once, then replaces it with the server's.
+    const guestLines = readLines(GUEST_KEY);
+    const cached = mergeLines(readLines(storageKey), guestLines);
+    writeLines(storageKey, cached);
     writeLines(GUEST_KEY, []);
-    setItems(merged);
+    setItems(cached);
+
+    let cancelled = false;
+    api('/users/me/receipt')
+      .then(({ data }) => {
+        if (cancelled) return;
+        // Never synced means an older browser receipt, which the account should adopt.
+        const keepLocal = isDirty(storageKey) || !data.syncedAt;
+        const lines = keepLocal ? readLines(storageKey) : mergeLines(data.lines, guestLines);
+        writeLines(storageKey, lines);
+        setItems(lines);
+        setIsSynced(true);
+      })
+      .catch(() => { if (guestLines.length) setDirty(storageKey, true); });
+    return () => { cancelled = true; };
   }, [owner, storageKey]);
+
+  useEffect(() => {
+    if (!owner || !isSynced) return undefined;
+    let cancelled = false;
+    const timer = setTimeout(() => {
+      api('/users/me/receipt', {
+        method: 'PUT',
+        body: { items: items.map(({ productId, colour, qty }) => ({ productId, colour, qty })) }
+      })
+        .then(() => { if (!cancelled) setDirty(storageKey, false); })
+        .catch(() => {});
+    }, SYNC_DELAY_MS);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [items, owner, storageKey, isSynced]);
 
   const update = useCallback(change => {
     setItems(current => {
       const next = change(current);
       writeLines(keyRef.current, next);
+      if (keyRef.current !== GUEST_KEY) setDirty(keyRef.current, true);
       return next;
     });
   }, []);

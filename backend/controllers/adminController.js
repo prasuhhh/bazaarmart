@@ -1,10 +1,12 @@
 import Order, { ORDER_STATUSES } from '../models/Order.js';
+import Question from '../models/Question.js';
 import { ApiError, ok } from '../utils/response.js';
 import { CANCELLABLE, cancelOrder, restoreStock, STATUS_GROUPS } from './orderController.js';
 
 const OUT_FOR_DELIVERY_HOURS = 2;
 const HOUR_MS = 60 * 60 * 1000;
 const ORDERS_LISTED = 100;
+const QUESTIONS_LISTED = 100;
 
 const NEXT_STATUS = {
   placed: 'packed',
@@ -75,4 +77,24 @@ export async function updateOrderStatus(req, res) {
   if (!updated) throw new ApiError(409, 'This order was just updated. Please refresh and try again.');
   if (status === 'returned') await restoreStock(updated.items);
   ok(res, { message: `Order marked as ${status}.`, data: updated });
+}
+
+// Oldest first, so nobody waits longest. The asker's details stay out of it.
+export async function listOpenQuestions(_req, res) {
+  const questions = await Question.find({ answer: { $in: [null, ''] } })
+    .select('text product createdAt')
+    .populate('product', 'productId productName')
+    .sort({ createdAt: 1 })
+    .limit(QUESTIONS_LISTED);
+  ok(res, { data: questions, count: questions.length });
+}
+
+export async function answerQuestion(req, res) {
+  const { answer } = req.body;
+  if (typeof answer !== 'string' || !answer.trim()) throw new ApiError(400, 'Write an answer.');
+  const question = await Question.findById(req.params.id);
+  if (!question) throw new ApiError(404, 'Question not found.');
+  question.answer = answer;
+  await question.save();
+  ok(res, { message: 'Answer posted.', data: question });
 }

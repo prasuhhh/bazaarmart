@@ -324,3 +324,59 @@ describe('orders from a shelf', () => {
     assert.deepEqual(await skusOn(id), [SKU.earbuds, 'D-01-101']);
   });
 });
+
+describe('saved receipt', () => {
+  const read = (value = token) => auth(request(app).get('/api/users/me/receipt'), value);
+  const save = (items, value = token) => auth(request(app).put('/api/users/me/receipt'), value).send({ items });
+
+  it('starts empty and never synced, then returns saved lines with live details', async () => {
+    const first = await read();
+    assert.equal(first.status, 200);
+    assert.deepEqual(first.body.data, { lines: [], syncedAt: null });
+
+    assert.equal((await save([{ productId: SKU.earbuds, colour: 'Sand', qty: 2 }])).status, 200);
+    await Product.updateOne({ productId: SKU.earbuds }, { productPrice: 900 });
+
+    const { body } = await read();
+    assert.ok(body.data.syncedAt);
+    assert.deepEqual(body.data.lines, [{
+      productId: SKU.earbuds, colour: 'Sand', productName: 'Halo Earbuds', price: 900, stock: 5, image: '/products/a.webp', qty: 2
+    }]);
+  });
+
+  it('caps qty at the stock, keeps a sold-out line at 1, and drops a deleted product', async () => {
+    await save([{ productId: SKU.earbuds, qty: 4 }, { productId: 'D-01-101', qty: 2 }]);
+    await Product.updateOne({ productId: SKU.earbuds }, { quantity: 3 });
+    await Product.updateOne({ productId: 'D-01-101' }, { quantity: 0 });
+    assert.deepEqual((await read()).body.data.lines.map(line => line.qty), [3, 1]);
+
+    await Product.deleteOne({ productId: 'D-01-101' });
+    assert.deepEqual((await read()).body.data.lines.map(line => line.productId), [SKU.earbuds]);
+  });
+
+  it('is saved empty after checkout clears it, and stays apart for each account', async () => {
+    await save([{ productId: SKU.earbuds, qty: 1 }]);
+    assert.equal((await read(otherToken)).body.count, 0);
+    await save([]);
+    const { body } = await read();
+    assert.equal(body.count, 0);
+    assert.ok(body.data.syncedAt);
+  });
+
+  it('rejects bad lines and needs a login', async () => {
+    for (const items of [undefined, 'x', [{}], [{ productId: SKU.earbuds }], [{ productId: SKU.earbuds, qty: 0 }],
+      [{ productId: SKU.earbuds, qty: 1.5 }], [{ productId: { $ne: 1 }, qty: 1 }], [null],
+      Array.from({ length: 51 }, () => ({ productId: SKU.earbuds, qty: 1 }))]) {
+      assert.equal((await save(items)).status, 400, JSON.stringify(items)?.slice(0, 40));
+    }
+    assert.equal((await request(app).get('/api/users/me/receipt')).status, 401);
+    assert.equal((await request(app).put('/api/users/me/receipt').send({ items: [] })).status, 401);
+  });
+
+  it('never appears in a login response', async () => {
+    await save([{ productId: SKU.earbuds, qty: 1 }]);
+    const res = await request(app).post('/api/login').send({ emailId: 'asha@example.com', password: 'secret123' });
+    assert.doesNotMatch(res.text, /receipt/i);
+  });
+});
+

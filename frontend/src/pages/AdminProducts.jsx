@@ -4,6 +4,7 @@ import { api } from '../api/client.js';
 import OrderControl from '../components/admin/OrderControl.jsx';
 import ProductForm from '../components/admin/ProductForm.jsx';
 import ProductTable from '../components/admin/ProductTable.jsx';
+import QuestionAnswers from '../components/admin/QuestionAnswers.jsx';
 import { useAction } from '../hooks/useAction.js';
 import { useFetch } from '../hooks/useFetch.js';
 
@@ -38,6 +39,10 @@ export default function AdminProducts() {
       <section className="admin-card">
         <p className="caption">Order status · advance for demos</p>
         <OrderControl />
+      </section>
+      <section className="admin-card">
+        <p className="caption">Customer questions · waiting for an answer</p>
+        <QuestionAnswers />
       </section>
       <section className="admin-card">
         <p className="caption">{editing ? `Edit ${editing.productId}` : 'Add a product'}</p>

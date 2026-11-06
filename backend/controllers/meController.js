@@ -1,3 +1,4 @@
+import Product from '../models/Product.js';
 import User from '../models/User.js';
 import { ADDRESS_FIELDS, pick, REQUIRED_DELIVERY_FIELDS, requireAddressFields } from '../utils/address.js';
 import { ApiError, created, noContent, ok } from '../utils/response.js';
@@ -8,6 +9,8 @@ const STYLE_FIELDS = ['sizes', 'colours', 'brands'];
 const NOTIFICATION_FIELDS = ['orderUpdates', 'priceDrops', 'newDrops'];
 const UPI_HANDLE = /^[\w.-]{2,}@[a-z][a-z0-9.-]*$/i;
 const CARD_LABEL = /^[a-z][a-z .&-]{1,29}$/i;
+const RECEIPT_MAX_LINES = 50;
+const RECEIPT_MAX_TEXT = 60;
 
 async function currentUser(req) {
   const user = await User.findById(req.user.userId);
@@ -156,4 +159,45 @@ export async function updatePrefs(req, res) {
   for (const [key, value] of Object.entries(notificationPrefs)) user.set(`notificationPrefs.${key}`, value);
   await user.save();
   ok(res, { message: 'Preferences updated.', data: prefsOf(user) });
+}
+
+function parseReceipt(items) {
+  if (!Array.isArray(items) || items.length > RECEIPT_MAX_LINES) {
+    throw new ApiError(400, `items must be a list of at most ${RECEIPT_MAX_LINES} lines.`);
+  }
+  return items.map(({ productId, colour, qty } = {}) => {
+    const isValid = typeof productId === 'string' && productId.trim() && productId.length <= RECEIPT_MAX_TEXT
+      && (colour === undefined || colour === null || (typeof colour === 'string' && colour.length <= RECEIPT_MAX_TEXT))
+      && Number.isInteger(qty) && qty >= 1;
+    if (!isValid) throw new ApiError(400, 'Each line needs a productId and a whole-number qty of at least 1.');
+    return { productId: productId.trim(), ...(colour && { colour }), qty };
+  });
+}
+
+// Lines come back with live names, prices and stock, so another device shows them
+// correctly. A product deleted since is dropped.
+export async function getReceipt(req, res) {
+  const user = await User.findById(req.user.userId).select('+receipt +receiptSyncedAt');
+  const products = await Product.find({ productId: { $in: user.receipt.map(line => line.productId) } });
+  const bySku = new Map(products.map(product => [product.productId, product]));
+  const lines = user.receipt.flatMap(({ productId, colour, qty }) => {
+    const product = bySku.get(productId);
+    if (!product) return [];
+    return [{
+      productId,
+      colour,
+      productName: product.productName,
+      price: product.productPrice,
+      stock: product.quantity,
+      image: product.images[0],
+      qty: Math.max(1, Math.min(qty, product.quantity))
+    }];
+  });
+  ok(res, { data: { lines, syncedAt: user.receiptSyncedAt ?? null }, count: lines.length });
+}
+
+export async function saveReceipt(req, res) {
+  const receipt = parseReceipt(req.body.items);
+  await User.updateOne({ _id: req.user.userId }, { receipt, receiptSyncedAt: new Date() });
+  ok(res, { message: 'Receipt saved.', count: receipt.length });
 }

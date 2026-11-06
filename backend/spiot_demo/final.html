@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Water Tank Monitor</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    background: #1e293b;
+}
+
+header h1 {
+    margin: 0;
+    color: #38bdf8;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.card h3 {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.value {
+    font-size: 35px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.tank {
+    width: 150px;
+    height: 280px;
+    border: 4px solid #94a3b8;
+    border-radius: 15px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    background: #0f172a;
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(
+        to top,
+        #0284c7,
+        #38bdf8
+    );
+    transition: height 1s ease;
+}
+
+.status {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #334155;
+    margin-top: 10px;
+}
+
+.normal {
+    color: #4ade80;
+}
+
+.low {
+    color: #f87171;
+}
+
+.full {
+    color: #facc15;
+}
+
+.error {
+    color: #fb7185;
+}
+
+.connection {
+    color: #94a3b8;
+    margin-top: 20px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>💧 Water Tank Monitor</h1>
+
+    <p>ESP32 + FreeRTOS + HC-SR04</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h3>Water Tank Visualization</h3>
+
+        <div class="tank">
+
+            <div class="water" id="water"></div>
+
+        </div>
+
+        <div class="value" id="level">
+            0%
+        </div>
+
+        <div class="status normal" id="status">
+            Connecting...
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h3>Water Level</h3>
+
+            <div class="value" id="levelValue">
+                0%
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Sensor Distance</h3>
+
+            <div class="value" id="distance">
+                -- cm
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Tank Status</h3>
+
+            <div class="value" id="tankStatus">
+                --
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h3>ESP32 Connection</h3>
+
+        <p id="connection">
+            Waiting for ESP32...
+        </p>
+
+        <p id="updated">
+            Last updated: --
+        </p>
+
+        <button onclick="updateData()">
+            Refresh Data
+        </button>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h3>ESP32 IP Address</h3>
+
+        <input
+            id="espIP"
+            type="text"
+            value="192.168.1.100"
+            placeholder="10.31.14.49"
+        >
+
+        <button onclick="saveIP()">
+            Connect
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+    Water Tank Monitoring System | ESP32 FreeRTOS
+
+</footer>
+
+<script>
+
+let ESP32_IP = "192.168.1.100";
+
+function saveIP() {
+
+    ESP32_IP = document
+        .getElementById("espIP")
+        .value.trim();
+
+    updateData();
+
+}
+
+async function updateData() {
+
+    try {
+
+        const response = await fetch(
+            "http://" + ESP32_IP + "/api/status",
+            {
+                cache: "no-store"
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error("ESP32 response error");
+        }
+
+        const data = await response.json();
+
+        const level = data.level;
+
+        const distance = data.distance;
+
+        const status = data.status;
+
+        document.getElementById("level")
+            .innerText = level + "%";
+
+        document.getElementById("levelValue")
+            .innerText = level + "%";
+
+        document.getElementById("distance")
+            .innerText = distance + " cm";
+
+        document.getElementById("tankStatus")
+            .innerText = status;
+
+        document.getElementById("water")
+            .style.height = level + "%";
+
+        const statusElement =
+            document.getElementById("status");
+
+        statusElement.innerText = status;
+
+        statusElement.className = "status";
+
+        if (data.sensorError) {
+
+            statusElement.classList.add("error");
+
+        }
+        else if (level < 20) {
+
+            statusElement.classList.add("low");
+
+        }
+        else if (level >= 90) {
+
+            statusElement.classList.add("full");
+
+        }
+        else {
+
+            statusElement.classList.add("normal");
+
+        }
+
+        document.getElementById("connection")
+            .innerText = "Connected to ESP32";
+
+        document.getElementById("connection")
+            .style.color = "#4ade80";
+
+        document.getElementById("updated")
+            .innerText =
+            "Last updated: " +
+            new Date().toLocaleTimeString();
+
+    }
+
+    catch (error) {
+
+        document.getElementById("connection")
+            .innerText = "Connection Failed";
+
+        document.getElementById("connection")
+            .style.color = "#f87171";
+
+        document.getElementById("status")
+            .innerText = "ESP32 Offline";
+
+    }
+
+}
+
+setInterval(updateData, 2000);
+
+updateData();
+
+</script>
+
+</body>
+
+</html>

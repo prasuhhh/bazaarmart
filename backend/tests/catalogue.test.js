@@ -370,6 +370,37 @@ describe('questions', () => {
   it('returns 404 for an unknown product', async () => {
     assert.equal((await request(app).get('/api/products/NOPE/questions')).status, 404);
   });
+
+  it('lets an admin see open questions and answer them, which shows them publicly', async () => {
+    await ask({ text: 'Is it waterproof?' });
+    const open = await auth(request(app).get('/api/admin/questions'), adminToken);
+    assert.equal(open.status, 200);
+    assert.equal(open.body.count, 1);
+    assert.equal(open.body.data[0].product.productId, SKU.earbuds);
+    assert.equal(open.body.data[0].user, undefined);
+
+    const { _id: id } = open.body.data[0];
+    const answered = await auth(request(app).patch(`/api/admin/questions/${id}`), adminToken).send({ answer: '  Yes, IPX4.  ' });
+    assert.equal(answered.status, 200);
+    assert.equal(answered.body.data.answer, 'Yes, IPX4.');
+
+    const shown = await request(app).get(`/api/products/${SKU.earbuds}/questions`);
+    assert.equal(shown.body.data[0].answer, 'Yes, IPX4.');
+    assert.equal((await auth(request(app).get('/api/admin/questions'), adminToken)).body.count, 0);
+  });
+
+  it('keeps answering to admins, and checks the answer and the question', async () => {
+    const { _id: id } = (await ask({ text: 'Is it waterproof?' })).body.data;
+    const answer = (questionId, body, token) => auth(request(app).patch(`/api/admin/questions/${questionId}`), token).send(body);
+
+    assert.equal((await request(app).get('/api/admin/questions')).status, 401);
+    assert.equal((await auth(request(app).get('/api/admin/questions'))).status, 403);
+    assert.equal((await answer(id, { answer: 'Sure.' }, userToken)).status, 403);
+    assert.equal((await answer(id, { answer: '   ' }, adminToken)).status, 400);
+    assert.equal((await answer(id, { answer: 'x'.repeat(1001) }, adminToken)).status, 400);
+    assert.equal((await answer('64b000000000000000000000', { answer: 'Sure.' }, adminToken)).status, 404);
+    assert.equal((await answer('nope', { answer: 'Sure.' }, adminToken)).status, 400);
+  });
 });
 
 describe('kits', () => {

@@ -23,6 +23,13 @@ const deviceSchema = new mongoose.Schema({
   warrantyUntil: Date
 });
 
+// Only what identifies a line. Names and prices are read fresh when it's loaded.
+const receiptLineSchema = new mongoose.Schema({
+  productId: { type: String, required: true },
+  colour: String,
+  qty: { type: Number, required: true, min: 1 }
+}, { _id: false });
+
 const userSchema = new mongoose.Schema({
   // Sparse, because a phone-only account has no email and a plain unique index
   // would treat every missing value as the same duplicate.
@@ -50,12 +57,17 @@ const userSchema = new mongoose.Schema({
     orderUpdates: { type: Boolean, default: true },
     priceDrops: { type: Boolean, default: true },
     newDrops: { type: Boolean, default: true }
-  }
+  },
+  // Hidden by default, so a receipt never travels with a login or profile response.
+  receipt: { type: [receiptLineSchema], select: false },
+  receiptSyncedAt: { type: Date, select: false }
 }, {
   timestamps: true,
   toJSON: {
     transform(_doc, json) {
       delete json.password;
+      delete json.receipt;
+      delete json.receiptSyncedAt;
       delete json.__v;
       return json;
     }

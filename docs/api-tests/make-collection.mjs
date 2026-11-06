@@ -93,7 +93,11 @@ const folders = [
     ['No token', 'GET', '/users/me/prefs', 401],
     ['Read', 'GET', '/users/me/prefs', 200, { token: 'token' }],
     ['Update', 'PATCH', '/users/me/prefs', 200, { token: 'token', body: { notificationPrefs: { priceDrops: false }, stylePrefs: { sizes: ['M'] } } }],
-    ['Nothing to update', 'PATCH', '/users/me/prefs', 400, { token: 'token', body: {} }]
+    ['Nothing to update', 'PATCH', '/users/me/prefs', 400, { token: 'token', body: {} }],
+    ['Save the receipt', 'PUT', '/users/me/receipt', 200, { token: 'token', body: { items: [{ productId: 'A-01-103', qty: 1 }] } }],
+    ['Save a bad receipt', 'PUT', '/users/me/receipt', 400, { token: 'token', body: { items: [{ productId: 'A-01-103' }] } }],
+    ['Read the receipt', 'GET', '/users/me/receipt', 200, { token: 'token' }],
+    ['Read the receipt: no token', 'GET', '/users/me/receipt', 401]
   ]],
   ['Catalogue', [
     ['List', 'GET', '/products', 200],
@@ -136,6 +140,12 @@ const folders = [
     ['Question: no text', 'POST', '/products/P900/questions', 400, { token: 'token', body: {} }],
     ['Question', 'POST', '/products/P900/questions', 201, { token: 'token', body: { text: 'Waterproof?' } }],
     ['Question: unknown product', 'POST', '/products/NOPE/questions', 404, { token: 'token', body: { text: 'Waterproof?' } }],
+    ['Open questions', 'GET', '/admin/questions', 200, { token: 'adminToken', save: { questionId: 'json.data.0._id' } }],
+    ['Open questions: not an admin', 'GET', '/admin/questions', 403, { token: 'token' }],
+    ['Answer: no text', 'PATCH', '/admin/questions/{{questionId}}', 400, { token: 'adminToken', body: {} }],
+    ['Answer: not an admin', 'PATCH', '/admin/questions/{{questionId}}', 403, { token: 'token', body: { answer: 'Yes.' } }],
+    ['Answer: unknown question', 'PATCH', `/admin/questions/${NOT_AN_ID}`, 404, { token: 'adminToken', body: { answer: 'Yes.' } }],
+    ['Answer', 'PATCH', '/admin/questions/{{questionId}}', 200, { token: 'adminToken', body: { answer: 'Yes, IPX4.' } }],
     ['Read questions', 'GET', '/products/P900/questions', 200],
     ['Read questions: unknown product', 'GET', '/products/NOPE/questions', 404]
   ]],
